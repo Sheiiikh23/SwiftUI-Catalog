@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SuperFontModifier.swift
 //  Shared
 //
 //  Created by Lucas Abijmil on 24/06/2020.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SuperFontModifier: View {
     var body: some View {
         Text("Hello, world!")
           .font(Font.body.lowercaseSmallCaps())
@@ -15,8 +15,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SuperFontModifier_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+      SuperFontModifier()
     }
 }

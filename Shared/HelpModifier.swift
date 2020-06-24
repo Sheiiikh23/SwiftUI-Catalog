@@ -13,6 +13,7 @@ struct HelpModifier: View {
       Label("Hello World !", systemImage: "person")
     }
     // Sur macOS créer une bulle si on reste sur le bouton (bulle classique)
+    // iPadOS ?? 
     // Sur iOS voiceOver lira la string dans cette méthode
     .help("Text saying Hello World by Lucas Abijmil")
   }

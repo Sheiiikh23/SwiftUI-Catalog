@@ -1,5 +1,5 @@
 //
-//  SwiftUIView.swift
+//  ToolBarModifier.swift
 //  SwiftUI 2.0
 //
 //  Created by Lucas Abijmil on 24/06/2020.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ToolBar: View {
+struct ToolBarModifier: View {
   var body: some View {
     NavigationView {
       List {
@@ -35,6 +35,7 @@ struct ToolBar: View {
         ToolbarItem(placement: .navigationBarTrailing) {
           EditButton()
         }
+        // MARK: Pour le placement bottom on a sur iOS la barre grisée d'origine
         ToolbarItem(placement: .bottomBar) {
           HStack {
             Spacer()
@@ -43,14 +44,16 @@ struct ToolBar: View {
                 .font(.title2)
             })
           }
+
         }
+
       }
     }
   }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
+struct ToolBarModifier_Previews: PreviewProvider {
   static var previews: some View {
-    ToolBar()
+    ToolBarModifier()
   }
 }
