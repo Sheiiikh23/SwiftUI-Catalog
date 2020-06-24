@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D51323324A3EE48007B13A3 /* LabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelModifier.swift */; };
+		8D51323424A3EE48007B13A3 /* LabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelModifier.swift */; };
 		8DDA5C3724A31A5800BF263B /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C3624A31A5800BF263B /* Tests_iOS.swift */; };
 		8DDA5C4224A31A5800BF263B /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C4124A31A5800BF263B /* Tests_macOS.swift */; };
 		8DDA5C4424A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C1B24A31A5700BF263B /* SwiftUI_2_0App.swift */; };
@@ -15,8 +17,8 @@
 		8DDA5C4724A31A5800BF263B /* SuperFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C1C24A31A5700BF263B /* SuperFontModifier.swift */; };
 		8DDA5C4824A31A5800BF263B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDA5C1D24A31A5800BF263B /* Assets.xcassets */; };
 		8DDA5C4924A31A5800BF263B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DDA5C1D24A31A5800BF263B /* Assets.xcassets */; };
-		8DDA5C5C24A3217D00BF263B /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C5B24A3217D00BF263B /* Label.swift */; };
-		8DDA5C5D24A3217D00BF263B /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C5B24A3217D00BF263B /* Label.swift */; };
+		8DDA5C5C24A3217D00BF263B /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C5B24A3217D00BF263B /* LabelView.swift */; };
+		8DDA5C5D24A3217D00BF263B /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C5B24A3217D00BF263B /* LabelView.swift */; };
 		8DDA5C5F24A3249300BF263B /* HelpModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C5E24A3249300BF263B /* HelpModifier.swift */; };
 		8DDA5C6024A3249300BF263B /* HelpModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C5E24A3249300BF263B /* HelpModifier.swift */; };
 		8DDA5C6224A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C6124A3369B00BF263B /* KeyboardShortcutModifier.swift */; };
@@ -45,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D51323224A3EE48007B13A3 /* LabelModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelModifier.swift; sourceTree = "<group>"; };
 		8DDA5C1B24A31A5700BF263B /* SwiftUI_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_2_0App.swift; sourceTree = "<group>"; };
 		8DDA5C1C24A31A5700BF263B /* SuperFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperFontModifier.swift; sourceTree = "<group>"; };
 		8DDA5C1D24A31A5800BF263B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,7 +62,7 @@
 		8DDA5C3D24A31A5800BF263B /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DDA5C4124A31A5800BF263B /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		8DDA5C4324A31A5800BF263B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DDA5C5B24A3217D00BF263B /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		8DDA5C5B24A3217D00BF263B /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		8DDA5C5E24A3249300BF263B /* HelpModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpModifier.swift; sourceTree = "<group>"; };
 		8DDA5C6124A3369B00BF263B /* KeyboardShortcutModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcutModifier.swift; sourceTree = "<group>"; };
 		8DDA5C6424A3388A00BF263B /* ProgressViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViews.swift; sourceTree = "<group>"; };
@@ -116,10 +119,6 @@
 				8DDA5C1B24A31A5700BF263B /* SwiftUI_2_0App.swift */,
 				8DEBD12E24A3E643004AAE41 /* Views */,
 				8DEBD12D24A3E63D004AAE41 /* Modifiers */,
-				8DDA5C5B24A3217D00BF263B /* Label.swift */,
-				8DDA5C5E24A3249300BF263B /* HelpModifier.swift */,
-				8DDA5C6124A3369B00BF263B /* KeyboardShortcutModifier.swift */,
-				8DDA5C6424A3388A00BF263B /* ProgressViews.swift */,
 				8DDA5C1D24A31A5800BF263B /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -174,6 +173,9 @@
 		8DEBD12D24A3E63D004AAE41 /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				8DDA5C5E24A3249300BF263B /* HelpModifier.swift */,
+				8D51323224A3EE48007B13A3 /* LabelModifier.swift */,
+				8DDA5C6124A3369B00BF263B /* KeyboardShortcutModifier.swift */,
 				8DDA5C1C24A31A5700BF263B /* SuperFontModifier.swift */,
 				8DEBD12F24A3E6AA004AAE41 /* ToolBarModifier.swift */,
 			);
@@ -183,6 +185,8 @@
 		8DEBD12E24A3E643004AAE41 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8DDA5C5B24A3217D00BF263B /* LabelView.swift */,
+				8DDA5C6424A3388A00BF263B /* ProgressViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -347,8 +351,9 @@
 				8DDA5C4624A31A5800BF263B /* SuperFontModifier.swift in Sources */,
 				8DEBD13024A3E6AA004AAE41 /* ToolBarModifier.swift in Sources */,
 				8DDA5C4424A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
-				8DDA5C5C24A3217D00BF263B /* Label.swift in Sources */,
+				8DDA5C5C24A3217D00BF263B /* LabelView.swift in Sources */,
 				8DDA5C6524A3388A00BF263B /* ProgressViews.swift in Sources */,
+				8D51323324A3EE48007B13A3 /* LabelModifier.swift in Sources */,
 				8DDA5C6224A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
 				8DDA5C5F24A3249300BF263B /* HelpModifier.swift in Sources */,
 			);
@@ -361,8 +366,9 @@
 				8DDA5C4724A31A5800BF263B /* SuperFontModifier.swift in Sources */,
 				8DEBD13124A3E6AA004AAE41 /* ToolBarModifier.swift in Sources */,
 				8DDA5C4524A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
-				8DDA5C5D24A3217D00BF263B /* Label.swift in Sources */,
+				8DDA5C5D24A3217D00BF263B /* LabelView.swift in Sources */,
 				8DDA5C6624A3388A00BF263B /* ProgressViews.swift in Sources */,
+				8D51323424A3EE48007B13A3 /* LabelModifier.swift in Sources */,
 				8DDA5C6324A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
 				8DDA5C6024A3249300BF263B /* HelpModifier.swift in Sources */,
 			);

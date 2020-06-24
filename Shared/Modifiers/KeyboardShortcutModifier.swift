@@ -7,14 +7,15 @@
 
 import SwiftUI
 
+/// Les keyboardShortcut permettent à l'utilisateur d'utiliser des raccourcis claviers
+/// Il existe des shortcuts pré-builder par Apple
+/// En voici deux importants
+
 struct KeyboardShortcut: View {
     var body: some View {
       VStack(spacing: 40) {
         Button("Cancel", action: {})
-          // Les keyboardShortcut permettent à l'utilisateur d'utiliser des raccourcis claviers
-          // Il existe des shortcuts pré-builder par Apple
           .keyboardShortcut(.cancelAction)
-
         Button("Save", action: {})
           .keyboardShortcut(.defaultAction)
       }
