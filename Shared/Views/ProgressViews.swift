@@ -39,7 +39,7 @@ struct ProgressViews: View {
         .foregroundColor(.green) /// change UNIQUEMENT la couleur du text
         .font(.title) /// Modifier bien appliqué car Circulaire
 
-      /// Créer une progressView Linéaire (déterminé càd avec value, total = 1) sans String ––> Linéaire
+      /// Créer une progressView Linéaire (déterminé càd avec value, total = 1) sans String
       ProgressView(value: valueProgressView)
         /// Modifiers pour le Text et pour la ProgressView
         .accentColor(.yellow) /// Modifier bien appliqué car Linéaire
@@ -70,12 +70,12 @@ struct ProgressViews: View {
           .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
       }
 
-      /// Créer une progressView déterminée avec total & pas de String ––> Linéaire
+      /// Créer une progressView Linéaire avec total & pas de String
       ProgressView(value: valueProgressView, total: 1.0)
         .accentColor(Color(#colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)).opacity(0.75))
         .frame(width: 100) /// Modifier qui fonctionne uniquement pour la width
 
-      /// Créer une ProgressView Linéaire avec un label custom ––> Linéaire
+      /// Créer une ProgressView Linéaire avec un label custom
       ProgressView(value: valueProgressView, total: 1, label: {
         HStack {
           Spacer()
@@ -95,7 +95,7 @@ struct ProgressViews: View {
       /// Modifiers pour la ProgressView uniquement
       .accentColor(.pink)
 
-      /// Créer une progressView déterminée avec un total & label custom ––> Linéaire
+      /// Créer une progressView Linéaire avec un total & label custom 
       ProgressView(value: valueProgressView, total: 1, label: {
         Text("Constructeur 9")
       })
