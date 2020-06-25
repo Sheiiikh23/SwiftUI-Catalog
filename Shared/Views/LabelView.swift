@@ -44,7 +44,7 @@ struct LabelView: View {
         ToolbarItem(placement: .navigationBarTrailing) {
           Button(action: {}) {
             #warning("TODO")
-            // MARK: Logiquement dans des childs ne navigationView (à confirmer) :
+            // MARK: Logiquement dans des childs de navigationView (à confirmer) :
             // La view ne montre que la•l' system•Image
             // Le Text du label est servie pour l'accessibilité pour les personnes malvoyantes (à confirmer)
             Label("Progress", systemImage: "pencil")
