@@ -10,9 +10,9 @@ import SwiftUI
 /// Apparition des ProgressView: circulaire ou linéaire
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Cataclyst
   /// Circulaire: par défaut si aucune value n'est donnée à la progressView
-  /// Linéaire: par défaut si une value est donnée à la progressView
+  /// Linéaire: par défaut si une value avec un total (par défaut = 1) est donnée à la progressView
 
-/// A noter :
+/// Modifiers notable sur cette View:
 ///   • accentColor ––> effectif uniquement sur la progressView et si "déterminée"
 ///   • foregroundColor ––> modifie uniquement la couleur de Text
 
@@ -22,21 +22,23 @@ struct ProgressViews: View {
 
   var body: some View {
     VStack(spacing: 50) {
+
       /// Créer une progressView indéterminée (sans value) ––> Circulaire
       ProgressView()
         .scaleEffect(1.5, anchor: .center)
-        .accentColor(.green) /// pas de value donc n'est pas effectif
+        .accentColor(.green) /// pas effectif car aucune value n'est fournie
 
       /// Créer une progressView indéterminée avec une String ––> Circulaire
       ProgressView("Constructeur n°2")
-        .foregroundColor(.green)
+        .foregroundColor(.green) /// change UNIQUEMENT la couleur du text
 
-      /// Créer une progressView déterminée (avec value) avec une String ––> Linéaire
+      /// Créer une progressView déterminée (avec value, total = 1) avec une String ––> Linéaire
       ProgressView("Constructeur n°3", value: valueProgressView)
+        .foregroundColor(.red)
+        .accentColor(.purple) /// effectif car une valeur est founie
 
       /// Créer une progressView déterminée (avec value) avec une String, et un total custom ––> Linéaire
       ProgressView("Constructeur n°4", value: valueProgressView, total: 5)
-        /// Changer la couleur de texte
         .foregroundColor(.red)
         .accentColor(.purple)
 
@@ -45,6 +47,7 @@ struct ProgressViews: View {
       /// "Iconvénient": syntaxe (beaucoup plus "lourde" que celle ci-dessus)
       ProgressView {
         Text("Constructeur n°5")
+          /// Custom TextStyle
           .font(.title3)
           .fontWeight(.bold)
       }
@@ -58,20 +61,24 @@ struct ProgressViews: View {
         HStack {
           Spacer()
           Text("Constructeur n°7")
+            .font(.title)
             .fontWeight(.heavy)
+            .padding(5)
+            .background(Color.purple)
           Spacer()
         }
       })
+      .accentColor(.pink)
 
       /// Créer une progressView déterminée avec total & pas de String ––> Linéaire
       ProgressView(value: valueProgressView, total: 1.0)
+        .accentColor(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)).opacity(0.75))
 
       /// Créer une progressView déterminée avec un total & label custom ––> Linéaire
       ProgressView(value: valueProgressView, total: 1, label: {
         Text("Constructeur 9")
       })
-
-
+      .accentColor(Color(#colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)))
     }
   }
 }

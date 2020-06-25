@@ -9,8 +9,8 @@ import SwiftUI
 
 /// Apparition des Labels : Text + Image / Icon
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Cataclyst
-/// Text : String
-/// Image = String ou systemImage: String
+/// Text: String
+/// Image: String ou systemImage: String
 
 
 
@@ -19,25 +19,47 @@ struct LabelView: View {
     NavigationView {
 
       VStack(spacing: 50) {
+
+        /// Créer un label dont le text et l'image • systemImage vont scale de la même manière
         Label("Hello World", systemImage: "magnifyingglass")
           /// Le texte comme l'image scale de la "même manière"
           /// cf le tuto d'Apple sur les SFSymbols
           .font(.title)
-        // Manière "moins compact / optimisée" pour mettre une Image • systemImage
+
+        /// Créer un label qui permet de spécifier à chaque élément des modifiers qui lui sont propre
         Label {
           Text("Hello World")
+            .fontWeight(.bold)
+            .foregroundColor(.red)
         } icon: {
           Image(systemName: "magnifyingglass")
+            .foregroundColor(.blue)
         }
-        .font(.subheadline)
-        // Mais qui laisse le champs des possibilités un peu plus grand
+
+        /// Créer un label qui permer de spécifier à chaque élément des modifiers qui lui sont propre
         Label {
           Text("Hello World")
+            .fontWeight(.bold)
+            .foregroundColor(.green)
+        } icon: {
+          Image(systemName: "magnifyingglass")
+            .foregroundColor(.blue)
+        }
+        /// Mais permet également de prendre des modifiers "globaux" appliqués au deux View
+        .font(.title3)
+
+        /// Créer un label qui permet de prendre autre chose qu'une image • systeImage pour l'icon. A noter que les chaque élément aura des mofiers qui lui seront propre
+        Label {
+          Text("Hello World")
+            .font(.callout)
+            .fontWeight(.thin)
+            .foregroundColor(.purple)
         } icon: {
           Circle()
             .fill(Color.red)
-            .frame(width: 10, height: 10)
+            .frame(width: 40, height: 40)
         }
+
       }
       .navigationBarTitle("Hello Labels")
       .toolbar {
@@ -55,8 +77,9 @@ struct LabelView: View {
   }
 }
 
-//struct Label__Previews: PreviewProvider {
-//  static var previews: some View {
-//    LabelView()
-//  }
-//}
+
+struct LabelView_Previews: PreviewProvider {
+  static var previews: some View {
+    LabelView()
+  }
+}
