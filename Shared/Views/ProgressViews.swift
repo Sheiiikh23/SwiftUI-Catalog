@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+/// Apparition des Labels : Text + Image / Icon
+/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Cataclyst
+/// Text : String
+/// Image = String ou systemImage: String
+
 struct ProgressViews: View {
 
   @State private var valueProgressView: CGFloat = 0.5
@@ -28,6 +33,10 @@ struct ProgressViews: View {
 
 struct ProgressView_Previews: PreviewProvider {
   static var previews: some View {
-    ProgressViews()
+    Group {
+      ProgressViews()
+      ProgressViews()
+        .previewDevice("iPad Air (3rd generation)")
+    }
   }
 }
