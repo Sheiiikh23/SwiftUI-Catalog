@@ -8,22 +8,27 @@
 import SwiftUI
 
 /// Modifier propre pour les Labels :
-/// - labelStyle(LabelStyleConfiguration) ––> i•Pad•OS / watchOS / tvOS / macOs / Mac Catalyst
-  /// LabelStyleConfiguration :
-    /// • DefaultLabelStyle ––> par défaut
-    /// • TitleOnlyLabelStyle ––> uniquement le title
-    /// • IconOnlyLabelStyle ––> uniquement l'icon
-    /// • CustomLabelStyle ––> à créer à la mano
-  /// Un même labelStyle peut être set pour un container
+///   - labelStyle(LabelStyle) ––> i•Pad•OS / watchOS / tvOS / macOs / Mac Catalyst
+///   
+/// LabelStyle présents nativement :
+///   • DefaultLabelStyle ––> par défaut
+///   • TitleOnlyLabelStyle ––> uniquement le title
+///   • IconOnlyLabelStyle ––> uniquement l'icon
+///
+/// Créer un LabelStyle custom :
+///   • struct conforme au protocol LabelStyle ––> fonction makeBody
+///
+/// Un même labelStyle peut être set pour un container
 
 struct LabelModifier: View {
   var body: some View {
     NavigationView {
       VStack(spacing: 50) {
+
         /// Default
         Label("Default label style", systemImage: "folder")
           .font(.title)
-          /// Activer / désactiver ce modifier ne changera pas l'apparence du label
+          /// Activer / désactiver ce modifier ne provequera aucun changement
           .labelStyle(DefaultLabelStyle())
 
         /// TitleOnly
@@ -41,20 +46,24 @@ struct LabelModifier: View {
           .font(.title)
           .labelStyle(CustomLabelStyle())
 
-        /// Même labelStyle pour un container
+        /// Même labelStyle pour un container, ici j'ai chosi d'appliquer le CustomLabelStyle
         VStack(spacing: 20) {
           Label("Même label style pour ce container", systemImage: "slider.horizontal.3")
             .font(.subheadline)
           Label("Même label style pour ce container", systemImage: "slider.horizontal.3")
             .font(.subheadline)
+            .foregroundColor(.secondary)
           Label("Même label style pour ce container", systemImage: "slider.horizontal.3")
             .font(.subheadline)
           Label("Même label style pour ce container", systemImage: "slider.horizontal.3")
             .font(.subheadline)
+            .foregroundColor(.secondary)
         }
+        /// Modifier appliqué pour tout les labels du container
         .labelStyle(CustomLabelStyle())
         .padding()
-        .background(Color.pink)
+        .background(Color.purple)
+
       }
     }
   }
@@ -63,7 +72,9 @@ struct LabelModifier: View {
 struct CustomLabelStyle: LabelStyle {
   func makeBody(configuration: Configuration) -> some View {
     Label(configuration)
-      .border(Color.red)
+      .padding()
+      .border(Color.red, width: 5)
+      .cornerRadius(5)
       .background(Color.yellow)
   }
 }
@@ -71,5 +82,6 @@ struct CustomLabelStyle: LabelStyle {
 struct LabelModifier_Previews: PreviewProvider {
   static var previews: some View {
     LabelModifier()
+      .preferredColorScheme(.light)
   }
 }

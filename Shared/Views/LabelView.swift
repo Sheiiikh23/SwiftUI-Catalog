@@ -21,31 +21,34 @@ struct LabelView: View {
       VStack(spacing: 50) {
 
         /// Créer un label dont le text et l'image • systemImage vont scale de la même manière
+        /// cf le tuto d'Apple sur les SFSymbols
         Label("Hello World", systemImage: "magnifyingglass")
-          /// Le texte comme l'image scale de la "même manière"
-          /// cf le tuto d'Apple sur les SFSymbols
           .font(.title)
 
         /// Créer un label qui permet de spécifier à chaque élément des modifiers qui lui sont propre
         Label {
           Text("Hello World")
+            /// Modifiers propre au Text
             .fontWeight(.bold)
             .foregroundColor(.red)
         } icon: {
           Image(systemName: "magnifyingglass")
+            /// Modifiers propre à l'Image • systemImage
             .foregroundColor(.blue)
         }
 
         /// Créer un label qui permer de spécifier à chaque élément des modifiers qui lui sont propre
         Label {
           Text("Hello World")
+            /// Modifiers propre au Text
             .fontWeight(.bold)
             .foregroundColor(.green)
         } icon: {
+          /// Modifiers propre à l'Image • systemImage
           Image(systemName: "magnifyingglass")
             .foregroundColor(.blue)
         }
-        /// Mais permet également de prendre des modifiers "globaux" appliqués au deux View
+        /// Permet également d'appliquer des modifiers appliqué pour tout le label
         .font(.title3)
 
         /// Créer un label qui permet de prendre autre chose qu'une image • systeImage pour l'icon. A noter que les chaque élément aura des mofiers qui lui seront propre
