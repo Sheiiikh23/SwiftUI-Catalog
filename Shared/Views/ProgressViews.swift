@@ -22,7 +22,6 @@ import SwiftUI
 struct ProgressViews: View {
 
   @State private var valueProgressView: CGFloat = 0.5
-  @State private var test: String = ""
 
   var body: some View {
     VStack(spacing: 50) {
