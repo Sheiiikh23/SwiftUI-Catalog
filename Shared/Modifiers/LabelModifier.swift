@@ -28,7 +28,7 @@ struct LabelModifier: View {
         /// Default
         Label("Default label style", systemImage: "folder")
           .font(.title)
-          /// Activer / désactiver ce modifier ne provequera aucun changement
+          /// Activer / désactiver ce modifier ne provequora aucun changement
           .labelStyle(DefaultLabelStyle())
 
         /// TitleOnly
