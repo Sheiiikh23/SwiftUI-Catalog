@@ -53,6 +53,8 @@
 		8DF93EC424A78E9300B84CD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DF93EC324A78E9300B84CD0 /* Preview Assets.xcassets */; };
 		8DF93EC924A78E9300B84CD0 /* SwiftUI 2.0 watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8DF93EAA24A78E9000B84CD0 /* SwiftUI 2.0 watchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8DF93ED524A78F0700B84CD0 /* ListStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93ED424A78F0700B84CD0 /* ListStyleModifier.swift */; };
+		8DF93EDF24A7955D00B84CD0 /* ChildrenListWithSideBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EDE24A7955D00B84CD0 /* ChildrenListWithSideBarStyle.swift */; };
+		8DF93EE024A7955D00B84CD0 /* ChildrenListWithSideBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EDE24A7955D00B84CD0 /* ChildrenListWithSideBarStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +155,7 @@
 		8DF93EC524A78E9300B84CD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DF93EC624A78E9300B84CD0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		8DF93ED424A78F0700B84CD0 /* ListStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStyleModifier.swift; sourceTree = "<group>"; };
+		8DF93EDE24A7955D00B84CD0 /* ChildrenListWithSideBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenListWithSideBarStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				8DDA5C5B24A3217D00BF263B /* LabelView.swift */,
+				8DF93EDE24A7955D00B84CD0 /* ChildrenListWithSideBarStyle.swift */,
 				8DDA5C6424A3388A00BF263B /* ProgressViews.swift */,
 				8DC13F3B24A76019003CDA7A /* SettingsView.swift */,
 			);
@@ -568,6 +572,7 @@
 				8DC13F4824A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,
 				8DDA5C4424A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
 				8DDA5C5C24A3217D00BF263B /* LabelView.swift in Sources */,
+				8DF93EDF24A7955D00B84CD0 /* ChildrenListWithSideBarStyle.swift in Sources */,
 				8DC13F4524A764D0003CDA7A /* WindowStyleModifier.swift in Sources */,
 				8DDA5C6524A3388A00BF263B /* ProgressViews.swift in Sources */,
 				8D51323324A3EE48007B13A3 /* LabelModifier.swift in Sources */,
@@ -591,6 +596,7 @@
 				8DC13F4924A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,
 				8DDA5C4524A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
 				8DDA5C5D24A3217D00BF263B /* LabelView.swift in Sources */,
+				8DF93EE024A7955D00B84CD0 /* ChildrenListWithSideBarStyle.swift in Sources */,
 				8DC13F4624A764D0003CDA7A /* WindowStyleModifier.swift in Sources */,
 				8DDA5C6624A3388A00BF263B /* ProgressViews.swift in Sources */,
 				8D51323424A3EE48007B13A3 /* LabelModifier.swift in Sources */,
