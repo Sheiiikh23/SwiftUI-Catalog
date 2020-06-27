@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// Arrivé du toolBar modifier obligatoirement contenu dans une NavigationView ––> i•Pad•OS / (watchOS dans le futur) /
+/// Arrivé du toolBar modifier obligatoirement contenu dans une NavigationView ––> i•Pad•OS / watch OS  /
 
 #warning("Refactor here")
 #warning("Normalement dispo pour watchOS. Regarder les updates de la doc")

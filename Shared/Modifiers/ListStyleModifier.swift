@@ -11,11 +11,11 @@ import SwiftUI
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// ListStyle présents nativement (cf. watchExtension) :
-///   • DefaultListStyle ––> par défaut pour i•Pad•Os / tvOS / macOS / Mac Catalyst
+///   • DefaultListStyle ––> par défaut pour i•Pad•Os / watchOS / tvOS / macOS / Mac Catalyst
 ///   • GroupedListStyle ––> uniquement pour i•Pad•Os / tvOS / Mac Catalyst
 ///   • InsetGroupedListStyle ––> uniquement pour i•Pad•OS / Mac Catalyst
 ///   • InsetListStyle ––> uniquement pour i•Pad•OS / macOS / Mac Catalyst
-///   • PlainListStyle ––> i•Pad•OS / tvOS / macOS / Mac Catalyst
+///   • PlainListStyle ––> i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///   • SideBarListStyle ––> i•Pad•OS / macOS / Mac Catalyst
 
 struct DefaultListStyleModifier: View {

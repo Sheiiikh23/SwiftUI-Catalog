@@ -12,7 +12,7 @@ import SwiftUI
 /// 
 ///   • EmptyCommands ––> sert à rien 😅:
 ///     - i•Pad•OS / macOS / Mac Catalyst / tvOS
-///   • CommandGroup(before: CommandGroupPlacement) | CommandGroup(after: CommandGroupPlacement) | CommandGroup(replacing: CommandGRoupPlacement)
+///   • CommandGroup(before: CommandGroupPlacement) | CommandGroup(after: CommandGroupPlacement) | CommandGroup(replacing: CommandGRoupPlacement) | cf CommandgroupPlacement
 ///     - macOS / Mac Catalyst : forme de collections d'éléments dans un menu ???
 ///     - i•Pad•OS / tvOS : "commandes clés" pour chaque commande ayant un keyboardShortcut
 ///   • CommandMenu("String"):
@@ -31,8 +31,7 @@ import SwiftUI
 ///     - macOS / Mac Catalyst : ensemble de commandes pour manipuler les barres d'outils des fenêtres
 ///     - i•Pad•OS : ??
 ///
-///   CommandGroupPlacement cf: https://developer.apple.com/documentation/swiftui/commandgroupplacement
-///   Penser à rajouter des keyboardShortcut
+///   CommandGroupPlacement cf: CommandGroupPlacementModfier
 
 #warning("Lever les incertitudes")
 
@@ -47,12 +46,12 @@ struct CommandsModifier: App {
       CommandMenu("Shape") {
         /// Bouton n°1
         Button("Add Shape...", action: {})
-          /// Raccourci clavier : shift (car maj) + cmd + n
+          /// Raccourci clavier : cmd + shift (car maj) + n
           .keyboardShortcut("N")
 
         // Bouton n°2
         Button("Add Text", action: {})
-          /// Raccourci clavier :  shift (car maj) + cmd + t
+          /// Raccourci clavier :  cmd + shift (car maj) + t
           .keyboardShortcut("T")
       }
 
@@ -66,11 +65,11 @@ struct CommandsModifier: App {
       CommandGroup(before: .sidebar) {
         /// Bouton n°1
         Button("Previous View", action: {})
-          /// Raccourci clavier
+          /// Autre raccourci clavier
           .keyboardShortcut("[")
         
         Button("Next View", action: {})
-          /// Raccourci clavier
+          /// Autre raccourci clavier
           .keyboardShortcut("]")
       }
     }

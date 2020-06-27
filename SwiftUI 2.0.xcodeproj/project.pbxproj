@@ -60,6 +60,8 @@
 		8DF93EEA24A7B62400B84CD0 /* ToolBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE924A7B62400B84CD0 /* ToolBarItemView.swift */; };
 		8DF93EEB24A7B62400B84CD0 /* ToolBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE924A7B62400B84CD0 /* ToolBarItemView.swift */; };
 		8DF93EED24A7DD2700B84CD0 /* ToolBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EEC24A7DD2700B84CD0 /* ToolBarModifier.swift */; };
+		8DF93EF124A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EF024A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift */; };
+		8DF93EF224A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EF024A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +166,7 @@
 		8DF93EE624A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarItemPlacementModifier.swift; sourceTree = "<group>"; };
 		8DF93EE924A7B62400B84CD0 /* ToolBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarItemView.swift; sourceTree = "<group>"; };
 		8DF93EEC24A7DD2700B84CD0 /* ToolBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarModifier.swift; sourceTree = "<group>"; };
+		8DF93EF024A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandGroupPlacementModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				8DC13F3824A75C00003CDA7A /* CommandsModifier.swift */,
+				8DF93EF024A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift */,
 				8DC13F3E24A76491003CDA7A /* DefaultAppStorageModifier.swift */,
 				8DDA5C5E24A3249300BF263B /* HelpModifier.swift */,
 				8DDA5C6124A3369B00BF263B /* KeyboardShortcutModifier.swift */,
@@ -592,6 +596,7 @@
 				8D72C99D24A5296F00C98579 /* ProgressviewModifier.swift in Sources */,
 				8DC13F3F24A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
 				8DDA5C6224A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
+				8DF93EF124A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift in Sources */,
 				8DDA5C5F24A3249300BF263B /* HelpModifier.swift in Sources */,
 				8DC13F4224A764BC003CDA7A /* OnChangeModifier.swift in Sources */,
 				8DF93E9A24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
@@ -618,6 +623,7 @@
 				8D72C99E24A5296F00C98579 /* ProgressviewModifier.swift in Sources */,
 				8DC13F4024A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
 				8DDA5C6324A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
+				8DF93EF224A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift in Sources */,
 				8DDA5C6024A3249300BF263B /* HelpModifier.swift in Sources */,
 				8DC13F4324A764BC003CDA7A /* OnChangeModifier.swift in Sources */,
 				8DF93E9B24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,

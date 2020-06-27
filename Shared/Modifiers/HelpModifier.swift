@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// Apparition du modifier help afin de facilité l'accesibilité de l'application
-/// Disponible sur : i•Pad•OS / tvOS / macOS / Mac Catalyst
+/// Disponible sur : i•Pad•OS / watcOS / tvOS / macOS / Mac Catalyst
 ///
 ///   • i•Pad•OS : voiceOver lira la String contenu dans le modifier
 ///   • tvOS ??
