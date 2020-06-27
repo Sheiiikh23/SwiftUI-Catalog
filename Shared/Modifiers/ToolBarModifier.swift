@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+#warning("À améliorer")
+
 struct ToolBarModifier: View {
   var body: some View {
     NavigationView {

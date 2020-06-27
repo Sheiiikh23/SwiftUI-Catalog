@@ -11,6 +11,8 @@ import SwiftUI
 /// Il existe des shortcuts pré-builder par Apple
 /// En voici deux importants
 
+#warning("À améliorer")
+
 struct KeyboardShortcut: View {
     var body: some View {
       VStack(spacing: 40) {

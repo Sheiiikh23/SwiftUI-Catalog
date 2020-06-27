@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+#warning("À améliorer")
+
 struct HelpModifier: View {
   var body: some View {
     Button(action: {}) {

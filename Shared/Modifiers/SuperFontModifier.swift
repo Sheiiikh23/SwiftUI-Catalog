@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+#warning("À améliorer")
+
 struct SuperFontModifier: View {
     var body: some View {
         Text("Hello, world!")
