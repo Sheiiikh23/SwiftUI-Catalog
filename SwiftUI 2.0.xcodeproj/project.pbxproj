@@ -311,8 +311,8 @@
 		8DF93EAB24A78E9000B84CD0 /* SwiftUI 2.0 watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				8DF93EAC24A78E9200B84CD0 /* Assets.xcassets */,
 				8DF93EAE24A78E9200B84CD0 /* Info.plist */,
+				8DF93EAC24A78E9200B84CD0 /* Assets.xcassets */,
 			);
 			path = "SwiftUI 2.0 watchOS";
 			sourceTree = "<group>";

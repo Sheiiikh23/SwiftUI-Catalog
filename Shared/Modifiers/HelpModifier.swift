@@ -7,17 +7,21 @@
 
 import SwiftUI
 
-#warning("Refacto")
+/// Apparition du modifier help afin de facilité l'accesibilité de l'application
+/// Disponible sur : i•Pad•OS / tvOS / macOS / Mac Catalyst
+///
+///   • i•Pad•OS : voiceOver lira la String contenu dans le modifier
+///   • tvOS ??
+///   • macOS / Mac Catalyst: info bulle "classique"
+
+#warning("Lever les incertitudes")
 
 struct HelpModifier: View {
   var body: some View {
     Button(action: {}) {
       Label("Hello World !", systemImage: "person")
     }
-    // Sur macOS créer une bulle si on reste sur le bouton (bulle classique)
-    // iPadOS ?? 
-    // Sur iOS voiceOver lira la string dans cette méthode
-    .help("Text saying Hello World by Lucas Abijmil")
+    .help("Text saying Hello World with a person icon")
   }
 }
 
