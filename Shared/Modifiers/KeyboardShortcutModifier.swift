@@ -30,7 +30,7 @@ import SwiftUI
 ///   • tab : U+0009 ??
 ///   • space: U+0020 ??
 ///   • return : U+00D ??
-///   • character: String custom
+///   • character: raccourci clavier custom d'un character UNIQUE
 
 #warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
 #warning("Lever les incertitudes. Atteindre les udpates de la doc")

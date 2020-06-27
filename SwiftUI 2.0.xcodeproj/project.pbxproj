@@ -62,6 +62,7 @@
 		8DF93EED24A7DD2700B84CD0 /* ToolBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EEC24A7DD2700B84CD0 /* ToolBarModifier.swift */; };
 		8DF93EF124A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EF024A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift */; };
 		8DF93EF224A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EF024A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift */; };
+		8DF93EF424A7E72F00B84CD0 /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EF324A7E72F00B84CD0 /* GaugeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +168,7 @@
 		8DF93EE924A7B62400B84CD0 /* ToolBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarItemView.swift; sourceTree = "<group>"; };
 		8DF93EEC24A7DD2700B84CD0 /* ToolBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarModifier.swift; sourceTree = "<group>"; };
 		8DF93EF024A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandGroupPlacementModifier.swift; sourceTree = "<group>"; };
+		8DF93EF324A7E72F00B84CD0 /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,6 +353,7 @@
 		8DF93ED224A78EF300B84CD0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8DF93EF324A7E72F00B84CD0 /* GaugeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -656,6 +659,7 @@
 				8DF93EBD24A78E9200B84CD0 /* NotificationController.swift in Sources */,
 				8DF93EBB24A78E9200B84CD0 /* ContentView.swift in Sources */,
 				8DF93EB924A78E9200B84CD0 /* SwiftUI_2_0App.swift in Sources */,
+				8DF93EF424A7E72F00B84CD0 /* GaugeView.swift in Sources */,
 				8DF93EBF24A78E9200B84CD0 /* NotificationView.swift in Sources */,
 				8DF93EED24A7DD2700B84CD0 /* ToolBarModifier.swift in Sources */,
 			);

@@ -14,11 +14,11 @@ import SwiftUI
 /// Linéaire: par défaut si une value avec un total (par défaut = 1) à la progressView
 
 /// Modifiers notables sur cette View:
-///   • accentColor ––> effectif uniquement sur la progressView Linéaire
+///   • accentColor ––> effectif uniquement sur la progressView Linéaire sur i•Pad•OS
 ///   • foregroundColor ––> modifie uniquement la couleur de Text Circulaire & Linéaire
-///   • font ––> effectif uniquement sur les progressView Circulaire
-///   • frame ––> la width fonctionne uniquement sur les Linéaire • agit comme un padding sur le Circulaire – la height agit comme un padding (n'aggrandit pas la height de la bar mais agrandit celle de la View en elle-même)
-///   • cornerRadius ––> ne fonctionne pas sur le Linéaire et n'a pas d'intêrét sur le Circulaire (mais fonctionne tout de même)
+///   • font ––> effectif uniquement sur les progressView Circulaire sur i•Pad•OS
+///   • frame ––> la width fonctionne uniquement sur les Linéaire • agit comme un padding sur le Circulaire – la height agit comme un padding (n'aggrandit pas la height de la bar mais agrandit celle de la View en elle-même) sur i•Pad•OS
+///   • cornerRadius ––> ne fonctionne pas sur le Linéaire et n'a pas d'intêrét sur le Circulaire (mais fonctionne tout de même) sur i•Pad•OS
 
 struct ProgressViews: View {
 
