@@ -7,11 +7,21 @@
 
 import SwiftUI
 
+/// Apparition des Settings : correspond aux préférences (cmd + ,) sur Mac
+/// Disponible sur : macOS / Mac Catalyst
+/// Cette View contient principalement des Button / Slider / ColorPicker etc...
+
 struct SettingsView: App {
-  var body: some Scene {
+  @SceneBuilder var body: some Scene {
     WindowGroup {
       LabelView()
     }
-
+    /// Check de l'OS (car uniquement disponible sur macOS)
+    #if os(macOS)
+    Settings {
+      Text("Add your setting UI here")
+        .padding()
+    }
+    #endif
   }
 }

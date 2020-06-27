@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// Apparition des Labels : Text + Image / Icon
-/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Cataclyst
+/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///   Text: String
 ///   Image/ systemImage • icon : String • Shape (+ modifiers)
 
