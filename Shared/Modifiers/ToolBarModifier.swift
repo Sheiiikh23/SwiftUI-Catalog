@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-#warning("Refacto")
+/// Arrivé du toolBar modifier obligatoirement contenu dans une NavigationView ––> i•Pad•OS / (watchOS dans le futur) /
 
 struct ToolBarModifier: View {
   var body: some View {
@@ -22,12 +22,16 @@ struct ToolBarModifier: View {
           Spacer()
         }
       }
+
       .navigationBarTitle("Test toolBar")
       // Sur watchOS la toolBar permet de pin un bouton tout en haut de l'écran
       //      --> Placement .primaryAction
       // MARK: Normalement censé remplir la navigationBarItems
       //  --> À noter qu'on peut toujours utiliser navigationBarItem(leading, trailing)
       .toolbar {
+        ToolbarItem(placement: .automatic) {
+          Text("f")
+        }
         // D'autres placement disponible à tester
         // Typqiement pour le navigationBarLeading  = primaryAction
         ToolbarItem(placement: .navigationBarLeading) {
