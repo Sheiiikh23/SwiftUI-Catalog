@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-#warning("À améliorer")
+#warning("Refacto")
 
 struct ToolBarModifier: View {
   var body: some View {

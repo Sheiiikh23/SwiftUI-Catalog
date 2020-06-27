@@ -11,6 +11,8 @@
 		8D51323424A3EE48007B13A3 /* LabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelModifier.swift */; };
 		8D72C99D24A5296F00C98579 /* ProgressviewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72C99C24A5296F00C98579 /* ProgressviewModifier.swift */; };
 		8D72C99E24A5296F00C98579 /* ProgressviewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72C99C24A5296F00C98579 /* ProgressviewModifier.swift */; };
+		8DC13F3924A75C00003CDA7A /* CommandModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC13F3824A75C00003CDA7A /* CommandModifier.swift */; };
+		8DC13F3A24A75C00003CDA7A /* CommandModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC13F3824A75C00003CDA7A /* CommandModifier.swift */; };
 		8DDA5C3724A31A5800BF263B /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C3624A31A5800BF263B /* Tests_iOS.swift */; };
 		8DDA5C4224A31A5800BF263B /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C4124A31A5800BF263B /* Tests_macOS.swift */; };
 		8DDA5C4424A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C1B24A31A5700BF263B /* SwiftUI_2_0App.swift */; };
@@ -51,6 +53,7 @@
 /* Begin PBXFileReference section */
 		8D51323224A3EE48007B13A3 /* LabelModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelModifier.swift; sourceTree = "<group>"; };
 		8D72C99C24A5296F00C98579 /* ProgressviewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressviewModifier.swift; sourceTree = "<group>"; };
+		8DC13F3824A75C00003CDA7A /* CommandModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandModifier.swift; sourceTree = "<group>"; };
 		8DDA5C1B24A31A5700BF263B /* SwiftUI_2_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_2_0App.swift; sourceTree = "<group>"; };
 		8DDA5C1C24A31A5700BF263B /* SuperFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperFontModifier.swift; sourceTree = "<group>"; };
 		8DDA5C1D24A31A5800BF263B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -178,6 +181,7 @@
 			children = (
 				8D51323224A3EE48007B13A3 /* LabelModifier.swift */,
 				8D72C99C24A5296F00C98579 /* ProgressviewModifier.swift */,
+				8DC13F3824A75C00003CDA7A /* CommandModifier.swift */,
 				8DDA5C5E24A3249300BF263B /* HelpModifier.swift */,
 				8DDA5C6124A3369B00BF263B /* KeyboardShortcutModifier.swift */,
 				8DDA5C1C24A31A5700BF263B /* SuperFontModifier.swift */,
@@ -358,6 +362,7 @@
 				8DDA5C5C24A3217D00BF263B /* LabelView.swift in Sources */,
 				8DDA5C6524A3388A00BF263B /* ProgressViews.swift in Sources */,
 				8D51323324A3EE48007B13A3 /* LabelModifier.swift in Sources */,
+				8DC13F3924A75C00003CDA7A /* CommandModifier.swift in Sources */,
 				8D72C99D24A5296F00C98579 /* ProgressviewModifier.swift in Sources */,
 				8DDA5C6224A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
 				8DDA5C5F24A3249300BF263B /* HelpModifier.swift in Sources */,
@@ -374,6 +379,7 @@
 				8DDA5C5D24A3217D00BF263B /* LabelView.swift in Sources */,
 				8DDA5C6624A3388A00BF263B /* ProgressViews.swift in Sources */,
 				8D51323424A3EE48007B13A3 /* LabelModifier.swift in Sources */,
+				8DC13F3A24A75C00003CDA7A /* CommandModifier.swift in Sources */,
 				8D72C99E24A5296F00C98579 /* ProgressviewModifier.swift in Sources */,
 				8DDA5C6324A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
 				8DDA5C6024A3249300BF263B /* HelpModifier.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-#warning("À améliorer")
+#warning("Refacto")
 
 struct SuperFontModifier: View {
     var body: some View {

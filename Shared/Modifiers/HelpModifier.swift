@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-#warning("À améliorer")
+#warning("Refacto")
 
 struct HelpModifier: View {
   var body: some View {

@@ -11,7 +11,7 @@ import SwiftUI
 /// Il existe des shortcuts pré-builder par Apple
 /// En voici deux importants
 
-#warning("À améliorer")
+#warning("Refacto")
 
 struct KeyboardShortcut: View {
     var body: some View {
