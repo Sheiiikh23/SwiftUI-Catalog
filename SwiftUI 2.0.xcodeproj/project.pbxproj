@@ -59,6 +59,7 @@
 		8DF93EE824A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE624A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift */; };
 		8DF93EEA24A7B62400B84CD0 /* ToolBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE924A7B62400B84CD0 /* ToolBarItemView.swift */; };
 		8DF93EEB24A7B62400B84CD0 /* ToolBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE924A7B62400B84CD0 /* ToolBarItemView.swift */; };
+		8DF93EED24A7DD2700B84CD0 /* ToolBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EEC24A7DD2700B84CD0 /* ToolBarModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +163,7 @@
 		8DF93EDE24A7955D00B84CD0 /* ChildrenListWithSideBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenListWithSideBarStyle.swift; sourceTree = "<group>"; };
 		8DF93EE624A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarItemPlacementModifier.swift; sourceTree = "<group>"; };
 		8DF93EE924A7B62400B84CD0 /* ToolBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarItemView.swift; sourceTree = "<group>"; };
+		8DF93EEC24A7DD2700B84CD0 /* ToolBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				8DF93ED424A78F0700B84CD0 /* ListStyleModifier.swift */,
+				8DF93EEC24A7DD2700B84CD0 /* ToolBarModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -648,6 +651,7 @@
 				8DF93EBB24A78E9200B84CD0 /* ContentView.swift in Sources */,
 				8DF93EB924A78E9200B84CD0 /* SwiftUI_2_0App.swift in Sources */,
 				8DF93EBF24A78E9200B84CD0 /* NotificationView.swift in Sources */,
+				8DF93EED24A7DD2700B84CD0 /* ToolBarModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

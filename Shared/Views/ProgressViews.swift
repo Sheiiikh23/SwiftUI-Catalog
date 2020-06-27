@@ -9,6 +9,7 @@ import SwiftUI
 
 /// Apparition des ProgressView: Circulaire (non déterminé) ou Linéaire (déterminé)
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Cataclyst
+/// 
 /// Circulaire: par défaut si aucune value n'est donnée à la progressView
 /// Linéaire: par défaut si une value avec un total (par défaut = 1) à la progressView
 

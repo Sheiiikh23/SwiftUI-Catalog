@@ -8,7 +8,8 @@
 import SwiftUI
 
 /// ToolBarItemPlacement modifier
-/// Tous les ToolBarItemPlacement sont disponibles sur toutes les plateformes
+/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+/// 
 /// Voici les ToolBarItemPlacement présent nativement (cf watchExtension):
 ///   • automatique ––> comportement propre à la plateforme
 ///   • bottomBar ––> item placé dans la bottom toolbar
@@ -23,6 +24,7 @@ import SwiftUI
 ///   • status ––> représente un item de nature informationelle ne représentant pas une action pouvant être entrepris par l'utilisateur – propre à la plateforme ??
 
 
+#warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
 #warning("Lever les incertitudes. Atteinte de la doc...")
 
 struct AutomaticPlacement: View {

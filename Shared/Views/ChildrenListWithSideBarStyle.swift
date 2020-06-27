@@ -9,6 +9,7 @@ import SwiftUI
 
 /// Apparition des list avec childrens (sous listes imbriquées)
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+/// 
 /// Le model doit contenir des childrens ––> tableau optionnel du model
 /// Choisir le constructeur qui prend des children :
 ///   • List(data, children: \.childrenProperty) ... 

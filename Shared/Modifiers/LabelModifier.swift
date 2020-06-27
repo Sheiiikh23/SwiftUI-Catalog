@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// Modifier propre pour les Labels :
-///   - labelStyle(LabelStyle) ––> i•Pad•OS / watchOS / tvOS / macOs / Mac Catalyst
+/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOs / Mac Catalyst
 ///   
 /// LabelStyle présents nativement :
 ///   • DefaultLabelStyle ––> par défaut

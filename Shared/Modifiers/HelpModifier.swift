@@ -14,6 +14,7 @@ import SwiftUI
 ///   • tvOS ??
 ///   • macOS / Mac Catalyst: info bulle "classique"
 
+#warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
 #warning("Lever les incertitudes")
 
 struct HelpModifier: View {

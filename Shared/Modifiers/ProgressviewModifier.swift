@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// Modifier propre pour les ProgressView :
-///   - progressViewStyle(ProgressViewStyle) ––> i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///   
 /// ProgressViewStyle présents nativement :
 ///  • DefaultProgressViewStyle ––> par défaut (indéterminé = Circulaire / déterminé = Linéaire)

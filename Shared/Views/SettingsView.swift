@@ -9,6 +9,7 @@ import SwiftUI
 
 /// Apparition des Settings : correspond aux préférences (cmd + ,) sur Mac
 /// Disponible sur : macOS / Mac Catalyst
+/// 
 /// Cette View contient principalement des Button / Slider / ColorPicker etc... bref qui des components qui vont changer le UI de l'application
 
 struct SettingsView: App {

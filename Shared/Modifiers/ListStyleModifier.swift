@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// Nouveau ListeStyle propre pour les List :
-///   - listStyle(ListStyle) ––> i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// ListStyle présents nativement (cf. watchExtension) :
 ///   • DefaultListStyle ––> par défaut pour i•Pad•Os / tvOS / macOS / Mac Catalyst

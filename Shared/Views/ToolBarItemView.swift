@@ -9,6 +9,7 @@ import SwiftUI
 
 /// Apparition des ToolBarItem présent uniquement dans une toolBar et donc dans une NavigationView
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+/// 
 /// Plusieurs constructeurs disponible :
 ///   • ToolBarItem ...
 ///   • ToolBarItem(id: ) ...
@@ -17,4 +18,4 @@ import SwiftUI
 
 // MARK: pour voir des exemple cf ToolBarItemPlaceModifier
 
-
+#warning("Normalement dispo pour watchOS. Regarder les updates de la doc")

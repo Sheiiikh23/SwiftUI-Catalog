@@ -7,19 +7,26 @@
 
 import SwiftUI
 
-/// Les keyboardShortcut permettent à l'utilisateur d'utiliser des raccourcis claviers
-/// Il existe des shortcuts pré-builder par Apple
-/// En voici deux importants
+/// Apparition du modifier keyboardShortcut qui permet de fournir des raccourcis clavier
+/// Disponible sur : i•Pad•OS / tvOS / macOS / Mac Catalyst
+///
+/// Principalement utilisé pour le SceneGroup
+/// Permet d'activer un Button ou un Toggle
+///
 
-#warning("Refacto")
+#warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
 
 struct KeyboardShortcut: View {
+
+@State private var toggleValue = false
+
     var body: some View {
       VStack(spacing: 40) {
         Button("Cancel", action: {})
           .keyboardShortcut(.cancelAction)
         Button("Save", action: {})
           .keyboardShortcut(.defaultAction)
+        Toggle("Toggle me", isOn: $toggleValue)
       }
     }
 }

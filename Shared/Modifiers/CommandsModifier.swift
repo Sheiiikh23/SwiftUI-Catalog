@@ -8,7 +8,8 @@
 import SwiftUI
 
 /// Modifier commands : rajout de fonctionnalité à l'App
-/// - commands ––> i•Pad•OS / macOS / Mac Catalyst / tvOS
+/// Disponible sur : i•Pad•OS / macOS / Mac Catalyst / tvOS
+/// 
 ///   • EmptyCommands ––> sert à rien 😅:
 ///     - i•Pad•OS / macOS / Mac Catalyst / tvOS
 ///   • CommandGroup(before: CommandGroupPlacement) | CommandGroup(after: CommandGroupPlacement) | CommandGroup(replacing: CommandGRoupPlacement)
@@ -33,7 +34,7 @@ import SwiftUI
 ///   CommandGroupPlacement cf: https://developer.apple.com/documentation/swiftui/commandgroupplacement
 ///   Penser à rajouter des keyboardShortcut
 
-#warning("Essayer pour remplacer l'inconnu")
+#warning("Lever les incertitudes")
 
 struct CommandsModifier: App {
   var body: some Scene {
