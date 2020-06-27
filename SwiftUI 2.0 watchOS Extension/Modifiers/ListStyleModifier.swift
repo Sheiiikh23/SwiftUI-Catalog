@@ -69,8 +69,8 @@ struct ListStyleModifier_Previews: PreviewProvider {
     static var previews: some View {
       Group {
         DefaultListStyleModifier()
-//        CarouselListStyleModifier()
-//        EllipticalListStyleModifier()
+        CarouselListStyleModifier()
+        EllipticalListStyleModifier()
         PlainListStyleModifier()
       }
     }
