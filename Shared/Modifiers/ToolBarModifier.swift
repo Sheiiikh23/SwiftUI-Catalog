@@ -11,7 +11,7 @@ struct ToolBarModifier: View {
   var body: some View {
     NavigationView {
       List {
-        ForEach(1...10, id: \.self) { item in
+        ForEach(1...100, id: \.self) { item in
           Text("Hello Toolbar")
         }
         HStack {
@@ -44,9 +44,7 @@ struct ToolBarModifier: View {
                 .font(.title2)
             })
           }
-
         }
-
       }
     }
   }

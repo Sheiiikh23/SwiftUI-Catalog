@@ -12,7 +12,7 @@ import SwiftUI
 ///   Text: String
 ///   Image/ systemImage • icon : String • Shape (+ modifiers)
 
-#warning("Pour le moment les systemImage sont affichés en topLeading par rapport au Text apparement ça devrait être fix prochainement (ou non)")
+#warning("Pour le moment les systemImage sont affichés en topLeading par rapport au Text apparement ça devrait être fix prochainement")
 
 
 struct LabelView: View {

@@ -48,7 +48,7 @@ struct ProgressviewModifier: View {
       /// Rappel: total par défaut = 1
       ProgressView("Indeterminate progressView into determinate one", value: 0.1)
         .accentColor(.pink) /// Modifier appliqué car le Circulaire devient Linéaire
-        .font(.title) // Modifier pas appliqué car le Circulaire deviant linéaire
+        .font(.title) // Modifier pas appliqué car le Circulaire deviant Linéaire
         .progressViewStyle(LinearProgressViewStyle()) /// Modifier qui transforme un Circulaire en Linéaire
 
       /// Linéaire ––> Circulaire
@@ -78,7 +78,7 @@ struct ProgressviewModifier: View {
   }
 }
 
-#warning("Regarder pour qu'un ProgressviewStyle s'applique uniquement sur les Circulaire / Linéaire ")
+#warning("Regarder pour qu'un ProgressviewStyle s'applique uniquement sur les Circulaires / Linéaires ")
 struct CustomProgressViewStyle: ProgressViewStyle {
   func makeBody(configuration: Configuration) -> some View {
     ProgressView(configuration)

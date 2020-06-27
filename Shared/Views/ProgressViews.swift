@@ -16,7 +16,7 @@ import SwiftUI
 ///   • accentColor ––> effectif uniquement sur la progressView Linéaire
 ///   • foregroundColor ––> modifie uniquement la couleur de Text Circulaire & Linéaire
 ///   • font ––> effectif uniquement sur les progressView Circulaire
-///   • frame ––> la width fonctionne – la height agit comme un padding (n'aggrandit pas la height de la bar mais agrandit celle de la View en elle-même)
+///   • frame ––> la width fonctionne uniquement sur les Linéaire • agit comme un padding sur le Circulaire – la height agit comme un padding (n'aggrandit pas la height de la bar mais agrandit celle de la View en elle-même)
 ///   • cornerRadius ––> ne fonctionne pas sur le Linéaire et n'a pas d'intêrét sur le Circulaire (mais fonctionne tout de même)
 
 struct ProgressViews: View {
@@ -33,12 +33,14 @@ struct ProgressViews: View {
         /// Modifiers pour la ProgressView
         .scaleEffect(1.5, anchor: .center)
         .accentColor(.green) /// Modifier pas appliqué car Circulaire
+        .frame(width: 200) /// Ùpdofoer qui agit comme un padding
 
       /// Créer une progressView Circulaire avec une String
       ProgressView("Constructeur n°2")
         /// Modifiers pour le Text et pour la ProgressView
         .foregroundColor(.green) /// change UNIQUEMENT la couleur du text
         .font(.title) /// Modifier bien appliqué car Circulaire
+
 
       /// Créer une progressView Circulaire avec un Text
       /// Avantage de ce constructeur: possibilité de custom le Text
