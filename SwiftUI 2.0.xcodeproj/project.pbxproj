@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		8D442ED824A7FE3A009995DD /* GaugeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442ED724A7FE3A009995DD /* GaugeModifier.swift */; };
+		8D442EDA24A80402009995DD /* MatchedGeometryEffectModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442ED924A80401009995DD /* MatchedGeometryEffectModifier.swift */; };
+		8D442EDB24A80402009995DD /* MatchedGeometryEffectModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442ED924A80401009995DD /* MatchedGeometryEffectModifier.swift */; };
+		8D442EDD24A80549009995DD /* ClipShapeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDC24A80549009995DD /* ClipShapeModifier.swift */; };
+		8D442EDE24A80549009995DD /* ClipShapeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDC24A80549009995DD /* ClipShapeModifier.swift */; };
+		8D442EE024A808CE009995DD /* CustomFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDF24A808CE009995DD /* CustomFontModifier.swift */; };
+		8D442EE124A808CE009995DD /* CustomFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDF24A808CE009995DD /* CustomFontModifier.swift */; };
+		8D442EE424A80B23009995DD /* ImageInTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE324A80B23009995DD /* ImageInTextView.swift */; };
+		8D442EE524A80B23009995DD /* ImageInTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE324A80B23009995DD /* ImageInTextView.swift */; };
+		8D442EE724A80B2C009995DD /* ScaleMetricWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE624A80B2C009995DD /* ScaleMetricWrapper.swift */; };
+		8D442EE824A80B2C009995DD /* ScaleMetricWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE624A80B2C009995DD /* ScaleMetricWrapper.swift */; };
 		8D51323324A3EE48007B13A3 /* LabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelModifier.swift */; };
 		8D51323424A3EE48007B13A3 /* LabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelModifier.swift */; };
 		8D72C99D24A5296F00C98579 /* ProgressviewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72C99C24A5296F00C98579 /* ProgressviewModifier.swift */; };
@@ -124,6 +134,11 @@
 
 /* Begin PBXFileReference section */
 		8D442ED724A7FE3A009995DD /* GaugeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeModifier.swift; sourceTree = "<group>"; };
+		8D442ED924A80401009995DD /* MatchedGeometryEffectModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectModifier.swift; sourceTree = "<group>"; };
+		8D442EDC24A80549009995DD /* ClipShapeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShapeModifier.swift; sourceTree = "<group>"; };
+		8D442EDF24A808CE009995DD /* CustomFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontModifier.swift; sourceTree = "<group>"; };
+		8D442EE324A80B23009995DD /* ImageInTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInTextView.swift; sourceTree = "<group>"; };
+		8D442EE624A80B2C009995DD /* ScaleMetricWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleMetricWrapper.swift; sourceTree = "<group>"; };
 		8D51323224A3EE48007B13A3 /* LabelModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelModifier.swift; sourceTree = "<group>"; };
 		8D72C99C24A5296F00C98579 /* ProgressviewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressviewModifier.swift; sourceTree = "<group>"; };
 		8DC13F3824A75C00003CDA7A /* CommandsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsModifier.swift; sourceTree = "<group>"; };
@@ -212,6 +227,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D442EE224A809B4009995DD /* PropretyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				8D442EE624A80B2C009995DD /* ScaleMetricWrapper.swift */,
+			);
+			path = PropretyWrapper;
+			sourceTree = "<group>";
+		};
 		8DDA5C1524A31A5600BF263B = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				8DDA5C1B24A31A5700BF263B /* SwiftUI_2_0App.swift */,
+				8D442EE224A809B4009995DD /* PropretyWrapper */,
 				8DEBD12E24A3E643004AAE41 /* Views */,
 				8DEBD12D24A3E63D004AAE41 /* Modifiers */,
 				8DDA5C1D24A31A5800BF263B /* Assets.xcassets */,
@@ -302,6 +326,9 @@
 				8DC13F4424A764D0003CDA7A /* WindowStyleModifier.swift */,
 				8DC13F4724A764E3003CDA7A /* WindowToolbarStyleModifier.swift */,
 				8DF93EE624A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift */,
+				8D442ED924A80401009995DD /* MatchedGeometryEffectModifier.swift */,
+				8D442EDC24A80549009995DD /* ClipShapeModifier.swift */,
+				8D442EDF24A808CE009995DD /* CustomFontModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -314,6 +341,7 @@
 				8DDA5C6424A3388A00BF263B /* ProgressViews.swift */,
 				8DC13F3B24A76019003CDA7A /* SettingsView.swift */,
 				8DF93EE924A7B62400B84CD0 /* ToolBarItemView.swift */,
+				8D442EE324A80B23009995DD /* ImageInTextView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -590,21 +618,26 @@
 			files = (
 				8DDA5C4624A31A5800BF263B /* SuperFontModifier.swift in Sources */,
 				8DEBD13024A3E6AA004AAE41 /* ToolBarModifier.swift in Sources */,
+				8D442EE424A80B23009995DD /* ImageInTextView.swift in Sources */,
 				8DC13F4824A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,
 				8DDA5C4424A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
 				8DDA5C5C24A3217D00BF263B /* LabelView.swift in Sources */,
 				8DF93EDF24A7955D00B84CD0 /* ChildrenListWithSideBarStyle.swift in Sources */,
 				8DC13F4524A764D0003CDA7A /* WindowStyleModifier.swift in Sources */,
+				8D442EE024A808CE009995DD /* CustomFontModifier.swift in Sources */,
 				8DDA5C6524A3388A00BF263B /* ProgressViews.swift in Sources */,
 				8D51323324A3EE48007B13A3 /* LabelModifier.swift in Sources */,
 				8DF93EEA24A7B62400B84CD0 /* ToolBarItemView.swift in Sources */,
 				8DC13F3924A75C00003CDA7A /* CommandsModifier.swift in Sources */,
 				8D72C99D24A5296F00C98579 /* ProgressviewModifier.swift in Sources */,
 				8DC13F3F24A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
+				8D442EDA24A80402009995DD /* MatchedGeometryEffectModifier.swift in Sources */,
 				8DDA5C6224A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
+				8D442EE724A80B2C009995DD /* ScaleMetricWrapper.swift in Sources */,
 				8DF93EF124A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift in Sources */,
 				8DDA5C5F24A3249300BF263B /* HelpModifier.swift in Sources */,
 				8DC13F4224A764BC003CDA7A /* OnChangeModifier.swift in Sources */,
+				8D442EDD24A80549009995DD /* ClipShapeModifier.swift in Sources */,
 				8DF93E9A24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
 				8DC13F3C24A76019003CDA7A /* SettingsView.swift in Sources */,
 				8DF93EE724A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift in Sources */,
@@ -617,21 +650,26 @@
 			files = (
 				8DDA5C4724A31A5800BF263B /* SuperFontModifier.swift in Sources */,
 				8DEBD13124A3E6AA004AAE41 /* ToolBarModifier.swift in Sources */,
+				8D442EE524A80B23009995DD /* ImageInTextView.swift in Sources */,
 				8DC13F4924A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,
 				8DDA5C4524A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
 				8DDA5C5D24A3217D00BF263B /* LabelView.swift in Sources */,
 				8DF93EE024A7955D00B84CD0 /* ChildrenListWithSideBarStyle.swift in Sources */,
 				8DC13F4624A764D0003CDA7A /* WindowStyleModifier.swift in Sources */,
+				8D442EE124A808CE009995DD /* CustomFontModifier.swift in Sources */,
 				8DDA5C6624A3388A00BF263B /* ProgressViews.swift in Sources */,
 				8D51323424A3EE48007B13A3 /* LabelModifier.swift in Sources */,
 				8DF93EEB24A7B62400B84CD0 /* ToolBarItemView.swift in Sources */,
 				8DC13F3A24A75C00003CDA7A /* CommandsModifier.swift in Sources */,
 				8D72C99E24A5296F00C98579 /* ProgressviewModifier.swift in Sources */,
 				8DC13F4024A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
+				8D442EDB24A80402009995DD /* MatchedGeometryEffectModifier.swift in Sources */,
 				8DDA5C6324A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
+				8D442EE824A80B2C009995DD /* ScaleMetricWrapper.swift in Sources */,
 				8DF93EF224A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift in Sources */,
 				8DDA5C6024A3249300BF263B /* HelpModifier.swift in Sources */,
 				8DC13F4324A764BC003CDA7A /* OnChangeModifier.swift in Sources */,
+				8D442EDE24A80549009995DD /* ClipShapeModifier.swift in Sources */,
 				8DF93E9B24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
 				8DC13F3D24A76019003CDA7A /* SettingsView.swift in Sources */,
 				8DF93EE824A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift in Sources */,
