@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D442ED824A7FE3A009995DD /* GaugeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442ED724A7FE3A009995DD /* GaugeModifier.swift */; };
 		8D51323324A3EE48007B13A3 /* LabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelModifier.swift */; };
 		8D51323424A3EE48007B13A3 /* LabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelModifier.swift */; };
 		8D72C99D24A5296F00C98579 /* ProgressviewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72C99C24A5296F00C98579 /* ProgressviewModifier.swift */; };
@@ -122,6 +123,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8D442ED724A7FE3A009995DD /* GaugeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeModifier.swift; sourceTree = "<group>"; };
 		8D51323224A3EE48007B13A3 /* LabelModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelModifier.swift; sourceTree = "<group>"; };
 		8D72C99C24A5296F00C98579 /* ProgressviewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressviewModifier.swift; sourceTree = "<group>"; };
 		8DC13F3824A75C00003CDA7A /* CommandsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsModifier.swift; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 			children = (
 				8DF93ED424A78F0700B84CD0 /* ListStyleModifier.swift */,
 				8DF93EEC24A7DD2700B84CD0 /* ToolBarModifier.swift */,
+				8D442ED724A7FE3A009995DD /* GaugeModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -661,6 +664,7 @@
 				8DF93EB924A78E9200B84CD0 /* SwiftUI_2_0App.swift in Sources */,
 				8DF93EF424A7E72F00B84CD0 /* GaugeView.swift in Sources */,
 				8DF93EBF24A78E9200B84CD0 /* NotificationView.swift in Sources */,
+				8D442ED824A7FE3A009995DD /* GaugeModifier.swift in Sources */,
 				8DF93EED24A7DD2700B84CD0 /* ToolBarModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
