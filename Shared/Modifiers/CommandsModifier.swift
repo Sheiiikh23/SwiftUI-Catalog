@@ -12,7 +12,7 @@ import SwiftUI
 /// 
 ///   • EmptyCommands ––> sert à rien 😅:
 ///     - i•Pad•OS / macOS / Mac Catalyst / tvOS
-///   • CommandGroup(before: CommandGroupPlacement) | CommandGroup(after: CommandGroupPlacement) | CommandGroup(replacing: CommandGRoupPlacement) | cf CommandgroupPlacement
+///   • CommandGroup(before: CommandGroupPlacement) | CommandGroup(after: CommandGroupPlacement) | CommandGroup(replacing: CommandGRoupPlacement) 
 ///     - macOS / Mac Catalyst : forme de collections d'éléments dans un menu ???
 ///     - i•Pad•OS / tvOS : "commandes clés" pour chaque commande ayant un keyboardShortcut
 ///   • CommandMenu("String"):

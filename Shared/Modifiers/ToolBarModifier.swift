@@ -11,7 +11,7 @@ import SwiftUI
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// Permet de créer une toolBar qui changenet d'apparence et d'endroit en fonction de la plateforme
-/// Cette Toolbart est essentiellement (pour pas dire exclusivement) composé de ToolbarItem (cf ToolBarItemPlaceModifier)
+/// Cette Toolbar est essentiellement (pour pas dire exclusivement) composée de ToolbarItem (cf ToolBarItemPlaceModifier)
 
 
 #warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
