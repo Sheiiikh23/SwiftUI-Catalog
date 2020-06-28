@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct SwiftUI_2_0App: App {
-    var body: some Scene {
-        WindowGroup {
-          LinkView()
-        }
+  // Déclaration des @StateObject & @EnvironmentObject
+  var body: some Scene {
+    WindowGroup {
+      LinkView()
     }
+  }
 }

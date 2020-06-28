@@ -7,9 +7,13 @@
 
 import SwiftUI
 
-/// Arrivé du toolBar modifier obligatoirement contenu dans une NavigationView ––> i•Pad•OS / watch OS  /
+/// Arrivé du toolBar modifier obligatoirement contenu dans une NavigationView ––> i•Pad•OS / watchOS /
+/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+///
+/// Permet de créer une toolBar qui changenet d'apparence et d'endroit en fonction de la plateforme
+/// Cette Toolbart est essentiellement (pour pas dire exclusivement) composé de ToolbarItem (cf ToolBarItemPlaceModifier)
 
-#warning("Refactor here")
+
 #warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
 
 struct ToolBarModifier: View {
@@ -25,26 +29,27 @@ struct ToolBarModifier: View {
           Spacer()
         }
       }
-
       .navigationBarTitle("Test toolBar")
-      // Sur watchOS la toolBar permet de pin un bouton tout en haut de l'écran
-      //      --> Placement .primaryAction
-      // MARK: Normalement censé remplir la navigationBarItems
-      //  --> À noter qu'on peut toujours utiliser navigationBarItem(leading, trailing)
+
+      /// Création de la toolBar
       .toolbar {
+
+        /// Ajout d'un ToolbarItem
         ToolbarItem(placement: .automatic) {
-          Text("f")
+          Text("Automatic AKA bottom leading")
         }
-        // D'autres placement disponible à tester
-        // Typqiement pour le navigationBarLeading  = primaryAction
+
+        /// Ajout d'un ToolbarItem
         ToolbarItem(placement: .navigationBarLeading) {
           Button("Action", action: { })
         }
-        // D'autres placement disponible à tester
+
+        /// Ajout d'un ToolbarItem
         ToolbarItem(placement: .navigationBarTrailing) {
           EditButton()
         }
-        // MARK: Pour le placement bottom on a sur iOS la barre grisée d'origine
+
+        /// Ajout d'un ToolbarItem
         ToolbarItem(placement: .bottomBar) {
           HStack {
             Spacer()
