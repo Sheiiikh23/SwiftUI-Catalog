@@ -14,6 +14,7 @@ import SwiftUI
 ///   • DefaultToggleStyle ––> par défaut, vert
 ///   • SwitchToggleStyle ––> pareil que DefaultToggleStyle
 ///   • SwitchToggleStyle(tint: Color) ––> custom le "foregroundColor" du toggle lorsque la value est true
+///   • CustomToggleStyle
 
 struct ToggleStyleModifier: View {
 
@@ -46,6 +47,14 @@ struct ToggleStyleModifier: View {
       }
       .toggleStyle(SwitchToggleStyle(tint: .pink))
     }
+  }
+}
+
+/// Créer un CustomToggleStyle 
+struct CustomToggleStyle: ToggleStyle {
+  func makeBody(configuration: Configuration) -> some View {
+    Toggle(configuration)
+      .foregroundColor(.pink)
   }
 }
 

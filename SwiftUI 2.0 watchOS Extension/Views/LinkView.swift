@@ -1,23 +1,14 @@
 //
 //  LinkView.swift
-//  SwiftUI 2.0
+//  SwiftUI 2.0 watchOS Extension
 //
 //  Created by Lucas Abijmil on 28/06/2020.
 //
 
 import SwiftUI
 
-/// Apparition des Link: redirige vers un site / appli
-/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
-///
-/// Deux construteurs :
-///   • Link(String, destination: URL)
-///   • Link(destination: URL) ...
-///
-/// Peut ouvrir des URLs classique dans Safari (siteApple)
-/// Peut ouvrirdes universal link afin d'ouvrir une App (wwdcAnnouncement redirige vers l'app News)
-/// Peut permettre d'ouvrir une view depuis un widget
-
+/// Apparition des Links sur watchOS : cf LinkView (shared file)
+/// Sur watchOS un link redirige l'utilisateur vers son iPhone
 
 struct LinkView: View {
 
@@ -48,7 +39,7 @@ struct LinkView: View {
 }
 
 struct LinkView_Previews: PreviewProvider {
-  static var previews: some View {
-    LinkView()
-  }
+    static var previews: some View {
+        LinkView()
+    }
 }
