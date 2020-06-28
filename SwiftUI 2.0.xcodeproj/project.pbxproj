@@ -10,6 +10,8 @@
 		8D3A766F24A892E600005971 /* ListItemTintModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A766E24A892E600005971 /* ListItemTintModifier.swift */; };
 		8D3A767024A892E600005971 /* ListItemTintModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A766E24A892E600005971 /* ListItemTintModifier.swift */; };
 		8D3A767224A899B000005971 /* ListItemTintModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767124A899B000005971 /* ListItemTintModifier.swift */; };
+		8D3A767424A89C2600005971 /* ToggleStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767324A89C2600005971 /* ToggleStyleModifier.swift */; };
+		8D3A767524A89C2600005971 /* ToggleStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767324A89C2600005971 /* ToggleStyleModifier.swift */; };
 		8D442ED824A7FE3A009995DD /* GaugeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442ED724A7FE3A009995DD /* GaugeModifier.swift */; };
 		8D442EDA24A80402009995DD /* MatchedGeometryEffectModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442ED924A80401009995DD /* MatchedGeometryEffectModifier.swift */; };
 		8D442EDB24A80402009995DD /* MatchedGeometryEffectModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442ED924A80401009995DD /* MatchedGeometryEffectModifier.swift */; };
@@ -138,6 +140,7 @@
 /* Begin PBXFileReference section */
 		8D3A766E24A892E600005971 /* ListItemTintModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTintModifier.swift; sourceTree = "<group>"; };
 		8D3A767124A899B000005971 /* ListItemTintModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTintModifier.swift; sourceTree = "<group>"; };
+		8D3A767324A89C2600005971 /* ToggleStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleStyleModifier.swift; sourceTree = "<group>"; };
 		8D442ED724A7FE3A009995DD /* GaugeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeModifier.swift; sourceTree = "<group>"; };
 		8D442ED924A80401009995DD /* MatchedGeometryEffectModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectModifier.swift; sourceTree = "<group>"; };
 		8D442EDC24A80549009995DD /* ClipShapeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShapeModifier.swift; sourceTree = "<group>"; };
@@ -335,6 +338,7 @@
 				8D442EDC24A80549009995DD /* ClipShapeModifier.swift */,
 				8D442EDF24A808CE009995DD /* CustomFontModifier.swift */,
 				8D3A766E24A892E600005971 /* ListItemTintModifier.swift */,
+				8D3A767324A89C2600005971 /* ToggleStyleModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -626,6 +630,7 @@
 				8DDA5C4624A31A5800BF263B /* SuperFontModifier.swift in Sources */,
 				8DEBD13024A3E6AA004AAE41 /* ToolBarModifier.swift in Sources */,
 				8D442EE424A80B23009995DD /* ImageInTextView.swift in Sources */,
+				8D3A767424A89C2600005971 /* ToggleStyleModifier.swift in Sources */,
 				8DC13F4824A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,
 				8D3A766F24A892E600005971 /* ListItemTintModifier.swift in Sources */,
 				8DDA5C4424A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
@@ -659,6 +664,7 @@
 				8DDA5C4724A31A5800BF263B /* SuperFontModifier.swift in Sources */,
 				8DEBD13124A3E6AA004AAE41 /* ToolBarModifier.swift in Sources */,
 				8D442EE524A80B23009995DD /* ImageInTextView.swift in Sources */,
+				8D3A767524A89C2600005971 /* ToggleStyleModifier.swift in Sources */,
 				8DC13F4924A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,
 				8D3A767024A892E600005971 /* ListItemTintModifier.swift in Sources */,
 				8DDA5C4524A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
