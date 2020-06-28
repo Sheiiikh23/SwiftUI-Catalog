@@ -12,6 +12,12 @@
 		8D3A767224A899B000005971 /* ListItemTintModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767124A899B000005971 /* ListItemTintModifier.swift */; };
 		8D3A767424A89C2600005971 /* ToggleStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767324A89C2600005971 /* ToggleStyleModifier.swift */; };
 		8D3A767524A89C2600005971 /* ToggleStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767324A89C2600005971 /* ToggleStyleModifier.swift */; };
+		8D3A767924A89FA200005971 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767824A89FA200005971 /* LinkView.swift */; };
+		8D3A767A24A89FA200005971 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767824A89FA200005971 /* LinkView.swift */; };
+		8D3A767C24A8A8BE00005971 /* EnvironmentOpenUrlWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767B24A8A8BE00005971 /* EnvironmentOpenUrlWrapper.swift */; };
+		8D3A767D24A8A8BE00005971 /* EnvironmentOpenUrlWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767B24A8A8BE00005971 /* EnvironmentOpenUrlWrapper.swift */; };
+		8D3A767F24A8AA1A00005971 /* SignInWithappleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767E24A8AA1A00005971 /* SignInWithappleButtonView.swift */; };
+		8D3A768024A8AA1A00005971 /* SignInWithappleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767E24A8AA1A00005971 /* SignInWithappleButtonView.swift */; };
 		8D442ED824A7FE3A009995DD /* GaugeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442ED724A7FE3A009995DD /* GaugeModifier.swift */; };
 		8D442EDA24A80402009995DD /* MatchedGeometryEffectModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442ED924A80401009995DD /* MatchedGeometryEffectModifier.swift */; };
 		8D442EDB24A80402009995DD /* MatchedGeometryEffectModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442ED924A80401009995DD /* MatchedGeometryEffectModifier.swift */; };
@@ -141,6 +147,9 @@
 		8D3A766E24A892E600005971 /* ListItemTintModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTintModifier.swift; sourceTree = "<group>"; };
 		8D3A767124A899B000005971 /* ListItemTintModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTintModifier.swift; sourceTree = "<group>"; };
 		8D3A767324A89C2600005971 /* ToggleStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleStyleModifier.swift; sourceTree = "<group>"; };
+		8D3A767824A89FA200005971 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
+		8D3A767B24A8A8BE00005971 /* EnvironmentOpenUrlWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentOpenUrlWrapper.swift; sourceTree = "<group>"; };
+		8D3A767E24A8AA1A00005971 /* SignInWithappleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithappleButtonView.swift; sourceTree = "<group>"; };
 		8D442ED724A7FE3A009995DD /* GaugeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeModifier.swift; sourceTree = "<group>"; };
 		8D442ED924A80401009995DD /* MatchedGeometryEffectModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectModifier.swift; sourceTree = "<group>"; };
 		8D442EDC24A80549009995DD /* ClipShapeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShapeModifier.swift; sourceTree = "<group>"; };
@@ -239,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				8D442EE624A80B2C009995DD /* ScaleMetricWrapper.swift */,
+				8D3A767B24A8A8BE00005971 /* EnvironmentOpenUrlWrapper.swift */,
 			);
 			path = PropretyWrapper;
 			sourceTree = "<group>";
@@ -352,6 +362,8 @@
 				8DC13F3B24A76019003CDA7A /* SettingsView.swift */,
 				8DF93EE924A7B62400B84CD0 /* ToolBarItemView.swift */,
 				8D442EE324A80B23009995DD /* ImageInTextView.swift */,
+				8D3A767824A89FA200005971 /* LinkView.swift */,
+				8D3A767E24A8AA1A00005971 /* SignInWithappleButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -627,6 +639,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3A767C24A8A8BE00005971 /* EnvironmentOpenUrlWrapper.swift in Sources */,
 				8DDA5C4624A31A5800BF263B /* SuperFontModifier.swift in Sources */,
 				8DEBD13024A3E6AA004AAE41 /* ToolBarModifier.swift in Sources */,
 				8D442EE424A80B23009995DD /* ImageInTextView.swift in Sources */,
@@ -643,6 +656,7 @@
 				8DF93EEA24A7B62400B84CD0 /* ToolBarItemView.swift in Sources */,
 				8DC13F3924A75C00003CDA7A /* CommandsModifier.swift in Sources */,
 				8D72C99D24A5296F00C98579 /* ProgressviewModifier.swift in Sources */,
+				8D3A767F24A8AA1A00005971 /* SignInWithappleButtonView.swift in Sources */,
 				8DC13F3F24A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
 				8D442EDA24A80402009995DD /* MatchedGeometryEffectModifier.swift in Sources */,
 				8DDA5C6224A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
@@ -653,6 +667,7 @@
 				8D442EDD24A80549009995DD /* ClipShapeModifier.swift in Sources */,
 				8DF93E9A24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
 				8DC13F3C24A76019003CDA7A /* SettingsView.swift in Sources */,
+				8D3A767924A89FA200005971 /* LinkView.swift in Sources */,
 				8DF93EE724A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -661,6 +676,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3A767D24A8A8BE00005971 /* EnvironmentOpenUrlWrapper.swift in Sources */,
 				8DDA5C4724A31A5800BF263B /* SuperFontModifier.swift in Sources */,
 				8DEBD13124A3E6AA004AAE41 /* ToolBarModifier.swift in Sources */,
 				8D442EE524A80B23009995DD /* ImageInTextView.swift in Sources */,
@@ -677,6 +693,7 @@
 				8DF93EEB24A7B62400B84CD0 /* ToolBarItemView.swift in Sources */,
 				8DC13F3A24A75C00003CDA7A /* CommandsModifier.swift in Sources */,
 				8D72C99E24A5296F00C98579 /* ProgressviewModifier.swift in Sources */,
+				8D3A768024A8AA1A00005971 /* SignInWithappleButtonView.swift in Sources */,
 				8DC13F4024A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
 				8D442EDB24A80402009995DD /* MatchedGeometryEffectModifier.swift in Sources */,
 				8DDA5C6324A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
@@ -687,6 +704,7 @@
 				8D442EDE24A80549009995DD /* ClipShapeModifier.swift in Sources */,
 				8DF93E9B24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
 				8DC13F3D24A76019003CDA7A /* SettingsView.swift in Sources */,
+				8D3A767A24A89FA200005971 /* LinkView.swift in Sources */,
 				8DF93EE824A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
