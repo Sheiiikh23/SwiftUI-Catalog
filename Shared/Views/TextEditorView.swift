@@ -10,6 +10,8 @@ import SwiftUI
 /// Apparition du TextEdit qui est un "TextField multiline"
 /// Disponible sur : i•Pad•OS / macOS / Mac Catalyst
 ///
+/// Unique Constructeur :
+///   • TextEditor(text: )
 /// Possède les mêmes modifiers qu'un Text View mais pas de fontWeight
 
 struct TextEditorView: View {

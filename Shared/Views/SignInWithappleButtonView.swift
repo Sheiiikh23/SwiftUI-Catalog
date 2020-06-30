@@ -11,7 +11,7 @@ import SwiftUI
 /// Disponible sur i•Pad•OS / tvOS / macOS / Mac Catalyst
 ///
 /// Un seul constructeur prenant 3 paramètres :
-///   • Label : .continue, .signIn, .signUp ––> change le label du butotn
+///   • Label : .continue, .signIn, .signUp ––> change le label du button
 ///   • onRequest : some action
 ///   • onCompletion: some action
 ///
@@ -25,24 +25,24 @@ struct SignInWithappleButtonView: View {
       /// Label continue
       SignInWithAppleButton(
         .continue,
-        onRequest: {_ in }, /// Somme action here
-        onCompletion: {_ in } /// Somme action here
+        onRequest: {_ in }, /// Some action here
+        onCompletion: {_ in } /// Some action here
       )
       .frame(width: 300, height: 200)
 
       /// Label signIn
       SignInWithAppleButton(
         .signIn,
-        onRequest: {_ in }, /// Somme action here
-        onCompletion: {_ in } /// Somme action here
+        onRequest: {_ in }, /// Some action here
+        onCompletion: {_ in } /// Some action here
       )
       .frame(width: 300, height: 200)
 
       /// Label signUp
       SignInWithAppleButton(
         .signUp,
-        onRequest: {_ in }, /// Somme action here
-        onCompletion: {_ in } /// Somme action here
+        onRequest: {_ in }, /// Some action here
+        onCompletion: {_ in } /// Some action here
       )
       .frame(width: 300, height: 200)
     }

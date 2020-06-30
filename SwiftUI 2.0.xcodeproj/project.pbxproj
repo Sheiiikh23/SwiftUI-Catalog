@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D33BBE324AA79AC0097EC2E /* LazyVGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D33BBE224AA79AC0097EC2E /* LazyVGridView.swift */; };
+		8D33BBE424AA79AC0097EC2E /* LazyVGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D33BBE224AA79AC0097EC2E /* LazyVGridView.swift */; };
+		8D33BBE624AA934B0097EC2E /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D33BBE524AA934B0097EC2E /* GridItemView.swift */; };
+		8D33BBE724AA934B0097EC2E /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D33BBE524AA934B0097EC2E /* GridItemView.swift */; };
 		8D3A766F24A892E600005971 /* ListItemTintModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A766E24A892E600005971 /* ListItemTintModifier.swift */; };
 		8D3A767024A892E600005971 /* ListItemTintModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A766E24A892E600005971 /* ListItemTintModifier.swift */; };
 		8D3A767224A899B000005971 /* ListItemTintModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767124A899B000005971 /* ListItemTintModifier.swift */; };
@@ -157,6 +161,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8D33BBE224AA79AC0097EC2E /* LazyVGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridView.swift; sourceTree = "<group>"; };
+		8D33BBE524AA934B0097EC2E /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
 		8D3A766E24A892E600005971 /* ListItemTintModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTintModifier.swift; sourceTree = "<group>"; };
 		8D3A767124A899B000005971 /* ListItemTintModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTintModifier.swift; sourceTree = "<group>"; };
 		8D3A767324A89C2600005971 /* ToggleStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleStyleModifier.swift; sourceTree = "<group>"; };
@@ -390,6 +396,8 @@
 				8D3A767E24A8AA1A00005971 /* SignInWithappleButtonView.swift */,
 				8D3A769224A8E38800005971 /* TextEditorView.swift */,
 				8DF93EE924A7B62400B84CD0 /* ToolBarItemView.swift */,
+				8D33BBE224AA79AC0097EC2E /* LazyVGridView.swift */,
+				8D33BBE524AA934B0097EC2E /* GridItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -672,6 +680,7 @@
 				8D442EE424A80B23009995DD /* ImageInTextView.swift in Sources */,
 				8D3A767424A89C2600005971 /* ToggleStyleModifier.swift in Sources */,
 				8DC13F4824A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,
+				8D33BBE324AA79AC0097EC2E /* LazyVGridView.swift in Sources */,
 				8D3A769324A8E38800005971 /* TextEditorView.swift in Sources */,
 				8D3A766F24A892E600005971 /* ListItemTintModifier.swift in Sources */,
 				8DDA5C4424A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
@@ -686,6 +695,7 @@
 				8DF93EEA24A7B62400B84CD0 /* ToolBarItemView.swift in Sources */,
 				8DC13F3924A75C00003CDA7A /* CommandsModifier.swift in Sources */,
 				8D72C99D24A5296F00C98579 /* ProgressviewModifier.swift in Sources */,
+				8D33BBE624AA934B0097EC2E /* GridItemView.swift in Sources */,
 				8D3A767F24A8AA1A00005971 /* SignInWithappleButtonView.swift in Sources */,
 				8DC13F3F24A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
 				8D442EDA24A80402009995DD /* MatchedGeometryEffectModifier.swift in Sources */,
@@ -715,6 +725,7 @@
 				8D442EE524A80B23009995DD /* ImageInTextView.swift in Sources */,
 				8D3A767524A89C2600005971 /* ToggleStyleModifier.swift in Sources */,
 				8DC13F4924A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,
+				8D33BBE424AA79AC0097EC2E /* LazyVGridView.swift in Sources */,
 				8D3A769424A8E38800005971 /* TextEditorView.swift in Sources */,
 				8D3A767024A892E600005971 /* ListItemTintModifier.swift in Sources */,
 				8DDA5C4524A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
@@ -729,6 +740,7 @@
 				8DF93EEB24A7B62400B84CD0 /* ToolBarItemView.swift in Sources */,
 				8DC13F3A24A75C00003CDA7A /* CommandsModifier.swift in Sources */,
 				8D72C99E24A5296F00C98579 /* ProgressviewModifier.swift in Sources */,
+				8D33BBE724AA934B0097EC2E /* GridItemView.swift in Sources */,
 				8D3A768024A8AA1A00005971 /* SignInWithappleButtonView.swift in Sources */,
 				8DC13F4024A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
 				8D442EDB24A80402009995DD /* MatchedGeometryEffectModifier.swift in Sources */,
