@@ -80,6 +80,8 @@
 		8DDA5C6324A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C6124A3369B00BF263B /* KeyboardShortcutModifier.swift */; };
 		8DDA5C6524A3388A00BF263B /* ProgressViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C6424A3388A00BF263B /* ProgressViews.swift */; };
 		8DDA5C6624A3388A00BF263B /* ProgressViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C6424A3388A00BF263B /* ProgressViews.swift */; };
+		8DE9F4EC24AD114E0054CE64 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4EB24AD114E0054CE64 /* MapView.swift */; };
+		8DE9F4ED24AD114E0054CE64 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4EB24AD114E0054CE64 /* MapView.swift */; };
 		8DEBD13024A3E6AA004AAE41 /* ToolBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBD12F24A3E6AA004AAE41 /* ToolBarModifier.swift */; };
 		8DEBD13124A3E6AA004AAE41 /* ToolBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBD12F24A3E6AA004AAE41 /* ToolBarModifier.swift */; };
 		8DF93E9A24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93E9924A77D7400B84CD0 /* ListStyleModifier.swift */; };
@@ -211,6 +213,7 @@
 		8DDA5C5E24A3249300BF263B /* HelpModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpModifier.swift; sourceTree = "<group>"; };
 		8DDA5C6124A3369B00BF263B /* KeyboardShortcutModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcutModifier.swift; sourceTree = "<group>"; };
 		8DDA5C6424A3388A00BF263B /* ProgressViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViews.swift; sourceTree = "<group>"; };
+		8DE9F4EB24AD114E0054CE64 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8DEBD12F24A3E6AA004AAE41 /* ToolBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarModifier.swift; sourceTree = "<group>"; };
 		8DF93E9924A77D7400B84CD0 /* ListStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStyleModifier.swift; sourceTree = "<group>"; };
 		8DF93EAA24A78E9000B84CD0 /* SwiftUI 2.0 watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI 2.0 watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -402,6 +405,7 @@
 				8D33BBE224AA79AC0097EC2E /* LazyVGridView.swift */,
 				8D33BBE524AA934B0097EC2E /* GridItemView.swift */,
 				8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */,
+				8DE9F4EB24AD114E0054CE64 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -690,6 +694,7 @@
 				8D3A766F24A892E600005971 /* ListItemTintModifier.swift in Sources */,
 				8DDA5C4424A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
 				8DDA5C5C24A3217D00BF263B /* LabelView.swift in Sources */,
+				8DE9F4EC24AD114E0054CE64 /* MapView.swift in Sources */,
 				8DF93EDF24A7955D00B84CD0 /* ChildrenListWithSideBarStyle.swift in Sources */,
 				8DC13F4524A764D0003CDA7A /* WindowStyleModifier.swift in Sources */,
 				8D442EE024A808CE009995DD /* CustomFontModifier.swift in Sources */,
@@ -736,6 +741,7 @@
 				8D3A767024A892E600005971 /* ListItemTintModifier.swift in Sources */,
 				8DDA5C4524A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
 				8DDA5C5D24A3217D00BF263B /* LabelView.swift in Sources */,
+				8DE9F4ED24AD114E0054CE64 /* MapView.swift in Sources */,
 				8DF93EE024A7955D00B84CD0 /* ChildrenListWithSideBarStyle.swift in Sources */,
 				8DC13F4624A764D0003CDA7A /* WindowStyleModifier.swift in Sources */,
 				8D442EE124A808CE009995DD /* CustomFontModifier.swift in Sources */,
