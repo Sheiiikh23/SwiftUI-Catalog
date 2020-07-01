@@ -10,7 +10,7 @@ import SwiftUI
 /// Apparition d'une nouvelle TransformedShape qui est la seule disponible pour le clipShape
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
-///   • ContianerRelativeShape: prend la même shape que celle du parent container (si pas de shape alors rectangle par défaut)
+///   • ContainerRelativeShape: prend la même shape que celle du parent container (si pas de shape alors rectangle par défaut)
 
 
 struct ClipShapeModifier: View {
