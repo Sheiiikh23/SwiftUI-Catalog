@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// Apparition des LazyVGrid qui créer des cellules uniquement lorsqu'elles sont requises (similaire à des CollectionView)
+/// Apparition des LazyVGrid qui créer des cellules uniquement lorsqu'elles sont requises
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// Très généralement utilisée dans un ScrollView suivi d'un forEach

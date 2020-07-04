@@ -52,7 +52,7 @@ extension ListWithChildrenView {
              ]),
       Person(name: "Person 1")
     ]
-
+    
   }
 }
 

@@ -34,7 +34,7 @@ struct ProgressViews: View {
         /// Modifiers pour la ProgressView
         .scaleEffect(1.5, anchor: .center)
         .accentColor(.green) /// Modifier pas appliqué car Circulaire
-        .frame(width: 200) /// Ùpdofoer qui agit comme un padding
+        .frame(width: 200) /// frame qui agit comme un padding
 
       /// Créer une progressView Circulaire avec une String
       ProgressView("Constructeur n°2")

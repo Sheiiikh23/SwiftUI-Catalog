@@ -9,7 +9,7 @@ import SwiftUI
 
 
 /// adaptive : adaptif en fonction de l'orientation du iDevice
-///
+/// si VStack alors la taille est en width HSTack alors la taille est en heihgt
 
 #warning("refacto")
 

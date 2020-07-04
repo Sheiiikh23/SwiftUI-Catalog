@@ -12,27 +12,27 @@ import SwiftUI
 ///
 /// Deux construteurs :
 ///   • Link(String, destination: URL)
-///   • Link(destination: URL) ...
+///   • Link(destination: URL) { ... }
 ///
 /// Peut ouvrir des URLs classique dans Safari (siteApple)
 /// Peut ouvrirdes universal link afin d'ouvrir une App (wwdcAnnouncement redirige vers l'app News)
 /// Peut permettre d'ouvrir une view depuis un widget
 
-
 struct LinkView: View {
-
+  
   let siteApple = URL(string: "https://developer.apple.com/tutorials/swiftui/")!
   let wwdcAnnouncement = URL(string: "https://apple.news/AjriX1CWUT-OfjXu_R4QsnA")!
-
+  
   var body: some View {
     VStack(spacing: 30) {
       /// Constructeur "compact"
       Link("Site d'Apple", destination: siteApple)
         .font(.title3)
+        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
         .padding()
         .background(Color.orange.opacity(0.5))
         .cornerRadius(20)
-
+      
       /// Constructeur permettant plus de custom
       Link(destination: wwdcAnnouncement) {
         Text("Voir les annonces de la WWDC 20")

@@ -20,7 +20,7 @@ import SwiftUI
 ///   • navigationBarLeading ––> item placé au leading de la navigationBar
 ///   • navigationBarTrailing ––> item placé au trailing de la navigationBar
 ///   • primaryAction ––> représente une action fréquemment utilisé en fonction du contexte ?? – comportement propre à la plateforme ??
-///   • principal ––> représente une action principal – propre à la plateforme ?
+///   • principal ––> représente une action principal – propre à la plateforme ? Très utile pour les iPad car au centre de la vue et de la navigationView
 ///   • status ––> représente un item de nature informationelle ne représentant pas une action pouvant être entrepris par l'utilisateur – propre à la plateforme ??
 
 

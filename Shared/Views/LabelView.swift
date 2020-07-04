@@ -9,6 +9,7 @@ import SwiftUI
 
 /// Apparition des Labels : Text + Image / Icon
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+///
 ///   Text: String
 ///   Image/ systemImage • icon : String • Shape (+ modifiers)
 
@@ -18,14 +19,14 @@ import SwiftUI
 struct LabelView: View {
   var body: some View {
     NavigationView {
-
+      
       VStack(spacing: 50) {
-
+        
         /// Créer un label dont le text et l'image • systemImage vont scales de la même manière
         /// cf le tuto d'Apple sur les SFSymbols (version 2.0 dispo en téléchargement)
         Label("Constructeur n°1 ", systemImage: "magnifyingglass")
           .font(.title)
-
+        
         /// Créer un label qui permet de spécifier à chaque élément des modifiers qui lui sont propres
         Label {
           Text("Construteur n°2")
@@ -37,7 +38,7 @@ struct LabelView: View {
             /// Modifiers propres à l'Image • systemImage
             .foregroundColor(.blue)
         }
-
+        
         /// Créer un label qui permer de spécifier à chaque élément des modifiers qui lui sont propres
         /// On peut également appliqué des modifiers pour le Label (càd Text + Image / systemImage • Shape)
         Label {
@@ -52,7 +53,7 @@ struct LabelView: View {
         }
         /// Modifiers appliqués à tout le label
         .font(.title3)
-
+        
         /// Créer un label avec une Shape pour l'icon. A noter que chaque élément aura des mofiers qui lui seront propres
         Label {
           Text("Constructeur n°4")
@@ -66,7 +67,7 @@ struct LabelView: View {
             .fill(Color.red)
             .frame(width: 40, height: 40)
         }
-
+        
       }
       .navigationBarTitle("Hello Labels")
       .toolbar {

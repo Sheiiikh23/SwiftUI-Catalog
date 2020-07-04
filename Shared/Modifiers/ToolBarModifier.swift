@@ -49,7 +49,7 @@ struct ToolBarModifier: View {
           EditButton()
         }
 
-        /// Ajout d'un ToolbarItem
+        /// Ajout d'un ToolbarItem (placé au centre par défaut) 
         ToolbarItem(placement: .bottomBar) {
           HStack {
             Spacer()
