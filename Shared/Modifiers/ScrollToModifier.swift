@@ -20,7 +20,7 @@ import SwiftUI
 ///   • anchor : UnitPoint ––> optionnel
 ///     ––> si pas d'anchor définie alors la value va scroll le "moins possible" pour afficher la view
 
-
+// MARK: - Utilisation : Permer d'accéder à un élément faisant partie d'un ScrollView via son id 
 
 struct ScrollToModifier: View {
 

@@ -13,6 +13,7 @@ import SwiftUI
 /// Très généralement utilisée dans un ScrollView suivi d'un forEach
 /// Son layout est déterminé par un array de GridItem (cf GridItem)
 
+// MARK: - Utilisation : Création d'une grille verticale qui recylent ses cellules
 
 struct LazyVGridWithAdpativeColumnsAdaptiveGridItemView: View {
 

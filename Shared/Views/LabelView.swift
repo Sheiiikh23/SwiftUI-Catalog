@@ -13,7 +13,8 @@ import SwiftUI
 ///   Text: String
 ///   Image/ systemImage • icon : String • Shape (+ modifiers)
 
-#warning("Pour le moment les systemImage sont affichés en topLeading par rapport au Text apparement ça devrait être fix prochainement")
+// MARK: - Utilisation : TabItems (évitant un VStack), et pour éviter de créer un HStack
+
 
 
 struct LabelView: View {

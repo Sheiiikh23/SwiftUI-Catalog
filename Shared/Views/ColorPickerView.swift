@@ -17,6 +17,8 @@ import SwiftUI
 ///   • ColorPicker(selection: ..., supportOppacity: ...) { ... }
 ///   supportOpacity = true par défaut, même si on ne le mentionne pas
 
+// MARK: - Utilisation : Color Picker pour la sélection de couleur(s) par l'utilisateur
+
 struct ColorPickerView: View {
 
   @State private var colorValue = Color.white

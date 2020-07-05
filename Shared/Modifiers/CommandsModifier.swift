@@ -35,11 +35,14 @@ import SwiftUI
 
 #warning("Lever les incertitudes")
 
+// MARK: - Création de menu, de menu déroulant et de raccourcis clavier 
+
 struct CommandsModifier: App {
   var body: some Scene {
     WindowGroup {
       LabelView()
     }
+
     /// Ajout de commandes
     .commands {
       /// Création d'un menu Shape entre View et Windows
@@ -67,7 +70,7 @@ struct CommandsModifier: App {
         Button("Previous View", action: {})
           /// Autre raccourci clavier
           .keyboardShortcut("[")
-        
+
         Button("Next View", action: {})
           /// Autre raccourci clavier
           .keyboardShortcut("]")

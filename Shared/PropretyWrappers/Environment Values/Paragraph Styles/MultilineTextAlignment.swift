@@ -1,0 +1,43 @@
+//
+//  MultilineTextAlignment.swift
+//  SwiftUI 2.0
+//
+//  Created by Lucas Abijmil on 04/08/2020.
+//
+
+import SwiftUI
+
+/// multilineTextAlignment indique l'alignement du texte lors d'un retour à la ligne
+/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+///
+/// multilineTextAlignment: TextAlignment { get set } 
+///   - center : par défaut
+///   - leading
+///   - trailing 
+
+// MARK: - Importance pour l'accessibilité : très faible - faible
+// MARK: - Utilisation : Pas besoin car déjà natif avec le modifier en question 
+
+struct MultilineTextAlignment: View {
+
+  @Environment(\.multilineTextAlignment) var textAlignment
+
+  var body: some View {
+    ZStack {
+      Color.purple.opacity(0.75)
+      Text("Voici l'histoire du multilineTextAlignment. Voici l'histoire du multilineTextAlignment. Voici l'histoire du multilineTextAlignment. Voici l'histoire du multilineTextAlignment.")
+        .font(.caption)
+        .fontWeight(.bold)
+        .foregroundColor(.white)
+        .multilineTextAlignment(.leading)
+        .frame(width: 225)
+    }
+  }
+}
+
+struct MultilineTextAlignment_Previews: PreviewProvider {
+  static var previews: some View {
+    MultilineTextAlignment()
+      .environment(\.multilineTextAlignment, .center)
+  }
+}

@@ -14,9 +14,8 @@ import SwiftUI
 ///   • Link(String, destination: URL)
 ///   • Link(destination: URL) { ... }
 ///
-/// Peut ouvrir des URLs classique dans Safari (siteApple)
-/// Peut ouvrirdes universal link afin d'ouvrir une App (wwdcAnnouncement redirige vers l'app News)
-/// Peut permettre d'ouvrir une view depuis un widget
+
+// MARK: - Utilisation : Permet d'ouvrir des URLs qui redirigent vers Safari, Universal Link pour ouvrir une App, DeepLink pour un Widget
 
 struct LinkView: View {
   

@@ -5,8 +5,9 @@
 //  Created by Lucas Abijmil on 05/07/2020.
 //
 
-import StoreKit
 import SwiftUI
+//import StoreKit
+
 
 /// Nouveau modifier qui permet d'afficher une bannière pour recommander une app
 /// Disponible sur : i•Pad•OS
@@ -15,6 +16,11 @@ import SwiftUI
 /// Paramètres du modifier :
 ///   • isPresented: *Binding* Bool ––> obligatoire
 ///   • configuration: closure ––> obigatoire (@escaping par défaut)
+
+// MARK: Utilisation : Dans App Clip permet d'inciter des gens à télécharger l'application dans son entiérreté || Recommander d'autres applications
+
+
+// Source : https://developer.apple.com/forums/thread/656574?answerId=625987022#625987022
 
 struct AppStoreOverlayModifier: View {
 
@@ -37,16 +43,15 @@ struct AppStoreOverlayModifier: View {
         }
       }
 
-//      .edgesIgnoringSafeArea(.all)
-      .appStoreOverlay(isPresented: $showRecommandedApp) {
-
-        /// Overlay qui permet d'afficher la bannière de l'app recommandée
-        /// appIdentifier: id de l'app 
-        /// Deux positions possibles :
-        ///   • bottom : le plus bas tout en respectant la safe area bottom (même si ignoré)
-        ///   • bottomRaised : plus haut le bottom de genre 10-15 points
-        SKOverlay.AppConfiguration(appIdentifier: "1440611372", position: .bottom)
-      }
+      .edgesIgnoringSafeArea(.all)
+//      .appStoreOverlay(isPresented: $showRecommandedApp) {
+//        /// Overlay qui permet d'afficher la bannière de l'app recommandée
+//        /// appIdentifier: id de l'app
+//        /// Deux positions possibles :
+//        ///   • bottom : le plus bas tout en respectant la safe area bottom (même si ignoré)
+//        ///   • bottomRaised : plus haut le bottom de genre 10-15 points
+//        SKOverlay.AppConfiguration(appIdentifier: "1440611372", position: .bottom)
+//      }
     }
 }
 

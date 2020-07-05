@@ -20,6 +20,8 @@ import SwiftUI
 ///
 /// Un même labelStyle peut être set pour un container
 
+// MARK: - Utilisation : Custom la UI d'un Label View
+
 struct LabelModifier: View {
   var body: some View {
     NavigationView {

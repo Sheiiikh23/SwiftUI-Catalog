@@ -14,6 +14,7 @@ import SwiftUI
 /// Permet de colorer l'Image • systemImage • icon d'un label
 /// Couleur spécifique à ce modifier: monochrome
 
+// MARK: - Utilisation : Permet de colorer l'Image d'un Label dans une SideBarListStyle (ne fonctionne que avec ce style de List pour le moment)
 #warning("Lever les incertitudes")
 
 struct ListItemTintModifier: View {

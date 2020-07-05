@@ -14,6 +14,8 @@ import SwiftUI
 /// Il faut d'abord définir une class héritant de SKScene (assez claassique)
 /// Dans la view utilisé une computedProprety car il faut définir une frame à la mano
 
+// MARK: - Utilisation : Pour intégrer des mini-scène de jeux à une View
+
 struct SpriteKitView: View {
 
 

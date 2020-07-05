@@ -14,6 +14,8 @@ import SwiftUI
 /// Il faut préciser à SwiftUI qu'on veut appliqué la couleur par défaut donné par Apple
 /// Utilisation du modifier : renderingMode(.original)
 
+// MARK: - Utilisation : SF Symbols colorés natifs
+
 struct ColoredSFSymbolsView: View {
   var body: some View {
     VStack(spacing: 50) {
@@ -22,7 +24,16 @@ struct ColoredSFSymbolsView: View {
         /// renderingMode avant tout autre modifier sinon erreur de compilation
         .renderingMode(.original)
         .font(.title)
-        .scaleEffect(1.5)
+        .padding()
+        .background(Color.black)
+        .clipShape(Circle())
+
+      Image(systemName: "cloud.sun.bolt.fill")
+        .renderingMode(.original)
+        .font(.largeTitle)
+        .padding()
+        .background(Color.black)
+        .clipShape(Circle())
     }
   }
 }
@@ -30,6 +41,5 @@ struct ColoredSFSymbolsView: View {
 struct ColoredSFSymbolsView_Previews: PreviewProvider {
   static var previews: some View {
     ColoredSFSymbolsView()
-      .preferredColorScheme(.dark)
   }
 }

@@ -17,6 +17,8 @@ import SwiftUI
 ///   • StepperFieldDatePickerStyle ––> macOS uniquement
 /// (je n'ai pas fais de View pour ce présent uniquement sur macOS)
 
+// MARK: - Utilisation: Custom la UI d'un DatePicker 
+
 struct DefaultDatePickerStyleModifier: View {
 
   @State private var date = Date()

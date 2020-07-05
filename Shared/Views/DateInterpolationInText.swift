@@ -11,6 +11,8 @@ import SwiftUI
 /// Attention pas au format de la région par défaut
 /// Plusieurs style possible. Le body n'est pas réinvoqué à chaque variation il s'agit en fait ± d'une animation.
 
+// MARK: - Utilisation : Permet de manipuler des Dates dans une TextView avec tous les modifiers qui en découlent (font, fontWeight ...)
+
 struct DateInterpolationInText: View {
   var body: some View {
     VStack {

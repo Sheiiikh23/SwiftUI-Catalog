@@ -15,6 +15,7 @@ import SwiftUI
 ///   • VideoPlayer(player: AVPlayer(...))
 ///   • VideoPlayer(player: AVPlayer(...)) { ... } pour rajouter un overlay par dessus le player
 
+// MARK: - Utilisation : Insérer des vidéos à une View
 
 struct VideoPlayerView: View {
     var body: some View {

@@ -11,10 +11,12 @@ import SwiftUI
 ///
 /// Désormais les customs fonts scalent automatiquement :-)
 
+// MARK: - Utilisation : Si on souhaite utiliser des polices customs, avec une taille custom qui scale de manière automatique en fonction d'un font prédéfinis
+
 struct CustomFontModifier: View {
   var body: some View {
     Text("Hello world")
-      .font(.custom("AvenirNext-Regular", size: 30))
+      .font(.custom("AvenirNext-Regular", size: 30, relativeTo: .title))
   }
 }
 

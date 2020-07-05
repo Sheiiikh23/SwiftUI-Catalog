@@ -14,8 +14,10 @@ import SwiftUI
 ///   • tvOS ??
 ///   • macOS / Mac Catalyst: info bulle "classique"
 
+// MARK: - Utilisation : si on souhaite rendre notre application plus accessible (ici pour les malvoyants)
 #warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
 #warning("Lever les incertitudes")
+#warning("cf accessibilityEnabled")
 
 struct HelpModifier: View {
   var body: some View {

@@ -14,6 +14,8 @@ import SwiftUI
 ///   • isPresented: *Binding* Bool ––> obligatoire
 ///   • onDismiss: closure = nil par défaut ––> optionnel
 
+// MARK: - Utilisation : Permet de créer une modal en fullScreen (à l'inverse d'une Sheet qui ne prend pas tout l'écran)
+
 struct FullScreenCoverModifier: View {
 
   @State private var openModal = false

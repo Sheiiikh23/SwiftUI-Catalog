@@ -18,6 +18,8 @@ import SwiftUI
 ///   • PlainListStyle ––> i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///   • SideBarListStyle ––> i•Pad•OS / macOS / Mac Catalyst || Très cool pour les iPads
 
+// MARK: - Utilisation : Avec des List pour le provider une UI bien particulière en fonction d'un context donné 
+
 struct DefaultListStyleModifier: View {
   var body: some View {
     List(0...40, id: \.self) { item in

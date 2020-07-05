@@ -17,6 +17,7 @@ import SwiftUI
 ///   • anchor: UnitPoint = .center par ––> optionnel
 ///   • isSource : Bool = true par défaut ––> optionnel
 
+// MARK: - Utilisation : Synchronisation d'animations
 
 struct BasicMatchedGeometryEffectModifier: View {
 

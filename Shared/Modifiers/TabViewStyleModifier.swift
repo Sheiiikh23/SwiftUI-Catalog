@@ -14,6 +14,8 @@ import SwiftUI
 ///   • DefaultTabViewStyle ––> par défaut
 ///   • PageTabViewStyle ––> agit comme un pageControl
 
+// MARK: - Utilisation : Permet de créer un PageControl en modifiant le style d'une TabView par PageTabViewStyle
+
 struct DefaultTabViewStyleModifier: View {
   var body: some View {
     TabView {
@@ -36,9 +38,11 @@ struct PageTabViewStyleModifier: View {
       Text("Yo")
       Text("Nihao")
     }
+    .background(Color.yellow)
     /// Agit comme un pageControl
     .tabViewStyle(PageTabViewStyle())
-    /// Modifier très utile à utiliser lors de l'usage de Page  TabViewStyle
+    /// Modifier très utile à utiliser lors de l'usage de PageTabViewStyle
+    /// Permet de rajouter un background derrière l'index de page 
     .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
   }
 }

@@ -16,6 +16,8 @@ import SwiftUI
 ///   • SwitchToggleStyle(tint: Color) ––> custom le "foregroundColor" du toggle lorsque la value est true
 ///   • CustomToggleStyle
 
+// MARK: - Utilisation : Custom la UI d'une Toggle View
+
 struct ToggleStyleModifier: View {
 
   @State private var toggleValue = true

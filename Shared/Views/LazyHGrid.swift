@@ -14,6 +14,8 @@ import SwiftUI
 /// Son layout est déterminé par un array de GridItem (cf GridItem)
 
 
+// MARK: - Utilisation : Création d'une grille horizontale qui recylent ses cellules
+
 struct LazyHGridWithAdaptiveRowAdaptiveGridItem: View {
 
   /// Définition du layout

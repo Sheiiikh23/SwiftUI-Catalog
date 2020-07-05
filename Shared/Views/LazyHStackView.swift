@@ -13,6 +13,7 @@ import SwiftUI
 /// Prend toute la height à sa disposition
 /// Même constructeurs que les HStacks avec en plus un PinnedScrollView (cf PinnedScrollView)
 
+// MARK: - Utilisation : Création d'un HStack qui recycle ses cellules (recommandé lorsque la taille des données est importante)
 #warning("TO DO – Constructeur avec le paramètre PinnedScrollView")
 
 struct LazyHStackView: View {

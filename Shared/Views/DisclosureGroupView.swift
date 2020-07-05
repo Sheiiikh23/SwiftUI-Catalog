@@ -7,8 +7,10 @@
 
 import SwiftUI
 
-/// Apparition des DisclosureGroup qui permettent de montrer / cacher du contenu
+/// Apparition des DisclosureGroup qui permettent de montrer / cacher un groupe de View (DropwDown)
 /// Disponible sur : i•Pad•OS / macOS / Mac Catalyst
+///
+/// Permet de créer un DropDown menu avec un label en fonction (ou non) d'un Binding
 ///
 /// Plusieurs constructeurs :
 ///   • DisclosureGroup(Title) { ... }
@@ -16,6 +18,8 @@ import SwiftUI
 /// - Constructeurs pour personnaliser chaque vue
 ///   • DisclosureGroup( content: { ... }, label: { ... })
 ///   • DisclosureGroup( isExpanded: *Binding*, content: { ... }, label: { ...})
+
+// MARK: - Utilisation : Créer des DropDown menu sans notion d'arbre de données
 
 struct DisclosureGroupView: View {
 
@@ -40,7 +44,7 @@ struct DisclosureGroupView: View {
           .fontWeight(.semibold)
       }
       .font(.title3)
-      .accentColor(.red)
+      .accentColor(.green)
       .padding()
 
       DisclosureGroup(
@@ -55,7 +59,7 @@ struct DisclosureGroupView: View {
             .font(.title3)
             .fontWeight(.semibold)
         })
-        .accentColor(.red)
+        .accentColor(.blue)
         .padding()
 
       Spacer()

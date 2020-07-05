@@ -14,6 +14,7 @@ import SwiftUI
 /// Définir une MKCoordinationRegion (souvent en @State var ou similaire) car la map a besoin d'un *Binding*
 /// Il existe plein de constructeurs différent mais j'ai choisis le plus basique car le plus courant
 
+// MARK: - Utilisation : Pour insérer des cartes utilisant la géolocalisation
 
 struct MapView: View {
 

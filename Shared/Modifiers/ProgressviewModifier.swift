@@ -12,12 +12,17 @@ import SwiftUI
 ///   
 /// ProgressViewStyle présents nativement :
 ///  • DefaultProgressViewStyle ––> par défaut (indéterminé = Circulaire / déterminé = Linéaire)
-///  • LinearProgressViewStyle ––> permet de transformer un Circulaire en Linéaire
-///  • CircularProgressViewStyle ––> permet de transformer un Linéaire en Circulaire
+///
+///  • LinearProgressViewStyle ––> permet de forcer le LinearStyle (déterminé ou non)
+///  • LinearProgressViewStyle(tint: Color) ––> permet de préciser la couleur
+///
+///  • CircularProgressViewStyle ––> permet de forcer le CircularStyle
+///  • CircularProgressViewStyle(tint: Color) ––> permet de spécifier la couleur
 ///
 /// Créer un ProgressViewStyle custom:
 ///  • struct conforme au protocol ProgressViewStyle ––> fonction makeBody
 
+// MARK: - Utilisation : Permet de customiser la UI d'une ProgressView
 
 struct ProgressviewModifier: View {
 
@@ -29,42 +34,36 @@ struct ProgressviewModifier: View {
       /// Default
       /// Ici aucune value donc Ciculaire
       ProgressView("Default indeterminate progressView")
-        .accentColor(.pink) /// Rappel: Modifier pas appliqué car Circulaire
         .font(.title3) /// Rappel : Modifier appliqué car Circulaire
-        /// Activer / désactiver ce modifier ne provequera aucun changement
-        .progressViewStyle(DefaultProgressViewStyle())
+        .progressViewStyle(CircularProgressViewStyle(tint: .green))
 
       /// Default
       /// Ici value donc Linéaire
       /// Rappel ici pas de total donc par défaut = 1
       ProgressView("Default determinate progressview", value: valueProgressView)
-        .accentColor(.pink) /// Rappel: Modifier appliqué car Linéaire
         .font(.title3) /// Rappel: Modifier pas appliqué car Linéaire
-        /// Activer / désavtiver ce modifier ne provequera aucun changement
-        .progressViewStyle(DefaultProgressViewStyle())
+        .progressViewStyle(LinearProgressViewStyle(tint: .pink))
 
       /// Circulaire ––> Linéaire
       /// Ici value en dure car on fait passer un Circulaire en Linéaire
       /// Rappel: total par défaut = 1
       ProgressView("Indeterminate progressView into determinate one", value: 0.1)
-        .accentColor(.pink) /// Modifier appliqué car le Circulaire devient Linéaire
         .font(.title) // Modifier pas appliqué car le Circulaire deviant Linéaire
-        .progressViewStyle(LinearProgressViewStyle()) /// Modifier qui transforme un Circulaire en Linéaire
+        .progressViewStyle(LinearProgressViewStyle(tint: .pink)) /// Modifier qui transforme un Circulaire en Linéaire
 
       /// Linéaire ––> Circulaire
       /// Ici value dynammique mais qui "ne sert pas à grand chose"
       /// Rappel: total par défaut = 1, ici je décide de le custom
       ProgressView("Determinate progressView into indeterminate one", value: valueProgressView, total: 5)
-        .accentColor(.pink) /// Modifier pas appliqué car le Linéaire devient Circulaire
         .font(.subheadline) /// Modifier appliqué car le Linéaire devient Circulaire
-        .progressViewStyle(CircularProgressViewStyle()) /// Modifier qui transforme un Linéaire en Circulaire
+        .progressViewStyle(CircularProgressViewStyle(tint: .green)) /// Modifier qui transforme un Linéaire en Circulaire
 
       /// CustomProgressViewStyle
       /// Ici appliqué sur un Circulaire
       ProgressView("Circular CustomProgressView")
-        .accentColor(.pink) /// Modifier pas appliqué car Circulaire
         .font(.subheadline) /// Modifier appliqué car Circulaire
         .progressViewStyle(CustomProgressViewStyle())
+        .progressViewStyle(CircularProgressViewStyle(tint: .green))
 
       /// CustomProgressViewStyle
       /// Ici appliqué sur un Linéaire
@@ -73,7 +72,6 @@ struct ProgressviewModifier: View {
         .font(.title) /// Modifier pas appliqué car Linéaire
         .padding()
         .progressViewStyle(CustomProgressViewStyle())
-
     }
   }
 }

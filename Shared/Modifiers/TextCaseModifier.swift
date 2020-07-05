@@ -15,6 +15,7 @@ import SwiftUI
 ///   • uppercase ––> tout en majuscule
 ///   • lowercase ––> tout en minuscule
 
+// MARK: - Utilisation : Forcer le Text à être en majuscule, miniscule, ou "naturel"
 
 struct TextCaseModifier: View {
 

@@ -9,6 +9,10 @@ import SwiftUI
 
 /// onChange peut maintenant prendre en paramètre des @State / @Binding etc...
 
+// MARK: - Utilisation : Permet d'observer la modification de n'importe quel Binding et de potentiellement réagir en fonction du changement
+
+#warning("refacto")
+
 struct OnChangeModifier: View {
 
   @State private var name = ""

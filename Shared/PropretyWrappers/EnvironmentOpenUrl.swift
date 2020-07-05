@@ -1,5 +1,5 @@
 //
-//  EnvironmentOpenUrlWrapper.swift
+//  EnvironmentOpenUrl.swift
 //  SwiftUI 2.0
 //
 //  Created by Lucas Abijmil on 28/06/2020.
@@ -9,7 +9,7 @@ import SwiftUI
 
 #warning("Refacto")
 
-struct EnvironmentOpenUrlWrapper: View {
+struct EnvironmentOpenUrl: View {
 
   @Environment(\.openURL) var test
 
@@ -18,8 +18,8 @@ struct EnvironmentOpenUrlWrapper: View {
     }
 }
 
-struct EnvironmentOpenUrlWrapper_Previews: PreviewProvider {
+struct EnvironmentOpenUrl_Previews: PreviewProvider {
     static var previews: some View {
-        EnvironmentOpenUrlWrapper()
+      EnvironmentOpenUrl()
     }
 }

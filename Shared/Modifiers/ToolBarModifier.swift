@@ -13,6 +13,7 @@ import SwiftUI
 /// Permet de créer une toolBar qui changenet d'apparence et d'endroit en fonction de la plateforme
 /// Cette Toolbar est essentiellement (pour pas dire exclusivement) composée de ToolbarItem (cf ToolBarItemPlaceModifier)
 
+// MARK: - Utilisation : Permet de mettre en avant des éléments dans un contexte de NavigationView
 
 #warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
 

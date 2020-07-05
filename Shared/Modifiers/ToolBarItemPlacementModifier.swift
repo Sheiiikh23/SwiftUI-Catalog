@@ -23,7 +23,7 @@ import SwiftUI
 ///   • principal ––> représente une action principal – propre à la plateforme ? Très utile pour les iPad car au centre de la vue et de la navigationView
 ///   • status ––> représente un item de nature informationelle ne représentant pas une action pouvant être entrepris par l'utilisateur – propre à la plateforme ??
 
-
+// MARK: - Utilisation : Custom le placement d'un ToolbarItem
 #warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
 #warning("Lever les incertitudes. Atteinte de la doc...")
 

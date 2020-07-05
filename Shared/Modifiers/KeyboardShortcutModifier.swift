@@ -32,6 +32,8 @@ import SwiftUI
 ///   • return : U+00D ??
 ///   • character: raccourci clavier custom d'un character UNIQUE
 
+// MARK: - Utilisation : Créer des raccourcis clavier sur iPadOS / MacOS / Mac Catalyst
+
 #warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
 #warning("Lever les incertitudes. Atteindre les udpates de la doc")
 
@@ -42,15 +44,15 @@ struct KeyboardShortcut: View {
   var body: some View {
     VStack(spacing: 40) {
       Button("Cancel", action: {})
-        .keyboardShortcut(.cancelAction)
+//        .keyboardShortcut(.cancelAction)
       Button("Save", action: {})
-        .keyboardShortcut(.defaultAction)
+//        .keyboardShortcut(.defaultAction)
       Toggle("Toggle me", isOn: $toggleValue)
         // Raccourci clavier custom :  cmd + shift (car maj) + t
-        .keyboardShortcut("T")
+//        .keyboardShortcut("T")
       Button("New shortcut", action: {})
         // Raccourci clavier custom : cmd + t
-        .keyboardShortcut("t")
+//        .keyboardShortcut("t")
     }
   }
 }

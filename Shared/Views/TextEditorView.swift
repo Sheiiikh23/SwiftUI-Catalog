@@ -14,6 +14,8 @@ import SwiftUI
 ///   • TextEditor(text: )
 /// Possède les mêmes modifiers qu'un Text View mais pas de fontWeight
 
+// MARK: - Utilisation : Pour un TextField avec plusieurs lignes :] 
+
 struct TextEditorView: View {
 
   @State private var textEditorValue = "Hello multiline textfield"

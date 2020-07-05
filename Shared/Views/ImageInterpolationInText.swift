@@ -11,6 +11,8 @@ import SwiftUI
 /// Je vois pas l'intérêt pour des Image "classique" qui ont besoin de différent modifier
 /// Par contre grand intérêt pour les SFSymols car scalent de la même "Manière que les Text
 
+// MARK: - Utilisation : Je sais pas trop, car on a les labels qui font ± la même chose
+
 struct ImageInterpolationInText: View {
   var body: some View {
     VStack(spacing: 40) {

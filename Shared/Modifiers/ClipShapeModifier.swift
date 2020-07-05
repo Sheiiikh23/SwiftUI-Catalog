@@ -12,6 +12,7 @@ import SwiftUI
 ///
 ///   • ContainerRelativeShape: prend la même shape que celle du parent container (si pas de shape alors rectangle par défaut)
 
+// MARK: - Utilisation : Pour prendre le même radius que le Parent Container. Très bien pour faire le même radius que celui sur les widgets
 
 struct ClipShapeModifier: View {
   var body: some View {

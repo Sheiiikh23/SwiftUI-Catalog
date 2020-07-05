@@ -12,7 +12,7 @@ struct SwiftUI_2_0App: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                LinkView()
+              ProgressViewStyleModifier()
             }
         }
 

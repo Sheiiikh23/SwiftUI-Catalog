@@ -17,5 +17,5 @@ import SwiftUI
 ///   • ToolBarItem(id: , placement: ToolBarItemPlacement, showByDefault: Bool) ...
 
 // MARK: pour voir des exemple cf ToolBarItemPlaceModifier
-
+#warning("Refacto")
 #warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
