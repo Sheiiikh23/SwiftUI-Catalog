@@ -42,8 +42,8 @@
 		8D442EDE24A80549009995DD /* ClipShapeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDC24A80549009995DD /* ClipShapeModifier.swift */; };
 		8D442EE024A808CE009995DD /* CustomFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDF24A808CE009995DD /* CustomFontModifier.swift */; };
 		8D442EE124A808CE009995DD /* CustomFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDF24A808CE009995DD /* CustomFontModifier.swift */; };
-		8D442EE424A80B23009995DD /* ImageInterpolationInString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE324A80B23009995DD /* ImageInterpolationInString.swift */; };
-		8D442EE524A80B23009995DD /* ImageInterpolationInString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE324A80B23009995DD /* ImageInterpolationInString.swift */; };
+		8D442EE424A80B23009995DD /* ImageInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE324A80B23009995DD /* ImageInterpolationInText.swift */; };
+		8D442EE524A80B23009995DD /* ImageInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE324A80B23009995DD /* ImageInterpolationInText.swift */; };
 		8D442EE724A80B2C009995DD /* ScaleMetricWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE624A80B2C009995DD /* ScaleMetricWrapper.swift */; };
 		8D442EE824A80B2C009995DD /* ScaleMetricWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE624A80B2C009995DD /* ScaleMetricWrapper.swift */; };
 		8D4D24FB24AC5C4F00982117 /* LazyHGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */; };
@@ -72,6 +72,8 @@
 		8D999F9224B0CB4B0050BD97 /* ScrollToModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D999F9024B0CB4B0050BD97 /* ScrollToModifier.swift */; };
 		8D999F9424B0E0C20050BD97 /* FullScreenCoverModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D999F9324B0E0C20050BD97 /* FullScreenCoverModifier.swift */; };
 		8D999F9524B0E0C20050BD97 /* FullScreenCoverModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D999F9324B0E0C20050BD97 /* FullScreenCoverModifier.swift */; };
+		8DB0C19724B1DCD9006818B4 /* EnvironmentPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19624B1DCD9006818B4 /* EnvironmentPresentationMode.swift */; };
+		8DB0C19824B1DCD9006818B4 /* EnvironmentPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19624B1DCD9006818B4 /* EnvironmentPresentationMode.swift */; };
 		8DC13F3924A75C00003CDA7A /* CommandsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC13F3824A75C00003CDA7A /* CommandsModifier.swift */; };
 		8DC13F3A24A75C00003CDA7A /* CommandsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC13F3824A75C00003CDA7A /* CommandsModifier.swift */; };
 		8DC13F3C24A76019003CDA7A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC13F3B24A76019003CDA7A /* SettingsView.swift */; };
@@ -213,7 +215,7 @@
 		8D442ED724A7FE3A009995DD /* GaugeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeModifier.swift; sourceTree = "<group>"; };
 		8D442EDC24A80549009995DD /* ClipShapeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShapeModifier.swift; sourceTree = "<group>"; };
 		8D442EDF24A808CE009995DD /* CustomFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontModifier.swift; sourceTree = "<group>"; };
-		8D442EE324A80B23009995DD /* ImageInterpolationInString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInterpolationInString.swift; sourceTree = "<group>"; };
+		8D442EE324A80B23009995DD /* ImageInterpolationInText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInterpolationInText.swift; sourceTree = "<group>"; };
 		8D442EE624A80B2C009995DD /* ScaleMetricWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleMetricWrapper.swift; sourceTree = "<group>"; };
 		8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGrid.swift; sourceTree = "<group>"; };
 		8D51323224A3EE48007B13A3 /* LabelModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelModifier.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 		8D999F8A24B0B7B10050BD97 /* NamespaceWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamespaceWrapper.swift; sourceTree = "<group>"; };
 		8D999F9024B0CB4B0050BD97 /* ScrollToModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollToModifier.swift; sourceTree = "<group>"; };
 		8D999F9324B0E0C20050BD97 /* FullScreenCoverModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCoverModifier.swift; sourceTree = "<group>"; };
+		8DB0C19624B1DCD9006818B4 /* EnvironmentPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentPresentationMode.swift; sourceTree = "<group>"; };
 		8DC13F3824A75C00003CDA7A /* CommandsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsModifier.swift; sourceTree = "<group>"; };
 		8DC13F3B24A76019003CDA7A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8DC13F3E24A76491003CDA7A /* DefaultAppStorageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppStorageModifier.swift; sourceTree = "<group>"; };
@@ -326,6 +329,7 @@
 				8D442EE624A80B2C009995DD /* ScaleMetricWrapper.swift */,
 				8D3A767B24A8A8BE00005971 /* EnvironmentOpenUrlWrapper.swift */,
 				8D999F8A24B0B7B10050BD97 /* NamespaceWrapper.swift */,
+				8DB0C19624B1DCD9006818B4 /* EnvironmentPresentationMode.swift */,
 			);
 			path = PropretyWrappers;
 			sourceTree = "<group>";
@@ -444,7 +448,7 @@
 				8DF93EDE24A7955D00B84CD0 /* ChildrenListWithSideBarStyle.swift */,
 				8D3A768F24A8D85700005971 /* ColoredSFSymbolsView.swift */,
 				8D3A768924A8C48E00005971 /* DocumentGroupView.swift */,
-				8D442EE324A80B23009995DD /* ImageInterpolationInString.swift */,
+				8D442EE324A80B23009995DD /* ImageInterpolationInText.swift */,
 				8DDA5C5B24A3217D00BF263B /* LabelView.swift */,
 				8D3A767824A89FA200005971 /* LinkView.swift */,
 				8DDA5C6424A3388A00BF263B /* ProgressViews.swift */,
@@ -745,7 +749,7 @@
 				8DDA5C4624A31A5800BF263B /* SuperFontModifier.swift in Sources */,
 				8DEBD13024A3E6AA004AAE41 /* ToolBarModifier.swift in Sources */,
 				8D999F8824B0B0140050BD97 /* MatchedGeometryEffectModifier.swift in Sources */,
-				8D442EE424A80B23009995DD /* ImageInterpolationInString.swift in Sources */,
+				8D442EE424A80B23009995DD /* ImageInterpolationInText.swift in Sources */,
 				8D999F9424B0E0C20050BD97 /* FullScreenCoverModifier.swift in Sources */,
 				8D3A767424A89C2600005971 /* ToggleStyleModifier.swift in Sources */,
 				8DC13F4824A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,
@@ -791,6 +795,7 @@
 				8D3A768724A8C3F300005971 /* ContextMenuModifier.swift in Sources */,
 				8DE9F4FA24AD1E6A0054CE64 /* ColorPickerView.swift in Sources */,
 				8DE9F4F724AD1BB60054CE64 /* SpriteKitView.swift in Sources */,
+				8DB0C19724B1DCD9006818B4 /* EnvironmentPresentationMode.swift in Sources */,
 				8D3A767924A89FA200005971 /* LinkView.swift in Sources */,
 				8DF93EE724A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift in Sources */,
 				8D7B37D124AEFD7500F95736 /* VideoPlayerView.swift in Sources */,
@@ -806,7 +811,7 @@
 				8DDA5C4724A31A5800BF263B /* SuperFontModifier.swift in Sources */,
 				8DEBD13124A3E6AA004AAE41 /* ToolBarModifier.swift in Sources */,
 				8D999F8924B0B0140050BD97 /* MatchedGeometryEffectModifier.swift in Sources */,
-				8D442EE524A80B23009995DD /* ImageInterpolationInString.swift in Sources */,
+				8D442EE524A80B23009995DD /* ImageInterpolationInText.swift in Sources */,
 				8D999F9524B0E0C20050BD97 /* FullScreenCoverModifier.swift in Sources */,
 				8D3A767524A89C2600005971 /* ToggleStyleModifier.swift in Sources */,
 				8DC13F4924A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,
@@ -852,6 +857,7 @@
 				8D3A768824A8C3F300005971 /* ContextMenuModifier.swift in Sources */,
 				8DE9F4FB24AD1E6A0054CE64 /* ColorPickerView.swift in Sources */,
 				8DE9F4F824AD1BB60054CE64 /* SpriteKitView.swift in Sources */,
+				8DB0C19824B1DCD9006818B4 /* EnvironmentPresentationMode.swift in Sources */,
 				8D3A767A24A89FA200005971 /* LinkView.swift in Sources */,
 				8DF93EE824A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift in Sources */,
 				8D7B37D224AEFD7500F95736 /* VideoPlayerView.swift in Sources */,

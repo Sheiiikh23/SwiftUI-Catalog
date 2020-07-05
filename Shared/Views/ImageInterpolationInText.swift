@@ -1,5 +1,5 @@
 //
-//  ImageInterpolationInString.swift
+//  ImageInterpolationInText.swift
 //  SwiftUI 2.0
 //
 //  Created by Lucas Abijmil on 28/06/2020.
@@ -11,7 +11,7 @@ import SwiftUI
 /// Je vois pas l'intérêt pour des Image "classique" qui ont besoin de différent modifier
 /// Par contre grand intérêt pour les SFSymols car scalent de la même "Manière que les Text
 
-struct ImageInterpolationInString: View {
+struct ImageInterpolationInText: View {
   var body: some View {
     VStack(spacing: 40) {
       Text("\(Image(systemName: "music.mic")) Je suis dans la vallée je roule...")
@@ -29,8 +29,8 @@ struct ImageInterpolationInString: View {
   }
 }
 
-struct ImageInterpolationInString_Previews: PreviewProvider {
+struct ImageInterpolationInText_Previews: PreviewProvider {
   static var previews: some View {
-    ImageInterpolationInString ()
+    ImageInterpolationInText ()
   }
 }
