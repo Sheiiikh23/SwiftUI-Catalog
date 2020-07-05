@@ -16,7 +16,7 @@ import SwiftUI
 ///   • InsetGroupedListStyle ––> uniquement pour i•Pad•OS / Mac Catalyst
 ///   • InsetListStyle ––> uniquement pour i•Pad•OS / macOS / Mac Catalyst
 ///   • PlainListStyle ––> i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
-///   • SideBarListStyle ––> i•Pad•OS / macOS / Mac Catalyst
+///   • SideBarListStyle ––> i•Pad•OS / macOS / Mac Catalyst || Très cool pour les iPads
 
 struct DefaultListStyleModifier: View {
   var body: some View {
