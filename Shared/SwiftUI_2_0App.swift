@@ -12,7 +12,7 @@ struct SwiftUI_2_0App: App {
   // Déclaration des @StateObject & @EnvironmentObject
   var body: some Scene {
     WindowGroup {
-      AdvancedMatchedGeometryEffectModifier()
+      ScrollToModifier()
     }
   }
 }

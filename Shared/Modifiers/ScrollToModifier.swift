@@ -16,7 +16,7 @@ import SwiftUI
 ///   • Donner un id à chaque View contenue dans le ScrollReader
 ///
 /// Paramètres modifier via la value :
-///   • id (de la View) : String, Int etc... ––> obligatoire
+///   • id (de la View) : String, Int etc... ––> obligatoire (très facile dans un ForEach)
 ///   • anchor : UnitPoint ––> optionnel
 ///     ––> si pas d'anchor définie alors la value va scroll le "moins possible" pour afficher la view
 
@@ -33,13 +33,13 @@ struct ScrollToModifier: View {
           /// Modifier pour id 5 avec une anchor .top
           value.scrollTo(5, anchor: .top)
         }, label: {
-          Text("Scroll to position #5")
+          Text("Scroll to position #5 top anchor")
         })
         Button(action: {
           /// Modifier pour id 7 avec une anchor .center
           value.scrollTo(7, anchor: .center)
         }, label: {
-          Text("Scroll to position #7")
+          Text("Scroll to position #7 center anchor")
         })
         ForEach(0...10, id: \.self) { item in
           Text("Example \(item)")
