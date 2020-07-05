@@ -11,7 +11,7 @@ import SwiftUI
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// Paramètres du modifier :
-///   • isPresented: *Binding* boolean ––> obligatoire
+///   • isPresented: *Binding* Bool ––> obligatoire
 ///   • onDismiss: closure = nil par défaut ––> optionnel
 
 struct FullScreenCoverModifier: View {
