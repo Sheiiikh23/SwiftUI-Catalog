@@ -7,4 +7,18 @@
 
 import SwiftUI
 
-#warning("Refacto")
+/// onChange peut maintenant prendre en paramètre des @State / @Binding etc...
+
+struct OnChangeModifier: View {
+
+  @State private var name = ""
+
+  var body: some View {
+    TextField("Enter your name:", text: $name)
+      .textFieldStyle(RoundedBorderTextFieldStyle())
+      .padding()
+      .onChange(of: name) { value in
+        print(value)
+      }
+  }
+}
