@@ -48,6 +48,7 @@ struct MenuView: View {
           } label: {
             Text("Menu principal")
           }
+
         }
       }
     }
@@ -57,6 +58,7 @@ struct MenuView: View {
 struct MenuView_Previews: PreviewProvider {
   static var previews: some View {
     MenuView()
+      .environment(\.colorScheme, .dark)
   }
 }
 

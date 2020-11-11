@@ -62,6 +62,9 @@ struct CustomToggleStyle: ToggleStyle {
 
 struct ToggleStyleModifier_Previews: PreviewProvider {
   static var previews: some View {
-    ToggleStyleModifier()
+    Group {
+      ToggleStyleModifier()
+        .preferredColorScheme(.dark)
+    }
   }
 }

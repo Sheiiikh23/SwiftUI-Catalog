@@ -14,11 +14,28 @@ struct SwiftUI_2_0App: App {
   /// Ce wrapper se charge de créer notre AppDelegate et de gérer tout le reste
   @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
+  /// On peut également accéder à l'état de l'application grâce à ce property wrapper
+  @Environment(\.scenePhase) var scenePhase
+
   /// C'est ici qu'on créer et qu'on injecte les données
-  // Déclaration des @StateObject & @EnvironmentObject etc...
+  // Déclaration des @StateObject qui seront injectés en tant que environmentObject à la vue
+
+
   var body: some Scene {
     WindowGroup {
       Locale()
+    }
+    .onChange(of: scenePhase) { phase in
+      switch phase {
+      case .active:
+        print("App is active")
+      case .background:
+        print("App is in background mode")
+      case .inactive:
+        print("App is inactive")
+      @unknown default:
+        print("New state added by Apple")
+      }
     }
   }
 }
@@ -28,7 +45,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
   /// Ajout de n'importe quelle fonction
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    print("Hello from App Delegate")
     return true
   }
-
 }
