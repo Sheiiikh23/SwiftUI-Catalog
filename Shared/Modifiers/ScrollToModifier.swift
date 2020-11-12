@@ -7,18 +7,16 @@
 
 import SwiftUI
 
-/// Modifier scollTo qui permet de scroll une View en particulier
-/// S'apparente un peu au delgeate du Scroll avec UIKit
+/// ScrollTo qui permet de scroll à un endroit particulier via un ScrollViewProxy
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// Pour utiliser ce modifier :
-///   • Ajouter un ScrollViewReader qui passe une value dans le ScrollView
-///   • Donner un id à chaque View contenue dans le ScrollReader
+///   • Ajouter un ScrollViewReader qui passe une valeur locale (= ScrollViewProxy): cf ScrollViewReader & ScrollViewProxy
+///   • Donner un id à chaque View contenue dans le ScrollViewReader
 ///
-/// Paramètres modifier via la value :
-///   • id (de la View) : String, Int etc... ––> obligatoire (très facile dans un ForEach)
-///   • anchor : UnitPoint ––> optionnel
-///     ––> si pas d'anchor définie alors la value va scroll le "moins possible" pour afficher la view
+/// Paramètres de la fonction via le ScrollViewProxy :
+///   • id: obligatoire
+///   • anchor : optionnel si pas d'anchor définie alors le ScrollViewProxy va scroll le "moins possible" pour afficher la view
 
 // MARK: - Utilisation : Permer d'accéder à un élément faisant partie d'un ScrollView via son id 
 
@@ -28,20 +26,38 @@ struct ScrollToModifier: View {
 
   var body: some View {
     ScrollView {
-      ScrollViewReader { value in
-        Button(action: {
-          /// Modifier pour id 5 avec une anchor .top
-          value.scrollTo(5, anchor: .top)
-        }, label: {
+      ScrollViewReader { proxy in
+        Button {
+          /// withAnimation fonctionne (on peut pas set l'animation par contre Xcode 12.2)
+          /// Permet d'éviter le scroll brutale
+          withAnimation {
+            /// scroll à l'id 5 avec une anchor .top
+            proxy.scrollTo(5, anchor: .top)
+          }
+        } label: {
           Text("Scroll to position #5 top anchor")
-        })
-        Button(action: {
-          /// Modifier pour id 7 avec une anchor .center
-          value.scrollTo(7, anchor: .center)
-        }, label: {
+        }
+        Button {
+          /// scroll à l'id 7 avec une anchor .center
+          proxy.scrollTo(7, anchor: .center)
+        } label: {
           Text("Scroll to position #7 center anchor")
-        })
-        ForEach(0...10, id: \.self) { item in
+        }
+        Button {
+          /// scroll à l'id 10 avec une anchor .bottom
+          proxy.scrollTo(10, anchor: .bottom)
+        } label: {
+          Text("Scroll to position #10 bottom anchor")
+        }
+        Button {
+          withAnimation {
+            /// scroll à l'id 13 sans anchor (scrollera le moins possible)
+            proxy.scrollTo(13)
+          }
+        } label: {
+          Text("Scroll to position #13 without predefined anchor")
+        }
+        ForEach(0...15, id: \.self) { item in
           Text("Example \(item)")
             .frame(height: 300)
             .frame(maxWidth: .infinity)

@@ -174,6 +174,7 @@
 		8DDA5C6324A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C6124A3369B00BF263B /* KeyboardShortcutModifier.swift */; };
 		8DDA5C6524A3388A00BF263B /* ProgressViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C6424A3388A00BF263B /* ProgressViews.swift */; };
 		8DDA5C6624A3388A00BF263B /* ProgressViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDA5C6424A3388A00BF263B /* ProgressViews.swift */; };
+		8DE2B53F255D90FC00261B28 /* ScrollViewReader & ScrollViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE2B53E255D90FC00261B28 /* ScrollViewReader & ScrollViewProxy.swift */; };
 		8DE443FE24CAA5AF0079B2B7 /* ColorSchemeContrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE443FD24CAA5AF0079B2B7 /* ColorSchemeContrast.swift */; };
 		8DE443FF24CAA5AF0079B2B7 /* ColorSchemeContrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE443FD24CAA5AF0079B2B7 /* ColorSchemeContrast.swift */; };
 		8DE4440124CAA7DF0079B2B7 /* ControlSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4440024CAA7DF0079B2B7 /* ControlSize.swift */; };
@@ -375,6 +376,7 @@
 		8DDA5C5E24A3249300BF263B /* HelpModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpModifier.swift; sourceTree = "<group>"; };
 		8DDA5C6124A3369B00BF263B /* KeyboardShortcutModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcutModifier.swift; sourceTree = "<group>"; };
 		8DDA5C6424A3388A00BF263B /* ProgressViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViews.swift; sourceTree = "<group>"; };
+		8DE2B53E255D90FC00261B28 /* ScrollViewReader & ScrollViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScrollViewReader & ScrollViewProxy.swift"; sourceTree = "<group>"; };
 		8DE443FD24CAA5AF0079B2B7 /* ColorSchemeContrast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeContrast.swift; sourceTree = "<group>"; };
 		8DE4440024CAA7DF0079B2B7 /* ControlSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSize.swift; sourceTree = "<group>"; };
 		8DE4440324CAA9380079B2B7 /* ManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObject.swift; sourceTree = "<group>"; };
@@ -658,6 +660,7 @@
 			children = (
 				8D5BF5A3255D7E85001232D7 /* Text Modifiers */,
 				8D72C99C24A5296F00C98579 /* ProgressViewStyleModifier.swift */,
+				8D999F9024B0CB4B0050BD97 /* ScrollToModifier.swift */,
 				8D442EDC24A80549009995DD /* ClipShapeModifier.swift */,
 				8DC13F3824A75C00003CDA7A /* CommandsModifier.swift */,
 				8DF93EF024A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift */,
@@ -680,7 +683,6 @@
 				8DE9F4F324AD1B1E0054CE64 /* indexViewStyleModifier.swift */,
 				8D999F7E24B08E470050BD97 /* DatePickerStyleModifier.swift */,
 				8D999F8724B0B0140050BD97 /* MatchedGeometryEffectModifier.swift */,
-				8D999F9024B0CB4B0050BD97 /* ScrollToModifier.swift */,
 				8D999F9324B0E0C20050BD97 /* FullScreenCoverModifier.swift */,
 				8DB0C19C24B21127006818B4 /* AppStoreOverlayModifier.swift */,
 				8DB0C1A524B21AD9006818B4 /* DisableAutocorrectionModifier.swift */,
@@ -701,6 +703,7 @@
 				8DE9F4EB24AD114E0054CE64 /* MapView.swift */,
 				8DE9F4F924AD1E6A0054CE64 /* ColorPickerView.swift */,
 				8D7B37D024AEFD7500F95736 /* VideoPlayerView.swift */,
+				8DE2B53E255D90FC00261B28 /* ScrollViewReader & ScrollViewProxy.swift */,
 				8DF93EDE24A7955D00B84CD0 /* ListChildrenWithSideBarStyle.swift */,
 				8D3A768F24A8D85700005971 /* ColoredSFSymbolsView.swift */,
 				8D3A768924A8C48E00005971 /* DocumentGroupView.swift */,
@@ -1040,6 +1043,7 @@
 				8DF93EDF24A7955D00B84CD0 /* ListChildrenWithSideBarStyle.swift in Sources */,
 				8D005E2624ADAE2200D29E53 /* LazyVStackView.swift in Sources */,
 				8DB0C19D24B21127006818B4 /* AppStoreOverlayModifier.swift in Sources */,
+				8DE2B53F255D90FC00261B28 /* ScrollViewReader & ScrollViewProxy.swift in Sources */,
 				8D7DDD98253E32BC002C0561 /* BlendModeModifier.swift in Sources */,
 				8D158BA424CC405900188F6B /* DefaultMinListRowHeight.swift in Sources */,
 				8DC13F4524A764D0003CDA7A /* WindowStyleModifier.swift in Sources */,
