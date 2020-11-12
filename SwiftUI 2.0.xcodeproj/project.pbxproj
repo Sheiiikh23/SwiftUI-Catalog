@@ -90,8 +90,8 @@
 		8D6C0F3024FA953000041F8C /* ToolBarItemGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6C0F2F24FA953000041F8C /* ToolBarItemGroupView.swift */; };
 		8D6C0F3224FA998A00041F8C /* popOverModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6C0F3124FA998A00041F8C /* popOverModifer.swift */; };
 		8D6C0F3424FA99F000041F8C /* PickerStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6C0F3324FA99F000041F8C /* PickerStyleModifier.swift */; };
-		8D72C99D24A5296F00C98579 /* ProgressviewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72C99C24A5296F00C98579 /* ProgressviewModifier.swift */; };
-		8D72C99E24A5296F00C98579 /* ProgressviewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72C99C24A5296F00C98579 /* ProgressviewModifier.swift */; };
+		8D72C99D24A5296F00C98579 /* ProgressViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72C99C24A5296F00C98579 /* ProgressViewStyleModifier.swift */; };
+		8D72C99E24A5296F00C98579 /* ProgressViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72C99C24A5296F00C98579 /* ProgressViewStyleModifier.swift */; };
 		8D7B37CB24AEFB8F00F95736 /* LazyHStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B37CA24AEFB8F00F95736 /* LazyHStackView.swift */; };
 		8D7B37CC24AEFB8F00F95736 /* LazyHStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B37CA24AEFB8F00F95736 /* LazyHStackView.swift */; };
 		8D7B37CE24AEFC8B00F95736 /* PinnedScrollableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B37CD24AEFC8B00F95736 /* PinnedScrollableView.swift */; };
@@ -322,7 +322,7 @@
 		8D6C0F2F24FA953000041F8C /* ToolBarItemGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarItemGroupView.swift; sourceTree = "<group>"; };
 		8D6C0F3124FA998A00041F8C /* popOverModifer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popOverModifer.swift; sourceTree = "<group>"; };
 		8D6C0F3324FA99F000041F8C /* PickerStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerStyleModifier.swift; sourceTree = "<group>"; };
-		8D72C99C24A5296F00C98579 /* ProgressviewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressviewModifier.swift; sourceTree = "<group>"; };
+		8D72C99C24A5296F00C98579 /* ProgressViewStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewStyleModifier.swift; sourceTree = "<group>"; };
 		8D7B37CA24AEFB8F00F95736 /* LazyHStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHStackView.swift; sourceTree = "<group>"; };
 		8D7B37CD24AEFC8B00F95736 /* PinnedScrollableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedScrollableView.swift; sourceTree = "<group>"; };
 		8D7B37D024AEFD7500F95736 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
@@ -649,6 +649,7 @@
 			isa = PBXGroup;
 			children = (
 				8D442EDF24A808CE009995DD /* FontCustomModifier.swift */,
+				8D72C99C24A5296F00C98579 /* ProgressViewStyleModifier.swift */,
 				8D442EDC24A80549009995DD /* ClipShapeModifier.swift */,
 				8DC13F3824A75C00003CDA7A /* CommandsModifier.swift */,
 				8DF93EF024A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift */,
@@ -660,7 +661,6 @@
 				8D3A766E24A892E600005971 /* ListItemTintModifier.swift */,
 				8DF93E9924A77D7400B84CD0 /* ListStyleModifier.swift */,
 				8DC13F4124A764BC003CDA7A /* OnChangeModifier.swift */,
-				8D72C99C24A5296F00C98579 /* ProgressviewModifier.swift */,
 				8D3A768124A8B07300005971 /* SignInWithAppleButtonStyleModifier.swift */,
 				8D3A768C24A8CFFA00005971 /* TextCaseModifier.swift */,
 				8D3A767324A89C2600005971 /* ToggleStyleModifier.swift */,
@@ -1051,7 +1051,7 @@
 				8DE9F4EF24AD15F40054CE64 /* TabViewStyleModifier.swift in Sources */,
 				8D680A0B2508230E00AFE8A7 /* TextCase.swift in Sources */,
 				8D158BAD24CC429300188F6B /* ControlActiveState.swift in Sources */,
-				8D72C99D24A5296F00C98579 /* ProgressviewModifier.swift in Sources */,
+				8D72C99D24A5296F00C98579 /* ProgressViewStyleModifier.swift in Sources */,
 				8D33BBE624AA934B0097EC2E /* GridItemView.swift in Sources */,
 				8D66EB1B24DDBA4F00FC4941 /* OutlineGroupView.swift in Sources */,
 				8D6BB1FA24D0A0BF00C282F8 /* LayoutDirection.swift in Sources */,
@@ -1148,7 +1148,7 @@
 				8DC13F3A24A75C00003CDA7A /* CommandsModifier.swift in Sources */,
 				8DE9F4F024AD15F40054CE64 /* TabViewStyleModifier.swift in Sources */,
 				8D158BAE24CC429300188F6B /* ControlActiveState.swift in Sources */,
-				8D72C99E24A5296F00C98579 /* ProgressviewModifier.swift in Sources */,
+				8D72C99E24A5296F00C98579 /* ProgressViewStyleModifier.swift in Sources */,
 				8D33BBE724AA934B0097EC2E /* GridItemView.swift in Sources */,
 				8D66EB1C24DDBA4F00FC4941 /* OutlineGroupView.swift in Sources */,
 				8D6BB1FB24D0A0BF00C282F8 /* LayoutDirection.swift in Sources */,

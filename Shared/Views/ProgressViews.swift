@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// Apparition des ProgressView: Circulaire (non déterminé) ou Linéaire (déterminé)
+/// Apparition des ProgressView: spinner ou bar
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Cataclyst
 /// 
 /// Spinner: par défaut si aucune value n'est donnée à la progressView
