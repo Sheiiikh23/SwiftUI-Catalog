@@ -25,7 +25,7 @@ struct LazyVStackView: View {
           Text("Cell n°\(item)")
             .foregroundColor(randomColor())
             /// Construction à la volée lors du scroll
-            .onAppear { print("Cell n°\(item)")}
+            .onAppear { print("Cell n°\(item)") }
         }
       }
     }
@@ -47,7 +47,7 @@ struct LazyVStackViewPinned: View {
             Text("Cell n°\(item)")
               .foregroundColor(randomColor())
               /// Construction à la volée lors du scroll
-              .onAppear { print("Cell n°\(item)")}
+              .onAppear { print("Cell n°\(item)") }
           }
         }
         Section(header: HeaderPinnedView(title: "251 to 500")) {
@@ -55,7 +55,7 @@ struct LazyVStackViewPinned: View {
             Text("Cell n°\(item)")
               .foregroundColor(randomColor())
               /// Construction à la volée lors du scroll
-              .onAppear { print("Cell n°\(item)")}
+              .onAppear { print("Cell n°\(item)") }
           }
         }
         Section(header: HeaderPinnedView(title: "501 to 751")) {
@@ -63,7 +63,7 @@ struct LazyVStackViewPinned: View {
             Text("Cell n°\(item)")
               .foregroundColor(randomColor())
               /// Construction à la volée lors du scroll
-              .onAppear { print("Cell n°\(item)")}
+              .onAppear { print("Cell n°\(item)") }
           }
         }
         Section(header: HeaderPinnedView(title: "751 to 1000")) {
@@ -71,7 +71,7 @@ struct LazyVStackViewPinned: View {
             Text("Cell n°\(item)")
               .foregroundColor(randomColor())
               /// Construction à la volée lors du scroll
-              .onAppear { print("Cell n°\(item)")}
+              .onAppear { print("Cell n°\(item)") }
           }
         }
       }
