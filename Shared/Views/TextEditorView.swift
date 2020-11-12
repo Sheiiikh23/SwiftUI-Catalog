@@ -12,20 +12,31 @@ import SwiftUI
 ///
 /// Unique Constructeur :
 ///   • TextEditor(text: )
-/// Possède les mêmes modifiers qu'un Text View mais pas de fontWeight
+/// Possède les mêmes modifiers qu'un Text View mais pas de fontWeight disponible
+/// Vient avec une ScrollView par défaut si la longueur du texte est supérieur à la height de la View
 
 // MARK: - Utilisation : Pour un TextField avec plusieurs lignes :] 
 
 struct TextEditorView: View {
 
-  @State private var textEditorValue = "Hello multiline textfield"
+  @State private var firstValue = "Hello multiline textfield"
+  @State private var secondValue = "Hello multineline textfield with line limit"
 
   var body: some View {
-    NavigationView {
-      TextEditor(text: $textEditorValue)
-        .font(.title)
-        .foregroundColor(.red)
-        .lineSpacing(5)
+    VStack {
+      /// TextEditor sans aucunes restriction
+      TextEditor(text: $firstValue)
+          .font(.callout)
+         .foregroundColor(.red)
+        .padding()
+
+      /// TextEdit avec au maximum 3 ligne de input (bugger pour le moment)
+      TextEditor(text: $secondValue)
+        .lineLimit(3)
+        .font(.callout)
+        .foregroundColor(.blue)
+        .truncationMode(.tail)
+        .padding() 
     }
   }
 }

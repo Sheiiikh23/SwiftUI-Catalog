@@ -22,8 +22,8 @@ struct Locale: View {
 
   var body: some View {
     Text(locale.description)
-      .ifModifier(for: locale.identifier == "en_EN", with: BlueLabel())
-      .ifModifier(for: locale.identifier == "en_FR", with: RedLabel())
+//      .ifModifier(for: locale.identifier == "en_EN", with: BlueLabel())
+//      .ifModifier(for: locale.identifier == "en_FR", with: RedLabel())
   }
 }
 

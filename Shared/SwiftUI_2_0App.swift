@@ -15,6 +15,7 @@ struct SwiftUI_2_0App: App {
   @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
   /// On peut également accéder à l'état de l'application grâce à ce property wrapper
+  /// On retrouve un peu le même fonctionnement que l'AppDelegate
   @Environment(\.scenePhase) var scenePhase
 
   /// C'est ici qu'on créer et qu'on injecte les données
@@ -23,7 +24,7 @@ struct SwiftUI_2_0App: App {
 
   var body: some Scene {
     WindowGroup {
-      Locale()
+      TextEditorView()
     }
     .onChange(of: scenePhase) { phase in
       switch phase {
