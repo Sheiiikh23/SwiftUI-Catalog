@@ -7,50 +7,40 @@
 
 import SwiftUI
 
-/// Apparition du ColorPicker
+/// Apparition du ColorPicker qui permet de sélectionner une couleur (de plusieurs manières)
 /// Disponible sur : i•Pad•OS / macOS / Mac Catalyst
 ///
-/// Plusieurs constructeurs disponibles: 1 "compact" / 1 permettant plus de custom pour le Text
-///   • ColorPicker(Title, selection: ...)
-///   • ColorPicker(Title, selection: ..., supportOpacity: ...)
-///   • ColorPicker(selection: ...) { ... }
-///   • ColorPicker(selection: ..., supportOppacity: ...) { ... }
-///   supportOpacity = true par défaut, même si on ne le mentionne pas
+/// Prend toute la width du parent container par défaut
+/// Le colorPicker supporte l'opacité par défaut (possibilité de le désactivé)
 
 // MARK: - Utilisation : Color Picker pour la sélection de couleur(s) par l'utilisateur
 
 struct ColorPickerView: View {
 
-  @State private var colorValue = Color.white
+  @State private var colorValue = Color.orange
 
   var body: some View {
-    VStack {
+    VStack(spacing: 50) {
 
-      /// Constructeur n°1: supportsOpacity = true par défaut
+      /// ColorPicker avec une String en tant que Title (support de l'opacité)
       ColorPicker("Choose a color", selection: $colorValue)
-        .frame(width: 200, height: 200)
 
-      /// Constructeur n°2: permet de passer supportsOpacity à false
+      /// ColorPicker avec une String en tant que Title (support de l'opacité désactivé)
       ColorPicker("Choose a color", selection: $colorValue, supportsOpacity: false)
-        .frame(width: 200, height: 200)
 
-      /// Constructeur n°3: permet plus de custom sur le Text
-      /// supportsOpacity = true par défaut
+      /// ColorPicker avec une View en tant que Label (support de l'opacité activé)
       ColorPicker(selection: $colorValue) {
         Text("Choose a color")
           .font(.title3)
           .fontWeight(.bold)
       }
-      .frame(width: 200, height: 200)
 
-      /// Constructeur n°4: permet plus de custom sur le Text
-      /// Permet également de passer supportsOpacity à false
+      /// ColorPicker avec une View en tant que Label (support de l'opacité désactivé)
       ColorPicker(selection: $colorValue, supportsOpacity: false) {
-        Text("Chose a color")
+        Text("Choose a color")
           .font(.title3)
           .fontWeight(.bold)
       }
-      .frame(width: 200, height: 200)
     }
   }
 }

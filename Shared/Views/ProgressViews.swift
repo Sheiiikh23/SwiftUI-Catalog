@@ -27,7 +27,7 @@ struct ProgressViews: View {
       /// progressView spinner
       ProgressView()
 
-      /// progressView avec une String en tant que Label
+      /// progressView avec une String en tant que Title
       ProgressView("Constructeur n°2")
         .textCase(.lowercase)
 
@@ -49,11 +49,11 @@ struct ProgressViews: View {
       // progressView bar avec un total custom
       ProgressView(value: valueProgressView, total: 5)
 
-      /// progressView bar avec une String en tant que Label (total = 1)
+      /// progressView bar avec une String en tant que Title (total = 1)
       ProgressView("Constructeur n°4", value: valueProgressView)
         .textCase(.lowercase)
 
-      /// progressView bar avec une String en tant que Label + total custom
+      /// progressView bar avec une String en tant que Title + total custom
       ProgressView("Constructeur n°5", value: valueProgressView, total: 5)
         .textCase(.lowercase)
 
