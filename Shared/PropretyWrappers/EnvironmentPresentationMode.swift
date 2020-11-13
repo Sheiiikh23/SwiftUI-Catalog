@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-#warning("refacto")
+#warning("refacto et a foutre dans les environmentValues")
 /// cf FullScreenCoverModifier
 
 struct EnvironmentPresentationMode: View {
