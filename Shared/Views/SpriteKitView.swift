@@ -8,16 +8,15 @@
 import SpriteKit
 import SwiftUI
 
-/// Apparition des SpriteView qui permettent de "hoster" une SKScene
+/// SpriteView permet de "hoster" une SKScene
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / Mac Catalyst
 ///
-/// Il faut d'abord définir une class héritant de SKScene (assez claassique)
+/// Il faut d'abord définir une class héritant de SKScene (assez classique)
 /// Dans la view utilisé une computedProprety car il faut définir une frame à la mano
 
-// MARK: - Utilisation : Pour intégrer des mini-scène de jeux à une View
+// MARK: - Utilisation : Intégrer des scenes de SpriteKit dans du SwiftUI
 
 struct SpriteKitView: View {
-
 
   var scene: SKScene {
     let scene = GameScene()
