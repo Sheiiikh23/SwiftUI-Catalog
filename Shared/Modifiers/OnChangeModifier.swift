@@ -11,18 +11,18 @@ import SwiftUI
 
 // MARK: - Utilisation : Permet d'observer la modification de n'importe quel Binding et de potentiellement réagir en fonction du changement
 
-#warning("refacto")
-
 struct OnChangeModifier: View {
 
   @State private var name = ""
 
   var body: some View {
-    TextField("Enter your name:", text: $name)
+    TextField("Enter your name :", text: $name)
+      .autocapitalization(.none)
+      .disableAutocorrection(true)
       .textFieldStyle(RoundedBorderTextFieldStyle())
       .padding()
-      .onChange(of: name) { value in
-        print(value)
+      .onChange(of: name) { newName in
+        print("Name was changed to : \(newName)")
       }
   }
 }
