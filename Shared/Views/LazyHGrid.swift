@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-/// Apparition des LazyHGrid qui créer des cellules uniquement lorsqu'elles sont requises (similaire à des CollectionView)
+/// Apparition des LazyHGrid qui créer les cellules à la volée
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// Très généralement utilisée dans un ScrollView suivi d'un forEach
 /// Son layout est déterminé par un array de GridItem (cf GridItem)
 
 
-// MARK: - Utilisation : Création d'une grille horizontale qui recylent ses cellules
+// MARK: - Utilisation : Création d'une grille horizontale qui créer les cellules à la volée
 
 struct LazyHGridWithAdaptiveRowAdaptiveGridItem: View {
 
@@ -29,10 +29,16 @@ struct LazyHGridWithAdaptiveRowAdaptiveGridItem: View {
     ScrollView(.horizontal) {
       LazyHGrid(rows: row, alignment: .center, spacing: 20) {
         ForEach(1...100, id: \.self) { item in
-          Text("Item n°\(item)")
+          Text("Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte.")
+            .truncationMode(.tail)
+            .background(randomColor())
         }
       }
     }
+  }
+  private func randomColor() -> Color {
+    let colors: [Color] = [.red, .gray, .green, .yellow, .orange, .purple, .blue]
+    return colors.randomElement() ?? colors[1]
   }
 }
 
@@ -50,10 +56,16 @@ struct LazyHGridWithOneRowFlexibleGridItem: View {
     ScrollView(.horizontal) {
       LazyHGrid(rows: row, alignment: .center, spacing: 20) {
         ForEach(1...100, id: \.self) { item in
-          Text("Item n°\(item)")
+          Text("Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte.")
+            .truncationMode(.tail)
+            .background(randomColor())
         }
       }
     }
+  }
+  private func randomColor() -> Color {
+    let colors: [Color] = [.red, .gray, .green, .yellow, .orange, .purple, .blue]
+    return colors.randomElement() ?? colors[1]
   }
 }
 
@@ -73,10 +85,16 @@ struct LazyHGridWithNRowFlexibleGridItem: View {
     ScrollView(.horizontal) {
       LazyHGrid(rows: row, alignment: .center, spacing: 20) {
         ForEach(1...100, id: \.self) { item in
-          Text("Item n°\(item)")
+          Text("Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte.")
+            .truncationMode(.tail)
+            .background(randomColor())
         }
       }
     }
+  }
+  private func randomColor() -> Color {
+    let colors: [Color] = [.red, .gray, .green, .yellow, .orange, .purple, .blue]
+    return colors.randomElement() ?? colors[1]
   }
 }
 
@@ -96,10 +114,16 @@ struct LazyHGridWithOneRowFixedGridItem: View {
     ScrollView(.horizontal) {
       LazyHGrid(rows: row, alignment: .center, spacing: 20) {
         ForEach(1...25, id: \.self) { item in
-          Text("Item n°\(item)")
+          Text("Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte.")
+            .truncationMode(.tail)
+            .background(randomColor())
         }
       }
     }
+  }
+  private func randomColor() -> Color {
+    let colors: [Color] = [.red, .gray, .green, .yellow, .orange, .purple, .blue]
+    return colors.randomElement() ?? colors[1]
   }
 }
 
@@ -119,10 +143,16 @@ struct LazyHGridWith2RowsFixedAndFlexibleGridItem: View {
     ScrollView(.horizontal) {
       LazyHGrid(rows: row, alignment: .center, spacing: 20) {
         ForEach(1...100, id: \.self) { item in
-          Text("Item n°\(item)")
+          Text("Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte.")
+            .truncationMode(.tail)
+            .background(randomColor())
         }
       }
     }
+  }
+  private func randomColor() -> Color {
+    let colors: [Color] = [.red, .gray, .green, .yellow, .orange, .purple, .blue]
+    return colors.randomElement() ?? colors[1]
   }
 }
 
