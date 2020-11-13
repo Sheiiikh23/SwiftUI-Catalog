@@ -24,7 +24,7 @@ struct SwiftUI_2_0App: App {
 
   var body: some Scene {
     WindowGroup {
-      ScrollToModifier()
+      PinnedScrollableViews()
     }
     .onChange(of: scenePhase) { phase in
       switch phase {

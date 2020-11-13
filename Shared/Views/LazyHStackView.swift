@@ -57,7 +57,7 @@ struct LazyHStackViewPinned: View {
               .onAppear { print("Cell n°\(item)") }
           }
         }
-        Section(header: HeaderPinnedView(title: "501 to 751")) {
+        Section(header: HeaderPinnedView(title: "501 to 750")) {
           ForEach(501...751, id: \.self) { item in
             Text("Cell n°\(item)")
               .foregroundColor(randomColor())
