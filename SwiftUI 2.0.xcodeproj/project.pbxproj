@@ -534,12 +534,12 @@
 		8D442EE224A809B4009995DD /* PropretyWrappers */ = {
 			isa = PBXGroup;
 			children = (
+				8D3A767B24A8A8BE00005971 /* EnvironmentOpenUrl.swift */,
+				8DB0C19624B1DCD9006818B4 /* EnvironmentPresentationMode.swift */,
 				8D68A80E24C8559B000F4DFF /* Environment Values */,
 				8DB0C1A824B21B01006818B4 /* AppStorageWrapper.swift */,
 				8D442EE624A80B2C009995DD /* ScaledMetricWrapper.swift */,
 				8DB0C1AE24B23107006818B4 /* StateObjectWrapper.swift */,
-				8D3A767B24A8A8BE00005971 /* EnvironmentOpenUrl.swift */,
-				8DB0C19624B1DCD9006818B4 /* EnvironmentPresentationMode.swift */,
 				8DB0C19F24B2168F006818B4 /* EnvironmentExportFiles.swift */,
 				8D999F8A24B0B7B10050BD97 /* NamespaceWrapper.swift */,
 				8DB0C1AB24B21F3F006818B4 /* SceneStorageWrapper.swift */,
