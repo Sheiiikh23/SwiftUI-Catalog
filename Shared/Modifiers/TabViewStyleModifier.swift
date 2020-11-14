@@ -7,43 +7,56 @@
 
 import SwiftUI
 
-/// Nouveau TabBarStyle preopre pour les TabView :
+/// TabViewStyle permet de définir le style d'une TabView
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
-/// TabViewStyle présents nativement (cf watchExtension) :
-///   • DefaultTabViewStyle ––> par défaut
-///   • PageTabViewStyle ––> agit comme un pageControl
+/// TabViewStyle présents nativement :
+///   • DefaultTabViewStyle : style par défaut en fonction de la plateforme
+///   • PageTabViewStyle : permet de passer la TabView en Page ControL. On peut définir la visibilité du nombre de page ou non (cf IndexViewStyleModifier)
+///   • CarouselTabViewStyle: cf watchOS
+///
+/// J'ai utilisé le constructeur où on binde le tag (très utile) et plus solid imho
 
-// MARK: - Utilisation : Permet de créer un PageControl en modifiant le style d'une TabView par PageTabViewStyle
+// MARK: - Utilisation : Indique la nataure de la TabView
 
 struct DefaultTabViewStyleModifier: View {
+
+  @State private var currentIndex = 1
+
   var body: some View {
-    TabView {
+    TabView(selection: $currentIndex) {
       Text("Hello")
-        .tabItem { Image(systemName: "person") }
+        .tag(0)
+        .tabItem { Label("Hello", systemImage: "person") }
       Text("Yo")
-        .tabItem { Image(systemName: "person") }
+        .tag(1)
+        .tabItem { Label("Yo", systemImage: "person") }
       Text("Nihao")
-        .tabItem { Image(systemName: "person") }
+        .tag(2)
+        .tabItem { Label("Hello", systemImage: "person") }
     }
-    /// Activer / désativer ce modifier ne provequera aucun changement
     .tabViewStyle(DefaultTabViewStyle())
   }
 }
 
 struct PageTabViewStyleModifier: View {
+
+  @State private var currentIndex = 1
+
   var body: some View {
-    TabView {
+    TabView(selection: $currentIndex) {
       Text("Hello")
+        .tag(0)
       Text("Yo")
+        .tag(1)
       Text("Nihao")
+        .tag(2)
     }
-    .background(Color.yellow)
+    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
     /// Agit comme un pageControl
     .tabViewStyle(PageTabViewStyle())
-    /// Modifier très utile à utiliser lors de l'usage de PageTabViewStyle
-    /// Permet de rajouter un background derrière l'index de page 
-    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+    /// cf IndexViewStyleModifier
+    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .interactive))
   }
 }
 

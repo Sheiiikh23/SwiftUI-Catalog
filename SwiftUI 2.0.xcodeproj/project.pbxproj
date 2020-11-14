@@ -186,8 +186,8 @@
 		8DE9F4EF24AD15F40054CE64 /* TabViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4EE24AD15F40054CE64 /* TabViewStyleModifier.swift */; };
 		8DE9F4F024AD15F40054CE64 /* TabViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4EE24AD15F40054CE64 /* TabViewStyleModifier.swift */; };
 		8DE9F4F224AD19650054CE64 /* TabViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4F124AD19650054CE64 /* TabViewStyleModifier.swift */; };
-		8DE9F4F424AD1B1E0054CE64 /* indexViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4F324AD1B1E0054CE64 /* indexViewStyleModifier.swift */; };
-		8DE9F4F524AD1B1E0054CE64 /* indexViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4F324AD1B1E0054CE64 /* indexViewStyleModifier.swift */; };
+		8DE9F4F424AD1B1E0054CE64 /* IndexViewStyleModifier & PageIndexViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4F324AD1B1E0054CE64 /* IndexViewStyleModifier & PageIndexViewStyle.swift */; };
+		8DE9F4F524AD1B1E0054CE64 /* IndexViewStyleModifier & PageIndexViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4F324AD1B1E0054CE64 /* IndexViewStyleModifier & PageIndexViewStyle.swift */; };
 		8DE9F4F724AD1BB60054CE64 /* SpriteKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4F624AD1BB60054CE64 /* SpriteKitView.swift */; };
 		8DE9F4F824AD1BB60054CE64 /* SpriteKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4F624AD1BB60054CE64 /* SpriteKitView.swift */; };
 		8DE9F4FA24AD1E6A0054CE64 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4F924AD1E6A0054CE64 /* ColorPickerView.swift */; };
@@ -383,7 +383,7 @@
 		8DE9F4EB24AD114E0054CE64 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8DE9F4EE24AD15F40054CE64 /* TabViewStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewStyleModifier.swift; sourceTree = "<group>"; };
 		8DE9F4F124AD19650054CE64 /* TabViewStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewStyleModifier.swift; sourceTree = "<group>"; };
-		8DE9F4F324AD1B1E0054CE64 /* indexViewStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indexViewStyleModifier.swift; sourceTree = "<group>"; };
+		8DE9F4F324AD1B1E0054CE64 /* IndexViewStyleModifier & PageIndexViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IndexViewStyleModifier & PageIndexViewStyle.swift"; sourceTree = "<group>"; };
 		8DE9F4F624AD1BB60054CE64 /* SpriteKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitView.swift; sourceTree = "<group>"; };
 		8DE9F4F924AD1E6A0054CE64 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		8DEBD12F24A3E6AA004AAE41 /* ToolBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarModifier.swift; sourceTree = "<group>"; };
@@ -663,6 +663,8 @@
 				8D999F9024B0CB4B0050BD97 /* ScrollToModifier.swift */,
 				8DC13F4124A764BC003CDA7A /* OnChangeModifier.swift */,
 				8DB0C19C24B21127006818B4 /* AppStoreOverlayModifier.swift */,
+				8DE9F4EE24AD15F40054CE64 /* TabViewStyleModifier.swift */,
+				8DE9F4F324AD1B1E0054CE64 /* IndexViewStyleModifier & PageIndexViewStyle.swift */,
 				8D442EDC24A80549009995DD /* ClipShapeModifier.swift */,
 				8DC13F3824A75C00003CDA7A /* CommandsModifier.swift */,
 				8DF93EF024A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift */,
@@ -680,8 +682,6 @@
 				8DF93EE624A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift */,
 				8DC13F4424A764D0003CDA7A /* WindowStyleModifier.swift */,
 				8DC13F4724A764E3003CDA7A /* WindowToolbarStyleModifier.swift */,
-				8DE9F4EE24AD15F40054CE64 /* TabViewStyleModifier.swift */,
-				8DE9F4F324AD1B1E0054CE64 /* indexViewStyleModifier.swift */,
 				8D999F7E24B08E470050BD97 /* DatePickerStyleModifier.swift */,
 				8D999F8724B0B0140050BD97 /* MatchedGeometryEffectModifier.swift */,
 				8D999F9324B0E0C20050BD97 /* FullScreenCoverModifier.swift */,
@@ -1071,7 +1071,7 @@
 				8D3A767F24A8AA1A00005971 /* SignInWithappleButtonView.swift in Sources */,
 				8D064AFD24D0A367000272FA /* LineLimit.swift in Sources */,
 				8D6C0F3024FA953000041F8C /* ToolBarItemGroupView.swift in Sources */,
-				8DE9F4F424AD1B1E0054CE64 /* indexViewStyleModifier.swift in Sources */,
+				8DE9F4F424AD1B1E0054CE64 /* IndexViewStyleModifier & PageIndexViewStyle.swift in Sources */,
 				8D999F9124B0CB4B0050BD97 /* ScrollToModifier.swift in Sources */,
 				8D6C0F3424FA99F000041F8C /* PickerStyleModifier.swift in Sources */,
 				8DC13F3F24A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
@@ -1167,7 +1167,7 @@
 				8D1ED84324C8D002000F936D /* AccessibilityEnabled.swift in Sources */,
 				8D3A768024A8AA1A00005971 /* SignInWithappleButtonView.swift in Sources */,
 				8D064AFE24D0A367000272FA /* LineLimit.swift in Sources */,
-				8DE9F4F524AD1B1E0054CE64 /* indexViewStyleModifier.swift in Sources */,
+				8DE9F4F524AD1B1E0054CE64 /* IndexViewStyleModifier & PageIndexViewStyle.swift in Sources */,
 				8D999F9224B0CB4B0050BD97 /* ScrollToModifier.swift in Sources */,
 				8DC13F4024A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
 				8DDA5C6324A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
