@@ -35,7 +35,7 @@ struct ScrollToModifier: View {
             proxy.scrollTo(5, anchor: .top)
           }
         } label: {
-          Text("Scroll to position #5 top anchor")
+          Text("Scroll to position #5 top anchor with animation")
         }
         Button {
           /// scroll à l'id 7 avec une anchor .center
@@ -55,7 +55,7 @@ struct ScrollToModifier: View {
             proxy.scrollTo(13)
           }
         } label: {
-          Text("Scroll to position #13 without predefined anchor")
+          Text("Scroll to position #13 without predefined anchor with animation")
         }
         ForEach(0...15, id: \.self) { item in
           Text("Example \(item)")

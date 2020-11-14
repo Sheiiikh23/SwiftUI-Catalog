@@ -29,6 +29,7 @@ struct ColorPickerView: View {
       ColorPicker("Choose a color", selection: $colorValue, supportsOpacity: false)
 
       /// ColorPicker avec une View en tant que Label (support de l'opacité activé)
+      /// Plus personnalisable
       ColorPicker(selection: $colorValue) {
         Text("Choose a color")
           .font(.title3)
@@ -36,6 +37,7 @@ struct ColorPickerView: View {
       }
 
       /// ColorPicker avec une View en tant que Label (support de l'opacité désactivé)
+      /// Plus personnalisable
       ColorPicker(selection: $colorValue, supportsOpacity: false) {
         Text("Choose a color")
           .font(.title3)

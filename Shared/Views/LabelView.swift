@@ -7,75 +7,75 @@
 
 import SwiftUI
 
-/// Apparition des Labels : Text + Image / Icon
+/// Labels : concaténation d'une Image / Shape avec un Text
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
-///   Text: String
-///   Image/ systemImage • icon : String • Shape (+ modifiers)
+/// Le spacing de la concaténation est automatiquement géré par l'OS
+/// Dans une toolbar ne montre que l'Image / Shape et le Text sert pour l'accessibilité
 
-// MARK: - Utilisation : TabItems (évitant un VStack), et pour éviter de créer un HStack
-
-
+// MARK: - Utilisation : TabItems (évitant un VStack) et éviter de créer des HStacks
 
 struct LabelView: View {
   var body: some View {
     NavigationView {
       
       VStack(spacing: 50) {
-        
-        /// Créer un label dont le text et l'image • systemImage vont scales de la même manière
-        /// cf le tuto d'Apple sur les SFSymbols (version 2.0 dispo en téléchargement)
-        Label("Constructeur n°1 ", systemImage: "magnifyingglass")
-          .font(.title)
-        
-        /// Créer un label qui permet de spécifier à chaque élément des modifiers qui lui sont propres
+
+        /// Label avec une String en tant que Title et une Image Asset en tant qu'image
+        Label("Constructeur", image: "Twitter")
+
+        /// Label avec une String en tant que Title et une systemImage (= SFSymbols) en tant qu'image
+        Label("Constructeur", systemImage: "magnifyingglass")
+          /// Permet de les faire scale de la même manière
+          .font(.system(size: 20, weight: .semibold))
+
+        /// Label plus générique :
+        /// Text en tant que Text ––> plus personnalisable
+        /// Icon en tant qu'Image ––> plus personnalisable
         Label {
-          Text("Construteur n°2")
-            /// Modifiers propres au Text
+          Text("Constructeur")
+            .font(.callout)
             .fontWeight(.bold)
             .foregroundColor(.red)
         } icon: {
-          Image(systemName: "magnifyingglass")
-            /// Modifiers propres à l'Image • systemImage
-            .foregroundColor(.blue)
+          Image("Twitter")
+            .resizable()
+            .frame(width: 35, height: 35)
         }
-        
-        /// Créer un label qui permer de spécifier à chaque élément des modifiers qui lui sont propres
-        /// On peut également appliqué des modifiers pour le Label (càd Text + Image / systemImage • Shape)
+
+        /// Label plus générique :
+        /// Text en tant que Text ––> plus personnalisable
+        /// Icon en tant que systemImage ––> plus personnalisable
         Label {
-          Text("Constructeur n°3")
-            /// Modifiers propres au Text
+          Text("Constructeur")
+            .font(.subheadline)
             .fontWeight(.bold)
             .foregroundColor(.green)
         } icon: {
-          /// Modifiers propres à l'Image • systemImage
-          Image(systemName: "magnifyingglass")
-            .foregroundColor(.blue)
+          Image(systemName: "trash.circle.fill")
+            .renderingMode(.original)
+            .font(.system(size: 40, weight: .heavy))
         }
-        /// Modifiers appliqués à tout le label
-        .font(.title3)
-        
-        /// Créer un label avec une Shape pour l'icon. A noter que chaque élément aura des mofiers qui lui seront propres
+
+        /// Label plus générique :
+        /// Text en tant que Text ––> plus personnalisable
+        /// Icon en tant que Shape ––> pas possible sans le Label générique
         Label {
-          Text("Constructeur n°4")
-            /// Modifiers propres au Text
-            .font(.callout)
-            .fontWeight(.thin)
-            .foregroundColor(.purple)
+          Text("Constructeur")
+            .font(.system(size: 20, weight: .heavy, design: .rounded))
+            .foregroundColor(.orange)
         } icon: {
           Circle()
-            /// Modifiers propres à la Shape
-            .fill(Color.red)
-            .frame(width: 40, height: 40)
+            .fill(Color.green)
+            .frame(width: 32, height: 32)
         }
-        
       }
+      .frame(maxWidth: .infinity, maxHeight: .infinity)
+      .background(Color.gray)
       .navigationBarTitle("Hello Labels")
       .toolbar {
         ToolbarItem(placement: .navigationBarTrailing) {
           Button(action: {}) {
-            #warning("TODO")
-            // MARK: Logiquement dans des childs de navigationView (à confirmer) :
             // La view ne montre que l'image / systemImage • Shape
             // Le Text du label est servie pour l'accessibilité pour les personnes malvoyantes
             Label("Progress", systemImage: "pencil")
@@ -89,6 +89,10 @@ struct LabelView: View {
 
 struct LabelView_Previews: PreviewProvider {
   static var previews: some View {
-    LabelView()
+    Group {
+      LabelView()
+      LabelView()
+        .environment(\.sizeCategory, .extraLarge)
+    }
   }
 }

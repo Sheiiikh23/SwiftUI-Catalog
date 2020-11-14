@@ -32,6 +32,7 @@ struct ProgressViews: View {
         .textCase(.lowercase)
 
       /// progressView avec une View en tant que Label
+      /// Plus personnalisable
       ProgressView {
         Text("Constructeur n°3")
           .fontWeight(.bold)
@@ -58,6 +59,7 @@ struct ProgressViews: View {
         .textCase(.lowercase)
 
       /// progressView bar avec une View en tant que Label (total = 1)
+      /// Plus personnalisable
       ProgressView(value: valueProgressView) {
         Label("Constructeur n°6", systemImage: "gear")
           .padding(.leading, 5)
