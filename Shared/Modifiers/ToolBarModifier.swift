@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-/// Arrivé du toolBar modifier obligatoirement contenu dans une NavigationView ––> i•Pad•OS / watchOS /
+/// ToolBar modifier pour mettre en avant du contenu dans un context de NavigationView
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
-/// Permet de créer une toolBar qui changenet d'apparence et d'endroit en fonction de la plateforme
-/// Cette Toolbar est essentiellement (pour pas dire exclusivement) composée de ToolbarItem (cf ToolBarItemPlaceModifier)
+/// Permet de créer une toolBar qui change d'apparence et d'endroit en fonction de la plateforme
+/// Cette Toolbar est composée de ToolbarItem (cf ToolBarItemView)
+///
 
 // MARK: - Utilisation : Permet de mettre en avant des éléments dans un contexte de NavigationView
-
-#warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
 
 struct ToolBarModifier: View {
   var body: some View {
@@ -30,34 +29,24 @@ struct ToolBarModifier: View {
           Spacer()
         }
       }
-      .navigationBarTitle("Test toolBar")
-
-      /// Création de la toolBar
+      .navigationTitle("Test toolBar")
       .toolbar {
-
-        /// Ajout d'un ToolbarItem
         ToolbarItem(placement: .automatic) {
           Text("Automatic AKA bottom leading")
         }
-
-        /// Ajout d'un ToolbarItem
         ToolbarItem(placement: .navigationBarLeading) {
           Button("Action", action: { })
         }
-
-        /// Ajout d'un ToolbarItem
         ToolbarItem(placement: .navigationBarTrailing) {
           EditButton()
         }
-
-        /// Ajout d'un ToolbarItem (placé au centre par défaut) 
         ToolbarItem(placement: .bottomBar) {
           HStack {
             Spacer()
-            Button(action: {}, label: {
+            Button { } label: {
               Image(systemName: "square.and.arrow.up")
                 .font(.title2)
-            })
+            }
           }
         }
       }
