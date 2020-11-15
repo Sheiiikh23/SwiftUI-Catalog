@@ -10,22 +10,39 @@ import SwiftUI
 /// ToolBarItemPlacement modifier
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 /// 
-/// Voici les ToolBarItemPlacement présent nativement (cf watchExtension):
-///   • automatique ––> comportement propre à la plateforme
-///   • bottomBar ––> item placé dans la bottom toolbar
-///   • cancellationAction ––> représente un bouton Cancel – comportement propre à la plateforme ??
-///   • confirmationAction ––> représente un bouton de confirmation d'action (du style confirmer) – comportement propre à la plateforme ??
-///   • destructiveAction ––> représente un bouton de destruction d'action (du style supprimer / ne pas enregistrer) avant de quitter la view – comportement propre à la plateforme ??
-///   • navigation ––> représente une action de navigation (du style suivant / précédent)
-///   • navigationBarLeading ––> item placé au leading de la navigationBar
-///   • navigationBarTrailing ––> item placé au trailing de la navigationBar
-///   • primaryAction ––> représente une action fréquemment utilisé en fonction du contexte ?? – comportement propre à la plateforme ??
-///   • principal ––> représente une action principal – propre à la plateforme ? Très utile pour les iPad car au centre de la vue et de la navigationView
-///   • status ––> représente un item de nature informationelle ne représentant pas une action pouvant être entrepris par l'utilisateur – propre à la plateforme ??
+/// Enum ToolBarItemPlacement : propre à chaque placement mais c'est l'intention qui compte plus que le placement en lui même
+///   • automatique : propre à la plateforme
+///      - macOS / Mac Catalyst : leading to trailing
+///      - i•Pad•OS / tvOS : trailing de la navigationBar
+///      - watchOS : uniquement le premier élément apparaitra, pinné sous la barre de navigation
+///   • bottomBar : bottom toolbar (uniquement pour i•Pad•OS et Mac Catalyst)
+///   • cancellationAction : représente l'annulation d'une action dans une modale (pour dismiss la modale sans drag de la part de l'utilisateur)
+///      - macOS / Mac Catalyst : trailing (placé avant un confirmAction s'il y en a)
+///      - i•Pad•OS / watchOS / tvOS : leading de la navigationBar
+///   • confirmationAction : représente la confirmation d'une action dans une modale (ajouter un event au calendrier par exemple)
+///      - macOS / Mac Catalyst : trailing most (le + en trailing possible) et l'accent color de l'app sera son background
+///      - i•Pad•OS / tvOS : même placement que celui du primaryAction
+///      - watchOS : trailing de la navigationBar
+///   • destructiveAction : représente la destruction d'une action dans une modale (boutton ne pas enregistrer par exemple)
+///      - macOS / Mac Catalyst : leading + apparence spéciale pour prévenir d'un usage accidentel
+///      - i•(Pad?)•OS / watchOS / tvOs : trailing de la navigationBar
+///   • navigation : représente une action de navigation (du style suivant / précédent dans Safari par exemple)
+///      - macOS / Mac Catalyst : leading avant le titre (si présent dans la toolbar)
+///      - i•Pad•OS / tvOS : leading de la navigationBar (si compactWidth alors seront placé pareil que la primaryAction)
+///   • navigationBarLeading : leading de la navigationBar (uniquement pour i•Pad•OS, tvOS & Mac Catalyst)
+///   • navigationBarTrailing : trailing de la navigationBar (uniquement pour i•Pad•OS, tvOS & Mac Catalyst)
+///   • primaryAction : représente l'action principale la plus utilisé dans un context donné (nouveau message dans l'app Message par exemple)
+///      - macOS / Mac Catalyst : leading
+///      - i•Pad•OS / tvOS : trailing de la navigationBar
+///      - watchOS : sous la navigationBar, révélée lors d'un scroll
+///   • principal : l'item est placé dans la section principal
+///      - macOS / Mac Catalyst : centre de la toolbar
+///      - i•Pad•OS / tvOS : centre de la navigationBar et prendra le pas sur le titre de la NavigationView (setter via .navigationTitle)
+///   • status : représente un changement de staut pour le context actuel de la View (représente une information et non une action, indication sur le dernier refresh par exemple)
+///      - macOS / Mac Catalyst : centre de la toolbar
+///      - i•Pad•OS : centre bottom de la toolbar
 
-// MARK: - Utilisation : Custom le placement d'un ToolbarItem
-#warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
-#warning("Lever les incertitudes. Atteinte de la doc...")
+// MARK: - Utilisation : Indiquer l'utilité d'un ToolbarItem (et donc son placement , géré nativement 😇)
 
 struct AutomaticPlacement: View {
   var body: some View {
@@ -63,59 +80,44 @@ struct BottomBarPlacement: View {
   }
 }
 
-/// Activer / désactiver la Live Preview
 struct CancellationAction: View {
+
+  @State private var show = false
+
   var body: some View {
-    NavigationView {
-      List(0...50, id: \.self) { item in
-        Text("Hello row n°\(item)")
-          .font(.title3)
-          .fontWeight(.bold)
-      }
-      .navigationBarTitle("CancellationAction")
-      .toolbar {
-        ToolbarItem(placement: .cancellationAction) {
-          Text("CancellationAction placement")
-        }
-      }
+    VStack {
+      Button { show.toggle() } label: { Text("Toggle me") }
+    }
+    .sheet(isPresented: $show) {
+      ModalNavigationView(title: "CancellationAction")
     }
   }
 }
 
-/// Activer / désactiver la Live Preview
 struct ConfirmationAction: View {
+
+  @State private var show = false
+
   var body: some View {
-    NavigationView {
-      List(0...50, id: \.self) { item in
-        Text("Hello row n°\(item)")
-          .font(.title3)
-          .fontWeight(.bold)
-      }
-      .navigationBarTitle("ConfirmationAction")
-      .toolbar {
-        ToolbarItem(placement: .confirmationAction) {
-          Text("ConfirmationAction placement")
-        }
-      }
+    VStack {
+      Button { show.toggle() } label: { Text("Toggle me") }
+    }
+    .sheet(isPresented: $show) {
+      ModalNavigationView(title: "ConfirmationAction")
     }
   }
 }
 
-/// Activer / désactiver la Live Preview
 struct DestructiveAction: View {
+
+  @State private var show = false
+
   var body: some View {
-    NavigationView {
-      List(0...50, id: \.self) { item in
-        Text("Hello row n°\(item)")
-          .font(.title3)
-          .fontWeight(.bold)
-      }
-      .navigationBarTitle("DestructiveAction")
-      .toolbar {
-        ToolbarItem(placement: .destructiveAction) {
-          Text("DestructiveAction placement")
-        }
-      }
+    VStack {
+      Button { show.toggle() } label: { Text("Toggle me") }
+    }
+    .sheet(isPresented: $show) {
+      ModalNavigationView(title: "DestructiveAction")
     }
   }
 }
@@ -224,6 +226,30 @@ struct Status: View {
           Text("Status placement")
         }
       }
+    }
+  }
+}
+
+fileprivate struct ModalNavigationView: View {
+
+  @Environment(\.presentationMode) var presentation
+  let title: String
+
+  var body: some View {
+    NavigationView {
+      List(0...50, id: \.self) { item in
+        Text("Hello row n°\(item)")
+          .font(.title3)
+          .fontWeight(.bold)
+      }
+      .navigationBarTitle(title)
+        .toolbar {
+          ToolbarItem(placement: .cancellationAction) {
+            Button { presentation.wrappedValue.dismiss() } label: {
+              Text("Action here")
+            }
+          }
+        }
     }
   }
 }
