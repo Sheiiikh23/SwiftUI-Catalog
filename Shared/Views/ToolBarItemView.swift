@@ -7,15 +7,53 @@
 
 import SwiftUI
 
-/// Apparition des ToolBarItem présent uniquement dans une toolBar et donc dans une NavigationView
+/// ToolBarItem présent uniquement dans une toolBar et donc dans une NavigationView
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 /// 
-/// Plusieurs constructeurs disponible :
-///   • ToolBarItem ...
-///   • ToolBarItem(id: ) ...
-///   • ToolBarItem(placement: ToolBarItemPlacement) (––> probablement le plus utilisé)
-///   • ToolBarItem(id: , placement: ToolBarItemPlacement, showByDefault: Bool) ...
+/// toolbar modifier : cf ToolBarModifier
+/// toolBarItemPlacement : cf ToolBarItemPlacement
 
-// MARK: pour voir des exemple cf ToolBarItemPlaceModifier
-#warning("Refacto")
-#warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
+// MARK: Utilisation : Permer de peupler la toolbar de la NavigationView
+
+struct ToolBarItemView: View {
+
+  @State private var showTrailingItem = true
+
+  var body: some View {
+    NavigationView {
+      Text("Hello World")
+        .navigationTitle("SwiftUI")
+        .toolbar {
+          ToolbarItem(placement: .navigationBarLeading) {
+            Text("Bar leading")
+          }
+          ToolbarItem(placement: .bottomBar) {
+            HStack {
+              Text("Left bottom bar")
+              Spacer()
+              Text("Right bottom bar")
+            }
+          }
+          ToolbarItem {
+            Text("Automatic placement")
+          }
+          ToolbarItem(id: "trailing", placement: .navigationBarTrailing, showsByDefault: showTrailingItem) {
+            Button { showTrailingItem.toggle() } label: {
+              Text("Hide me")
+            }
+          }
+        }
+    }
+  }
+}
+
+struct ToolBarItemView_Preview: PreviewProvider {
+  static var previews: some View {
+    Group {
+      ToolBarItemView()
+        .previewDevice("iPhone 11 Pro Max")
+      ToolBarItemView()
+        .previewDevice("iPad Air (3rd generation)")
+    }
+  }
+}
