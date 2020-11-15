@@ -7,26 +7,38 @@
 
 import SwiftUI
 
-/// Nouveau ListeStyle propre pour les List :
+/// ListeStyle propre pour les List :
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
-/// ListStyle présents nativement (cf. watchExtension) :
-///   • DefaultListStyle ––> par défaut pour i•Pad•Os / watchOS / tvOS / macOS / Mac Catalyst
-///   • GroupedListStyle ––> uniquement pour i•Pad•Os / tvOS / Mac Catalyst
-///   • InsetGroupedListStyle ––> uniquement pour i•Pad•OS / Mac Catalyst
-///   • InsetListStyle ––> uniquement pour i•Pad•OS / macOS / Mac Catalyst
-///   • PlainListStyle ––> i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
-///   • SideBarListStyle ––> i•Pad•OS / macOS / Mac Catalyst || Très cool pour les iPads
+/// ListStyle présents nativement :
+///   • DefaultListStyle : propre à chaque plateforme
+///   • CarouselListStyle et EllipticalListStyle : cf watchOS
+///   • GroupedListStyle : dispo sur i•Pad•OS / tvOS / Mac Catalyst
+///     - Agit ± comme un padding vertical sur la List en elle-même
+///   • InsetGroupedListStyle : dispo sur i•Pad•OS / Mac Catalyst
+///     - Agit ± comme un padding vertical & horizontal sur la List en elle-même
+///     - Utilisé dans Notes (et un peu partout dans iOS 14)
+///   • InsetListStyle : dispo sur i•Pad•OS / macOS / Mac Catalyst
+///     - Agit ± comme un padding horizontal sur le contenu de la List
+///   • PlainListStyle : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+///     - Aucune différence sur i•Pad•OS ?
+///   • SideBarListStyle : i•Pad•OS / macOS / Mac Catalyst
+///     - Grise le background et enlève le Divider de chaque élément
+///     - Agit comme un padding
+///     - Très recommandé pour les iPads
 
-// MARK: - Utilisation : Avec des List pour le provider une UI bien particulière en fonction d'un context donné 
+// MARK: - Utilisation : Provider une UI bien particulière pour une List en fonction d'un context donné
 
 struct DefaultListStyleModifier: View {
   var body: some View {
     List(0...40, id: \.self) { item in
-      Text("Hello row n°\(item)")
-        .font(.title)
+      HStack {
+        Text("Hello row n°\(item)")
+          .font(.title)
+        Spacer()
+        Image(systemName: "gear")
+      }
     }
-    /// Activer / désactiver ce modifier ne provoquera aucun changement
     .listStyle(DefaultListStyle())
   }
 }
@@ -34,10 +46,13 @@ struct DefaultListStyleModifier: View {
 struct GroupedListStyleModifier: View {
   var body: some View {
     List(0...100, id: \.self) { item in
-      Text("Hello row n°\(item)")
-        .font(.title)
+      HStack {
+        Text("Hello row n°\(item)")
+          .font(.title)
+        Spacer()
+        Image(systemName: "gear")
+      }
     }
-    /// Agit ± comme un padding vertical sur la View en elle-même
     .listStyle(GroupedListStyle())
   }
 }
@@ -45,10 +60,13 @@ struct GroupedListStyleModifier: View {
 struct InsetGroupedListStyleModifier: View {
   var body: some View {
     List(0...100, id: \.self) { item in
-      Text("Hello row n°\(item)")
-        .font(.title)
+      HStack {
+        Text("Hello row n°\(item)")
+          .font(.title)
+        Spacer()
+        Image(systemName: "gear")
+      }
     }
-    /// Agit ± comme un padding vertical & horizontal sur la View en elle-même
     .listStyle(InsetGroupedListStyle())
   }
 }
@@ -56,10 +74,13 @@ struct InsetGroupedListStyleModifier: View {
 struct InsetListStyleModifier: View {
   var body: some View {
     List(0...100, id: \.self) { item in
-      Text("Hello row n°\(item)")
-        .font(.title)
+      HStack {
+        Text("Hello row n°\(item)")
+          .font(.title)
+        Spacer()
+        Image(systemName: "gear")
+      }
     }
-    /// Agit ± comme un padding horizontal sur le contenu de la List
     .listStyle(InsetListStyle())
   }
 }
@@ -67,22 +88,27 @@ struct InsetListStyleModifier: View {
 struct PlainListStyleModifier: View {
   var body: some View {
     List(0...100, id: \.self) { item in
-      Text("Hello row n°\(item)")
-        .font(.title)
+      HStack {
+        Text("Hello row n°\(item)")
+          .font(.title)
+        Spacer()
+        Image(systemName: "gear")
+      }
     }
-    /// Aucune différence sur i•Pad•OS
     .listStyle(PlainListStyle())
   }
 }
 
 struct SidebarListStyleModifier: View {
   var body: some View {
-    List(0...10, id: \.self) { item in
-      Text("Hello row n°\(item)")
-        .font(.title)
+    List(0...100, id: \.self) { item in
+      HStack {
+        Text("Hello row n°\(item)")
+          .font(.title)
+        Spacer()
+        Image(systemName: "gear")
+      }
     }
-    /// Grise le background et enlève le Divider de chaque élément
-    /// Agit comme un padding
     .listStyle(SidebarListStyle())
   }
 }
