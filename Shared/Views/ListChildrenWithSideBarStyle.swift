@@ -7,21 +7,13 @@
 
 import SwiftUI
 
-/// Apparition des list avec childrens (sous listes imbriquées)
+/// List avec childrens (sous listes imbriquées)
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
-/// 
-/// Le model doit contenir des childrens
-/// Choisir le constructeur qui prend des children :
-///   • List(data, children: \.childrenProperty) ...
+///
+/// Permet de créer des listes imbriquées
+/// Le model doit contenir des childrens qui sont du même type que le model lui-même
 
-// MARK: - Utilisation : Disclosure Group pour les childrens, sans pour autant les montrer
-
-struct Person: Identifiable {
-  var id = UUID()
-  var name: String
-  var children: [Person]?
-}
-
+// MARK: - Utilisation : Créer des listes imbriquées, resemble un peu au DisclosureGroup
 
 struct ListWithChildrenView: View {
   var body: some View {
@@ -41,6 +33,12 @@ struct ListWithChildrenView_Previews: PreviewProvider {
 }
 
 
+struct Person: Identifiable {
+  var id = UUID()
+  var name: String
+  var children: [Person]?
+}
+
 extension Person {
   static var mocks: [Person] {
     [
@@ -52,9 +50,8 @@ extension Person {
                       Person(name: "David")
                      ])
              ]),
-      Person(name: "Person 1")
+      Person(name: "Person 1",
+             children: [Person(name: "Person 2")])
     ]
-    
   }
 }
-
