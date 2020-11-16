@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-/// Apparition du modifier textCase qui permet de forcer le Text / TextField en majuscule / minuscule
+/// textCase pour transformer une string en majuscule / minuscule ou la laisser telle quel
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOs / Mac Catalyst
 ///
 /// TextCase présent nativement
-///   • none ––> par défaut, textCase de la String
-///   • uppercase ––> tout en majuscule
-///   • lowercase ––> tout en minuscule
+///   • none : textCase de la String (par défaut)
+///   • uppercase : majuscule
+///   • lowercase : minuscule
 
 // MARK: - Utilisation : Forcer le Text à être en majuscule, miniscule, ou "naturel"
 
@@ -24,18 +24,15 @@ struct TextCaseModifier: View {
     var body: some View {
       VStack(spacing: 50) {
 
-        /// Default TextCase
         Text("No textCase !")
           .textCase(.none)
 
-        /// uppercase TextCase
         TextField("Enter your name : ", text: $valueTextField)
           .textCase(.uppercase)
-          /// disableAutocorrection est un bon modifier a coupler textCase
           .disableAutocorrection(true)
           .padding()
+          .textFieldStyle(RoundedBorderTextFieldStyle())
 
-        /// lowercase TextCase 
         Text("EveryThing iS possiBLe when YOU are deterMINated")
           .font(.title3)
           .fontWeight(.bold)
