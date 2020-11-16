@@ -7,14 +7,11 @@
 
 import SwiftUI
 
-/// Nouveau modifier qui présente une modal prenant tout l'écran (ou du moins le plus possible)
-/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+/// FullScreenCover permet de présenter une modale qui prend tout l'écran
+/// Disponible sur : i•Pad•OS / watchOS / tvOS / Mac Catalyst
 ///
-/// Paramètres du modifier :
-///   • isPresented: *Binding* Bool ––> obligatoire
-///   • onDismiss: closure = nil par défaut ––> optionnel
 
-// MARK: - Utilisation : Permet de créer une modal en fullScreen (à l'inverse d'une Sheet qui ne prend pas tout l'écran)
+// MARK: - Utilisation : Permet de créer une modale en fullScreen (à l'inverse d'une Sheet qui ne prend pas tout l'écran)
 
 struct FullScreenCoverModifier: View {
 
@@ -37,7 +34,7 @@ struct FullScreenCoverModifier: View {
   }
 }
 
-struct ModalPresenter: View {
+fileprivate struct ModalPresenter: View {
 
   @Environment(\.presentationMode) var presentationMode
 
