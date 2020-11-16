@@ -17,11 +17,11 @@ import StoreKit
 ///   • isPresented: *Binding* Bool ––> obligatoire
 ///   • configuration: SKOverlay.AppConfiguration(appIdentifier: appId, position: position)
 ///     - appId: String correspondant à l'ID de l'app
-///     - position : .bottom ou .bottomRaised
+///     - position :
+///       • .bottom : bottom tout en respectant la safe area (même si ignorée)
+///       • .bottomRaised : plus que le bottom d'environ 10-15 points
 
-
-// MARK: Utilisation : Recommander d'autres applications ou dans AppClip pour montrer l'app en entière
-
+// MARK: - Utilisation : Recommander d'autres applications ou dans AppClip pour montrer l'app en entière
 
 struct AppStoreOverlayModifier: View {
 
@@ -39,11 +39,6 @@ struct AppStoreOverlayModifier: View {
         .shadow(radius: 15)
     }
     .appStoreOverlay(isPresented: $showRecommandedApp) {
-      /// Overlay qui permet d'afficher la bannière de l'app recommandée
-      /// appIdentifier: id de l'app
-      /// Deux positions possibles :
-      ///   • bottom : le plus bas tout en respectant la safe area bottom (même si ignoré)
-      ///   • bottomRaised : plus haut le bottom de genre 10-15 points
       SKOverlay.AppConfiguration(appIdentifier: "1440611372", position: .bottom)
     }
     .ignoresSafeArea()
