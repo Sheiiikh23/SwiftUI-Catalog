@@ -206,8 +206,8 @@
 		8DF93ED524A78F0700B84CD0 /* ListStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93ED424A78F0700B84CD0 /* ListStyleModifier.swift */; };
 		8DF93EDF24A7955D00B84CD0 /* ListChildrenWithSideBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EDE24A7955D00B84CD0 /* ListChildrenWithSideBarStyle.swift */; };
 		8DF93EE024A7955D00B84CD0 /* ListChildrenWithSideBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EDE24A7955D00B84CD0 /* ListChildrenWithSideBarStyle.swift */; };
-		8DF93EE724A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE624A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift */; };
-		8DF93EE824A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE624A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift */; };
+		8DF93EE724A7B60700B84CD0 /* ToolBarItemPlacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE624A7B60700B84CD0 /* ToolBarItemPlacement.swift */; };
+		8DF93EE824A7B60700B84CD0 /* ToolBarItemPlacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE624A7B60700B84CD0 /* ToolBarItemPlacement.swift */; };
 		8DF93EEA24A7B62400B84CD0 /* ToolBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE924A7B62400B84CD0 /* ToolBarItemView.swift */; };
 		8DF93EEB24A7B62400B84CD0 /* ToolBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE924A7B62400B84CD0 /* ToolBarItemView.swift */; };
 		8DF93EED24A7DD2700B84CD0 /* ToolBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EEC24A7DD2700B84CD0 /* ToolBarModifier.swift */; };
@@ -399,7 +399,7 @@
 		8DF93EC624A78E9300B84CD0 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		8DF93ED424A78F0700B84CD0 /* ListStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStyleModifier.swift; sourceTree = "<group>"; };
 		8DF93EDE24A7955D00B84CD0 /* ListChildrenWithSideBarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChildrenWithSideBarStyle.swift; sourceTree = "<group>"; };
-		8DF93EE624A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarItemPlacementModifier.swift; sourceTree = "<group>"; };
+		8DF93EE624A7B60700B84CD0 /* ToolBarItemPlacement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarItemPlacement.swift; sourceTree = "<group>"; };
 		8DF93EE924A7B62400B84CD0 /* ToolBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarItemView.swift; sourceTree = "<group>"; };
 		8DF93EEC24A7DD2700B84CD0 /* ToolBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarModifier.swift; sourceTree = "<group>"; };
 		8DF93EF024A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandGroupPlacementModifier.swift; sourceTree = "<group>"; };
@@ -665,7 +665,6 @@
 				8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */,
 				8D999F7E24B08E470050BD97 /* DatePickerStyleModifier.swift */,
 				8DEBD12F24A3E6AA004AAE41 /* ToolBarModifier.swift */,
-				8DF93EE624A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift */,
 				8DF93E9924A77D7400B84CD0 /* ListStyleModifier.swift */,
 				8D3A766E24A892E600005971 /* ListItemTintModifier.swift */,
 				8D442EDC24A80549009995DD /* ClipShapeModifier.swift */,
@@ -709,6 +708,8 @@
 				8DDA5C5B24A3217D00BF263B /* LabelView.swift */,
 				8D999F8124B098040050BD97 /* DisclosureGroupView.swift */,
 				8DF93EE924A7B62400B84CD0 /* ToolBarItemView.swift */,
+				8DF93EE624A7B60700B84CD0 /* ToolBarItemPlacement.swift */,
+				8D6C0F2F24FA953000041F8C /* ToolBarItemGroupView.swift */,
 				8DF93EDE24A7955D00B84CD0 /* ListChildrenWithSideBarStyle.swift */,
 				8D3A768F24A8D85700005971 /* ColoredSFSymbolsView.swift */,
 				8D3A768924A8C48E00005971 /* DocumentGroupView.swift */,
@@ -720,7 +721,6 @@
 				8D66EB1A24DDBA4F00FC4941 /* OutlineGroupView.swift */,
 				8D66EB5424DDBFE700FC4941 /* MenuView.swift */,
 				8D66EB5724DEAC0E00FC4941 /* GroupBoxView.swift */,
-				8D6C0F2F24FA953000041F8C /* ToolBarItemGroupView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1096,7 +1096,7 @@
 				8D4B2A3A24CA1EBA003E37F4 /* ColorScheme.swift in Sources */,
 				8D68A81024C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift in Sources */,
 				8D36D1B3250971E20074E498 /* EditMode.swift in Sources */,
-				8DF93EE724A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift in Sources */,
+				8DF93EE724A7B60700B84CD0 /* ToolBarItemPlacement.swift in Sources */,
 				8D7B37D124AEFD7500F95736 /* VideoPlayerView.swift in Sources */,
 				8D999F8224B098040050BD97 /* DisclosureGroupView.swift in Sources */,
 			);
@@ -1189,7 +1189,7 @@
 				8D3A767A24A89FA200005971 /* LinkView.swift in Sources */,
 				8D4B2A3B24CA1EBB003E37F4 /* ColorScheme.swift in Sources */,
 				8D68A81124C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift in Sources */,
-				8DF93EE824A7B60700B84CD0 /* ToolBarItemPlacementModifier.swift in Sources */,
+				8DF93EE824A7B60700B84CD0 /* ToolBarItemPlacement.swift in Sources */,
 				8D7B37D224AEFD7500F95736 /* VideoPlayerView.swift in Sources */,
 				8D999F8324B098040050BD97 /* DisclosureGroupView.swift in Sources */,
 			);

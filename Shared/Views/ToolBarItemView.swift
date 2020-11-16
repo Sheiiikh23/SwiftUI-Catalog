@@ -13,7 +13,7 @@ import SwiftUI
 /// toolbar modifier : cf ToolBarModifier
 /// toolBarItemPlacement : cf ToolBarItemPlacement
 
-// MARK: Utilisation : Permer de peupler la toolbar de la NavigationView
+// MARK: Utilisation : Permet de peupler la toolbar de la NavigationView
 
 struct ToolBarItemView: View {
 

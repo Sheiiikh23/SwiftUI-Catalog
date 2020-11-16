@@ -1,5 +1,5 @@
 //
-//  ToolBarItemPlacementModifier.swift
+//  ToolBarItemPlacement.swift
 //  SwiftUI 2.0
 //
 //  Created by Lucas Abijmil on 27/06/2020.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// ToolBarItemPlacement modifier
+/// ToolBarItemPlacement
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 /// 
 /// Enum ToolBarItemPlacement : propre à chaque placement mais c'est l'intention qui compte plus que le placement en lui même
