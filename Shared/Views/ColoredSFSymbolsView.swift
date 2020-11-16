@@ -7,12 +7,10 @@
 
 import SwiftUI
 
-/// Plein de nouveau SF Symbols présent nativement.
+/// SF Symbols en couleur + nouveaux SF Symbols (version 2)
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
-///
-/// Désormais certain SFSymbols sont colorés de manière automatique par Apple
-/// Il faut préciser à SwiftUI qu'on veut appliqué la couleur par défaut donné par Apple
-/// Utilisation du modifier : renderingMode(.original)
+/// 
+/// Utilisation du modifier : renderingMode(.original) pour appliquer les couleurs choisis par Apple
 
 // MARK: - Utilisation : SF Symbols colorés natifs
 
@@ -21,16 +19,23 @@ struct ColoredSFSymbolsView: View {
     VStack(spacing: 50) {
       
       Image(systemName: "drop.triangle.fill")
-        /// renderingMode avant tout autre modifier sinon erreur de compilation
         .renderingMode(.original)
-        .font(.title)
+        .font(.system(size: 40, weight: .bold))
+        .padding()
+        .background(Color.black)
+        .clipShape(Circle())
+
+      Image(systemName: "trash.circle.fill")
+        .renderingMode(.original)
+        .font(.system(size: 35, weight: .black))
+        .imageScale(.large)
         .padding()
         .background(Color.black)
         .clipShape(Circle())
 
       Image(systemName: "cloud.sun.bolt.fill")
         .renderingMode(.original)
-        .font(.largeTitle)
+        .font(.system(size: 60, weight: .bold))
         .padding()
         .background(Color.black)
         .clipShape(Circle())
