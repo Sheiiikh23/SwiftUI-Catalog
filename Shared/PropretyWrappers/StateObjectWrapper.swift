@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// StateObject pour créer une référence d'une class conforme à ObservableObject
+/// @StateObject pour créer une référence d'une class conforme à ObservableObject
 /// Disponible sur i•Pad•OS / watchOS / tvOS / macOS / Mac Cataclyst
 ///
 /// StateObject = "source of truth"

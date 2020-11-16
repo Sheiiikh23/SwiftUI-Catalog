@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// ScaledMetric permet de faire scale dynamiquement des View en se basant sur sizeCategory de l'utilisateur
+/// @ScaledMetric permet de faire scale dynamiquement des View en se basant sur sizeCategory de l'utilisateur
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / MacOS / Mac Catalyst
 ///
 /// Permet de faire scale la value en fonction du dynamicType (= sizeCategory) de l'utilisateur
