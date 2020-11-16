@@ -1,5 +1,5 @@
 //
-//  ToolBarItemGroup.swift
+//  ToolbarItemGroup.swift
 //  iOS
 //
 //  Created by Lucas Abijmil on 29/08/2020.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-/// ToolBarItemGroup est un groupement de ToolBarItem présens au sein d'une toolBar
+/// ToolbarItemGroup est un groupement de ToolbarItem présens au sein d'une toolbar
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
-/// ToolbarItem : cf ToolBarItemView
-/// toolbar modifier : cf ToolBarModifier
-/// toolBarItemPlacement : cf ToolBarItemPlacement
+/// ToolbarItem : cf ToolbarItemView
+/// ToolbarItemPlacement : cf ToolbarItemPlacement
+/// toolbar modifier : cf ToolbarModifier
 
 // MARK: - Permet de placer plusieurs View au même placement dans la toolbar (et donc d'éviter les HSTack)
-struct ToolBarItemGroupView: View {
+struct ToolbarItemGroupView: View {
 
   var body: some View {
     NavigationView {
@@ -41,10 +41,10 @@ struct ToolBarItemGroupView: View {
   }
 }
 
-struct TToolBarItemGroupView_Preview: PreviewProvider {
+struct ToolbarItemGroupView_Preview: PreviewProvider {
   static var previews: some View {
     Group {
-      ToolBarItemGroupView()
+      ToolbarItemGroupView()
     }
   }
 }

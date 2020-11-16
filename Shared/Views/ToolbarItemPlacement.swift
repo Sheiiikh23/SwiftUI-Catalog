@@ -1,5 +1,5 @@
 //
-//  ToolBarItemPlacement.swift
+//  ToolbarItemPlacement.swift
 //  SwiftUI 2.0
 //
 //  Created by Lucas Abijmil on 27/06/2020.
@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-/// ToolBarItemPlacement
+/// ToolbarItemPlacement
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 /// 
-/// Enum ToolBarItemPlacement : propre à chaque placement mais c'est l'intention qui compte plus que le placement en lui même
+/// Enum ToolbarItemPlacement : propre à chaque plateforme mais c'est l'intention qui compte plus que le placement en lui même
 ///   • automatique : propre à la plateforme
 ///      - macOS / Mac Catalyst : leading to trailing
 ///      - i•Pad•OS / tvOS : trailing de la navigationBar
@@ -255,7 +255,7 @@ fileprivate struct ModalNavigationView: View {
 }
 
 
-struct ToolBarItemPlacementModifier_Previews: PreviewProvider {
+struct ToolbarItemPlacementModifier_Previews: PreviewProvider {
   static var previews: some View {
     Group {
       AutomaticPlacement()

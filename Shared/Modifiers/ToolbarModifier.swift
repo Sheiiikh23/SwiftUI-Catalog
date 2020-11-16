@@ -1,5 +1,5 @@
 //
-//  ToolBarModifier.swift
+//  ToolbarModifier.swift
 //  SwiftUI 2.0
 //
 //  Created by Lucas Abijmil on 24/06/2020.
@@ -7,16 +7,15 @@
 
 import SwiftUI
 
-/// ToolBar modifier pour mettre en avant du contenu dans un context de NavigationView
+/// Toolbar modifier pour placer des View dans un context de NavigationView
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
-/// Permet de créer une toolBar qui change d'apparence et d'endroit en fonction de la plateforme
-/// Cette Toolbar est composée de ToolbarItem (cf ToolBarItemView)
-///
+/// Permet de créer une Toolbar qui change d'apparence et d'endroit en fonction de la plateforme
+/// Cette Toolbar est composée de ToolbarItem (cf ToolbarItemView)
 
 // MARK: - Utilisation : Permet de mettre en avant des éléments dans un contexte de NavigationView
 
-struct ToolBarModifier: View {
+struct ToolbarModifier: View {
   var body: some View {
     NavigationView {
       List {
@@ -25,7 +24,7 @@ struct ToolBarModifier: View {
         }
         HStack {
           Spacer()
-          Text("There is  10 \"Hello ToolBar\" ")
+          Text("There is  10 \"Hello Toolbar\" ")
           Spacer()
         }
       }
@@ -54,8 +53,8 @@ struct ToolBarModifier: View {
   }
 }
 
-struct ToolBarModifier_Previews: PreviewProvider {
+struct ToolbarModifier_Previews: PreviewProvider {
   static var previews: some View {
-    ToolBarModifier()
+    ToolbarModifier()
   }
 }
