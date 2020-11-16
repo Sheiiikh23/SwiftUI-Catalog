@@ -22,13 +22,13 @@ import SwiftUI
 
 struct AppStorageWrapper: View {
 
-  // AppStorage classique
+  // @AppStorage classique
   @AppStorage("username") var username = "Anonymous"
   @AppStorage("username", store: UserDefaults(suiteName: "instagram")) var usernameGroup = "Anonymous"
 
-  // AppStorage with standard UserDefaults custom
+  // @AppStorage with standard UserDefaults custom
   @AppStorage(.firstName) var firstName
-  // AppStorage with group UserDefaults custom
+  // @AppStorage with group UserDefaults custom
   @AppStorage(.lastName, store: .swiftui) var lastName
 
   var body: some View {

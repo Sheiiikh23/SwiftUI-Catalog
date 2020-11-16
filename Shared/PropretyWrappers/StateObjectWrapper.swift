@@ -15,7 +15,6 @@ import SwiftUI
 /// Permet lorsque la View se reconstruit de garder cet objet en mémoire et de ne pas recréer un nouvel objet (supprimant les modifications)
 /// Permet également de s'assurer que la référence sera créer avant le body de la View
 /// 
-///
 /// Lorsqu'on passe cet objet à une autre struct alors cette dernière doit donc utiliser @ObservedObject var
 ///
 /// On peut bien sûr l'injecter dans l'environment de l'application (cf SwiftUI_2_0App)

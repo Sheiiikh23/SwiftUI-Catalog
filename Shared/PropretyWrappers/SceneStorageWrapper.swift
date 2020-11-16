@@ -7,23 +7,36 @@
 
 import SwiftUI
 
-/// Apparition d'un nouveau proprety wrapper : @SceneStorage
+/// @SceneStorage pour sauvegarder des datas propres à chaque scene
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / mac OS / Mac Catalyst
 ///
-/// Permet de sauvegarder  arded des petites datas propres à chaque scene (comme l'état d'une @State var j'imagine)
-/// Même fonctionnement qu'un UserDefault sauf que c'est pour chaque scène
+/// Comme un UserDefault pour chaque scene
 /// C'est de la "state restoration", très important pour le multi-window sur iPadOS
-/// Le wrapper prend une clé en entrée 
+///
+/// Pas très solide (se baser sur des String à chaque fois peut mener à des erreurs)
+/// Je propose donc quelques idées plus bas en extension
 
 struct SceneStorageWrapper: View {
 
-  @SceneStorage("Saved") var text = ""
+  // @SceneStorage classique
+  @SceneStorage("TextField") var text = ""
+  // @SceneStorage custom
+  @SceneStorage(.textField) var textField
 
   var body: some View {
     NavigationView {
-      TextEditor(text: $text)
+      VStack {
+        TextField("Classique @SceneStorage", text: $text)
+          .foregroundColor(.purple)
+          .padding()
+          .textFieldStyle(RoundedBorderTextFieldStyle())
+        TextField("Custom solid @SceneStorage", text: $textField)
+          .foregroundColor(.red)
+          .padding()
+          .textFieldStyle(RoundedBorderTextFieldStyle())
+      }
     }
-    .navigationViewStyle(StackNavigationViewStyle() )
+    .navigationViewStyle(StackNavigationViewStyle())
   }
 }
 
@@ -31,4 +44,15 @@ struct SceneStorageWrapper_Previews: PreviewProvider {
   static var previews: some View {
     SceneStorageWrapper()
   }
+}
+
+// MARK: - Solid SceneStorage
+extension SceneStorage where Value == String {
+  fileprivate init(_ key: SceneStorageKey) {
+    self.init(wrappedValue: "", key.rawValue)
+  }
+}
+
+fileprivate enum SceneStorageKey: String {
+  case textField
 }
