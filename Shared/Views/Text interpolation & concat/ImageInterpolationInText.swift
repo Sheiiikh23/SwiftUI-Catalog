@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-/// Il est désormais possible au sein des Text de faire une "Image interpolation"
+/// Une "Image interpolation" est désomais possible au sein des Text
 /// Je vois pas l'intérêt pour des Image "classique" qui ont besoin de différent modifier
-/// Par contre grand intérêt pour les SFSymols car scalent de la même "Manière que les Text
+/// Par contre grand intérêt pour les SFSymols car scalent de la même "Manière que les Text (mais pareil que Label 🤔)
 
 // MARK: - Utilisation : Je sais pas trop, car on a les labels qui font ± la même chose
 
