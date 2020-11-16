@@ -7,15 +7,13 @@
 
 import SwiftUI
 
-/// Nouveau modifier propre au listItem: listItemTint
-/// Disponible sur : i•Pad•OS / watchOS (cf extension car comportement différent) / tvOS / macOS / Mac Catalyst
-/// (À l'air de fonctionner uniquement pour les labels dans une SidebarListStyle)
+/// ListItemTint propre au Label lorsqu'ils sont utilisés en tant que ListItem
+/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
-/// Permet de colorer l'Image • systemImage • icon d'un label
+/// Permet d'override l'accent color pour l'Image • systemImage • icon d'un label
 /// Couleur spécifique à ce modifier: monochrome
 
-// MARK: - Utilisation : Permet de colorer l'Image d'un Label dans une SideBarListStyle (ne fonctionne que avec ce style de List pour le moment)
-#warning("Lever les incertitudes")
+// MARK: - Utilisation : Permet d'override l'accent color pour l'image • systemImage • icon d'un Label
 
 struct ListItemTintModifier: View {
   var body: some View {
@@ -39,15 +37,11 @@ struct ListItemTintModifier: View {
           .listItemTint(.purple)
         Label("Claque la porte comme à mes 16 ans", systemImage: "music.note")
           .listItemTint(.green)
-        Group {
-          Label("Flamme", systemImage: "flame.fill")
-            .listItemTint(.pink)
-          Image(systemName: "flame.fill")
-            .listItemTint(.pink)
-        }
+        Label("Accent Color not override", systemImage: "flame.fill")
       }
       .navigationBarTitle("Hello listItemTint")
-      .listStyle(SidebarListStyle())
+      .listStyle(InsetGroupedListStyle())
+      .accentColor(.orange)
     }
   }
 }
