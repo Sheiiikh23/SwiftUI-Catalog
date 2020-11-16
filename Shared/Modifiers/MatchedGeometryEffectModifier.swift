@@ -7,17 +7,23 @@
 
 import SwiftUI
 
-/// Nouveau modifier qui permet de synchroniser l'animation de deux Views différentes
+/// MatchedGeometryEffect permet de synchroniser l'animation de deux Views différentes en fonction d'une condition
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
-/// Paramètres du modifier :
-///   • id: ID ––> obligatoire
-///   • namespace: @Namespace var ––> obligatoire
-///   • properties: MatchedGeomtryProperties = .frame par défaut ––> optionnel
-///   • anchor: UnitPoint = .center par ––> optionnel
-///   • isSource : Bool = true par défaut ––> optionnel
+/// /!\ Ce modifier fonctionne uniquement avec l'utilisation de if / else /!\
+///
+/// Pour synchroniser les animation le modifier à au minimum besoin :
+///   • id : permet de déclarer que tel View et tel View sont les mêmes
+///   • namespace : permet de storer les id des View
+///
+/// On peut un plus personnaliser l'animation en changeant ces valeurs
+///   • properties = .frame (par défaut)
+///   • anchor: UnitPoint = .center (par défaut)
+///   • isSource = true (par défaut)
+///
+/// On peut utiliser plusieurs matchedGeometryEffect avec des id ou @Namespace différent pour la même View
 
-// MARK: - Utilisation : Synchronisation d'animations
+// MARK: - Utilisation : Synchronisation d'animations avec un possible changement de layout
 
 struct BasicMatchedGeometryEffectModifier: View {
 
@@ -39,12 +45,11 @@ struct BasicMatchedGeometryEffectModifier: View {
           .font(.headline)
           .matchedGeometryEffect(id: "Text", in: animation)
         Circle()
-          .fill(Color.red)
+          .fill(Color.green)
           .frame(width: 44, height: 44)
           .matchedGeometryEffect(id: "Shape", in: animation)
       }
     }
-    /// Façon iOS 13, fade out / fade in (sans le matchedGeometryEffect)
     .onTapGesture { withAnimation { self.isFlipped.toggle() } }
   }
 }
@@ -63,7 +68,7 @@ struct AdvancedMatchedGeometryEffectModifier: View {
       VStack {
         HStack {
           RoundedRectangle(cornerRadius: 10, style: .continuous)
-            .fill(Color.blue)
+            .fill(Color.red)
             .frame(width: frame, height: frame)
             .padding(.top, isZoomed ? 20 : 0)
           if !isZoomed {
@@ -97,7 +102,7 @@ struct AdvancedMatchedGeometryEffectModifier: View {
 struct MachedGeometryEffectModifier_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-//      BasicMatchedGeometryEffectModifier()
+      BasicMatchedGeometryEffectModifier()
       AdvancedMatchedGeometryEffectModifier()
     }
   }
