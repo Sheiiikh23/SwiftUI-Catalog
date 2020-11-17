@@ -10,8 +10,7 @@ import SwiftUI
 /// Apparition des OutlineGroup qui permet de créer des DisclosureGroup pour chaque sous arbre de données
 /// Disponible sur : i•Pad•OS / macOS / Mac Catalyst
 ///
-/// Permet de créer une Disclosuregroup (DropDown) pour chaque sous Arbre de donnée
-/// Très utilisé dans des List notamment
+/// Permet de créer une Disclosuregroup (DropDown) pour chaque sous arbre de données
 /// ForEach + DisclosureGroup rassemblé en quelque sorte
 
 // MARK: - Utilisation : List imbriqué pour chaque sous-arbre de données
@@ -20,23 +19,19 @@ struct OutlineGroupView: View {
   var body: some View {
     List {
       Label("Home", systemImage: "house")
-      
-      Divider()
-      
       OutlineGroup(stubs, children: \.children) {
         Text($0.title)
       }
-
-
-      Divider()
-      
+      OutlineGroup(stubs, id: \.self, children: \.children) {
+        Text($0.title)
+      }
       Section(header: Text("Settings")) {
         Label("Account", systemImage: "person.crop.circle")
         Label("Help", systemImage: "person.3")
         Label("Logout", systemImage: "applelogo")
       }
     }
-    .listStyle(SidebarListStyle())
+    .listStyle(InsetGroupedListStyle())
   }
 }
 
@@ -46,7 +41,7 @@ struct OutlineGroupView_Previews: PreviewProvider {
   }
 }
 
-struct Item: Identifiable {
+struct Item: Identifiable, Hashable {
   var id = UUID()
   var title: String
   var children: [Item]?
