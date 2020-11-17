@@ -66,8 +66,8 @@
 		8D442EE524A80B23009995DD /* ImageInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE324A80B23009995DD /* ImageInterpolationInText.swift */; };
 		8D442EE724A80B2C009995DD /* ScaledMetricWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE624A80B2C009995DD /* ScaledMetricWrapper.swift */; };
 		8D442EE824A80B2C009995DD /* ScaledMetricWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE624A80B2C009995DD /* ScaledMetricWrapper.swift */; };
-		8D4447442563E2E700D875E3 /* ContextualMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4447432563E2E700D875E3 /* ContextualMenu.swift */; };
-		8D4447452563E2E700D875E3 /* ContextualMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4447432563E2E700D875E3 /* ContextualMenu.swift */; };
+		8D4447592563E93B00D875E3 /* MenuStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */; };
+		8D44475A2563E93B00D875E3 /* MenuStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */; };
 		8D4B2A3A24CA1EBA003E37F4 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */; };
 		8D4B2A3B24CA1EBB003E37F4 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */; };
 		8D4D24FB24AC5C4F00982117 /* LazyHGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */; };
@@ -307,7 +307,7 @@
 		8D442EDF24A808CE009995DD /* FontCustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontCustomModifier.swift; sourceTree = "<group>"; };
 		8D442EE324A80B23009995DD /* ImageInterpolationInText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInterpolationInText.swift; sourceTree = "<group>"; };
 		8D442EE624A80B2C009995DD /* ScaledMetricWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledMetricWrapper.swift; sourceTree = "<group>"; };
-		8D4447432563E2E700D875E3 /* ContextualMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextualMenu.swift; sourceTree = "<group>"; };
+		8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStyleModifier.swift; sourceTree = "<group>"; };
 		8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGrid.swift; sourceTree = "<group>"; };
 		8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMinListHeaderHeight.swift; sourceTree = "<group>"; };
@@ -682,6 +682,7 @@
 				8D999F9324B0E0C20050BD97 /* FullScreenCoverModifier.swift */,
 				8D3A768124A8B07300005971 /* SignInWithAppleButtonStyleModifier.swift */,
 				8D442EDC24A80549009995DD /* ClipShapeModifier.swift */,
+				8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */,
 				8DC13F3824A75C00003CDA7A /* CommandsModifier.swift */,
 				8DF93EF024A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift */,
 				8D3A768624A8C3F300005971 /* ContextMenuModifier.swift */,
@@ -729,7 +730,6 @@
 				8DC13F3B24A76019003CDA7A /* SettingsView.swift */,
 				8D66EB5424DDBFE700FC4941 /* MenuView.swift */,
 				8D66EB5724DEAC0E00FC4941 /* GroupBoxView.swift */,
-				8D4447432563E2E700D875E3 /* ContextualMenu.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1100,7 +1100,7 @@
 				8DE9F4F724AD1BB60054CE64 /* SpriteKitView.swift in Sources */,
 				8DB0C1B224B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift in Sources */,
 				8DB0C19724B1DCD9006818B4 /* EnvironmentPresentationMode.swift in Sources */,
-				8D4447442563E2E700D875E3 /* ContextualMenu.swift in Sources */,
+				8D4447592563E93B00D875E3 /* MenuStyleModifier.swift in Sources */,
 				8D3A767924A89FA200005971 /* LinkView.swift in Sources */,
 				8D4B2A3A24CA1EBA003E37F4 /* ColorScheme.swift in Sources */,
 				8D68A81024C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift in Sources */,
@@ -1141,7 +1141,7 @@
 				8D7B37CC24AEFB8F00F95736 /* LazyHStackView.swift in Sources */,
 				8D3A767024A892E600005971 /* ListItemTintModifier.swift in Sources */,
 				8DA0F46124CA1AAD003C751B /* AccessibilityShowButtonShapes.swift in Sources */,
-				8D4447452563E2E700D875E3 /* ContextualMenu.swift in Sources */,
+				8D44475A2563E93B00D875E3 /* MenuStyleModifier.swift in Sources */,
 				8DDA5C4524A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
 				8DDA5C5D24A3217D00BF263B /* LabelView.swift in Sources */,
 				8DA0F45E24CA1627003C751B /* AccessibilityReduceTransparency.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// Apparition des OutlineGroup qui permet de créer des DisclosureGroup pour chaque sous arbre de données
+/// OutlineGroup permet de créer des DisclosureGroup pour chaque sous arbre de données
 /// Disponible sur : i•Pad•OS / macOS / Mac Catalyst
 ///
 /// Permet de créer une Disclosuregroup (DropDown) pour chaque sous arbre de données

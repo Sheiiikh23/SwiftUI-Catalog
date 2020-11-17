@@ -7,52 +7,65 @@
 
 import SwiftUI
 
+/// Menu permet de créer des menu contextuel sans force touch
+/// Disponible sur : i•Pad•OS / macOS / Mac Catalyst
+///
+/// On peut aussi imbriquer des menus entre eux (exemple 3) avec une animation out of the box
 
-// MARK: - Utilisation :
-#warning("Refacto")
-#warning("add description")
+// MARK: - Utilisation : Créer des menu contextuel sans force touch pour notamment afficher des actions
+
 struct MenuView: View {
 
-  @State private var index = 0
-
   var body: some View {
-    NavigationView {
-      TabView(selection: $index) {
-        Color.red
-          .tag(0)
-          .tabItem { Image(systemName: "house.fill") }
+    VStack(spacing: 200) {
 
-        Color.blue
-          .tag(1)
-          .tabItem { Image(systemName: "suit.heart.fill") }
+      /// Menu avec une String en tant que Title
+      Menu("Menu principal") {
+        Button { } label: { Label("Home", systemImage: "house.fill") }
+        Button { } label: { Label("Like", systemImage: "suit.heart.fill") }
+        Button { } label: { Label("Options", systemImage: "gear") }
+        Button { } label: { Label("Account", systemImage: "person.fill") }
 
-        Color.green
-          .tag(2)
-          .tabItem { Image(systemName: "gear") }
-
-        Color.pink
-          .tag(3)
-          .tabItem { Image(systemName: "person.fill") }
       }
-      .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
-      .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-      .edgesIgnoringSafeArea(.all)
-      .navigationTitle("Home")
-      .toolbar {
-        ToolbarItem(placement: .navigationBarTrailing) {
-          Menu {
-            Button { index = 0 } label: { Label("Home", systemImage: "house.fill") }
-            Button { index = 1 } label: { Label("Like", systemImage: "suit.heart.fill") }
-            Button { index = 2 } label: { Label("Options", systemImage: "gear") }
-            Button { index = 3 } label: { Label("Account", systemImage: "person.fill") }
-          } label: {
-            Text("Menu principal")
-          }.menuStyle(BorderlessButtonMenuStyle())
-          
-          
+
+      /// Menu avec une View en tant que Label
+      /// Plus personnalisable
+      Menu {
+        Button { } label: { Label("Home", systemImage: "house.fill") }
+        Button { } label: { Label("Like", systemImage: "suit.heart.fill") }
+        Button { } label: { Label("Options", systemImage: "gear") }
+        Button { } label: { Label("Account", systemImage: "person.fill") }
+      } label: {
+        Text("Menu principal")
+          .font(.subheadline)
+          .fontWeight(.bold)
+          .textCase(.uppercase)
+          .foregroundColor(.red)
+          .padding(.horizontal, 20)
+          .padding(.vertical)
+          .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+          .cornerRadius(20)
+      }
+
+      /// Menu imbriquée
+      /// 1er Menu avec une View en tant que Label (plus personnalisable)
+      Menu {
+        Button { } label: { Text("Duplicate") }
+        Button { } label: { Text("Rename") }
+        Button { } label: { Text("Delete") }
+        /// 2nd Menu avec une String en tant que Title
+        Menu("Copy...") {
+          Button { } label: { Text("Copy") }
+          Button { } label: { Text("Copy formatted") }
+          Button { } label: { Text("Copy library path") }
         }
+      } label: {
+        Text("Actions principales")
       }
     }
+    .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .background(Color.black)
+    .ignoresSafeArea()
   }
 }
 
@@ -62,4 +75,7 @@ struct MenuView_Previews: PreviewProvider {
       .environment(\.colorScheme, .dark)
   }
 }
+
+
+
 

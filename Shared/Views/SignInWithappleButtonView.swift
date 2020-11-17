@@ -8,7 +8,7 @@
 import SwiftUI
 import AuthenticationServices
 
-/// Apparition du boutton sign in with Apple en natif: SignInWithAppleButton
+/// SignInWithAppleButton permer d'afficher un boutton pour sign in with Apple pre-build 👍
 /// Disponible sur i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// Obligé d'import AuthenticationServices
