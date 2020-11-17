@@ -9,7 +9,7 @@ import SwiftUI
 import AuthenticationServices
 
 /// Modifier SignInWithAppleButtonStyle propre pour le signInWithAppleButton
-/// Disponible sur : i•Pad•OS / tvOS / macOS / Mac Catalyst
+/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// Trois SignInWithAppleButtonStyle natifs :
 ///   • black : background noir, Text blanc
@@ -22,44 +22,47 @@ struct SignInWithAppleButtonStyleModifier: View {
   var body: some View {
     VStack(spacing: 25) {
 
-      SignInWithAppleButton
-
-      /// Label continue
-      SignInWithAppleButton(
-        .continue,
-        onRequest: {_ in }, /// Somme action here
-        onCompletion: {_ in } /// Somme action here
-      )
-      .frame(width: 300, height: 200)
+      SignInWithAppleButton(.continue) { request in
+        print(request)
+      } onCompletion: { result in
+        switch result {
+        case .success(let authorization):
+          print("Authorized – Some actions here : \(authorization)")
+        case .failure(let error):
+          print("Error – Some actions here : \(error.localizedDescription)")
+        }
+      }
+      .padding()
       .signInWithAppleButtonStyle(.black)
 
-      /// Label signIn
-      SignInWithAppleButton(
-        .signIn,
-        onRequest: {_ in }, /// Somme action here
-        onCompletion: {_ in } /// Somme action here
-      )
-      .frame(width: 300, height: 200)
+      SignInWithAppleButton(.signIn) { request in
+        print(request)
+      } onCompletion: { result in
+        switch result {
+        case .success(let authorization):
+          print("Authorized – Some actions here : \(authorization)")
+        case .failure(let error):
+          print("Error – Some actions here : \(error.localizedDescription)")
+        }
+      }
+      .padding()
       .signInWithAppleButtonStyle(.white)
 
-      /// Label signUp
-      SignInWithAppleButton(
-        .signUp,
-        onRequest: {_ in }, /// Somme action here
-        onCompletion: {_ in } /// Somme action here
-      )
-      .frame(width: 300, height: 200)
+      SignInWithAppleButton(.signUp) { request in
+        print(request)
+      } onCompletion: { result in
+        switch result {
+        case .success(let authorization):
+          print("Authorized – Some actions here : \(authorization)")
+        case .failure(let error):
+          print("Error – Some actions here : \(error.localizedDescription)")
+        }
+      }
+      .padding()
       .signInWithAppleButtonStyle(.whiteOutline)
     }
   }
 }
-
-/// Essayer de créer un CustomSignInWithAppleButtonStyle
-///
-
-//struct CustomSignInWithAppleButtonStyle: SignInWithAppleButton.Style {
-//  func
-//}
 
 struct SignInWithAppleButtonStyleModifier_Previews: PreviewProvider {
   static var previews: some View {
