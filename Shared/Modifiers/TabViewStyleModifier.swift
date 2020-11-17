@@ -12,7 +12,11 @@ import SwiftUI
 ///
 /// TabViewStyle présents nativement :
 ///   • DefaultTabViewStyle : style par défaut en fonction de la plateforme
-///   • PageTabViewStyle : permet de passer la TabView en Page ControL. On peut définir la visibilité du nombre de page ou non (cf IndexViewStyleModifier)
+///   • PageTabViewStyle(indexDisplayMode: .option) : permet de passer la TabView en Page Control et montrer ou non les index :
+///       - always : montrera toujours les index
+///       - automatic : motrera les index si le nombre de page est supérieur à 1
+///       - never : ne montrera jamais les index
+///       - Il est possible de cacher ou non le background des Index : cf IndexViewStyleModifier
 ///   • CarouselTabViewStyle: cf watchOS
 ///
 /// J'ai utilisé le constructeur où on binde le tag (très utile) et plus solid imho
@@ -54,7 +58,7 @@ struct PageTabViewStyleModifier: View {
     }
     .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
     /// Agit comme un pageControl
-    .tabViewStyle(PageTabViewStyle())
+    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
     /// cf IndexViewStyleModifier
     .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .interactive))
   }

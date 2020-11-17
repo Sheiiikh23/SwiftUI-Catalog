@@ -47,8 +47,9 @@ struct MenuView: View {
             Button { index = 3 } label: { Label("Account", systemImage: "person.fill") }
           } label: {
             Text("Menu principal")
-          }
-
+          }.menuStyle(BorderlessButtonMenuStyle())
+          
+          
         }
       }
     }
