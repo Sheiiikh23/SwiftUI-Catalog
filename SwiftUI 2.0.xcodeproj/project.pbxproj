@@ -56,8 +56,8 @@
 		8D3A769324A8E38800005971 /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A769224A8E38800005971 /* TextEditorView.swift */; };
 		8D3A769424A8E38800005971 /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A769224A8E38800005971 /* TextEditorView.swift */; };
 		8D442ED824A7FE3A009995DD /* GaugeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442ED724A7FE3A009995DD /* GaugeModifier.swift */; };
-		8D442EDD24A80549009995DD /* ClipShapeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDC24A80549009995DD /* ClipShapeModifier.swift */; };
-		8D442EDE24A80549009995DD /* ClipShapeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDC24A80549009995DD /* ClipShapeModifier.swift */; };
+		8D442EDD24A80549009995DD /* ContainerRelativeShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDC24A80549009995DD /* ContainerRelativeShapeView.swift */; };
+		8D442EDE24A80549009995DD /* ContainerRelativeShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDC24A80549009995DD /* ContainerRelativeShapeView.swift */; };
 		8D442EE024A808CE009995DD /* FontCustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDF24A808CE009995DD /* FontCustomModifier.swift */; };
 		8D442EE124A808CE009995DD /* FontCustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDF24A808CE009995DD /* FontCustomModifier.swift */; };
 		8D442EE424A80B23009995DD /* ImageInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE324A80B23009995DD /* ImageInterpolationInText.swift */; };
@@ -66,7 +66,7 @@
 		8D442EE824A80B2C009995DD /* ScaledMetricWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EE624A80B2C009995DD /* ScaledMetricWrapper.swift */; };
 		8D4447592563E93B00D875E3 /* MenuStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */; };
 		8D44475A2563E93B00D875E3 /* MenuStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */; };
-		8D44478625640A5D00D875E3 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44478525640A5D00D875E3 /* SwiftUIView.swift */; };
+		8D44478625640A5D00D875E3 /* GroupBoxStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44478525640A5D00D875E3 /* GroupBoxStyleModifier.swift */; };
 		8D4B2A3A24CA1EBA003E37F4 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */; };
 		8D4B2A3B24CA1EBB003E37F4 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */; };
 		8D4D24FB24AC5C4F00982117 /* LazyHGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */; };
@@ -301,12 +301,12 @@
 		8D3A768F24A8D85700005971 /* ColoredSFSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSFSymbolsView.swift; sourceTree = "<group>"; };
 		8D3A769224A8E38800005971 /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
 		8D442ED724A7FE3A009995DD /* GaugeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeModifier.swift; sourceTree = "<group>"; };
-		8D442EDC24A80549009995DD /* ClipShapeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShapeModifier.swift; sourceTree = "<group>"; };
+		8D442EDC24A80549009995DD /* ContainerRelativeShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerRelativeShapeView.swift; sourceTree = "<group>"; };
 		8D442EDF24A808CE009995DD /* FontCustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontCustomModifier.swift; sourceTree = "<group>"; };
 		8D442EE324A80B23009995DD /* ImageInterpolationInText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInterpolationInText.swift; sourceTree = "<group>"; };
 		8D442EE624A80B2C009995DD /* ScaledMetricWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledMetricWrapper.swift; sourceTree = "<group>"; };
 		8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStyleModifier.swift; sourceTree = "<group>"; };
-		8D44478525640A5D00D875E3 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		8D44478525640A5D00D875E3 /* GroupBoxStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxStyleModifier.swift; sourceTree = "<group>"; };
 		8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGrid.swift; sourceTree = "<group>"; };
 		8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMinListHeaderHeight.swift; sourceTree = "<group>"; };
@@ -680,9 +680,8 @@
 				8D999F8724B0B0140050BD97 /* MatchedGeometryEffectModifier.swift */,
 				8D999F9324B0E0C20050BD97 /* FullScreenCoverModifier.swift */,
 				8D3A768124A8B07300005971 /* SignInWithAppleButtonStyleModifier.swift */,
-				8D44478525640A5D00D875E3 /* SwiftUIView.swift */,
 				8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */,
-				8D442EDC24A80549009995DD /* ClipShapeModifier.swift */,
+				8D44478525640A5D00D875E3 /* GroupBoxStyleModifier.swift */,
 				8DC13F3824A75C00003CDA7A /* CommandsModifier.swift */,
 				8DF93EF024A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift */,
 				8D3A768624A8C3F300005971 /* ContextMenuModifier.swift */,
@@ -729,6 +728,7 @@
 				8D66EB5424DDBFE700FC4941 /* MenuView.swift */,
 				8DC13F3B24A76019003CDA7A /* SettingsView.swift */,
 				8D66EB5724DEAC0E00FC4941 /* GroupBoxView.swift */,
+				8D442EDC24A80549009995DD /* ContainerRelativeShapeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1085,7 +1085,7 @@
 				8DC13F4224A764BC003CDA7A /* OnChangeModifier.swift in Sources */,
 				8D3A768224A8B07300005971 /* SignInWithAppleButtonStyleModifier.swift in Sources */,
 				8D999F8B24B0B7B10050BD97 /* NamespaceWrapper.swift in Sources */,
-				8D442EDD24A80549009995DD /* ClipShapeModifier.swift in Sources */,
+				8D442EDD24A80549009995DD /* ContainerRelativeShapeView.swift in Sources */,
 				8DE4440424CAA9380079B2B7 /* ManagedObject.swift in Sources */,
 				8DB73DB524D93D3300D7D84F /* MultilineTextAlignment.swift in Sources */,
 				8DF93E9A24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
@@ -1099,7 +1099,7 @@
 				8DB0C1B224B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift in Sources */,
 				8DB0C19724B1DCD9006818B4 /* EnvironmentPresentationMode.swift in Sources */,
 				8D4447592563E93B00D875E3 /* MenuStyleModifier.swift in Sources */,
-				8D44478625640A5D00D875E3 /* SwiftUIView.swift in Sources */,
+				8D44478625640A5D00D875E3 /* GroupBoxStyleModifier.swift in Sources */,
 				8D3A767924A89FA200005971 /* LinkView.swift in Sources */,
 				8D4B2A3A24CA1EBA003E37F4 /* ColorScheme.swift in Sources */,
 				8D68A81024C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift in Sources */,
@@ -1181,7 +1181,7 @@
 				8DC13F4324A764BC003CDA7A /* OnChangeModifier.swift in Sources */,
 				8D3A768324A8B07300005971 /* SignInWithAppleButtonStyleModifier.swift in Sources */,
 				8D999F8C24B0B7B10050BD97 /* NamespaceWrapper.swift in Sources */,
-				8D442EDE24A80549009995DD /* ClipShapeModifier.swift in Sources */,
+				8D442EDE24A80549009995DD /* ContainerRelativeShapeView.swift in Sources */,
 				8DE4440524CAA9380079B2B7 /* ManagedObject.swift in Sources */,
 				8DB73DB624D93D3300D7D84F /* MultilineTextAlignment.swift in Sources */,
 				8DF93E9B24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
