@@ -59,7 +59,7 @@ struct ToggleStyleModifier: View {
       Toggle(isOn: $toggleValue) {
         Text("Toggle without spacer")
       }
-      .toggleStyle(ToggleWithoutSpacergStyle())
+      .toggleStyle(ToggleWithoutSpacerStyle())
     }
   }
 }
@@ -80,7 +80,7 @@ struct CheckboxToggleStyle: ToggleStyle {
   }
 }
 
-struct ToggleWithoutSpacergStyle: ToggleStyle {
+struct ToggleWithoutSpacerStyle: ToggleStyle {
 
   func makeBody(configuration: Configuration) -> some View {
     HStack {

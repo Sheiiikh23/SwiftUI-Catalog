@@ -8,3 +8,4 @@
 import SwiftUI
 
 #warning("Refacto")
+//.defaultAppStorage(.standard)

@@ -549,6 +549,7 @@
 			children = (
 				8D442EDF24A808CE009995DD /* FontCustomModifier.swift */,
 				8D3A768C24A8CFFA00005971 /* TextCaseModifier.swift */,
+				8DB0C1A524B21AD9006818B4 /* DisableAutocorrectionModifier.swift */,
 			);
 			path = "Text Modifiers";
 			sourceTree = "<group>";
@@ -684,16 +685,15 @@
 				8D44478525640A5D00D875E3 /* GroupBoxStyleModifier.swift */,
 				8D3A768624A8C3F300005971 /* ContextMenuModifier.swift */,
 				8D3A767324A89C2600005971 /* ToggleStyleModifier.swift */,
+				8D6C0F3324FA99F000041F8C /* PickerStyleModifier.swift */,
+				8DC13F3E24A76491003CDA7A /* DefaultAppStorageModifier.swift */,
 				8DC13F3824A75C00003CDA7A /* CommandsModifier.swift */,
 				8DF93EF024A7E01A00B84CD0 /* CommandGroupPlacementModifier.swift */,
-				8DC13F3E24A76491003CDA7A /* DefaultAppStorageModifier.swift */,
 				8DDA5C5E24A3249300BF263B /* HelpModifier.swift */,
 				8DDA5C6124A3369B00BF263B /* KeyboardShortcutModifier.swift */,
 				8DC13F4424A764D0003CDA7A /* WindowStyleModifier.swift */,
 				8DC13F4724A764E3003CDA7A /* WindowToolbarStyleModifier.swift */,
-				8DB0C1A524B21AD9006818B4 /* DisableAutocorrectionModifier.swift */,
 				8D6C0F3124FA998A00041F8C /* popOverModifer.swift */,
-				8D6C0F3324FA99F000041F8C /* PickerStyleModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
