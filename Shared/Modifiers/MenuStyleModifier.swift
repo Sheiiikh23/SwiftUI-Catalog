@@ -13,7 +13,7 @@ import SwiftUI
 /// MenuStyle présents nativement :
 ///   • DefaultMenuStyle : par défaut, en fonction du context
 ///   • BorderedButtonMenuStyle : macOS uniquement
-///   • BorderlessButtonMenuStyle : boutton sans bordure qui bascule l'affichage du menu lorsqu'on appuie dessus (voit pas la différence
+///   • BorderlessButtonMenuStyle : boutton sans bordure qui bascule l'affichage du menu lorsqu'on appuie dessus (voit pas la différence 🤔)
 ///
 
 // MARK: - Utilisation : Permet de customiser la UI d'un Menu
