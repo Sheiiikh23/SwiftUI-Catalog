@@ -11,6 +11,7 @@ import SwiftUI
 /// Disponible sur : i•Pad•OS / tvOS / macOS / Mac Catalyst
 
 // MARK: - Utilisation : Créer des menus contextuels avec force touch
+
 struct ContextMenuModifier: View {
 
   var body: some View {

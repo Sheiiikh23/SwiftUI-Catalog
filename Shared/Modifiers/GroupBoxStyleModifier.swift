@@ -14,7 +14,9 @@ import SwiftUI
 ///  • DefaultGroupBoxStyle : style par défaut
 ///
 /// Créer un GroupBoxStyle custom :
-///  • struct conform au protocol GroupBoxStyle
+///  • struct conform au protocol GroupBoxStyle : fonction makeBody
+
+// MARK: - Utilisation : Custom la UI d'un GroupBox
 
 struct GroupBoxStyleModifier: View {
 
