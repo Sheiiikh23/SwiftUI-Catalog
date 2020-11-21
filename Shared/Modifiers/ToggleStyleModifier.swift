@@ -8,12 +8,13 @@
 import SwiftUI
 
 /// Modifier propre pour les Toggle :
-/// Disponible sur i•Pad•OS / watchOS / macOS / Mac Catalyst
+/// Disponible sur i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// ToggleStyle présents nativement:
 ///  • DefaultToggleStyle : par défaut, vert
-///  • SwitchToggleStyle : pareil que DefaultToggleStyle
-///  • SwitchToggleStyle(tint: Color) : permet de custom la
+///  • SwitchToggleStyle : pareil que DefaultToggleStyle (pas sur tvOS)
+///  • SwitchToggleStyle(tint: Color) : permet de custom la (pas sur tvOS)
+///  • CheckboxToggleStyle : checbox (uniquement sur macOS)
 ///
 /// Créer un ToggleStyle custom
 ///  • struct conforme au protocol ToggleStyle ––> fonction makeBody
@@ -51,8 +52,15 @@ struct ToggleStyleModifier: View {
       }
       .toggleStyle(SwitchToggleStyle(tint: .pink))
 
+      #if os(macOS)
       Toggle(isOn: $toggleValue) {
-        Text("Checkbox as toggle")
+        Text("Checbox for macOS only")
+      }
+      .toggleStyle(CheckboxToggleStyle())
+      #endif
+
+      Toggle(isOn: $toggleValue) {
+        Text("Checkbox for other plateform 😇")
       }
       .toggleStyle(CheckboxToggleStyle())
 
