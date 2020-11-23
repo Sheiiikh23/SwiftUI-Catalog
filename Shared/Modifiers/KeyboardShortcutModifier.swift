@@ -7,35 +7,42 @@
 
 import SwiftUI
 
-/// Apparition du modifier keyboardShortcut qui permet de fournir des raccourcis clavier
-/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+/// KeyboardShortcut qui permet de fournir des raccourcis clavier
+/// Disponible sur : i•Pad•OS / macOS / Mac Catalyst
 ///
-/// Principalement utilisé pour le SceneGroup
-/// Permet d'activer un Button ou un Toggle ou d'utiliser des Button présents dans des CommandMenu 's
+/// Principalement utilisé pour le SceneGroup, bouttons, commandGroup etc....
 /// Il existe des Keyboardshortcut natifs :
-///   • defaultAction: bouton "return" ––> i•Pad•OS / (watchOS) / tvOS / macOS / Mac Catalyst
-///   • cancelAction: bouton esc. ––> i•Pad•OS / (watchOS) / tvOS / macOS / Mac Catalyst
-///   • upArrow : U+F700 ??
-///   • downArrow : U+F701 ??
-///   • leftArrow : U+F702 ??
-///   • rightArrow : U+F703 ??
-///   • escape : U+001B ??
-///   • delete : U+0008 ??
-///   • deleteForward : U+F728 ??
-///   • home : U+F729 ??
-///   • end : U+F72B ??
-///   • pageUp : U+F72C ??
-///   • pageDown: U+F72D ??
-///   • clear : U+F739 ??
-///   • tab : U+0009 ??
-///   • space: U+0020 ??
-///   • return : U+00D ??
-///   • character: raccourci clavier custom d'un character UNIQUE
+///   • clear
+///   • delete
+///   • deleteForward
+///   • downArrow
+///   • end
+///   • escape
+///   • home
+///   • leftArrow
+///   • pageDown
+///   • pageUp
+///   • return
+///   • rightArrow
+///   • space
+///   • tab
+///   • upArrow
+/// Shortcut avec un caractère : "T" par exemple (case sensitive, donc pour les maj rajout implicit d'un shift)
+///
+/// Par défaut les shortcuts s'exécutent en appuyant sur la cmd mais possibilité de modifier
+/// Liste des possibilité du modifiers :
+///   • all
+///   • capsLock
+///   • command (défaut et même par convention implicite d'Apple)
+///   • control
+///   • function
+///   • numericPad
+///   • option
+///   • shift
+///
+
 
 // MARK: - Utilisation : Créer des raccourcis clavier sur iPadOS / MacOS / Mac Catalyst
-
-#warning("Normalement dispo pour watchOS. Regarder les updates de la doc")
-#warning("Lever les incertitudes. Atteindre les udpates de la doc")
 
 struct KeyboardShortcut: View {
 
@@ -43,16 +50,30 @@ struct KeyboardShortcut: View {
 
   var body: some View {
     VStack(spacing: 40) {
+
+      /// cmd (défaut) + delete
       Button("Cancel", action: {})
-//        .keyboardShortcut(.cancelAction)
+        .keyboardShortcut(.delete)
+
+      /// cmd (défaut) + return ↩
       Button("Save", action: {})
-//        .keyboardShortcut(.defaultAction)
+        .keyboardShortcut(.defaultAction)
+
+      /// cmd + shift (car maj) + t
       Toggle("Toggle me", isOn: $toggleValue)
-        // Raccourci clavier custom :  cmd + shift (car maj) + t
-//        .keyboardShortcut("T")
+        .keyboardShortcut("T")
+
+      /// cmd + t
       Button("New shortcut", action: {})
-        // Raccourci clavier custom : cmd + t
-//        .keyboardShortcut("t")
+        .keyboardShortcut("t")
+
+      /// contol + <-
+      Button("New shortcut", action: {})
+        .keyboardShortcut(.leftArrow, modifiers: .control)
+
+      /// control + shift (car maj) + m
+      Button("New shortcut", action: {})
+        .keyboardShortcut("M", modifiers: .control)
     }
   }
 }
