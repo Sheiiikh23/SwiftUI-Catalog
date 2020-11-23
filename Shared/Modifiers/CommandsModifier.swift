@@ -7,35 +7,17 @@
 
 import SwiftUI
 
-/// Modifier commands : rajout de fonctionnalité à l'App
-/// Disponible sur : i•Pad•OS / macOS / Mac Catalyst / tvOS
-/// 
-///   • EmptyCommands ––> sert à rien 😅:
-///     - i•Pad•OS / macOS / Mac Catalyst / tvOS
-///   • CommandGroup(before: CommandGroupPlacement) | CommandGroup(after: CommandGroupPlacement) | CommandGroup(replacing: CommandGRoupPlacement) 
-///     - macOS / Mac Catalyst : forme de collections d'éléments dans un menu ???
-///     - i•Pad•OS / tvOS : "commandes clés" pour chaque commande ayant un keyboardShortcut
-///   • CommandMenu("String"):
-///     - macOS / Mac Catalyst : rajoute un menu déroulant entre View et Window dans l'ordre de déclaration
-///     - i•Pad•OS / tvOS : "commandes clés" pour chaque commande ayant un keyboardShortcut
-///   • SidebarCommands:
-///     - macOS / Mac Catalyst : ensemble de commandes pour manipuler les barres latérales des fenêtres
-///     - i•Pad•OS : ???
-///   • TextEditingCommands:
-///     - macOS / Mac Catalyst : ensemble de commandes pour la recherche, l'édition et la transformation d'un texte selectionné
-///     - i•Pad•OS : ??
-///   • TextFormattingCommands:
-///     - macOS / Mac Catalyst : ensemble de commandes pour transformer les styles appliqués à des textes selectionnés
-///     - i•Pad•OS : ??
-///   • ToolbarCommands:
-///     - macOS / Mac Catalyst : ensemble de commandes pour manipuler les barres d'outils des fenêtres
-///     - i•Pad•OS : ??
+/// Commands permet de rajouter des commandes à des scènes
+/// Disponible sur : i•Pad•OS / macOS / Mac Catalyst
 ///
-///   CommandGroupPlacement cf: CommandGroupPlacementModfier
+/// Comportement :
+///   - macOS : Présent dans la bar des menu (comportement connu et attendu par tout utilisateur)
+///   - iPadOS : Les commandes avec des raccourcis claviers sont présent dans HUD (cmd)
+///
+/// Création d'un menu : cf CommandMenu & CommandGroup
+/// Souvent accompagné de shortcut : cf KeyboardShortcutModifier
 
-#warning("Lever les incertitudes")
-
-// MARK: - Création de menu, de menu déroulant et de raccourcis clavier 
+// MARK: - Utilisation : Création de menu, de menu déroulant et de raccourcis clavier
 
 struct CommandsModifier: App {
   var body: some Scene {
@@ -64,16 +46,22 @@ struct CommandsModifier: App {
         Button("Hey", action: {})
       }
 
-      /// Création d'un CommandGroup placé avant la sidebar
-      CommandGroup(before: .sidebar) {
+      /// Création d'un CommandGroup après les commandes de Window
+      CommandGroup(after: .windowArrangement) {
         /// Bouton n°1
-        Button("Previous View", action: {})
+        Button("Dark mode", action: {})
           /// Autre raccourci clavier
           .keyboardShortcut("[")
 
-        Button("Next View", action: {})
+        /// Bouton n°2
+        Button("Light mode", action: {})
           /// Autre raccourci clavier
           .keyboardShortcut("]")
+
+        /// Bouton n°3
+        Button("System mode", action: {})
+          /// Autre raccourci clavier
+          .keyboardShortcut("–")
       }
     }
   }
