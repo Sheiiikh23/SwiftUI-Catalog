@@ -18,6 +18,7 @@ import SwiftUI
 // MARK: - Utilisation : Custom la UI d'une fenêtre pour macOS
 
 @available(macOS 11.0, *)
+@available(iOS, unavailable)
 struct DefaultWindowStyleModifier: App {
 
   var body: some Scene {
@@ -29,6 +30,7 @@ struct DefaultWindowStyleModifier: App {
 }
 
 @available(macOS 11.0, *)
+@available(iOS, unavailable)
 struct HiddenTitleBarWindowStyleModifier: App {
 
   var body: some Scene {
@@ -40,6 +42,7 @@ struct HiddenTitleBarWindowStyleModifier: App {
 }
 
 @available(macOS 11.0, *)
+@available(iOS, unavailable)
 struct TitleBarWindowStyleModifier: App {
 
   var body: some Scene {

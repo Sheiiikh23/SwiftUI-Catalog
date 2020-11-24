@@ -21,6 +21,7 @@ import SwiftUI
 ///      - UnifiedCompactWindowToolbarStyle(showsTitle: Bool)
 
 @available(macOS 11.0, *)
+@available(iOS, unavailable)
 struct DefaultWindowToolbarStyleModifier: App {
 
   var body: some Scene {
@@ -32,6 +33,7 @@ struct DefaultWindowToolbarStyleModifier: App {
 }
 
 @available(macOS 11.0, *)
+@available(iOS, unavailable)
 struct ExpandedWindowToolbarStyleModifier: App {
 
   var body: some Scene {
@@ -43,6 +45,7 @@ struct ExpandedWindowToolbarStyleModifier: App {
 }
 
 @available(macOS 11.0, *)
+@available(iOS, unavailable)
 struct UnifiedWindowToolbarStyleModifier: App {
 
   var body: some Scene {
@@ -54,6 +57,7 @@ struct UnifiedWindowToolbarStyleModifier: App {
 }
 
 @available(macOS 11.0, *)
+@available(iOS, unavailable)
 struct UnifiedCompactWindowToolbarStyleModifier: App {
 
   var body: some Scene {
