@@ -8,7 +8,7 @@
 import SwiftUI
 import AuthenticationServices
 
-/// Modifier SignInWithAppleButtonStyle propre pour le signInWithAppleButton
+/// Modifier SignInWithAppleButtonStyle propre pour le SIWA (Sign In With Apple)
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// Trois SignInWithAppleButtonStyle natifs :

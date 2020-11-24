@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// WindowStyle permet de spécifier l'apparencet et l'interaction d'une fenêtre
+/// WindowStyle permet de spécifier l'apparence et l'interaction d'une fenêtre
 /// Disponible sur : macOS
 ///
 /// Trois style natifs :
@@ -15,22 +15,37 @@ import SwiftUI
 ///   • HiddenTitleBarWindowStyle : cache le titre et son l'arrière bar de la fenêtre, permet de montrer une plus grande partie du contenu de la fenêtre
 ///   • TitleBarWindowStyle : affiche la section de la barre de titre de la fenêtre
 
-#if os(macOS)
-struct WindowStyleModifier: App {
+// MARK: - Utilisation : Custom la UI d'une fenêtre pour macOS
 
-  @State private var favStyle: FavWindowStyle = .default
+@available(macOS 11.0, *)
+struct DefaultWindowStyleModifier: App {
 
   var body: some Scene {
     WindowGroup {
       LabelView()
     }
-    .windowStyle(favStyle == .default ? DefaultWindowStyle() : favStyle == .hiddenTitleBar ? HiddenTitleBarWindowStyle() : TitleBarWindowStyle())
+    .windowStyle(DefaultWindowStyle())
   }
 }
-#endif
 
-fileprivate enum FavWindowStyle {
-  case `default`
-  case hiddenTitleBar
-  case titleBar
+@available(macOS 11.0, *)
+struct HiddenTitleBarWindowStyleModifier: App {
+
+  var body: some Scene {
+    WindowGroup {
+      LabelView()
+    }
+    .windowStyle(HiddenTitleBarWindowStyle())
+  }
+}
+
+@available(macOS 11.0, *)
+struct TitleBarWindowStyleModifier: App {
+
+  var body: some Scene {
+    WindowGroup {
+      LabelView()
+    }
+    .windowStyle(TitleBarWindowStyle())
+  }
 }
