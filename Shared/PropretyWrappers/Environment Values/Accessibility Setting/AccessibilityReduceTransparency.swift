@@ -7,18 +7,17 @@
 
 import SwiftUI
 
-/// accessibilityReduceTransparency permet de détecter si la transparence et les blurs sont désactiver, les fonds doivent donc être opaque
+/// accessibilityReduceTransparency permet de détecter si la transparence et les blurs sont désactivés
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// accessibilityReduceTransparency: Bool { get } 
 ///   - false: par défaut
 ///   - true: si l'utisateur l'ativé
 ///
-///
-/// Modifier pour la preview ne fonctionne pas
+/// Si activé alors les backgrounds doivent êtres opaques
 
 // MARK: - Importance pour l'accessibilité : très faible - faible 
-// MARK: - Utilisation : Désactiver la transparence et les blurs
+// MARK: - Utilisation : Savoir si la transparence et les blurs sont désactivés, probablement pour les malvoyants ?
 
 struct AccessibilityReduceTransparency: View {
 
@@ -26,7 +25,7 @@ struct AccessibilityReduceTransparency: View {
 
   var body: some View {
     ZStack {
-      Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)).edgesIgnoringSafeArea(.all)
+      Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)).opacity(isReduceTransparency ? 1 : 0.75).edgesIgnoringSafeArea(.all)
       VStack {
         Text("You may activated the reduce transparency")
           .font(.title3)

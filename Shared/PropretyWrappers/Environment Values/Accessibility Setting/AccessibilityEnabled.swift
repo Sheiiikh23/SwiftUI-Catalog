@@ -15,13 +15,11 @@ import SwiftUI
 ///   - true: si l'utisateur l'ativé
 ///
 /// Il faut donc utiliser le modifier help afin de provider un text lu par Siri
-/// (Utiliser les localizedStringKey)
+/// Utilisation du modifier help : cf HelpModifier (+ localizedStringKey)
 /// Ne fonctionne pas dans le simulateur
 
 // MARK: - Importance pour l'accessibilité : moyenne - élevée
 // MARK: - Utilisation : Pour les personnes malvoyantes
-
-#warning("Refacto en attente du modifier help")
 
 struct AccessibilityEnabled: View {
 

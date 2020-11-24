@@ -14,9 +14,8 @@ import SwiftUI
 ///   - false: par défaut
 ///   - true: si l'utisateur l'ativé
 ///
-/// Il faut donc remplacer les couleurs de text par des shapes / systemImage
-/// Couleur uniquement échelle de gris: black / gray / white + opacity
-/// Modifier pour la preview ne fonctionne pas
+/// Remplacer les couleurs de text par des shapes / systemImage
+/// Échelle de gris: black / gray / white (+ opacity)
 
 // MARK: - Importance pour l'accessibilité : faible - moyenne 
 // MARK: - Utilisation : Pour les daltoniens
@@ -24,6 +23,7 @@ import SwiftUI
 struct AccessibilityDifferentiateWithoutColor: View {
 
   @Environment(\.accessibilityDifferentiateWithoutColor) var isDaltonien
+
   var body: some View {
     HStack {
       // check si l'option d'accessibilité est activée

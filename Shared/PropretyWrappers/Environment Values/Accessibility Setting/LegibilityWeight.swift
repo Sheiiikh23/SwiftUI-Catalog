@@ -14,27 +14,25 @@ import SwiftUI
 ///   - regular: par défaut
 ///   - bold: si l'utisateur l'ativé
 ///
-/// (utilisation du if case .case = variable)
-///
+/// Si activé alors les Text sont bold par défaut
 
 // MARK: - Importance pour l'accessibilité : faible - moyenne 
-// MARK: - Utilisation : Pour savoir si les textes sont déjà en gras par défaut (préf de l'utilisateur)
+// MARK: - Utilisation : Pour savoir si les textes sont déjà en gras par défaut
 
 struct LegibilityWeight: View {
   
   @Environment(\.legibilityWeight) var isBold
-  
 
   var body: some View {
     if case .bold = isBold {
-      Text("Legibility weight is activated")
+      Text("Legibility weight is activated, bold fontWeight by default")
         .foregroundColor(.black)
         .padding(.horizontal, 20)
         .padding(.vertical, 10)
         .background(Color.green)
         .clipShape(Capsule())
     } else {
-      Text("Legibility weight is deactivated")
+      Text("Legibility weight is deactivated, regular fontWeight by default")
         .foregroundColor(.white)
         .fontWeight(.thin)
         .padding(.horizontal, 20)

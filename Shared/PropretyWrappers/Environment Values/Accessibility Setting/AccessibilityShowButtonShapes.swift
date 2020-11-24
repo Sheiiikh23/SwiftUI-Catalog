@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-/// accessibilityShowButtonShapes permet de détecter si les boutons sont soulignés
+/// accessibilityShowButtonShapes permet de détecter si les boutons doivent être plus facilement identifiable
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// accessibilityShowButtonShapes: Bool { get } 
 ///   - false: par défaut
 ///   - true: si l'utisateur l'ativé
 ///
-///
-/// Modifier pour la preview ne fonctionne pas
+/// Si activé, alors les contrôles intéractifs doivent être clairement identifiables
+/// Par défaut & si activé, les boutons sont soulignés
 
 // MARK: - Importance pour l'accessibilité : faible - moyenne
 // MARK: - Utilisation : Faciliter la reconnaissance des boutons pour les malvoyants (?)

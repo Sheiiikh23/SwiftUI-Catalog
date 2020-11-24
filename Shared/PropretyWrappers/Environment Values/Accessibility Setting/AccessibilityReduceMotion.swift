@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-/// accessibilityReduceMotion permet de réduire les animations
+/// accessibilityReduceMotion de détecter si la réduction des animations
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// accessibilityReduceMotion: Bool { get } 
 ///   - false: par défaut
 ///   - true: si l'utisateur l'ativé
 ///
-/// Proposition d'une alternative pour inclure les deux cas
-/// Modifier pour la preview ne fonctionne pas
+/// Si activé, alors évité des animations importantes, surtout celles en 3D
+/// Proposition d'une alternative pour inclure les deux cas (cf plus pas)
 
 // MARK: - Importance pour l'accessibilité : très faible - faible 
-// MARK: - Utilisation : Réduction des animations
+// MARK: - Utilisation : Réduction des animations (pour les 👴 et 👵)
 
 struct AccessibilityReduceMotion: View {
 
@@ -37,12 +37,13 @@ struct AccessibilityReduceMotion: View {
         .clipShape(Capsule())
         .onTapGesture {
           // check si l'option d'accessibilité est activée
-          if isReduceMotion {
+          withAnimation(isReduceMotion ? .none : .easeIn) {
             scaleEffect *= 1.5
-          } else {
-            withAnimation(.easeIn) {
-              scaleEffect *= 1.5
-            }
+          }
+        }
+        .onChange(of: scaleEffect) { _ in
+          DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+            withAnimation(isReduceMotion ? .none : .easeOut) { scaleEffect = 1 }
           }
         }
     }
@@ -86,7 +87,7 @@ struct AccessibilityReduceMotion_Previews: PreviewProvider {
       AccessibilityReduceMotion()
       AccessibilityReduceMotion()
       // FIXME: Ne fonctionne pas pour le moment
-//        .environment(\.accessibilityReduceMotion, true)
+      //        .environment(\.accessibilityReduceMotion, true)
       AccessibilityWithOptionnalAnimation()
     }
   }

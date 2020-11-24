@@ -14,11 +14,10 @@ import SwiftUI
 ///   - false: par défaut
 ///   - true: si l'utisateur l'ativé
 ///
-/// Les couleurs "classiques" ne sont donc pas de leur couleur 
-/// Modifier pour la preview ne fonctionne pas
+/// Les couleurs "classiques" ne sont donc pas de leur couleur
 
 // MARK: - Importance pour l'accessibilité : très faible - faible 
-// MARK: - Utilisation : Probablement pour les daltoniens 
+// MARK: - Utilisation : Probablement pour les daltoniens ?
 
 struct AccessibilityInvertColors: View {
 
@@ -60,8 +59,7 @@ struct AccessibilityInvertColors_Previews: PreviewProvider {
     Group {
       AccessibilityInvertColors()
       AccessibilityInvertColors()
-        .colorInvert()
-        // FIXME: Ne fonctionne pas pour le moment 
+      // FIXME: Ne fonctionne pas pour le moment
 //        .environment(\.accessibilityInvertColors, true)
     }
   }
