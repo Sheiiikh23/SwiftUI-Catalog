@@ -474,13 +474,13 @@
 			path = ColorScheme;
 			sourceTree = "<group>";
 		};
-		8D158BAB24CC426A00188F6B /* Controls Attributes (buttons only supported on MacOS) */ = {
+		8D158BAB24CC426A00188F6B /* Controls Attributes (MacOS only) */ = {
 			isa = PBXGroup;
 			children = (
 				8DE4440024CAA7DF0079B2B7 /* ControlSize.swift */,
 				8D158BAC24CC429300188F6B /* ControlActiveState.swift */,
 			);
-			path = "Controls Attributes (buttons only supported on MacOS)";
+			path = "Controls Attributes (MacOS only)";
 			sourceTree = "<group>";
 		};
 		8D158BAF24CC487C00188F6B /* Core Data */ = {
@@ -565,7 +565,7 @@
 			children = (
 				8D158BA924CC41AC00188F6B /* Accessibility Setting */,
 				8D158BAA24CC420B00188F6B /* ColorScheme */,
-				8D158BAB24CC426A00188F6B /* Controls Attributes (buttons only supported on MacOS) */,
+				8D158BAB24CC426A00188F6B /* Controls Attributes (MacOS only) */,
 				8D158BAF24CC487C00188F6B /* Core Data */,
 				8D158BB024CC489000188F6B /* List */,
 				8D158BB124CC48C100188F6B /* Paragraph Styles */,

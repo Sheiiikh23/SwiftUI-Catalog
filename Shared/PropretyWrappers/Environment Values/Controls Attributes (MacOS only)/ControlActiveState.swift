@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// controlActiveState permet de détecter l'état des contrôles (buttons) dans la View
+/// controlActiveState permet de détecter l'état actif des contrôles (buttons) dans la View
 /// Disponible sur : macOS
 ///
 /// controlActiveState: ControlActiveState { get set }
@@ -17,4 +17,4 @@ import SwiftUI
 ///
 
 // MARK: - Importance pour l'accessibilité : moyenne - élevée
-// MARK: - Utilisation : Connaître l'état des autres contrôles
+// MARK: - Utilisation : Connaître l'état des contrôles
