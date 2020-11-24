@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-/// colorSchemeContrast permet de détecter si les constrastes sont augmentées
+/// colorSchemeContrast permet de détecter si les constrastes sont augmentés
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// colorSchemeContrast: ColorSchemeContrast { get }
 ///   - standard: par défaut
 ///   - increased: si l'utisateur l'ativé
 ///
-/// Il faudra donc bien faire attention aux couleurs utilisées
-/// Modifier dans la preview qui ne fonctionne pas
+/// Si activé, alors le système utilise un contrast accru entre les couleurs d'avant et arrière plan
+/// À utiliser pour agrémenter l'utilisation de @Environment(\.colorScheme)
 
 // MARK: - Importance pour l'accessibilité : faible - moyenne
 // MARK: - Utilisation : Permet de savoir si les contrastes sont augmentés

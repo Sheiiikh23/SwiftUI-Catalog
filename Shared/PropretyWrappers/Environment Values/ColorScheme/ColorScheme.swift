@@ -11,8 +11,8 @@ import SwiftUI
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// colorScheme: ColorScheme { get set } 
-///   - black: par défaut
-///   - light: si l'utisateur l'ativé
+///   - black
+///   - light: par défaut 
 ///
 
 // MARK: - Importance pour l'accessibilité : très élevée
