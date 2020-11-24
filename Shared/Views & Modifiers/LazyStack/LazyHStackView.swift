@@ -1,26 +1,25 @@
 //
-//  LazyVStackView.swift
+//  LazyHStackView.swift
 //  SwiftUI 2.0
 //
-//  Created by Lucas Abijmil on 02/07/2020.
+//  Created by Lucas Abijmil on 03/07/2020.
 //
 
 import SwiftUI
 
-/// Appartion des LazyVStack : VStack où les cellules sont crées à la volée
+/// Appartion des LazyHStack : HStack où les cellules sont crées à la volée
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
-/// 
-/// Prend toute la width du parent container par défaut
-/// Même constructeurs que les VStacks avec en plus un PinnedScrollView (cf LazyVStackViewPinned)
+///
+/// Prend toute la height du parent container par défaut
+/// Même constructeurs que les HStacks avec en plus un PinnedViews (cf LazyHStackViewPinned)
 
-// MARK: - Utilisation : Création d'un VStack qui alloue les cellules à la volée (nombre important)
+// MARK: - Utilisation : Création d'un HStack qui alloue les cellules à la volée (nombre important)
 
-struct LazyVStackView: View {
-
+struct LazyHStackView: View {
   var body: some View {
-    // MARK: - LazyVStack sans PinnedScrollView
-    ScrollView {
-      LazyVStack(spacing: 15) {
+    // MARK: - LazyHStack sans PinnedViews
+    ScrollView(.horizontal) {
+      LazyHStack(spacing: 15) {
         ForEach(1...1000, id: \.self) { item in
           Text("Cell n°\(item)")
             .foregroundColor(randomColor())
@@ -36,12 +35,12 @@ struct LazyVStackView: View {
   }
 }
 
-struct LazyVStackViewPinned: View {
+struct LazyHStackViewPinned: View {
 
   var body: some View {
-    // MARK: - LazyVStack avec PinnedScrollView (ici juste header, même fonctionnement pour le footer)
-    ScrollView {
-      LazyVStack(spacing: 15, pinnedViews: [.sectionHeaders]) {
+    // MARK: - LazyHStack avec PinnedViews (ici juste header, même fonctionnement pour le footer)
+    ScrollView(.horizontal) {
+      LazyHStack(spacing: 15, pinnedViews: [.sectionHeaders]) {
         Section(header: HeaderPinnedView(title: "1 to 250")) {
           ForEach(1...250, id: \.self) { item in
             Text("Cell n°\(item)")
@@ -83,11 +82,11 @@ struct LazyVStackViewPinned: View {
   }
 }
 
-struct LazyVStackView_Previews: PreviewProvider {
+struct LazyHStackView_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      LazyVStackView()
-      LazyVStackViewPinned()
+      LazyHStackView()
+      LazyHStackViewPinned()
     }
   }
 }
@@ -100,6 +99,6 @@ fileprivate struct HeaderPinnedView: View {
     Text(title)
         .frame(maxWidth: .infinity)
         .padding(.vertical)
-        .background(Color.red)
+        .background(Color.blue)
   }
 }
