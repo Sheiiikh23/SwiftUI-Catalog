@@ -31,13 +31,13 @@ struct CommandsModifier: App {
       CommandMenu("Shape") {
         /// Bouton n°1
         Button("Add Shape...", action: {})
-          /// Raccourci clavier : cmd + shift (car maj) + n
-          .keyboardShortcut("N")
+          /// Raccourci clavier : cmd + n
+          .keyboardShortcut("n")
 
         // Bouton n°2
         Button("Add Text", action: {})
-          /// Raccourci clavier :  cmd + shift (car maj) + t
-          .keyboardShortcut("T")
+          /// Raccourci clavier :  cmd + t
+          .keyboardShortcut("t")
       }
 
       /// Création d'un menu Hey entre View et Windows (et donc juste après Shape)

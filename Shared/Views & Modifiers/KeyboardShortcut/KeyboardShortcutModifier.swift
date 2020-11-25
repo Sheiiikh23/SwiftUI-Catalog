@@ -59,21 +59,25 @@ struct KeyboardShortcut: View {
       Button("Save", action: {})
         .keyboardShortcut(.defaultAction)
 
-      /// cmd + shift (car maj) + t
-      Toggle("Toggle me", isOn: $toggleValue)
-        .keyboardShortcut("T")
-
       /// cmd + t
-      Button("New shortcut", action: {})
+      Toggle("Toggle me", isOn: $toggleValue)
         .keyboardShortcut("t")
+
+      /// cmd + u
+      Button("New shortcut", action: {})
+        .keyboardShortcut("u")
 
       /// contol + <-
       Button("New shortcut", action: {})
         .keyboardShortcut(.leftArrow, modifiers: .control)
 
-      /// control + shift (car maj) + m
+      /// control + shift + ->
       Button("New shortcut", action: {})
-        .keyboardShortcut("M", modifiers: .control)
+        .keyboardShortcut(.rightArrow, modifiers: [.control, .shift])
+
+      /// control + shift + m
+      Button("New shortcut", action: {})
+        .keyboardShortcut("m", modifiers: [.control, .shift])
     }
   }
 }
