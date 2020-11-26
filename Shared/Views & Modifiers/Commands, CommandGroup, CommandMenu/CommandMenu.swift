@@ -11,11 +11,18 @@ import SwiftUI
 /// Disponible sur : i•Pad•OS / macOS / Mac Catalyst
 ///
 /// CommandMenu se trouve obligatoirement dans un commands modifier : cf CommandsModifier
-/// Possibilité de faire des "nested menu" (menu contenu dans un autre menu)
+/// Dans ces menu nous pouvons utilisé les View suivante :
+///   • Button
+///   • Picker
+///   • Toggle
+///   • Divider
 
 // MARK: - Utilisation : Création de menu (déroulant) pour des commandes
 
 struct CommandMenuView: App {
+
+  @State private var pickerSelection = 0
+  @State private var toggleValue = true
 
   var body: some Scene {
     WindowGroup {
@@ -25,8 +32,16 @@ struct CommandMenuView: App {
       CommandMenu("SwiftUI") {
         Button { } label: { Text("Some command") }
         Button { } label: { Text("Some command") }
-        Button { } label: { Text("Some command") }
-        Button { } label: { Text("Some command") }
+
+        /// Création d'un picker qui va avoir ± la forme d'un nested menu
+        Picker(selection: $pickerSelection, label: Text("Filter")) {
+          Text("Command 1")
+            .tag(0)
+          Text("Command 2")
+            .tag(1)
+          Text("Command 3")
+            .tag(2)
+        }
       }
       CommandMenu("UIKit") {
         Button { } label: { Text("No command for UIKit 🤣") }
@@ -37,8 +52,7 @@ struct CommandMenuView: App {
       CommandMenu("CocoaPod") {
         Button { } label: { Text("You seems to be old") }
         Divider()
-        Button { } label: { Text("Oh yes you are !")
-        }
+        Toggle("Oh yes you are !", isOn: $toggleValue)
       }
     }
   }
