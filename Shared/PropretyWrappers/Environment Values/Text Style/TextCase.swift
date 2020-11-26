@@ -31,8 +31,7 @@ struct TextCase: View {
       Text("Text case uppercase non-respect")
         .textCase(textCase == .some(.uppercase) ? .lowercase : .uppercase)
 
-      Text("Text with the textCase modifier")
-        .italic()
+      Text("Text with native textCase modifier")
         .textCase(.uppercase)
     }
   }
