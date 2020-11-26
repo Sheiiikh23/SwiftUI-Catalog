@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-/// managedObjectContext permet d'accéder au persistent container CoreData
+/// managedObjectContext permet de faire des CRUD opérations dans container de CoreData
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 
 // @Environment(\.managedObjectContext) : NSManagedObjectContext { get set } 
 
 // MARK: - Importance pour l'accessibilité : élevée - très élevée
-// MARK: - Utilisation : Permet d'accéder au container CoreData
+// MARK: - Utilisation : Permet de l
 
 struct ManagedObject: View {
 

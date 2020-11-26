@@ -491,13 +491,13 @@
 			path = "Core Data";
 			sourceTree = "<group>";
 		};
-		8D158BB024CC489000188F6B /* List */ = {
+		8D158BB024CC489000188F6B /* List Style */ = {
 			isa = PBXGroup;
 			children = (
 				8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */,
 				8D158BA324CC405900188F6B /* DefaultMinListRowHeight.swift */,
 			);
-			path = List;
+			path = "List Style";
 			sourceTree = "<group>";
 		};
 		8D158BB124CC48C100188F6B /* Paragraph Styles */ = {
@@ -567,7 +567,7 @@
 				8D158BAA24CC420B00188F6B /* ColorScheme */,
 				8D158BAB24CC426A00188F6B /* Controls Attributes (MacOS only) */,
 				8D158BAF24CC487C00188F6B /* Core Data */,
-				8D158BB024CC489000188F6B /* List */,
+				8D158BB024CC489000188F6B /* List Style */,
 				8D158BB124CC48C100188F6B /* Paragraph Styles */,
 				8D97EDDB24E1D7A2009E60E6 /* Text Style */,
 				8D36D1AF25096EEB0074E498 /* Views */,
