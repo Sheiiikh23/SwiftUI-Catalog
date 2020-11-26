@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// sizeCategory indique la taille de Text préféré par l'utilisateur
+/// sizeCategory indique la taille du texte préférée par l'utilisateur
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// sizeCategory: ContentSizeCategory { get set } 

@@ -7,16 +7,17 @@
 
 import SwiftUI
 
-/// layoutDirection indique la direction du layout
+/// layoutDirection indique la direction du layout (gauche -> droite ou droite -> gache)
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// layoutDirection: LayoutDirection { get set } 
 ///   - leftToRight : par défaut
 ///   - rightToLeft
 ///
+/// À noter qu'on peut aussi utiliser le modifier flipsForRightToLeftLayoutDirection(Bool)
 
-// MARK: - Importance pour l'accessibilité : très faible - faible
-// MARK: - Utilisation : Pas trop besoin car déjà natif avec les localizedStrings
+// MARK: - Importance pour l'accessibilité : faible – moyenne
+// MARK: - Utilisation : Utile pour les pays dont le sens de lecture est inversé
 
 struct LayoutDirection: View {
 
@@ -26,7 +27,7 @@ struct LayoutDirection: View {
     ZStack {
       if case .leftToRight = layoutDirection {
         VStack(alignment: .leading) {
-          Text("We're reading from left to right")
+          Text("Layout direction is from left to right")
             .fontWeight(.bold)
             .foregroundColor(.black)
             .padding(.vertical, 10)
@@ -38,7 +39,7 @@ struct LayoutDirection: View {
         }
       } else {
         VStack(alignment: .leading) {
-          Text("We're reading from right to left")
+          Text("Layout direction is from right to left")
             .fontWeight(.bold)
             .foregroundColor(.black)
             .padding(.vertical, 10)
@@ -56,8 +57,6 @@ struct LayoutDirection_Previews: PreviewProvider {
   static var previews: some View {
     Group {
       LayoutDirection()
-        // Par défaut
-        .environment(\.layoutDirection, .leftToRight)
       LayoutDirection()
         .environment(\.layoutDirection, .rightToLeft)
     }

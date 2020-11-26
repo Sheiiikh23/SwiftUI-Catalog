@@ -25,19 +25,33 @@ struct MultilineTextAlignment: View {
   var body: some View {
     ZStack {
       Color.purple.opacity(0.75)
-      Text("Voici l'histoire du multilineTextAlignment. Voici l'histoire du multilineTextAlignment. Voici l'histoire du multilineTextAlignment. Voici l'histoire du multilineTextAlignment.")
-        .font(.caption)
-        .fontWeight(.bold)
-        .foregroundColor(.white)
-        .multilineTextAlignment(.leading)
-        .frame(width: 225)
+      VStack(spacing: 50) {
+        Text("Voici l'histoire du multilineTextAlignment. Voici l'histoire du multilineTextAlignment. Voici l'histoire du multilineTextAlignment. Voici l'histoire du multilineTextAlignment.")
+          .font(.caption)
+          .fontWeight(.bold)
+          .foregroundColor(.white)
+          .multilineTextAlignment(.leading)
+          .frame(width: 225)
+
+        Text("Voici l'histoire du multilineTextAlignment. Voici l'histoire du multilineTextAlignment. Voici l'histoire du multilineTextAlignment. Voici l'histoire du multilineTextAlignment.")
+          .font(.caption)
+          .fontWeight(.bold)
+          .foregroundColor(.white)
+          .frame(width: 225)
+      }
     }
   }
 }
 
 struct MultilineTextAlignment_Previews: PreviewProvider {
   static var previews: some View {
-    MultilineTextAlignment()
-      .environment(\.multilineTextAlignment, .center)
+    Group {
+      MultilineTextAlignment()
+        .environment(\.multilineTextAlignment, .leading)
+      MultilineTextAlignment()
+        .environment(\.multilineTextAlignment, .center)
+      MultilineTextAlignment()
+        .environment(\.multilineTextAlignment, .trailing)
+    }
   }
 }

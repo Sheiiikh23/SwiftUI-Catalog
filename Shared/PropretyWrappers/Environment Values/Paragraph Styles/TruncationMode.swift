@@ -37,6 +37,10 @@ struct TruncationMode: View {
         .font(.title2)
         .truncationMode(.head)
         .frame(width: 200, height: 50)
+
+      Text("Beaucoup de texte. Tronqué en fonction de l'environment")
+        .font(.title2)
+        .frame(width: 200, height: 50)
     }
   }
 }

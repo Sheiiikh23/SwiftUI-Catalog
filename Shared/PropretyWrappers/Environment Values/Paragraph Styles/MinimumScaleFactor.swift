@@ -12,7 +12,7 @@ import SwiftUI
 ///
 /// minimumScaleFactor: { get set } (compris entre 0 et 1)
 ///   - 1 : par défaut (pas de restriction)
-///   - 0 ≤ x ≤ 1 : indique le d'espace en point
+///   - 0 ≤ x ≤ 1 : indique la réduction d'espace en ratio
 
 // MARK: - Importance pour l'accessibilité : très faible - faible
 // MARK: - Utilisation : Pas besoin car déjà natif avec le modifier en question

@@ -14,9 +14,10 @@ import SwiftUI
 ///   - false : par défaut
 ///   - true
 ///
+/// Cette compressions de texte se fait dans une “certaine limite"
 
 // MARK: - Importance pour l'accessibilité : très faible - faible
-// MARK: - Utilisation : Indique si les caractères doivent être resseré ou non 
+// MARK: - Utilisation : Pas besoin car déjà natif avec le modifier en question
 
 struct AllowsTightening: View {
 
@@ -24,26 +25,17 @@ struct AllowsTightening: View {
 
   var body: some View {
     VStack {
-      if isTightening {
-        Text("Inter spacement character have to be reduced")
-          .font(.title2)
-          .fontWeight(.bold)
-          .foregroundColor(.black)
-          .allowsTightening(true)
-          .padding(.vertical, 10)
-          .padding(.horizontal, 20)
-          .background(Color.purple.opacity(0.25))
-          .clipShape(Capsule())
-      } else {
-        Text("Text fit well")
-          .font(.title2)
-          .fontWeight(.bold)
-          .foregroundColor(.white)
-          .padding(.vertical, 10)
-          .padding(.horizontal, 20)
-          .background(Color.red.opacity(0.5))
-          .clipShape(Capsule())
-      }
+      Text("This is a wide text element")
+        .font(.body)
+        .frame(width: 200, height: 50)
+        .lineLimit(1)
+        .allowsTightening(true)
+
+      Text("This is a wide text element")
+        .font(.body)
+        .frame(width: 200, height: 50)
+        .lineLimit(1)
+        .allowsTightening(false)
     }
   }
 }

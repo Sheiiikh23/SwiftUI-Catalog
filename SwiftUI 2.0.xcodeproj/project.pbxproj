@@ -21,6 +21,7 @@
 		8D158BAE24CC429300188F6B /* ControlActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D158BAC24CC429300188F6B /* ControlActiveState.swift */; };
 		8D158BB324CC48D500188F6B /* AllowsTightening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D158BB224CC48D500188F6B /* AllowsTightening.swift */; };
 		8D158BB424CC48D500188F6B /* AllowsTightening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D158BB224CC48D500188F6B /* AllowsTightening.swift */; };
+		8D1A9612256FB30A00223F52 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1A9611256FB30A00223F52 /* Font.swift */; };
 		8D1CDAA0256C3BBE0067B8BE /* CommandMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CDA9F256C3BBE0067B8BE /* CommandMenu.swift */; };
 		8D1CDAA1256C3BBE0067B8BE /* CommandMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CDA9F256C3BBE0067B8BE /* CommandMenu.swift */; };
 		8D1CDAD8256C54860067B8BE /* CommandGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CDAD7256C54860067B8BE /* CommandGroup.swift */; };
@@ -141,8 +142,8 @@
 		8DB0C1AA24B21B01006818B4 /* AppStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1A824B21B01006818B4 /* AppStorageWrapper.swift */; };
 		8DB0C1AC24B21F3F006818B4 /* SceneStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1AB24B21F3F006818B4 /* SceneStorageWrapper.swift */; };
 		8DB0C1AD24B21F3F006818B4 /* SceneStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1AB24B21F3F006818B4 /* SceneStorageWrapper.swift */; };
-		8DB0C1AF24B23107006818B4 /* StateObjectWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1AE24B23107006818B4 /* StateObjectWrapper.swift */; };
-		8DB0C1B024B23107006818B4 /* StateObjectWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1AE24B23107006818B4 /* StateObjectWrapper.swift */; };
+		8DB0C1AF24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1AE24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift */; };
+		8DB0C1B024B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1AE24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift */; };
 		8DB0C1B224B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1B124B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift */; };
 		8DB0C1B324B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1B124B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift */; };
 		8DB0C1B524B23A3D006818B4 /* ProgressViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1B424B23A3D006818B4 /* ProgressViewStyleModifier.swift */; };
@@ -285,6 +286,7 @@
 		8D158BA324CC405900188F6B /* DefaultMinListRowHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMinListRowHeight.swift; sourceTree = "<group>"; };
 		8D158BAC24CC429300188F6B /* ControlActiveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlActiveState.swift; sourceTree = "<group>"; };
 		8D158BB224CC48D500188F6B /* AllowsTightening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowsTightening.swift; sourceTree = "<group>"; };
+		8D1A9611256FB30A00223F52 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		8D1CDA9F256C3BBE0067B8BE /* CommandMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandMenu.swift; sourceTree = "<group>"; };
 		8D1CDAD7256C54860067B8BE /* CommandGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandGroup.swift; sourceTree = "<group>"; };
 		8D1ED84124C8D002000F936D /* AccessibilityEnabled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityEnabled.swift; sourceTree = "<group>"; };
@@ -352,7 +354,7 @@
 		8DB0C1A524B21AD9006818B4 /* DisableAutocorrectionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableAutocorrectionModifier.swift; sourceTree = "<group>"; };
 		8DB0C1A824B21B01006818B4 /* AppStorageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageWrapper.swift; sourceTree = "<group>"; };
 		8DB0C1AB24B21F3F006818B4 /* SceneStorageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStorageWrapper.swift; sourceTree = "<group>"; };
-		8DB0C1AE24B23107006818B4 /* StateObjectWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObjectWrapper.swift; sourceTree = "<group>"; };
+		8DB0C1AE24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StateObjectWrapper & ObservedObjectWrapper.swift"; sourceTree = "<group>"; };
 		8DB0C1B124B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationDelegateAdaptorWrapper.swift; sourceTree = "<group>"; };
 		8DB0C1B424B23A3D006818B4 /* ProgressViewStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewStyleModifier.swift; sourceTree = "<group>"; };
 		8DB73DB424D93D3300D7D84F /* MultilineTextAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextAlignment.swift; sourceTree = "<group>"; };
@@ -542,7 +544,7 @@
 				8D68A80E24C8559B000F4DFF /* Environment Values */,
 				8DB0C1A824B21B01006818B4 /* AppStorageWrapper.swift */,
 				8D442EE624A80B2C009995DD /* ScaledMetricWrapper.swift */,
-				8DB0C1AE24B23107006818B4 /* StateObjectWrapper.swift */,
+				8DB0C1AE24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift */,
 				8D999F8A24B0B7B10050BD97 /* NamespaceWrapper.swift */,
 				8DB0C1AB24B21F3F006818B4 /* SceneStorageWrapper.swift */,
 				8DB0C1B124B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift */,
@@ -590,6 +592,7 @@
 			children = (
 				8D680A082508218200AFE8A7 /* DisableAutoCorrection.swift */,
 				8D680A0A2508230E00AFE8A7 /* TextCase.swift */,
+				8D1A9611256FB30A00223F52 /* Font.swift */,
 			);
 			path = "Text Style";
 			sourceTree = "<group>";
@@ -1283,13 +1286,14 @@
 				8D7B37CE24AEFC8B00F95736 /* PinnedViews.swift in Sources */,
 				8D680A092508218200AFE8A7 /* DisableAutoCorrection.swift in Sources */,
 				8D0F819B250AB7AA00221DFD /* Locale.swift in Sources */,
-				8DB0C1AF24B23107006818B4 /* StateObjectWrapper.swift in Sources */,
+				8DB0C1AF24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift in Sources */,
 				8D7B37CB24AEFB8F00F95736 /* LazyHStackView.swift in Sources */,
 				8D3A766F24A892E600005971 /* ListItemTintModifier.swift in Sources */,
 				8DA0F46024CA1AAD003C751B /* AccessibilityShowButtonShapes.swift in Sources */,
 				8DDA5C4424A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
 				8DDA5C5C24A3217D00BF263B /* LabelView.swift in Sources */,
 				8DA0F45D24CA1627003C751B /* AccessibilityReduceTransparency.swift in Sources */,
+				8D1A9612256FB30A00223F52 /* Font.swift in Sources */,
 				8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */,
 				8DE9F4EC24AD114E0054CE64 /* MapView.swift in Sources */,
 				8DF93EDF24A7955D00B84CD0 /* ListWithChildrenView.swift in Sources */,
@@ -1386,7 +1390,7 @@
 				8D4D24FC24AC5C4F00982117 /* LazyHGrid.swift in Sources */,
 				8D3A769424A8E38800005971 /* TextEditorView.swift in Sources */,
 				8D7B37CF24AEFC8B00F95736 /* PinnedViews.swift in Sources */,
-				8DB0C1B024B23107006818B4 /* StateObjectWrapper.swift in Sources */,
+				8DB0C1B024B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift in Sources */,
 				8D7B37CC24AEFB8F00F95736 /* LazyHStackView.swift in Sources */,
 				8D3A767024A892E600005971 /* ListItemTintModifier.swift in Sources */,
 				8DA0F46124CA1AAD003C751B /* AccessibilityShowButtonShapes.swift in Sources */,

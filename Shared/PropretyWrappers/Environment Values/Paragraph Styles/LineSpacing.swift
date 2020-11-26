@@ -31,12 +31,24 @@ struct LineSpacing: View {
         .padding(.vertical, 10)
         .padding(.horizontal, 20)
         .background(Color.blue)
+
+      Text("Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte. Beaucoup de texte.")
+        .font(.caption)
+        .fontWeight(.bold)
+        .foregroundColor(.white)
+        .padding(.vertical, 10)
+        .padding(.horizontal, 20)
+        .background(Color.blue)
     }
   }
 }
 
 struct LineSpacing_Previews: PreviewProvider {
   static var previews: some View {
-    LineSpacing()
+    Group {
+      LineSpacing()
+      LineSpacing()
+        .environment(\.lineSpacing, 40)
+    }
   }
 }
