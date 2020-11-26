@@ -40,6 +40,11 @@ import SwiftUI
 ///   • ToolbarCommands : commandes pour mannipules les barres d'outils des fenêtres
 ///   • EmptyCommands : groupe de commandes vide
 ///
+/// Dans ces menu nous pouvons utilisé les View suivante :
+///   • Button
+///   • Picker
+///   • Toggle
+///   • Divider
 
 // MARK: - Utilisation : Ajouter des commandes / groupes de commandes (prebuild) à des menus déjà existants
 
@@ -65,6 +70,20 @@ struct CommandGroupView: App {
       CommandGroup(replacing: .appVisibility) {
         Button { } label: { Text("Regrouper toutes les fenêtres") }
       }
+
+      CommandGroup(before: .newItem) {
+        Toggle("Toggle me", isOn: .constant(true))
+      }
+
+      CommandGroup(after: .newItem) {
+        Picker(selection: .constant(0), label: Text("Choose an option")) {
+          Text("Option 1")
+            .tag(0)
+          Text("Option 2")
+            .tag(1)
+        }
+      }
+      TextFormattingCommands()
     }
   }
 }
