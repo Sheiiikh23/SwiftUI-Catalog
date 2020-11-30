@@ -19,7 +19,7 @@ import SwiftUI
 
 struct RedactionReason: View {
 
-  @Environment(\.redactionReasons) var redactionReasons
+  @Environment(\.redactionReasons) private var redactionReasons
 
   var body: some View {
     VStack {
