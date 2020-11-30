@@ -22,7 +22,7 @@ import SwiftUI
 
 struct AccessibilityReduceMotion: View {
 
-  @Environment(\.accessibilityReduceMotion) var isReduceMotion
+  @Environment(\.accessibilityReduceMotion) private var isReduceMotion
   @State private var scaleEffect: CGFloat = 1
 
   var body: some View {

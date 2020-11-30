@@ -30,7 +30,7 @@ import SwiftUI
 
 struct SizeCategory: View {
 
-  @Environment(\.sizeCategory) var sizeCategory
+  @Environment(\.sizeCategory) private var sizeCategory
 
   var body: some View {
     VStack {

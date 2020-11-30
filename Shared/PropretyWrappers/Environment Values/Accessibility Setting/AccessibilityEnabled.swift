@@ -23,7 +23,7 @@ import SwiftUI
 
 struct AccessibilityEnabled: View {
 
-  @Environment(\.accessibilityEnabled) var isAccesibilityActivated
+  @Environment(\.accessibilityEnabled) private var isAccesibilityActivated
 
   var body: some View {
     ZStack {

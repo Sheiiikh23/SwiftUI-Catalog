@@ -22,7 +22,7 @@ import SwiftUI
 
 struct ColorSchemeContrast: View {
 
-  @Environment(\.colorSchemeContrast) var isConstrastIncreased
+  @Environment(\.colorSchemeContrast) private var isConstrastIncreased
 
   var body: some View {
     if case .increased = isConstrastIncreased {

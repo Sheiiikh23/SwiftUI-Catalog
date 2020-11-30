@@ -17,7 +17,7 @@ import SwiftUI
 
 struct ManagedObject: View {
 
-  @Environment(\.managedObjectContext) var managedObject
+  @Environment(\.managedObjectContext) private var managedObject
 
   var body: some View {
     Button { saveContext() } label: {

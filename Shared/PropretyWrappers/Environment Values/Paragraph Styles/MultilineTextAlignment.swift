@@ -20,7 +20,7 @@ import SwiftUI
 
 struct MultilineTextAlignment: View {
 
-  @Environment(\.multilineTextAlignment) var textAlignment
+  @Environment(\.multilineTextAlignment) private var textAlignment
 
   var body: some View {
     ZStack {

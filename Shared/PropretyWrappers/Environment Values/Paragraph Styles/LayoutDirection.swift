@@ -21,7 +21,7 @@ import SwiftUI
 
 struct LayoutDirection: View {
 
-  @Environment(\.layoutDirection) var layoutDirection
+  @Environment(\.layoutDirection) private var layoutDirection
 
   var body: some View {
     ZStack {

@@ -21,7 +21,7 @@ import SwiftUI
 
 struct LegibilityWeight: View {
   
-  @Environment(\.legibilityWeight) var isBold
+  @Environment(\.legibilityWeight) private var isBold
 
   var body: some View {
     if case .bold = isBold {

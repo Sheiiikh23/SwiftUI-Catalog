@@ -19,7 +19,7 @@ import SwiftUI
 
 struct LineSpacing: View {
 
-  @Environment(\.lineSpacing) var lineSpacing
+  @Environment(\.lineSpacing) private var lineSpacing
 
   var body: some View {
     VStack {

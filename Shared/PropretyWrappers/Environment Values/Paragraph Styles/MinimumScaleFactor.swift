@@ -19,7 +19,7 @@ import SwiftUI
 
 struct MinimumScaleFactor: View {
 
-  @Environment(\.minimumScaleFactor) var minScaleFactor
+  @Environment(\.minimumScaleFactor) private var minScaleFactor
   @State private var myTextField = "Beaucoup de texte mais genre vraiment beaucoup"
 
     var body: some View {

@@ -21,7 +21,7 @@ import SwiftUI
 
 struct TextCase: View {
   
-  @Environment(\.textCase) var textCase
+  @Environment(\.textCase) private var textCase
   
   var body: some View {
     VStack {

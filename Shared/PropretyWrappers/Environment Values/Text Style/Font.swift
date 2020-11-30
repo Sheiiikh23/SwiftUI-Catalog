@@ -29,7 +29,7 @@ import SwiftUI
 
 struct FontView: View {
 
-  @Environment(\.font) var fontSize
+  @Environment(\.font) private var fontSize
 
   var body: some View {
     VStack {

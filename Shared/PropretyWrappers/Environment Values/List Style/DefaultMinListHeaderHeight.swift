@@ -19,7 +19,7 @@ import SwiftUI
 
 struct DefaultMinListHeaderHeight: View {
 
-  @Environment(\.defaultMinListHeaderHeight) var titleHeight
+  @Environment(\.defaultMinListHeaderHeight) private var titleHeight
 
   var body: some View {
     NavigationView {

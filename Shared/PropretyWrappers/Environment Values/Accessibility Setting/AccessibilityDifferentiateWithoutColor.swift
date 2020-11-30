@@ -22,7 +22,7 @@ import SwiftUI
 
 struct AccessibilityDifferentiateWithoutColor: View {
 
-  @Environment(\.accessibilityDifferentiateWithoutColor) var isDaltonien
+  @Environment(\.accessibilityDifferentiateWithoutColor) private var isDaltonien
 
   var body: some View {
     HStack {

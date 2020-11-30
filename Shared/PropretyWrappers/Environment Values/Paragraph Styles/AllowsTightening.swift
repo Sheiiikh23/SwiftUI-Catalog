@@ -21,7 +21,7 @@ import SwiftUI
 
 struct AllowsTightening: View {
 
-  @Environment(\.allowsTightening) var isTightening
+  @Environment(\.allowsTightening) private var isTightening
 
   var body: some View {
     VStack {

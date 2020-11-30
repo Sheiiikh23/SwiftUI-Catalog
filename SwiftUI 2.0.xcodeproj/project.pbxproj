@@ -38,6 +38,7 @@
 		8D33BBE724AA934B0097EC2E /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D33BBE524AA934B0097EC2E /* GridItemView.swift */; };
 		8D36D1B125096EF90074E498 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36D1B025096EF90074E498 /* Calendar.swift */; };
 		8D36D1B3250971E20074E498 /* EditMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36D1B2250971E20074E498 /* EditMode.swift */; };
+		8D39F44525753A82000B757F /* TimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D39F44425753A82000B757F /* TimeZone.swift */; };
 		8D3A766F24A892E600005971 /* ListItemTintModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A766E24A892E600005971 /* ListItemTintModifier.swift */; };
 		8D3A767024A892E600005971 /* ListItemTintModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A766E24A892E600005971 /* ListItemTintModifier.swift */; };
 		8D3A767224A899B000005971 /* ListItemTintModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767124A899B000005971 /* ListItemTintModifier.swift */; };
@@ -128,8 +129,7 @@
 		8DA0F46124CA1AAD003C751B /* AccessibilityShowButtonShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA0F45F24CA1AAD003C751B /* AccessibilityShowButtonShapes.swift */; };
 		8DA0F46324CA1C30003C751B /* LegibilityWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA0F46224CA1C30003C751B /* LegibilityWeight.swift */; };
 		8DA0F46424CA1C30003C751B /* LegibilityWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA0F46224CA1C30003C751B /* LegibilityWeight.swift */; };
-		8DB0C19724B1DCD9006818B4 /* EnvironmentPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19624B1DCD9006818B4 /* EnvironmentPresentationMode.swift */; };
-		8DB0C19824B1DCD9006818B4 /* EnvironmentPresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19624B1DCD9006818B4 /* EnvironmentPresentationMode.swift */; };
+		8DB0C19724B1DCD9006818B4 /* PresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */; };
 		8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
 		8DB0C19B24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
 		8DB0C19D24B21127006818B4 /* AppStoreOverlayModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19C24B21127006818B4 /* AppStoreOverlayModifier.swift */; };
@@ -296,6 +296,7 @@
 		8D33BBE524AA934B0097EC2E /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
 		8D36D1B025096EF90074E498 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		8D36D1B2250971E20074E498 /* EditMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMode.swift; sourceTree = "<group>"; };
+		8D39F44425753A82000B757F /* TimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZone.swift; sourceTree = "<group>"; };
 		8D3A766E24A892E600005971 /* ListItemTintModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTintModifier.swift; sourceTree = "<group>"; };
 		8D3A767124A899B000005971 /* ListItemTintModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTintModifier.swift; sourceTree = "<group>"; };
 		8D3A767324A89C2600005971 /* ToggleStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleStyleModifier.swift; sourceTree = "<group>"; };
@@ -347,7 +348,7 @@
 		8DA0F45C24CA1627003C751B /* AccessibilityReduceTransparency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityReduceTransparency.swift; sourceTree = "<group>"; };
 		8DA0F45F24CA1AAD003C751B /* AccessibilityShowButtonShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityShowButtonShapes.swift; sourceTree = "<group>"; };
 		8DA0F46224CA1C30003C751B /* LegibilityWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegibilityWeight.swift; sourceTree = "<group>"; };
-		8DB0C19624B1DCD9006818B4 /* EnvironmentPresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentPresentationMode.swift; sourceTree = "<group>"; };
+		8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationMode.swift; sourceTree = "<group>"; };
 		8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInterpolationInText.swift; sourceTree = "<group>"; };
 		8DB0C19C24B21127006818B4 /* AppStoreOverlayModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreOverlayModifier.swift; sourceTree = "<group>"; };
 		8DB0C1A224B219E0006818B4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -525,22 +526,23 @@
 			path = "Environment Values";
 			sourceTree = "<group>";
 		};
-		8D36D1AF25096EEB0074E498 /* Views */ = {
+		8D36D1AF25096EEB0074E498 /* Views Settings */ = {
 			isa = PBXGroup;
 			children = (
 				8D36D1B025096EF90074E498 /* Calendar.swift */,
 				8D36D1B2250971E20074E498 /* EditMode.swift */,
 				8D0F8198250AB26D00221DFD /* IsEnable.swift */,
 				8D0F819A250AB7AA00221DFD /* Locale.swift */,
+				8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */,
+				8D39F44425753A82000B757F /* TimeZone.swift */,
 			);
-			path = Views;
+			path = "Views Settings";
 			sourceTree = "<group>";
 		};
 		8D442EE224A809B4009995DD /* PropretyWrappers */ = {
 			isa = PBXGroup;
 			children = (
 				8D3A767B24A8A8BE00005971 /* EnvironmentOpenUrl.swift */,
-				8DB0C19624B1DCD9006818B4 /* EnvironmentPresentationMode.swift */,
 				8D68A80E24C8559B000F4DFF /* Environment Values */,
 				8DB0C1A824B21B01006818B4 /* AppStorageWrapper.swift */,
 				8D442EE624A80B2C009995DD /* ScaledMetricWrapper.swift */,
@@ -572,7 +574,7 @@
 				8D158BB024CC489000188F6B /* List Style */,
 				8D158BB124CC48C100188F6B /* Paragraph Styles */,
 				8D97EDDB24E1D7A2009E60E6 /* Text Style */,
-				8D36D1AF25096EEB0074E498 /* Views */,
+				8D36D1AF25096EEB0074E498 /* Views Settings */,
 			);
 			path = "Environment Values";
 			sourceTree = "<group>";
@@ -1282,6 +1284,7 @@
 				8D33BBE324AA79AC0097EC2E /* LazyVGrid.swift in Sources */,
 				8D4D24FB24AC5C4F00982117 /* LazyHGrid.swift in Sources */,
 				8D3A769324A8E38800005971 /* TextEditorView.swift in Sources */,
+				8D39F44525753A82000B757F /* TimeZone.swift in Sources */,
 				8D999F7F24B08E470050BD97 /* DatePickerStyleModifier.swift in Sources */,
 				8D7B37CE24AEFC8B00F95736 /* PinnedViews.swift in Sources */,
 				8D680A092508218200AFE8A7 /* DisableAutoCorrection.swift in Sources */,
@@ -1351,7 +1354,7 @@
 				8DB0C1A924B21B01006818B4 /* AppStorageWrapper.swift in Sources */,
 				8DE9F4F724AD1BB60054CE64 /* SpriteKitView.swift in Sources */,
 				8DB0C1B224B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift in Sources */,
-				8DB0C19724B1DCD9006818B4 /* EnvironmentPresentationMode.swift in Sources */,
+				8DB0C19724B1DCD9006818B4 /* PresentationMode.swift in Sources */,
 				8D4447592563E93B00D875E3 /* MenuStyleModifier.swift in Sources */,
 				8D44478625640A5D00D875E3 /* GroupBoxStyleModifier.swift in Sources */,
 				8D3A767924A89FA200005971 /* LinkView.swift in Sources */,
@@ -1447,7 +1450,6 @@
 				8DB0C1AA24B21B01006818B4 /* AppStorageWrapper.swift in Sources */,
 				8DE9F4F824AD1BB60054CE64 /* SpriteKitView.swift in Sources */,
 				8DB0C1B324B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift in Sources */,
-				8DB0C19824B1DCD9006818B4 /* EnvironmentPresentationMode.swift in Sources */,
 				8D3A767A24A89FA200005971 /* LinkView.swift in Sources */,
 				8D4B2A3B24CA1EBB003E37F4 /* ColorScheme.swift in Sources */,
 				8D68A81124C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift in Sources */,

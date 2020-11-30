@@ -21,7 +21,7 @@ import SwiftUI
 struct LineLimit: View {
 
 
-  @Environment(\.lineLimit) var lineLimit
+  @Environment(\.lineLimit) private var lineLimit
 
   var body: some View {
     VStack {

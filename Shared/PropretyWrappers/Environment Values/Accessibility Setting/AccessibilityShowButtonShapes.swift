@@ -22,7 +22,7 @@ import SwiftUI
 
 struct AccessibilityShowButtonShapes: View {
 
-  @Environment(\.accessibilityShowButtonShapes) var isButtonShape
+  @Environment(\.accessibilityShowButtonShapes) private var isButtonShape
 
   var body: some View {
     if isButtonShape {

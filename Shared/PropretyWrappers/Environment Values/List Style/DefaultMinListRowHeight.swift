@@ -20,7 +20,7 @@ import SwiftUI
 
 struct DefaultMinListRowHeight: View {
 
-  @Environment(\.defaultMinListRowHeight) var rowHeight
+  @Environment(\.defaultMinListRowHeight) private var rowHeight
 
   var body: some View {
     List(0 ..< 50) { item in

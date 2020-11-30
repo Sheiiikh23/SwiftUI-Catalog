@@ -21,7 +21,7 @@ import SwiftUI
 
 struct TruncationMode: View {
 
-  @Environment(\.truncationMode) var truncationMode
+  @Environment(\.truncationMode) private var truncationMode
 
   var body: some View {
     VStack {

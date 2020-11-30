@@ -21,7 +21,7 @@ import SwiftUI
 
 struct DisableAutoCorrection: View {
 
-  @Environment(\.disableAutocorrection) var autoCorrection
+  @Environment(\.disableAutocorrection) private var autoCorrection
   @State private var prenom = ""
   @State private var nom = ""
 

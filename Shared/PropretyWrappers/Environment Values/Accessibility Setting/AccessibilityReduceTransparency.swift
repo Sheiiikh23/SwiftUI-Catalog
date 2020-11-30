@@ -21,7 +21,7 @@ import SwiftUI
 
 struct AccessibilityReduceTransparency: View {
 
-  @Environment(\.accessibilityReduceTransparency) var isReduceTransparency
+  @Environment(\.accessibilityReduceTransparency) private var isReduceTransparency
 
   var body: some View {
     ZStack {

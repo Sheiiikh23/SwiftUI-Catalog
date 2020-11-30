@@ -16,11 +16,11 @@ import SwiftUI
 ///
 
 // MARK: - Importance pour l'accessibilité : faible - très faible
-// MARK: - Utilisation : 🤷‍♂️
+// MARK: - Utilisation : Pas super intéressant car on peut passer par le modifier .disable
 
 struct IsEnable: View {
 
-  @Environment(\.isEnabled) var isEnable
+  @Environment(\.isEnabled) private var isEnable
 
   var body: some View {
     Text("Hello, World!")

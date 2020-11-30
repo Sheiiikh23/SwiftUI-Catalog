@@ -21,7 +21,7 @@ import SwiftUI
 
 struct AccessibilityInvertColors: View {
 
-  @Environment(\.accessibilityInvertColors) var isColorInvert
+  @Environment(\.accessibilityInvertColors) private var isColorInvert
 
   var body: some View {
     ZStack {
