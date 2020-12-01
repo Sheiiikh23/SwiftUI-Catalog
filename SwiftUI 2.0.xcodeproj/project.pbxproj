@@ -193,8 +193,8 @@
 		8DE443FF24CAA5AF0079B2B7 /* ColorSchemeContrast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE443FD24CAA5AF0079B2B7 /* ColorSchemeContrast.swift */; };
 		8DE4440124CAA7DF0079B2B7 /* ControlSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4440024CAA7DF0079B2B7 /* ControlSize.swift */; };
 		8DE4440224CAA7DF0079B2B7 /* ControlSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4440024CAA7DF0079B2B7 /* ControlSize.swift */; };
-		8DE4440424CAA9380079B2B7 /* ManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4440324CAA9380079B2B7 /* ManagedObject.swift */; };
-		8DE4440524CAA9380079B2B7 /* ManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4440324CAA9380079B2B7 /* ManagedObject.swift */; };
+		8DE4440424CAA9380079B2B7 /* ManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4440324CAA9380079B2B7 /* ManagedObjectContext.swift */; };
+		8DE4440524CAA9380079B2B7 /* ManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4440324CAA9380079B2B7 /* ManagedObjectContext.swift */; };
 		8DE67207257674C6001C17DB /* OpenURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE67206257674C6001C17DB /* OpenURL.swift */; };
 		8DE6722A25767DDF001C17DB /* IsFocused.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6722925767DDF001C17DB /* IsFocused.swift */; };
 		8DE6723225767F05001C17DB /* ResetFocusWatchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6723125767F05001C17DB /* ResetFocusWatchOS.swift */; };
@@ -407,7 +407,7 @@
 		8DE2B53E255D90FC00261B28 /* ScrollViewReader & ScrollViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScrollViewReader & ScrollViewProxy.swift"; sourceTree = "<group>"; };
 		8DE443FD24CAA5AF0079B2B7 /* ColorSchemeContrast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeContrast.swift; sourceTree = "<group>"; };
 		8DE4440024CAA7DF0079B2B7 /* ControlSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSize.swift; sourceTree = "<group>"; };
-		8DE4440324CAA9380079B2B7 /* ManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObject.swift; sourceTree = "<group>"; };
+		8DE4440324CAA9380079B2B7 /* ManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectContext.swift; sourceTree = "<group>"; };
 		8DE67206257674C6001C17DB /* OpenURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenURL.swift; sourceTree = "<group>"; };
 		8DE6722925767DDF001C17DB /* IsFocused.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsFocused.swift; sourceTree = "<group>"; };
 		8DE6723125767F05001C17DB /* ResetFocusWatchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetFocusWatchOS.swift; sourceTree = "<group>"; };
@@ -514,7 +514,7 @@
 		8D158BAF24CC487C00188F6B /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				8DE4440324CAA9380079B2B7 /* ManagedObject.swift */,
+				8DE4440324CAA9380079B2B7 /* ManagedObjectContext.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -1462,7 +1462,7 @@
 				8D3A768224A8B07300005971 /* SignInWithAppleButtonStyleModifier.swift in Sources */,
 				8D999F8B24B0B7B10050BD97 /* NamespaceWrapper.swift in Sources */,
 				8D442EDD24A80549009995DD /* ContainerRelativeShapeView.swift in Sources */,
-				8DE4440424CAA9380079B2B7 /* ManagedObject.swift in Sources */,
+				8DE4440424CAA9380079B2B7 /* ManagedObjectContext.swift in Sources */,
 				8D39F454257550F1000B757F /* RedactionReason.swift in Sources */,
 				8DB73DB524D93D3300D7D84F /* MultilineTextAlignment.swift in Sources */,
 				8DF93E9A24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
@@ -1558,7 +1558,7 @@
 				8D3A768324A8B07300005971 /* SignInWithAppleButtonStyleModifier.swift in Sources */,
 				8D999F8C24B0B7B10050BD97 /* NamespaceWrapper.swift in Sources */,
 				8D442EDE24A80549009995DD /* ContainerRelativeShapeView.swift in Sources */,
-				8DE4440524CAA9380079B2B7 /* ManagedObject.swift in Sources */,
+				8DE4440524CAA9380079B2B7 /* ManagedObjectContext.swift in Sources */,
 				8DB73DB624D93D3300D7D84F /* MultilineTextAlignment.swift in Sources */,
 				8DF93E9B24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
 				8DC13F3D24A76019003CDA7A /* SettingsView.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  ManagedObject.swift
+//  ManagedObjectContext.swift
 //  SwiftUI 2.0
 //
 //  Created by Lucas Abijmil on 24/07/2020.
@@ -15,9 +15,9 @@ import SwiftUI
 // MARK: - Importance pour l'accessibilité : élevée - très élevée
 // MARK: - Utilisation : Permet de l
 
-struct ManagedObject: View {
+struct ManagedObjectContext: View {
 
-  @Environment(\.managedObjectContext) private var managedObject
+  @Environment(\.managedObjectContext) private var managedObjectContext
 
   var body: some View {
     Button { saveContext() } label: {
@@ -33,7 +33,7 @@ struct ManagedObject: View {
   }
   private func saveContext() {
     do {
-      try managedObject.save()
+      try managedObjectContext.save()
     } catch {
       print(error.localizedDescription)
     }
@@ -42,6 +42,6 @@ struct ManagedObject: View {
 
 struct ManagedObject_Previews: PreviewProvider {
   static var previews: some View {
-    ManagedObject()
+    ManagedObjectContext()
   }
 }
