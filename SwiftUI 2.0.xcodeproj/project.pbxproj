@@ -111,6 +111,9 @@
 		8D7B37D124AEFD7500F95736 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B37D024AEFD7500F95736 /* VideoPlayerView.swift */; };
 		8D7B37D224AEFD7500F95736 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B37D024AEFD7500F95736 /* VideoPlayerView.swift */; };
 		8D7D06502576878A00323A00 /* WidgetFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D064F2576878A00323A00 /* WidgetFamily.swift */; };
+		8D7D065925768C1400323A00 /* DisplayScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D065825768C1400323A00 /* DisplayScale.swift */; };
+		8D7D066D2576926B00323A00 /* ImageScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D066C2576926A00323A00 /* ImageScale.swift */; };
+		8D7D0675257696F300323A00 /* PixelLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D0674257696F300323A00 /* PixelLength.swift */; };
 		8D97EDDD24E1D7D4009E60E6 /* SizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */; };
 		8D97EDDE24E1D7D4009E60E6 /* SizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */; };
 		8D97EDE024E1DBBE009E60E6 /* TruncationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97EDDF24E1DBBE009E60E6 /* TruncationMode.swift */; };
@@ -193,7 +196,7 @@
 		8DE4440524CAA9380079B2B7 /* ManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4440324CAA9380079B2B7 /* ManagedObject.swift */; };
 		8DE67207257674C6001C17DB /* OpenURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE67206257674C6001C17DB /* OpenURL.swift */; };
 		8DE6722A25767DDF001C17DB /* IsFocused.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6722925767DDF001C17DB /* IsFocused.swift */; };
-		8DE6723225767F05001C17DB /* ResetFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6723125767F05001C17DB /* ResetFocus.swift */; };
+		8DE6723225767F05001C17DB /* ResetFocusWatchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6723125767F05001C17DB /* ResetFocusWatchOS.swift */; };
 		8DE6723A25768174001C17DB /* ResetFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6723925768174001C17DB /* ResetFocus.swift */; };
 		8DE9F4EC24AD114E0054CE64 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4EB24AD114E0054CE64 /* MapView.swift */; };
 		8DE9F4ED24AD114E0054CE64 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4EB24AD114E0054CE64 /* MapView.swift */; };
@@ -349,6 +352,9 @@
 		8D7B37CD24AEFC8B00F95736 /* PinnedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedViews.swift; sourceTree = "<group>"; };
 		8D7B37D024AEFD7500F95736 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		8D7D064F2576878A00323A00 /* WidgetFamily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetFamily.swift; sourceTree = "<group>"; };
+		8D7D065825768C1400323A00 /* DisplayScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayScale.swift; sourceTree = "<group>"; };
+		8D7D066C2576926A00323A00 /* ImageScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScale.swift; sourceTree = "<group>"; };
+		8D7D0674257696F300323A00 /* PixelLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelLength.swift; sourceTree = "<group>"; };
 		8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCategory.swift; sourceTree = "<group>"; };
 		8D97EDDF24E1DBBE009E60E6 /* TruncationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruncationMode.swift; sourceTree = "<group>"; };
 		8D999F7E24B08E470050BD97 /* DatePickerStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerStyleModifier.swift; sourceTree = "<group>"; };
@@ -402,7 +408,7 @@
 		8DE4440324CAA9380079B2B7 /* ManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObject.swift; sourceTree = "<group>"; };
 		8DE67206257674C6001C17DB /* OpenURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenURL.swift; sourceTree = "<group>"; };
 		8DE6722925767DDF001C17DB /* IsFocused.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsFocused.swift; sourceTree = "<group>"; };
-		8DE6723125767F05001C17DB /* ResetFocus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetFocus.swift; sourceTree = "<group>"; };
+		8DE6723125767F05001C17DB /* ResetFocusWatchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetFocusWatchOS.swift; sourceTree = "<group>"; };
 		8DE6723925768174001C17DB /* ResetFocus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetFocus.swift; sourceTree = "<group>"; };
 		8DE9F4EB24AD114E0054CE64 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8DE9F4EE24AD15F40054CE64 /* TabViewStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewStyleModifier.swift; sourceTree = "<group>"; };
@@ -547,7 +553,7 @@
 			isa = PBXGroup;
 			children = (
 				8D680A0F250825B200AFE8A7 /* DefaultWheelPickerItemHeight.swift */,
-				8DE6723125767F05001C17DB /* ResetFocus.swift */,
+				8DE6723125767F05001C17DB /* ResetFocusWatchOS.swift */,
 			);
 			path = "Environment Values";
 			sourceTree = "<group>";
@@ -632,6 +638,7 @@
 				8DE67205257674AE001C17DB /* URLs & Files */,
 				8DE6720E25767DA5001C17DB /* Managing Focus */,
 				8DE6724125768694001C17DB /* Widget Attributes */,
+				8D7D065725768BEF00323A00 /* Display Characteristics */,
 			);
 			path = "Environment Values";
 			sourceTree = "<group>";
@@ -644,6 +651,16 @@
 				8D7B31C62562AF3D005B0D32 /* TextConcatenation.swift */,
 			);
 			path = "Text interpolation & concat";
+			sourceTree = "<group>";
+		};
+		8D7D065725768BEF00323A00 /* Display Characteristics */ = {
+			isa = PBXGroup;
+			children = (
+				8D7D065825768C1400323A00 /* DisplayScale.swift */,
+				8D7D066C2576926A00323A00 /* ImageScale.swift */,
+				8D7D0674257696F300323A00 /* PixelLength.swift */,
+			);
+			path = "Display Characteristics";
 			sourceTree = "<group>";
 		};
 		8D97EDDB24E1D7A2009E60E6 /* Text Style */ = {
@@ -1356,6 +1373,7 @@
 				8D3A767424A89C2600005971 /* ToggleStyleModifier.swift in Sources */,
 				8D97EDDD24E1D7D4009E60E6 /* SizeCategory.swift in Sources */,
 				8DB0C1AC24B21F3F006818B4 /* SceneStorageWrapper.swift in Sources */,
+				8D7D0675257696F300323A00 /* PixelLength.swift in Sources */,
 				8DA0464124D1921F0005159E /* MinimumScaleFactor.swift in Sources */,
 				8D39F474257574D1000B757F /* Undomanager.swift in Sources */,
 				8D66EB5524DDBFE700FC4941 /* MenuView.swift in Sources */,
@@ -1412,6 +1430,8 @@
 				8D158BAD24CC429300188F6B /* ControlActiveState.swift in Sources */,
 				8D72C99D24A5296F00C98579 /* ProgressViewStyleModifier.swift in Sources */,
 				8D33BBE624AA934B0097EC2E /* GridItemView.swift in Sources */,
+				8D7D065925768C1400323A00 /* DisplayScale.swift in Sources */,
+				8D7D066D2576926B00323A00 /* ImageScale.swift in Sources */,
 				8D66EB1B24DDBA4F00FC4941 /* OutlineGroupView.swift in Sources */,
 				8D6BB1FA24D0A0BF00C282F8 /* LayoutDirection.swift in Sources */,
 				8D1ED84224C8D002000F936D /* AccessibilityEnabled.swift in Sources */,
@@ -1569,7 +1589,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DE6723225767F05001C17DB /* ResetFocus.swift in Sources */,
+				8DE6723225767F05001C17DB /* ResetFocusWatchOS.swift in Sources */,
 				8D680A10250825B200AFE8A7 /* DefaultWheelPickerItemHeight.swift in Sources */,
 				8DE6723A25768174001C17DB /* ResetFocus.swift in Sources */,
 				8DF93ED524A78F0700B84CD0 /* ListStyleModifier.swift in Sources */,

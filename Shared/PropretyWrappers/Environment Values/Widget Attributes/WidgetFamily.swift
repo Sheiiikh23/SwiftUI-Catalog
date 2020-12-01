@@ -25,7 +25,7 @@ import WidgetKit
 
 struct WidgetFamily: View {
 
-  @Environment(\.widgetFamily) var widgetFamily
+  @Environment(\.widgetFamily) private var widgetFamily
 
   var body: some View {
     switch widgetFamily {
