@@ -32,11 +32,11 @@ struct SwiftUI_2_0App: App {
     .onChange(of: scenePhase) { phase in
       switch phase {
       case .active:
-        print("App is active")
-      case .background:
-        print("App is in background mode")
+        print("App is active on the foreground, the UI is visible")
       case .inactive:
-        print("App is inactive")
+        print("App is inactive on the foreground, the UI is visible")
+      case .background:
+        print("App is in background mode, the UI isn't visible")
       @unknown default:
         print("New state added by Apple")
       }
