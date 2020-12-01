@@ -114,6 +114,7 @@
 		8D7D065925768C1400323A00 /* DisplayScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D065825768C1400323A00 /* DisplayScale.swift */; };
 		8D7D066D2576926B00323A00 /* ImageScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D066C2576926A00323A00 /* ImageScale.swift */; };
 		8D7D0675257696F300323A00 /* PixelLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D0674257696F300323A00 /* PixelLength.swift */; };
+		8D7D067E25769A2C00323A00 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D067D25769A2C00323A00 /* Description.swift */; };
 		8D97EDDD24E1D7D4009E60E6 /* SizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */; };
 		8D97EDDE24E1D7D4009E60E6 /* SizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */; };
 		8D97EDE024E1DBBE009E60E6 /* TruncationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97EDDF24E1DBBE009E60E6 /* TruncationMode.swift */; };
@@ -355,6 +356,7 @@
 		8D7D065825768C1400323A00 /* DisplayScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayScale.swift; sourceTree = "<group>"; };
 		8D7D066C2576926A00323A00 /* ImageScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScale.swift; sourceTree = "<group>"; };
 		8D7D0674257696F300323A00 /* PixelLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelLength.swift; sourceTree = "<group>"; };
+		8D7D067D25769A2C00323A00 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCategory.swift; sourceTree = "<group>"; };
 		8D97EDDF24E1DBBE009E60E6 /* TruncationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruncationMode.swift; sourceTree = "<group>"; };
 		8D999F7E24B08E470050BD97 /* DatePickerStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerStyleModifier.swift; sourceTree = "<group>"; };
@@ -639,6 +641,7 @@
 				8DE6720E25767DA5001C17DB /* Managing Focus */,
 				8DE6724125768694001C17DB /* Widget Attributes */,
 				8D7D065725768BEF00323A00 /* Display Characteristics */,
+				8D7D067C25769A0B00323A00 /* String Representations */,
 			);
 			path = "Environment Values";
 			sourceTree = "<group>";
@@ -661,6 +664,14 @@
 				8D7D0674257696F300323A00 /* PixelLength.swift */,
 			);
 			path = "Display Characteristics";
+			sourceTree = "<group>";
+		};
+		8D7D067C25769A0B00323A00 /* String Representations */ = {
+			isa = PBXGroup;
+			children = (
+				8D7D067D25769A2C00323A00 /* Description.swift */,
+			);
+			path = "String Representations";
 			sourceTree = "<group>";
 		};
 		8D97EDDB24E1D7A2009E60E6 /* Text Style */ = {
@@ -1442,6 +1453,7 @@
 				8D999F9124B0CB4B0050BD97 /* ScrollToModifier.swift in Sources */,
 				8D6C0F3424FA99F000041F8C /* PickerStyleModifier.swift in Sources */,
 				8DC13F3F24A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
+				8D7D067E25769A2C00323A00 /* Description.swift in Sources */,
 				8DDA5C6224A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
 				8D442EE724A80B2C009995DD /* ScaledMetricWrapper.swift in Sources */,
 				8D1CDAA0256C3BBE0067B8BE /* CommandMenu.swift in Sources */,
