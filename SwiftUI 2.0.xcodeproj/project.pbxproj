@@ -51,8 +51,6 @@
 		8D3A767524A89C2600005971 /* ToggleStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767324A89C2600005971 /* ToggleStyleModifier.swift */; };
 		8D3A767924A89FA200005971 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767824A89FA200005971 /* LinkView.swift */; };
 		8D3A767A24A89FA200005971 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767824A89FA200005971 /* LinkView.swift */; };
-		8D3A767C24A8A8BE00005971 /* EnvironmentOpenUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767B24A8A8BE00005971 /* EnvironmentOpenUrl.swift */; };
-		8D3A767D24A8A8BE00005971 /* EnvironmentOpenUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767B24A8A8BE00005971 /* EnvironmentOpenUrl.swift */; };
 		8D3A767F24A8AA1A00005971 /* SignInWithappleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767E24A8AA1A00005971 /* SignInWithappleButtonView.swift */; };
 		8D3A768024A8AA1A00005971 /* SignInWithappleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A767E24A8AA1A00005971 /* SignInWithappleButtonView.swift */; };
 		8D3A768224A8B07300005971 /* SignInWithAppleButtonStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A768124A8B07300005971 /* SignInWithAppleButtonStyleModifier.swift */; };
@@ -193,6 +191,9 @@
 		8DE4440424CAA9380079B2B7 /* ManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4440324CAA9380079B2B7 /* ManagedObject.swift */; };
 		8DE4440524CAA9380079B2B7 /* ManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4440324CAA9380079B2B7 /* ManagedObject.swift */; };
 		8DE67207257674C6001C17DB /* OpenURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE67206257674C6001C17DB /* OpenURL.swift */; };
+		8DE6722A25767DDF001C17DB /* IsFocused.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6722925767DDF001C17DB /* IsFocused.swift */; };
+		8DE6723225767F05001C17DB /* ResetFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6723125767F05001C17DB /* ResetFocus.swift */; };
+		8DE6723A25768174001C17DB /* ResetFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6723925768174001C17DB /* ResetFocus.swift */; };
 		8DE9F4EC24AD114E0054CE64 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4EB24AD114E0054CE64 /* MapView.swift */; };
 		8DE9F4ED24AD114E0054CE64 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4EB24AD114E0054CE64 /* MapView.swift */; };
 		8DE9F4EF24AD15F40054CE64 /* TabViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4EE24AD15F40054CE64 /* TabViewStyleModifier.swift */; };
@@ -312,7 +313,6 @@
 		8D3A767124A899B000005971 /* ListItemTintModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTintModifier.swift; sourceTree = "<group>"; };
 		8D3A767324A89C2600005971 /* ToggleStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleStyleModifier.swift; sourceTree = "<group>"; };
 		8D3A767824A89FA200005971 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
-		8D3A767B24A8A8BE00005971 /* EnvironmentOpenUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentOpenUrl.swift; sourceTree = "<group>"; };
 		8D3A767E24A8AA1A00005971 /* SignInWithappleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithappleButtonView.swift; sourceTree = "<group>"; };
 		8D3A768124A8B07300005971 /* SignInWithAppleButtonStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButtonStyleModifier.swift; sourceTree = "<group>"; };
 		8D3A768424A8B4E500005971 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
@@ -399,6 +399,9 @@
 		8DE4440024CAA7DF0079B2B7 /* ControlSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSize.swift; sourceTree = "<group>"; };
 		8DE4440324CAA9380079B2B7 /* ManagedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObject.swift; sourceTree = "<group>"; };
 		8DE67206257674C6001C17DB /* OpenURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenURL.swift; sourceTree = "<group>"; };
+		8DE6722925767DDF001C17DB /* IsFocused.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsFocused.swift; sourceTree = "<group>"; };
+		8DE6723125767F05001C17DB /* ResetFocus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetFocus.swift; sourceTree = "<group>"; };
+		8DE6723925768174001C17DB /* ResetFocus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetFocus.swift; sourceTree = "<group>"; };
 		8DE9F4EB24AD114E0054CE64 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8DE9F4EE24AD15F40054CE64 /* TabViewStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewStyleModifier.swift; sourceTree = "<group>"; };
 		8DE9F4F124AD19650054CE64 /* TabViewStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewStyleModifier.swift; sourceTree = "<group>"; };
@@ -542,6 +545,7 @@
 			isa = PBXGroup;
 			children = (
 				8D680A0F250825B200AFE8A7 /* DefaultWheelPickerItemHeight.swift */,
+				8DE6723125767F05001C17DB /* ResetFocus.swift */,
 			);
 			path = "Environment Values";
 			sourceTree = "<group>";
@@ -587,7 +591,6 @@
 		8D442EE224A809B4009995DD /* PropretyWrappers */ = {
 			isa = PBXGroup;
 			children = (
-				8D3A767B24A8A8BE00005971 /* EnvironmentOpenUrl.swift */,
 				8D68A80E24C8559B000F4DFF /* Environment Values */,
 				8DB0C1A824B21B01006818B4 /* AppStorageWrapper.swift */,
 				8D442EE624A80B2C009995DD /* ScaledMetricWrapper.swift */,
@@ -625,6 +628,7 @@
 				8D39F472257574AE000B757F /* UndoManager */,
 				8D2125B225766C53001837BC /* Scene Phases */,
 				8DE67205257674AE001C17DB /* URLs & Files */,
+				8DE6720E25767DA5001C17DB /* Managing Focus */,
 			);
 			path = "Environment Values";
 			sourceTree = "<group>";
@@ -1005,6 +1009,15 @@
 			path = "URLs & Files";
 			sourceTree = "<group>";
 		};
+		8DE6720E25767DA5001C17DB /* Managing Focus */ = {
+			isa = PBXGroup;
+			children = (
+				8DE6722925767DDF001C17DB /* IsFocused.swift */,
+				8DE6723925768174001C17DB /* ResetFocus.swift */,
+			);
+			path = "Managing Focus";
+			sourceTree = "<group>";
+		};
 		8DEBD12E24A3E643004AAE41 /* Views & Modifiers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1321,7 +1334,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D3A767C24A8A8BE00005971 /* EnvironmentOpenUrl.swift in Sources */,
 				8DEBD13024A3E6AA004AAE41 /* ToolbarModifier.swift in Sources */,
 				8D999F8824B0B0140050BD97 /* MatchedGeometryEffectModifier.swift in Sources */,
 				8D1CDAD8256C54860067B8BE /* CommandGroup.swift in Sources */,
@@ -1378,6 +1390,7 @@
 				8D064B0024D0A518000272FA /* LineSpacing.swift in Sources */,
 				8D2125B425766C87001837BC /* ScenePhase.swift in Sources */,
 				8D51323324A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */,
+				8DE6722A25767DDF001C17DB /* IsFocused.swift in Sources */,
 				8DA0F46324CA1C30003C751B /* LegibilityWeight.swift in Sources */,
 				8D7B31C72562AF3D005B0D32 /* TextConcatenation.swift in Sources */,
 				8DF93EEA24A7B62400B84CD0 /* ToolbarItemView.swift in Sources */,
@@ -1435,7 +1448,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D3A767D24A8A8BE00005971 /* EnvironmentOpenUrl.swift in Sources */,
 				8DEBD13124A3E6AA004AAE41 /* ToolbarModifier.swift in Sources */,
 				8D999F8924B0B0140050BD97 /* MatchedGeometryEffectModifier.swift in Sources */,
 				8D158BB424CC48D500188F6B /* AllowsTightening.swift in Sources */,
@@ -1545,7 +1557,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DE6723225767F05001C17DB /* ResetFocus.swift in Sources */,
 				8D680A10250825B200AFE8A7 /* DefaultWheelPickerItemHeight.swift in Sources */,
+				8DE6723A25768174001C17DB /* ResetFocus.swift in Sources */,
 				8DF93ED524A78F0700B84CD0 /* ListStyleModifier.swift in Sources */,
 				8DF93EBD24A78E9200B84CD0 /* NotificationController.swift in Sources */,
 				8DF93EBB24A78E9200B84CD0 /* ContentView.swift in Sources */,

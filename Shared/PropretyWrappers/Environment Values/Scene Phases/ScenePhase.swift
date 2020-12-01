@@ -21,7 +21,7 @@ import SwiftUI
 
 struct ScenePhase: App {
 
-  @Environment(\.scenePhase) var scenePhase
+  @Environment(\.scenePhase) private var scenePhase
 
   var body: some Scene {
     WindowGroup {

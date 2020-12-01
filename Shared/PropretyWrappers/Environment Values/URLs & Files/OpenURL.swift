@@ -21,7 +21,7 @@ import SwiftUI
 
 struct OpenURL: View {
 
-  @Environment(\.openURL) var openURL
+  @Environment(\.openURL) private var openURL
 
   var body: some View {
     VStack {
