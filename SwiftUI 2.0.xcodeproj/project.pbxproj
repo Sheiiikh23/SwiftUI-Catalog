@@ -84,6 +84,7 @@
 		8D4FD8FC24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */; };
 		8D51323324A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */; };
 		8D51323424A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */; };
+		8D5B5BE72578EE1D00F309DE /* RedactedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B5BE62578EE1D00F309DE /* RedactedModifier.swift */; };
 		8D66EB1B24DDBA4F00FC4941 /* OutlineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66EB1A24DDBA4F00FC4941 /* OutlineGroupView.swift */; };
 		8D66EB1C24DDBA4F00FC4941 /* OutlineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66EB1A24DDBA4F00FC4941 /* OutlineGroupView.swift */; };
 		8D66EB5524DDBFE700FC4941 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66EB5424DDBFE700FC4941 /* MenuView.swift */; };
@@ -336,6 +337,7 @@
 		8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGrid.swift; sourceTree = "<group>"; };
 		8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMinListHeaderHeight.swift; sourceTree = "<group>"; };
 		8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyleModifier.swift; sourceTree = "<group>"; };
+		8D5B5BE62578EE1D00F309DE /* RedactedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedModifier.swift; sourceTree = "<group>"; };
 		8D66EB1A24DDBA4F00FC4941 /* OutlineGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineGroupView.swift; sourceTree = "<group>"; };
 		8D66EB5424DDBFE700FC4941 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		8D66EB5724DEAC0E00FC4941 /* GroupBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxView.swift; sourceTree = "<group>"; };
@@ -610,6 +612,14 @@
 				8DB0C1B124B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift */,
 			);
 			path = PropretyWrappers;
+			sourceTree = "<group>";
+		};
+		8D5B5BE52578EDCA00F309DE /* Redacted */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B5BE62578EE1D00F309DE /* RedactedModifier.swift */,
+			);
+			path = Redacted;
 			sourceTree = "<group>";
 		};
 		8D5BF5A3255D7E85001232D7 /* Text Modifiers */ = {
@@ -1080,16 +1090,17 @@
 				8DBCF89F256CBAA400AA564B /* OnChange */,
 				8DBCF895256CB98C00AA564B /* PinnedViews */,
 				8DBCF839256CB4C500AA564B /* ProgressView */,
-				8DBCF866256CB74700AA564B /* TextEditor */,
-				8D7B31BF2562AEEB005B0D32 /* Text interpolation & concat */,
-				8D5BF5A3255D7E85001232D7 /* Text Modifiers */,
-				8DBCF864256CB70900AA564B /* Toggle */,
-				8DBCF831256CB4A200AA564B /* Toolbar */,
+				8D5B5BE52578EDCA00F309DE /* Redacted */,
 				8DBCF842256CB52B00AA564B /* ScrollView, ScrollViewReader, ScrollViewProxy */,
 				8DBCF89E256CBA9A00AA564B /* Settings */,
 				8DBCF880256CB7A600AA564B /* SFSymbols */,
 				8DBCF87F256CB79B00AA564B /* Shape */,
 				8DBCF894256CB8D200AA564B /* SIWA Button */,
+				8DBCF866256CB74700AA564B /* TextEditor */,
+				8D7B31BF2562AEEB005B0D32 /* Text interpolation & concat */,
+				8D5BF5A3255D7E85001232D7 /* Text Modifiers */,
+				8DBCF864256CB70900AA564B /* Toggle */,
+				8DBCF831256CB4A200AA564B /* Toolbar */,
 				8DBCF858256CB63200AA564B /* TabView */,
 				8DBCF843256CB55A00AA564B /* WindowStyle, WindowToolbarStyle */,
 			);
@@ -1376,6 +1387,7 @@
 				8DEBD13024A3E6AA004AAE41 /* ToolbarModifier.swift in Sources */,
 				8D999F8824B0B0140050BD97 /* MatchedGeometryEffectModifier.swift in Sources */,
 				8D1CDAD8256C54860067B8BE /* CommandGroup.swift in Sources */,
+				8D5B5BE72578EE1D00F309DE /* RedactedModifier.swift in Sources */,
 				8D158BB324CC48D500188F6B /* AllowsTightening.swift in Sources */,
 				8D442EE424A80B23009995DD /* ImageInterpolationInText.swift in Sources */,
 				8D97EDE024E1DBBE009E60E6 /* TruncationMode.swift in Sources */,
