@@ -7,9 +7,6 @@
 
 import SwiftUI
 
-/// Nouveau ListeStyle propre pour les List :
-///   - listStyle(ListStyle) ––> i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
-///
 /// ListStyle natifs pour watchOS :
 ///   • CarouselListStyle
 ///   • EllipticalListStyle
