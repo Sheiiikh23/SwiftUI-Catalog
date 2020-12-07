@@ -13,6 +13,8 @@ import SwiftUI
 ///   • CarouselListStyle
 ///   • EllipticalListStyle : assez similaire à CarouselListStyle & pas dispo sur Series 3
 
+// MARK: - Utilisation : Provider une UI bien particulière pour une List en fonction d'un context donné
+
 struct CarouselListStyleModifier: View {
   var body: some View {
     List(0...20, id: \.self) { item in
