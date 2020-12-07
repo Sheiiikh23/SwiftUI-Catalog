@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-/// ListStyle natifs pour watchOS :
+/// ListStyle propre pour les List:
+///
+/// ListStyle spécifique à watchOS :
 ///   • CarouselListStyle
-///   • EllipticalListStyle
+///   • EllipticalListStyle : assez similaire à CarouselListStyle & pas dispo sur Series 3
 
 struct CarouselListStyleModifier: View {
   var body: some View {
@@ -29,9 +31,11 @@ struct EllipticalListStyleModifier: View {
     List(0...20, id: \.self) { item in
       Text("Hellow row n°\(item)")
         .font(.title3)
-        .frame(height: 100)
+        .frame(height: 150)
+        .onTapGesture {
+
+        }
     }
-    /// Interaction & apparition (quia agit comme un crop ?) elliptique
     .listStyle(EllipticalListStyle())
   }
 }

@@ -9,8 +9,8 @@ import WatchKit
 import Foundation
 import SwiftUI
 
-class HostingController: WKHostingController<LinearGaugeView> {
-  override var body: LinearGaugeView {
-    return LinearGaugeView()
+class HostingController: WKHostingController<EllipticalListStyleModifier> {
+  override var body: EllipticalListStyleModifier {
+    return EllipticalListStyleModifier()
   }
 }
