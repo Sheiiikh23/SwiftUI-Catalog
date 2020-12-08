@@ -9,8 +9,8 @@ import WatchKit
 import Foundation
 import SwiftUI
 
-class HostingController: WKHostingController<EllipticalListStyleModifier> {
-  override var body: EllipticalListStyleModifier {
-    return EllipticalListStyleModifier()
+class HostingController: WKHostingController<NavigationTitleViewBuilder> {
+  override var body: NavigationTitleViewBuilder {
+    return NavigationTitleViewBuilder()
   }
 }

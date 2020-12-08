@@ -129,8 +129,7 @@
 		8D7D0675257696F300323A00 /* PixelLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D0674257696F300323A00 /* PixelLength.swift */; };
 		8D7D067E25769A2C00323A00 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D067D25769A2C00323A00 /* Description.swift */; };
 		8D96FB1B257EF6A900A805C5 /* TabViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4F124AD19650054CE64 /* TabViewStyleModifier.swift */; };
-		8D96FB22257EF8BC00A805C5 /* DefaultWheelPickerItemHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D680A0F250825B200AFE8A7 /* DefaultWheelPickerItemHeight.swift */; };
-		8D96FB29257EF8C000A805C5 /* ResetFocusWatchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6723125767F05001C17DB /* ResetFocusWatchOS.swift */; };
+		8D96FB32257EF8E400A805C5 /* NavigationTitleViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D96FB31257EF8E400A805C5 /* NavigationTitleViewBuilder.swift */; };
 		8D97EDDD24E1D7D4009E60E6 /* SizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */; };
 		8D97EDDE24E1D7D4009E60E6 /* SizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */; };
 		8D97EDE024E1DBBE009E60E6 /* TruncationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97EDDF24E1DBBE009E60E6 /* TruncationMode.swift */; };
@@ -342,7 +341,6 @@
 		8D66EB5724DEAC0E00FC4941 /* GroupBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxView.swift; sourceTree = "<group>"; };
 		8D680A082508218200AFE8A7 /* DisableAutoCorrection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableAutoCorrection.swift; sourceTree = "<group>"; };
 		8D680A0A2508230E00AFE8A7 /* TextCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCase.swift; sourceTree = "<group>"; };
-		8D680A0F250825B200AFE8A7 /* DefaultWheelPickerItemHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWheelPickerItemHeight.swift; sourceTree = "<group>"; };
 		8D68A80F24C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityDifferentiateWithoutColor.swift; sourceTree = "<group>"; };
 		8D6BB1F924D0A0BF00C282F8 /* LayoutDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDirection.swift; sourceTree = "<group>"; };
 		8D6C0F2F24FA953000041F8C /* ToolbarItemGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarItemGroupView.swift; sourceTree = "<group>"; };
@@ -373,6 +371,7 @@
 		8D7D066C2576926A00323A00 /* ImageScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScale.swift; sourceTree = "<group>"; };
 		8D7D0674257696F300323A00 /* PixelLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelLength.swift; sourceTree = "<group>"; };
 		8D7D067D25769A2C00323A00 /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
+		8D96FB31257EF8E400A805C5 /* NavigationTitleViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleViewBuilder.swift; sourceTree = "<group>"; };
 		8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCategory.swift; sourceTree = "<group>"; };
 		8D97EDDF24E1DBBE009E60E6 /* TruncationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruncationMode.swift; sourceTree = "<group>"; };
 		8D999F7E24B08E470050BD97 /* DatePickerStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerStyleModifier.swift; sourceTree = "<group>"; };
@@ -425,7 +424,6 @@
 		8DE4440324CAA9380079B2B7 /* ManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectContext.swift; sourceTree = "<group>"; };
 		8DE67206257674C6001C17DB /* OpenURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenURL.swift; sourceTree = "<group>"; };
 		8DE6722925767DDF001C17DB /* IsFocused.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsFocused.swift; sourceTree = "<group>"; };
-		8DE6723125767F05001C17DB /* ResetFocusWatchOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetFocusWatchOS.swift; sourceTree = "<group>"; };
 		8DE6723925768174001C17DB /* ResetFocus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetFocus.swift; sourceTree = "<group>"; };
 		8DE9F4EB24AD114E0054CE64 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8DE9F4EE24AD15F40054CE64 /* TabViewStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewStyleModifier.swift; sourceTree = "<group>"; };
@@ -569,15 +567,6 @@
 			path = ListStyle;
 			sourceTree = "<group>";
 		};
-		8D36D1AE25096EC40074E498 /* Environment Values */ = {
-			isa = PBXGroup;
-			children = (
-				8D680A0F250825B200AFE8A7 /* DefaultWheelPickerItemHeight.swift */,
-				8DE6723125767F05001C17DB /* ResetFocusWatchOS.swift */,
-			);
-			path = "Environment Values";
-			sourceTree = "<group>";
-		};
 		8D36D1AF25096EEB0074E498 /* Views Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -687,10 +676,10 @@
 		8D6D3F5E257EAA20001AA59E /* SwiftUI 2.0 watchOS Extension */ = {
 			isa = PBXGroup;
 			children = (
-				8D36D1AE25096EC40074E498 /* Environment Values */,
-				8D96FB1A257EF60B00A805C5 /* TabViewStyle */,
 				8D282E15257EDA5800E6DEC0 /* Gauge, GaugeStyle */,
 				8D282E57257EF42100E6DEC0 /* ListStyle */,
+				8D96FB30257EF8CF00A805C5 /* NavigationTitle */,
+				8D96FB1A257EF60B00A805C5 /* TabViewStyle */,
 				8D6D3F5F257EAA20001AA59E /* HostingController.swift */,
 				8D6D3F63257EAA20001AA59E /* ExtensionDelegate.swift */,
 				8D6D3F65257EAA20001AA59E /* NotificationController.swift */,
@@ -746,6 +735,14 @@
 				8DE9F4F124AD19650054CE64 /* TabViewStyleModifier.swift */,
 			);
 			path = TabViewStyle;
+			sourceTree = "<group>";
+		};
+		8D96FB30257EF8CF00A805C5 /* NavigationTitle */ = {
+			isa = PBXGroup;
+			children = (
+				8D96FB31257EF8E400A805C5 /* NavigationTitleViewBuilder.swift */,
+			);
+			path = NavigationTitle;
 			sourceTree = "<group>";
 		};
 		8D97EDDB24E1D7A2009E60E6 /* Text Style */ = {
@@ -1394,11 +1391,10 @@
 			files = (
 				8D282E29257EEBEF00E6DEC0 /* GaugeStyleModifier.swift in Sources */,
 				8D6D3F62257EAA20001AA59E /* GaugeView.swift in Sources */,
+				8D96FB32257EF8E400A805C5 /* NavigationTitleViewBuilder.swift in Sources */,
 				8D6D3F60257EAA20001AA59E /* HostingController.swift in Sources */,
 				8D6D3F66257EAA20001AA59E /* NotificationController.swift in Sources */,
-				8D96FB29257EF8C000A805C5 /* ResetFocusWatchOS.swift in Sources */,
 				8D6D3F64257EAA20001AA59E /* ExtensionDelegate.swift in Sources */,
-				8D96FB22257EF8BC00A805C5 /* DefaultWheelPickerItemHeight.swift in Sources */,
 				8D6D3F68257EAA20001AA59E /* NotificationView.swift in Sources */,
 				8D282E50257EF29000E6DEC0 /* ListStyleModifier.swift in Sources */,
 				8D6D3F6A257EAA20001AA59E /* ComplicationController.swift in Sources */,
