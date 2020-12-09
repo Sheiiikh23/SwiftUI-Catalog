@@ -83,6 +83,7 @@
 		8D4FD8FC24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */; };
 		8D50BD3C2580B2CB00BAAF7B /* AccessibilitiesModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D50BD3B2580B2CB00BAAF7B /* AccessibilitiesModifiers.swift */; };
 		8D50BD992580F7D700BAAF7B /* DefaultWheelPickerItemHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D50BD982580F7D700BAAF7B /* DefaultWheelPickerItemHeight.swift */; };
+		8D50BEB425814FB300BAAF7B /* DisableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D50BEB325814FB300BAAF7B /* DisableModifier.swift */; };
 		8D51323324A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */; };
 		8D51323424A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */; };
 		8D5B5BE72578EE1D00F309DE /* RedactedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B5BE62578EE1D00F309DE /* RedactedModifier.swift */; };
@@ -336,6 +337,7 @@
 		8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMinListHeaderHeight.swift; sourceTree = "<group>"; };
 		8D50BD3B2580B2CB00BAAF7B /* AccessibilitiesModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitiesModifiers.swift; sourceTree = "<group>"; };
 		8D50BD982580F7D700BAAF7B /* DefaultWheelPickerItemHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWheelPickerItemHeight.swift; sourceTree = "<group>"; };
+		8D50BEB325814FB300BAAF7B /* DisableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableModifier.swift; sourceTree = "<group>"; };
 		8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyleModifier.swift; sourceTree = "<group>"; };
 		8D5B5BE62578EE1D00F309DE /* RedactedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedModifier.swift; sourceTree = "<group>"; };
 		8D5B5C002578FAEB00F309DE /* UnredactedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnredactedModifier.swift; sourceTree = "<group>"; };
@@ -637,6 +639,14 @@
 				8D50BD982580F7D700BAAF7B /* DefaultWheelPickerItemHeight.swift */,
 			);
 			path = "Environment Values";
+			sourceTree = "<group>";
+		};
+		8D50BEAC25814D7C00BAAF7B /* Disabled */ = {
+			isa = PBXGroup;
+			children = (
+				8D50BEB325814FB300BAAF7B /* DisableModifier.swift */,
+			);
+			path = Disabled;
 			sourceTree = "<group>";
 		};
 		8D5B5BE52578EDCA00F309DE /* Redacted, Unredacted, CustomRedacted */ = {
@@ -1157,6 +1167,7 @@
 				8DBCF865256CB71200AA564B /* ColorPicker, DatePicker, Picker */,
 				8DBCF857256CB60800AA564B /* Commands, CommandGroup, CommandMenu */,
 				8DBCF8C6256CBBCC00AA564B /* DefaultAppStorage */,
+				8D50BEAC25814D7C00BAAF7B /* Disabled */,
 				8DBCF89C256CBA8100AA564B /* DisclosureGroup */,
 				8DBCF8A2256CBACA00AA564B /* FullScreenCover, Popover, Sheet */,
 				8DBCF85C256CB6C900AA564B /* GroupBox */,
@@ -1479,6 +1490,7 @@
 				8DC13F4524A764D0003CDA7A /* WindowStyleModifier.swift in Sources */,
 				8DE443FE24CAA5AF0079B2B7 /* ColorSchemeContrast.swift in Sources */,
 				8D442EE024A808CE009995DD /* FontCustomModifier.swift in Sources */,
+				8D50BEB425814FB300BAAF7B /* DisableModifier.swift in Sources */,
 				8D39F46B25756446000B757F /* VerticalSizeClass.swift in Sources */,
 				8D3A769024A8D85700005971 /* ColoredSFSymbolsView.swift in Sources */,
 				8D6C0F3224FA998A00041F8C /* PopoverModifer.swift in Sources */,
