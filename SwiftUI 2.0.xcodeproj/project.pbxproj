@@ -82,6 +82,7 @@
 		8D4FD8FB24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */; };
 		8D4FD8FC24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */; };
 		8D50BD3C2580B2CB00BAAF7B /* AccessibilitiesModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D50BD3B2580B2CB00BAAF7B /* AccessibilitiesModifiers.swift */; };
+		8D50BD992580F7D700BAAF7B /* DefaultWheelPickerItemHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D50BD982580F7D700BAAF7B /* DefaultWheelPickerItemHeight.swift */; };
 		8D51323324A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */; };
 		8D51323424A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */; };
 		8D5B5BE72578EE1D00F309DE /* RedactedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B5BE62578EE1D00F309DE /* RedactedModifier.swift */; };
@@ -334,6 +335,7 @@
 		8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGrid.swift; sourceTree = "<group>"; };
 		8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMinListHeaderHeight.swift; sourceTree = "<group>"; };
 		8D50BD3B2580B2CB00BAAF7B /* AccessibilitiesModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitiesModifiers.swift; sourceTree = "<group>"; };
+		8D50BD982580F7D700BAAF7B /* DefaultWheelPickerItemHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWheelPickerItemHeight.swift; sourceTree = "<group>"; };
 		8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyleModifier.swift; sourceTree = "<group>"; };
 		8D5B5BE62578EE1D00F309DE /* RedactedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedModifier.swift; sourceTree = "<group>"; };
 		8D5B5C002578FAEB00F309DE /* UnredactedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnredactedModifier.swift; sourceTree = "<group>"; };
@@ -629,6 +631,14 @@
 			path = Accessibilities;
 			sourceTree = "<group>";
 		};
+		8D50BD972580F78200BAAF7B /* Environment Values */ = {
+			isa = PBXGroup;
+			children = (
+				8D50BD982580F7D700BAAF7B /* DefaultWheelPickerItemHeight.swift */,
+			);
+			path = "Environment Values";
+			sourceTree = "<group>";
+		};
 		8D5B5BE52578EDCA00F309DE /* Redacted, Unredacted, CustomRedacted */ = {
 			isa = PBXGroup;
 			children = (
@@ -686,6 +696,7 @@
 		8D6D3F5E257EAA20001AA59E /* SwiftUI 2.0 watchOS Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8D50BD972580F78200BAAF7B /* Environment Values */,
 				8D282E15257EDA5800E6DEC0 /* Gauge, GaugeStyle */,
 				8D282E57257EF42100E6DEC0 /* ListStyle */,
 				8D96FB30257EF8CF00A805C5 /* NavigationTitle */,
@@ -1402,6 +1413,7 @@
 			files = (
 				8D282E29257EEBEF00E6DEC0 /* GaugeStyleModifier.swift in Sources */,
 				8D6D3F62257EAA20001AA59E /* GaugeView.swift in Sources */,
+				8D50BD992580F7D700BAAF7B /* DefaultWheelPickerItemHeight.swift in Sources */,
 				8D96FB32257EF8E400A805C5 /* NavigationTitleViewBuilder.swift in Sources */,
 				8D6D3F60257EAA20001AA59E /* HostingController.swift in Sources */,
 				8D6D3F66257EAA20001AA59E /* NotificationController.swift in Sources */,

@@ -9,8 +9,8 @@ import WatchKit
 import Foundation
 import SwiftUI
 
-class HostingController: WKHostingController<NavigationTitleViewBuilder> {
-  override var body: NavigationTitleViewBuilder {
-    return NavigationTitleViewBuilder()
+class HostingController: WKHostingController<DefaultWheelPickerItemHeight> {
+  override var body: DefaultWheelPickerItemHeight {
+    return DefaultWheelPickerItemHeight()
   }
 }
