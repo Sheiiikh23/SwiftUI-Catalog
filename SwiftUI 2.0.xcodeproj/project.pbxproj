@@ -81,6 +81,7 @@
 		8D4D24FC24AC5C4F00982117 /* LazyHGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */; };
 		8D4FD8FB24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */; };
 		8D4FD8FC24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */; };
+		8D50BD3C2580B2CB00BAAF7B /* AccessibilitiesModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D50BD3B2580B2CB00BAAF7B /* AccessibilitiesModifiers.swift */; };
 		8D51323324A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */; };
 		8D51323424A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */; };
 		8D5B5BE72578EE1D00F309DE /* RedactedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B5BE62578EE1D00F309DE /* RedactedModifier.swift */; };
@@ -332,6 +333,7 @@
 		8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGrid.swift; sourceTree = "<group>"; };
 		8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMinListHeaderHeight.swift; sourceTree = "<group>"; };
+		8D50BD3B2580B2CB00BAAF7B /* AccessibilitiesModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilitiesModifiers.swift; sourceTree = "<group>"; };
 		8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyleModifier.swift; sourceTree = "<group>"; };
 		8D5B5BE62578EE1D00F309DE /* RedactedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedModifier.swift; sourceTree = "<group>"; };
 		8D5B5C002578FAEB00F309DE /* UnredactedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnredactedModifier.swift; sourceTree = "<group>"; };
@@ -617,6 +619,14 @@
 				8DB0C1B124B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift */,
 			);
 			path = PropretyWrappers;
+			sourceTree = "<group>";
+		};
+		8D50BD342580B2B900BAAF7B /* Accessibilities */ = {
+			isa = PBXGroup;
+			children = (
+				8D50BD3B2580B2CB00BAAF7B /* AccessibilitiesModifiers.swift */,
+			);
+			path = Accessibilities;
 			sourceTree = "<group>";
 		};
 		8D5B5BE52578EDCA00F309DE /* Redacted, Unredacted, CustomRedacted */ = {
@@ -1131,6 +1141,7 @@
 		8DEBD12E24A3E643004AAE41 /* Views & Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				8D50BD342580B2B900BAAF7B /* Accessibilities */,
 				8DBCF8A0256CBAAC00AA564B /* AppStoreoverlay */,
 				8DBCF865256CB71200AA564B /* ColorPicker, DatePicker, Picker */,
 				8DBCF857256CB60800AA564B /* Commands, CommandGroup, CommandMenu */,
@@ -1494,6 +1505,7 @@
 				8D1CDAA0256C3BBE0067B8BE /* CommandMenu.swift in Sources */,
 				8DDA5C5F24A3249300BF263B /* HelpModifier.swift in Sources */,
 				8DC13F4224A764BC003CDA7A /* OnChangeModifier.swift in Sources */,
+				8D50BD3C2580B2CB00BAAF7B /* AccessibilitiesModifiers.swift in Sources */,
 				8D3A768224A8B07300005971 /* SignInWithAppleButtonStyleModifier.swift in Sources */,
 				8D999F8B24B0B7B10050BD97 /* NamespaceWrapper.swift in Sources */,
 				8D442EDD24A80549009995DD /* ContainerRelativeShapeView.swift in Sources */,
