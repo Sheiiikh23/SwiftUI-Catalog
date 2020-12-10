@@ -14,7 +14,7 @@ import SwiftUI
 ///   - nil : par défaut (sans modification de casse)
 ///   - .some(.uppercase) : majuscule
 ///   - .some(.lowercase) : minuscule
-///
+/// Possibilité de set cet environment variable avec le modifier .environment(\.textCase, .option)
 
 // MARK: - Importance pour l'accessibilité : faible - très faible
 // MARK: - Utilisation : Pas besoin car déjà natif avec le modifier en question

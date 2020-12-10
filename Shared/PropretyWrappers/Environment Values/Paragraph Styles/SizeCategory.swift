@@ -23,7 +23,7 @@ import SwiftUI
 ///   - accessibilityExtraLarge
 ///   - accessibilityExtraExtraLarge
 ///   - accessibilityExtraExtraExtraLarge
-///
+/// Possibilité de set cet environment variable avec le modifier .environment(\.sizeCategory, .option)
 
 // MARK: - Importance pour l'accessibilité : faible - très faible
 // MARK: - Utilisation : Pas besoin car déjà natif avec le modifier .font(.fontFamily)

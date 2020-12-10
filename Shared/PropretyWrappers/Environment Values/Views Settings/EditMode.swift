@@ -15,8 +15,7 @@ import SwiftUI
 ///   - active : l'utilisateur peut modifier une vue (un champ par ex)
 ///   - inactive : l'utilisateur ne peut pas modifier cette vue
 ///   - transient : l'utisateur peut temporairement modifier le champ
-/// Pas mal pour utiliser avex des textFields pour changer la couleur etc... 
-///
+/// Pas mal pour utiliser avec des textFields pour changer la couleur etc...
 
 // MARK: - Importance pour l'accessibilité : moyenne
 // MARK: - Utilisation : Utile pour faciliter la compréhension pour l'utilisateur

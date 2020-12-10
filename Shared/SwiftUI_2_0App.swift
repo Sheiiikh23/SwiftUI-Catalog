@@ -25,7 +25,7 @@ struct SwiftUI_2_0App: App {
 
   var body: some Scene {
     WindowGroup {
-      OpenURL()
+      DefaultMinListHeaderHeight()
         // Injection de dépendances dans toutes les vues :)
         .environmentObject(userViewModel)
     }

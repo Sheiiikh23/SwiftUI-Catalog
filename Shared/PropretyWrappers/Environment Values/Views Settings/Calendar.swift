@@ -11,6 +11,8 @@ import SwiftUI
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// calendar: Calendar { get set }
+/// Possibilité de set cet environment variable avec le modifier .environment(\.calendar, Calendar)
+/// 
 /// + d'infos sur le type Calendar ici : https://developer.apple.com/documentation/foundation/calendar
 /// Très utile pour le calculs et comparaisons de dates
 ///
@@ -59,6 +61,10 @@ struct CalendarEnvironment: View {
 
 struct Calendar_Previews: PreviewProvider {
   static var previews: some View {
-    CalendarEnvironment()
+    Group {
+      CalendarEnvironment()
+      CalendarEnvironment()
+        .environment(\.calendar, Calendar(identifier: .gregorian))
+    }
   }
 }

@@ -11,6 +11,8 @@ import SwiftUI
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// timeZone: TimeZone { get set }
+/// Possibilité de set cet environment variable avec le modifier .environment(\.timeZone, TimeZone)
+///
 /// Conventions de temps relatif par rapport à la région
 /// Pas mal de fonction disponible avec le type 👍
 ///
@@ -42,6 +44,10 @@ struct TimeZone: View {
 
 struct TimeZine_Previews: PreviewProvider {
   static var previews: some View {
-    TimeZone()
+    Group {
+      TimeZone()
+      TimeZone()
+        .environment(\.timeZone, SwiftUI.TimeZone(abbreviation: "PST")!)
+    }
   }
 }

@@ -11,7 +11,9 @@ import SwiftUI
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// redactionReasons : RedactionReasons { get set }
-/// Permet d'appliquer une censure aux données affichées à l'écran
+/// Possibilité de set cet environment variable avec le modifier .environment(\.redactionReasons, RedactionReasons)
+///
+/// Permet d'appliquer un type de rédaction aux données affichées à l'écran
 
 // MARK: - Importance pour l'accessibilité : faible – très faible
 // MARK: - Utilisation : Pas besoin car déjà natif avec le modifier .redacted(reason: RedactionReasons)

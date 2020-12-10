@@ -48,8 +48,6 @@ struct AccessibilityShowButtonShapes_Previews: PreviewProvider {
     Group {
       AccessibilityShowButtonShapes()
       AccessibilityShowButtonShapes()
-      // FIXME: Ne fonctionne pas
-//        .environment(\.accessibilityShowButtonShapes, true)
     }
   }
 }

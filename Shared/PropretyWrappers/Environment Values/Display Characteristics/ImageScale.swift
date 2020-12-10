@@ -15,7 +15,10 @@ import SwiftUI
 ///   • small
 ///   • medium
 ///   • large
+/// Possibilité de set cet environment variable avec le modifier .environment(\.displayScale, CGFloat)
 
+// MARK: - Importance pour l'accessibilité : très faible – faible
+// MARK: - Utilisation : Pas besoin car déjà natif avec le modifier en question
 
 struct ImageScale: View {
 

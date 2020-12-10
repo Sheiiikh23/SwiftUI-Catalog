@@ -11,6 +11,7 @@ import SwiftUI
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// locale: Locale { get set }
+/// Possibilité de set cet environment variable avec le modifier .environment(\.locale, Locale)
 /// Pas mal d'informations pour le formatage des données tel que :
 ///   • convention linguistiques
 ///   • convention culturelle
@@ -72,7 +73,11 @@ struct Locale: View {
 
 struct Locale_Previews: PreviewProvider {
   static var previews: some View {
-    Locale()
+    Group {
+      Locale()
+      Locale()
+        .environment(\.locale, SwiftUI.Locale(identifier: "fr-FR"))
+    }
   }
 }
 

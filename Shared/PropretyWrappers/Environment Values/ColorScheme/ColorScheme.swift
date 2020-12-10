@@ -12,11 +12,11 @@ import SwiftUI
 ///
 /// colorScheme: ColorScheme { get set } 
 ///   - black
-///   - light: par défaut 
-///
+///   - light: par défaut
+/// Possibilité de set cet environment variable avec le modifier .environment(\.colorScheme, .option)
 
 // MARK: - Importance pour l'accessibilité : très élevée
-// MARK: - Utilisation : Permet de connaître le colorScheme de l'utilisateur
+// MARK: - Utilisation : Permet de connaître et setter le colorScheme de l'utilisateur
 // MARK: - Remarque : Pas besoin si on passe par les couleurs de l'assets, qui nous permettent de sets 2 couleurs en fonctions du colorScheme
 
 struct ColorScheme: View {

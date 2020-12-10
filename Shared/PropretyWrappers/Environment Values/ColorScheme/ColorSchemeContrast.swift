@@ -56,8 +56,6 @@ struct ColorSchemeContrast_Previews: PreviewProvider {
     Group {
       ColorSchemeContrast()
       ColorSchemeContrast()
-      // FIXME: Ne fonctionne pas
-//        .environment(\.colorSchemeContrast, .increased)
     }
   }
 }

@@ -13,11 +13,11 @@ import SwiftUI
 /// layoutDirection: LayoutDirection { get set } 
 ///   - leftToRight : par défaut
 ///   - rightToLeft
-///
+/// Possibilité de set cet environment variable avec le modifier .environment(\.layoutDirection, .option)
 /// À noter qu'on peut aussi utiliser le modifier flipsForRightToLeftLayoutDirection(Bool)
 
 // MARK: - Importance pour l'accessibilité : faible – moyenne
-// MARK: - Utilisation : Utile pour les pays dont le sens de lecture est inversé
+// MARK: - Utilisation : Permet de connaître le sens de lecture (utile selon les pays) et de le setter si besoin
 
 struct LayoutDirection: View {
 

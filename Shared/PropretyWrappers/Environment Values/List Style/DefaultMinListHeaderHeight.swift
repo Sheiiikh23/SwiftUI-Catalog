@@ -12,10 +12,10 @@ import SwiftUI
 ///
 /// defaultMinListHeaderHeight: CGFloat? { get set } 
 ///   - nil : par défaut
-///
+/// Possibilité de set cet environment variable avec le modifier .environment(\.defaultMinListHeaderHeight, CGFloat)
 
 // MARK: - Importance pour l'accessibilité : très faible - faible
-// MARK: - Utilisation : Indique la taille du Header d'une List 
+// MARK: - Utilisation : Permet de connaître et setter la taille du Header d'une List
 
 struct DefaultMinListHeaderHeight: View {
 

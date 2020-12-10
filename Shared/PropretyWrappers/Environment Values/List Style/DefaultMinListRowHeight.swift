@@ -11,12 +11,10 @@ import SwiftUI
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
 /// defaultMinListRowHeight: CGFloat { get set }
-///
-/// Permet notamment de réduire l'espace entre chaque row
-///
+/// Possibilité de set cet environment variable avec le modifier .environment(\.defaultMinListRowHeight, CGFloat)
 
 // MARK: - Importance pour l'accessibilité : très faible - faible
-// MARK: - Utilisation : Indique la height minimal d'une row d'une List
+// MARK: - Utilisation : Permet de connaître et setter la height d'une row d'une List
 
 struct DefaultMinListRowHeight: View {
 
@@ -38,10 +36,10 @@ struct DefaultMinListRowHeight_Previews: PreviewProvider {
   static var previews: some View {
     Group {
       DefaultMinListRowHeight()
+      DefaultMinListRowHeight()
         .environment(\.defaultMinListRowHeight, 150)
       DefaultMinListRowHeight()
         .environment(\.defaultMinListRowHeight, 1)
-      DefaultMinListRowHeight()
     }
   }
 }

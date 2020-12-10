@@ -15,7 +15,7 @@ import SwiftUI
 ///   - small
 ///   - mini
 ///   - large
-///
+/// Possibilité de set cet environment variable avec le modifier .environment(\.controlSize, .option)
 
 // MARK: - Importance pour l'accessibilité : moyenne - élevée
-// MARK: - Utilisation : Attribuer la bonne frame à des controls en fonctions des presets de l'utilisateur
+// MARK: - Utilisation : Permet de connaître la frame des contrôles en fonctions des presets de l'utilisateur et de les modifier si besoin

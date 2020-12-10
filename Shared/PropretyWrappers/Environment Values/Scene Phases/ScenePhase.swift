@@ -9,10 +9,12 @@ import SwiftUI
 
 /// scenePhase indique l'état actuel de la scene et donc de l'app (ou une partie si multi-windows)
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+///
 /// scenePhase: ScenePhase { get set }
 ///   • active : la scene est au premier plan et est intéractive
 ///   • inative : la scene est au premier plan mais n'est pas intéractive
 ///   • background : la scene n'est pas visible (app fermée ou en background)
+/// Possibilité de set cet environment variable avec le modifier .environment(\.scenePhase, ScenePhase)
 ///
 /// Un peu tricky pour le multiple-window donc voici la doc : https://developer.apple.com/documentation/swiftui/scenephase
 

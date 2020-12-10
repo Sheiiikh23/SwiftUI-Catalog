@@ -13,13 +13,14 @@ import SwiftUI
 /// accessibilityEnabled: Bool { get set } 
 ///   - false: par défaut
 ///   - true: si l'utisateur l'ativé
+/// Possibilité de set cet environment variable avec le modifier .environment(\.accessibilityEnabled, Bool)
 ///
 /// Il faut donc utiliser le modifier help afin de provider un text lu par Siri
 /// Utilisation du modifier help : cf HelpModifier (+ localizedStringKey)
 /// Ne fonctionne pas dans le simulateur
 
 // MARK: - Importance pour l'accessibilité : moyenne - élevée
-// MARK: - Utilisation : Pour les personnes malvoyantes
+// MARK: - Utilisation : Permet de connaître / setter la value de VoiceOver
 
 struct AccessibilityEnabled: View {
 

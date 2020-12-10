@@ -13,7 +13,7 @@ import SwiftUI
 /// allowsTightening: Bool { get set } 
 ///   - false : par défaut
 ///   - true
-///
+/// Possibilité de set cet environment variable avec le modifier .environment(\.allowsTightening, Bool)
 /// Cette compressions de texte se fait dans une “certaine limite"
 
 // MARK: - Importance pour l'accessibilité : très faible - faible

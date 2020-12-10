@@ -15,6 +15,7 @@ import SwiftUI
 ///  • 1x : 1 point = 1 pixel x 1 pixel
 ///  • 2x : 1 point = 2 pixels x 2 pixels
 ///  • 3x : 1 point = 3 pixels x 3 pixels
+/// Possibilité de set cet environment variable avec le modifier .environment(\.displayScale, CGFloat)
 
 // MARK: - Importance pour l'accessibilité : très faible - faible
 // MARK: - Utilisation : Très peu utile
@@ -31,6 +32,8 @@ struct DisplayScale: View {
 struct DisplayScale_Previews: PreviewProvider {
   static var previews: some View {
     Group {
+      DisplayScale()
+        .environment(\.displayScale, 3)
       DisplayScale()
         .previewDevice("iPhone 12 Pro Max")
       DisplayScale()

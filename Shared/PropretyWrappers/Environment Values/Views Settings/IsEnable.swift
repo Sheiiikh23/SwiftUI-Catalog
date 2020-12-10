@@ -13,7 +13,7 @@ import SwiftUI
 /// isEnabled: Bool { get set }
 ///   - true : par défaut
 ///   - false
-///
+/// Possibilité de set cet environment variable avec le modifier .environment(\.isEnabled, Bool)
 
 // MARK: - Importance pour l'accessibilité : faible - très faible
 // MARK: - Utilisation : Pas super intéressant car on peut passer par le modifier .disable

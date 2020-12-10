@@ -14,7 +14,7 @@ import SwiftUI
 ///   - tail : par défaut (à la fin)
 ///   - middle : au milieu
 ///   - head : au début
-///
+/// Possibilité de set cet environment variable avec le modifier .environment(\.truncationMode, .option)
 
 // MARK: - Importance pour l'accessibilité : faible - très faible
 // MARK: - Utilisation : Pas besoin car déjà natif avec le modifier en question

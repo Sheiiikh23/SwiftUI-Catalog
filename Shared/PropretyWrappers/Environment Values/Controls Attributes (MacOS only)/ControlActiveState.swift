@@ -14,7 +14,7 @@ import SwiftUI
 ///   - key: par défaut
 ///   - active
 ///   - inactive
-///
+/// Possibilité de set cet environment variable avec le modifier .environment(\.controlActiveState, .option)
 
 // MARK: - Importance pour l'accessibilité : moyenne - élevée
-// MARK: - Utilisation : Connaître l'état des contrôles
+// MARK: - Utilisation : Permet de connaître / setter l'état des contrôles de la View

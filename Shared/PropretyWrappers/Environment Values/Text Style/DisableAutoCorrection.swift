@@ -10,14 +10,14 @@ import SwiftUI
 /// disableAutocorrection permet de savoir si la View hierarchie à l'auto-correction d'activée
 /// Disponible sur : i•Pad•OS / tvOS / macOS / Mac Catalyst
 ///
-/// truncationMode: Bool? { get set } 
+/// disableAutocorrection: Bool? { get set }
 ///   - nil : par défaut
 ///   - true
 ///   - false
-///
+/// Possibilité de set cet environment variable avec le modifier .environment(\.disableAutocorrection, Bool?)
 
 // MARK: - Importance pour l'accessibilité : faible - très faible
-// MARK: - Utilisation : Pas besoin car déjà natif avec le modifier qui permet de "forcer" l'auto-correction
+// MARK: - Utilisation : Pas besoin car déjà natif avec le modifier en question
 
 struct DisableAutoCorrection: View {
 

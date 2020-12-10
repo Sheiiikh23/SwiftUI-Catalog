@@ -13,6 +13,7 @@ import SwiftUI
 /// lineSpacing: CGFloat { get set } 
 ///   - 0 ou 1 : par défaut (pas de restriction)
 ///   - Int : indique le d'espace en point
+/// Possibilité de set cet environment variable avec le modifier .environment(\.lineSpacing, CGFloat)
 
 // MARK: - Importance pour l'accessibilité : très faible - faible
 // MARK: - Utilisation : Pas besoin car déjà natif avec le modifier en question

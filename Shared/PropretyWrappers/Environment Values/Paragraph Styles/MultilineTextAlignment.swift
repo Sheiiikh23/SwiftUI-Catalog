@@ -13,7 +13,8 @@ import SwiftUI
 /// multilineTextAlignment: TextAlignment { get set } 
 ///   - center : par défaut
 ///   - leading
-///   - trailing 
+///   - trailing
+/// Possibilité de set cet environment variable avec le modifier .environment(\.multilineTextAlignment, .option)
 
 // MARK: - Importance pour l'accessibilité : très faible - faible
 // MARK: - Utilisation : Pas besoin car déjà natif avec le modifier en question 

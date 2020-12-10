@@ -10,7 +10,7 @@ import SwiftUI
 /// Font indique la font par défaut utilisé par l'utilisateur
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
-/// textCase: Font? { get set }
+/// font: Font? { get set }
 ///  - largeTitle
 ///  - title
 ///  - title2
@@ -22,7 +22,7 @@ import SwiftUI
 ///  - caption
 ///  - caption2
 ///  - footnote
-///
+/// Possibilité de set cet environment variable avec le modifier .environment(\.font, .option)
 
 // MARK: - Importance pour l'accessibilité : faible - très faible
 // MARK: - Utilisation : Pas besoin car déjà natif avec le modifier en question

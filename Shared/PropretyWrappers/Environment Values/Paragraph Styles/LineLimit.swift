@@ -13,7 +13,7 @@ import SwiftUI
 /// lineLimit: Int? { get set } 
 ///   - nil : par défaut (pas de restriction)
 ///   - Int : indique le nombre de ligne maximum du texte
-///
+/// Possibilité de set cet environment variable avec le modifier .environment(\.lineLimit, Int?)
 
 // MARK: - Importance pour l'accessibilité : très faible - faible
 // MARK: - Utilisation : Pas besoin car déjà natif avec le modifier en question
@@ -41,6 +41,10 @@ struct LineLimit: View {
 
 struct LineLimit_Previews: PreviewProvider {
   static var previews: some View {
-    LineLimit()
+    Group {
+      LineLimit()
+      LineLimit()
+        .environment(\.lineLimit, 4)
+    }
   }
 }

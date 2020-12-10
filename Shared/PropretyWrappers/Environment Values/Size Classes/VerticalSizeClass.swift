@@ -16,6 +16,9 @@ import SwiftUI
 /// Toutes infos sont ici : https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/
 /// Même fonctionnement que dans les StoryBoads (dans une époque lointaine 😆...)
 
+// MARK: - Importance pour l'accessibilité : très faible - faible
+// MARK: - Utilisation : Très utiles pour provide des View différentes en fonction de la taille du device 
+
 struct VerticalSizeClass: View {
 
   @Environment(\.verticalSizeClass) private var verticalSizeClass

@@ -13,6 +13,7 @@ import SwiftUI
 /// minimumScaleFactor: { get set } (compris entre 0 et 1)
 ///   - 1 : par défaut (pas de restriction)
 ///   - 0 ≤ x ≤ 1 : indique la réduction d'espace en ratio
+/// Possibilité de set cet environment variable avec le modifier .environment(\.minimumScaleFactor, 0 ≤ x ≤ 1)
 
 // MARK: - Importance pour l'accessibilité : très faible - faible
 // MARK: - Utilisation : Pas besoin car déjà natif avec le modifier en question
@@ -35,6 +36,10 @@ struct MinimumScaleFactor: View {
 
 struct MinimumScaleFactor_Previews: PreviewProvider {
     static var previews: some View {
+      Group {
         MinimumScaleFactor()
+        MinimumScaleFactor()
+          .environment(\.minimumScaleFactor, 0.5)
+      }
     }
 }
