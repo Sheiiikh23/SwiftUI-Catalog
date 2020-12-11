@@ -19,14 +19,14 @@ struct SwiftUI_2_0App: App {
   @Environment(\.scenePhase) var scenePhase
 
   /// C'est ici qu'on créer et qu'on injecte les données
-  // @StateObject qui seront injectés en tant que environmentObject à la vue
+  /// @StateObject qui seront injectés en tant que environmentObject à la vue
   @StateObject var userViewModel = UserViewModel()
 
 
   var body: some Scene {
     WindowGroup {
-      DefaultMinListHeaderHeight()
-        // Injection de dépendances dans toutes les vues :)
+      TextFieldStyleModifier()
+        /// Injection de dépendances dans toutes les vues :)
         .environmentObject(userViewModel)
     }
     .onChange(of: scenePhase) { phase in

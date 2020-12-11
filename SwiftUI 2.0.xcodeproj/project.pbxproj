@@ -41,6 +41,7 @@
 		8D33BBE724AA934B0097EC2E /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D33BBE524AA934B0097EC2E /* GridItemView.swift */; };
 		8D36D1B125096EF90074E498 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36D1B025096EF90074E498 /* Calendar.swift */; };
 		8D36D1B3250971E20074E498 /* EditMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36D1B2250971E20074E498 /* EditMode.swift */; };
+		8D39E24325841FAA009FCC01 /* TextFieldStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D39E24225841FAA009FCC01 /* TextFieldStyleModifier.swift */; };
 		8D39F44525753A82000B757F /* TimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D39F44425753A82000B757F /* TimeZone.swift */; };
 		8D39F454257550F1000B757F /* RedactionReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D39F453257550F1000B757F /* RedactionReason.swift */; };
 		8D39F45D2575547C000B757F /* HorizontalSizeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D39F45C2575547C000B757F /* HorizontalSizeClass.swift */; };
@@ -312,6 +313,7 @@
 		8D33BBE524AA934B0097EC2E /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
 		8D36D1B025096EF90074E498 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		8D36D1B2250971E20074E498 /* EditMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMode.swift; sourceTree = "<group>"; };
+		8D39E24225841FAA009FCC01 /* TextFieldStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyleModifier.swift; sourceTree = "<group>"; };
 		8D39F44425753A82000B757F /* TimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZone.swift; sourceTree = "<group>"; };
 		8D39F453257550F1000B757F /* RedactionReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactionReason.swift; sourceTree = "<group>"; };
 		8D39F45C2575547C000B757F /* HorizontalSizeClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSizeClass.swift; sourceTree = "<group>"; };
@@ -584,6 +586,14 @@
 				8D39F44425753A82000B757F /* TimeZone.swift */,
 			);
 			path = "Views Settings";
+			sourceTree = "<group>";
+		};
+		8D39E24125841F77009FCC01 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				8D39E24225841FAA009FCC01 /* TextFieldStyleModifier.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 		8D39F452257550CA000B757F /* Managing Redaction */ = {
@@ -1191,6 +1201,7 @@
 				8DBCF87F256CB79B00AA564B /* Shape */,
 				8DBCF894256CB8D200AA564B /* SIWA Button */,
 				8DBCF866256CB74700AA564B /* TextEditor */,
+				8D39E24125841F77009FCC01 /* TextField */,
 				8D7B31BF2562AEEB005B0D32 /* Text interpolation & concat */,
 				8D5BF5A3255D7E85001232D7 /* Text Modifiers */,
 				8DBCF864256CB70900AA564B /* Toggle */,
@@ -1480,6 +1491,7 @@
 				8D1A9612256FB30A00223F52 /* Font.swift in Sources */,
 				8DE67207257674C6001C17DB /* OpenURL.swift in Sources */,
 				8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */,
+				8D39E24325841FAA009FCC01 /* TextFieldStyleModifier.swift in Sources */,
 				8DE9F4EC24AD114E0054CE64 /* MapView.swift in Sources */,
 				8DF93EDF24A7955D00B84CD0 /* ListWithChildrenView.swift in Sources */,
 				8D005E2624ADAE2200D29E53 /* LazyVStackView.swift in Sources */,
