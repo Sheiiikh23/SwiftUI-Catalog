@@ -7,9 +7,12 @@
 
 import SwiftUI
 
-/// onChange peut maintenant prendre en paramètre des @State / @Binding etc...
+/// onChange permet d'exécuter une / des actions lorsqu'une variable change de valeur
+/// Disponible sur : i•Pad•OS / watchOS / tvOS / MacOS / Mac Catalyst
+///
+/// Le modifier peut également être appellé pour des @State / @Binding variable
 
-// MARK: - Utilisation : Permet d'observer la modification de n'importe quel Binding et de potentiellement réagir en fonction du changement
+// MARK: - Utilisation : Exécuter une / des actions lorsqu'une variable change de valeur
 
 struct OnChangeModifier: View {
 
