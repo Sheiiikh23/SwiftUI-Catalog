@@ -22,7 +22,7 @@ import SwiftUI
 ///  • accessibilityHint : extra context lorsque l'utilisateur reclique sur la View en question
 ///
 /// J'ai mis les modifiers dans l'odre de lecture effectué par VoiceOver
-/// J'ai aussi créer un modifier spéciale qui reprends tous ces modifiers (basic
+/// J'ai aussi créer un modifier spéciale qui reprends tous ces modifiers (basicAccessibilities)
 
 struct AccessibilitiesModifiers: View {
   var body: some View {

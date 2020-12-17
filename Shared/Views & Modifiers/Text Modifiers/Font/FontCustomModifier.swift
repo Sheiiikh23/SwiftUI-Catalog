@@ -16,10 +16,15 @@ struct FontCustomModifier: View {
 
   var body: some View {
     VStack {
+      /// Custom font qui ne scale pas avec le Dynamic Type
       Text("Custom font with fixed size (no scale)")
         .font(.custom("Georgia", fixedSize: 40))
+
+      /// Custom font qui scale en fonction du body textStyle
       Text("Custom font with body scale by default")
         .font(.custom("Georgia", size: 40))
+
+      /// Custom font qui scale en fonction d'un textStyle donné
       Text("Relative scale to a Font.TextStyle with custom font")
         .font(.custom("Georgia", size: 40, relativeTo: .largeTitle))
     }

@@ -76,6 +76,8 @@
 		8D4447592563E93B00D875E3 /* MenuStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */; };
 		8D44475A2563E93B00D875E3 /* MenuStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */; };
 		8D44478625640A5D00D875E3 /* GroupBoxStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44478525640A5D00D875E3 /* GroupBoxStyleModifier.swift */; };
+		8D47558F258B725000C585AD /* FontStandardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D47558E258B725000C585AD /* FontStandardModifier.swift */; };
+		8D475590258B725000C585AD /* FontStandardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D47558E258B725000C585AD /* FontStandardModifier.swift */; };
 		8D4B2A3A24CA1EBA003E37F4 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */; };
 		8D4B2A3B24CA1EBB003E37F4 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */; };
 		8D4D24FB24AC5C4F00982117 /* LazyHGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */; };
@@ -334,6 +336,7 @@
 		8D442EE624A80B2C009995DD /* ScaledMetricWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledMetricWrapper.swift; sourceTree = "<group>"; };
 		8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStyleModifier.swift; sourceTree = "<group>"; };
 		8D44478525640A5D00D875E3 /* GroupBoxStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxStyleModifier.swift; sourceTree = "<group>"; };
+		8D47558E258B725000C585AD /* FontStandardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStandardModifier.swift; sourceTree = "<group>"; };
 		8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGrid.swift; sourceTree = "<group>"; };
 		8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMinListHeaderHeight.swift; sourceTree = "<group>"; };
@@ -635,6 +638,15 @@
 			path = PropretyWrappers;
 			sourceTree = "<group>";
 		};
+		8D47558D258B712800C585AD /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				8D47558E258B725000C585AD /* FontStandardModifier.swift */,
+				8D442EDF24A808CE009995DD /* FontCustomModifier.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		8D50BD342580B2B900BAAF7B /* Accessibilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -672,8 +684,8 @@
 		8D5BF5A3255D7E85001232D7 /* Text Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				8D47558D258B712800C585AD /* Font */,
 				8DB0C1A524B21AD9006818B4 /* DisableAutocorrectionModifier.swift */,
-				8D442EDF24A808CE009995DD /* FontCustomModifier.swift */,
 				8D3A768C24A8CFFA00005971 /* TextCaseModifier.swift */,
 			);
 			path = "Text Modifiers";
@@ -1485,6 +1497,7 @@
 				8D7B37CB24AEFB8F00F95736 /* LazyHStackView.swift in Sources */,
 				8D3A766F24A892E600005971 /* ListItemTintModifier.swift in Sources */,
 				8DA0F46024CA1AAD003C751B /* AccessibilityShowButtonShapes.swift in Sources */,
+				8D47558F258B725000C585AD /* FontStandardModifier.swift in Sources */,
 				8DDA5C4424A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
 				8DDA5C5C24A3217D00BF263B /* LabelView.swift in Sources */,
 				8DA0F45D24CA1627003C751B /* AccessibilityReduceTransparency.swift in Sources */,
@@ -1611,6 +1624,7 @@
 				8D005E2724ADAE2200D29E53 /* LazyVStackView.swift in Sources */,
 				8DB0C19E24B21127006818B4 /* AppStoreOverlayModifier.swift in Sources */,
 				8D158BA524CC405900188F6B /* DefaultMinListRowHeight.swift in Sources */,
+				8D475590258B725000C585AD /* FontStandardModifier.swift in Sources */,
 				8DC13F4624A764D0003CDA7A /* WindowStyleModifier.swift in Sources */,
 				8DE443FF24CAA5AF0079B2B7 /* ColorSchemeContrast.swift in Sources */,
 				8D442EE124A808CE009995DD /* FontCustomModifier.swift in Sources */,
