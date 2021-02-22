@@ -237,6 +237,7 @@
 		8DF93EEA24A7B62400B84CD0 /* ToolbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE924A7B62400B84CD0 /* ToolbarItemView.swift */; };
 		8DF93EEB24A7B62400B84CD0 /* ToolbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE924A7B62400B84CD0 /* ToolbarItemView.swift */; };
 		8DFC196025E3A7BF004445F8 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC195F25E3A7BF004445F8 /* SectionView.swift */; };
+		8DFC196F25E3B976004445F8 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC196E25E3B976004445F8 /* FormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -450,6 +451,7 @@
 		8DF93EE624A7B60700B84CD0 /* ToolbarItemPlacement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarItemPlacement.swift; sourceTree = "<group>"; };
 		8DF93EE924A7B62400B84CD0 /* ToolbarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarItemView.swift; sourceTree = "<group>"; };
 		8DFC195F25E3A7BF004445F8 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		8DFC196E25E3B976004445F8 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1201,6 +1203,7 @@
 				8DBCF8C6256CBBCC00AA564B /* DefaultAppStorage */,
 				8D50BEAC25814D7C00BAAF7B /* Disabled */,
 				8DBCF89C256CBA8100AA564B /* DisclosureGroup */,
+				8DFC196D25E3B965004445F8 /* Form */,
 				8DBCF8A2256CBACA00AA564B /* FullScreenCover, Popover, Sheet */,
 				8DBCF85C256CB6C900AA564B /* GroupBox */,
 				8DBCF8C5256CBBC700AA564B /* Help */,
@@ -1233,6 +1236,14 @@
 				8DBCF843256CB55A00AA564B /* WindowStyle, WindowToolbarStyle */,
 			);
 			path = "Views & Modifiers";
+			sourceTree = "<group>";
+		};
+		8DFC196D25E3B965004445F8 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				8DFC196E25E3B976004445F8 /* FormView.swift */,
+			);
+			path = Form;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1583,6 +1594,7 @@
 				8DB0C1A924B21B01006818B4 /* AppStorageWrapper.swift in Sources */,
 				8D39F45D2575547C000B757F /* HorizontalSizeClass.swift in Sources */,
 				8DE9F4F724AD1BB60054CE64 /* SpriteKitView.swift in Sources */,
+				8DFC196F25E3B976004445F8 /* FormView.swift in Sources */,
 				8DB0C1B224B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift in Sources */,
 				8DB0C19724B1DCD9006818B4 /* PresentationMode.swift in Sources */,
 				8D4447592563E93B00D875E3 /* MenuStyleModifier.swift in Sources */,
