@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// ContextMenu permet de créer des menu contextuel avec force touch (à l'inver de la View Menu)
+/// ContextMenu permet de créer des menu contextuel avec force touch (à l'inverse de la View Menu)
 /// Disponible sur : i•Pad•OS / tvOS / macOS / Mac Catalyst
 
 // MARK: - Utilisation : Créer des menus contextuels avec force touch

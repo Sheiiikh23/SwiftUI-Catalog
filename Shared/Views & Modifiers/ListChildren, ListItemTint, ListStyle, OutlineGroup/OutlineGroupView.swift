@@ -12,6 +12,7 @@ import SwiftUI
 ///
 /// Permet de créer une Disclosuregroup (DropDown) pour chaque sous arbre de données
 /// ForEach + DisclosureGroup rassemblé en quelque sorte
+/// Behind the scene : List, init avec le children
 
 // MARK: - Utilisation : List imbriqué pour chaque sous-arbre de données
 

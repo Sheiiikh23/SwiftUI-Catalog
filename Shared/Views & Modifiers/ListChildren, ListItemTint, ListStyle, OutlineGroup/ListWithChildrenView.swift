@@ -12,6 +12,7 @@ import SwiftUI
 ///
 /// Permet de créer des listes imbriquées
 /// Le model doit contenir des childrens qui sont du même type que le model lui-même
+/// Behind the scene : List + OutlineGroup 
 
 // MARK: - Utilisation : Créer des listes imbriquées, resemble un peu au DisclosureGroup
 
