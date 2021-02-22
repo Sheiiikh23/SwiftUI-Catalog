@@ -236,6 +236,7 @@
 		8DF93EE824A7B60700B84CD0 /* ToolbarItemPlacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE624A7B60700B84CD0 /* ToolbarItemPlacement.swift */; };
 		8DF93EEA24A7B62400B84CD0 /* ToolbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE924A7B62400B84CD0 /* ToolbarItemView.swift */; };
 		8DF93EEB24A7B62400B84CD0 /* ToolbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE924A7B62400B84CD0 /* ToolbarItemView.swift */; };
+		8DFC196025E3A7BF004445F8 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC195F25E3A7BF004445F8 /* SectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -448,6 +449,7 @@
 		8DF93EDE24A7955D00B84CD0 /* ListWithChildrenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithChildrenView.swift; sourceTree = "<group>"; };
 		8DF93EE624A7B60700B84CD0 /* ToolbarItemPlacement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarItemPlacement.swift; sourceTree = "<group>"; };
 		8DF93EE924A7B62400B84CD0 /* ToolbarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarItemView.swift; sourceTree = "<group>"; };
+		8DFC195F25E3A7BF004445F8 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1082,6 +1084,14 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		8DCA5AF025E33B4900A167EB /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				8DFC195F25E3A7BF004445F8 /* SectionView.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
 		8DDA5C1524A31A5600BF263B = {
 			isa = PBXGroup;
 			children = (
@@ -1208,17 +1218,18 @@
 				8DBCF839256CB4C500AA564B /* ProgressView */,
 				8D5B5BE52578EDCA00F309DE /* Redacted, Unredacted, CustomRedacted */,
 				8DBCF842256CB52B00AA564B /* ScrollView, ScrollViewReader, ScrollViewProxy */,
+				8DCA5AF025E33B4900A167EB /* Section */,
 				8DBCF89E256CBA9A00AA564B /* Settings */,
 				8DBCF880256CB7A600AA564B /* SFSymbols */,
 				8DBCF87F256CB79B00AA564B /* Shape */,
 				8DBCF894256CB8D200AA564B /* SIWA Button */,
-				8DBCF866256CB74700AA564B /* TextEditor */,
-				8D39E24125841F77009FCC01 /* TextField */,
+				8DBCF858256CB63200AA564B /* TabView */,
 				8D7B31BF2562AEEB005B0D32 /* Text interpolation & concat */,
 				8D5BF5A3255D7E85001232D7 /* Text Modifiers */,
+				8DBCF866256CB74700AA564B /* TextEditor */,
+				8D39E24125841F77009FCC01 /* TextField */,
 				8DBCF864256CB70900AA564B /* Toggle */,
 				8DBCF831256CB4A200AA564B /* Toolbar */,
-				8DBCF858256CB63200AA564B /* TabView */,
 				8DBCF843256CB55A00AA564B /* WindowStyle, WindowToolbarStyle */,
 			);
 			path = "Views & Modifiers";
@@ -1555,6 +1566,7 @@
 				8DDA5C5F24A3249300BF263B /* HelpModifier.swift in Sources */,
 				8DC13F4224A764BC003CDA7A /* OnChangeModifier.swift in Sources */,
 				8D50BD3C2580B2CB00BAAF7B /* AccessibilitiesModifiers.swift in Sources */,
+				8DFC196025E3A7BF004445F8 /* SectionView.swift in Sources */,
 				8D3A768224A8B07300005971 /* SignInWithAppleButtonStyleModifier.swift in Sources */,
 				8D999F8B24B0B7B10050BD97 /* NamespaceWrapper.swift in Sources */,
 				8D442EDD24A80549009995DD /* ContainerRelativeShapeView.swift in Sources */,
