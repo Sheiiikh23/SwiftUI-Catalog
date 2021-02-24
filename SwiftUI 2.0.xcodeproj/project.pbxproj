@@ -119,6 +119,7 @@
 		8D6D3F6C257EAA21001AA59E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6D3F6B257EAA21001AA59E /* Assets.xcassets */; };
 		8D6D3F6F257EAA21001AA59E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6D3F6E257EAA21001AA59E /* Preview Assets.xcassets */; };
 		8D6D3F74257EAA21001AA59E /* SwiftUI 2.0 watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8D6D3F4E257EAA1F001AA59E /* SwiftUI 2.0 watchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8D727DD325E6712600510B7A /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D727DD225E6712600510B7A /* DatePickerView.swift */; };
 		8D72C99D24A5296F00C98579 /* ProgressViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72C99C24A5296F00C98579 /* ProgressViewStyleModifier.swift */; };
 		8D72C99E24A5296F00C98579 /* ProgressViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72C99C24A5296F00C98579 /* ProgressViewStyleModifier.swift */; };
 		8D7B31C72562AF3D005B0D32 /* TextConcatenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B31C62562AF3D005B0D32 /* TextConcatenation.swift */; };
@@ -374,6 +375,7 @@
 		8D6D3F6E257EAA21001AA59E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D6D3F70257EAA21001AA59E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D6D3F71257EAA21001AA59E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8D727DD225E6712600510B7A /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		8D72C99C24A5296F00C98579 /* ProgressViewStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewStyleModifier.swift; sourceTree = "<group>"; };
 		8D7B31C62562AF3D005B0D32 /* TextConcatenation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextConcatenation.swift; sourceTree = "<group>"; };
 		8D7B37CA24AEFB8F00F95736 /* LazyHStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHStackView.swift; sourceTree = "<group>"; };
@@ -758,6 +760,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8D727DDA25E6713600510B7A /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				8D999F7E24B08E470050BD97 /* DatePickerStyleModifier.swift */,
+				8D727DD225E6712600510B7A /* DatePickerView.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
 		8D7B31BF2562AEEB005B0D32 /* Text interpolation & concat */ = {
 			isa = PBXGroup;
 			children = (
@@ -948,7 +959,7 @@
 			isa = PBXGroup;
 			children = (
 				8DE9F4F924AD1E6A0054CE64 /* ColorPickerView.swift */,
-				8D999F7E24B08E470050BD97 /* DatePickerStyleModifier.swift */,
+				8D727DDA25E6713600510B7A /* DatePicker */,
 				8D6C0F3324FA99F000041F8C /* PickerStyleModifier.swift */,
 			);
 			path = "ColorPicker, DatePicker, Picker";
@@ -1551,6 +1562,7 @@
 				8DE6722A25767DDF001C17DB /* IsFocused.swift in Sources */,
 				8DA0F46324CA1C30003C751B /* LegibilityWeight.swift in Sources */,
 				8D7B31C72562AF3D005B0D32 /* TextConcatenation.swift in Sources */,
+				8D727DD325E6712600510B7A /* DatePickerView.swift in Sources */,
 				8DF93EEA24A7B62400B84CD0 /* ToolbarItemView.swift in Sources */,
 				8DC13F3924A75C00003CDA7A /* CommandsModifier.swift in Sources */,
 				8DE9F4EF24AD15F40054CE64 /* TabViewStyleModifier.swift in Sources */,

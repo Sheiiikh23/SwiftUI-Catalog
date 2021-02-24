@@ -13,7 +13,7 @@ import SwiftUI
 /// Prend toute la width du parent container par défaut
 /// Le colorPicker supporte l'opacité par défaut (possibilité de le désactivé)
 
-// MARK: - Utilisation : Color Picker pour la sélection de couleur(s) par l'utilisateur
+// MARK: - Utilisation : ColorPicker pour la sélection de couleur(s) par l'utilisateur
 
 struct ColorPickerView: View {
 
