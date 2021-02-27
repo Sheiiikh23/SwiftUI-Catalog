@@ -10,10 +10,17 @@ import SwiftUI
 /// Apparition des LazyHGrid qui créer les cellules à la volée
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
+///
+/// Les cellules sont créer à la volée. Lorsqu'elles ne sont pas affichées, elle ne font pas parties de la view hierarchy.
+/// onAppear & onDissappear bien appellé à chaque fois
+/// LazyHGrid place ses cellules horizontalement, les cellules disposées en colonnes.
+/// Lorsqu'une colonne est pleine (toutes les lignes utiliées), elle passe à la colonne suivante. Voir : https://swiftui-lab.com/wp-content/uploads/2020/07/layouts.mp4
+/// Son layout est déterminé par un array de GridItem (cf GridItem
+///
 /// Très généralement utilisée dans un ScrollView suivi d'un forEach
-/// Son layout est déterminé par un array de GridItem (cf GridItem)
 
-// MARK: - Utilisation : Création d'une grille horizontale qui créer les cellules à la volée
+
+// MARK: - Utilisation : Création d'une grille horizontale
 
 struct LazyHGridWithAdaptiveRowAdaptiveGridItem: View {
 
