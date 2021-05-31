@@ -14,7 +14,7 @@ import SwiftUI
 /// On passe par la wrappedValue pour accéder à la value et à la fonction
 /// Ex :
 ///   • wrappedValue.isPresented : Bool ––> indique si une vue est actuellement présenté
-///   • wrappedValue.dismmiss() ––> Dismiss la vue si actuellement présentée
+///   • wrappedValue.dismiss() ––> Dismiss la vue si actuellement présentée
 
 // MARK: - Importance pour l'accessibilité : faible
 // MARK: - Utilisation : À utiliser notamment pour des boutons types dismiss etc... (super utile !)

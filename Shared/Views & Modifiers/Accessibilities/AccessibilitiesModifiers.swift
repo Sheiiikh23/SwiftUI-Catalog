@@ -11,7 +11,7 @@ import SwiftUI
 /// Pas mal de accesibility... modifier, j'ai listé les plus importants & utiles
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / MacOS / Mac Catalyst
 ///
-/// Petit rappel : VoiciOver lis de manière automaitque les textes display
+/// Petit rappel : VoiciOver lis de manière automatique les textes display
 ///
 /// accessibility modifier présents au sein de cette View :
 ///  • accessibilityHidden : spécifie si VoiceOver est désactivé ou non pour cette View

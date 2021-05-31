@@ -76,6 +76,7 @@
 		8D4447592563E93B00D875E3 /* MenuStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */; };
 		8D44475A2563E93B00D875E3 /* MenuStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */; };
 		8D44478625640A5D00D875E3 /* GroupBoxStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44478525640A5D00D875E3 /* GroupBoxStyleModifier.swift */; };
+		8D46DCE126655B5E0018BDCA /* ListRowBackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D46DCE026655B5E0018BDCA /* ListRowBackgroundModifier.swift */; };
 		8D47558F258B725000C585AD /* FontStandardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D47558E258B725000C585AD /* FontStandardModifier.swift */; };
 		8D475590258B725000C585AD /* FontStandardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D47558E258B725000C585AD /* FontStandardModifier.swift */; };
 		8D4B2A3A24CA1EBA003E37F4 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */; };
@@ -231,8 +232,8 @@
 		8DEBD13124A3E6AA004AAE41 /* ToolbarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEBD12F24A3E6AA004AAE41 /* ToolbarModifier.swift */; };
 		8DF93E9A24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93E9924A77D7400B84CD0 /* ListStyleModifier.swift */; };
 		8DF93E9B24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93E9924A77D7400B84CD0 /* ListStyleModifier.swift */; };
-		8DF93EDF24A7955D00B84CD0 /* ListWithChildrenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EDE24A7955D00B84CD0 /* ListWithChildrenView.swift */; };
-		8DF93EE024A7955D00B84CD0 /* ListWithChildrenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EDE24A7955D00B84CD0 /* ListWithChildrenView.swift */; };
+		8DF93EDF24A7955D00B84CD0 /* ListChildrenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EDE24A7955D00B84CD0 /* ListChildrenView.swift */; };
+		8DF93EE024A7955D00B84CD0 /* ListChildrenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EDE24A7955D00B84CD0 /* ListChildrenView.swift */; };
 		8DF93EE724A7B60700B84CD0 /* ToolbarItemPlacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE624A7B60700B84CD0 /* ToolbarItemPlacement.swift */; };
 		8DF93EE824A7B60700B84CD0 /* ToolbarItemPlacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE624A7B60700B84CD0 /* ToolbarItemPlacement.swift */; };
 		8DF93EEA24A7B62400B84CD0 /* ToolbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE924A7B62400B84CD0 /* ToolbarItemView.swift */; };
@@ -339,6 +340,7 @@
 		8D442EE624A80B2C009995DD /* ScaledMetricWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledMetricWrapper.swift; sourceTree = "<group>"; };
 		8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStyleModifier.swift; sourceTree = "<group>"; };
 		8D44478525640A5D00D875E3 /* GroupBoxStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxStyleModifier.swift; sourceTree = "<group>"; };
+		8D46DCE026655B5E0018BDCA /* ListRowBackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowBackgroundModifier.swift; sourceTree = "<group>"; };
 		8D47558E258B725000C585AD /* FontStandardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStandardModifier.swift; sourceTree = "<group>"; };
 		8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGrid.swift; sourceTree = "<group>"; };
@@ -449,7 +451,7 @@
 		8DEBD12F24A3E6AA004AAE41 /* ToolbarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarModifier.swift; sourceTree = "<group>"; };
 		8DF93E9924A77D7400B84CD0 /* ListStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStyleModifier.swift; sourceTree = "<group>"; };
 		8DF93ED424A78F0700B84CD0 /* ListStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStyleModifier.swift; sourceTree = "<group>"; };
-		8DF93EDE24A7955D00B84CD0 /* ListWithChildrenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithChildrenView.swift; sourceTree = "<group>"; };
+		8DF93EDE24A7955D00B84CD0 /* ListChildrenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChildrenView.swift; sourceTree = "<group>"; };
 		8DF93EE624A7B60700B84CD0 /* ToolbarItemPlacement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarItemPlacement.swift; sourceTree = "<group>"; };
 		8DF93EE924A7B62400B84CD0 /* ToolbarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarItemView.swift; sourceTree = "<group>"; };
 		8DFC195F25E3A7BF004445F8 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
@@ -642,6 +644,14 @@
 				8DB0C1B124B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift */,
 			);
 			path = PropretyWrappers;
+			sourceTree = "<group>";
+		};
+		8D46DCDF26655B3D0018BDCA /* OutlineGroup */ = {
+			isa = PBXGroup;
+			children = (
+				8D66EB1A24DDBA4F00FC4941 /* OutlineGroupView.swift */,
+			);
+			path = OutlineGroup;
 			sourceTree = "<group>";
 		};
 		8D47558D258B712800C585AD /* Font */ = {
@@ -918,15 +928,15 @@
 			path = Label;
 			sourceTree = "<group>";
 		};
-		8DBCF85A256CB65D00AA564B /* ListChildren, ListItemTint, ListStyle, OutlineGroup */ = {
+		8DBCF85A256CB65D00AA564B /* ListChildren, ListItemTint, ListRowBackground, ListStyle */ = {
 			isa = PBXGroup;
 			children = (
-				8DF93EDE24A7955D00B84CD0 /* ListWithChildrenView.swift */,
+				8DF93EDE24A7955D00B84CD0 /* ListChildrenView.swift */,
 				8D3A766E24A892E600005971 /* ListItemTintModifier.swift */,
+				8D46DCE026655B5E0018BDCA /* ListRowBackgroundModifier.swift */,
 				8DF93E9924A77D7400B84CD0 /* ListStyleModifier.swift */,
-				8D66EB1A24DDBA4F00FC4941 /* OutlineGroupView.swift */,
 			);
-			path = "ListChildren, ListItemTint, ListStyle, OutlineGroup";
+			path = "ListChildren, ListItemTint, ListRowBackground, ListStyle";
 			sourceTree = "<group>";
 		};
 		8DBCF85B256CB6A400AA564B /* Menu & ContextMenu */ = {
@@ -1223,11 +1233,12 @@
 				8DBCF841256CB4F200AA564B /* LazyGrid */,
 				8DBCF840256CB4E200AA564B /* LazyStack */,
 				8DBCF89D256CBA8E00AA564B /* Link */,
-				8DBCF85A256CB65D00AA564B /* ListChildren, ListItemTint, ListStyle, OutlineGroup */,
+				8DBCF85A256CB65D00AA564B /* ListChildren, ListItemTint, ListRowBackground, ListStyle */,
 				8DBCF84A256CB5B700AA564B /* Map, SpriteView, VideoPlayer */,
 				8DBCF8A1256CBAB600AA564B /* MatchedGeometryEffect */,
 				8DBCF85B256CB6A400AA564B /* Menu & ContextMenu */,
 				8DBCF89F256CBAA400AA564B /* OnChange */,
+				8D46DCDF26655B3D0018BDCA /* OutlineGroup */,
 				8DBCF895256CB98C00AA564B /* PinnedViews */,
 				8DBCF839256CB4C500AA564B /* ProgressView */,
 				8D5B5BE52578EDCA00F309DE /* Redacted, Unredacted, CustomRedacted */,
@@ -1527,6 +1538,7 @@
 				8D680A092508218200AFE8A7 /* DisableAutoCorrection.swift in Sources */,
 				8D0F819B250AB7AA00221DFD /* Locale.swift in Sources */,
 				8DB0C1AF24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift in Sources */,
+				8D46DCE126655B5E0018BDCA /* ListRowBackgroundModifier.swift in Sources */,
 				8D7B37CB24AEFB8F00F95736 /* LazyHStackView.swift in Sources */,
 				8D3A766F24A892E600005971 /* ListItemTintModifier.swift in Sources */,
 				8DA0F46024CA1AAD003C751B /* AccessibilityShowButtonShapes.swift in Sources */,
@@ -1539,7 +1551,7 @@
 				8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */,
 				8D39E24325841FAA009FCC01 /* TextFieldStyleModifier.swift in Sources */,
 				8DE9F4EC24AD114E0054CE64 /* MapView.swift in Sources */,
-				8DF93EDF24A7955D00B84CD0 /* ListWithChildrenView.swift in Sources */,
+				8DF93EDF24A7955D00B84CD0 /* ListChildrenView.swift in Sources */,
 				8D005E2624ADAE2200D29E53 /* LazyVStackView.swift in Sources */,
 				8DB0C19D24B21127006818B4 /* AppStoreOverlayModifier.swift in Sources */,
 				8DE2B53F255D90FC00261B28 /* ScrollViewReader & ScrollViewProxy.swift in Sources */,
@@ -1656,7 +1668,7 @@
 				8DA0F45E24CA1627003C751B /* AccessibilityReduceTransparency.swift in Sources */,
 				8DB0C19B24B207F8006818B4 /* DateInterpolationInText.swift in Sources */,
 				8DE9F4ED24AD114E0054CE64 /* MapView.swift in Sources */,
-				8DF93EE024A7955D00B84CD0 /* ListWithChildrenView.swift in Sources */,
+				8DF93EE024A7955D00B84CD0 /* ListChildrenView.swift in Sources */,
 				8D005E2724ADAE2200D29E53 /* LazyVStackView.swift in Sources */,
 				8DB0C19E24B21127006818B4 /* AppStoreOverlayModifier.swift in Sources */,
 				8D158BA524CC405900188F6B /* DefaultMinListRowHeight.swift in Sources */,

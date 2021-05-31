@@ -16,7 +16,7 @@ import SwiftUI
 
 // MARK: - Utilisation : Créer des listes imbriquées, resemble un peu au DisclosureGroup
 
-struct ListWithChildrenView: View {
+struct ListChildrenView: View {
   var body: some View {
     List(Person.mocks, children: \.children) { person in
       Text(person.name)
@@ -29,7 +29,7 @@ struct ListWithChildrenView: View {
 
 struct ListWithChildrenView_Previews: PreviewProvider {
   static var previews: some View {
-    ListWithChildrenView()
+    ListChildrenView()
   }
 }
 
