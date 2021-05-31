@@ -77,6 +77,7 @@
 		8D44475A2563E93B00D875E3 /* MenuStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */; };
 		8D44478625640A5D00D875E3 /* GroupBoxStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44478525640A5D00D875E3 /* GroupBoxStyleModifier.swift */; };
 		8D46DCE126655B5E0018BDCA /* ListRowBackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D46DCE026655B5E0018BDCA /* ListRowBackgroundModifier.swift */; };
+		8D46DCE3266563340018BDCA /* ListRowInsetsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D46DCE2266563340018BDCA /* ListRowInsetsModifier.swift */; };
 		8D47558F258B725000C585AD /* FontStandardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D47558E258B725000C585AD /* FontStandardModifier.swift */; };
 		8D475590258B725000C585AD /* FontStandardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D47558E258B725000C585AD /* FontStandardModifier.swift */; };
 		8D4B2A3A24CA1EBA003E37F4 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */; };
@@ -341,6 +342,7 @@
 		8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStyleModifier.swift; sourceTree = "<group>"; };
 		8D44478525640A5D00D875E3 /* GroupBoxStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxStyleModifier.swift; sourceTree = "<group>"; };
 		8D46DCE026655B5E0018BDCA /* ListRowBackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowBackgroundModifier.swift; sourceTree = "<group>"; };
+		8D46DCE2266563340018BDCA /* ListRowInsetsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowInsetsModifier.swift; sourceTree = "<group>"; };
 		8D47558E258B725000C585AD /* FontStandardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStandardModifier.swift; sourceTree = "<group>"; };
 		8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGrid.swift; sourceTree = "<group>"; };
@@ -928,15 +930,16 @@
 			path = Label;
 			sourceTree = "<group>";
 		};
-		8DBCF85A256CB65D00AA564B /* ListChildren, ListItemTint, ListRowBackground, ListStyle */ = {
+		8DBCF85A256CB65D00AA564B /* ListChildren, ListItemTint, ListRowBackground, ListRowInsets, ListStyle */ = {
 			isa = PBXGroup;
 			children = (
 				8DF93EDE24A7955D00B84CD0 /* ListChildrenView.swift */,
 				8D3A766E24A892E600005971 /* ListItemTintModifier.swift */,
 				8D46DCE026655B5E0018BDCA /* ListRowBackgroundModifier.swift */,
+				8D46DCE2266563340018BDCA /* ListRowInsetsModifier.swift */,
 				8DF93E9924A77D7400B84CD0 /* ListStyleModifier.swift */,
 			);
-			path = "ListChildren, ListItemTint, ListRowBackground, ListStyle";
+			path = "ListChildren, ListItemTint, ListRowBackground, ListRowInsets, ListStyle";
 			sourceTree = "<group>";
 		};
 		8DBCF85B256CB6A400AA564B /* Menu & ContextMenu */ = {
@@ -1233,7 +1236,7 @@
 				8DBCF841256CB4F200AA564B /* LazyGrid */,
 				8DBCF840256CB4E200AA564B /* LazyStack */,
 				8DBCF89D256CBA8E00AA564B /* Link */,
-				8DBCF85A256CB65D00AA564B /* ListChildren, ListItemTint, ListRowBackground, ListStyle */,
+				8DBCF85A256CB65D00AA564B /* ListChildren, ListItemTint, ListRowBackground, ListRowInsets, ListStyle */,
 				8DBCF84A256CB5B700AA564B /* Map, SpriteView, VideoPlayer */,
 				8DBCF8A1256CBAB600AA564B /* MatchedGeometryEffect */,
 				8DBCF85B256CB6A400AA564B /* Menu & ContextMenu */,
@@ -1554,6 +1557,7 @@
 				8DF93EDF24A7955D00B84CD0 /* ListChildrenView.swift in Sources */,
 				8D005E2624ADAE2200D29E53 /* LazyVStackView.swift in Sources */,
 				8DB0C19D24B21127006818B4 /* AppStoreOverlayModifier.swift in Sources */,
+				8D46DCE3266563340018BDCA /* ListRowInsetsModifier.swift in Sources */,
 				8DE2B53F255D90FC00261B28 /* ScrollViewReader & ScrollViewProxy.swift in Sources */,
 				8D158BA424CC405900188F6B /* DefaultMinListRowHeight.swift in Sources */,
 				8DBCF8B6256CBB2400AA564B /* SheetModifier.swift in Sources */,
