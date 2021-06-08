@@ -852,12 +852,12 @@
 			path = "Refreshable (maybe in List?)";
 			sourceTree = "<group>";
 		};
-		8DA7D85626700CA7002E3081 /* Searchable */ = {
+		8DA7D85626700CA7002E3081 /* Searchable & SearchCompletion */ = {
 			isa = PBXGroup;
 			children = (
 				8DA7D85726700CB5002E3081 /* SearchableModifier.swift */,
 			);
-			path = Searchable;
+			path = "Searchable & SearchCompletion";
 			sourceTree = "<group>";
 		};
 		8DBCF831256CB4A200AA564B /* Toolbar */ = {
@@ -1245,7 +1245,7 @@
 		8DEBD12E24A3E643004AAE41 /* Views & Modifiers */ = {
 			isa = PBXGroup;
 			children = (
-				8DA7D85626700CA7002E3081 /* Searchable */,
+				8DA7D85626700CA7002E3081 /* Searchable & SearchCompletion */,
 				8D50BD342580B2B900BAAF7B /* Accessibilities */,
 				8DBCF8A0256CBAAC00AA564B /* AppStoreoverlay */,
 				8DBCF865256CB71200AA564B /* ColorPicker, DatePicker, Picker */,

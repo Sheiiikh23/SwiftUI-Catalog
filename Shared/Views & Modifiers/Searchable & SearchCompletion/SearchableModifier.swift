@@ -9,6 +9,8 @@ import SwiftUI
 
 /// Searchable permet de créer une searchBar
 ///
+/// SearchCompletion s'utilise avec les suggestion de la searchBar
+///
 /// Doit être wrapper dans une NavigationView
 
 #warning("TO DO – Pas mal de paramètre disponible")
@@ -34,7 +36,35 @@ struct SearchableModifier2: View {
   var body: some View {
     NavigationView {
       List {
-        ForEach(searchResult, id: \.self) { name in 
+        ForEach(searchResult, id: \.self) { name in
+          NavigationLink(destination: Text(name)) {
+            Text(name)
+          }
+        }
+      }
+      .navigationTitle("Contacts")
+    }
+    .searchable(text: $searchText)
+  }
+
+  var searchResult: [String] {
+    if searchText.isEmpty {
+      return names
+    } else {
+      return names.filter { $0.contains(searchText) }
+    }
+  }
+}
+
+struct SearchableModifierWithSuggestion: View {
+
+  @State private var searchText = ""
+  let names = ["Holly", "Rhonda", "Ted"]
+
+  var body: some View {
+    NavigationView {
+      List {
+        ForEach(searchResult, id: \.self) { name in
           NavigationLink(destination: Text(name)) {
             Text(name)
           }
@@ -43,6 +73,10 @@ struct SearchableModifier2: View {
       .navigationTitle("Contacts")
     }
     .searchable(text: $searchText) {
+      ForEach(searchResult, id: \.self) { name in
+        Text("Are you looking for : \(name)?")
+          .searchCompletion(name)
+      }
     }
   }
 
@@ -60,6 +94,7 @@ struct SearchableModifier_Previews: PreviewProvider {
     Group {
       SearchableModifier()
       SearchableModifier2()
+      SearchableModifierWithSuggestion()
     }
   }
 }
