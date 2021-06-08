@@ -162,6 +162,7 @@
 		8DA0F46124CA1AAD003C751B /* AccessibilityShowButtonShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA0F45F24CA1AAD003C751B /* AccessibilityShowButtonShapes.swift */; };
 		8DA0F46324CA1C30003C751B /* LegibilityWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA0F46224CA1C30003C751B /* LegibilityWeight.swift */; };
 		8DA0F46424CA1C30003C751B /* LegibilityWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA0F46224CA1C30003C751B /* LegibilityWeight.swift */; };
+		8DA7D85226700107002E3081 /* SubmitLabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D85126700107002E3081 /* SubmitLabelModifier.swift */; };
 		8DB0C19724B1DCD9006818B4 /* PresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */; };
 		8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
 		8DB0C19B24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
@@ -405,6 +406,7 @@
 		8DA0F45C24CA1627003C751B /* AccessibilityReduceTransparency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityReduceTransparency.swift; sourceTree = "<group>"; };
 		8DA0F45F24CA1AAD003C751B /* AccessibilityShowButtonShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityShowButtonShapes.swift; sourceTree = "<group>"; };
 		8DA0F46224CA1C30003C751B /* LegibilityWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegibilityWeight.swift; sourceTree = "<group>"; };
+		8DA7D85126700107002E3081 /* SubmitLabelModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitLabelModifier.swift; sourceTree = "<group>"; };
 		8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationMode.swift; sourceTree = "<group>"; };
 		8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInterpolationInText.swift; sourceTree = "<group>"; };
 		8DB0C19C24B21127006818B4 /* AppStoreOverlayModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreOverlayModifier.swift; sourceTree = "<group>"; };
@@ -603,12 +605,13 @@
 			path = "Views Settings";
 			sourceTree = "<group>";
 		};
-		8D39E24125841F77009FCC01 /* TextField */ = {
+		8D39E24125841F77009FCC01 /* TextField, SubmitLabel */ = {
 			isa = PBXGroup;
 			children = (
 				8D39E24225841FAA009FCC01 /* TextFieldStyleModifier.swift */,
+				8DA7D85126700107002E3081 /* SubmitLabelModifier.swift */,
 			);
-			path = TextField;
+			path = "TextField, SubmitLabel";
 			sourceTree = "<group>";
 		};
 		8D39F452257550CA000B757F /* Managing Redaction */ = {
@@ -1257,7 +1260,7 @@
 				8D7B31BF2562AEEB005B0D32 /* Text interpolation & concat */,
 				8D5BF5A3255D7E85001232D7 /* Text Modifiers */,
 				8DBCF866256CB74700AA564B /* TextEditor */,
-				8D39E24125841F77009FCC01 /* TextField */,
+				8D39E24125841F77009FCC01 /* TextField, SubmitLabel */,
 				8DBCF864256CB70900AA564B /* Toggle */,
 				8DBCF831256CB4A200AA564B /* Toolbar */,
 				8DBCF843256CB55A00AA564B /* WindowStyle, WindowToolbarStyle */,
@@ -1580,6 +1583,7 @@
 				8D2125B425766C87001837BC /* ScenePhase.swift in Sources */,
 				8D51323324A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */,
 				8DE6722A25767DDF001C17DB /* IsFocused.swift in Sources */,
+				8DA7D85226700107002E3081 /* SubmitLabelModifier.swift in Sources */,
 				8DA0F46324CA1C30003C751B /* LegibilityWeight.swift in Sources */,
 				8D7B31C72562AF3D005B0D32 /* TextConcatenation.swift in Sources */,
 				8D727DD325E6712600510B7A /* DatePickerView.swift in Sources */,
@@ -1998,7 +2002,7 @@
 				DEVELOPMENT_TEAM = S7HY56XG6J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2020,7 +2024,7 @@
 				DEVELOPMENT_TEAM = S7HY56XG6J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
