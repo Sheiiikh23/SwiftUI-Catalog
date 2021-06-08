@@ -164,6 +164,7 @@
 		8DA0F46424CA1C30003C751B /* LegibilityWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA0F46224CA1C30003C751B /* LegibilityWeight.swift */; };
 		8DA7D85226700107002E3081 /* SubmitLabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D85126700107002E3081 /* SubmitLabelModifier.swift */; };
 		8DA7D855267006F1002E3081 /* RefreshableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D854267006F1002E3081 /* RefreshableModifier.swift */; };
+		8DA7D85826700CB5002E3081 /* SearchableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D85726700CB5002E3081 /* SearchableModifier.swift */; };
 		8DB0C19724B1DCD9006818B4 /* PresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */; };
 		8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
 		8DB0C19B24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
@@ -409,6 +410,7 @@
 		8DA0F46224CA1C30003C751B /* LegibilityWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegibilityWeight.swift; sourceTree = "<group>"; };
 		8DA7D85126700107002E3081 /* SubmitLabelModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitLabelModifier.swift; sourceTree = "<group>"; };
 		8DA7D854267006F1002E3081 /* RefreshableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableModifier.swift; sourceTree = "<group>"; };
+		8DA7D85726700CB5002E3081 /* SearchableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableModifier.swift; sourceTree = "<group>"; };
 		8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationMode.swift; sourceTree = "<group>"; };
 		8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInterpolationInText.swift; sourceTree = "<group>"; };
 		8DB0C19C24B21127006818B4 /* AppStoreOverlayModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreOverlayModifier.swift; sourceTree = "<group>"; };
@@ -850,6 +852,14 @@
 			path = "Refreshable (maybe in List?)";
 			sourceTree = "<group>";
 		};
+		8DA7D85626700CA7002E3081 /* Searchable */ = {
+			isa = PBXGroup;
+			children = (
+				8DA7D85726700CB5002E3081 /* SearchableModifier.swift */,
+			);
+			path = Searchable;
+			sourceTree = "<group>";
+		};
 		8DBCF831256CB4A200AA564B /* Toolbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -1235,6 +1245,7 @@
 		8DEBD12E24A3E643004AAE41 /* Views & Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				8DA7D85626700CA7002E3081 /* Searchable */,
 				8D50BD342580B2B900BAAF7B /* Accessibilities */,
 				8DBCF8A0256CBAAC00AA564B /* AppStoreoverlay */,
 				8DBCF865256CB71200AA564B /* ColorPicker, DatePicker, Picker */,
@@ -1539,6 +1550,7 @@
 				8D3A767424A89C2600005971 /* ToggleStyleModifier.swift in Sources */,
 				8D97EDDD24E1D7D4009E60E6 /* SizeCategory.swift in Sources */,
 				8DB0C1AC24B21F3F006818B4 /* SceneStorageWrapper.swift in Sources */,
+				8DA7D85826700CB5002E3081 /* SearchableModifier.swift in Sources */,
 				8D7D0675257696F300323A00 /* PixelLength.swift in Sources */,
 				8DA0464124D1921F0005159E /* MinimumScaleFactor.swift in Sources */,
 				8D39F474257574D1000B757F /* Undomanager.swift in Sources */,
