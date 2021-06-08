@@ -29,8 +29,41 @@ struct RefreshableModifier: View {
   }
 }
 
+struct RefreshableModifierWithAsyncFunction: View {
+
+  @State private var news = [NewsItem(id: 0, title: "Want the latest news?", strap: "Pull to refresh!")]
+
+  var body: some View {
+    List(news) { new in
+      VStack(alignment: .leading) {
+        Text(new.title)
+          .font(.headline)
+        Text(new.strap)
+          .foregroundColor(.secondary)
+      }
+    }
+    .refreshable {
+      do {
+        let url = URL(string: "https://www.hackingwithswift.com/samples/news-1.json")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        news = try JSONDecoder().decode([NewsItem].self, from: data)
+      } catch {
+        // Error handling
+        print("WOOOPS ERROR")
+      }
+    }
+  }
+}
+
+struct NewsItem: Decodable, Identifiable {
+  let id: Int
+  let title: String
+  let strap: String
+}
+
 struct RefreshableModifier_Previews: PreviewProvider {
   static var previews: some View {
     RefreshableModifier()
+    RefreshableModifierWithAsyncFunction()
   }
 }
