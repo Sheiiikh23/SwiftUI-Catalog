@@ -121,6 +121,7 @@
 		8D6D3F6C257EAA21001AA59E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6D3F6B257EAA21001AA59E /* Assets.xcassets */; };
 		8D6D3F6F257EAA21001AA59E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6D3F6E257EAA21001AA59E /* Preview Assets.xcassets */; };
 		8D6D3F74257EAA21001AA59E /* SwiftUI 2.0 watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8D6D3F4E257EAA1F001AA59E /* SwiftUI 2.0 watchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8D6DB2F8266FFC2900C72C2E /* Swift5_5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6DB2F7266FFC2900C72C2E /* Swift5_5.swift */; };
 		8D727DD325E6712600510B7A /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D727DD225E6712600510B7A /* DatePickerView.swift */; };
 		8D72C99D24A5296F00C98579 /* ProgressViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72C99C24A5296F00C98579 /* ProgressViewStyleModifier.swift */; };
 		8D72C99E24A5296F00C98579 /* ProgressViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72C99C24A5296F00C98579 /* ProgressViewStyleModifier.swift */; };
@@ -379,6 +380,7 @@
 		8D6D3F6E257EAA21001AA59E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8D6D3F70257EAA21001AA59E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D6D3F71257EAA21001AA59E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8D6DB2F7266FFC2900C72C2E /* Swift5_5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift5_5.swift; sourceTree = "<group>"; };
 		8D727DD225E6712600510B7A /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		8D72C99C24A5296F00C98579 /* ProgressViewStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewStyleModifier.swift; sourceTree = "<group>"; };
 		8D7B31C62562AF3D005B0D32 /* TextConcatenation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextConcatenation.swift; sourceTree = "<group>"; };
@@ -1259,6 +1261,7 @@
 				8DBCF864256CB70900AA564B /* Toggle */,
 				8DBCF831256CB4A200AA564B /* Toolbar */,
 				8DBCF843256CB55A00AA564B /* WindowStyle, WindowToolbarStyle */,
+				8D6DB2F7266FFC2900C72C2E /* Swift5_5.swift */,
 			);
 			path = "Views & Modifiers";
 			sourceTree = "<group>";
@@ -1554,6 +1557,7 @@
 				8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */,
 				8D39E24325841FAA009FCC01 /* TextFieldStyleModifier.swift in Sources */,
 				8DE9F4EC24AD114E0054CE64 /* MapView.swift in Sources */,
+				8D6DB2F8266FFC2900C72C2E /* Swift5_5.swift in Sources */,
 				8DF93EDF24A7955D00B84CD0 /* ListChildrenView.swift in Sources */,
 				8D005E2624ADAE2200D29E53 /* LazyVStackView.swift in Sources */,
 				8DB0C19D24B21127006818B4 /* AppStoreOverlayModifier.swift in Sources */,

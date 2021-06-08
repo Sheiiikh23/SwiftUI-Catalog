@@ -40,6 +40,9 @@ struct WidgetFamily: View {
         .font(.title)
         .fontWeight(.heavy)
         .foregroundColor(.red)
+    case .systemExtraLarge:
+      #warning("FIXME")
+      Text("FIXME")
     @unknown default:
       Text("A new widget size was added by Apple")
     }
