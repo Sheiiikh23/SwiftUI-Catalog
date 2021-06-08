@@ -50,11 +50,24 @@ struct TextFieldStyleModifierWithStaticProperty: View {
   }
 }
 
+struct IfPostFixMemberExpressions: View {
+
+  var body: some View {
+    Text("Italic sur iOS, bold sinon")
+    #if os(iOS)
+      .italic()
+    #else
+      .bold()
+    #endif
+  }
+}
+
 struct SwiftUIView_Previews: PreviewProvider {
   static var previews: some View {
     Group {
       ListStyleModifierWithStaticProperty()
       TabViewStyleModifierWithStaticProperty()
+      IfPostFixMemberExpressions()
     }
   }
 }
