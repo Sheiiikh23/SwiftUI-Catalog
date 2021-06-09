@@ -168,6 +168,9 @@
 		8DA7D85B26709C8C002E3081 /* SwipeActionsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D85A26709C8C002E3081 /* SwipeActionsModifier.swift */; };
 		8DA7D85D26714528002E3081 /* MaterialEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D85C26714528002E3081 /* MaterialEffectView.swift */; };
 		8DA7D860267149D5002E3081 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D85F267149D5002E3081 /* AsyncImageView.swift */; };
+		8DA7D86326715140002E3081 /* FocusedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D86226715140002E3081 /* FocusedModifier.swift */; };
+		8DA7D86626715BF8002E3081 /* OnSubmitModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D86526715BF8002E3081 /* OnSubmitModifier.swift */; };
+		8DA7D86826715CEF002E3081 /* FocusStateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D86726715CEF002E3081 /* FocusStateWrapper.swift */; };
 		8DB0C19724B1DCD9006818B4 /* PresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */; };
 		8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
 		8DB0C19B24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
@@ -417,6 +420,9 @@
 		8DA7D85A26709C8C002E3081 /* SwipeActionsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionsModifier.swift; sourceTree = "<group>"; };
 		8DA7D85C26714528002E3081 /* MaterialEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialEffectView.swift; sourceTree = "<group>"; };
 		8DA7D85F267149D5002E3081 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		8DA7D86226715140002E3081 /* FocusedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedModifier.swift; sourceTree = "<group>"; };
+		8DA7D86526715BF8002E3081 /* OnSubmitModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnSubmitModifier.swift; sourceTree = "<group>"; };
+		8DA7D86726715CEF002E3081 /* FocusStateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusStateWrapper.swift; sourceTree = "<group>"; };
 		8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationMode.swift; sourceTree = "<group>"; };
 		8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInterpolationInText.swift; sourceTree = "<group>"; };
 		8DB0C19C24B21127006818B4 /* AppStoreOverlayModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreOverlayModifier.swift; sourceTree = "<group>"; };
@@ -654,6 +660,7 @@
 			children = (
 				8D68A80E24C8559B000F4DFF /* Environment Values */,
 				8DB0C1A824B21B01006818B4 /* AppStorageWrapper.swift */,
+				8DA7D86726715CEF002E3081 /* FocusStateWrapper.swift */,
 				8D442EE624A80B2C009995DD /* ScaledMetricWrapper.swift */,
 				8DB0C1AE24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift */,
 				8D999F8A24B0B7B10050BD97 /* NamespaceWrapper.swift */,
@@ -880,6 +887,22 @@
 				8DA7D85C26714528002E3081 /* MaterialEffectView.swift */,
 			);
 			path = "Shape, MaterialEffectView";
+			sourceTree = "<group>";
+		};
+		8DA7D8612671512E002E3081 /* FocusedViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				8DA7D86226715140002E3081 /* FocusedModifier.swift */,
+			);
+			path = FocusedViewModifier;
+			sourceTree = "<group>";
+		};
+		8DA7D86426715BEB002E3081 /* OnSubmitModifier */ = {
+			isa = PBXGroup;
+			children = (
+				8DA7D86526715BF8002E3081 /* OnSubmitModifier.swift */,
+			);
+			path = OnSubmitModifier;
 			sourceTree = "<group>";
 		};
 		8DBCF831256CB4A200AA564B /* Toolbar */ = {
@@ -1302,6 +1325,8 @@
 				8DBCF894256CB8D200AA564B /* SIWA Button */,
 				8D6DB2F7266FFC2900C72C2E /* Swift5_5.swift */,
 				8DA7D85F267149D5002E3081 /* AsyncImageView.swift */,
+				8DA7D86426715BEB002E3081 /* OnSubmitModifier */,
+				8DA7D8612671512E002E3081 /* FocusedViewModifier */,
 				8DA7D85926709C0B002E3081 /* SwipeActions */,
 				8DBCF858256CB63200AA564B /* TabView */,
 				8D7B31BF2562AEEB005B0D32 /* Text interpolation & concat */,
@@ -1601,6 +1626,7 @@
 				8D3A766F24A892E600005971 /* ListItemTintModifier.swift in Sources */,
 				8DA0F46024CA1AAD003C751B /* AccessibilityShowButtonShapes.swift in Sources */,
 				8D47558F258B725000C585AD /* FontStandardModifier.swift in Sources */,
+				8DA7D86826715CEF002E3081 /* FocusStateWrapper.swift in Sources */,
 				8DDA5C4424A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
 				8DDA5C5C24A3217D00BF263B /* LabelView.swift in Sources */,
 				8DA0F45D24CA1627003C751B /* AccessibilityReduceTransparency.swift in Sources */,
@@ -1621,6 +1647,7 @@
 				8DE443FE24CAA5AF0079B2B7 /* ColorSchemeContrast.swift in Sources */,
 				8D442EE024A808CE009995DD /* FontCustomModifier.swift in Sources */,
 				8D50BEB425814FB300BAAF7B /* DisableModifier.swift in Sources */,
+				8DA7D86326715140002E3081 /* FocusedModifier.swift in Sources */,
 				8D39F46B25756446000B757F /* VerticalSizeClass.swift in Sources */,
 				8D3A769024A8D85700005971 /* ColoredSFSymbolsView.swift in Sources */,
 				8D6C0F3224FA998A00041F8C /* PopoverModifer.swift in Sources */,
@@ -1669,6 +1696,7 @@
 				8DE4440424CAA9380079B2B7 /* ManagedObjectContext.swift in Sources */,
 				8D39F454257550F1000B757F /* RedactionReason.swift in Sources */,
 				8DB73DB524D93D3300D7D84F /* MultilineTextAlignment.swift in Sources */,
+				8DA7D86626715BF8002E3081 /* OnSubmitModifier.swift in Sources */,
 				8DF93E9A24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
 				8DC13F3C24A76019003CDA7A /* SettingsView.swift in Sources */,
 				8D5B5C012578FAEB00F309DE /* UnredactedModifier.swift in Sources */,
