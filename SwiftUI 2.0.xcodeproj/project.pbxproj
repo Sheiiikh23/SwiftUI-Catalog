@@ -166,6 +166,7 @@
 		8DA7D855267006F1002E3081 /* RefreshableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D854267006F1002E3081 /* RefreshableModifier.swift */; };
 		8DA7D85826700CB5002E3081 /* SearchableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D85726700CB5002E3081 /* SearchableModifier.swift */; };
 		8DA7D85B26709C8C002E3081 /* SwipeActionsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D85A26709C8C002E3081 /* SwipeActionsModifier.swift */; };
+		8DA7D85D26714528002E3081 /* MaterialEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D85C26714528002E3081 /* MaterialEffectView.swift */; };
 		8DB0C19724B1DCD9006818B4 /* PresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */; };
 		8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
 		8DB0C19B24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
@@ -413,6 +414,7 @@
 		8DA7D854267006F1002E3081 /* RefreshableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableModifier.swift; sourceTree = "<group>"; };
 		8DA7D85726700CB5002E3081 /* SearchableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableModifier.swift; sourceTree = "<group>"; };
 		8DA7D85A26709C8C002E3081 /* SwipeActionsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionsModifier.swift; sourceTree = "<group>"; };
+		8DA7D85C26714528002E3081 /* MaterialEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialEffectView.swift; sourceTree = "<group>"; };
 		8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationMode.swift; sourceTree = "<group>"; };
 		8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInterpolationInText.swift; sourceTree = "<group>"; };
 		8DB0C19C24B21127006818B4 /* AppStoreOverlayModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreOverlayModifier.swift; sourceTree = "<group>"; };
@@ -870,6 +872,14 @@
 			path = SwipeActions;
 			sourceTree = "<group>";
 		};
+		8DA7D85E26714941002E3081 /* Shape, MaterialEffectView */ = {
+			isa = PBXGroup;
+			children = (
+				8DA7D85C26714528002E3081 /* MaterialEffectView.swift */,
+			);
+			path = "Shape, MaterialEffectView";
+			sourceTree = "<group>";
+		};
 		8DBCF831256CB4A200AA564B /* Toolbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -1298,6 +1308,7 @@
 				8DBCF864256CB70900AA564B /* Toggle */,
 				8DBCF831256CB4A200AA564B /* Toolbar */,
 				8DBCF843256CB55A00AA564B /* WindowStyle, WindowToolbarStyle */,
+				8DA7D85E26714941002E3081 /* Shape, MaterialEffectView */,
 			);
 			path = "Views & Modifiers";
 			sourceTree = "<group>";
@@ -1664,6 +1675,7 @@
 				8DE9F4FA24AD1E6A0054CE64 /* ColorPickerView.swift in Sources */,
 				8D4FD8FB24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift in Sources */,
 				8DB0C1A924B21B01006818B4 /* AppStorageWrapper.swift in Sources */,
+				8DA7D85D26714528002E3081 /* MaterialEffectView.swift in Sources */,
 				8D39F45D2575547C000B757F /* HorizontalSizeClass.swift in Sources */,
 				8DE9F4F724AD1BB60054CE64 /* SpriteKitView.swift in Sources */,
 				8DFC196F25E3B976004445F8 /* FormView.swift in Sources */,
