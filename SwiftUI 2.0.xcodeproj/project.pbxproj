@@ -165,6 +165,7 @@
 		8DA7D85226700107002E3081 /* SubmitLabelModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D85126700107002E3081 /* SubmitLabelModifier.swift */; };
 		8DA7D855267006F1002E3081 /* RefreshableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D854267006F1002E3081 /* RefreshableModifier.swift */; };
 		8DA7D85826700CB5002E3081 /* SearchableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D85726700CB5002E3081 /* SearchableModifier.swift */; };
+		8DA7D85B26709C8C002E3081 /* SwipeActionsModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D85A26709C8C002E3081 /* SwipeActionsModifier.swift */; };
 		8DB0C19724B1DCD9006818B4 /* PresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */; };
 		8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
 		8DB0C19B24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
@@ -411,6 +412,7 @@
 		8DA7D85126700107002E3081 /* SubmitLabelModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitLabelModifier.swift; sourceTree = "<group>"; };
 		8DA7D854267006F1002E3081 /* RefreshableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableModifier.swift; sourceTree = "<group>"; };
 		8DA7D85726700CB5002E3081 /* SearchableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableModifier.swift; sourceTree = "<group>"; };
+		8DA7D85A26709C8C002E3081 /* SwipeActionsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionsModifier.swift; sourceTree = "<group>"; };
 		8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationMode.swift; sourceTree = "<group>"; };
 		8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInterpolationInText.swift; sourceTree = "<group>"; };
 		8DB0C19C24B21127006818B4 /* AppStoreOverlayModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreOverlayModifier.swift; sourceTree = "<group>"; };
@@ -860,6 +862,14 @@
 			path = "Searchable & SearchCompletion";
 			sourceTree = "<group>";
 		};
+		8DA7D85926709C0B002E3081 /* SwipeActions */ = {
+			isa = PBXGroup;
+			children = (
+				8DA7D85A26709C8C002E3081 /* SwipeActionsModifier.swift */,
+			);
+			path = SwipeActions;
+			sourceTree = "<group>";
+		};
 		8DBCF831256CB4A200AA564B /* Toolbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -1245,7 +1255,6 @@
 		8DEBD12E24A3E643004AAE41 /* Views & Modifiers */ = {
 			isa = PBXGroup;
 			children = (
-				8DA7D85626700CA7002E3081 /* Searchable & SearchCompletion */,
 				8D50BD342580B2B900BAAF7B /* Accessibilities */,
 				8DBCF8A0256CBAAC00AA564B /* AppStoreoverlay */,
 				8DBCF865256CB71200AA564B /* ColorPicker, DatePicker, Picker */,
@@ -1273,12 +1282,14 @@
 				8D5B5BE52578EDCA00F309DE /* Redacted, Unredacted, CustomRedacted */,
 				8DA7D853267006DA002E3081 /* Refreshable (maybe in List?) */,
 				8DBCF842256CB52B00AA564B /* ScrollView, ScrollViewReader, ScrollViewProxy */,
+				8DA7D85626700CA7002E3081 /* Searchable & SearchCompletion */,
 				8DCA5AF025E33B4900A167EB /* Section */,
 				8DBCF89E256CBA9A00AA564B /* Settings */,
 				8DBCF880256CB7A600AA564B /* SFSymbols */,
 				8DBCF87F256CB79B00AA564B /* Shape */,
 				8DBCF894256CB8D200AA564B /* SIWA Button */,
 				8D6DB2F7266FFC2900C72C2E /* Swift5_5.swift */,
+				8DA7D85926709C0B002E3081 /* SwipeActions */,
 				8DBCF858256CB63200AA564B /* TabView */,
 				8D7B31BF2562AEEB005B0D32 /* Text interpolation & concat */,
 				8D5BF5A3255D7E85001232D7 /* Text Modifiers */,
@@ -1647,6 +1658,7 @@
 				8DF93E9A24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
 				8DC13F3C24A76019003CDA7A /* SettingsView.swift in Sources */,
 				8D5B5C012578FAEB00F309DE /* UnredactedModifier.swift in Sources */,
+				8DA7D85B26709C8C002E3081 /* SwipeActionsModifier.swift in Sources */,
 				8D3A768724A8C3F300005971 /* ContextMenuModifier.swift in Sources */,
 				8DB0C1A624B21AD9006818B4 /* DisableAutocorrectionModifier.swift in Sources */,
 				8DE9F4FA24AD1E6A0054CE64 /* ColorPickerView.swift in Sources */,
