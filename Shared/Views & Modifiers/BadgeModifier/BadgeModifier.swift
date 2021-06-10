@@ -39,3 +39,12 @@ struct BadgeModifierWithList: View {
     }
   }
 }
+
+struct BadgeModifier_Previews: PreviewProvider {
+  static var previews: some View {
+    Group {
+      BadgeModifierWithTabView()
+      BadgeModifierWithList()
+    }
+  }
+}

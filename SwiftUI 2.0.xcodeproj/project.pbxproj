@@ -172,6 +172,7 @@
 		8DA7D86626715BF8002E3081 /* OnSubmitModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D86526715BF8002E3081 /* OnSubmitModifier.swift */; };
 		8DA7D86826715CEF002E3081 /* FocusStateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D86726715CEF002E3081 /* FocusStateWrapper.swift */; };
 		8DA7D86B267163CD002E3081 /* BadgeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D86A267163CD002E3081 /* BadgeModifier.swift */; };
+		8DA7D86F26727622002E3081 /* InteractiveDismissDisabledModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D86E26727622002E3081 /* InteractiveDismissDisabledModifier.swift */; };
 		8DB0C19724B1DCD9006818B4 /* PresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */; };
 		8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
 		8DB0C19B24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
@@ -425,6 +426,7 @@
 		8DA7D86526715BF8002E3081 /* OnSubmitModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnSubmitModifier.swift; sourceTree = "<group>"; };
 		8DA7D86726715CEF002E3081 /* FocusStateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusStateWrapper.swift; sourceTree = "<group>"; };
 		8DA7D86A267163CD002E3081 /* BadgeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeModifier.swift; sourceTree = "<group>"; };
+		8DA7D86E26727622002E3081 /* InteractiveDismissDisabledModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveDismissDisabledModifier.swift; sourceTree = "<group>"; };
 		8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationMode.swift; sourceTree = "<group>"; };
 		8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInterpolationInText.swift; sourceTree = "<group>"; };
 		8DB0C19C24B21127006818B4 /* AppStoreOverlayModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreOverlayModifier.swift; sourceTree = "<group>"; };
@@ -907,12 +909,29 @@
 			path = OnSubmitModifier;
 			sourceTree = "<group>";
 		};
-		8DA7D869267163BE002E3081 /* AsyncImageview */ = {
+		8DA7D869267163BE002E3081 /* AsyncImage */ = {
 			isa = PBXGroup;
 			children = (
 				8DA7D85F267149D5002E3081 /* AsyncImageView.swift */,
 			);
-			path = AsyncImageview;
+			path = AsyncImage;
+			sourceTree = "<group>";
+		};
+		8DA7D86C267275E7002E3081 /* BadgeModifier */ = {
+			isa = PBXGroup;
+			children = (
+				8DA7D86A267163CD002E3081 /* BadgeModifier.swift */,
+			);
+			path = BadgeModifier;
+			sourceTree = "<group>";
+		};
+		8DA7D86D26727610002E3081 /* Sheet, InteractiveDismissDisabled */ = {
+			isa = PBXGroup;
+			children = (
+				8DBCF8B5256CBB2400AA564B /* SheetModifier.swift */,
+				8DA7D86E26727622002E3081 /* InteractiveDismissDisabledModifier.swift */,
+			);
+			path = "Sheet, InteractiveDismissDisabled";
 			sourceTree = "<group>";
 		};
 		8DBCF831256CB4A200AA564B /* Toolbar */ = {
@@ -1150,9 +1169,9 @@
 		8DBCF8A2256CBACA00AA564B /* FullScreenCover, Popover, Sheet */ = {
 			isa = PBXGroup;
 			children = (
+				8DA7D86D26727610002E3081 /* Sheet, InteractiveDismissDisabled */,
 				8D999F9324B0E0C20050BD97 /* FullScreenCoverModifier.swift */,
 				8D6C0F3124FA998A00041F8C /* PopoverModifer.swift */,
-				8DBCF8B5256CBB2400AA564B /* SheetModifier.swift */,
 			);
 			path = "FullScreenCover, Popover, Sheet";
 			sourceTree = "<group>";
@@ -1334,8 +1353,8 @@
 				8DBCF87F256CB79B00AA564B /* Shape */,
 				8DBCF894256CB8D200AA564B /* SIWA Button */,
 				8D6DB2F7266FFC2900C72C2E /* Swift5_5.swift */,
-				8DA7D86A267163CD002E3081 /* BadgeModifier.swift */,
-				8DA7D869267163BE002E3081 /* AsyncImageview */,
+				8DA7D86C267275E7002E3081 /* BadgeModifier */,
+				8DA7D869267163BE002E3081 /* AsyncImage */,
 				8DA7D86426715BEB002E3081 /* OnSubmitModifier */,
 				8DA7D8612671512E002E3081 /* FocusedViewModifier */,
 				8DA7D85926709C0B002E3081 /* SwipeActions */,
@@ -1601,6 +1620,7 @@
 			files = (
 				8DEBD13024A3E6AA004AAE41 /* ToolbarModifier.swift in Sources */,
 				8D999F8824B0B0140050BD97 /* MatchedGeometryEffectModifier.swift in Sources */,
+				8DA7D86F26727622002E3081 /* InteractiveDismissDisabledModifier.swift in Sources */,
 				8D1CDAD8256C54860067B8BE /* CommandGroup.swift in Sources */,
 				8D5B5BE72578EE1D00F309DE /* RedactedModifier.swift in Sources */,
 				8D158BB324CC48D500188F6B /* AllowsTightening.swift in Sources */,
