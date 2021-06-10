@@ -173,6 +173,13 @@
 		8DA7D86826715CEF002E3081 /* FocusStateWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D86726715CEF002E3081 /* FocusStateWrapper.swift */; };
 		8DA7D86B267163CD002E3081 /* BadgeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D86A267163CD002E3081 /* BadgeModifier.swift */; };
 		8DA7D86F26727622002E3081 /* InteractiveDismissDisabledModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D86E26727622002E3081 /* InteractiveDismissDisabledModifier.swift */; };
+		8DA7D87226727B95002E3081 /* TextMarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D87126727B95002E3081 /* TextMarkdownView.swift */; };
+		8DA7D87326727B95002E3081 /* TextMarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D87126727B95002E3081 /* TextMarkdownView.swift */; };
+		8DA7D87526727CB1002E3081 /* AlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D87426727CB1002E3081 /* AlertModifier.swift */; };
+		8DA7D87626727CB1002E3081 /* AlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D87426727CB1002E3081 /* AlertModifier.swift */; };
+		8DA7D87926729662002E3081 /* ConfirmationDialogModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D87826729662002E3081 /* ConfirmationDialogModifier.swift */; };
+		8DA7D87D267298BC002E3081 /* MenuWithPrimaryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D87C267298BC002E3081 /* MenuWithPrimaryAction.swift */; };
+		8DA7D87E267298BC002E3081 /* MenuWithPrimaryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D87C267298BC002E3081 /* MenuWithPrimaryAction.swift */; };
 		8DB0C19724B1DCD9006818B4 /* PresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */; };
 		8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
 		8DB0C19B24B207F8006818B4 /* DateInterpolationInText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */; };
@@ -427,6 +434,10 @@
 		8DA7D86726715CEF002E3081 /* FocusStateWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusStateWrapper.swift; sourceTree = "<group>"; };
 		8DA7D86A267163CD002E3081 /* BadgeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeModifier.swift; sourceTree = "<group>"; };
 		8DA7D86E26727622002E3081 /* InteractiveDismissDisabledModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveDismissDisabledModifier.swift; sourceTree = "<group>"; };
+		8DA7D87126727B95002E3081 /* TextMarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMarkdownView.swift; sourceTree = "<group>"; };
+		8DA7D87426727CB1002E3081 /* AlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModifier.swift; sourceTree = "<group>"; };
+		8DA7D87826729662002E3081 /* ConfirmationDialogModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDialogModifier.swift; sourceTree = "<group>"; };
+		8DA7D87C267298BC002E3081 /* MenuWithPrimaryAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWithPrimaryAction.swift; sourceTree = "<group>"; };
 		8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationMode.swift; sourceTree = "<group>"; };
 		8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInterpolationInText.swift; sourceTree = "<group>"; };
 		8DB0C19C24B21127006818B4 /* AppStoreOverlayModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreOverlayModifier.swift; sourceTree = "<group>"; };
@@ -813,6 +824,7 @@
 				8DB0C19924B207F8006818B4 /* DateInterpolationInText.swift */,
 				8D442EE324A80B23009995DD /* ImageInterpolationInText.swift */,
 				8D7B31C62562AF3D005B0D32 /* TextConcatenation.swift */,
+				8DA7D87126727B95002E3081 /* TextMarkdownView.swift */,
 			);
 			path = "Text interpolation & concat";
 			sourceTree = "<group>";
@@ -932,6 +944,22 @@
 				8DA7D86E26727622002E3081 /* InteractiveDismissDisabledModifier.swift */,
 			);
 			path = "Sheet, InteractiveDismissDisabled";
+			sourceTree = "<group>";
+		};
+		8DA7D87726729652002E3081 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				8DA7D87426727CB1002E3081 /* AlertModifier.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		8DA7D87B267298A7002E3081 /* ConfirmationDialog */ = {
+			isa = PBXGroup;
+			children = (
+				8DA7D87826729662002E3081 /* ConfirmationDialogModifier.swift */,
+			);
+			path = ConfirmationDialog;
 			sourceTree = "<group>";
 		};
 		8DBCF831256CB4A200AA564B /* Toolbar */ = {
@@ -1166,14 +1194,14 @@
 			path = MatchedGeometryEffect;
 			sourceTree = "<group>";
 		};
-		8DBCF8A2256CBACA00AA564B /* FullScreenCover, Popover, Sheet */ = {
+		8DBCF8A2256CBACA00AA564B /* FullScreenCover, Popover, Sheet & InteractiveDismissDisabled */ = {
 			isa = PBXGroup;
 			children = (
 				8DA7D86D26727610002E3081 /* Sheet, InteractiveDismissDisabled */,
 				8D999F9324B0E0C20050BD97 /* FullScreenCoverModifier.swift */,
 				8D6C0F3124FA998A00041F8C /* PopoverModifer.swift */,
 			);
-			path = "FullScreenCover, Popover, Sheet";
+			path = "FullScreenCover, Popover, Sheet & InteractiveDismissDisabled";
 			sourceTree = "<group>";
 		};
 		8DBCF8C4256CBBB900AA564B /* KeyboardShortcut */ = {
@@ -1204,6 +1232,7 @@
 			isa = PBXGroup;
 			children = (
 				8D66EB5424DDBFE700FC4941 /* MenuView.swift */,
+				8DA7D87C267298BC002E3081 /* MenuWithPrimaryAction.swift */,
 				8D4447582563E93B00D875E3 /* MenuStyleModifier.swift */,
 			);
 			path = Menu;
@@ -1327,7 +1356,7 @@
 				8D50BEAC25814D7C00BAAF7B /* Disabled */,
 				8DBCF89C256CBA8100AA564B /* DisclosureGroup */,
 				8DFC196D25E3B965004445F8 /* Form */,
-				8DBCF8A2256CBACA00AA564B /* FullScreenCover, Popover, Sheet */,
+				8DBCF8A2256CBACA00AA564B /* FullScreenCover, Popover, Sheet & InteractiveDismissDisabled */,
 				8DBCF85C256CB6C900AA564B /* GroupBox */,
 				8DBCF8C5256CBBC700AA564B /* Help */,
 				8DBCF8C4256CBBB900AA564B /* KeyboardShortcut */,
@@ -1353,6 +1382,7 @@
 				8DBCF87F256CB79B00AA564B /* Shape */,
 				8DBCF894256CB8D200AA564B /* SIWA Button */,
 				8D6DB2F7266FFC2900C72C2E /* Swift5_5.swift */,
+				8DA7D87B267298A7002E3081 /* ConfirmationDialog */,
 				8DA7D86C267275E7002E3081 /* BadgeModifier */,
 				8DA7D869267163BE002E3081 /* AsyncImage */,
 				8DA7D86426715BEB002E3081 /* OnSubmitModifier */,
@@ -1367,6 +1397,7 @@
 				8DBCF831256CB4A200AA564B /* Toolbar */,
 				8DBCF843256CB55A00AA564B /* WindowStyle, WindowToolbarStyle */,
 				8DA7D85E26714941002E3081 /* Shape, MaterialEffectView */,
+				8DA7D87726729652002E3081 /* Alert */,
 			);
 			path = "Views & Modifiers";
 			sourceTree = "<group>";
@@ -1696,6 +1727,7 @@
 				8D727DD325E6712600510B7A /* DatePickerView.swift in Sources */,
 				8DF93EEA24A7B62400B84CD0 /* ToolbarItemView.swift in Sources */,
 				8DC13F3924A75C00003CDA7A /* CommandsModifier.swift in Sources */,
+				8DA7D87226727B95002E3081 /* TextMarkdownView.swift in Sources */,
 				8DE9F4EF24AD15F40054CE64 /* TabViewStyleModifier.swift in Sources */,
 				8D680A0B2508230E00AFE8A7 /* TextCase.swift in Sources */,
 				8D158BAD24CC429300188F6B /* ControlActiveState.swift in Sources */,
@@ -1715,12 +1747,14 @@
 				8DC13F3F24A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
 				8D7D067E25769A2C00323A00 /* Description.swift in Sources */,
 				8DDA5C6224A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
+				8DA7D87526727CB1002E3081 /* AlertModifier.swift in Sources */,
 				8D442EE724A80B2C009995DD /* ScaledMetricWrapper.swift in Sources */,
 				8D1CDAA0256C3BBE0067B8BE /* CommandMenu.swift in Sources */,
 				8DDA5C5F24A3249300BF263B /* HelpModifier.swift in Sources */,
 				8DC13F4224A764BC003CDA7A /* OnChangeModifier.swift in Sources */,
 				8D50BD3C2580B2CB00BAAF7B /* AccessibilitiesModifiers.swift in Sources */,
 				8DFC196025E3A7BF004445F8 /* SectionView.swift in Sources */,
+				8DA7D87926729662002E3081 /* ConfirmationDialogModifier.swift in Sources */,
 				8D3A768224A8B07300005971 /* SignInWithAppleButtonStyleModifier.swift in Sources */,
 				8D999F8B24B0B7B10050BD97 /* NamespaceWrapper.swift in Sources */,
 				8D442EDD24A80549009995DD /* ContainerRelativeShapeView.swift in Sources */,
@@ -1749,6 +1783,7 @@
 				8D44478625640A5D00D875E3 /* GroupBoxStyleModifier.swift in Sources */,
 				8D3A767924A89FA200005971 /* LinkView.swift in Sources */,
 				8D4B2A3A24CA1EBA003E37F4 /* ColorScheme.swift in Sources */,
+				8DA7D87D267298BC002E3081 /* MenuWithPrimaryAction.swift in Sources */,
 				8D68A81024C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift in Sources */,
 				8D36D1B3250971E20074E498 /* EditMode.swift in Sources */,
 				8DF93EE724A7B60700B84CD0 /* ToolbarItemPlacement.swift in Sources */,
@@ -1777,6 +1812,7 @@
 				8D1ED84624C8D451000F936D /* AccessibilityInvertColors.swift in Sources */,
 				8D66EB5924DEAC0E00FC4941 /* GroupBoxView.swift in Sources */,
 				8DC13F4924A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,
+				8DA7D87626727CB1002E3081 /* AlertModifier.swift in Sources */,
 				8D1ED84924C8D697000F936D /* AccessibilityReduceMotion.swift in Sources */,
 				8D33BBE424AA79AC0097EC2E /* LazyVGrid.swift in Sources */,
 				8D4D24FC24AC5C4F00982117 /* LazyHGrid.swift in Sources */,
@@ -1821,6 +1857,7 @@
 				8D064AFE24D0A367000272FA /* LineLimit.swift in Sources */,
 				8DE9F4F524AD1B1E0054CE64 /* IndexViewStyleModifier & PageIndexViewStyle.swift in Sources */,
 				8DC13F4024A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
+				8DA7D87326727B95002E3081 /* TextMarkdownView.swift in Sources */,
 				8DDA5C6324A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
 				8D442EE824A80B2C009995DD /* ScaledMetricWrapper.swift in Sources */,
 				8DDA5C6024A3249300BF263B /* HelpModifier.swift in Sources */,
@@ -1833,6 +1870,7 @@
 				8DF93E9B24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
 				8DC13F3D24A76019003CDA7A /* SettingsView.swift in Sources */,
 				8DBCF832256CB4AB00AA564B /* ToolbarItemGroupView.swift in Sources */,
+				8DA7D87E267298BC002E3081 /* MenuWithPrimaryAction.swift in Sources */,
 				8D1CDAD9256C54860067B8BE /* CommandGroup.swift in Sources */,
 				8D3A768824A8C3F300005971 /* ContextMenuModifier.swift in Sources */,
 				8DB0C1A724B21AD9006818B4 /* DisableAutocorrectionModifier.swift in Sources */,
