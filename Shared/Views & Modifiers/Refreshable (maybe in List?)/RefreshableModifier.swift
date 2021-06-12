@@ -24,9 +24,21 @@ struct RefreshableModifier: View {
       }
       .refreshable {
         print("Execute an async function here")
+        await fetchSomething()
       }
     }
+    .onAppear {
+      
+    }
   }
+
+  @discardableResult func fetchSomething() async -> SomethigCool {
+    return SomethigCool(name: "Cool")
+  }
+}
+
+struct SomethigCool {
+  let name: String
 }
 
 struct RefreshableModifierWithAsyncFunction: View {

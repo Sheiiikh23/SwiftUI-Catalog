@@ -26,6 +26,9 @@ import SwiftUI
 ///   • destructiveAction : représente la destruction d'une action dans une modale (boutton ne pas enregistrer par exemple)
 ///      - macOS / Mac Catalyst : leading + apparence spéciale pour prévenir d'un usage accidentel
 ///      - i•(Pad?)•OS / watchOS / tvOs : trailing de la navigationBar
+///   • keyboard : L'item est placé dans la section du clavier :
+///       - i•Pad•OS : l'item est placé au-dessus du keyboard
+///       - macOS / Mac Catalyst : l'item est placé à l'intérieur de la Touch Bar
 ///   • navigation : représente une action de navigation (du style suivant / précédent dans Safari par exemple)
 ///      - macOS / Mac Catalyst : leading avant le titre (si présent dans la toolbar)
 ///      - i•Pad•OS / tvOS : leading de la navigationBar (si compactWidth alors seront placé pareil que la primaryAction)
@@ -118,6 +121,46 @@ struct DestructiveAction: View {
     }
     .sheet(isPresented: $show) {
       ModalNavigationView(title: "DestructiveAction")
+    }
+  }
+}
+
+struct KeyboardPlacement: View {
+
+  @State private var name = "Lucas"
+
+  var body: some View {
+    NavigationView {
+      TextField("Enter your name", text: $name)
+        .textFieldStyle(.roundedBorder)
+        .toolbar {
+          ToolbarItem(placement: .keyboard) {
+            Button { print("Button above keyboard has been touched") } label: {
+              Text("Touch me !")
+            }
+          }
+        }
+    }
+  }
+}
+
+struct KeyboardPlacementWithFocusState: View {
+
+  @State private var name = "Lucas"
+  @FocusState private var isInputActive: Bool
+
+  var body: some View {
+    NavigationView {
+      TextField("Enter your name", text: $name)
+        .textFieldStyle(.roundedBorder)
+        .focused($isInputActive)
+        .toolbar {
+          ToolbarItem(placement: .keyboard) {
+            Button { isInputActive.toggle() } label: {
+              Text("Done")
+            }
+          }
+        }
     }
   }
 }
@@ -243,13 +286,13 @@ fileprivate struct ModalNavigationView: View {
           .fontWeight(.bold)
       }
       .navigationBarTitle(title)
-        .toolbar {
-          ToolbarItem(placement: .cancellationAction) {
-            Button { presentation.wrappedValue.dismiss() } label: {
-              Text("Action here")
-            }
+      .toolbar {
+        ToolbarItem(placement: .cancellationAction) {
+          Button { presentation.wrappedValue.dismiss() } label: {
+            Text("Action here")
           }
         }
+      }
     }
   }
 }

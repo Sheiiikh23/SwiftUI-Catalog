@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+#warning("NEEED AN UPDATE")
+
 /// redacted permet d'appliquer une rédaction particulière en fonction d'un contexte
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///

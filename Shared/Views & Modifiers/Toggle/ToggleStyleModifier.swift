@@ -12,9 +12,10 @@ import SwiftUI
 ///
 /// ToggleStyle présents nativement:
 ///  • DefaultToggleStyle : par défaut, vert
+///  • ButtonToggleStyle Toggle qui a la forme d'un boutton
 ///  • SwitchToggleStyle : pareil que DefaultToggleStyle (pas sur tvOS)
 ///  • SwitchToggleStyle(tint: Color) : permet de custom la (pas sur tvOS)
-///  • CheckboxToggleStyle : checbox (uniquement sur macOS)
+///  • CheckboxToggleStyle : chekcbox (uniquement sur macOS)
 ///
 /// Créer un ToggleStyle custom
 ///  • struct conforme au protocol ToggleStyle ––> fonction makeBody
@@ -33,6 +34,10 @@ struct ToggleStyleModifier: View {
         Text("Look at this default toggleStyle")
       }
       .toggleStyle(DefaultToggleStyle())
+
+      Toggle("Filter", isOn: $toggleValue)
+        .toggleStyle(ButtonToggleStyle())
+        .tint(.mint)
 
       /// SwitchToggleStyle sans tint ––> pareil que le default
       Toggle(isOn: $toggleValue) {
@@ -69,6 +74,7 @@ struct ToggleStyleModifier: View {
       }
       .toggleStyle(ToggleWithoutSpacerStyle())
     }
+    .padding(.horizontal)
   }
 }
 

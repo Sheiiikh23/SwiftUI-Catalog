@@ -13,6 +13,7 @@ import SwiftUI
 /// La UI par défaut est une card comme dans l'applciation Santé
 /// Le Label est une View optionnel, alignement en leading par défaut
 /// Pour le content, c'est un VStack implicit
+/// On peut mettre plusieurs GroupBox les une dans les autres
 
 // MARK: - Utilisation : Regroupement de contenus de même logique (métier) en forme de card out of the box
 
@@ -41,6 +42,16 @@ struct GroupBoxView: View {
           .fontWeight(.semibold)
       }
       .padding(.horizontal)
+
+      GroupBox {
+        Text("Outer content")
+        GroupBox {
+          Text("Middle content")
+          GroupBox {
+            Text("Inner content")
+          }
+        }
+      }
     }
   }
 }

@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+#warning("NEED AN UPDATE")
+
 /// redactionReasons permet de connaître la raison de la rédaction actuelle
 /// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
