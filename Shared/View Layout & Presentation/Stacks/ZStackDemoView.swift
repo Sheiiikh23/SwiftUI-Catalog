@@ -11,178 +11,58 @@ import SwiftUI
 ///   - init(alignment: Alignment = .center, @ViewBuilder content: () -> Content) where Content : View
 /// Paramètres :
 ///   - alignment: `Alignment` = .center
-///           - top
-///           - leading
-///           - bottom
-///           - trailing
-///           - center
-///           - topLeading
-///           - topTrailing
-///           - bottomLeading
-///           - bottomTrailing
+///       - top
+///       - leading
+///       - bottom
+///       - trailing
+///       - center
+///       - topLeading
+///       - topTrailing
+///       - bottomLeading
+///       - bottomTrailing
 ///   - @ViewBuilder content: () -> Content : un ensemble de `View` (maximum 10 subviews)
+/// Par défaut un `ZStack` prend le moins de height & width possible
 ///
 /// Tips: Utiliser un `ZStack` pour afficher un background avec une couleur (voir `ZStackBackgroundColorView`)
 
-struct ZStackDemoView: View {
+struct ZStackView: View {
+
+  @State private var alignment: Alignment = .center
 
   var body: some View {
-
-    ScrollView {
-      VStack(spacing: .extraLarge) {
-
-        /// alignment = .center
-        ZStack {
-          Rectangle()
-            .foregroundColor(.red)
-            .frame(width: 300, height: 300)
-          Rectangle()
-            .foregroundColor(.orange)
-            .frame(width: 150, height: 150)
-          Rectangle()
-            .foregroundColor(.yellow)
-            .frame(width: 75, height: 75)
-          Text("center")
-            .foregroundColor(.black)
+    VStack(spacing: .extraLarge) {
+      VStack(spacing: .medium) {
+        Text("Alignment : \(alignment.description)")
+        HStack(spacing: .medium) {
+          Button("Top") { alignment = .top }
+          Button("Leading") { alignment = .leading }
+          Button("Bottom") { alignment = .bottom }
         }
-
-        /// alignment = .top
-        ZStack(alignment: .top) {
-          Rectangle()
-            .foregroundColor(.red)
-            .frame(width: 300, height: 300)
-          Rectangle()
-            .foregroundColor(.orange)
-            .frame(width: 150, height: 150)
-          Rectangle()
-            .foregroundColor(.yellow)
-            .frame(width: 75, height: 75)
-          Text("top")
-            .foregroundColor(.black)
+        HStack(spacing: .medium) {
+          Button("Trailing") { alignment = .trailing }
+          Button("Center") { alignment = .center }
+          Button("TopLeading") { alignment = .topLeading }
         }
-
-        /// alignment = .leading
-        ZStack(alignment: .leading) {
-          Rectangle()
-            .foregroundColor(.red)
-            .frame(width: 300, height: 300)
-          Rectangle()
-            .foregroundColor(.orange)
-            .frame(width: 150, height: 150)
-          Rectangle()
-            .foregroundColor(.yellow)
-            .frame(width: 75, height: 75)
-          Text("leading")
-            .foregroundColor(.black)
-        }
-
-        /// alignment = .bottom
-        ZStack(alignment: .bottom) {
-          Rectangle()
-            .foregroundColor(.red)
-            .frame(width: 300, height: 300)
-          Rectangle()
-            .foregroundColor(.orange)
-            .frame(width: 150, height: 150)
-          Rectangle()
-            .foregroundColor(.yellow)
-            .frame(width: 75, height: 75)
-          Text("bottom")
-            .foregroundColor(.black)
-        }
-
-        /// alignment = .trailing
-        ZStack(alignment: .trailing) {
-          Rectangle()
-            .foregroundColor(.red)
-            .frame(width: 300, height: 300)
-          Rectangle()
-            .foregroundColor(.orange)
-            .frame(width: 150, height: 150)
-          Rectangle()
-            .foregroundColor(.yellow)
-            .frame(width: 75, height: 75)
-          Text("trailing")
-            .foregroundColor(.black)
-        }
-
-        /// alignment = .center
-        ZStack(alignment: .center) {
-          Rectangle()
-            .foregroundColor(.red)
-            .frame(width: 300, height: 300)
-          Rectangle()
-            .foregroundColor(.orange)
-            .frame(width: 150, height: 150)
-          Rectangle()
-            .foregroundColor(.yellow)
-            .frame(width: 75, height: 75)
-          Text("center")
-            .foregroundColor(.black)
-        }
-
-        /// alignment = .topLeading
-        ZStack(alignment: .topLeading) {
-          Rectangle()
-            .foregroundColor(.red)
-            .frame(width: 300, height: 300)
-          Rectangle()
-            .foregroundColor(.orange)
-            .frame(width: 150, height: 150)
-          Rectangle()
-            .foregroundColor(.yellow)
-            .frame(width: 75, height: 75)
-          Text("topLeading")
-            .foregroundColor(.black)
-        }
-
-        /// alignment = .topTrailing
-        ZStack(alignment: .topTrailing) {
-          Rectangle()
-            .foregroundColor(.red)
-            .frame(width: 300, height: 300)
-          Rectangle()
-            .foregroundColor(.orange)
-            .frame(width: 150, height: 150)
-          Rectangle()
-            .foregroundColor(.yellow)
-            .frame(width: 75, height: 75)
-          Text("topTrailing")
-            .foregroundColor(.black)
-        }
-
-        /// alignment = .bottomLeading
-        ZStack(alignment: .bottomLeading) {
-          Rectangle()
-            .foregroundColor(.red)
-            .frame(width: 300, height: 300)
-          Rectangle()
-            .foregroundColor(.orange)
-            .frame(width: 150, height: 150)
-          Rectangle()
-            .foregroundColor(.yellow)
-            .frame(width: 75, height: 75)
-          Text("bottomLeading")
-            .foregroundColor(.black)
-        }
-
-        /// alignment = .bottomTrailing
-        ZStack(alignment: .bottomTrailing) {
-          Rectangle()
-            .foregroundColor(.red)
-            .frame(width: 300, height: 300)
-          Rectangle()
-            .foregroundColor(.orange)
-            .frame(width: 150, height: 150)
-          Rectangle()
-            .foregroundColor(.yellow)
-            .frame(width: 75, height: 75)
-          Text("bottomTrailing")
-            .foregroundColor(.black)
+        HStack(spacing: .medium) {
+          Button("TopTrailing") { alignment = .topTrailing }
+          Button("BottomLeading") { alignment = .bottomLeading }
+          Button("BottomTrailing") { alignment = .bottomTrailing }
         }
       }
-      .frame(maxWidth: .infinity)
+      ZStack(alignment: alignment) {
+        Rectangle()
+          .foregroundColor(.red)
+          .frame(width: 300, height: 300)
+        Rectangle()
+          .foregroundColor(.orange)
+          .frame(width: 150, height: 150)
+        Rectangle()
+          .foregroundColor(.yellow)
+          .frame(width: 75, height: 75)
+      }
+      .animation(.linear(duration: 0.2), value: alignment)
     }
+    .frame(maxWidth: .infinity)
   }
 }
 
@@ -202,7 +82,7 @@ struct ZStackBackgroundColorView: View {
 
 struct ZStackView_Previews: PreviewProvider {
   static var previews: some View {
-    ZStackDemoView()
+    ZStackView()
     ZStackBackgroundColorView()
   }
 }

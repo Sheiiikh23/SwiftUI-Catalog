@@ -40,6 +40,10 @@
 		8D1CDAA1256C3BBE0067B8BE /* CommandMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CDA9F256C3BBE0067B8BE /* CommandMenu.swift */; };
 		8D1CDAD8256C54860067B8BE /* CommandGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CDAD7256C54860067B8BE /* CommandGroup.swift */; };
 		8D1CDAD9256C54860067B8BE /* CommandGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1CDAD7256C54860067B8BE /* CommandGroup.swift */; };
+		8D1DD6EA2675415A00EB69AC /* VerticalAlignmentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DD6E92675415A00EB69AC /* VerticalAlignmentExtension.swift */; };
+		8D1DD6EC2675417600EB69AC /* HorizontalAlignmentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DD6EB2675417600EB69AC /* HorizontalAlignmentExtension.swift */; };
+		8D1DD6EE2675419000EB69AC /* AlignmentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DD6ED2675419000EB69AC /* AlignmentExtension.swift */; };
+		8D1DD6F026762B5600EB69AC /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1DD6EF26762B5600EB69AC /* ViewExtension.swift */; };
 		8D1ED84224C8D002000F936D /* AccessibilityEnabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ED84124C8D002000F936D /* AccessibilityEnabled.swift */; };
 		8D1ED84324C8D002000F936D /* AccessibilityEnabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ED84124C8D002000F936D /* AccessibilityEnabled.swift */; };
 		8D1ED84524C8D451000F936D /* AccessibilityInvertColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1ED84424C8D451000F936D /* AccessibilityInvertColors.swift */; };
@@ -360,6 +364,10 @@
 		8D1A9611256FB30A00223F52 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		8D1CDA9F256C3BBE0067B8BE /* CommandMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandMenu.swift; sourceTree = "<group>"; };
 		8D1CDAD7256C54860067B8BE /* CommandGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandGroup.swift; sourceTree = "<group>"; };
+		8D1DD6E92675415A00EB69AC /* VerticalAlignmentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalAlignmentExtension.swift; sourceTree = "<group>"; };
+		8D1DD6EB2675417600EB69AC /* HorizontalAlignmentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalAlignmentExtension.swift; sourceTree = "<group>"; };
+		8D1DD6ED2675419000EB69AC /* AlignmentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentExtension.swift; sourceTree = "<group>"; };
+		8D1DD6EF26762B5600EB69AC /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		8D1ED84124C8D002000F936D /* AccessibilityEnabled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityEnabled.swift; sourceTree = "<group>"; };
 		8D1ED84424C8D451000F936D /* AccessibilityInvertColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityInvertColors.swift; sourceTree = "<group>"; };
 		8D1ED84724C8D697000F936D /* AccessibilityReduceMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityReduceMotion.swift; sourceTree = "<group>"; };
@@ -595,10 +603,10 @@
 			isa = PBXGroup;
 			children = (
 				8D0AD4FF26751030000655AA /* Stacks */,
+				8D0AD50026751032000655AA /* Lazy Stacks */,
 				8D0AD50226751042000655AA /* Containers */,
 				8D0AD5012675103D000655AA /* Grids */,
 				8D0AD50626751068000655AA /* Hierarchical Views  */,
-				8D0AD50026751032000655AA /* Lazy Stacks */,
 				8D0AD50426751054000655AA /* Lists */,
 				8D0AD5032675104B000655AA /* Scroll Views */,
 				8D0AD50726751081000655AA /* Spacers & Dividers */,
@@ -628,6 +636,8 @@
 		8D0AD50026751032000655AA /* Lazy Stacks */ = {
 			isa = PBXGroup;
 			children = (
+				8D7B37CA24AEFB8F00F95736 /* LazyHStackView.swift */,
+				8D005E2524ADAE2200D29E53 /* LazyVStackView.swift */,
 			);
 			path = "Lazy Stacks";
 			sourceTree = "<group>";
@@ -743,6 +753,17 @@
 				8D97EDDF24E1DBBE009E60E6 /* TruncationMode.swift */,
 			);
 			path = "Paragraph Styles";
+			sourceTree = "<group>";
+		};
+		8D1DD6E82675414A00EB69AC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8D1DD6ED2675419000EB69AC /* AlignmentExtension.swift */,
+				8D1DD6EB2675417600EB69AC /* HorizontalAlignmentExtension.swift */,
+				8D1DD6E92675415A00EB69AC /* VerticalAlignmentExtension.swift */,
+				8D1DD6EF26762B5600EB69AC /* ViewExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		8D2125B225766C53001837BC /* Scene Phases */ = {
@@ -1138,15 +1159,6 @@
 			path = ProgressView;
 			sourceTree = "<group>";
 		};
-		8DBCF840256CB4E200AA564B /* LazyStack */ = {
-			isa = PBXGroup;
-			children = (
-				8D7B37CA24AEFB8F00F95736 /* LazyHStackView.swift */,
-				8D005E2524ADAE2200D29E53 /* LazyVStackView.swift */,
-			);
-			path = LazyStack;
-			sourceTree = "<group>";
-		};
 		8DBCF841256CB4F200AA564B /* LazyGrid */ = {
 			isa = PBXGroup;
 			children = (
@@ -1421,6 +1433,7 @@
 		8DDA5C1A24A31A5700BF263B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8D1DD6E82675414A00EB69AC /* Extension */,
 				8D0AD4FE2675100B000655AA /* Views & Controls */,
 				8D0AD4FD26750FE1000655AA /* View Layout & Presentation */,
 				8DDA5C1B24A31A5700BF263B /* SwiftUI_2_0App.swift */,
@@ -1531,7 +1544,6 @@
 				8DBCF8C4256CBBB900AA564B /* KeyboardShortcut */,
 				8DBCF859256CB64600AA564B /* Label */,
 				8DBCF841256CB4F200AA564B /* LazyGrid */,
-				8DBCF840256CB4E200AA564B /* LazyStack */,
 				8DBCF89D256CBA8E00AA564B /* Link */,
 				8DBCF85A256CB65D00AA564B /* ListChildren, ListItemTint, ListRowBackground, ListRowInsets, ListStyle, ListRowSeparatorModifier */,
 				8DBCF84A256CB5B700AA564B /* Map, SpriteView, VideoPlayer */,
@@ -1845,6 +1857,7 @@
 				8D1ED84824C8D697000F936D /* AccessibilityReduceMotion.swift in Sources */,
 				8D33BBE324AA79AC0097EC2E /* LazyVGrid.swift in Sources */,
 				8D7D06502576878A00323A00 /* WidgetFamily.swift in Sources */,
+				8D1DD6EC2675417600EB69AC /* HorizontalAlignmentExtension.swift in Sources */,
 				8D4D24FB24AC5C4F00982117 /* LazyHGrid.swift in Sources */,
 				8D5B5C1E2579093000F309DE /* CustomRedacted.swift in Sources */,
 				8D3A769324A8E38800005971 /* TextEditorView.swift in Sources */,
@@ -1858,11 +1871,13 @@
 				8D0F819B250AB7AA00221DFD /* Locale.swift in Sources */,
 				8DB0C1AF24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift in Sources */,
 				8D46DCE126655B5E0018BDCA /* ListRowBackgroundModifier.swift in Sources */,
+				8D1DD6F026762B5600EB69AC /* ViewExtension.swift in Sources */,
 				8D7B37CB24AEFB8F00F95736 /* LazyHStackView.swift in Sources */,
 				8D3A766F24A892E600005971 /* ListItemTintModifier.swift in Sources */,
 				8DA0F46024CA1AAD003C751B /* AccessibilityShowButtonShapes.swift in Sources */,
 				8D47558F258B725000C585AD /* FontStandardModifier.swift in Sources */,
 				8DA7D86826715CEF002E3081 /* FocusStateWrapper.swift in Sources */,
+				8D1DD6EA2675415A00EB69AC /* VerticalAlignmentExtension.swift in Sources */,
 				8DDA5C4424A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
 				8DDA5C5C24A3217D00BF263B /* LabelView.swift in Sources */,
 				8DA0F45D24CA1627003C751B /* AccessibilityReduceTransparency.swift in Sources */,
@@ -1878,6 +1893,7 @@
 				8D46DCE3266563340018BDCA /* ListRowInsetsModifier.swift in Sources */,
 				8DE2B53F255D90FC00261B28 /* ScrollViewReader & ScrollViewProxy.swift in Sources */,
 				8D158BA424CC405900188F6B /* DefaultMinListRowHeight.swift in Sources */,
+				8D1DD6EE2675419000EB69AC /* AlignmentExtension.swift in Sources */,
 				8DBCF8B6256CBB2400AA564B /* SheetModifier.swift in Sources */,
 				8DC13F4524A764D0003CDA7A /* WindowStyleModifier.swift in Sources */,
 				8DE443FE24CAA5AF0079B2B7 /* ColorSchemeContrast.swift in Sources */,

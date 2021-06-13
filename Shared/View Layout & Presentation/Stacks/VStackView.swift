@@ -11,86 +11,24 @@ import SwiftUI
 ///   - init(alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil, @ViewBuilder content: () -> Content) where Content : View
 /// Paramètres :
 ///   - alignment: `HorizontalAlignment` = .center
-///           - leading
-///           - center
-///           - trailing
+///       - leading
+///       - center
+///       - trailing
 ///   - spacing: `CGFloat?` = nil
 ///   - @ViewBuilder content: () -> Content : un ensemble de `View` (maximum 10 subviews)
+/// Par défaut un `VStack` prend le moins de height & width possible
 
 import SwiftUI
 
 struct VStackView: View {
 
-  var body: some View {
-    VStack {
-
-      // alignment = .center, spacing = nil
-      VStack {
-        Text("Top")
-        Text("Middle")
-        Text("Bottom")
-      }
-
-      // alignment = .center, spacing = 10
-      VStack(spacing: 10) {
-        Text("Top")
-        Text("Middle")
-        Text("Bottom")
-      }
-
-      // alignment: .leading, spacing = nil
-      VStack(alignment: .leading) {
-        Text("Top")
-        Text("Middle")
-        Text("Bottom")
-      }
-
-      // alignment = .leading, spacing = 10
-      VStack(alignment: .leading, spacing: 10) {
-        Text("Top")
-        Text("Middle")
-        Text("Bottom")
-      }
-
-      // Maximum 10 subviews
-      VStack {
-        Text("1")
-        Text("2")
-        Text("3")
-        Text("4")
-        Text("5")
-        Text("6")
-        Text("7")
-        Text("8")
-        Text("9")
-        Text("10")
-        //        Text("11") // Error: Extra argument in call
-      }
-    }
-  }
-}
-
-struct VStackDemoView: View {
-
   @State private var alignment: HorizontalAlignment = .center
   @State private var spacing: Double = 10
-  var alignmentDescription: String {
-    switch alignment {
-    case .leading:
-      return "leading"
-    case .center:
-      return "center"
-    case .trailing:
-      return "trailing"
-    default:
-      return ""
-    }
-  }
 
   var body: some View {
     NavigationView {
       VStack(spacing: .large) {
-        Text("Alignment : \(alignmentDescription)")
+        Text("Alignment : \(alignment.description)")
         HStack(spacing: .medium) {
           Button("Leading") { alignment = .leading }
           Button("Center") { alignment = .center }
@@ -106,7 +44,7 @@ struct VStackDemoView: View {
         VStack(alignment: alignment, spacing: spacing) {
           Text("Peu de texte")
           Text("Beacoup plus de texte")
-          Text("beaucoup beaucoup plus de taxte")
+          Text("Beaucoup beaucoup plus de texte")
         }
         .padding()
         .background(Color.mint)
@@ -118,6 +56,6 @@ struct VStackDemoView: View {
 
 struct VStackView_Previews: PreviewProvider {
   static var previews: some View {
-    VStackDemoView()
+    VStackView()
   }
 }
