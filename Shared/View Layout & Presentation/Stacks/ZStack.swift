@@ -7,10 +7,11 @@ import SwiftUI
 /// Plateformes : i•Pad•OS 13.0, watchOS 6.0, tvOS 13.0, macOS 10.15, Mac Catalyst 13.0
 /// Description : Une `View` qui arrange ses sous-vues dans un plan en 3D
 ///
-/// 1 signature pour un `ZStack` :
+/// 1 init pour un `ZStack` :
 ///   - init(alignment: Alignment = .center, @ViewBuilder content: () -> Content) where Content : View
+///
 /// Paramètres :
-///   - alignment: `Alignment` = .center
+///   - alignment: `Alignment` = .center : l'alignement de chaque subview
 ///       - top
 ///       - leading
 ///       - bottom

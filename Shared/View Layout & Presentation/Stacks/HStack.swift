@@ -5,18 +5,19 @@
 import SwiftUI
 
 /// Plateformes : i•Pad•OS 13.0, watchOS 6.0, tvOS 13.0, macOS 10.15, Mac Catalyst 13.0
-/// Description : Une `View` qui arrange ses sous-vues de manière horizontale
+/// Description : Une `View` qui arrange ses subviews de manière horizontale
 ///
-/// 1 signature pour un `HStack` :
+/// 1 init pour un `HStack` :
 ///   - init(alignment: VerticalAlignment = .center, spacing: CGFloat? = nil, @ViewBuilder content: () -> Content) where Content : View
+/// 
 /// Paramètres :
-///   - alignment: `VerticalAlignment` = .center
+///   - alignment: `VerticalAlignment` = .center ––> l'alignement vertical de chaque subview
 ///       - top
 ///       - center
 ///       - bottom
 ///       - firstTextBaseline
 ///       - lastTextBaseline
-///   - spacing: `CGFloat?` = nil
+///   - spacing: `CGFloat?` = nil ––> la distance horizontal entre chaque subview, `nil` pour une valeur par défaut
 ///   - @ViewBuilder content: () -> Content : un ensemble de `View` (maximum 10 subviews)
 /// Par défaut un `HStack` prend le moins de height & width possible
 
@@ -43,9 +44,7 @@ struct HStackView: View {
         VStack {
           Text("Spacing value : \(Int(spacing))")
             .fontWeight(.bold)
-          Slider(value: $spacing, in: 0...50, minimumValueLabel: Text("0"), maximumValueLabel: Text("50")) {
-            Text("Spacing value : \(spacing)")
-          }
+          Slider(value: $spacing, in: 0...50)
         }
         HStack(alignment: alignment, spacing: spacing) {
           ZStack {
