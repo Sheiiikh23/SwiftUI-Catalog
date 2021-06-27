@@ -113,6 +113,12 @@
 		8D50BEB425814FB300BAAF7B /* DisableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D50BEB325814FB300BAAF7B /* DisableModifier.swift */; };
 		8D51323324A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */; };
 		8D51323424A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */; };
+		8D5164D22687C9B400D298F6 /* LazyVGridDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5164D12687C9B400D298F6 /* LazyVGridDemoViewModel.swift */; };
+		8D5164D42687C9EF00D298F6 /* LazyGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5164D32687C9EF00D298F6 /* LazyGridCell.swift */; };
+		8D5164D62687CA1400D298F6 /* LazyVGridGridItemSizeConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5164D52687CA1400D298F6 /* LazyVGridGridItemSizeConfiguratorView.swift */; };
+		8D5164D82687CA3600D298F6 /* LazyVGridConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5164D72687CA3600D298F6 /* LazyVGridConfiguratorView.swift */; };
+		8D5164DA2687CA5C00D298F6 /* LazyVGridDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5164D92687CA5C00D298F6 /* LazyVGridDemo.swift */; };
+		8D5164DC2688D19300D298F6 /* LazyGridCellDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5164DB2688D19300D298F6 /* LazyGridCellDemo.swift */; };
 		8D5B5BE72578EE1D00F309DE /* RedactedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B5BE62578EE1D00F309DE /* RedactedModifier.swift */; };
 		8D5B5C012578FAEB00F309DE /* UnredactedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B5C002578FAEB00F309DE /* UnredactedModifier.swift */; };
 		8D5B5C1E2579093000F309DE /* CustomRedacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B5C1D2579093000F309DE /* CustomRedacted.swift */; };
@@ -421,6 +427,12 @@
 		8D50BD982580F7D700BAAF7B /* DefaultWheelPickerItemHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWheelPickerItemHeight.swift; sourceTree = "<group>"; };
 		8D50BEB325814FB300BAAF7B /* DisableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableModifier.swift; sourceTree = "<group>"; };
 		8D51323224A3EE48007B13A3 /* LabelStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelStyleModifier.swift; sourceTree = "<group>"; };
+		8D5164D12687C9B400D298F6 /* LazyVGridDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridDemoViewModel.swift; sourceTree = "<group>"; };
+		8D5164D32687C9EF00D298F6 /* LazyGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGridCell.swift; sourceTree = "<group>"; };
+		8D5164D52687CA1400D298F6 /* LazyVGridGridItemSizeConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridGridItemSizeConfiguratorView.swift; sourceTree = "<group>"; };
+		8D5164D72687CA3600D298F6 /* LazyVGridConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridConfiguratorView.swift; sourceTree = "<group>"; };
+		8D5164D92687CA5C00D298F6 /* LazyVGridDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridDemo.swift; sourceTree = "<group>"; };
+		8D5164DB2688D19300D298F6 /* LazyGridCellDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGridCellDemo.swift; sourceTree = "<group>"; };
 		8D5B5BE62578EE1D00F309DE /* RedactedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedModifier.swift; sourceTree = "<group>"; };
 		8D5B5C002578FAEB00F309DE /* UnredactedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnredactedModifier.swift; sourceTree = "<group>"; };
 		8D5B5C1D2579093000F309DE /* CustomRedacted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRedacted.swift; sourceTree = "<group>"; };
@@ -664,9 +676,6 @@
 			isa = PBXGroup;
 			children = (
 				8D24B5C6267F825100E664C7 /* Views */,
-				8D33BBE524AA934B0097EC2E /* GridItem.swift */,
-				8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */,
-				8D33BBE224AA79AC0097EC2E /* LazyVGrid.swift */,
 			);
 			path = Grids;
 			sourceTree = "<group>";
@@ -801,12 +810,17 @@
 		8D24B5C6267F825100E664C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8D24B5C7267F825700E664C7 /* LazyHGrid */,
+				8D33BBE524AA934B0097EC2E /* GridItem.swift */,
+				8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */,
+				8D33BBE224AA79AC0097EC2E /* LazyVGrid.swift */,
+				8D5164DD2688D1A600D298F6 /* Cell */,
+				8D24B5C7267F825700E664C7 /* LazyHGridDemo */,
+				8D5164D02687C99800D298F6 /* LazyVGridDemo */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		8D24B5C7267F825700E664C7 /* LazyHGrid */ = {
+		8D24B5C7267F825700E664C7 /* LazyHGridDemo */ = {
 			isa = PBXGroup;
 			children = (
 				8D24B5C8267F828300E664C7 /* LazyHGridDemoViewModel.swift */,
@@ -814,7 +828,7 @@
 				8D24B5CC267F839500E664C7 /* LazyHGridGridItemSizeConfiguratorView.swift */,
 				8D24B5CE267F83B100E664C7 /* LazyHGridConfiguratorView.swift */,
 			);
-			path = LazyHGrid;
+			path = LazyHGridDemo;
 			sourceTree = "<group>";
 		};
 		8D282E15257EDA5800E6DEC0 /* Gauge, GaugeStyle */ = {
@@ -936,6 +950,26 @@
 				8D50BEB325814FB300BAAF7B /* DisableModifier.swift */,
 			);
 			path = Disabled;
+			sourceTree = "<group>";
+		};
+		8D5164D02687C99800D298F6 /* LazyVGridDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8D5164D12687C9B400D298F6 /* LazyVGridDemoViewModel.swift */,
+				8D5164D52687CA1400D298F6 /* LazyVGridGridItemSizeConfiguratorView.swift */,
+				8D5164D72687CA3600D298F6 /* LazyVGridConfiguratorView.swift */,
+				8D5164D92687CA5C00D298F6 /* LazyVGridDemo.swift */,
+			);
+			path = LazyVGridDemo;
+			sourceTree = "<group>";
+		};
+		8D5164DD2688D1A600D298F6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8D5164D32687C9EF00D298F6 /* LazyGridCell.swift */,
+				8D5164DB2688D19300D298F6 /* LazyGridCellDemo.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		8D5B5BE52578EDCA00F309DE /* Redacted, Unredacted, CustomRedacted */ = {
@@ -1899,6 +1933,7 @@
 				8D66EB5824DEAC0E00FC4941 /* GroupBoxView.swift in Sources */,
 				8DC13F4824A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,
 				8D1ED84824C8D697000F936D /* AccessibilityReduceMotion.swift in Sources */,
+				8D5164D42687C9EF00D298F6 /* LazyGridCell.swift in Sources */,
 				8D33BBE324AA79AC0097EC2E /* LazyVGrid.swift in Sources */,
 				8D7D06502576878A00323A00 /* WidgetFamily.swift in Sources */,
 				8D1DD6EC2675417600EB69AC /* HorizontalAlignmentExtension.swift in Sources */,
@@ -1908,6 +1943,7 @@
 				8D3A769324A8E38800005971 /* TextEditorView.swift in Sources */,
 				8D39F44525753A82000B757F /* TimeZone.swift in Sources */,
 				8D999F7F24B08E470050BD97 /* DatePickerStyleModifier.swift in Sources */,
+				8D5164D82687CA3600D298F6 /* LazyVGridConfiguratorView.swift in Sources */,
 				8D0AD50B2675142E000655AA /* VStack.swift in Sources */,
 				8D0AD4E52673EDCE000655AA /* TaskModifier.swift in Sources */,
 				8D7B37CE24AEFC8B00F95736 /* PinnedViews.swift in Sources */,
@@ -1949,6 +1985,7 @@
 				8D50BEB425814FB300BAAF7B /* DisableModifier.swift in Sources */,
 				8DA7D86326715140002E3081 /* FocusedModifier.swift in Sources */,
 				8D39F46B25756446000B757F /* VerticalSizeClass.swift in Sources */,
+				8D5164DA2687CA5C00D298F6 /* LazyVGridDemo.swift in Sources */,
 				8D3A769024A8D85700005971 /* ColoredSFSymbolsView.swift in Sources */,
 				8D6C0F3224FA998A00041F8C /* PopoverModifer.swift in Sources */,
 				8DDA5C6524A3388A00BF263B /* ProgressViews.swift in Sources */,
@@ -1978,6 +2015,7 @@
 				8D7D066D2576926B00323A00 /* ImageScale.swift in Sources */,
 				8D66EB1B24DDBA4F00FC4941 /* OutlineGroupView.swift in Sources */,
 				8D24B5C9267F828300E664C7 /* LazyHGridDemoViewModel.swift in Sources */,
+				8D5164D22687C9B400D298F6 /* LazyVGridDemoViewModel.swift in Sources */,
 				8D6BB1FA24D0A0BF00C282F8 /* LayoutDirection.swift in Sources */,
 				8D1ED84224C8D002000F936D /* AccessibilityEnabled.swift in Sources */,
 				8D3A767F24A8AA1A00005971 /* SignInWithappleButtonView.swift in Sources */,
@@ -1989,6 +2027,7 @@
 				8D6C0F3424FA99F000041F8C /* PickerStyleModifier.swift in Sources */,
 				8DC13F3F24A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
 				8D7D067E25769A2C00323A00 /* Description.swift in Sources */,
+				8D5164DC2688D19300D298F6 /* LazyGridCellDemo.swift in Sources */,
 				8DDA5C6224A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
 				8DA7D87526727CB1002E3081 /* AlertModifier.swift in Sources */,
 				8D442EE724A80B2C009995DD /* ScaledMetricWrapper.swift in Sources */,
@@ -2039,6 +2078,7 @@
 				8D8442222677FA530087B889 /* StringExtension.swift in Sources */,
 				8D0AD4E82673F07C000655AA /* BindingCollections.swift in Sources */,
 				8D7B37D124AEFD7500F95736 /* VideoPlayerView.swift in Sources */,
+				8D5164D62687CA1400D298F6 /* LazyVGridGridItemSizeConfiguratorView.swift in Sources */,
 				8D999F8224B098040050BD97 /* DisclosureGroupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,7 +5,7 @@
 import Combine
 import SwiftUI
 
-final class LzayHGridDemoViewModel: ObservableObject {
+final class LazyVGridDemoViewModel: ObservableObject {
 
   @Published var itemCustomType: GridItemType = .fixed
   @Published var itemType: GridItem.Size = .fixed(0)
@@ -15,11 +15,11 @@ final class LzayHGridDemoViewModel: ObservableObject {
   @Published var showMinMaxSize = false
   @Published var itemSpacing: CGFloat = 10
   @Published var itemAlignmentCustom: AlignmentCustom = .center
-  @Published var gridItemCount = 4
-  @Published var gridItemAlignmentcustom: VerticalAlignmentCustom = .center
+  @Published var gridItemCount = 3
+  @Published var gridItemAlignmentcustom: HorizontalAlignmentCustom = .center
   @Published var gridSpacing: CGFloat = 10
   @Published var gridShowPinnedViews = false
-  @Published private(set) var gridAlignment: VerticalAlignment = .center
+  @Published private(set) var gridAlignment: HorizontalAlignment = .center
   @Published private(set) var itemAlignment: Alignment = .center
 
   private var subscriptions: Set<AnyCancellable> = []
@@ -40,12 +40,12 @@ final class LzayHGridDemoViewModel: ObservableObject {
       .receive(on: DispatchQueue.main)
       .sink { [weak self] alignment in
         switch alignment {
-        case .top:
-          self?.gridAlignment = .top
+        case .leading:
+          self?.gridAlignment = .leading
         case .center:
           self?.gridAlignment = .center
-        case .bottom:
-          self?.gridAlignment = .bottom
+        case .trailing:
+          self?.gridAlignment = .trailing
         }
       }
       .store(in: &subscriptions)
@@ -84,7 +84,10 @@ final class LzayHGridDemoViewModel: ObservableObject {
       .receive(on: DispatchQueue.main)
       .sink { [weak self] itemType in
         switch itemType {
-        case .adaptive, .flexible:
+        case .adaptive:
+          self?.showMinMaxSize = true
+          self?.gridItemCount = 1
+        case .flexible:
           self?.showMinMaxSize = true
         case .fixed:
           self?.showMinMaxSize = false

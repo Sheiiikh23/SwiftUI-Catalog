@@ -4,9 +4,9 @@
 
 import SwiftUI
 
-struct LazyHGridConfiguratorView: View {
+struct LazyVGridConfiguratorView: View {
 
-  @EnvironmentObject private var viewModel: LzayHGridDemoViewModel
+  @EnvironmentObject private var viewModel: LazyVGridDemoViewModel
 
   var body: some View {
     NavigationView {
@@ -19,7 +19,7 @@ struct LazyHGridConfiguratorView: View {
                 .multilineTextAlignment(.center)
             }
           }
-          LazyHGridGridItemSizeConfiguratorView()
+          LazyVGridGridItemSizeConfiguratorView()
           VStack {
             Text("GridItem spacing : \(Int(viewModel.itemSpacing))")
             Slider(value: $viewModel.itemSpacing, in: 0...50)
@@ -34,9 +34,11 @@ struct LazyHGridConfiguratorView: View {
         .listRowSeparatorTint(.red)
 
         Section(header: Text("Grid Config")) {
-          Stepper("GridItem count : \(Int(viewModel.gridItemCount))", value: $viewModel.gridItemCount, in: 0...10)
+          if viewModel.itemCustomType != .adaptive {
+            Stepper("GridItem count : \(Int(viewModel.gridItemCount))", value: $viewModel.gridItemCount, in: 0...10)
+          }
           Picker("Grid alignment", selection: $viewModel.gridItemAlignmentcustom) {
-            ForEach(VerticalAlignmentCustom.allCases, id: \.self) { alignment in
+            ForEach(HorizontalAlignmentCustom.allCases, id: \.self) { alignment in
               Text(alignment.description.firstLetterCapitalized)
                 .tag(alignment)
             }

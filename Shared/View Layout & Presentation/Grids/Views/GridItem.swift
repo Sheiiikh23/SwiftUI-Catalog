@@ -39,7 +39,7 @@ import SwiftUI
 ///   - flexible : prend toute la height ou width qui lui est disponible
 ///
 /// Le spacing passé en pamètre indique :
-///   - dans une `LazyHGrid` : l'espacement entre chaque row / GridItem
-///   - dans une `LazyVGrid` : l'espacement entre chaque column / GridItem
+///   - dans une `LazyHGrid` : l'espacement vertical entre chaque row / GridItem
+///   - dans une `LazyVGrid` : l'espacement horizontal entre chaque column / GridItem
 ///
 /// Vidéo pour comprendre la disposition des `GridItem` dans une `LazyHGrid` ou `LazyVGrid` : https://swiftui-lab.com/wp-content/uploads/2020/07/layouts.mp4

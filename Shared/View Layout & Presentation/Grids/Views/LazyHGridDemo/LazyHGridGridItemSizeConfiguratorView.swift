@@ -6,7 +6,7 @@ import SwiftUI
 
 struct LazyHGridGridItemSizeConfiguratorView: View {
 
-  @EnvironmentObject var viewModel: LzayHGridDemoViewModel
+  @EnvironmentObject var viewModel: LazyHGridDemoViewModel
 
   var body: some View {
     if viewModel.showMinMaxSize {

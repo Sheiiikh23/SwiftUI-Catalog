@@ -4,7 +4,7 @@
 
 import Foundation
 
-enum GridItemType: Identifiable, CaseIterable {
+enum GridItemType: Identifiable, CaseIterable, Comparable {
   case adaptive
   case fixed
   case flexible

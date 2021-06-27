@@ -4,13 +4,14 @@
 
 import SwiftUI
 
-struct LzayHGridDemo: View {
+struct LazyVGridDemo: View {
 
-  @EnvironmentObject var viewModel: LzayHGridDemoViewModel
+  @EnvironmentObject private var viewModel: LazyVGridDemoViewModel
 
   var body: some View {
-    ScrollView(.horizontal) {
-      LazyHGrid(rows: Array(repeating: GridItem(viewModel.itemType, spacing: viewModel.itemSpacing, alignment: viewModel.itemAlignment), count: viewModel.gridItemCount),
+    ScrollView {
+      LazyVGrid(columns: Array(repeating: GridItem(viewModel.itemType, spacing: viewModel.itemSpacing, alignment: viewModel.itemAlignment),
+                               count: viewModel.gridItemCount),
                 alignment: viewModel.gridAlignment, spacing: viewModel.gridSpacing,
                 pinnedViews: viewModel.gridShowPinnedViews ? [.sectionHeaders, .sectionFooters] : .init()) {
         Section(header: HeaderAndFooterPinnedView(title: "1 to 250"),
@@ -21,6 +22,10 @@ struct LzayHGridDemo: View {
               Rectangle()
                 .fill(.black)
                 .frame(width: viewModel.itemSize * 0.75, height: viewModel.itemSize * 0.75)
+                .onChange(of: viewModel.itemSize) {
+                  print("====", $0, $0 * 0.75)
+                }
+                .padding()
               Text("Item n°\(item)")
                 .fontWeight(.bold)
                 .foregroundColor(.white)
