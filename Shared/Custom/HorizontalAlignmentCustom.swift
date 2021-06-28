@@ -4,21 +4,21 @@
 
 import Foundation
 
-enum VerticalAlignmentCustom: Identifiable, CaseIterable {
-  case top
+enum HorizontalAlignmentCustom: Identifiable, CaseIterable {
+  case leading
   case center
-  case bottom
+  case trailing
 
   var id: UUID { return UUID() }
 
   var description: String {
     switch self {
-    case .top:
-      return "top"
+    case .leading:
+      return "leading"
     case .center:
       return "center"
-    case .bottom:
-      return "bottom"
+    case .trailing:
+      return "trailing"
     }
   }
 }

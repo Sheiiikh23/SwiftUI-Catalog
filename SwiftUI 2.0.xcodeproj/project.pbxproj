@@ -87,6 +87,7 @@
 		8D3A769124A8D85700005971 /* ColoredSFSymbolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A768F24A8D85700005971 /* ColoredSFSymbolsView.swift */; };
 		8D3A769324A8E38800005971 /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A769224A8E38800005971 /* TextEditorView.swift */; };
 		8D3A769424A8E38800005971 /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3A769224A8E38800005971 /* TextEditorView.swift */; };
+		8D3E3D4C2689E3950084F924 /* HorizontalAlignmentCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E3D4B2689E3950084F924 /* HorizontalAlignmentCustom.swift */; };
 		8D442EDD24A80549009995DD /* ContainerRelativeShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDC24A80549009995DD /* ContainerRelativeShapeView.swift */; };
 		8D442EDE24A80549009995DD /* ContainerRelativeShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDC24A80549009995DD /* ContainerRelativeShapeView.swift */; };
 		8D442EE024A808CE009995DD /* FontCustomModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D442EDF24A808CE009995DD /* FontCustomModifier.swift */; };
@@ -119,6 +120,7 @@
 		8D5164D82687CA3600D298F6 /* LazyVGridConfiguratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5164D72687CA3600D298F6 /* LazyVGridConfiguratorView.swift */; };
 		8D5164DA2687CA5C00D298F6 /* LazyVGridDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5164D92687CA5C00D298F6 /* LazyVGridDemo.swift */; };
 		8D5164DC2688D19300D298F6 /* LazyGridCellDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5164DB2688D19300D298F6 /* LazyGridCellDemo.swift */; };
+		8D5164DF2688F94E00D298F6 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5164DE2688F94E00D298F6 /* Group.swift */; };
 		8D5B5BE72578EE1D00F309DE /* RedactedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B5BE62578EE1D00F309DE /* RedactedModifier.swift */; };
 		8D5B5C012578FAEB00F309DE /* UnredactedModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B5C002578FAEB00F309DE /* UnredactedModifier.swift */; };
 		8D5B5C1E2579093000F309DE /* CustomRedacted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5B5C1D2579093000F309DE /* CustomRedacted.swift */; };
@@ -126,8 +128,7 @@
 		8D66EB1C24DDBA4F00FC4941 /* OutlineGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66EB1A24DDBA4F00FC4941 /* OutlineGroupView.swift */; };
 		8D66EB5524DDBFE700FC4941 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66EB5424DDBFE700FC4941 /* MenuView.swift */; };
 		8D66EB5624DDBFE700FC4941 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66EB5424DDBFE700FC4941 /* MenuView.swift */; };
-		8D66EB5824DEAC0E00FC4941 /* GroupBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66EB5724DEAC0E00FC4941 /* GroupBoxView.swift */; };
-		8D66EB5924DEAC0E00FC4941 /* GroupBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66EB5724DEAC0E00FC4941 /* GroupBoxView.swift */; };
+		8D66EB5824DEAC0E00FC4941 /* GroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66EB5724DEAC0E00FC4941 /* GroupBox.swift */; };
 		8D680A092508218200AFE8A7 /* DisableAutoCorrection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D680A082508218200AFE8A7 /* DisableAutoCorrection.swift */; };
 		8D680A0B2508230E00AFE8A7 /* TextCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D680A0A2508230E00AFE8A7 /* TextCase.swift */; };
 		8D68A81024C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D68A80F24C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift */; };
@@ -294,7 +295,7 @@
 		8DF93EEA24A7B62400B84CD0 /* ToolbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE924A7B62400B84CD0 /* ToolbarItemView.swift */; };
 		8DF93EEB24A7B62400B84CD0 /* ToolbarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF93EE924A7B62400B84CD0 /* ToolbarItemView.swift */; };
 		8DFC196025E3A7BF004445F8 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC195F25E3A7BF004445F8 /* SectionView.swift */; };
-		8DFC196F25E3B976004445F8 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC196E25E3B976004445F8 /* FormView.swift */; };
+		8DFC196F25E3B976004445F8 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC196E25E3B976004445F8 /* Form.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -411,6 +412,7 @@
 		8D3A768C24A8CFFA00005971 /* TextCaseModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCaseModifier.swift; sourceTree = "<group>"; };
 		8D3A768F24A8D85700005971 /* ColoredSFSymbolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredSFSymbolsView.swift; sourceTree = "<group>"; };
 		8D3A769224A8E38800005971 /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
+		8D3E3D4B2689E3950084F924 /* HorizontalAlignmentCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalAlignmentCustom.swift; sourceTree = "<group>"; };
 		8D442EDC24A80549009995DD /* ContainerRelativeShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerRelativeShapeView.swift; sourceTree = "<group>"; };
 		8D442EDF24A808CE009995DD /* FontCustomModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontCustomModifier.swift; sourceTree = "<group>"; };
 		8D442EE324A80B23009995DD /* ImageInterpolationInText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInterpolationInText.swift; sourceTree = "<group>"; };
@@ -433,12 +435,13 @@
 		8D5164D72687CA3600D298F6 /* LazyVGridConfiguratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridConfiguratorView.swift; sourceTree = "<group>"; };
 		8D5164D92687CA5C00D298F6 /* LazyVGridDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGridDemo.swift; sourceTree = "<group>"; };
 		8D5164DB2688D19300D298F6 /* LazyGridCellDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGridCellDemo.swift; sourceTree = "<group>"; };
+		8D5164DE2688F94E00D298F6 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		8D5B5BE62578EE1D00F309DE /* RedactedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedModifier.swift; sourceTree = "<group>"; };
 		8D5B5C002578FAEB00F309DE /* UnredactedModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnredactedModifier.swift; sourceTree = "<group>"; };
 		8D5B5C1D2579093000F309DE /* CustomRedacted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRedacted.swift; sourceTree = "<group>"; };
 		8D66EB1A24DDBA4F00FC4941 /* OutlineGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineGroupView.swift; sourceTree = "<group>"; };
 		8D66EB5424DDBFE700FC4941 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		8D66EB5724DEAC0E00FC4941 /* GroupBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBoxView.swift; sourceTree = "<group>"; };
+		8D66EB5724DEAC0E00FC4941 /* GroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBox.swift; sourceTree = "<group>"; };
 		8D680A082508218200AFE8A7 /* DisableAutoCorrection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableAutoCorrection.swift; sourceTree = "<group>"; };
 		8D680A0A2508230E00AFE8A7 /* TextCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCase.swift; sourceTree = "<group>"; };
 		8D68A80F24C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityDifferentiateWithoutColor.swift; sourceTree = "<group>"; };
@@ -562,7 +565,7 @@
 		8DF93EE624A7B60700B84CD0 /* ToolbarItemPlacement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarItemPlacement.swift; sourceTree = "<group>"; };
 		8DF93EE924A7B62400B84CD0 /* ToolbarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarItemView.swift; sourceTree = "<group>"; };
 		8DFC195F25E3A7BF004445F8 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
-		8DFC196E25E3B976004445F8 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
+		8DFC196E25E3B976004445F8 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -683,6 +686,9 @@
 		8D0AD50226751042000655AA /* Containers */ = {
 			isa = PBXGroup;
 			children = (
+				8DFC196E25E3B976004445F8 /* Form.swift */,
+				8D5164DE2688F94E00D298F6 /* Group.swift */,
+				8D66EB5724DEAC0E00FC4941 /* GroupBox.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -972,6 +978,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		8D5164E02688FEDA00D298F6 /* Views Modifiers (WIP) */ = {
+			isa = PBXGroup;
+			children = (
+				8D44478525640A5D00D875E3 /* GroupBoxStyleModifier.swift */,
+			);
+			path = "Views Modifiers (WIP)";
+			sourceTree = "<group>";
+		};
 		8D5B5BE52578EDCA00F309DE /* Redacted, Unredacted, CustomRedacted */ = {
 			isa = PBXGroup;
 			children = (
@@ -1098,6 +1112,7 @@
 			children = (
 				8D8442192677F90C0087B889 /* GridItemType.swift */,
 				8D84421B2677F9360087B889 /* VerticalAlignmentCustom.swift */,
+				8D3E3D4B2689E3950084F924 /* HorizontalAlignmentCustom.swift */,
 				8D84421D2677F9570087B889 /* AlignmentCustom.swift */,
 			);
 			path = Custom;
@@ -1324,15 +1339,6 @@
 			path = "Menu & ContextMenu";
 			sourceTree = "<group>";
 		};
-		8DBCF85C256CB6C900AA564B /* GroupBox */ = {
-			isa = PBXGroup;
-			children = (
-				8D66EB5724DEAC0E00FC4941 /* GroupBoxView.swift */,
-				8D44478525640A5D00D875E3 /* GroupBoxStyleModifier.swift */,
-			);
-			path = GroupBox;
-			sourceTree = "<group>";
-		};
 		8DBCF864256CB70900AA564B /* Toggle */ = {
 			isa = PBXGroup;
 			children = (
@@ -1510,6 +1516,7 @@
 		8DDA5C1A24A31A5700BF263B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8D5164E02688FEDA00D298F6 /* Views Modifiers (WIP) */,
 				8D8442182677F8FE0087B889 /* Custom */,
 				8D1DD6E82675414A00EB69AC /* Extension */,
 				8D0AD4FE2675100B000655AA /* Views & Controls */,
@@ -1615,9 +1622,7 @@
 				8DBCF89C256CBA8100AA564B /* DisclosureGroup */,
 				8DA7D8612671512E002E3081 /* FocusedViewModifier */,
 				8DA7D88226729C69002E3081 /* ForegroundStyle */,
-				8DFC196D25E3B965004445F8 /* Form */,
 				8DBCF8A2256CBACA00AA564B /* FullScreenCover, Popover, Sheet & InteractiveDismissDisabled */,
-				8DBCF85C256CB6C900AA564B /* GroupBox */,
 				8DBCF8C5256CBBC700AA564B /* Help */,
 				8DBCF8C4256CBBB900AA564B /* KeyboardShortcut */,
 				8DBCF859256CB64600AA564B /* Label */,
@@ -1657,14 +1662,6 @@
 				8DBCF843256CB55A00AA564B /* WindowStyle, WindowToolbarStyle */,
 			);
 			path = "Views & Modifiers";
-			sourceTree = "<group>";
-		};
-		8DFC196D25E3B965004445F8 /* Form */ = {
-			isa = PBXGroup;
-			children = (
-				8DFC196E25E3B976004445F8 /* FormView.swift */,
-			);
-			path = Form;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1930,10 +1927,11 @@
 				8D39F474257574D1000B757F /* Undomanager.swift in Sources */,
 				8D66EB5524DDBFE700FC4941 /* MenuView.swift in Sources */,
 				8D1ED84524C8D451000F936D /* AccessibilityInvertColors.swift in Sources */,
-				8D66EB5824DEAC0E00FC4941 /* GroupBoxView.swift in Sources */,
+				8D66EB5824DEAC0E00FC4941 /* GroupBox.swift in Sources */,
 				8DC13F4824A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,
 				8D1ED84824C8D697000F936D /* AccessibilityReduceMotion.swift in Sources */,
 				8D5164D42687C9EF00D298F6 /* LazyGridCell.swift in Sources */,
+				8D5164DF2688F94E00D298F6 /* Group.swift in Sources */,
 				8D33BBE324AA79AC0097EC2E /* LazyVGrid.swift in Sources */,
 				8D7D06502576878A00323A00 /* WidgetFamily.swift in Sources */,
 				8D1DD6EC2675417600EB69AC /* HorizontalAlignmentExtension.swift in Sources */,
@@ -1958,6 +1956,7 @@
 				8DA0F46024CA1AAD003C751B /* AccessibilityShowButtonShapes.swift in Sources */,
 				8D47558F258B725000C585AD /* FontStandardModifier.swift in Sources */,
 				8DA7D86826715CEF002E3081 /* FocusStateWrapper.swift in Sources */,
+				8D3E3D4C2689E3950084F924 /* HorizontalAlignmentCustom.swift in Sources */,
 				8D1DD6EA2675415A00EB69AC /* VerticalAlignmentExtension.swift in Sources */,
 				8DDA5C4424A31A5800BF263B /* SwiftUI_2_0App.swift in Sources */,
 				8DDA5C5C24A3217D00BF263B /* LabelView.swift in Sources */,
@@ -2059,7 +2058,7 @@
 				8DA7D86B267163CD002E3081 /* BadgeModifier.swift in Sources */,
 				8D39F45D2575547C000B757F /* HorizontalSizeClass.swift in Sources */,
 				8DE9F4F724AD1BB60054CE64 /* SpriteKitView.swift in Sources */,
-				8DFC196F25E3B976004445F8 /* FormView.swift in Sources */,
+				8DFC196F25E3B976004445F8 /* Form.swift in Sources */,
 				8D0AD510267524AC000655AA /* ZStack.swift in Sources */,
 				8D0AD4FC2674E304000655AA /* PrivacySensitiveModifier.swift in Sources */,
 				8DB0C1B224B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift in Sources */,
@@ -2101,7 +2100,6 @@
 				8DA0464224D1921F0005159E /* MinimumScaleFactor.swift in Sources */,
 				8D66EB5624DDBFE700FC4941 /* MenuView.swift in Sources */,
 				8D1ED84624C8D451000F936D /* AccessibilityInvertColors.swift in Sources */,
-				8D66EB5924DEAC0E00FC4941 /* GroupBoxView.swift in Sources */,
 				8DC13F4924A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,
 				8DA7D87626727CB1002E3081 /* AlertModifier.swift in Sources */,
 				8D1ED84924C8D697000F936D /* AccessibilityReduceMotion.swift in Sources */,
