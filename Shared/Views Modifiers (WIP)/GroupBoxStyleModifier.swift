@@ -1,8 +1,5 @@
 //
-//  SwiftUIView.swift
-//  iOS
-//
-//  Created by Lucas Abijmil on 17/11/2020.
+//  Copyright (c) 2021 Lucas Abijmil. All rights reserved.
 //
 
 import SwiftUI

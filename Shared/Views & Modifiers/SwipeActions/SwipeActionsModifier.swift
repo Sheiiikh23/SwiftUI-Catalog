@@ -21,6 +21,8 @@ import SwiftUI
 
 // MARK: - Utilisation : Créer un swipeActions sur les rows d'une List
 
+// Si deux Button alors allowsFullSwipe = false (à investiguer)
+
 struct SwipeActionsModifier: View {
 
   var body: some View {

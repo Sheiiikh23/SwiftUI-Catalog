@@ -13,6 +13,7 @@ import SwiftUI
 /// Askip dispo dès iOS 13 grâce à Swift
 
 #warning("TODO")
+// Faire un exemple avec un @StateObject
 
 struct Direction: Identifiable {
   let id = UUID()

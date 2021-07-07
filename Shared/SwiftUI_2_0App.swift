@@ -1,8 +1,5 @@
 //
-//  SwiftUI_2_0App.swift
-//  Shared
-//
-//  Created by Lucas Abijmil on 24/06/2020.
+//  Copyright (c) 2021 Lucas Abijmil. All rights reserved.
 //
 
 import SwiftUI
@@ -25,7 +22,7 @@ struct SwiftUI_2_0App: App {
 
   var body: some Scene {
     WindowGroup {
-      GroupBoxDemoView()
+      MaterialView()
         /// Injection de dépendances dans toutes les vues :)
         .environmentObject(userViewModel)
     }

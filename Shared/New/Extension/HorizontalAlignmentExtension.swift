@@ -18,4 +18,15 @@ extension HorizontalAlignment {
       return ""
     }
   }
+
+  mutating func map(_ customAlignment: HorizontalAlignmentCustom) {
+    switch customAlignment {
+    case .leading:
+      self = .leading
+    case .center:
+      self = .center
+    case .trailing:
+      self = .trailing
+    }
+  }
 }

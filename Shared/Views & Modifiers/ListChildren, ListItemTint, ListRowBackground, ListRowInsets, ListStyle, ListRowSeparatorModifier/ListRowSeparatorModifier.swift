@@ -17,6 +17,7 @@ struct ListRowSeparatorModifier: View {
       ForEach(1..<100) { i in
       Text("Row n°\(i)")
         .listRowSeparator(.hidden) // .visible, .automatic
+        .listSectionSeparator(.visible) // aussi pour les sections
       }
     }
   }
@@ -28,9 +29,10 @@ struct ListRowSepartorTintModifier: View {
 
   var body: some View {
     List {
-      ForEach(1..<100) { i in
+      ForEach(1..<100) { i in
       Text("Row n°\(i)")
           .listRowSeparatorTint(.red)
+          .listSectionSeparatorTint(.red, edges: .bottom)
       }
     }
   }

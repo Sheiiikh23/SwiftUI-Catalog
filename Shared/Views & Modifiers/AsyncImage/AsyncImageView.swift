@@ -35,7 +35,7 @@ struct AsyncImageView: View {
     ScrollView {
       VStack(spacing: 30) {
 
-        // URL, scale = 1
+        // URL, scale = 1 –> considéré comme une `View` on ne peut donc pas appliquer `resizable()`
         AsyncImage(url: url)
 
         // URL, scale
@@ -48,6 +48,8 @@ struct AsyncImageView: View {
             Text("Empty")
           case .success(let image):
             image
+              .resizable()
+              .aspectRatio(contentMode: .fill)
           case .failure(let error):
             Text("Error: \(error.localizedDescription)")
           @unknown default:
@@ -62,6 +64,8 @@ struct AsyncImageView: View {
             Text("Empty")
           case .success(let image):
             image
+              .resizable()
+              .aspectRatio(contentMode: .fill)
           case .failure(let error):
             Text("Error: \(error.localizedDescription)")
           @unknown default:
@@ -86,6 +90,8 @@ struct AsyncImageView: View {
         // URL, (Image) -> some View, placeholder: () -> some View
         AsyncImage(url: url) { image in
           image
+            .resizable()
+            .aspectRatio(contentMode: .fill)
         } placeholder: {
           Text("Placeholder")
         }
@@ -93,6 +99,8 @@ struct AsyncImageView: View {
         // URL, scale, (Image) -> some View, placeholder: () -> some View
         AsyncImage(url: url, scale: 2) { image in
           image
+            .resizable()
+            .aspectRatio(contentMode: .fill)
         } placeholder: {
           Text("Placeholder")
         }

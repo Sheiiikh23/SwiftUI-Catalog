@@ -12,6 +12,8 @@ import SwiftUI
 
 // MARK: - Utilisation : Créer des menus contextuels avec force touch
 
+#warning("REWORK ME – Use the Button(_: ,role:) initiliazer")
+
 struct ContextMenuModifier: View {
 
   var body: some View {

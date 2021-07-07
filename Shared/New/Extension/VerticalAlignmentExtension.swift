@@ -22,4 +22,15 @@ extension VerticalAlignment {
       return ""
     }
   }
+
+  mutating func map(_ customAlignment: VerticalAlignmentCustom) {
+    switch customAlignment {
+    case .top:
+      self = .top
+    case .center:
+      self = .center
+    case .bottom:
+      self = .bottom
+    }
+  }
 }

@@ -12,6 +12,8 @@ import SwiftUI
 /// SearchCompletion s'utilise avec les suggestion de la searchBar
 ///
 /// Doit être wrapper dans une NavigationView
+///
+/// Faire un vrai exemple avec un @StateObject
 
 #warning("TO DO – Pas mal de paramètre disponible")
 

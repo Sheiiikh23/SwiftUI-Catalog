@@ -16,6 +16,7 @@ import SwiftUI
 ///     • ultraThinMaterial
 ///     • ultraThickMaterial
 /// Peut être directement utilisé en temps que background car conform à View
+/// Souvent utilisé avec `safeAreaInset(edge:)`
 
 // MARK: - Utilisation : Permet de mettre un background translucide qui s'adapte en fonction du thème
 
@@ -40,8 +41,36 @@ struct MaterialEffectView: View {
   }
 }
 
+struct MaterialView: View {
+
+  var body: some View {
+    ZStack {
+      Image("bubble_background")
+        .resizable()
+        .aspectRatio(contentMode: .fill)
+        .ignoresSafeArea()
+      VStack(alignment: .leading, spacing: 4) {
+        Text("Gradient text")
+          .font(.largeTitle)
+          .fontWeight(.bold)
+          .foregroundStyle(
+            .linearGradient(colors: [.purple, .blue],
+                            startPoint: .topLeading, endPoint: .bottomTrailing)
+          )
+        Text("Text with Overlay")
+          .font(.largeTitle)
+          .fontWeight(.bold)
+          .blendMode(.overlay)
+      }
+      .padding(60)
+      .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 20))
+    }
+  }
+}
+
 struct VisualEffectView_Previews: PreviewProvider {
   static var previews: some View {
     MaterialEffectView()
+    MaterialView()
   }
 }

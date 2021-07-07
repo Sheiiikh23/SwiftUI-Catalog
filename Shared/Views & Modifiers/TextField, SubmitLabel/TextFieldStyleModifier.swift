@@ -20,6 +20,11 @@ import SwiftUI
 
 // MARK: - Utilisation : Custom la UI d'un TextField
 
+// TODO: textfieldview avec le nouveau format
+//TextField("heioi", value: .constant(""), format: .name(style: .medium))
+//TextField("ziefh", text: .constant(""), prompt: Text("New activity"))
+
+
 struct TextFieldStyleModifier: View {
 
   @State private var textFieldValue1 = ""
