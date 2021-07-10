@@ -62,12 +62,72 @@ struct IfPostFixMemberExpressions: View {
   }
 }
 
+struct AsyncAwaitInSwiftUI: View {
+
+  @State private var news = [
+    NewsItem(id: 0, title: "Want the latest news ?", strap: "Pull to refresh !")
+  ]
+
+  var body: some View {
+    NavigationView {
+      List(news) { item in
+        VStack(alignment: .leading) {
+          Text(item.title)
+            .font(.headline)
+          Text(item.strap)
+            .foregroundColor(.secondary)
+        }
+      }
+    }
+    .refreshable {
+      do {
+        let url = URL(string: "https://www.hackingwithswift.com/samples/news-1.json")!
+        let (data, response) = try await URLSession.shared.data(from: url)
+        print(data, response)
+        news = try JSONDecoder().decode([NewsItem].self, from: data)
+      } catch {
+        print("WOOPS", error.localizedDescription)
+      }
+    }
+  }
+}
+
+struct PostFixMemberExpressionsView: View {
+
+  var body: some View {
+    Text("Hello world")
+    #if os(macOS)
+      .font(.largeTitle)
+    #else
+      #if DEBUG
+      .font(.headline)
+      #else
+      .background(Color.red)
+      #endif
+    #endif
+  }
+}
+
+struct ConvertDoubleToCGFloatAndViceVersaView: View {
+
+  let value: Double = 0.9 // Peut être Double comme CGFloat
+
+  var body: some View {
+    Text("Hello world!")
+      .opacity(value) // Double
+      .scaleEffect(value) // CGFloat, en vrai fait : .scaleEffect(CGFloat(value))
+  }
+}
+
 struct SwiftUIView_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      ListStyleModifierWithStaticProperty()
-      TabViewStyleModifierWithStaticProperty()
-      IfPostFixMemberExpressions()
+//      ListStyleModifierWithStaticProperty()
+//      TabViewStyleModifierWithStaticProperty()
+//      IfPostFixMemberExpressions()
+//      AsyncAwaitInSwiftUI()
+//      PostFixMemberExpressionsView()
+      ConvertDoubleToCGFloatAndViceVersaView()
     }
   }
 }

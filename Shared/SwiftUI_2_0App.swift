@@ -22,7 +22,7 @@ struct SwiftUI_2_0App: App {
 
   var body: some Scene {
     WindowGroup {
-      MaterialView()
+      ForegroundStyleModifier()
         /// Injection de dépendances dans toutes les vues :)
         .environmentObject(userViewModel)
     }
@@ -42,7 +42,7 @@ struct SwiftUI_2_0App: App {
 }
 
 /// On peut créer une class conforme à UIApplicationDelegate dans laquelle on va pouvoir faires les mêmes choses qu'auparavant tel que les push notifications
-class AppDelegate: NSObject, UIApplicationDelegate {
+final class AppDelegate: NSObject, UIApplicationDelegate {
 
   /// Ajout de n'importe quelle fonction
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {

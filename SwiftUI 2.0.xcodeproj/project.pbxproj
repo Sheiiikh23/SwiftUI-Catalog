@@ -223,6 +223,8 @@
 		8DA7D87E267298BC002E3081 /* MenuWithPrimaryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D87C267298BC002E3081 /* MenuWithPrimaryAction.swift */; };
 		8DA7D88126729AA3002E3081 /* ForegroundStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D88026729AA3002E3081 /* ForegroundStyleModifier.swift */; };
 		8DA7D88426729CB4002E3081 /* ListRowSeparatorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7D88326729CB4002E3081 /* ListRowSeparatorModifier.swift */; };
+		8DAD45C32699F11100518477 /* IgnoreSafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD45C22699F11100518477 /* IgnoreSafeArea.swift */; };
+		8DAD45C6269A031F00518477 /* MaterialExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD45C5269A031F00518477 /* MaterialExtension.swift */; };
 		8DAED1DA2694CC1A0044B5CD /* TextSelectionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAED1D92694CC1A0044B5CD /* TextSelectionModifier.swift */; };
 		8DAED1DD2694CE530044B5CD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAED1DC2694CE530044B5CD /* Button.swift */; };
 		8DAED1E02694F5220044B5CD /* SymbolVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAED1DF2694F5220044B5CD /* SymbolVariant.swift */; };
@@ -529,6 +531,8 @@
 		8DA7D87C267298BC002E3081 /* MenuWithPrimaryAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWithPrimaryAction.swift; sourceTree = "<group>"; };
 		8DA7D88026729AA3002E3081 /* ForegroundStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForegroundStyleModifier.swift; sourceTree = "<group>"; };
 		8DA7D88326729CB4002E3081 /* ListRowSeparatorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowSeparatorModifier.swift; sourceTree = "<group>"; };
+		8DAD45C22699F11100518477 /* IgnoreSafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IgnoreSafeArea.swift; sourceTree = "<group>"; };
+		8DAD45C5269A031F00518477 /* MaterialExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialExtension.swift; sourceTree = "<group>"; };
 		8DAED1D92694CC1A0044B5CD /* TextSelectionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSelectionModifier.swift; sourceTree = "<group>"; };
 		8DAED1DC2694CE530044B5CD /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		8DAED1DF2694F5220044B5CD /* SymbolVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolVariant.swift; sourceTree = "<group>"; };
@@ -841,6 +845,7 @@
 				8D1DD6EF26762B5600EB69AC /* ViewExtension.swift */,
 				8D84421F2677F9FD0087B889 /* GeometryProxyExtension.swift */,
 				8D8442212677FA530087B889 /* StringExtension.swift */,
+				8DAD45C5269A031F00518477 /* MaterialExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1318,6 +1323,14 @@
 			path = ForegroundStyle;
 			sourceTree = "<group>";
 		};
+		8DAD45C12699F0FF00518477 /* IgnoreSafeAreaModifier */ = {
+			isa = PBXGroup;
+			children = (
+				8DAD45C22699F11100518477 /* IgnoreSafeArea.swift */,
+			);
+			path = IgnoreSafeAreaModifier;
+			sourceTree = "<group>";
+		};
 		8DAED1D82694CC0C0044B5CD /* TextSelectionModifier */ = {
 			isa = PBXGroup;
 			children = (
@@ -1706,6 +1719,7 @@
 		8DEBD12E24A3E643004AAE41 /* Views & Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				8DAD45C12699F0FF00518477 /* IgnoreSafeAreaModifier */,
 				8DAED1DE2694F50F0044B5CD /* SymbolVariantModifier */,
 				8DAED1DB2694CE4C0044B5CD /* Button */,
 				8DAED1D82694CC0C0044B5CD /* TextSelectionModifier */,
@@ -2023,6 +2037,7 @@
 				8DE4440124CAA7DF0079B2B7 /* ControlSize.swift in Sources */,
 				8D3A767424A89C2600005971 /* ToggleStyleModifier.swift in Sources */,
 				8D0AD4F82674DF18000655AA /* ControlProminenceModifier.swift in Sources */,
+				8DAD45C32699F11100518477 /* IgnoreSafeArea.swift in Sources */,
 				8D0AD4FA2674E078000655AA /* SymbolRenderingModeModifier.swift in Sources */,
 				8D97EDDD24E1D7D4009E60E6 /* SizeCategory.swift in Sources */,
 				8DB0C1AC24B21F3F006818B4 /* SceneStorageWrapper.swift in Sources */,
@@ -2071,6 +2086,7 @@
 				8DE67207257674C6001C17DB /* OpenURL.swift in Sources */,
 				8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */,
 				8D39E24325841FAA009FCC01 /* TextFieldStyleModifier.swift in Sources */,
+				8DAD45C6269A031F00518477 /* MaterialExtension.swift in Sources */,
 				8DE9F4EC24AD114E0054CE64 /* MapView.swift in Sources */,
 				8D6DB2F8266FFC2900C72C2E /* Swift5_5.swift in Sources */,
 				8DF93EDF24A7955D00B84CD0 /* ListChildrenView.swift in Sources */,

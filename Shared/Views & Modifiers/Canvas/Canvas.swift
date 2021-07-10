@@ -4,6 +4,8 @@
 
 import SwiftUI
 
+// C'est une shape donc prend toute la width & height disponible
+
 #warning("TO DO")
 
 struct CanvasView: View {

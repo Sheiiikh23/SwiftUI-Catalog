@@ -11,10 +11,11 @@ import SwiftUI
 /// Disponible sur : i•Pad•OS / tvOS / macOS / Mac Catalyst
 ///
 /// 4 cases :
-///  - regularMaterial,
-///     • thickMaterial
-///     • ultraThinMaterial
-///     • ultraThickMaterial
+///  - ultraThin•Material
+///  - thin•Material
+///  - regular•Material,
+///  - thick•Material
+///  - ultraThick•Material
 /// Peut être directement utilisé en temps que background car conform à View
 /// Souvent utilisé avec `safeAreaInset(edge:)`
 
@@ -22,7 +23,7 @@ import SwiftUI
 
 struct MaterialEffectView: View {
 
-  let materials: [Material] = [.regularMaterial, .thickMaterial, .ultraThinMaterial, .ultraThickMaterial]
+  let materials: [Material] = [.ultraThin, .ultraThinMaterial, .thin, .thinMaterial, .regular, .regularMaterial, .thick, .thickMaterial, .ultraThick, .ultraThickMaterial]
 
   var body: some View {
     VStack {
