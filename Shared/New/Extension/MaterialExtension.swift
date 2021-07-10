@@ -5,9 +5,8 @@
 import SwiftUI
 
 extension Material: Hashable {
-  public func hash(into hasher: inout Hasher) {
-    hasher.finalize()
-  }
+
+  public func hash(into hasher: inout Hasher) { }
 
   public static func == (lhs: Material, rhs: Material) -> Bool {
     return lhs.hashValue == rhs.hashValue

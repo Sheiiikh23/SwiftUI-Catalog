@@ -22,7 +22,7 @@ struct SwiftUI_2_0App: App {
 
   var body: some Scene {
     WindowGroup {
-      ForegroundStyleModifier()
+      SafeAreaInsetModifierSample()
         /// Injection de dépendances dans toutes les vues :)
         .environmentObject(userViewModel)
     }

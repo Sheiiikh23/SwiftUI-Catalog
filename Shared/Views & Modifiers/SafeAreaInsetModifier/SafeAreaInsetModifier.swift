@@ -87,8 +87,36 @@ struct SafeAreaInsetModifier: View {
   }
 }
 
+struct SafeAreaInsetModifierSample: View {
+
+  let colors: [Color] = [.black, .white, .blue, .indigo, .cyan, .gray, .mint, .teal, .purple, .pink, .orange, .red, .yellow, .green, .black, .white, .blue, .indigo, .cyan, .gray, .mint, .teal, .purple, .pink, .orange, .red, .yellow, .green]
+
+  var body: some View {
+    List {
+      ForEach(colors, id: \.self) { color in
+        HStack(spacing: 10) {
+          RoundedRectangle(cornerRadius: 8)
+            .fill(color)
+            .frame(width: 40, height: 40)
+          Text("\(color.description.firstLetterCapitalized)")
+        }
+      }
+    }
+    .safeAreaInset(edge: .bottom) {
+      HStack {
+        Text("Name")
+        Spacer()
+        Text("\(colors.count) colors")
+      }
+      .padding()
+      .background(.regularMaterial)
+    }
+  }
+}
+
 struct SafeAreaInsetModifier_Previews: PreviewProvider {
   static var previews: some View {
     SafeAreaInsetModifier()
+    SafeAreaInsetModifierSample()
   }
 }
