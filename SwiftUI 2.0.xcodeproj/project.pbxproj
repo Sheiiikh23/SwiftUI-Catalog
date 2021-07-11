@@ -63,6 +63,8 @@
 		8D33BBE624AA934B0097EC2E /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D33BBE524AA934B0097EC2E /* GridItem.swift */; };
 		8D33BBE724AA934B0097EC2E /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D33BBE524AA934B0097EC2E /* GridItem.swift */; };
 		8D35CD9B269A405600EDD6FF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35CD9A269A405600EDD6FF /* ColorExtension.swift */; };
+		8D35CD9E269B11E500EDD6FF /* DrawingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35CD9D269B11E500EDD6FF /* DrawingGroup.swift */; };
+		8D35CDA0269B21AF00EDD6FF /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35CD9F269B21AF00EDD6FF /* CGRectExtension.swift */; };
 		8D36D1B125096EF90074E498 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36D1B025096EF90074E498 /* Calendar.swift */; };
 		8D36D1B3250971E20074E498 /* EditMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36D1B2250971E20074E498 /* EditMode.swift */; };
 		8D39E24325841FAA009FCC01 /* TextFieldStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D39E24225841FAA009FCC01 /* TextFieldStyleModifier.swift */; };
@@ -411,6 +413,8 @@
 		8D33BBE224AA79AC0097EC2E /* LazyVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVGrid.swift; sourceTree = "<group>"; };
 		8D33BBE524AA934B0097EC2E /* GridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItem.swift; sourceTree = "<group>"; };
 		8D35CD9A269A405600EDD6FF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		8D35CD9D269B11E500EDD6FF /* DrawingGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingGroup.swift; sourceTree = "<group>"; };
+		8D35CD9F269B21AF00EDD6FF /* CGRectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
 		8D36D1B025096EF90074E498 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		8D36D1B2250971E20074E498 /* EditMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMode.swift; sourceTree = "<group>"; };
 		8D39E24225841FAA009FCC01 /* TextFieldStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyleModifier.swift; sourceTree = "<group>"; };
@@ -849,6 +853,7 @@
 				8D8442212677FA530087B889 /* StringExtension.swift */,
 				8DAD45C5269A031F00518477 /* MaterialExtension.swift */,
 				8D35CD9A269A405600EDD6FF /* ColorExtension.swift */,
+				8D35CD9F269B21AF00EDD6FF /* CGRectExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -900,6 +905,14 @@
 				8DF93ED424A78F0700B84CD0 /* ListStyleModifier.swift */,
 			);
 			path = ListStyle;
+			sourceTree = "<group>";
+		};
+		8D35CD9C269B11C700EDD6FF /* DrawingGroupModifier */ = {
+			isa = PBXGroup;
+			children = (
+				8D35CD9D269B11E500EDD6FF /* DrawingGroup.swift */,
+			);
+			path = DrawingGroupModifier;
 			sourceTree = "<group>";
 		};
 		8D36D1AF25096EEB0074E498 /* Views Settings */ = {
@@ -1722,6 +1735,7 @@
 		8DEBD12E24A3E643004AAE41 /* Views & Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				8D35CD9C269B11C700EDD6FF /* DrawingGroupModifier */,
 				8DAD45C12699F0FF00518477 /* IgnoreSafeAreaModifier */,
 				8DAED1DE2694F50F0044B5CD /* SymbolVariantModifier */,
 				8DAED1DB2694CE4C0044B5CD /* Button */,
@@ -2088,11 +2102,13 @@
 				8D1A9612256FB30A00223F52 /* Font.swift in Sources */,
 				8DE67207257674C6001C17DB /* OpenURL.swift in Sources */,
 				8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */,
+				8D35CD9E269B11E500EDD6FF /* DrawingGroup.swift in Sources */,
 				8D39E24325841FAA009FCC01 /* TextFieldStyleModifier.swift in Sources */,
 				8DAD45C6269A031F00518477 /* MaterialExtension.swift in Sources */,
 				8DE9F4EC24AD114E0054CE64 /* MapView.swift in Sources */,
 				8D6DB2F8266FFC2900C72C2E /* Swift5_5.swift in Sources */,
 				8DF93EDF24A7955D00B84CD0 /* ListChildrenView.swift in Sources */,
+				8D35CDA0269B21AF00EDD6FF /* CGRectExtension.swift in Sources */,
 				8D005E2624ADAE2200D29E53 /* LazyVStack.swift in Sources */,
 				8DAED1DD2694CE530044B5CD /* Button.swift in Sources */,
 				8D3E3D502689E7D00084F924 /* ControlGroupStyleModifier.swift in Sources */,

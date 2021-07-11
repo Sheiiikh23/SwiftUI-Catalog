@@ -49,34 +49,6 @@ struct CanvasWithGesture: View {
         .updating($focalPoint) { value, focalPoint, _ in
       focalPoint = value.location
     })
-  }
-
-  func gridMetrics(in size: CGSize) -> SymbolGridMetrics {
-    return SymbolGridMetrics(size: size, numberOfSymbols: symbols.count)
-  }
-}
-
-struct CanvasWithAccessibilityChildren: View {
-
-  let symbols = SFSymbol.allCases
-  @GestureState private var focalPoint: CGPoint?
-
-  var body: some View {
-    Canvas { context, size in
-      let metrics = gridMetrics(in: size)
-      for (index, symbol) in symbols.enumerated() {
-        let rect = metrics[index]
-        let (sRect, opacity) = rect.fishEyeTransform(around: focalPoint)
-        context.opacity = opacity
-        let image = context.resolve(Image(symbol.rawValue))
-        context.draw(image, in: sRect.fit(image.size))
-      }
-    }
-    .gesture(
-      DragGesture(minimumDistance: 0)
-        .updating($focalPoint) { value, focalPoint, _ in
-      focalPoint = value.location
-    })
     .accessibilityLabel("Symbol browser")
     .accessibilityChildren {
       List(symbols) { Text($0.rawValue) }
@@ -114,6 +86,46 @@ struct CanvasWithTimeLineView: View {
   }
 }
 
+struct ImageCanvasSample: View {
+
+  @State private var count = 2
+
+  var body: some View {
+    TimelineView(.animation) { timeline in
+
+      let now = timeline.date.timeIntervalSinceReferenceDate
+      let angle = Angle.degrees(now.remainder(dividingBy: 3) * 120)
+      let x = cos(angle.radians)
+
+      // closure run every time the canvas is drawn and contain our drawing command (= drawRect in UIKit
+      // Paramètre : context = drawing command, size : size of the entire canvas
+      // La closure n'est pas un @ViewBuilder
+      // Dans la closure c'est du code impératif qui tourne et pas déclaratif
+      Canvas { context, size in
+        var image = context.resolve(Image(systemName: SFSymbol.sparkle.rawValue)) // le `context.resolve(_: Image)` ou `context.resolve(_: Text)` est plus optimisé que déclaré des `Image` ou `Text directement
+        image.shading = .color(.blue)
+        let imageSize = image.size
+        context.blendMode = .screen
+        for i in 0..<count {
+          let frame = CGRect(x: 0.5 * size.width + Double(i) * imageSize.width * x, y: 0.5 * size.height, width: imageSize.width, height: imageSize.height)
+          var innerContext = context
+          innerContext.opacity = 0.5
+          innerContext.fill(Ellipse().path(in: frame), with: .color(.cyan)) // les `View` conforme à `Shape` peuvent être utilisé dans la méthode `context.fill` (permet de rajouter un background)
+          context.draw(image, in: frame)
+        }
+      }
+    }
+    .onTapGesture { count += 1 }
+    .accessibilityLabel("A paricle visualizer")
+  }
+}
+
+struct CanvasView_Previews: PreviewProvider {
+  static var previews: some View {
+    ImageCanvasSample()
+  }
+}
+
 struct Symbol: Identifiable {
   let name: String
   var id: String { name }
@@ -137,53 +149,12 @@ struct SymbolGridMetrics {
     self.numberOfSybols = numberOfSymbols
     self.insetProportion = insetProportion
   }
-  #warning("DEBUG")
+
   subscript(_ index: Int)  -> CGRect {
-    precondition(index >= 0 && index < numberOfSybols) // WTF IS THIS
+    precondition(index >= 0 && index < numberOfSybols)
     let row = index / symbolsPerRow
     let columns = index % symbolsPerRow
     let rect = CGRect(x: CGFloat(columns) * symbolWidth, y: CGFloat(row) * symbolWidth, width: symbolWidth, height: symbolWidth)
     return rect.insetBy(dx: symbolWidth * insetProportion, dy: symbolWidth * insetProportion)
   }
-}
-
-extension CGRect {
-
-  func fit(_ otherSize: CGSize) -> CGRect {
-    let scale = min(size.width / otherSize.width, size.height / otherSize.height)
-    let newSize = CGSize(width: otherSize.width * scale, height: otherSize.height * scale)
-    let newOrigin = CGPoint(x: midX - newSize.width / 2, y: midY - newSize.height / 2)
-    return CGRect(origin: newOrigin, size: newSize)
-  }
-
-  func fishEyeTransform(around point: CGPoint?, radius: CGFloat = 200, zoom: CGFloat = 3.0) -> (frame: CGRect, opacity: CGFloat) {
-    guard let point = point else { return (self, 1.0) }
-
-    let deltaX = midX - point.x
-    let deltaY = midY - point.y
-    let distance = sqrt(deltaX * deltaX + deltaY * deltaY)
-    let theta = atan2(deltaY, deltaX)
-    let scaledClampedDistance = pow(min(1, max(0, distance / radius)), 0.7)
-    let scale = (1.0 - scaledClampedDistance) * zoom + 0.5
-    let newOffset = distance * (2.0 - scaledClampedDistance) * sqrt(zoom)
-    let newDeltaX = newOffset * cos(theta)
-    let newDeltaY = newOffset * sin(theta)
-    let newSize = CGSize(width: size.width * scale, height: size.height * scale)
-    let newOrigin = CGPoint(x: (newDeltaX + point.x) - newSize.width / 2, y: (newDeltaY + point.y) - newSize.height / 2)
-    let opacity = max(0.1, 1.0 - scaledClampedDistance)
-    return (CGRect(origin: newOrigin, size: newSize), opacity)
-  }
-
-  func fishEyeTransform(around point: CGPoint, at time: TimeInterval) -> (frame: CGRect, opacity: CGFloat) {
-    let zoom = cos(time) + 3.0
-    let radius = ((cos(time / 5) + 1) / 2) * 150 + 150
-    return fishEyeTransform(around: point, radius: radius, zoom: zoom)
-  }
-}
-
-func focalPoint(at time: TimeInterval, in size: CGSize) -> CGPoint {
-  let offset: CGFloat = min(size.width, size.height) / 4
-  let distance = ((sin(time / 5) + 1) / 2) * offset + offset
-  let scalePoint = CGPoint(x: size.width / 2 + distance * cos(time / 2), y: size.height / 2 + distance * sin(time / 2))
-  return scalePoint
 }
