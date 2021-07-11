@@ -15,7 +15,7 @@ import SwiftUI
 ///   - init<S>(_ title: S, @ViewBuilder content: () -> Content) where S : StringProtocol, Content : View ; i•Pad•OS 15.0, macOS 12.0, Mac Catalyst 15.0
 ///
 /// Paramètres :
-///   - @ViewBuilder content () -> Content ––> un semble de `View` (maximum 10 subviews)
+///   - @ViewBuilder content () -> Content ––> un ensemble de `View` (maximum 10 subviews)
 ///   - label: Label, @ViewBuilder content: () -> Content where Label : some View ––> deux @ViewBuilder pouvant contenir chacun maximum 10 subviews
 ///   - @ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label ––> deux @ViewBuilder pouvant contenir chacun maximum 10 subviews
 ///   - titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content ––> une `String` et un @ViewBuilder pouvant contenir maximum 10 subviews
@@ -68,6 +68,7 @@ struct GroupBoxView: View {
           .foregroundColor(.orange)
       }
       .padding(.horizontal)
+      .animation(.default, value: showLabel)
     } else {
       GroupBox {
         Text("13 ")
@@ -81,7 +82,7 @@ struct GroupBoxView: View {
         Toggle("Show lanel", isOn: $showLabel)
       }
       .padding(.horizontal)
-
+      .animation(.default, value: showLabel)
     }
   }
 }
@@ -149,6 +150,8 @@ struct GroupBoxViewSamples: View {
 
 struct GroupBoxView_Previews: PreviewProvider {
   static var previews: some View {
-    GroupBoxViewSamples()
+    GroupBoxDemoView()
+    GroupBoxDemoView()
+      .preferredColorScheme(.dark)
   }
 }
