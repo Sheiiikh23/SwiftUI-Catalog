@@ -8,8 +8,7 @@ import SwiftUI
 /// Description : Une `View` qui arrange ses subviews dans une grille de manière horizontale, créant chaque subview à la volée et si nécessaire (d'où le lazy)
 ///
 /// 1 init pour une `LazyHGrid` :
-///   - init(rows: [GridItem], alignment: VerticalAlignment = .center, spacing: CGFloat? = nil,
-///          pinnedViews: PinnedScrollableViews = .init(), content: () -> Content) where Content : View
+///   - init(rows: [GridItem], alignment: VerticalAlignment = .center, spacing: CGFloat? = nil, pinnedViews: PinnedScrollableViews = .init(), @ViewBuilder content: () -> Content) where Content : View
 ///
 /// Paramètres :
 ///   - rows : `[GridItem]` ––> un array de `GridItem` pour dimensionner et positionner chaque row de la grille
@@ -23,7 +22,7 @@ import SwiftUI
 ///   - pinnedViews: `PinnedScrollableViews` = .init() ––> les types de subviews qui vont être épinglés
 ///       - sectionHeaders : rend le header d'une `Section` sticky
 ///       - sectionFooters : rend le footer d'une `Section` sticky
-///   - @ViewBuilder content: () -> Content : un ensemble de `View` (maximum 10 subviews)
+///   - @ViewBuilder content: () -> Content ––> un ensemble de `View` (maximum 10 subviews)
 ///
 /// Remarques :
 ///   - Une `LazyHGrid` place un ensemble de cellules horizontalement, les cellules disposées en columns (cf vidéo)

@@ -16,8 +16,10 @@ import SwiftUI
 ///       - center
 ///       - trailing
 ///   - spacing: `CGFloat?` = nil ––> la distance vertical entre chaque subview, `nil` pour une valeur par défaut
-///   - @ViewBuilder content: () -> Content : un ensemble de `View` (maximum 10 subviews)
-/// Par défaut un `VStack` prend le moins de height & width possible
+///   - @ViewBuilder content: () -> Content ––> un ensemble de `View` (maximum 10 subviews)
+///
+/// Remarque :
+///   - Par défaut un `VStack` prend le moins de height & width possible
 
 import SwiftUI
 

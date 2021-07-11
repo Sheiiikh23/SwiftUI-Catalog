@@ -8,8 +8,7 @@ import SwiftUI
 /// Description : Une `View` qui arrange ses subviews dans une grille de manière verticale, créant chaque subview à la volée et si nécessaire (d'où le lazy)
 ///
 /// 1 init pour une `LazyVGrid` :
-///   - init(columns: [GridItem], alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil,
-///   pinnedViews: PinnedScrollableViews = .init(), content: () -> Content) where Content : View
+///   - init(columns: [GridItem], alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil, pinnedViews: PinnedScrollableViews = .init(), @ViewBuilder content: () -> Content) where Content : View
 ///
 /// Paramètres :
 ///   - columns : `[GridItem]` ––> un array de `GridItem` pour dimensionner et positionner chaque column de la grille
@@ -21,12 +20,12 @@ import SwiftUI
 ///   - pinnedViews: `PinnedScrollableViews` = .init() ––> les types de subviews qui vont être épinglés
 ///       - sectionHeaders : rend le header d'une `Section` sticky
 ///       - sectionFooters : rend le footer d'une `Section` sticky
-///   - @ViewBuilder content: () -> Content : un ensemble de `View` (maximum 10 subviews)
+///   - @ViewBuilder content: () -> Content ––> un ensemble de `View` (maximum 10 subviews)
 ///
-///   Remarques :
-///     - Une `LazyVGrid` place un ensemble de cellules verticalement, les celles disposées en rows (cf vidéo)
-///     - `onAppear` & `onDisappear` bien appellé à chaque fois (et pas qu'à la création de la cellule)
-///     - À 99.99% du temps précédée par une `ScrollView`, puis suivie d'un `ForEach`
+/// Remarques :
+///   - Une `LazyVGrid` place un ensemble de cellules verticalement, les celles disposées en rows (cf vidéo)
+///   - `onAppear` & `onDisappear` bien appellé à chaque fois (et pas qu'à la création de la cellule)
+///   - À 99.99% du temps précédée par une `ScrollView`, puis suivie d'un `ForEach`
 ///
 /// Vidéo : https://swiftui-lab.com/wp-content/uploads/2020/07/layouts.mp4
 

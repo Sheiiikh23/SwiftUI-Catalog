@@ -8,23 +8,23 @@ import SwiftUI
 /// Description : Une `View` "container" qui rassemble visuellement un groupe logique de contenu avec un label optionnel.
 ///
 /// 5 init pour une `GroupBox` : 1 deprecated à partir d'i•Pad•OS 15.0, macOS 12.0, Mac Catalyst 15.0
-///   - init(@ViewBuilder content: () -> Content) : i•Pad•OS 14.0, macOS 10.15, Mac Catalyst 14.0
-///   - init(label: Label, @ViewBuilder content: () -> Content) : i•Pad•OS 14.0, macOS 10.15, Mac Catalyst 14.0 deprecated à partir d'i•Pad•OS 15.0, macOS 12.0, Mac Catalyst 15.0 👇
-///   - init(@ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label) : i•Pad•OS 15.0, macOS 12.0, Mac Catalyst 15.0
-///   - init(_ titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content) : i•Pad•OS 15.0, macOS 12.0, Mac Catalyst 15.0
-///   - init<S>(_ title: S, @ViewBuilder content: () -> Content) where S : StringProtocol : i•Pad•OS 15.0, macOS 12.0, Mac Catalyst 15.0
+///   - init(@ViewBuilder content: () -> Content) where Content : View ; i•Pad•OS 14.0, macOS 10.15, Mac Catalyst 14.0
+///   - init(label: Label, @ViewBuilder content: () -> Content) where Content : View ; i•Pad•OS 14.0, macOS 10.15, Mac Catalyst 14.0 deprecated à partir d'i•Pad•OS 15.0, macOS 12.0, Mac Catalyst 15.0 👇
+///   - init(@ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label) where Label : View, Content : View ; i•Pad•OS 15.0, macOS 12.0, Mac Catalyst 15.0
+///   - init(_ titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content) where Content : View ; i•Pad•OS 15.0, macOS 12.0, Mac Catalyst 15.0
+///   - init<S>(_ title: S, @ViewBuilder content: () -> Content) where S : StringProtocol, Content : View ; i•Pad•OS 15.0, macOS 12.0, Mac Catalyst 15.0
 ///
-/// Paramètre :
-///   - @ViewBuilder content () -> Content : un semble de `View` (maximum 10 subviews)
-///   - label: Label, @ViewBuilder content: () -> Content where Label : some View : deux @ViewBuilder pouvant contenir chacun maximum 10 subviews
-///   - @ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label : deux @ViewBuilder pouvant contenir chacun maximum 10 subviews
-///   - titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content : Une `String` et un @ViewBuilder pouvant contenir maximum 10 subviews
-///   - title: S, @ViewBuilder content: () -> Content where S : StringProtocol : une `String` et un @ViewBuilder pouvant contenir maximum 10 subviews
+/// Paramètres :
+///   - @ViewBuilder content () -> Content ––> un semble de `View` (maximum 10 subviews)
+///   - label: Label, @ViewBuilder content: () -> Content where Label : some View ––> deux @ViewBuilder pouvant contenir chacun maximum 10 subviews
+///   - @ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label ––> deux @ViewBuilder pouvant contenir chacun maximum 10 subviews
+///   - titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content ––> une `String` et un @ViewBuilder pouvant contenir maximum 10 subviews
+///   - title: S, @ViewBuilder content: () -> Content where S : StringProtocol ––> une `String` et un @ViewBuilder pouvant contenir maximum 10 subviews
 ///
 /// Remarques :
 ///   - Sur iOS la UI par défaut est une card similaire à celle dans l'application Santé
 ///   - Le Label est une `View` optionnel, avec un alignment en leading par défaut
-///   - Le contnet à l'air d'être placé dans un `VStack` implicite
+///   - Le content à l'air d'être placé dans un `VStack` implicite
 ///   - Une `GroupeBox` peut contenir d'autre `GroupBox` et ainsi de suite
 
 struct GroupBoxDemoView: View {

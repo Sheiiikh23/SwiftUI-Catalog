@@ -12,12 +12,12 @@ import SwiftUI
 ///   - init(_ size: GridItem.Size = .flexible(), spacing: CGFloat? = nil, alignment: Alignment? = nil)
 ///
 /// Paramètres :
-///   - size: `GridItem.Size` = .flexible()
+///   - size: `GridItem.Size` = .flexible() ––> la taille du grid item
 ///       - adaptive(minimum: CGFloat, maximum: CGFloat = .infinity)
 ///       - fixed(CGFloat)
 ///       - flexible(minimum: CGFloat = 10, maximum: CGFloat = .infinity)
-///   - spacing: `CGFloat?` = nil
-///   - alignment: `Alignment?` = nil
+///   - spacing: `CGFloat?` = nil ––> la distance entre ce grid item et le suivant
+///   - alignment: `Alignment?` = nil ––> l'alignment du grid item
 ///       - top
 ///       - leading
 ///       - bottom

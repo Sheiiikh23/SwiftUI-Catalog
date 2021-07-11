@@ -726,6 +726,9 @@
 		8D0AD5012675103D000655AA /* Grids */ = {
 			isa = PBXGroup;
 			children = (
+				8D33BBE524AA934B0097EC2E /* GridItem.swift */,
+				8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */,
+				8D33BBE224AA79AC0097EC2E /* LazyVGrid.swift */,
 				8D24B5C6267F825100E664C7 /* Views */,
 			);
 			path = Grids;
@@ -869,9 +872,6 @@
 		8D24B5C6267F825100E664C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8D33BBE524AA934B0097EC2E /* GridItem.swift */,
-				8D4D24FA24AC5C4F00982117 /* LazyHGrid.swift */,
-				8D33BBE224AA79AC0097EC2E /* LazyVGrid.swift */,
 				8D5164DD2688D1A600D298F6 /* Cell */,
 				8D24B5C7267F825700E664C7 /* LazyHGridDemo */,
 				8D5164D02687C99800D298F6 /* LazyVGridDemo */,

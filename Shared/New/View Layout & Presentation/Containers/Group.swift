@@ -8,22 +8,21 @@ import SwiftUI
 /// Description : Une `View` "container" qui permet de rassembler 10 subviews en une `View`
 ///
 /// 5 init pour un `Group` :
-///   - init(content: () -> Content) where Content : View
-///   - init(content: () -> Content) where Content : Scene
-///   - init(content: () -> Content) where Content : Commands
-///   - init(content: () -> Content) where Content : ToolbarContent
-///   - init(content: () -> Content) where Content : CustomizableToolbarContent
+///   - init(@ViewBuilder content: () -> Content) where Content : View
+///   - init(@SceneBuilder content: () -> Content) where Content : Scene
+///   - init(@CommandsBuilder content: () -> Content) where Content : Commands
+///   - init(@ToolbarContentBuilder content: () -> Content) where Content : ToolbarContent
+///   - init(@ToolbarContentBuilder content: () -> Content) where Content : CustomizableToolbarContent
 ///
 /// Paramètre :
-///   - @ViewBuilder content: () -> Content : un ensemble de `View` (maximum 10 subviews)
-///   - @SceneBuilder content: () -> Content : un ensemble de `Scene`
-///   - @CommandsBuilder content: () -> Content : un ensemble de `Command`
-///   - @ToolbarContentBuilder content: () -> Content : un ensemble de `ToolbarContent`
+///   - @ViewBuilder content: () -> Content ––> un ensemble de `View` (maximum 10 subviews)
+///   - @SceneBuilder content: () -> Content ––> un ensemble de `Scene`
+///   - @CommandsBuilder content: () -> Content ––> un ensemble de `Command`
+///   - @ToolbarContentBuilder content: () -> Content ––> un ensemble de `ToolbarContent`
 ///
 /// Remarques :
-///   - En SwiftUI presque toutes les `View` "container" prennent en paramètre un `@ViewBuilder`. Ce dernier permet de définir le layout pour 10 subview
+///   - En SwiftUI presque toutes les `View` "container" prennent en paramètre un `@ViewBuilder`. Ce dernier permet de définir le layout pour 10 subviews
 ///   - Les groupes permettent de pallier à cette "limitation" de 10 subviews, en regroupant plusieurs `View` en une seule via l'utilisation d'un `Group`
-///   - Tout modifier appliqué au `Group` sera appliqué à l'ensemble de ces subviews
 
 struct GroupView: View {
 

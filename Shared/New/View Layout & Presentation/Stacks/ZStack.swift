@@ -21,10 +21,13 @@ import SwiftUI
 ///       - topTrailing
 ///       - bottomLeading
 ///       - bottomTrailing
-///   - @ViewBuilder content: () -> Content : un ensemble de `View` (maximum 10 subviews)
-/// Par défaut un `ZStack` prend le moins de height & width possible
+///   - @ViewBuilder content: () -> Content ––> un ensemble de `View` (maximum 10 subviews)
 ///
-/// Tips: Utiliser un `ZStack` pour afficher un background avec une couleur (voir `ZStackBackgroundColorView`)
+/// Remarque :
+///   - Par défaut un `ZStack` prend le moins de height & width possible
+///
+/// Tip :
+///   - Utiliser un `ZStack` pour afficher un background avec une couleur (voir `ZStackBackgroundColorView`)
 
 struct ZStackView: View {
 

@@ -21,8 +21,10 @@ import SwiftUI
 ///   - pinnedViews: `PinnedScrollableViews` = .init() ––> les types de subviews qui vont être épinglés
 ///       - sectionHeaders : rend le header d'une `Section` sticky
 ///       - sectionFooters : rend le footer d'une `Section` sticky
-///   - @ViewBuilder content: () -> Content : un ensemble de `View` (maximum 10 subviews)
-/// Par défaut un `LazyHStack` prend toute la height du parent-container
+///   - @ViewBuilder content: () -> Content ––> un ensemble de `View` (maximum 10 subviews)
+///
+/// Remarque :
+///   - Par défaut un `LazyHStack` prend toute la height du parent-container
 
 struct LazyHStackView: View {
 

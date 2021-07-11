@@ -8,10 +8,10 @@ import SwiftUI
 /// Description : Une `View` "container" pour regrouper des contrôles pour la saisie de données
 ///
 /// 1 init pour un `Form` :
-///   - init(content: () -> Content) where Content : View
+///   - init(@ViewBuilder content: () -> Content) where Content : View
 ///
 /// Paramètres :
-/// - @ViewBuilder content: () -> Content : un ensemble de `View` (maximum 10 subviews)
+/// - @ViewBuilder content: () -> Content ––> un ensemble de `View` (maximum 10 subviews)
 ///
 /// Remarques :
 ///  - Généralement précédé d'une `NavigationView` notamment pour les `Picker`

@@ -7,7 +7,6 @@ import SwiftUI
 /// Plateformes : i•Pad•OS 14.0, watchOS 7.0, tvOS 14.0, macOS 11.0, Mac Catalyst 14.0
 /// Description : Une `View` qui arrange ses sous-vues de manière verticale, créant chaque subview à la volée et si nécessaire (d'où le lazy)
 ///
-///
 /// 1 init pour un `LazyVStack` :
 ///   - init(alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil, pinnedViews: PinnedScrollableViews = .init(), @ViewBuilder content: () -> Content) where Content : View
 ///
@@ -20,8 +19,10 @@ import SwiftUI
 ///   - pinnedViews: `PinnedScrollableViews` = .init() ––> les types de subviews qui vont être épinglés
 ///       - sectionHeaders : rend le header d'une `Section` sticky
 ///       - sectionFooters : rend le footer d'une `Section` sticky
-///   - @ViewBuilder content: () -> Content : un ensemble de `View` (maximum 10 subviews)
-/// Par défaut un `LazyVStack` prend toute la width du parent-container
+///   - @ViewBuilder content: () -> Content ––> un ensemble de `View` (maximum 10 subviews)
+///
+/// Remarque :
+///   - Par défaut un `LazyVStack` prend toute la width du parent-container
 
 struct LazyVStackView: View {
 
