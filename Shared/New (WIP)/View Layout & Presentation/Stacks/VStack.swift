@@ -77,14 +77,31 @@ struct VStackDemo: View {
   }
 }
 
+fileprivate enum Sample: String, Identifiable, CaseIterable {
+  case leading = "VStack with a leading alignment"
+  case center = "VStack with a center alignment"
+  case trailing = "VStack with a trailing alignment"
+  
+  var id: UUID { UUID() }
+  
+  @ViewBuilder var destination: some View {
+    switch self {
+    case .leading:
+      NavigationLink(rawValue, destination: VStackAlignmentLeadingSample())
+    case .center:
+      NavigationLink(rawValue, destination: VStackAlignmentCenterSample())
+    case .trailing:
+      NavigationLink(rawValue, destination: VStackAlignmentTrailingSample())
+    }
+  }
+}
+
 struct VStackSamples: View {
   
   var body: some View {
     NavigationView {
       List {
-        NavigationLink("VStack with a leading alignment", destination: VStackAlignmentLeadingSample())
-        NavigationLink("VStack with a center alignment", destination: VStackAlignmentCenterSample())
-        NavigationLink("VStack with a trailing alignment", destination: VStackAlignmentTrailingSample())
+        ForEach(Sample.allCases, content: \.destination)
       }
       .navigationTitle("VStack samples")
     }

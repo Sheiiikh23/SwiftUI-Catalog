@@ -77,13 +77,30 @@ struct ScrollViewDemo: View {
   }
 }
 
+fileprivate enum Sample: String, Identifiable, CaseIterable {
+  case vertical = "Vertical ScrollView"
+  case horizontal = "Horizontal ScrollView"
+  case verticalHorizontal = "Vertical & Horizontal ScrollView"
+  
+  var id: UUID { UUID() }
+  
+  @ViewBuilder var destination: some View {
+    switch self {
+    case .vertical:
+      NavigationLink(rawValue, destination: VerticalScrollViewSample())
+    case .horizontal:
+      NavigationLink(rawValue, destination: HorizontalScrollViewSample())
+    case .verticalHorizontal:
+      NavigationLink(rawValue, destination: VerticalAndHorizontalScrollViewSample())
+    }
+  }
+}
+
 struct ScrollViewSamples: View {
   var body: some View {
     NavigationView {
       List {
-        NavigationLink("Vertical ScrollView", destination: VerticalScrollViewSample())
-        NavigationLink("Horizontal ScrollView", destination: HorizontalScrollViewSample())
-        NavigationLink("Vertical & Horizontal ScrollView", destination: VerticalAndHorizontalScrollViewSample())
+        ForEach(Sample.allCases, content: \.destination)
       }
       .navigationTitle("ScrollView Samples")
     }

@@ -146,14 +146,31 @@ struct LazyVStackDemo: View {
   }
 }
 
+fileprivate enum Sample: String, Identifiable, CaseIterable {
+  case leading = "LazyVStack with a leading alignment"
+  case center = "LazyVStack with a center alignment"
+  case trailing = "LazyVStack with a trailing alignment"
+  
+  var id: UUID { UUID() }
+  
+  @ViewBuilder var destination: some View {
+    switch self {
+    case .leading:
+      NavigationLink(rawValue, destination: LazyVStackAlignmentLeadingSample())
+    case .center:
+      NavigationLink(rawValue, destination: LazyVStackAlignmentCenterSample())
+    case .trailing:
+      NavigationLink(rawValue, destination: LazyVStackAlignmentTrailingSample())
+    }
+  }
+}
+
 struct LazyVStackSamples: View {
   
   var body: some View {
     NavigationView {
       List {
-        NavigationLink("LazyVStack with a leading alignment", destination: LazyVStackAlignmentLeadingSample())
-        NavigationLink("LazyVStack with a center alignment", destination: LazyVStackAlignmentCenterSample())
-        NavigationLink("LazyVStack with a trailing alignment", destination: LazyVStackAlignmentTrailingSample())
+        ForEach(Sample.allCases, content: \.destination)
       }
       .navigationTitle("LazyVStack samples")
     }

@@ -148,16 +148,37 @@ struct LazyHStackDemo: View {
   }
 }
 
+fileprivate enum Sample: String, Identifiable, CaseIterable {
+  case top = "LazyHStack with a top alignment"
+  case center = "LazyHStack with a center alignment"
+  case bottom = "LazyHStack with a bottom alignment"
+  case firstTextBaseLine = "LazyHStack with a firstTextBaseLine alignment"
+  case lastTextBaseLine = "LazyHStack with a lastTextBaseLine alignment"
+  
+  var id: UUID { UUID() }
+  
+  @ViewBuilder var destination: some View {
+    switch self {
+    case .top:
+      NavigationLink(rawValue, destination: LazyHSTackAlignmentTopSample())
+    case .center:
+      NavigationLink(rawValue, destination: LazyHSTackAlignmentCenterSample())
+    case .bottom:
+      NavigationLink(rawValue, destination: LazyHSTackAlignmentBottomSample())
+    case .firstTextBaseLine:
+      NavigationLink(rawValue, destination: LazyHSTackAlignmentFirstTextBaseLineSample())
+    case .lastTextBaseLine:
+      NavigationLink(rawValue, destination: LazyHSTackAlignmentLastTextBaseLineSample())
+    }
+  }
+}
+
 struct LazyHStackSamples: View {
   
   var body: some View {
     NavigationView {
       List {
-        NavigationLink("LazyHStack with a top alignment", destination: LazyHSTackAlignmentTopSample())
-        NavigationLink("LazyHStack with a center alignment", destination: LazyHSTackAlignmentCenterSample())
-        NavigationLink("LazyHStack with a bottom alignment", destination: LazyHSTackAlignmentBottomSample())
-        NavigationLink("LazyHStack with a firstTextBaseLine alignment", destination: LazyHSTackAlignmentFirstTextBaseLineSample())
-        NavigationLink("LazyHStack with a lastTextBaseLine alignment", destination: LazyHSTackAlignmentLastTextBaseLineSample())
+        ForEach(Sample.allCases, content: \.destination)
       }
       .navigationTitle("LazyHStack samples")
     }

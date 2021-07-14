@@ -157,16 +157,37 @@ struct LazyVGridDemo: View {
   }
 }
 
+fileprivate enum Sample: String, Identifiable, CaseIterable {
+  case nAdaptive = "N-Adaptive Columns"
+  case oneFlexible = "One Flexible Column"
+  case threeFlexible = "Three Flexible Columns"
+  case threeFixed = "Three Fixed Columns"
+  case oneFixedßAdaptiveOneFlexible = "One Fixed – ß Adaptive – One Flexible Columns"
+  
+  var id: UUID { UUID() }
+  
+  @ViewBuilder var destination: some View {
+    switch self {
+    case .nAdaptive:
+      NavigationLink(rawValue, destination: LazyVGridWithNAdaptiveColumns())
+    case .oneFlexible:
+      NavigationLink(rawValue, destination: LazyVGridWithOneFlexibleColumn())
+    case .threeFlexible:
+      NavigationLink(rawValue, destination: LazyVGridWithThreeFlexibleColumns())
+    case .threeFixed:
+      NavigationLink(rawValue, destination: LazyVGridWithThreeFixedColumns())
+    case .oneFixedßAdaptiveOneFlexible:
+      NavigationLink(rawValue, destination: LazyVGridWithOneFixedßAdaptiveOneFlexibleColums())
+    }
+  }
+}
+
 struct LazyVGridSamples: View {
 
   var body: some View {
     NavigationView {
       List {
-        NavigationLink("N-Adaptive Columns", destination: LazyVGridWithNAdaptiveColumns())
-        NavigationLink("One Flexible Column", destination: LazyVGridWithOneFlexibleColumn())
-        NavigationLink("Three Flexible Columns", destination: LazyVGridWithThreeFlexibleColumns())
-        NavigationLink("Three Fixed Columns", destination: LazyVGridWithThreeFixedColumns())
-        NavigationLink("One Fixed – ß Adaptive – One Flexible Columns", destination: LazyVGridWithOneFixedßAdaptiveOneFlexibleColums())
+        ForEach(Sample.allCases, content: \.destination)
       }
       .navigationTitle("LazyVGrid Samples")
     }

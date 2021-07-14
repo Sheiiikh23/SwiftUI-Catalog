@@ -86,16 +86,37 @@ struct HStackDemo: View {
   }
 }
 
+fileprivate enum Sample: String, Identifiable, CaseIterable {
+  case top = "HStack with a top alignment"
+  case center = "HStack with a center alignment"
+  case bottom = "HStack with a bottom alignment"
+  case firstTextBaseLine = "HStack with a firstTextBaseLine alignment"
+  case lastTextBaseLine = "HStack with a lastTextBaseLine alignment"
+  
+  var id: UUID { UUID() }
+  
+  @ViewBuilder var destination: some View {
+    switch self {
+    case .top:
+      NavigationLink(rawValue, destination: HSTackAlignmentTopSample())
+    case .center:
+      NavigationLink(rawValue, destination: HSTackAlignmentCenterSample())
+    case .bottom:
+      NavigationLink(rawValue, destination: HSTackAlignmentBottomSample())
+    case .firstTextBaseLine:
+      NavigationLink(rawValue, destination: HSTackAlignmentFirstTextBaseLineSample())
+    case .lastTextBaseLine:
+      NavigationLink(rawValue, destination: HSTackAlignmentLastTextBaseLineSample())
+    }
+  }
+}
+
 struct HStackSamples: View {
   
   var body: some View {
     NavigationView {
       List {
-        NavigationLink("HStack with a top alignment", destination: HSTackAlignmentTopSample())
-        NavigationLink("HStack with a center alignment", destination: HSTackAlignmentCenterSample())
-        NavigationLink("HStack with a bottom alignment", destination: HSTackAlignmentBottomSample())
-        NavigationLink("HStack with a firstTextBaseLine alignment", destination: HSTackAlignmentFirstTextBaseLineSample())
-        NavigationLink("HStack with a lastTextBaseLine alignment", destination: HSTackAlignmentLastTextBaseLineSample())
+        ForEach(Sample.allCases, content: \.destination)
       }
       .navigationTitle("HStack samples")
     }

@@ -148,16 +148,37 @@ struct LazyHGridDemo: View {
   }
 }
 
+fileprivate enum Sample: String, Identifiable, CaseIterable {
+  case nAdaptive = "N-Adaptive Rows"
+  case oneFlexible = "One Flexible Row"
+  case threeFlexible = "Three Flexible Rows"
+  case threeFixed = "Three Fixed Rows"
+  case oneFixedßAdaptiveOneFlexible = "One Fixed – ß Adaptive – One Flexible Rows"
+  
+  var id: UUID { UUID() }
+  
+  @ViewBuilder var destination: some View {
+    switch self {
+    case .nAdaptive:
+      NavigationLink(rawValue, destination: LazyHGridWithNAdaptiveRows())
+    case .oneFlexible:
+      NavigationLink(rawValue, destination: LazyHGridWithOneFlexibleRow())
+    case .threeFlexible:
+      NavigationLink(rawValue, destination: LazyHGridWithThreeFlexibleRows())
+    case .threeFixed:
+      NavigationLink(rawValue, destination: LazyHGridWithThreeFixedRows())
+    case .oneFixedßAdaptiveOneFlexible:
+      NavigationLink(rawValue, destination: LazyHGridWithOneFixedßAdaptiveOneFlexibleRows())
+    }
+  }
+}
+
 struct LazyHGridSamples: View {
 
   var body: some View {
     NavigationView {
       List {
-        NavigationLink("N-Adaptive Rows", destination: LazyHGridWithNAdaptiveRows())
-        NavigationLink("One Flexible Row", destination: LazyHGridWithOneFlexibleRow())
-        NavigationLink("Three Flexible Rows", destination: LazyHGridWithThreeFlexibleRows())
-        NavigationLink("Three Fixed Rows", destination: LazyHGridWithThreeFixedRows())
-        NavigationLink("One Fixed – ß Adaptive – One Flexible Rows", destination: LazyHGridWithOneFixedßAdaptiveOneFlexibleRows())
+        ForEach(Sample.allCases, content: \.destination)
       }
       .navigationTitle("LazyHGrid Samples")
     }

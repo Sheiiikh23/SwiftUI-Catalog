@@ -85,21 +85,53 @@ struct ZStackDemo: View {
   }
 }
 
+fileprivate enum Sample: String, Identifiable, CaseIterable {
+  case top = "ZStack with a top alignment"
+  case leading = "ZStack with a leading alignment"
+  case bottom = "ZStack with a bottom alignment"
+  case trailing = "ZStack with a trailing alignment"
+  case center = "ZStack with a center alignment"
+  case topLeading = "ZStack with a topLeading alignment"
+  case topTrailing = "ZStack with a topTrailing alignment"
+  case bottomLeading = "ZStack with a bottomLeading alignment"
+  case bottomTrailing = "ZStack with a bottomTrailing alignment"
+  case background = "ZStack with a background edge to edge"
+  
+  
+  var id: UUID { UUID() }
+  
+  @ViewBuilder var destination: some View {
+    switch self {
+    case .top:
+      NavigationLink(rawValue, destination: ZStackAlignmentTopSample())
+    case .leading:
+      NavigationLink(rawValue, destination: ZStackAlignmentLeadingSample())
+    case .bottom:
+      NavigationLink(rawValue, destination: ZStackAlignmentBottomSample())
+    case .trailing:
+      NavigationLink(rawValue, destination: ZStackAlignmentTrailingSample())
+    case .center:
+      NavigationLink(rawValue, destination: ZStackAlignmentCenterSample())
+    case .topLeading:
+      NavigationLink(rawValue, destination: ZStackAlignmentTopLeadingSample())
+    case .topTrailing:
+      NavigationLink(rawValue, destination: ZStackAlignmentTopTrailingSample())
+    case .bottomLeading:
+      NavigationLink(rawValue, destination: ZStackAlignmentBottomLeadingSample())
+    case .bottomTrailing:
+      NavigationLink(rawValue, destination: ZStackAlignmentBottomTrailingSample())
+    case .background:
+      NavigationLink(rawValue, destination: ZStackBackgroundSample())
+    }
+  }
+}
+
 struct ZStackSamples: View {
   
   var body: some View {
     NavigationView {
       List {
-        NavigationLink("ZStack with a top alignment", destination: ZStackAlignmentTopSample())
-        NavigationLink("ZStack with a leading alignment", destination: ZStackAlignmentLeadingSample())
-        NavigationLink("ZStack with a bottom alignment", destination: ZStackAlignmentBottomSample())
-        NavigationLink("ZStack with a trailing alignment", destination: ZStackAlignmentTrailingSample())
-        NavigationLink("ZStack with a center alignment", destination: ZStackAlignmentCenterSample())
-        NavigationLink("ZStack with a topLeading alignment", destination: ZStackAlignmentTopLeadingSample())
-        NavigationLink("ZStack with a topTrailing alignment", destination: ZStackAlignmentTopTrailingSample())
-        NavigationLink("ZStack with a bottomLeading alignment", destination: ZStackAlignmentBottomLeadingSample())
-        NavigationLink("ZStack with a bottomTrailing alignment", destination: ZStackAlignmentBottomTrailingSample())
-        NavigationLink("ZStack with a background edge to edge", destination: ZStackBackgroundSample())
+        ForEach(Sample.allCases, content: \.destination)
       }
       .navigationTitle("ZStack samples")
     }
