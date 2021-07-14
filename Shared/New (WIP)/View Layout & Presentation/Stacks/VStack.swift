@@ -19,30 +19,51 @@ import SwiftUI
 ///   - @ViewBuilder content: () -> Content ––> un ensemble de `View` (maximum 10 subviews)
 ///
 /// Remarque :
-///   - Par défaut un `VStack` prend le moins de height & width possible
+///   - Par défaut un `VStack` prend le moins de width & height possible
 
-import SwiftUI
+fileprivate enum TabItem {
+  case demo
+  case samples
+}
 
-struct VStackView: View {
+struct VStackDemoView: View {
+  
+  var body: some View {
+    TabView {
+      VStackDemo()
+        .tag(TabItem.demo)
+        .tabItem { Label("Demo", systemImage: "shippingbox") }
+      
+      VStackSamples()
+        .tag(TabItem.samples)
+        .tabItem { Label("Samples", systemImage: "magazine") }
+    }
+  }
+}
 
-  @State private var alignment: HorizontalAlignment = .center
-  @State private var spacing: Double = 10
+struct VStackDemo: View {
+
+  @StateObject private var viewModel = VStackDemoViewModel()
 
   var body: some View {
     NavigationView {
-      VStack(spacing: .large) {
-        Text("Alignment : \(alignment.description)")
-        HStack(spacing: .medium) {
-          Button("Leading") { alignment = .leading }
-          Button("Center") { alignment = .center }
-          Button("Trailing") { alignment = .trailing }
+      VStack(spacing: 8) {
+        HStack(alignment: .firstTextBaseline, spacing: 10) {
+          Text("Horizontal Alignment :")
+          Picker("Horizontal Alignment", selection: $viewModel.customAlignment) {
+            ForEach(HorizontalAlignmentCustom.allCases) { alignment in
+              Text(alignment.description.firstLetterCapitalized)
+                .tag(alignment)
+            }
+          }
+          .pickerStyle(.menu)
         }
         VStack {
-          Text("Spacing value : \(Int(spacing))")
+          Text("Spacing value : \(Int(viewModel.spacing))")
             .fontWeight(.bold)
-          Slider(value: $spacing, in: 0...50)
+          Slider(value: $viewModel.spacing, in: 0...50)
         }
-        VStack(alignment: alignment, spacing: spacing) {
+        VStack(alignment: viewModel.alignment, spacing: viewModel.spacing) {
           Text("Peu de texte")
           Text("Beacoup plus de texte")
           Text("Beaucoup beaucoup plus de texte")
@@ -51,12 +72,89 @@ struct VStackView: View {
         .background(Color.mint)
       }
       .padding(.horizontal)
+      .navigationTitle("VStack demo")
     }
+  }
+}
+
+struct VStackSamples: View {
+  
+  var body: some View {
+    NavigationView {
+      List {
+        NavigationLink("VStack with a leading alignment", destination: VStackAlignmentLeadingSample())
+        NavigationLink("VStack with a center alignment", destination: VStackAlignmentCenterSample())
+        NavigationLink("VStack with a trailing alignment", destination: VStackAlignmentTrailingSample())
+      }
+      .navigationTitle("VStack samples")
+    }
+  }
+}
+
+struct VStackAlignmentLeadingSample: View {
+  
+  var body: some View {
+    VStack(alignment: .leading, spacing: 8) {
+      Rectangle()
+        .foregroundColor(.blue)
+        .frame(width: 75, height: 30)
+      Text("VStack with a leading alignment")
+      Rectangle()
+        .foregroundColor(.red)
+        .frame(width: 150, height: 30)
+    }
+    .padding(.vertical)
+    .background(.mint, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("VStack with a leading alignment")
+    .navigationBarTitleDisplayMode(.inline)
+  }
+}
+
+struct VStackAlignmentCenterSample: View {
+  
+  var body: some View {
+    VStack(spacing: 8) {
+      Rectangle()
+        .foregroundColor(.blue)
+        .frame(width: 75, height: 30)
+      Text("VStack with a center alignment")
+      Rectangle()
+        .foregroundColor(.red)
+        .frame(width: 150, height: 30)
+    }
+    .padding(.vertical)
+    .background(.mint, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("VStack with a center alignment")
+    .navigationBarTitleDisplayMode(.inline)
+  }
+}
+
+struct VStackAlignmentTrailingSample: View {
+  
+  var body: some View {
+    VStack(alignment: .trailing, spacing: 8) {
+      Rectangle()
+        .foregroundColor(.blue)
+        .frame(width: 75, height: 30)
+      Text("VStack with a trailing alignment")
+      Rectangle()
+        .foregroundColor(.red)
+        .frame(width: 150, height: 30)
+    }
+    .padding(.vertical)
+    .background(.mint, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("VStack with a trailing alignment")
+    .navigationBarTitleDisplayMode(.inline)
   }
 }
 
 struct VStackView_Previews: PreviewProvider {
   static var previews: some View {
-    VStackView()
+    VStackDemoView()
+    VStackDemo()
+    VStackSamples()
+    VStackAlignmentLeadingSample()
+    VStackAlignmentCenterSample()
+    VStackAlignmentTrailingSample()
   }
 }

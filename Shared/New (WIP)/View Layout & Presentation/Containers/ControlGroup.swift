@@ -13,14 +13,14 @@ import SwiftUI
 /// Paramètre :
 ///   - @ViewBuilder content () -> Content ––> un ensemble de `View` (maximum 10 subviews)
 
-struct ControlGroupView: View {
+struct ControlGroupSample: View {
 
   var body: some View {
     NavigationView {
       List(0..<100, id: \.self) { row in
         Text("Row n°\(row)")
       }
-      .navigationTitle("ControlGroup Sample")
+      .navigationTitle("ControlGroup sample")
       .toolbar {
         ToolbarItem {
           ControlGroup {
@@ -34,8 +34,8 @@ struct ControlGroupView: View {
   }
 }
 
-struct ControlGroupView_Previews: PreviewProvider {
+struct ControlGroupSample_Previews: PreviewProvider {
   static var previews: some View {
-    ControlGroupView()
+    ControlGroupSample()
   }
 }

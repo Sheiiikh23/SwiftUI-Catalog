@@ -27,131 +27,72 @@ import SwiftUI
 ///   - Le content à l'air d'être placé dans un `VStack` implicite
 ///   - Une `GroupeBox` peut contenir d'autre `GroupBox` et ainsi de suite
 
-struct GroupBoxDemoView: View {
+struct GroupBoxSample: View {
 
   var body: some View {
-    TabView {
-      GroupBoxView()
-        .tag(TabItem.view)
-        .tabItem { Label("View", systemImage: "shippingbox") }
+    NavigationView {
+      VStack(spacing: 25) {
 
-      GroupBoxViewSamples()
-        .tag(TabItem.sample)
-        .tabItem { Label("Samples", systemImage: "magazine") }
-    }
-  }
-}
-
-fileprivate enum TabItem {
-  case view
-  case sample
-}
-
-struct GroupBoxView: View {
-
-  @State private var showLabel = true
-
-  var body: some View {
-    if showLabel {
-      GroupBox {
-        Text("13 ")
-          .font(.title)
-          .fontWeight(.bold)
-        +
-        Text("étages")
-          .font(.title3)
-          .fontWeight(.semibold)
-        Text("Beaucoup de sport aujourd'hui ! 😅")
-        Toggle("Show lanel", isOn: $showLabel)
-      } label: {
-        Label("Étages montés", systemImage: "flame.fill")
-          .foregroundColor(.orange)
-      }
-      .padding(.horizontal)
-      .animation(.default, value: showLabel)
-    } else {
-      GroupBox {
-        Text("13 ")
-          .font(.title)
-          .fontWeight(.bold)
-        +
-        Text("étages")
-          .font(.title3)
-          .fontWeight(.semibold)
-        Text("Beaucoup de sport aujourd'hui ! 😅")
-        Toggle("Show lanel", isOn: $showLabel)
-      }
-      .padding(.horizontal)
-      .animation(.default, value: showLabel)
-    }
-  }
-}
-
-struct GroupBoxViewSamples: View {
-
-  var body: some View {
-    VStack(spacing: 25) {
-
-      /// init : @ViewBuilder content () -> Content
-      GroupBox {
-        Text("Pourquoi pas du text par ici")
-        Label("Un petit badge par là", systemImage: "folder.fill.badge.gearshape")
-      }
-
-      /// init : label: Label, @ViewBuilder content: () -> Content where Label : some View
-      /// Deprecated
-      GroupBox(label: Label("Étages montés", systemImage: "flame.fill").foregroundColor(.orange)) {
-        Text("13 ")
-          .font(.title)
-          .fontWeight(.bold)
-        +
-        Text("étages")
-          .font(.title3)
-          .fontWeight(.semibold)
-      }
-      .padding(.horizontal)
-
-      /// init : @ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label
-      GroupBox {
-        Text("13 ")
-          .font(.title)
-          .fontWeight(.bold)
-        +
-        Text("étages")
-          .font(.title3)
-          .fontWeight(.semibold)
-        Text("Beaucoup de sport aujourd'hui ! 😅")
-      } label: {
-        Label("Étages montés", systemImage: "flame.fill")
-          .foregroundColor(.orange)
-      }
-      .padding(.horizontal)
-
-      /// init : titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content
-      /// init : title: S, @ViewBuilder content: () -> Content where S : StringProtocol
-      GroupBox("Titre du GroupBox") {
-        Text("Pourquoi pas du text par ici")
-        Label("Un petit badge par là", systemImage: "folder.fill.badge.gearshape")
-      }
-
-      /// Rendu lorsqu'une `GroupBox` contient une autre `GroupBox` et ainsi de suite
-      GroupBox {
-        Text("Outer content")
+        /// init : @ViewBuilder content () -> Content
         GroupBox {
-          Text("Middle content")
+          Text("Pourquoi pas du text par ici")
+          Label("Un petit badge par là", systemImage: "folder.fill.badge.gearshape")
+        }
+
+        /// init : label: Label, @ViewBuilder content: () -> Content where Label : some View
+        /// Deprecated
+        GroupBox(label: Label("Étages montés", systemImage: "flame.fill").foregroundColor(.orange)) {
+          Text("13 ")
+            .font(.title)
+            .fontWeight(.bold)
+          +
+          Text("étages")
+            .font(.title3)
+            .fontWeight(.semibold)
+        }
+        .padding(.horizontal)
+
+        /// init : @ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label
+        GroupBox {
+          Text("13 ")
+            .font(.title)
+            .fontWeight(.bold)
+          +
+          Text("étages")
+            .font(.title3)
+            .fontWeight(.semibold)
+          Text("Beaucoup de sport aujourd'hui ! 😅")
+        } label: {
+          Label("Étages montés", systemImage: "flame.fill")
+            .foregroundColor(.orange)
+        }
+        .padding(.horizontal)
+
+        /// init : titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content
+        /// init : title: S, @ViewBuilder content: () -> Content where S : StringProtocol
+        GroupBox("Titre du GroupBox") {
+          Text("Pourquoi pas du text par ici")
+          Label("Un petit badge par là", systemImage: "folder.fill.badge.gearshape")
+        }
+
+        /// Rendu lorsqu'une `GroupBox` contient une autre `GroupBox` et ainsi de suite
+        GroupBox {
+          Text("Outer content")
           GroupBox {
-            Text("Inner content")
+            Text("Middle content")
+            GroupBox {
+              Text("Inner content")
+            }
           }
         }
       }
+      .navigationTitle("GroupBox sample")
     }
   }
 }
 
-struct GroupBoxView_Previews: PreviewProvider {
+struct GroupBoxSample_Previews: PreviewProvider {
   static var previews: some View {
-    GroupBoxDemoView()
-    GroupBoxDemoView()
-      .preferredColorScheme(.dark)
+    GroupBoxSample()
   }
 }

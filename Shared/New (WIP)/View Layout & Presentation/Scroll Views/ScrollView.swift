@@ -45,32 +45,35 @@ struct ScrollViewDemo: View {
   @StateObject private var viewModel = ScrollViewDemoViewModel()
 
   var body: some View {
-    Group {
-      switch viewModel.customAxes {
-      case .vertical:
-        VerticalScrollViewDemo()
-      case .horizontal:
-        HorizontalScrollViewDemo()
-      case .verticalAndHorizontal:
-        VerticalAndHorizontalScrollViewSample()
-      }
-    }
-    .safeAreaInset(edge: .bottom) {
-      VStack(spacing: 10) {
-        Picker("ScrollView axes", selection: $viewModel.customAxes) {
-          ForEach(CustomAxis.allCases) { axe in
-            Text(axe.rawValue.firstLetterCapitalized)
-              .tag(axe)
-          }
+    NavigationView {
+      Group {
+        switch viewModel.customAxes {
+        case .vertical:
+          VerticalScrollViewDemo()
+        case .horizontal:
+          HorizontalScrollViewDemo()
+        case .verticalAndHorizontal:
+          VerticalAndHorizontalScrollViewSample()
         }
-        .pickerStyle(.segmented)
-        Toggle("ShowsIndicators : \(viewModel.showsIndicators.description)", isOn: $viewModel.showsIndicators)
-          .toggleStyle(SwitchToggleStyle(tint: .purple))
       }
-      .padding()
-      .background(.regularMaterial)
+      .safeAreaInset(edge: .bottom) {
+        VStack(spacing: 10) {
+          Picker("ScrollView axes", selection: $viewModel.customAxes) {
+            ForEach(CustomAxis.allCases) { axe in
+              Text(axe.rawValue.firstLetterCapitalized)
+                .tag(axe)
+            }
+          }
+          .pickerStyle(.segmented)
+          Toggle("ShowsIndicators : \(viewModel.showsIndicators.description)", isOn: $viewModel.showsIndicators)
+            .toggleStyle(SwitchToggleStyle(tint: .purple))
+        }
+        .padding()
+        .background(.regularMaterial)
+      }
+      .navigationTitle("ScrollView demo")
+      .environmentObject(viewModel)
     }
-    .environmentObject(viewModel)
   }
 }
 
@@ -145,6 +148,7 @@ struct VerticalAndHorizontalScrollViewSample: View {
 struct ScrollViewDemo_Previews: PreviewProvider {
   static var previews: some View {
     ScrollViewDemoView()
+    ScrollViewDemo()
     ScrollViewSamples()
     VerticalScrollViewSample()
     HorizontalScrollViewSample()

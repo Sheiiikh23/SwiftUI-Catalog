@@ -24,182 +24,206 @@ import SwiftUI
 /// Remarque :
 ///   - Par défaut un `LazyVStack` prend toute la width du parent-container
 
-struct LazyVStackView: View {
+fileprivate enum TabItem {
+  case demo
+  case samples
+}
 
-  @State private var alignment: HorizontalAlignment = .center
-  @State private var spacing: CGFloat = 10
-  @State private var showPinnedViews = false
-  private var currentAlignment: Alignment {
-    switch alignment {
-    case .leading:
-      return .leading
-    case .trailing:
-      return .trailing
-    default:
-      return .center
+struct LazyVStackDemoView: View {
+  
+  var body: some View {
+    TabView {
+      LazyVStackDemo()
+        .tag(TabItem.demo)
+        .tabItem { Label("Demo", systemImage: "shippingbox") }
+      
+      LazyVStackSamples()
+        .tag(TabItem.samples)
+        .tabItem { Label("Samples", systemImage: "magazine") }
     }
   }
+}
+
+struct LazyVStackDemo: View {
+
+  @StateObject private var viewModel = LazyVStackDemoViewModel()
 
   var body: some View {
-    ScrollView {
-      VStack(spacing: .extraLarge) {
-        VStack(spacing: .large) {
-          Text("Alignment : \(alignment.description)")
-          VStack(spacing: .medium) {
-            HStack(spacing: .medium) {
-              Button("Leading") { alignment = .leading }
-              Button("Center") { alignment = .center }
-              Button("Trailing") { alignment = .trailing }
+    NavigationView {
+      ScrollView {
+        VStack(spacing: 20) {
+          VStack(spacing: 8) {
+            HStack(alignment: .firstTextBaseline, spacing: 10) {
+              Text("Horizontal Alignment :")
+              Picker("Horizontal Alignment", selection: $viewModel.customAlignment) {
+                ForEach(HorizontalAlignmentCustom.allCases) { alignment in
+                  Text(alignment.description.firstLetterCapitalized)
+                    .tag(alignment)
+                }
+              }
+              .pickerStyle(.menu)
+            }
+            VStack {
+              Text("Spacing value : \(Int(viewModel.spacing))")
+                .fontWeight(.bold)
+              Slider(value: $viewModel.spacing, in: 0...50)
+            }
+            Toggle("show pinnedViews ? \(viewModel.showPinnedViews.description)", isOn: $viewModel.showPinnedViews)
+              .toggleStyle(SwitchToggleStyle(tint: .mint))
+          }
+          .padding(.horizontal)
+          LazyVStack(alignment: viewModel.alignment, spacing: viewModel.spacing, pinnedViews: viewModel.showPinnedViews ? [.sectionHeaders, .sectionFooters] : .init()) {
+            ZStack {
+              Rectangle()
+                .fill(.mint)
+                .frame(width: 200, height: 200)
+                .padding(.leading)
+              Text("\(viewModel.alignment.description) alignment")
+                .multilineTextAlignment(.center)
+            }
+            Section(header: HeaderAndFooterPinnedView(title: "1 to 250"),
+                    footer: HeaderAndFooterPinnedView(title: "1 to 250")) {
+              ForEach(1...250, id: \.self) { item in
+                ZStack {
+                  Rectangle()
+                    .fill(randomColor())
+                  Text("Item\n n°\(item)")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(.horizontal)
+                }
+                .onAppear { print("Cell n°\(item)") }
+              }
+            }
+            Section(header: HeaderAndFooterPinnedView(title: "251 to 500"),
+                    footer: HeaderAndFooterPinnedView(title: "251 to 500")) {
+              ForEach(251...500, id: \.self) { item in
+                ZStack {
+                  Rectangle()
+                    .fill(randomColor())
+                  Text("Item\n n°\(item)")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(.horizontal)
+                }
+                .onAppear { print("Cell n°\(item)") }
+              }
+            }
+            Section(header: HeaderAndFooterPinnedView(title: "501 to 750"),
+                    footer: HeaderAndFooterPinnedView(title: "501 to 750")) {
+              ForEach(501...751, id: \.self) { item in
+                ZStack {
+                  Rectangle()
+                    .fill(randomColor())
+                  Text("Item\n n°\(item)")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(.horizontal)
+                }
+                .onAppear { print("Cell n°\(item)") }
+              }
+            }
+            Section(header: HeaderAndFooterPinnedView(title: "751 to 1000"),
+                    footer: HeaderAndFooterPinnedView(title: "751 to 1000")) {
+              ForEach(751...1000, id: \.self) { item in
+                ZStack {
+                  Rectangle()
+                    .fill(randomColor())
+                  Text("Item\n n°\(item)")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(.horizontal)
+                }
+                .onAppear { print("Cell n°\(item)") }
+              }
             }
           }
-          VStack {
-            Text("Spacing value : \(Int(spacing))")
-              .fontWeight(.bold)
-            Slider(value: $spacing, in: 0...50)
-          }
-          Toggle("show pinnedViews ? \(showPinnedViews.description)", isOn: $showPinnedViews)
-            .toggleStyle(SwitchToggleStyle(tint: .mint))
+          .background(Color.gray.opacity(0.75))
         }
-        .padding(.horizontal)
-        LazyVStack(alignment: alignment, spacing: spacing, pinnedViews: showPinnedViews ? [.sectionHeaders, .sectionFooters] : .init()) {
-          Section(header: HeaderAndFooterPinnedView(title: "1 to 250"),
-                  footer: HeaderAndFooterPinnedView(title: "1 to 250")) {
-            ForEach(1...250, id: \.self) { item in
-              if item.isMultiple(of: 2) && item.isMultiple(of: 3) {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Beaucoup beaucoup beaucoup beaucoup de texte : \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              } else if item.isMultiple(of: 3) {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Beaucoup beaucoup de texte \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              } else if item.isMultiple(of: 2) {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Peu de texte \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              } else {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Peu de texte \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              }
-            }
-            .frame(height: 40)
-          }
-
-          Section(header: HeaderAndFooterPinnedView(title: "251 to 500"),
-                  footer: HeaderAndFooterPinnedView(title: "251 to 500")) {
-            ForEach(251...500, id: \.self) { item in
-              if item.isMultiple(of: 2) && item.isMultiple(of: 3) {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Beaucoup beaucoup beaucoup beaucoup de texte : \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              } else if item.isMultiple(of: 3) {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Beaucoup beaucoup de texte \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              } else if item.isMultiple(of: 2) {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Peu de texte \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              } else {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Peu de texte \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              }
-            }
-            .frame(height: 40)
-          }
-
-          Section(header: HeaderAndFooterPinnedView(title: "501 to 750"),
-                  footer: HeaderAndFooterPinnedView(title: "501 to 750")) {
-            ForEach(501...750, id: \.self) { item in
-              if item.isMultiple(of: 2) && item.isMultiple(of: 3) {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Beaucoup beaucoup beaucoup beaucoup de texte : \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              } else if item.isMultiple(of: 3) {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Beaucoup beaucoup de texte \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              } else if item.isMultiple(of: 2) {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Peu de texte \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              } else {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Peu de texte \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              }
-            }
-            .frame(height: 40)
-          }
-
-          Section(header: HeaderAndFooterPinnedView(title: "751 to 1000"),
-                  footer: HeaderAndFooterPinnedView(title: "751 to 1000")) {
-            ForEach(751...1000, id: \.self) { item in
-              if item.isMultiple(of: 2) && item.isMultiple(of: 3) {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Beaucoup beaucoup beaucoup beaucoup de texte : \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              } else if item.isMultiple(of: 3) {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Beaucoup beaucoup de texte \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              } else if item.isMultiple(of: 2) {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Peu de texte \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              } else {
-                ZStack(alignment: currentAlignment) {
-                  randomColor()
-                  Text("Peu de texte \(item)")
-                }
-                .onAppear { print("Cell n°\(item)") }
-              }
-            }
-            .frame(height: 40)
-          }
-        }
-        .background(Color.gray.opacity(0.5))
       }
+      .navigationTitle("LazyVStack demo")
     }
+  }
+}
+
+struct LazyVStackSamples: View {
+  
+  var body: some View {
+    NavigationView {
+      List {
+        NavigationLink("LazyVStack with a leading alignment", destination: LazyVStackAlignmentLeadingSample())
+        NavigationLink("LazyVStack with a center alignment", destination: LazyVStackAlignmentCenterSample())
+        NavigationLink("LazyVStack with a trailing alignment", destination: LazyVStackAlignmentTrailingSample())
+      }
+      .navigationTitle("LazyVStack samples")
+    }
+  }
+}
+
+struct LazyVStackAlignmentLeadingSample: View {
+  
+  var body: some View {
+    LazyVStack(alignment: .leading, spacing: 8) {
+      Rectangle()
+        .foregroundColor(.blue)
+        .frame(width: 75, height: 30)
+      Text("LazyVStack with a leading alignment")
+      Rectangle()
+        .foregroundColor(.red)
+        .frame(width: 150, height: 30)
+    }
+    .padding(.vertical)
+    .background(.mint, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("LazyVStack with a leading alignment")
+    .navigationBarTitleDisplayMode(.inline)
+  }
+}
+
+struct LazyVStackAlignmentCenterSample: View {
+  
+  var body: some View {
+    LazyVStack(spacing: 8) {
+      Rectangle()
+        .foregroundColor(.blue)
+        .frame(width: 75, height: 30)
+      Text("LazyVStack with a center alignment")
+      Rectangle()
+        .foregroundColor(.red)
+        .frame(width: 150, height: 30)
+    }
+    .padding(.vertical)
+    .background(.mint, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("LazyVStack with a center alignment")
+    .navigationBarTitleDisplayMode(.inline)
+  }
+}
+
+struct LazyVStackAlignmentTrailingSample: View {
+  
+  var body: some View {
+    LazyVStack(alignment: .trailing, spacing: 8) {
+      Rectangle()
+        .foregroundColor(.blue)
+        .frame(width: 75, height: 30)
+      Text("LazyVStack with a trailing alignment")
+      Rectangle()
+        .foregroundColor(.red)
+        .frame(width: 150, height: 30)
+    }
+    .padding(.vertical)
+    .background(.mint, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("LazyVStack with a trailing alignment")
+    .navigationBarTitleDisplayMode(.inline)
   }
 }
 
 struct LazyVStackView_Previews: PreviewProvider {
   static var previews: some View {
-    Group {
-      LazyVStackView()
-    }
+    LazyVStackDemoView()
+    LazyVStackDemo()
+    LazyVStackSamples()
+    LazyVStackAlignmentLeadingSample()
+    LazyVStackAlignmentCenterSample()
+    LazyVStackAlignmentTrailingSample()
   }
 }

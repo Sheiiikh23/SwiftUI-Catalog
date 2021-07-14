@@ -2,7 +2,7 @@
 //  Copyright (c) 2021 Lucas Abijmil. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
 
 enum HorizontalAlignmentCustom: Identifiable, CaseIterable {
   case leading
@@ -19,6 +19,17 @@ enum HorizontalAlignmentCustom: Identifiable, CaseIterable {
       return "center"
     case .trailing:
       return "trailing"
+    }
+  }
+  
+  var value: HorizontalAlignment {
+    switch self {
+    case .leading:
+      return .leading
+    case .center:
+      return .center
+    case .trailing:
+      return .trailing
     }
   }
 }

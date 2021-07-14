@@ -39,14 +39,7 @@ final class LazyHGridDemoViewModel: ObservableObject {
     $gridItemAlignmentcustom
       .receive(on: DispatchQueue.main)
       .sink { [weak self] alignment in
-        switch alignment {
-        case .top:
-          self?.gridAlignment = .top
-        case .center:
-          self?.gridAlignment = .center
-        case .bottom:
-          self?.gridAlignment = .bottom
-        }
+        self?.gridAlignment = alignment.value
       }
       .store(in: &subscriptions)
   }

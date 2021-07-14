@@ -26,112 +26,260 @@ import SwiftUI
 /// Remarque :
 ///   - Par défaut un `LazyHStack` prend toute la height du parent-container
 
-struct LazyHStackView: View {
+fileprivate enum TabItem {
+  case demo
+  case samples
+}
 
-  @State private var alignment: VerticalAlignment = .center
-  @State private var spacing: CGFloat = 10
-  @State private var showPinnedViews = false
-  private var currentAlignment: Alignment {
-    switch alignment {
-    case .top:
-      return .top
-    case .bottom:
-      return .bottom
-    default:
-      return .center
+struct LazyHStackDemoView: View {
+  
+  var body: some View {
+    TabView {
+      LazyHStackDemo()
+        .tag(TabItem.demo)
+        .tabItem { Label("Demo", systemImage: "shippingbox") }
+      
+      LazyHStackSamples()
+        .tag(TabItem.samples)
+        .tabItem { Label("Samples", systemImage: "magazine") }
     }
   }
+}
+
+struct LazyHStackDemo: View {
+
+  @StateObject private var viewModel = LazyHStackDemoViewModel()
 
   var body: some View {
-    VStack(spacing: .extraLarge) {
-      VStack(spacing: .large) {
-        Text("Alignment : \(alignment.description)")
-        VStack(spacing: .medium) {
-          HStack(spacing: .medium) {
-            Button("Top") { alignment = .top }
-            Button("Center") { alignment = .center }
-            Button("Bottom") { alignment = .bottom }
+    NavigationView {
+      VStack(spacing: 20) {
+        VStack(spacing: 8) {
+          HStack(alignment: .firstTextBaseline, spacing: 10) {
+            Text("Vertical Alignment :")
+            Picker("Vertical Alignment", selection: $viewModel.customAlignment) {
+              ForEach(VerticalAlignmentCustom.allCases) { alignment in
+                Text(alignment.description.firstLetterCapitalized)
+                  .tag(alignment)
+              }
+            }
+            .pickerStyle(.menu)
           }
-          HStack(spacing: .medium) {
-            Button("First text baseline") { alignment = .firstTextBaseline }
-            Button("Last text baseline") { alignment = .lastTextBaseline }
+          VStack {
+            Text("Spacing value : \(Int(viewModel.spacing))")
+              .fontWeight(.bold)
+            Slider(value: $viewModel.spacing, in: 0...50)
           }
+          Toggle("Show pinnedViews ? \(viewModel.showPinnedViews.description)", isOn: $viewModel.showPinnedViews)
+            .toggleStyle(SwitchToggleStyle(tint: .mint))
         }
-        VStack {
-          Text("Spacing value : \(Int(spacing))")
-            .fontWeight(.bold)
-          Slider(value: $spacing, in: 0...50)
+        .padding(.horizontal)
+        ScrollView(.horizontal, showsIndicators: false) {
+          LazyHStack(alignment: viewModel.alignment, spacing: viewModel.spacing, pinnedViews: viewModel.showPinnedViews ? [.sectionHeaders, .sectionFooters] : .init()) {
+            ZStack {
+              Rectangle()
+                .fill(.mint)
+                .frame(width: 200, height: 200)
+                .padding(.leading)
+              Text("\(viewModel.alignment.description) alignment")
+                .multilineTextAlignment(.center)
+            }
+            Section(header: HeaderAndFooterPinnedView(title: "1 to 250"),
+                    footer: HeaderAndFooterPinnedView(title: "1 to 250")) {
+              ForEach(1...250, id: \.self) { item in
+                ZStack {
+                  Rectangle()
+                    .fill(randomColor())
+                  Text("Item\n n°\(item)")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(.horizontal)
+                }
+                .onAppear { print("Cell n°\(item)") }
+              }
+            }
+            Section(header: HeaderAndFooterPinnedView(title: "251 to 500"),
+                    footer: HeaderAndFooterPinnedView(title: "251 to 500")) {
+              ForEach(251...500, id: \.self) { item in
+                ZStack {
+                  Rectangle()
+                    .fill(randomColor())
+                  Text("Item\n n°\(item)")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(.horizontal)
+                }
+                .onAppear { print("Cell n°\(item)") }
+              }
+            }
+            Section(header: HeaderAndFooterPinnedView(title: "501 to 750"),
+                    footer: HeaderAndFooterPinnedView(title: "501 to 750")) {
+              ForEach(501...751, id: \.self) { item in
+                ZStack {
+                  Rectangle()
+                    .fill(randomColor())
+                  Text("Item\n n°\(item)")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(.horizontal)
+                }
+                .onAppear { print("Cell n°\(item)") }
+              }
+            }
+            Section(header: HeaderAndFooterPinnedView(title: "751 to 1000"),
+                    footer: HeaderAndFooterPinnedView(title: "751 to 1000")) {
+              ForEach(751...1000, id: \.self) { item in
+                ZStack {
+                  Rectangle()
+                    .fill(randomColor())
+                  Text("Item\n n°\(item)")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(.horizontal)
+                }
+                .onAppear { print("Cell n°\(item)") }
+              }
+            }
+          }
+          .background(Color.gray.opacity(0.75))
         }
-        Toggle("show pinnedViews ? \(showPinnedViews.description)", isOn: $showPinnedViews)
-          .toggleStyle(SwitchToggleStyle(tint: .mint))
       }
-      .padding(.horizontal)
-      ScrollView(.horizontal, showsIndicators: false) {
-        LazyHStack(alignment: alignment, spacing: spacing, pinnedViews: showPinnedViews ? [.sectionHeaders, .sectionFooters] : .init()) {
-          Section(header: HeaderAndFooterPinnedView(title: "1 to 250"),
-                  footer: HeaderAndFooterPinnedView(title: "1 to 250")) {
-            ForEach(1...250, id: \.self) { item in
-              ZStack(alignment: currentAlignment) {
-                randomColor()
-                Text("Cell n°\(item)")
-              }
-              .onAppear { print("Cell n°\(item)") }
-            }
-          }
-          Section(header: HeaderAndFooterPinnedView(title: "251 to 500"),
-                  footer: HeaderAndFooterPinnedView(title: "251 to 500")) {
-            ForEach(251...500, id: \.self) { item in
-              ZStack(alignment: currentAlignment) {
-                randomColor()
-                Text("Cell n°\(item)")
-              }
-              .onAppear { print("Cell n°\(item)") }
-            }
-          }
-          Section(header: HeaderAndFooterPinnedView(title: "501 to 750"),
-                  footer: HeaderAndFooterPinnedView(title: "501 to 750")) {
-            ForEach(501...751, id: \.self) { item in
-              ZStack(alignment: currentAlignment) {
-                randomColor()
-                Text("Cell n°\(item)")
-              }
-              .onAppear { print("Cell n°\(item)") }
-            }
-          }
-          Section(header: HeaderAndFooterPinnedView(title: "751 to 1000"),
-                  footer: HeaderAndFooterPinnedView(title: "751 to 1000")) {
-            ForEach(751...1000, id: \.self) { item in
-              ZStack(alignment: currentAlignment) {
-                randomColor()
-                Text("Cell n°\(item)")
-              }
-              .onAppear { print("Cell n°\(item)") }
-            }
-          }
-        }
-        .frame(height: 200)
-        .background(Color.gray.opacity(0.75))
+      .navigationTitle("LazyHStack demo")
+    }
+  }
+}
+
+struct LazyHStackSamples: View {
+  
+  var body: some View {
+    NavigationView {
+      List {
+        NavigationLink("LazyHStack with a top alignment", destination: LazyHSTackAlignmentTopSample())
+        NavigationLink("LazyHStack with a center alignment", destination: LazyHSTackAlignmentCenterSample())
+        NavigationLink("LazyHStack with a bottom alignment", destination: LazyHSTackAlignmentBottomSample())
+        NavigationLink("LazyHStack with a firstTextBaseLine alignment", destination: LazyHSTackAlignmentFirstTextBaseLineSample())
+        NavigationLink("LazyHStack with a lastTextBaseLine alignment", destination: LazyHSTackAlignmentLastTextBaseLineSample())
+      }
+      .navigationTitle("LazyHStack samples")
+    }
+  }
+}
+
+struct LazyHSTackAlignmentTopSample: View {
+  
+  var body: some View {
+    LazyHStack(alignment: .top, spacing: 8) {
+      Circle()
+        .foregroundColor(.yellow)
+        .frame(width: 100, height: 100)
+      Text("LazyHStack with a\ntop alignment")
+      Color.purple
+        .frame(width: 30)
+        .cornerRadius(16)
+    }
+    .padding(.horizontal)
+    .background(.red, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("LazyHStack with a top alignment")
+    .navigationBarTitleDisplayMode(.inline)
+  }
+}
+
+struct LazyHSTackAlignmentCenterSample: View {
+  
+  var body: some View {
+    LazyHStack(spacing: 8) {
+      Circle()
+        .foregroundColor(.yellow)
+        .frame(width: 100, height: 100)
+      Text("LazyHStack with a\ncenter alignment")
+      Color.purple
+        .frame(width: 30)
+        .cornerRadius(16)
+    }
+    .padding(.horizontal)
+    .background(.red, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("LazyHStack with a center alignment")
+    .navigationBarTitleDisplayMode(.inline)
+  }
+}
+
+struct LazyHSTackAlignmentBottomSample: View {
+  
+  var body: some View {
+    LazyHStack(alignment: .bottom, spacing: 8) {
+      Circle()
+        .foregroundColor(.yellow)
+        .frame(width: 100, height: 100)
+      Text("LazyHStack with a\nbottom alignment")
+      Color.purple
+        .frame(width: 30)
+        .cornerRadius(16)
+    }
+    .padding(.horizontal)
+    .background(.red, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("LazyHStack with a bottom alignment")
+    .navigationBarTitleDisplayMode(.inline)
+  }
+}
+
+struct LazyHSTackAlignmentFirstTextBaseLineSample: View {
+  
+  var body: some View {
+    LazyHStack(alignment: .firstTextBaseline, spacing: 8) {
+      ZStack {
+        Circle()
+          .foregroundColor(.yellow)
+          .frame(width: 100, height: 100)
+        Text("Left")
+      }
+      Text("LazyHStack with a\nfirstTextBaseLine alignment")
+      ZStack(alignment: .top) {
+        Color.purple
+          .frame(width: 40)
+          .cornerRadius(16)
+        Text("Right")
       }
     }
+    .padding(.horizontal)
+    .background(.red, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("LazyHStack with a firstTextBaseLine alignment")
+    .navigationBarTitleDisplayMode(.inline)
+  }
+}
+
+struct LazyHSTackAlignmentLastTextBaseLineSample: View {
+  
+  var body: some View {
+    LazyHStack(alignment: .lastTextBaseline, spacing: 8) {
+      ZStack {
+        Circle()
+          .foregroundColor(.yellow)
+          .frame(width: 100, height: 100)
+        Text("Left")
+      }
+      Text("LazyHStack with a\nlastTextBaseLine alignment")
+      ZStack(alignment: .bottom) {
+        Color.purple
+          .frame(width: 40)
+          .cornerRadius(16)
+        Text("Right")
+      }
+    }
+    .padding(.horizontal)
+    .background(.red, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("LazyHStack with a lastTextBaseLine alignment")
+    .navigationBarTitleDisplayMode(.inline)
   }
 }
 
 struct LazyHStackView_Previews: PreviewProvider {
   static var previews: some View {
-    LazyHStackView()
-  }
-}
-
-struct HeaderAndFooterPinnedView: View {
-
-  let title: String
-
-  var body: some View {
-    Text(title)
-      .fontWeight(.bold)
-      .foregroundColor(.black)
-      .frame(maxWidth: .infinity, maxHeight: .infinity)
-      .padding(.vertical)
-      .background(Color.init(red: 255/255, green: 206/255, blue: 168/255))
+    LazyHStackDemoView()
+    LazyHStackDemo()
+    LazyHStackSamples()
+    LazyHSTackAlignmentTopSample()
+    LazyHSTackAlignmentCenterSample()
+    LazyHSTackAlignmentBottomSample()
+    LazyHSTackAlignmentFirstTextBaseLineSample()
+    LazyHSTackAlignmentLastTextBaseLineSample()
   }
 }

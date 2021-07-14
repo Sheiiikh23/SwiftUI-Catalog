@@ -2,12 +2,14 @@
 //  Copyright (c) 2021 Lucas Abijmil. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
 
 enum VerticalAlignmentCustom: Identifiable, CaseIterable {
   case top
   case center
   case bottom
+  case firstTextBaseline
+  case lastTextBaseline
 
   var id: UUID { return UUID() }
 
@@ -19,6 +21,25 @@ enum VerticalAlignmentCustom: Identifiable, CaseIterable {
       return "center"
     case .bottom:
       return "bottom"
+    case .firstTextBaseline:
+      return "first text baseline"
+    case .lastTextBaseline:
+      return "last text baseline"
+    }
+  }
+  
+  var value: VerticalAlignment {
+    switch self {
+    case .top:
+      return .top
+    case .center:
+      return .center
+    case .bottom:
+      return .bottom
+    case .firstTextBaseline:
+      return .firstTextBaseline
+    case .lastTextBaseline:
+      return .lastTextBaseline
     }
   }
 }

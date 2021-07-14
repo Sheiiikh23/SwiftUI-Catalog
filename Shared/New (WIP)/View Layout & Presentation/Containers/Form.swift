@@ -18,7 +18,7 @@ import SwiftUI
 ///  - Un `Form` contient généralement des `Section
 ///  - Le `Form` a un rendu propre à chaque plateforme
 
-struct FormView: View {
+struct FormSample: View {
 
   @State private var firstName = ""
   @State private var lastName = ""
@@ -55,13 +55,13 @@ struct FormView: View {
           }
         }
       }
-      .navigationTitle("Settings")
+      .navigationTitle("Form sample")
     }
   }
 }
 
-struct FormView_Previews: PreviewProvider {
+struct FormSample_Previews: PreviewProvider {
   static var previews: some View {
-    FormView()
+    FormSample()
   }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 ///
 /// 1 init pour un `HStack` :
 ///   - init(alignment: VerticalAlignment = .center, spacing: CGFloat? = nil, @ViewBuilder content: () -> Content) where Content : View
-/// 
+///
 /// Paramètres :
 ///   - alignment: `VerticalAlignment` = .center ––> l'alignement vertical de chaque subview
 ///       - top
@@ -21,34 +21,51 @@ import SwiftUI
 ///   - @ViewBuilder content: () -> Content ––> un ensemble de `View` (maximum 10 subviews)
 ///
 /// Remarque :
-///   - Par défaut un `HStack` prend le moins de height & width possible
+///   - Par défaut un `HStack` prend le moins de width & height possible
 
-struct HStackView: View {
+fileprivate enum TabItem {
+  case demo
+  case samples
+}
 
-  @State private var alignment: VerticalAlignment = .center
-  @State private var spacing: Double = 10
+struct HStackDemoView: View {
+  
+  var body: some View {
+    TabView {
+      HStackDemo()
+        .tag(TabItem.demo)
+        .tabItem { Label("Demo", systemImage: "shippingbox") }
+      
+      HStackSamples()
+        .tag(TabItem.samples)
+        .tabItem { Label("Samples", systemImage: "magazine") }
+    }
+  }
+}
+
+struct HStackDemo: View {
+
+  @StateObject private var viewModel = HStackDemoViewModel()
 
   var body: some View {
     NavigationView {
-      VStack(spacing: .large) {
-        Text("Alignment : \(alignment.description)")
-        VStack(spacing: .medium) {
-          HStack(spacing: .medium) {
-            Button("Top") { alignment = .top }
-            Button("Center") { alignment = .center }
-            Button("Bottom") { alignment = .bottom }
+      VStack(spacing: 8) {
+        HStack(alignment: .firstTextBaseline, spacing: 10) {
+          Text("Vertical Alignment :")
+          Picker("Vertical Alignment", selection: $viewModel.customAlignment) {
+            ForEach(VerticalAlignmentCustom.allCases) { alignment in
+              Text(alignment.description.firstLetterCapitalized)
+                .tag(alignment)
+            }
           }
-          HStack(spacing: .medium) {
-            Button("First text baseline") { alignment = .firstTextBaseline }
-            Button("Last text baseline") { alignment = .lastTextBaseline }
-          }
+          .pickerStyle(.menu)
         }
         VStack {
-          Text("Spacing value : \(Int(spacing))")
+          Text("Spacing value : \(Int(viewModel.spacing))")
             .fontWeight(.bold)
-          Slider(value: $spacing, in: 0...50)
+          Slider(value: $viewModel.spacing, in: 0...50)
         }
-        HStack(alignment: alignment, spacing: spacing) {
+        HStack(alignment: viewModel.alignment, spacing: viewModel.spacing) {
           ZStack {
             Circle()
               .foregroundColor(.yellow)
@@ -64,13 +81,143 @@ struct HStackView: View {
         .background(Color.mint)
       }
       .padding(.horizontal)
-      .navigationTitle("HStack démo")
+      .navigationTitle("HStack demo")
     }
+  }
+}
+
+struct HStackSamples: View {
+  
+  var body: some View {
+    NavigationView {
+      List {
+        NavigationLink("HStack with a top alignment", destination: HSTackAlignmentTopSample())
+        NavigationLink("HStack with a center alignment", destination: HSTackAlignmentCenterSample())
+        NavigationLink("HStack with a bottom alignment", destination: HSTackAlignmentBottomSample())
+        NavigationLink("HStack with a firstTextBaseLine alignment", destination: HSTackAlignmentFirstTextBaseLineSample())
+        NavigationLink("HStack with a lastTextBaseLine alignment", destination: HSTackAlignmentLastTextBaseLineSample())
+      }
+      .navigationTitle("HStack samples")
+    }
+  }
+}
+
+struct HSTackAlignmentTopSample: View {
+  
+  var body: some View {
+    HStack(alignment: .top, spacing: 8) {
+      Circle()
+        .foregroundColor(.yellow)
+        .frame(width: 100, height: 100)
+      Text("HStack with a top alignment")
+      Color.purple
+        .frame(width: 30, height: 200)
+        .cornerRadius(16)
+    }
+    .padding(.horizontal)
+    .background(.red, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("HStack with a top alignment")
+    .navigationBarTitleDisplayMode(.inline)
+  }
+}
+
+struct HSTackAlignmentCenterSample: View {
+  
+  var body: some View {
+    HStack(spacing: 8) {
+      Circle()
+        .foregroundColor(.yellow)
+        .frame(width: 100, height: 100)
+      Text("HStack with a center alignment")
+      Color.purple
+        .frame(width: 30, height: 200)
+        .cornerRadius(16)
+    }
+    .padding(.horizontal)
+    .background(.red, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("HStack with a center alignment")
+    .navigationBarTitleDisplayMode(.inline)
+  }
+}
+
+struct HSTackAlignmentBottomSample: View {
+  
+  var body: some View {
+    HStack(alignment: .bottom, spacing: 8) {
+      Circle()
+        .foregroundColor(.yellow)
+        .frame(width: 100, height: 100)
+      Text("HStack with a bottom alignment")
+      Color.purple
+        .frame(width: 30, height: 200)
+        .cornerRadius(16)
+    }
+    .padding(.horizontal)
+    .background(.red, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("HStack with a bottom alignment")
+    .navigationBarTitleDisplayMode(.inline)
+  }
+}
+
+struct HSTackAlignmentFirstTextBaseLineSample: View {
+  
+  var body: some View {
+    HStack(alignment: .firstTextBaseline, spacing: 8) {
+      ZStack {
+        Circle()
+          .foregroundColor(.yellow)
+          .frame(width: 100, height: 100)
+        Text("Left")
+      }
+      Text("HStack with a firstTextBaseLine alignment")
+      ZStack(alignment: .top) {
+        Color.purple
+          .frame(width: 40, height: 200)
+          .cornerRadius(16)
+        Text("Right")
+      }
+    }
+    .padding(.horizontal)
+    .background(.red, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("HStack with a firstTextBaseLine alignment")
+    .navigationBarTitleDisplayMode(.inline)
+  }
+}
+
+struct HSTackAlignmentLastTextBaseLineSample: View {
+  
+  var body: some View {
+    HStack(alignment: .lastTextBaseline, spacing: 8) {
+      ZStack {
+        Circle()
+          .foregroundColor(.yellow)
+          .frame(width: 100, height: 100)
+        Text("Left")
+      }
+      Text("HStack with a lastTextBaseLine alignment")
+      ZStack(alignment: .bottom) {
+        Color.purple
+          .frame(width: 40, height: 200)
+          .cornerRadius(16)
+        Text("Right")
+      }
+    }
+    .padding(.horizontal)
+    .background(.red, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+    .navigationTitle("HStack with a lastTextBaseLine alignment")
+    .navigationBarTitleDisplayMode(.inline)
   }
 }
 
 struct HStackView_Previews: PreviewProvider {
   static var previews: some View {
-    HStackView()
+    HStackDemoView()
+    HStackDemo()
+    HStackSamples()
+    HSTackAlignmentTopSample()
+    HSTackAlignmentCenterSample()
+    HSTackAlignmentBottomSample()
+    HSTackAlignmentFirstTextBaseLineSample()
+    HSTackAlignmentLastTextBaseLineSample()
   }
 }

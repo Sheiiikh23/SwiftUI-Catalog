@@ -29,6 +29,150 @@ import SwiftUI
 ///
 /// Vidéo : https://swiftui-lab.com/wp-content/uploads/2020/07/layouts.mp4
 
+fileprivate enum TabItem {
+  case settings
+  case grid
+  case samples
+}
+
+struct LazyVGridDemoView: View {
+
+  @StateObject private var viewModel = LazyVGridDemoViewModel()
+
+  var body: some View {
+    TabView {
+      LazyVGridConfiguratorView()
+        .tag(TabItem.settings)
+        .tabItem { Label("Config", systemImage: "gear") }
+
+      LazyVGridDemo()
+        .tag(TabItem.grid)
+        .tabItem { Label("Grid", systemImage: "square.grid.3x2") }
+
+      LazyVGridSamples()
+        .tag(TabItem.samples)
+        .tabItem { Label("Samples", systemImage: "magazine") }
+    }
+    .environmentObject(viewModel)
+  }
+}
+
+struct LazyVGridConfiguratorView: View {
+
+  @EnvironmentObject private var viewModel: LazyVGridDemoViewModel
+
+  var body: some View {
+    NavigationView {
+      Form {
+        Section(header: Text("GridItem Config")) {
+          Picker("GridItem type", selection: $viewModel.itemCustomType) {
+            ForEach(GridItemType.allCases) { type in
+              Text(gridItemDescription(for: type).firstLetterCapitalized)
+                .tag(type)
+                .multilineTextAlignment(.center)
+            }
+          }
+          LazyVGridGridItemSizeConfiguratorView()
+          VStack {
+            Text("GridItem spacing : \(Int(viewModel.itemSpacing))")
+            Slider(value: $viewModel.itemSpacing, in: 0...50)
+          }
+          Picker("GridItem alignment", selection: $viewModel.itemAlignmentCustom) {
+            ForEach(AlignmentCustom.allCases) { alignment in
+              Text(alignment.description.firstLetterCapitalized)
+                .tag(alignment)
+            }
+          }
+        }
+        .listRowSeparatorTint(.red)
+
+        Section(header: Text("Grid Config")) {
+          if viewModel.itemCustomType != .adaptive {
+            Stepper("GridItem count : \(Int(viewModel.gridItemCount))", value: $viewModel.gridItemCount, in: 0...10)
+          }
+          Picker("Grid alignment", selection: $viewModel.gridItemAlignmentcustom) {
+            ForEach(HorizontalAlignmentCustom.allCases, id: \.self) { alignment in
+              Text(alignment.description.firstLetterCapitalized)
+                .tag(alignment)
+            }
+          }
+          VStack {
+            Text("Grid spacing : \(Int(viewModel.gridSpacing))")
+            Slider(value: $viewModel.gridSpacing, in: 0...50)
+          }
+          Toggle("Grid show pinnedViews ? \(viewModel.gridShowPinnedViews.description.firstLetterCapitalized)", isOn: $viewModel.gridShowPinnedViews)
+            .toggleStyle(SwitchToggleStyle(tint: .mint))
+        }
+        .listRowSeparatorTint(.yellow)
+      }
+      .navigationTitle("Grid Configurator ⚙")
+    }
+  }
+  private func gridItemDescription(for type: GridItemType) -> String {
+    switch type {
+    case .adaptive:
+      return "adaptive(min : \(Int(viewModel.itemMinSize)), max : \(Int(viewModel.itemMaxSize)))"
+    case .fixed:
+      return "fixed \(Int(viewModel.itemSize))"
+    case .flexible:
+      return "flexible(min : \(Int(viewModel.itemMinSize)), max : \(Int(viewModel.itemMaxSize)))"
+    }
+  }
+}
+
+struct LazyVGridDemo: View {
+
+  @EnvironmentObject private var viewModel: LazyVGridDemoViewModel
+
+  var body: some View {
+    NavigationView {
+      ScrollView {
+        LazyVGrid(columns: Array(repeating: GridItem(viewModel.itemType, spacing: viewModel.itemSpacing, alignment: viewModel.itemAlignment),
+                                 count: viewModel.gridItemCount),
+                  alignment: viewModel.gridAlignment, spacing: viewModel.gridSpacing,
+                  pinnedViews: viewModel.gridShowPinnedViews ? [.sectionHeaders, .sectionFooters] : .init()) {
+          Section(header: HeaderAndFooterPinnedView(title: "1 to 250"),
+                  footer: HeaderAndFooterPinnedView(title: "1 to 250")) {
+            ForEach(1...500, id: \.self) { item in
+              ZStack(alignment: viewModel.itemAlignment) {
+                randomColor()
+                Rectangle()
+                  .fill(.black)
+                  .frame(width: viewModel.itemSize * 0.75, height: viewModel.itemSize * 0.75)
+                  .onChange(of: viewModel.itemSize) {
+                    print("====", $0, $0 * 0.75)
+                  }
+                  .padding()
+                Text("Item n°\(item)")
+                  .fontWeight(.bold)
+                  .foregroundColor(.white)
+              }
+              .frame(width: viewModel.itemSize)
+            }
+          }
+        }
+      }
+      .navigationTitle("LazyVGrid demo")
+    }
+  }
+}
+
+struct LazyVGridSamples: View {
+
+  var body: some View {
+    NavigationView {
+      List {
+        NavigationLink("N-Adaptive Columns", destination: LazyVGridWithNAdaptiveColumns())
+        NavigationLink("One Flexible Column", destination: LazyVGridWithOneFlexibleColumn())
+        NavigationLink("Three Flexible Columns", destination: LazyVGridWithThreeFlexibleColumns())
+        NavigationLink("Three Fixed Columns", destination: LazyVGridWithThreeFixedColumns())
+        NavigationLink("One Fixed – ß Adaptive – One Flexible Columns", destination: LazyVGridWithOneFixedßAdaptiveOneFlexibleColums())
+      }
+      .navigationTitle("LazyVGrid Samples")
+    }
+  }
+}
+
 struct LazyVGridWithNAdaptiveColumns: View {
 
   /// Définition du layout :
@@ -169,58 +313,16 @@ struct LazyVGridWithOneFixedßAdaptiveOneFlexibleColums: View {
   }
 }
 
-fileprivate enum TabItem {
-  case settings
-  case grid
-  case sample
-}
-
-struct LazyVGridDemoView: View {
-
-  @StateObject private var viewModel = LazyVGridDemoViewModel()
-
-  var body: some View {
-    TabView {
-      LazyVGridConfiguratorView()
-        .tag(TabItem.settings)
-        .tabItem { Label("Config", systemImage: "gear") }
-
-      LazyVGridDemo()
-        .tag(TabItem.grid)
-        .tabItem { Label("Grid", systemImage: "square.grid.3x2") }
-
-      LazyVGridSamples()
-        .tag(TabItem.sample)
-        .tabItem { Label("Samples", systemImage: "magazine") }
-    }
-    .environmentObject(viewModel)
-  }
-}
-
-struct LazyVGridSamples: View {
-
-  var body: some View {
-    NavigationView {
-      List {
-        NavigationLink("N-Adaptive Columns", destination: LazyVGridWithNAdaptiveColumns())
-        NavigationLink("One Flexible Column", destination: LazyVGridWithOneFlexibleColumn())
-        NavigationLink("Three Flexible Columns", destination: LazyVGridWithThreeFlexibleColumns())
-        NavigationLink("Three Fixed Columns", destination: LazyVGridWithThreeFixedColumns())
-        NavigationLink("One Fixed – ß Adaptive – One Flexible Columns", destination: LazyVGridWithOneFixedßAdaptiveOneFlexibleColums())
-      }
-      .navigationTitle("LazyVGrid Samples")
-    }
-  }
-}
-
 struct LazyVGridView_Previews: PreviewProvider {
   static var previews: some View {
-    Group {
-      LazyVGridWithNAdaptiveColumns()
-      LazyVGridWithOneFlexibleColumn()
-      LazyVGridWithThreeFlexibleColumns()
-      LazyVGridWithThreeFixedColumns()
-      LazyVGridWithOneFixedßAdaptiveOneFlexibleColums()
-    }
+    LazyVGridDemoView()
+    LazyVGridConfiguratorView()
+    LazyVGridDemo()
+    LazyVGridSamples()
+    LazyVGridWithNAdaptiveColumns()
+    LazyVGridWithOneFlexibleColumn()
+    LazyVGridWithThreeFlexibleColumns()
+    LazyVGridWithThreeFixedColumns()
+    LazyVGridWithOneFixedßAdaptiveOneFlexibleColums()
   }
 }

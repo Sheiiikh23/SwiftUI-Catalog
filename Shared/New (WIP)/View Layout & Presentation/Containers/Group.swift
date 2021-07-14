@@ -24,34 +24,37 @@ import SwiftUI
 ///   - En SwiftUI presque toutes les `View` "container" prennent en paramètre un `@ViewBuilder`. Ce dernier permet de définir le layout pour 10 subviews
 ///   - Les groupes permettent de pallier à cette "limitation" de 10 subviews, en regroupant plusieurs `View` en une seule via l'utilisation d'un `Group`
 
-struct GroupView: View {
+struct GroupSample: View {
 
   var body: some View {
-    VStack {
-      Text("1")
-      Text("2")
-      Text("3")
-      Text("4")
-      Text("5")
-      Text("6")
-      Text("7")
-      Text("8")
-      Text("9")
-      Group {
-        Text("10")
-        Text("11")
-        Text("12")
-        Text("13")
-        Text("13")
-        Text("Ainsi de suite...")
+    NavigationView {
+      VStack {
+        Text("1")
+        Text("2")
+        Text("3")
+        Text("4")
+        Text("5")
+        Text("6")
+        Text("7")
+        Text("8")
+        Text("9")
+        Group {
+          Text("10")
+          Text("11")
+          Text("12")
+          Text("13")
+          Text("13")
+          Text("Ainsi de suite...")
+        }
+        .foregroundColor(.red)
       }
-      .foregroundColor(.red)
+      .navigationTitle("Group sample")
     }
   }
 }
 
-struct GroupView_Previews: PreviewProvider {
+struct GroupSample_Previews: PreviewProvider {
   static var previews: some View {
-    GroupView()
+    GroupSample()
   }
 }
