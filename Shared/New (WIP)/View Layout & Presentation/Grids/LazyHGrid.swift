@@ -211,6 +211,7 @@ struct LazyHGridSamples: View {
         NavigationLink("Three Fixed Rows", destination: LazyHGridWithThreeFixedRows())
         NavigationLink("One Fixed – ß Adaptive – One Flexible Rows", destination: LazyHGridWithOneFixedßAdaptiveOneFlexibleRows())
       }
+      .navigationTitle("LazyHGrid Samples")
     }
   }
 }

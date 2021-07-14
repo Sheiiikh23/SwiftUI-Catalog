@@ -208,6 +208,7 @@ struct LazyVGridSamples: View {
         NavigationLink("Three Fixed Columns", destination: LazyVGridWithThreeFixedColumns())
         NavigationLink("One Fixed – ß Adaptive – One Flexible Columns", destination: LazyVGridWithOneFixedßAdaptiveOneFlexibleColums())
       }
+      .navigationTitle("LazyVGrid Samples")
     }
   }
 }

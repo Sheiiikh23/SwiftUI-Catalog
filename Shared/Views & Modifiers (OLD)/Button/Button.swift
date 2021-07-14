@@ -13,7 +13,7 @@ struct ButtonView: View {
   var body: some View {
     VStack {
       Button("Add") {}
-      .buttonStyle(BorderedButtonStyle(tint: .red))
+//      .buttonStyle(BorderedButtonStyle(tint: .red))
       Button("Add") {}
       .buttonStyle(.bordered)
       .tint(.red)

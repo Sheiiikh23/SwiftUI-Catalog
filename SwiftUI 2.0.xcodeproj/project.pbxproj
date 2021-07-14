@@ -65,6 +65,7 @@
 		8D35CD9B269A405600EDD6FF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35CD9A269A405600EDD6FF /* ColorExtension.swift */; };
 		8D35CD9E269B11E500EDD6FF /* DrawingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35CD9D269B11E500EDD6FF /* DrawingGroup.swift */; };
 		8D35CDA0269B21AF00EDD6FF /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35CD9F269B21AF00EDD6FF /* CGRectExtension.swift */; };
+		8D35CDA3269B441F00EDD6FF /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35CDA2269B441F00EDD6FF /* ScrollView.swift */; };
 		8D36D1B125096EF90074E498 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36D1B025096EF90074E498 /* Calendar.swift */; };
 		8D36D1B3250971E20074E498 /* EditMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D36D1B2250971E20074E498 /* EditMode.swift */; };
 		8D39E24325841FAA009FCC01 /* TextFieldStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D39E24225841FAA009FCC01 /* TextFieldStyleModifier.swift */; };
@@ -312,6 +313,10 @@
 		8DFBFECA268BB6C900BAEE00 /* SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFBFEC9268BB6C900BAEE00 /* SFSymbol.swift */; };
 		8DFC196025E3A7BF004445F8 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC195F25E3A7BF004445F8 /* SectionView.swift */; };
 		8DFC196F25E3B976004445F8 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC196E25E3B976004445F8 /* Form.swift */; };
+		D90639A2269EFB2E0076AA0D /* CustomAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90639A1269EFB2E0076AA0D /* CustomAxis.swift */; };
+		D90639A4269EFB4E0076AA0D /* ScrollViewDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90639A3269EFB4E0076AA0D /* ScrollViewDemoViewModel.swift */; };
+		D90639A6269EFB7F0076AA0D /* VerticalScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90639A5269EFB7F0076AA0D /* VerticalScrollViewDemo.swift */; };
+		D90639A8269EFB8F0076AA0D /* HorizontalScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90639A7269EFB8F0076AA0D /* HorizontalScrollViewDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -415,6 +420,7 @@
 		8D35CD9A269A405600EDD6FF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		8D35CD9D269B11E500EDD6FF /* DrawingGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingGroup.swift; sourceTree = "<group>"; };
 		8D35CD9F269B21AF00EDD6FF /* CGRectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
+		8D35CDA2269B441F00EDD6FF /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		8D36D1B025096EF90074E498 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		8D36D1B2250971E20074E498 /* EditMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMode.swift; sourceTree = "<group>"; };
 		8D39E24225841FAA009FCC01 /* TextFieldStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyleModifier.swift; sourceTree = "<group>"; };
@@ -598,6 +604,10 @@
 		8DFBFEC9268BB6C900BAEE00 /* SFSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFSymbol.swift; sourceTree = "<group>"; };
 		8DFC195F25E3A7BF004445F8 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		8DFC196E25E3B976004445F8 /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		D90639A1269EFB2E0076AA0D /* CustomAxis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAxis.swift; sourceTree = "<group>"; };
+		D90639A3269EFB4E0076AA0D /* ScrollViewDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDemoViewModel.swift; sourceTree = "<group>"; };
+		D90639A5269EFB7F0076AA0D /* VerticalScrollViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalScrollViewDemo.swift; sourceTree = "<group>"; };
+		D90639A7269EFB8F0076AA0D /* HorizontalScrollViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollViewDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -687,11 +697,12 @@
 				8D0AD50026751032000655AA /* Lazy Stacks */,
 				8D0AD5012675103D000655AA /* Grids */,
 				8D0AD50226751042000655AA /* Containers */,
-				8D0AD50626751068000655AA /* Hierarchical Views  */,
-				8D0AD50426751054000655AA /* Lists */,
 				8D0AD5032675104B000655AA /* Scroll Views */,
-				8D0AD50726751081000655AA /* Spacers & Dividers */,
+				8D0AD50426751054000655AA /* Lists */,
 				8D0AD5052675105E000655AA /* Tables */,
+				8D0AD50626751068000655AA /* Hierarchical Views  */,
+				8D35CDA1269B43DF00EDD6FF /* Scheduled View Updates */,
+				8D0AD50726751081000655AA /* Spacers & Dividers */,
 				8D0AD50D26751A3A000655AA /* UI.swift */,
 			);
 			path = "View Layout & Presentation";
@@ -748,6 +759,8 @@
 		8D0AD5032675104B000655AA /* Scroll Views */ = {
 			isa = PBXGroup;
 			children = (
+				D90639A0269EFB1E0076AA0D /* Views */,
+				8D35CDA2269B441F00EDD6FF /* ScrollView.swift */,
 			);
 			path = "Scroll Views";
 			sourceTree = "<group>";
@@ -915,6 +928,13 @@
 			path = DrawingGroupModifier;
 			sourceTree = "<group>";
 		};
+		8D35CDA1269B43DF00EDD6FF /* Scheduled View Updates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Scheduled View Updates";
+			sourceTree = "<group>";
+		};
 		8D36D1AF25096EEB0074E498 /* Views Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -962,7 +982,7 @@
 			path = UndoManager;
 			sourceTree = "<group>";
 		};
-		8D442EE224A809B4009995DD /* PropretyWrappers */ = {
+		8D442EE224A809B4009995DD /* PropretyWrappers (OLD) */ = {
 			isa = PBXGroup;
 			children = (
 				8D68A80E24C8559B000F4DFF /* Environment Values */,
@@ -975,7 +995,7 @@
 				8DB0C1AB24B21F3F006818B4 /* SceneStorageWrapper.swift */,
 				8DB0C1B124B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift */,
 			);
-			path = PropretyWrappers;
+			path = "PropretyWrappers (OLD)";
 			sourceTree = "<group>";
 		};
 		8D46DCDF26655B3D0018BDCA /* OutlineGroup */ = {
@@ -995,7 +1015,7 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		8D4860202691E9DA003E5D62 /* New */ = {
+		8D4860202691E9DA003E5D62 /* New (WIP) */ = {
 			isa = PBXGroup;
 			children = (
 				8D0AD4FD26750FE1000655AA /* View Layout & Presentation */,
@@ -1003,7 +1023,7 @@
 				8D1DD6E82675414A00EB69AC /* Extension */,
 				8D8442182677F8FE0087B889 /* Custom */,
 			);
-			path = New;
+			path = "New (WIP)";
 			sourceTree = "<group>";
 		};
 		8D4860212691EAC2003E5D62 /* DynamicTypeSizeModifier */ = {
@@ -1212,6 +1232,7 @@
 				8D84421B2677F9360087B889 /* VerticalAlignmentCustom.swift */,
 				8D3E3D4B2689E3950084F924 /* HorizontalAlignmentCustom.swift */,
 				8D84421D2677F9570087B889 /* AlignmentCustom.swift */,
+				D90639A1269EFB2E0076AA0D /* CustomAxis.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -1647,11 +1668,11 @@
 			isa = PBXGroup;
 			children = (
 				8DDA5C1B24A31A5700BF263B /* SwiftUI_2_0App.swift */,
-				8D4860202691E9DA003E5D62 /* New */,
+				8D4860202691E9DA003E5D62 /* New (WIP) */,
 				8D68755A2691D37300627B5D /* Preview (WIP) */,
 				8D5164E02688FEDA00D298F6 /* Views Modifiers (WIP) */,
-				8D442EE224A809B4009995DD /* PropretyWrappers */,
-				8DEBD12E24A3E643004AAE41 /* Views & Modifiers */,
+				8D442EE224A809B4009995DD /* PropretyWrappers (OLD) */,
+				8DEBD12E24A3E643004AAE41 /* Views & Modifiers (OLD) */,
 				8DB0C1A224B219E0006818B4 /* README.md */,
 				8DDA5C1D24A31A5800BF263B /* Assets.xcassets */,
 			);
@@ -1732,7 +1753,7 @@
 			path = "Widget Attributes";
 			sourceTree = "<group>";
 		};
-		8DEBD12E24A3E643004AAE41 /* Views & Modifiers */ = {
+		8DEBD12E24A3E643004AAE41 /* Views & Modifiers (OLD) */ = {
 			isa = PBXGroup;
 			children = (
 				8D35CD9C269B11C700EDD6FF /* DrawingGroupModifier */,
@@ -1797,7 +1818,17 @@
 				8DBCF831256CB4A200AA564B /* Toolbar */,
 				8DBCF843256CB55A00AA564B /* WindowStyle, WindowToolbarStyle */,
 			);
-			path = "Views & Modifiers";
+			path = "Views & Modifiers (OLD)";
+			sourceTree = "<group>";
+		};
+		D90639A0269EFB1E0076AA0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D90639A3269EFB4E0076AA0D /* ScrollViewDemoViewModel.swift */,
+				D90639A5269EFB7F0076AA0D /* VerticalScrollViewDemo.swift */,
+				D90639A7269EFB8F0076AA0D /* HorizontalScrollViewDemo.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2075,6 +2106,7 @@
 				8D1DD6EC2675417600EB69AC /* HorizontalAlignmentExtension.swift in Sources */,
 				8D4D24FB24AC5C4F00982117 /* LazyHGrid.swift in Sources */,
 				8D5B5C1E2579093000F309DE /* CustomRedacted.swift in Sources */,
+				8D35CDA3269B441F00EDD6FF /* ScrollView.swift in Sources */,
 				8D24B5CB267F836800E664C7 /* LazyHGridDemo.swift in Sources */,
 				8D3A769324A8E38800005971 /* TextEditorView.swift in Sources */,
 				8D39F44525753A82000B757F /* TimeZone.swift in Sources */,
@@ -2085,6 +2117,7 @@
 				8D7B37CE24AEFC8B00F95736 /* PinnedViews.swift in Sources */,
 				8D680A092508218200AFE8A7 /* DisableAutoCorrection.swift in Sources */,
 				8DA7D855267006F1002E3081 /* RefreshableModifier.swift in Sources */,
+				D90639A2269EFB2E0076AA0D /* CustomAxis.swift in Sources */,
 				8D0F819B250AB7AA00221DFD /* Locale.swift in Sources */,
 				8DB0C1AF24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift in Sources */,
 				8D46DCE126655B5E0018BDCA /* ListRowBackgroundModifier.swift in Sources */,
@@ -2141,6 +2174,7 @@
 				8DE6722A25767DDF001C17DB /* IsFocused.swift in Sources */,
 				8DA7D85226700107002E3081 /* SubmitLabelModifier.swift in Sources */,
 				8DA0F46324CA1C30003C751B /* LegibilityWeight.swift in Sources */,
+				D90639A4269EFB4E0076AA0D /* ScrollViewDemoViewModel.swift in Sources */,
 				8D7B31C72562AF3D005B0D32 /* TextConcatenation.swift in Sources */,
 				8D727DD325E6712600510B7A /* DatePickerView.swift in Sources */,
 				8DF93EEA24A7B62400B84CD0 /* ToolbarItemView.swift in Sources */,
@@ -2167,9 +2201,11 @@
 				8DE9F4F424AD1B1E0054CE64 /* IndexViewStyleModifier & PageIndexViewStyle.swift in Sources */,
 				8D999F9124B0CB4B0050BD97 /* ScrollToModifier.swift in Sources */,
 				8DA7D88126729AA3002E3081 /* ForegroundStyleModifier.swift in Sources */,
+				D90639A8269EFB8F0076AA0D /* HorizontalScrollViewDemo.swift in Sources */,
 				8D6C0F3424FA99F000041F8C /* PickerStyleModifier.swift in Sources */,
 				8DC13F3F24A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
 				8D7D067E25769A2C00323A00 /* Description.swift in Sources */,
+				D90639A6269EFB7F0076AA0D /* VerticalScrollViewDemo.swift in Sources */,
 				8D5164DC2688D19300D298F6 /* LazyGridCellDemo.swift in Sources */,
 				8DDA5C6224A3369B00BF263B /* KeyboardShortcutModifier.swift in Sources */,
 				8DA7D87526727CB1002E3081 /* AlertModifier.swift in Sources */,
