@@ -319,6 +319,8 @@
 		D90639B2269F3A400076AA0D /* LazyHStackDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90639B1269F3A400076AA0D /* LazyHStackDemoViewModel.swift */; };
 		D90639B4269F3AD20076AA0D /* HeaderAndFooterPinnedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90639B3269F3AD20076AA0D /* HeaderAndFooterPinnedView.swift */; };
 		D90639B6269F49470076AA0D /* LazyVStackDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90639B5269F49470076AA0D /* LazyVStackDemoViewModel.swift */; };
+		D90639C2269F68090076AA0D /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90639C1269F68090076AA0D /* List.swift */; };
+		D929658B26A01194003A1312 /* ListViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929658A26A01194003A1312 /* ListViewModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -612,6 +614,8 @@
 		D90639B1269F3A400076AA0D /* LazyHStackDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHStackDemoViewModel.swift; sourceTree = "<group>"; };
 		D90639B3269F3AD20076AA0D /* HeaderAndFooterPinnedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderAndFooterPinnedView.swift; sourceTree = "<group>"; };
 		D90639B5269F49470076AA0D /* LazyVStackDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVStackDemoViewModel.swift; sourceTree = "<group>"; };
+		D90639C1269F68090076AA0D /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		D929658A26A01194003A1312 /* ListViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -774,6 +778,8 @@
 		8D0AD50426751054000655AA /* Lists */ = {
 			isa = PBXGroup;
 			children = (
+				D929658926A01177003A1312 /* Views – ViewModels */,
+				D90639C1269F68090076AA0D /* List.swift */,
 			);
 			path = Lists;
 			sourceTree = "<group>";
@@ -1085,6 +1091,11 @@
 			children = (
 				8D44478525640A5D00D875E3 /* GroupBoxStyleModifier.swift */,
 				8D3E3D4F2689E7D00084F924 /* ControlGroupStyleModifier.swift */,
+				8D3A766E24A892E600005971 /* ListItemTintModifier.swift */,
+				8D46DCE026655B5E0018BDCA /* ListRowBackgroundModifier.swift */,
+				8D46DCE2266563340018BDCA /* ListRowInsetsModifier.swift */,
+				8DF93E9924A77D7400B84CD0 /* ListStyleModifier.swift */,
+				8DA7D88326729CB4002E3081 /* ListRowSeparatorModifier.swift */,
 			);
 			path = "Views Modifiers (WIP)";
 			sourceTree = "<group>";
@@ -1474,11 +1485,6 @@
 			isa = PBXGroup;
 			children = (
 				8DF93EDE24A7955D00B84CD0 /* ListChildrenView.swift */,
-				8D3A766E24A892E600005971 /* ListItemTintModifier.swift */,
-				8D46DCE026655B5E0018BDCA /* ListRowBackgroundModifier.swift */,
-				8D46DCE2266563340018BDCA /* ListRowInsetsModifier.swift */,
-				8DF93E9924A77D7400B84CD0 /* ListStyleModifier.swift */,
-				8DA7D88326729CB4002E3081 /* ListRowSeparatorModifier.swift */,
 			);
 			path = "ListChildren, ListItemTint, ListRowBackground, ListRowInsets, ListStyle, ListRowSeparatorModifier";
 			sourceTree = "<group>";
@@ -1853,6 +1859,14 @@
 			path = "Views – ViewModels";
 			sourceTree = "<group>";
 		};
+		D929658926A01177003A1312 /* Views – ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D929658A26A01194003A1312 /* ListViewModels.swift */,
+			);
+			path = "Views – ViewModels";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2157,6 +2171,7 @@
 				8DA0F45D24CA1627003C751B /* AccessibilityReduceTransparency.swift in Sources */,
 				8D1A9612256FB30A00223F52 /* Font.swift in Sources */,
 				8DE67207257674C6001C17DB /* OpenURL.swift in Sources */,
+				D929658B26A01194003A1312 /* ListViewModels.swift in Sources */,
 				8DB0C19A24B207F8006818B4 /* DateInterpolationInText.swift in Sources */,
 				8D35CD9E269B11E500EDD6FF /* DrawingGroup.swift in Sources */,
 				8D39E24325841FAA009FCC01 /* TextFieldStyleModifier.swift in Sources */,
@@ -2205,6 +2220,7 @@
 				D90639B6269F49470076AA0D /* LazyVStackDemoViewModel.swift in Sources */,
 				8D0AD50E26751A3A000655AA /* UI.swift in Sources */,
 				8DE9F4EF24AD15F40054CE64 /* TabViewStyleModifier.swift in Sources */,
+				D90639C2269F68090076AA0D /* List.swift in Sources */,
 				8D680A0B2508230E00AFE8A7 /* TextCase.swift in Sources */,
 				8D158BAD24CC429300188F6B /* ControlActiveState.swift in Sources */,
 				8D72C99D24A5296F00C98579 /* ProgressViewStyleModifier.swift in Sources */,
