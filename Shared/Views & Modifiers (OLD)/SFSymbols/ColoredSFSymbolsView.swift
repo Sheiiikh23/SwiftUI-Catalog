@@ -107,3 +107,15 @@ struct ColoredSFSymbolsView_Previews: PreviewProvider {
     ColoredSFSymbolsView()
   }
 }
+
+
+// MARK: - New SF Sybol explanation
+/// Par défaut les SF Sybmol sont dans leur version `outlined`
+/// Lorsqu'on souhaite rendre un symbole plus important, pour leur remplir d'une couleur par exemple, la version `fill` du SF Symbol est un excellent choix
+///
+/// Un SF Symbol peut avoir plein de style différent :
+///   - `outlined`
+///   - `fill`
+///   - `slash` pour une fonction de supprimer ou rendre inactif quelque chose
+///   - `enclosing` qui sont contenu dans une shape comme un circle, rectangle etc...
+///  👉 Pour cela on utilise le modifier `symbolVariant(variant:)` si iOS 15 autrement dans le choix du SF Symbol (.fill, .slash, etc...)

@@ -321,6 +321,8 @@
 		D90639B6269F49470076AA0D /* LazyVStackDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90639B5269F49470076AA0D /* LazyVStackDemoViewModel.swift */; };
 		D90639C2269F68090076AA0D /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90639C1269F68090076AA0D /* List.swift */; };
 		D929658B26A01194003A1312 /* ListViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929658A26A01194003A1312 /* ListViewModels.swift */; };
+		D92A237626A1EC4B001C45C9 /* SybolVariantEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */; };
+		D92A237726A1EC4B001C45C9 /* SybolVariantEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -616,6 +618,7 @@
 		D90639B5269F49470076AA0D /* LazyVStackDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVStackDemoViewModel.swift; sourceTree = "<group>"; };
 		D90639C1269F68090076AA0D /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		D929658A26A01194003A1312 /* ListViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModels.swift; sourceTree = "<group>"; };
+		D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SybolVariantEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1004,6 +1007,7 @@
 				8D999F8A24B0B7B10050BD97 /* NamespaceWrapper.swift */,
 				8DB0C1AB24B21F3F006818B4 /* SceneStorageWrapper.swift */,
 				8DB0C1B124B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift */,
+				D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */,
 			);
 			path = "PropretyWrappers (OLD)";
 			sourceTree = "<group>";
@@ -2295,6 +2299,7 @@
 				8D44478625640A5D00D875E3 /* GroupBoxStyleModifier.swift in Sources */,
 				8D3A767924A89FA200005971 /* LinkView.swift in Sources */,
 				8D6875592691D30600627B5D /* VerticalEdgeExtension.swift in Sources */,
+				D92A237626A1EC4B001C45C9 /* SybolVariantEnvironment.swift in Sources */,
 				8D4B2A3A24CA1EBA003E37F4 /* ColorScheme.swift in Sources */,
 				8DA7D87D267298BC002E3081 /* MenuWithPrimaryAction.swift in Sources */,
 				8D68A81024C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift in Sources */,
@@ -2322,6 +2327,7 @@
 				8D97EDE124E1DBBE009E60E6 /* TruncationMode.swift in Sources */,
 				8D999F9524B0E0C20050BD97 /* FullScreenCoverModifier.swift in Sources */,
 				8DE4440224CAA7DF0079B2B7 /* ControlSize.swift in Sources */,
+				D92A237726A1EC4B001C45C9 /* SybolVariantEnvironment.swift in Sources */,
 				8D3A767524A89C2600005971 /* ToggleStyleModifier.swift in Sources */,
 				8D97EDDE24E1D7D4009E60E6 /* SizeCategory.swift in Sources */,
 				8DB0C1AD24B21F3F006818B4 /* SceneStorageWrapper.swift in Sources */,

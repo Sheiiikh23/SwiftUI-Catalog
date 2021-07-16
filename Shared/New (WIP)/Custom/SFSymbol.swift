@@ -2619,4 +2619,8 @@ enum SFSymbol: String, CaseIterable, Identifiable {
   case applelogo = "applelogo"
 
   var id: String { self.rawValue }
+
+  static func randomElement() -> SFSymbol {
+    return allCases.randomElement() ?? .trash
+  }
 }
