@@ -66,42 +66,6 @@ struct ColoredSFSymbolsView: View {
   }
 }
 
-struct SFSymbolsStyles: View {
-
-  var body: some View {
-    Image(systemName: "gear")
-      .symbolRenderingMode(.hierarchical)
-
-    Image(systemName: "gear")
-      .symbolRenderingMode(.monochrome)
-
-    Image(systemName: "gear")
-      .symbolRenderingMode(.multicolor)
-
-    Image(systemName: "gear")
-      .symbolRenderingMode(.palette)
-  }
-}
-
-struct CoolSFsymbol: View {
-
-  var body: some View {
-    ZStack {
-      Image(systemName: SFSymbol.mic.rawValue)
-        .font(.system(size: 100, weight: .regular))
-        .imageScale(.large)
-        .symbolVariant(.fill.circle) // TODO:
-        .symbolRenderingMode(.palette)
-        .foregroundStyle(
-          Color.white.opacity(0.8),
-          Color.blue,
-          LinearGradient(colors: [.purple, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
-        )
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 40))
-    }
-  }
-}
-
 struct ColoredSFSymbolsView_Previews: PreviewProvider {
   static var previews: some View {
     ColoredSFSymbolsView()
@@ -114,8 +78,15 @@ struct ColoredSFSymbolsView_Previews: PreviewProvider {
 /// Lorsqu'on souhaite rendre un symbole plus important, pour leur remplir d'une couleur par exemple, la version `fill` du SF Symbol est un excellent choix
 ///
 /// Un SF Symbol peut avoir plein de style différent :
-///   - `outlined`
-///   - `fill`
-///   - `slash` pour une fonction de supprimer ou rendre inactif quelque chose
-///   - `enclosing` qui sont contenu dans une shape comme un circle, rectangle etc...
-///  👉 Pour cela on utilise le modifier `symbolVariant(variant:)` si iOS 15 autrement dans le choix du SF Symbol (.fill, .slash, etc...)
+///   - `outlined` ––> comportement par défaut, à utiliser lorsqu'à côté d'un text
+///   - `fill` ––> pour accentuer une action
+///   - `slash` ––> pour une fonction de supprimer ou rendre inactif quelque chose
+///   - `enclosing` ––> qui sont contenu dans une shape comme un circle, rectangle etc...
+///  👉 Pour cela on utilise le modifier `symbolVariant(_:)` si iOS 15 autrement dans le choix du SF Symbol (.fill, .slash, etc...)
+///
+/// Un SF Symbol peut avoir 4 cas de rendering :
+///   - `monochrome` ––> couche unique avec une seule couleur
+///   - `hierarchical` ––> couches multiples avec une couleur et des opacités différentes
+///   - `multicolor` ––> couches multiples avec leur style inhérent
+///   - `palette`––> couches mulitples aved différentes couleurs
+/// 👉 Pour cela on utilise le modifier `symbolRenderingMode(_:)` si iOS 15 autrement on utilise `renderingMode(_:)`

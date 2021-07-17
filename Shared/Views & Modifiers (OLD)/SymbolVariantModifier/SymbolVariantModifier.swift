@@ -11,13 +11,13 @@ import SwiftUI
 ///   - func symbolVariant(_ variant: SymbolVariants) -> some View
 ///
 /// Paramètre :
-///   - variant : `SymbolVariants`
+///   - variant : `SymbolVariants` ––> définit le style d'un SF Symbol
 ///     - none ––> `outline` style
 ///     - slash ––> `slash` style
 ///     - circle, rectangle, square ––> `enclosing` style avec shape
 ///     - fill ––> `fill` style
 ///
-/// Remarque :
+/// Remarques :
 ///   - Ce modifier correspond à la concaténation dans la string du SF Sybol sans ce soucier de l'ordre
 ///   - Ordre commun  : .slash (ou non) puis .shape (ou non) puis .fill (ou non)
 ///   
