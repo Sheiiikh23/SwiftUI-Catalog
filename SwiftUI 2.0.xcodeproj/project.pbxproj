@@ -323,6 +323,10 @@
 		D929658B26A01194003A1312 /* ListViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929658A26A01194003A1312 /* ListViewModels.swift */; };
 		D92A237626A1EC4B001C45C9 /* SybolVariantEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */; };
 		D92A237726A1EC4B001C45C9 /* SybolVariantEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */; };
+		D9E60E0026AC44A20062D3B2 /* IsLuminanceReducedEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E60DFF26AC44A20062D3B2 /* IsLuminanceReducedEnvironment.swift */; };
+		D9E60E0326AC633C0062D3B2 /* SearchCompletionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E60E0226AC633C0062D3B2 /* SearchCompletionModifier.swift */; };
+		D9E60E0526AC8D6A0062D3B2 /* IsSearching.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E60E0426AC8D6A0062D3B2 /* IsSearching.swift */; };
+		D9E60E0726AC8DE60062D3B2 /* DismissSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E60E0626AC8DE60062D3B2 /* DismissSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -619,6 +623,10 @@
 		D90639C1269F68090076AA0D /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		D929658A26A01194003A1312 /* ListViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModels.swift; sourceTree = "<group>"; };
 		D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SybolVariantEnvironment.swift; sourceTree = "<group>"; };
+		D9E60DFF26AC44A20062D3B2 /* IsLuminanceReducedEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsLuminanceReducedEnvironment.swift; sourceTree = "<group>"; };
+		D9E60E0226AC633C0062D3B2 /* SearchCompletionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCompletionModifier.swift; sourceTree = "<group>"; };
+		D9E60E0426AC8D6A0062D3B2 /* IsSearching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsSearching.swift; sourceTree = "<group>"; };
+		D9E60E0626AC8DE60062D3B2 /* DismissSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1008,6 +1016,8 @@
 				8DB0C1AB24B21F3F006818B4 /* SceneStorageWrapper.swift */,
 				8DB0C1B124B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift */,
 				D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */,
+				D9E60E0426AC8D6A0062D3B2 /* IsSearching.swift */,
+				D9E60E0626AC8DE60062D3B2 /* DismissSearch.swift */,
 			);
 			path = "PropretyWrappers (OLD)";
 			sourceTree = "<group>";
@@ -1060,6 +1070,7 @@
 			isa = PBXGroup;
 			children = (
 				8D50BD982580F7D700BAAF7B /* DefaultWheelPickerItemHeight.swift */,
+				D9E60DFF26AC44A20062D3B2 /* IsLuminanceReducedEnvironment.swift */,
 			);
 			path = "Environment Values";
 			sourceTree = "<group>";
@@ -1768,6 +1779,7 @@
 		8DEBD12E24A3E643004AAE41 /* Views & Modifiers (OLD) */ = {
 			isa = PBXGroup;
 			children = (
+				D9E60E0126AC63250062D3B2 /* SearchCompletion */,
 				8D35CD9C269B11C700EDD6FF /* DrawingGroupModifier */,
 				8DAD45C12699F0FF00518477 /* IgnoreSafeAreaModifier */,
 				8DAED1DE2694F50F0044B5CD /* SymbolVariantModifier */,
@@ -1869,6 +1881,14 @@
 				D929658A26A01194003A1312 /* ListViewModels.swift */,
 			);
 			path = "Views – ViewModels";
+			sourceTree = "<group>";
+		};
+		D9E60E0126AC63250062D3B2 /* SearchCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				D9E60E0226AC633C0062D3B2 /* SearchCompletionModifier.swift */,
+			);
+			path = SearchCompletion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2095,6 +2115,7 @@
 				8D282E29257EEBEF00E6DEC0 /* GaugeStyleModifier.swift in Sources */,
 				8D6D3F62257EAA20001AA59E /* GaugeView.swift in Sources */,
 				8D50BD992580F7D700BAAF7B /* DefaultWheelPickerItemHeight.swift in Sources */,
+				D9E60E0026AC44A20062D3B2 /* IsLuminanceReducedEnvironment.swift in Sources */,
 				8D96FB32257EF8E400A805C5 /* NavigationTitleViewBuilder.swift in Sources */,
 				8D6D3F60257EAA20001AA59E /* HostingController.swift in Sources */,
 				8D6D3F66257EAA20001AA59E /* NotificationController.swift in Sources */,
@@ -2186,6 +2207,7 @@
 				8D35CDA0269B21AF00EDD6FF /* CGRectExtension.swift in Sources */,
 				8D005E2624ADAE2200D29E53 /* LazyVStack.swift in Sources */,
 				8DAED1DD2694CE530044B5CD /* Button.swift in Sources */,
+				D9E60E0526AC8D6A0062D3B2 /* IsSearching.swift in Sources */,
 				8D3E3D502689E7D00084F924 /* ControlGroupStyleModifier.swift in Sources */,
 				8DB0C19D24B21127006818B4 /* AppStoreOverlayModifier.swift in Sources */,
 				8D46DCE3266563340018BDCA /* ListRowInsetsModifier.swift in Sources */,
@@ -2205,8 +2227,10 @@
 				8D3A769024A8D85700005971 /* ColoredSFSymbolsView.swift in Sources */,
 				8D6C0F3224FA998A00041F8C /* PopoverModifer.swift in Sources */,
 				8DDA5C6524A3388A00BF263B /* ProgressViews.swift in Sources */,
+				D9E60E0326AC633C0062D3B2 /* SearchCompletionModifier.swift in Sources */,
 				8D0F8199250AB26D00221DFD /* IsEnable.swift in Sources */,
 				8D36D1B125096EF90074E498 /* Calendar.swift in Sources */,
+				D9E60E0726AC8DE60062D3B2 /* DismissSearch.swift in Sources */,
 				8D3A768D24A8CFFA00005971 /* TextCaseModifier.swift in Sources */,
 				8D064B0024D0A518000272FA /* LineSpacing.swift in Sources */,
 				8D2125B425766C87001837BC /* ScenePhase.swift in Sources */,
