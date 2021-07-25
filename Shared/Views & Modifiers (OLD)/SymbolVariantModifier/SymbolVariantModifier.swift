@@ -22,7 +22,7 @@ import SwiftUI
 ///   - Ordre commun  : .slash (ou non) puis .shape (ou non) puis .fill (ou non)
 ///   
 /// Tips :
-///   - On peut enchainer les styles au sein d'un seul `symbolVariant(_:)` sans ce soucier d'un ordre quelconque
+///   - On peut enchainer les styles au sein d'un seul `symbolVariant(_:)` sans ce soucier d'un ordre quelconque (mais pas recommandé par les ingénieur Apple)
 ///   - Les actions dans un un `swipeAction` sont `fill` afin d'accentuer la zone de touch
 ///   - Les styles `enclosing` & `fill` combinés permettent une meilleur lisibilité pour les petites tailles
 ///   - Le style `outline` est idéal au sein d'une Toolbar, NavigationView, List et où les symbols sont à côté de texte

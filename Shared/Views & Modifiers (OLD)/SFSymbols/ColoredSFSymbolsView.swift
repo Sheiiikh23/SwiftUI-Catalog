@@ -83,6 +83,7 @@ struct ColoredSFSymbolsView_Previews: PreviewProvider {
 ///   - `slash` ––> pour une fonction de supprimer ou rendre inactif quelque chose
 ///   - `enclosing` ––> qui sont contenu dans une shape comme un circle, rectangle etc...
 ///  👉 Pour cela on utilise le modifier `symbolVariant(_:)` si iOS 15 autrement dans le choix du SF Symbol (.fill, .slash, etc...)
+///  👉 SF Symbol utilisé au sein d'une `TabView` ou d'une autre vue spécifique, utilisera le style le plus approprié (utilisé le symbol en basic !)
 ///
 /// Un SF Symbol peut avoir 4 cas de rendering :
 ///   - `monochrome` ––> couche unique avec une seule couleur
@@ -90,3 +91,7 @@ struct ColoredSFSymbolsView_Previews: PreviewProvider {
 ///   - `multicolor` ––> couches multiples avec leur style inhérent
 ///   - `palette`––> couches mulitples aved différentes couleurs
 /// 👉 Pour cela on utilise le modifier `symbolRenderingMode(_:)` si iOS 15 autrement on utilise `renderingMode(_:)`
+///
+/// Un SF Symbol avec du texte comme dans un `Label` :
+///   👉 `font(_:)` : permet de définir la taille du texte et du symbol
+///   👉 `imageScale(_:)` : permet de changer le scale du symbol relativement par rapport au texte
