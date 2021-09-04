@@ -17,12 +17,12 @@ import SwiftUI
 
 struct AccessibilityEnabled: View {
 
-  @Environment(\.accessibilityEnabled) private var isAccesibilityActivated
+  @Environment(\.accessibilityEnabled) private var accessibilityEnabled
 
   var body: some View {
     ZStack {
       Color.purple.opacity(0.25).edgesIgnoringSafeArea(.all)
-      if isAccesibilityActivated {
+      if accessibilityEnabled {
         VStack {
           Text("Spoken selection is activated !")
             .font(.title3)

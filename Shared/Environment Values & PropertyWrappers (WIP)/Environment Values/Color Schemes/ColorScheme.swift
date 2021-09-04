@@ -1,23 +1,21 @@
 //
-//  ColorScheme.swift
-//  SwiftUI 2.0
-//
-//  Created by Lucas Abijmil on 23/07/2020.
+//  Copyright (c) 2021 Lucas Abijmil. All rights reserved.
 //
 
 import SwiftUI
 
-/// colorScheme permet de détecter si le dark mode est activé
-/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+/// Plateformes : i•Pad•OS 13.0, watchOS 6.0, tvOS 13.0, macOS 10.15, Mac Catalyst 13.0
+/// Description : Permet de connaître le colorScheme de l'utilisateur (light or dark)
 ///
-/// colorScheme: ColorScheme { get set } 
-///   - black
-///   - light: par défaut
-/// Possibilité de set cet environment variable avec le modifier .environment(\.colorScheme, .option)
-
-// MARK: - Importance pour l'accessibilité : très élevée
-// MARK: - Utilisation : Permet de connaître et setter le colorScheme de l'utilisateur
-// MARK: - Remarque : Pas besoin si on passe par les couleurs de l'assets, qui nous permettent de sets 2 couleurs en fonctions du colorScheme
+/// Définition de l'`EnvironmentValue` :
+///   - var colorScheme: ColorScheme { get set }
+///       - light : par défaut
+///       - dark : si l'utilisateur l'a activé
+///
+/// Remarque :
+///   - En complément, on utilise souvent la propriété `colorSchemeContrast` de l'environmment
+///
+/// Dans le simulateur : Appearance ––> Light or Dark
 
 struct ColorScheme: View {
 

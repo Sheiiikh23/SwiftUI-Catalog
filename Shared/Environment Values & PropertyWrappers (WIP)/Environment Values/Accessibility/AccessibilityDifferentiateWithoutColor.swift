@@ -19,18 +19,18 @@ import SwiftUI
 
 struct AccessibilityDifferentiateWithoutColor: View {
 
-  @Environment(\.accessibilityDifferentiateWithoutColor) private var isDaltonien
+  @Environment(\.accessibilityDifferentiateWithoutColor) private var accessibilityDifferentiateWithoutColor
 
   var body: some View {
     HStack {
-      if isDaltonien {
+      if accessibilityDifferentiateWithoutColor {
         Image(systemName: "checkmark.circle")
       }
       Text("Success")
         .foregroundColor(.primary)
     }
     .padding()
-    .background(isDaltonien ? Color.gray : Color.green)
+    .background(accessibilityDifferentiateWithoutColor ? Color.gray : Color.green)
     .clipShape(Capsule())
   }
 }

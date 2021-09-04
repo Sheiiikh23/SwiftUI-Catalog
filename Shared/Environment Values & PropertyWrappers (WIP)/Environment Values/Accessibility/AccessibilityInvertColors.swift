@@ -9,8 +9,8 @@ import SwiftUI
 ///
 /// Définition de l'`EnvironmentValue` :
 ///   - var accessibilityInvertColors: Bool { get }
-///       - false: par défaut
-///       - true: si l'utilisateur l'a activé
+///       - false : par défaut
+///       - true : si l'utilisateur l'a activé
 ///
 /// Remarque :
 ///   - Si true, il faut ajuster la UI afin d'obtenir un affichage optimal pour ce cas
@@ -19,12 +19,12 @@ import SwiftUI
 
 struct AccessibilityInvertColors: View {
 
-  @Environment(\.accessibilityInvertColors) private var isColorInvert
+  @Environment(\.accessibilityInvertColors) private var accessibilityInvertColors
 
   var body: some View {
     ZStack {
       Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)).edgesIgnoringSafeArea(.all)
-      if isColorInvert {
+      if accessibilityInvertColors {
         VStack {
           Text("Invert colors is activated")
             .font(.title3)

@@ -17,10 +17,10 @@ import SwiftUI
 
 struct AccessibilityShowButtonShapes: View {
 
-  @Environment(\.accessibilityShowButtonShapes) private var isButtonShape
+  @Environment(\.accessibilityShowButtonShapes) private var accessibilityShowButtonShapes
 
   var body: some View {
-    if isButtonShape {
+    if accessibilityShowButtonShapes {
       Button { } label: {
         Text("Button Shape is activated")
           .font(.title2)

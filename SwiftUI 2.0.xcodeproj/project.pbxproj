@@ -818,15 +818,6 @@
 			path = "Spacers & Dividers";
 			sourceTree = "<group>";
 		};
-		8D158BAA24CC420B00188F6B /* ColorScheme */ = {
-			isa = PBXGroup;
-			children = (
-				8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */,
-				8DE443FD24CAA5AF0079B2B7 /* ColorSchemeContrast.swift */,
-			);
-			path = ColorScheme;
-			sourceTree = "<group>";
-		};
 		8D158BAB24CC426A00188F6B /* Controls Attributes (MacOS only) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1140,7 +1131,6 @@
 		8D68A80E24C8559B000F4DFF /* Environment Values */ = {
 			isa = PBXGroup;
 			children = (
-				8D158BAA24CC420B00188F6B /* ColorScheme */,
 				8D158BAB24CC426A00188F6B /* Controls Attributes (MacOS only) */,
 				8D158BAF24CC487C00188F6B /* Core Data */,
 				8D158BB024CC489000188F6B /* List Style */,
@@ -1873,11 +1863,21 @@
 			isa = PBXGroup;
 			children = (
 				D9EE93CE26E36A7F006D2578 /* Accessibility */,
+				D95486F526E398760054C8A3 /* Color Schemes */,
 				D9E60E0426AC8D6A0062D3B2 /* IsSearching.swift */,
 				D9E60E0626AC8DE60062D3B2 /* DismissSearch.swift */,
 				D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */,
 			);
 			path = "Environment Values";
+			sourceTree = "<group>";
+		};
+		D95486F526E398760054C8A3 /* Color Schemes */ = {
+			isa = PBXGroup;
+			children = (
+				8D4B2A3924CA1EBA003E37F4 /* ColorScheme.swift */,
+				8DE443FD24CAA5AF0079B2B7 /* ColorSchemeContrast.swift */,
+			);
+			path = "Color Schemes";
 			sourceTree = "<group>";
 		};
 		D9E60E0126AC63250062D3B2 /* SearchCompletion */ = {

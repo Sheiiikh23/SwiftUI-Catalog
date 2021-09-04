@@ -19,11 +19,11 @@ import SwiftUI
 
 struct AccessibilityReduceTransparency: View {
 
-  @Environment(\.accessibilityReduceTransparency) private var isReduceTransparency
+  @Environment(\.accessibilityReduceTransparency) private var accessibilityReduceTransparency
 
   var body: some View {
     ZStack {
-      Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)).opacity(isReduceTransparency ? 1 : 0.75).edgesIgnoringSafeArea(.all)
+      Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)).opacity(accessibilityReduceTransparency ? 1 : 0.75).edgesIgnoringSafeArea(.all)
       VStack {
         Text("You may activated the reduce transparency")
           .font(.title3)
@@ -32,7 +32,7 @@ struct AccessibilityReduceTransparency: View {
           .foregroundColor(.black)
           .padding(.horizontal, 20)
           .padding(.vertical, 10)
-          .background(isReduceTransparency ? Color.white : Color.red.opacity(0.75))
+          .background(accessibilityReduceTransparency ? Color.white : Color.red.opacity(0.75))
           .clipShape(Capsule())
       }
     }

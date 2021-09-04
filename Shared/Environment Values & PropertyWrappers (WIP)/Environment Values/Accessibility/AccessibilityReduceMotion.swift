@@ -20,7 +20,7 @@ import SwiftUI
 
 struct AccessibilityReduceMotion: View {
 
-  @Environment(\.accessibilityReduceMotion) private var isReduceMotion
+  @Environment(\.accessibilityReduceMotion) private var accessibilityReduceMotion
   @State private var scaleEffect: CGFloat = 1
 
   var body: some View {
@@ -34,13 +34,13 @@ struct AccessibilityReduceMotion: View {
         .background(Color.blue)
         .clipShape(Capsule())
         .onTapGesture {
-          withAnimation(isReduceMotion ? .none : .easeIn) {
+          withAnimation(accessibilityReduceMotion ? .none : .easeIn) {
             scaleEffect *= 1.5
           }
         }
         .onChange(of: scaleEffect) { _ in
           DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
-            withAnimation(isReduceMotion ? .none : .easeOut) { scaleEffect = 1 }
+            withAnimation(accessibilityReduceMotion ? .none : .easeOut) { scaleEffect = 1 }
           }
         }
     }
