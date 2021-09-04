@@ -1,26 +1,19 @@
 //
-//  AccessibilityEnabled.swift
-//  SwiftUI 2.0
-//
-//  Created by Lucas Abijmil on 22/07/2020.
+//  Copyright (c) 2021 Lucas Abijmil. All rights reserved.
 //
 
 import SwiftUI
 
-/// accessibilityEnabled permet de détecter les personnes qui ont activés les text lu par Siri
-/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+/// Plateformes : i•Pad•OS 13.0, watchOS 6.0, tvOS 13.0, macOS 10.15, Mac Catalyst 13.0
+/// Description : Permet de savoir si VoiceOver est activé ou non (malvoyants)
 ///
-/// accessibilityEnabled: Bool { get set } 
-///   - false: par défaut
-///   - true: si l'utisateur l'ativé
-/// Possibilité de set cet environment variable avec le modifier .environment(\.accessibilityEnabled, Bool)
+/// Définition de l'`EnvironmentValue` :
+///   - var accessibilityEnabled: Bool { get set }
+///       - false : par défaut
+///       - true : si l'utilisateur l'a activé
 ///
-/// Il faut donc utiliser le modifier help afin de provider un text lu par Siri
-/// Utilisation du modifier help : cf HelpModifier (+ localizedStringKey)
-/// Ne fonctionne pas dans le simulateur
-
-// MARK: - Importance pour l'accessibilité : moyenne - élevée
-// MARK: - Utilisation : Permet de connaître / setter la value de VoiceOver
+/// Remarque :
+///   - Si true, alors il faut utiliser des modifiers qui permettent de faciliter l'accès à l'accessibilité commme `help(_:)` ou `accessibilityLabel(_:)`
 
 struct AccessibilityEnabled: View {
 
@@ -29,13 +22,12 @@ struct AccessibilityEnabled: View {
   var body: some View {
     ZStack {
       Color.purple.opacity(0.25).edgesIgnoringSafeArea(.all)
-      // check si l'option d'accessibilité est activée
       if isAccesibilityActivated {
         VStack {
           Text("Spoken selection is activated !")
             .font(.title3)
             .fontWeight(.bold)
-            .help("Accesibility is activated !")
+            .accessibilityLabel("Accesibility is activated !")
         }
         .padding(.vertical, 10)
         .padding(.horizontal, 20)

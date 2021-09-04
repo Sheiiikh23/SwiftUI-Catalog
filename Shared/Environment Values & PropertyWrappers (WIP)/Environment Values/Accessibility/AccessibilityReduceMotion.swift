@@ -1,24 +1,22 @@
 //
-//  AccessibilityReduceMotion.swift
-//  SwiftUI 2.0
-//
-//  Created by Lucas Abijmil on 22/07/2020.
+//  Copyright (c) 2021 Lucas Abijmil. All rights reserved.
 //
 
 import SwiftUI
 
-/// accessibilityReduceMotion de détecter si la réduction des animations
-/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+/// Plateformes : i•Pad•OS 13.0, watchOS 6.0, tvOS 13.0, macOS 10.15, Mac Catalyst 13.0
+/// Description : Permet de savoir si la préférence système pour la réduction des mouvements est activée
 ///
-/// accessibilityReduceMotion: Bool { get } 
-///   - false: par défaut
-///   - true: si l'utisateur l'ativé
+/// Définition de l'`EnvironmentValue` :
+///   - var accessibilityReduceMotion: Bool { get }
+///       - false : par défaut
+///       - true : si l'utilisateur l'a activé
 ///
-/// Si activé, alors évité des animations importantes, surtout celles en 3D
-/// Proposition d'une alternative pour inclure les deux cas (cf plus pas)
-
-// MARK: - Importance pour l'accessibilité : très faible - faible 
-// MARK: - Utilisation : Réduction des animations (pour les 👴 et 👵)
+/// Remarques :
+///   - Si true, alors éviter les animations importants (2D ou 3D)
+///   - Proposition d'une extension sur `View` afin d'appliquer ou non ces animations en fonction de la préférence système
+///
+/// Dans le simulateur : Environment Overrides –> Accessibility ––> Differentiate Without Color ––> Reduce Motion
 
 struct AccessibilityReduceMotion: View {
 
@@ -36,13 +34,12 @@ struct AccessibilityReduceMotion: View {
         .background(Color.blue)
         .clipShape(Capsule())
         .onTapGesture {
-          // check si l'option d'accessibilité est activée
           withAnimation(isReduceMotion ? .none : .easeIn) {
             scaleEffect *= 1.5
           }
         }
         .onChange(of: scaleEffect) { _ in
-          DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+          DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
             withAnimation(isReduceMotion ? .none : .easeOut) { scaleEffect = 1 }
           }
         }
@@ -50,8 +47,13 @@ struct AccessibilityReduceMotion: View {
   }
 }
 
+extension View {
 
-// Alternative pour ne pas animer et animer en fonction de l'accésibilité
+  func withOptionnalAnimation<Result>(_ animation: Animation? = .default, _ body: () throws -> Result) rethrows -> Result {
+    return UIAccessibility.isReduceMotionEnabled ? try body() : try withAnimation(animation, body)
+  }
+}
+
 struct AccessibilityWithOptionnalAnimation: View {
 
   @State private var scaleEffect: CGFloat = 1
@@ -67,27 +69,23 @@ struct AccessibilityWithOptionnalAnimation: View {
         .background(Color.blue)
         .clipShape(Capsule())
         .onTapGesture {
-          // check implicit si l'option d'accessibilité est activée
           withOptionnalAnimation(.easeIn) {
             scaleEffect *= 1.5
           }
         }
+        .onChange(of: scaleEffect) { _ in
+          DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
+            withOptionnalAnimation(.easeOut) { scaleEffect = 1 }
+          }
+        }
     }
   }
-  private func withOptionnalAnimation<Result>(_ animation: Animation? = .default, _ body: () throws -> Result) rethrows -> Result {
-    if UIAccessibility.isReduceMotionEnabled { return try body() }
-    else { return try withAnimation(animation, body) }
-  }
 }
-
 
 struct AccessibilityReduceMotion_Previews: PreviewProvider {
   static var previews: some View {
     Group {
       AccessibilityReduceMotion()
-      AccessibilityReduceMotion()
-      // FIXME: Ne fonctionne pas pour le moment
-      //        .environment(\.accessibilityReduceMotion, true)
       AccessibilityWithOptionnalAnimation()
     }
   }

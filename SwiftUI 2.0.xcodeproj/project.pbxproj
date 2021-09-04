@@ -818,20 +818,6 @@
 			path = "Spacers & Dividers";
 			sourceTree = "<group>";
 		};
-		8D158BA924CC41AC00188F6B /* Accessibility Setting */ = {
-			isa = PBXGroup;
-			children = (
-				8D68A80F24C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift */,
-				8D1ED84124C8D002000F936D /* AccessibilityEnabled.swift */,
-				8D1ED84424C8D451000F936D /* AccessibilityInvertColors.swift */,
-				8D1ED84724C8D697000F936D /* AccessibilityReduceMotion.swift */,
-				8DA0F45C24CA1627003C751B /* AccessibilityReduceTransparency.swift */,
-				8DA0F45F24CA1AAD003C751B /* AccessibilityShowButtonShapes.swift */,
-				8DA0F46224CA1C30003C751B /* LegibilityWeight.swift */,
-			);
-			path = "Accessibility Setting";
-			sourceTree = "<group>";
-		};
 		8D158BAA24CC420B00188F6B /* ColorScheme */ = {
 			isa = PBXGroup;
 			children = (
@@ -1039,7 +1025,7 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		8D4860202691E9DA003E5D62 /* New (WIP) */ = {
+		8D4860202691E9DA003E5D62 /* Views (WIP) */ = {
 			isa = PBXGroup;
 			children = (
 				8D0AD4FD26750FE1000655AA /* View Layout & Presentation */,
@@ -1047,7 +1033,7 @@
 				8D1DD6E82675414A00EB69AC /* Extension */,
 				8D8442182677F8FE0087B889 /* Custom */,
 			);
-			path = "New (WIP)";
+			path = "Views (WIP)";
 			sourceTree = "<group>";
 		};
 		8D4860212691EAC2003E5D62 /* DynamicTypeSizeModifier */ = {
@@ -1154,7 +1140,6 @@
 		8D68A80E24C8559B000F4DFF /* Environment Values */ = {
 			isa = PBXGroup;
 			children = (
-				8D158BA924CC41AC00188F6B /* Accessibility Setting */,
 				8D158BAA24CC420B00188F6B /* ColorScheme */,
 				8D158BAB24CC426A00188F6B /* Controls Attributes (MacOS only) */,
 				8D158BAF24CC487C00188F6B /* Core Data */,
@@ -1691,7 +1676,7 @@
 			isa = PBXGroup;
 			children = (
 				8DDA5C1B24A31A5700BF263B /* SwiftUI_2_0App.swift */,
-				8D4860202691E9DA003E5D62 /* New (WIP) */,
+				8D4860202691E9DA003E5D62 /* Views (WIP) */,
 				8D68755A2691D37300627B5D /* Preview (WIP) */,
 				8D5164E02688FEDA00D298F6 /* Views Modifiers (WIP) */,
 				D9E60E0A26AC9DD80062D3B2 /* Environment Values & PropertyWrappers (WIP) */,
@@ -1884,6 +1869,17 @@
 			path = "Views – ViewModels";
 			sourceTree = "<group>";
 		};
+		D95486F426E395CF0054C8A3 /* Environment Values */ = {
+			isa = PBXGroup;
+			children = (
+				D9EE93CE26E36A7F006D2578 /* Accessibility */,
+				D9E60E0426AC8D6A0062D3B2 /* IsSearching.swift */,
+				D9E60E0626AC8DE60062D3B2 /* DismissSearch.swift */,
+				D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */,
+			);
+			path = "Environment Values";
+			sourceTree = "<group>";
+		};
 		D9E60E0126AC63250062D3B2 /* SearchCompletion */ = {
 			isa = PBXGroup;
 			children = (
@@ -1895,11 +1891,23 @@
 		D9E60E0A26AC9DD80062D3B2 /* Environment Values & PropertyWrappers (WIP) */ = {
 			isa = PBXGroup;
 			children = (
-				D9E60E0426AC8D6A0062D3B2 /* IsSearching.swift */,
-				D9E60E0626AC8DE60062D3B2 /* DismissSearch.swift */,
-				D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */,
+				D95486F426E395CF0054C8A3 /* Environment Values */,
 			);
 			path = "Environment Values & PropertyWrappers (WIP)";
+			sourceTree = "<group>";
+		};
+		D9EE93CE26E36A7F006D2578 /* Accessibility */ = {
+			isa = PBXGroup;
+			children = (
+				8D68A80F24C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift */,
+				8D1ED84124C8D002000F936D /* AccessibilityEnabled.swift */,
+				8D1ED84424C8D451000F936D /* AccessibilityInvertColors.swift */,
+				8D1ED84724C8D697000F936D /* AccessibilityReduceMotion.swift */,
+				8DA0F45C24CA1627003C751B /* AccessibilityReduceTransparency.swift */,
+				8DA0F45F24CA1AAD003C751B /* AccessibilityShowButtonShapes.swift */,
+				8DA0F46224CA1C30003C751B /* LegibilityWeight.swift */,
+			);
+			path = Accessibility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

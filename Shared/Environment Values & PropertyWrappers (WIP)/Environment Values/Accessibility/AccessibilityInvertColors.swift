@@ -1,23 +1,21 @@
 //
-//  AccessibilityInvertColors.swift
-//  SwiftUI 2.0
-//
-//  Created by Lucas Abijmil on 22/07/2020.
+//  Copyright (c) 2021 Lucas Abijmil. All rights reserved.
 //
 
 import SwiftUI
 
-/// accessibilityInvertColors permet de détecter si les couleurs sont inversées
-/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+/// Plateformes : i•Pad•OS 13.0, watchOS 6.0, tvOS 13.0, macOS 10.15, Mac Catalyst 13.0
+/// Description : Permet de savoir si la préférence système pour l'inversion des couleurs est activée
 ///
-/// accessibilityInvertColors: Bool { get } 
-///   - false: par défaut
-///   - true: si l'utisateur l'ativé
+/// Définition de l'`EnvironmentValue` :
+///   - var accessibilityInvertColors: Bool { get }
+///       - false: par défaut
+///       - true: si l'utilisateur l'a activé
 ///
-/// Les couleurs "classiques" ne sont donc pas de leur couleur
-
-// MARK: - Importance pour l'accessibilité : très faible - faible 
-// MARK: - Utilisation : Probablement pour les daltoniens ?
+/// Remarque :
+///   - Si true, il faut ajuster la UI afin d'obtenir un affichage optimal pour ce cas
+///
+/// Dans le simulateur : Environment Overrides –> Accessibility ––> Differentiate Without Color ––> Smart Invert
 
 struct AccessibilityInvertColors: View {
 
@@ -26,7 +24,6 @@ struct AccessibilityInvertColors: View {
   var body: some View {
     ZStack {
       Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)).edgesIgnoringSafeArea(.all)
-      // check si l'option d'accessibilité est activée
       if isColorInvert {
         VStack {
           Text("Invert colors is activated")
@@ -56,11 +53,6 @@ struct AccessibilityInvertColors: View {
 
 struct AccessibilityInvertColors_Previews: PreviewProvider {
   static var previews: some View {
-    Group {
-      AccessibilityInvertColors()
-      AccessibilityInvertColors()
-      // FIXME: Ne fonctionne pas pour le moment
-//        .environment(\.accessibilityInvertColors, true)
-    }
+    AccessibilityInvertColors()
   }
 }
