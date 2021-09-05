@@ -1,20 +1,17 @@
 //
-//  ManagedObjectContext.swift
-//  SwiftUI 2.0
-//
-//  Created by Lucas Abijmil on 24/07/2020.
+//  Copyright (c) 2021 Lucas Abijmil. All rights reserved.
 //
 
 import SwiftUI
 
-/// managedObjectContext permet de faire des CRUD opérations dans container de CoreData
-/// Disponible sur : i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
+/// Plateformes : i•Pad•OS 13.0, watchOS 6.0, tvOS 13.0, macOS 10.15, Mac Catalyst 13.0
+/// Description : Permet de faire des opérations CRUD dans le container de CoreData
 ///
-/// managedObjectContext : NSManagedObjectContext { get set }
-/// Possibilité de set cet environment variable avec le modifier .environment(\.managedObjectContext, object)
-
-// MARK: - Importance pour l'accessibilité : très faible – faible
-// MARK: - Utilisation : Permet d'accéder et setter un managedObjectContext
+/// Définition de l'`EnvironmentValue` :
+///   - var managedObjectContext: NSManagedObjectContext { get set }
+///
+/// Remarque :
+///   - Exemple assez succinct car il faudrait faire beaucoup de setup pour CoreData
 
 struct ManagedObjectContext: View {
 
@@ -22,7 +19,7 @@ struct ManagedObjectContext: View {
 
   var body: some View {
     Button { saveContext() } label: {
-      Text("Sauvegarder moi dans CoreData")
+      Text("Save me in CoreData")
         .font(.title2)
         .fontWeight(.bold)
         .foregroundColor(.black)
@@ -32,6 +29,7 @@ struct ManagedObjectContext: View {
         .clipShape(Capsule())
     }
   }
+
   private func saveContext() {
     do {
       try managedObjectContext.save()
