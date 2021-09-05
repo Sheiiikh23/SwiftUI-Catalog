@@ -1,18 +1,14 @@
 //
-//  DefaultWheelPickerItemHeight.swift
-//  SwiftUI 2.0
+//  Copyright (c) 2021 Lucas Abijmil. All rights reserved.
 //
-//  Created by Lucas Abijmil on 09/12/2020.
-//
+
 import SwiftUI
 
-/// defaultWheelPickerItemHeight permet de connaître et de setter la height d'une row d'un picker avec un WheelPickerStyle
-/// Disponible sur : watchOS / Mac Catalyst
+/// Plateforme : watchOS 6.0
+/// Description : Permet de connaître la hauteur par défaut d'un picker avec le style `wheel`
 ///
-/// defaultWheelPickerItemHeight: CGFloat { get set }
-
-// MARK: - Importance pour l'accessibilité : très faible – faible
-// MARK: - Utilisation : Permet de connaître la height des rows d'un WheelPickerStyle et de la modifier au besoin
+/// Définition de l'`EnvironmentVariable` :
+///   - var defaultWheelPickerItemHeight: CGFloat { get set }
 
 struct DefaultWheelPickerItemHeight: View {
 
