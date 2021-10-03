@@ -963,7 +963,6 @@
 		8D36D1AF25096EEB0074E498 /* Views Settings */ = {
 			isa = PBXGroup;
 			children = (
-				8D36D1B2250971E20074E498 /* EditMode.swift */,
 				8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */,
 			);
 			path = "Views Settings";
@@ -1878,6 +1877,7 @@
 				8D158BAF24CC487C00188F6B /* Core Data Stores */,
 				D9CB339D26E5498900EBDA6D /* Date, Time, and Locale */,
 				D96A9D8C2709B4CB00EE33D8 /* Display Characteristics  */,
+				D9C7C4D6270A05BD0021B1C4 /* Edit Mode */,
 				D9E60E0426AC8D6A0062D3B2 /* IsSearching.swift */,
 				D9E60E0626AC8DE60062D3B2 /* DismissSearch.swift */,
 				D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */,
@@ -1903,6 +1903,14 @@
 				8D7D0674257696F300323A00 /* PixelLength.swift */,
 			);
 			path = "Display Characteristics ";
+			sourceTree = "<group>";
+		};
+		D9C7C4D6270A05BD0021B1C4 /* Edit Mode */ = {
+			isa = PBXGroup;
+			children = (
+				8D36D1B2250971E20074E498 /* EditMode.swift */,
+			);
+			path = "Edit Mode";
 			sourceTree = "<group>";
 		};
 		D9CB337E26E4C9EB00EBDA6D /* Control Attributes  */ = {

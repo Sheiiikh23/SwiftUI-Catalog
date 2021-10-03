@@ -19,4 +19,9 @@ extension String {
   mutating func capitalizeFirstLetter() {
     self = self.capitalizingFirstLetter()
   }
+
+  static func createRandom(length: Int = 32) -> String {
+    let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    return String((0..<length).compactMap { _ in letters.randomElement() })
+  }
 }
