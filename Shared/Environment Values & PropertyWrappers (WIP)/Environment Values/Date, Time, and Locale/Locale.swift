@@ -10,7 +10,7 @@ import SwiftUI
 /// Définition de l`EnvironmentValue`:
 ///   - var locale: Locale { get set }
 ///
-/// Remarque :
+/// Remarques :
 ///   - Pour plus d'infos sur `Locale`, c'est ici : https://developer.apple.com/documentation/foundation/locale
 ///   - Tous les identifiers de `Locale` sont disponibles, ici : https://gist.github.com/jacobbubu/1836273
 

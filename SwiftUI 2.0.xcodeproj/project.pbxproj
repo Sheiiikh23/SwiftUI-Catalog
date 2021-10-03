@@ -320,6 +320,7 @@
 		D929658B26A01194003A1312 /* ListViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929658A26A01194003A1312 /* ListViewModels.swift */; };
 		D92A237626A1EC4B001C45C9 /* SybolVariantEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */; };
 		D92A237726A1EC4B001C45C9 /* SybolVariantEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */; };
+		D96A9D8E2709B52B00EE33D8 /* IsLuminanceReduced.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A9D8D2709B52B00EE33D8 /* IsLuminanceReduced.swift */; };
 		D9828EE226ECB2DE00E92D16 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */; };
 		D9CB338026E4CAAF00EBDA6D /* ControlActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */; };
 		D9CB338126E4CAAF00EBDA6D /* ControlActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */; };
@@ -642,6 +643,7 @@
 		D913055C2705FD1D0046419B /* KeyboardTypeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTypeModifier.swift; sourceTree = "<group>"; };
 		D929658A26A01194003A1312 /* ListViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModels.swift; sourceTree = "<group>"; };
 		D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SybolVariantEnvironment.swift; sourceTree = "<group>"; };
+		D96A9D8D2709B52B00EE33D8 /* IsLuminanceReduced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsLuminanceReduced.swift; sourceTree = "<group>"; };
 		D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlActiveState.swift; sourceTree = "<group>"; };
 		D9CB338226E4CB7000EBDA6D /* DefaultWheelPickerItemHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWheelPickerItemHeight.swift; sourceTree = "<group>"; };
@@ -1154,7 +1156,6 @@
 				8DE67205257674AE001C17DB /* URLs & Files */,
 				8DE6720E25767DA5001C17DB /* Managing Focus */,
 				8DE6724125768694001C17DB /* Widget Attributes */,
-				8D7D065725768BEF00323A00 /* Display Characteristics */,
 				8D7D067C25769A0B00323A00 /* String Representations */,
 			);
 			path = "Environment Values";
@@ -1217,16 +1218,6 @@
 				8DA7D87126727B95002E3081 /* TextMarkdownView.swift */,
 			);
 			path = "Text interpolation & concat";
-			sourceTree = "<group>";
-		};
-		8D7D065725768BEF00323A00 /* Display Characteristics */ = {
-			isa = PBXGroup;
-			children = (
-				8D7D065825768C1400323A00 /* DisplayScale.swift */,
-				8D7D066C2576926A00323A00 /* ImageScale.swift */,
-				8D7D0674257696F300323A00 /* PixelLength.swift */,
-			);
-			path = "Display Characteristics";
 			sourceTree = "<group>";
 		};
 		8D7D067C25769A0B00323A00 /* String Representations */ = {
@@ -1886,6 +1877,7 @@
 				D9CB337E26E4C9EB00EBDA6D /* Control Attributes  */,
 				8D158BAF24CC487C00188F6B /* Core Data Stores */,
 				D9CB339D26E5498900EBDA6D /* Date, Time, and Locale */,
+				D96A9D8C2709B4CB00EE33D8 /* Display Characteristics  */,
 				D9E60E0426AC8D6A0062D3B2 /* IsSearching.swift */,
 				D9E60E0626AC8DE60062D3B2 /* DismissSearch.swift */,
 				D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */,
@@ -1900,6 +1892,17 @@
 				8DE443FD24CAA5AF0079B2B7 /* ColorSchemeContrast.swift */,
 			);
 			path = "Color Schemes";
+			sourceTree = "<group>";
+		};
+		D96A9D8C2709B4CB00EE33D8 /* Display Characteristics  */ = {
+			isa = PBXGroup;
+			children = (
+				D96A9D8D2709B52B00EE33D8 /* IsLuminanceReduced.swift */,
+				8D7D065825768C1400323A00 /* DisplayScale.swift */,
+				8D7D066C2576926A00323A00 /* ImageScale.swift */,
+				8D7D0674257696F300323A00 /* PixelLength.swift */,
+			);
+			path = "Display Characteristics ";
 			sourceTree = "<group>";
 		};
 		D9CB337E26E4C9EB00EBDA6D /* Control Attributes  */ = {
@@ -2202,6 +2205,7 @@
 				D9E60E0C26AC9E160062D3B2 /* Environment Value.swift in Sources */,
 				8D1CDAD8256C54860067B8BE /* CommandGroup.swift in Sources */,
 				8D5B5BE72578EE1D00F309DE /* RedactedModifier.swift in Sources */,
+				D96A9D8E2709B52B00EE33D8 /* IsLuminanceReduced.swift in Sources */,
 				8D158BB324CC48D500188F6B /* AllowsTightening.swift in Sources */,
 				8D68755C2691D38600627B5D /* PreviewInterfaceOrientation.swift in Sources */,
 				8D0AD4F12674CE7E000655AA /* AccentColorModifier.swift in Sources */,
