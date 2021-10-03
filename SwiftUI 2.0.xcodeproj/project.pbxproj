@@ -316,9 +316,11 @@
 		D90639B4269F3AD20076AA0D /* HeaderAndFooterPinnedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90639B3269F3AD20076AA0D /* HeaderAndFooterPinnedView.swift */; };
 		D90639B6269F49470076AA0D /* LazyVStackDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90639B5269F49470076AA0D /* LazyVStackDemoViewModel.swift */; };
 		D90639C2269F68090076AA0D /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90639C1269F68090076AA0D /* List.swift */; };
+		D913055D2705FD1D0046419B /* KeyboardTypeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913055C2705FD1D0046419B /* KeyboardTypeModifier.swift */; };
 		D929658B26A01194003A1312 /* ListViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929658A26A01194003A1312 /* ListViewModels.swift */; };
 		D92A237626A1EC4B001C45C9 /* SybolVariantEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */; };
 		D92A237726A1EC4B001C45C9 /* SybolVariantEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */; };
+		D9828EE226ECB2DE00E92D16 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */; };
 		D9CB338026E4CAAF00EBDA6D /* ControlActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */; };
 		D9CB338126E4CAAF00EBDA6D /* ControlActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */; };
 		D9CB338326E4CB7000EBDA6D /* DefaultWheelPickerItemHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CB338226E4CB7000EBDA6D /* DefaultWheelPickerItemHeight.swift */; };
@@ -637,8 +639,10 @@
 		D90639B3269F3AD20076AA0D /* HeaderAndFooterPinnedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderAndFooterPinnedView.swift; sourceTree = "<group>"; };
 		D90639B5269F49470076AA0D /* LazyVStackDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVStackDemoViewModel.swift; sourceTree = "<group>"; };
 		D90639C1269F68090076AA0D /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		D913055C2705FD1D0046419B /* KeyboardTypeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTypeModifier.swift; sourceTree = "<group>"; };
 		D929658A26A01194003A1312 /* ListViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModels.swift; sourceTree = "<group>"; };
 		D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SybolVariantEnvironment.swift; sourceTree = "<group>"; };
+		D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlActiveState.swift; sourceTree = "<group>"; };
 		D9CB338226E4CB7000EBDA6D /* DefaultWheelPickerItemHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWheelPickerItemHeight.swift; sourceTree = "<group>"; };
 		D9CB338826E4CE8300EBDA6D /* HeaderProminenceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProminenceModifier.swift; sourceTree = "<group>"; };
@@ -890,6 +894,7 @@
 				8D6875582691D30600627B5D /* VerticalEdgeExtension.swift */,
 				8D1DD6EF26762B5600EB69AC /* ViewExtension.swift */,
 				D9CB339A26E546B600EBDA6D /* VisibilityExtension.swift */,
+				D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -956,11 +961,8 @@
 		8D36D1AF25096EEB0074E498 /* Views Settings */ = {
 			isa = PBXGroup;
 			children = (
-				8D36D1B025096EF90074E498 /* Calendar.swift */,
 				8D36D1B2250971E20074E498 /* EditMode.swift */,
-				8D0F819A250AB7AA00221DFD /* Locale.swift */,
 				8DB0C19624B1DCD9006818B4 /* PresentationMode.swift */,
-				8D39F44425753A82000B757F /* TimeZone.swift */,
 			);
 			path = "Views Settings";
 			sourceTree = "<group>";
@@ -1833,6 +1835,7 @@
 				8DBCF864256CB70900AA564B /* Toggle */,
 				8DBCF831256CB4A200AA564B /* Toolbar */,
 				8DBCF843256CB55A00AA564B /* WindowStyle, WindowToolbarStyle */,
+				D913055C2705FD1D0046419B /* KeyboardTypeModifier.swift */,
 			);
 			path = "Views & Modifiers (OLD)";
 			sourceTree = "<group>";
@@ -1882,6 +1885,7 @@
 				D95486F526E398760054C8A3 /* Color Schemes */,
 				D9CB337E26E4C9EB00EBDA6D /* Control Attributes  */,
 				8D158BAF24CC487C00188F6B /* Core Data Stores */,
+				D9CB339D26E5498900EBDA6D /* Date, Time, and Locale */,
 				D9E60E0426AC8D6A0062D3B2 /* IsSearching.swift */,
 				D9E60E0626AC8DE60062D3B2 /* DismissSearch.swift */,
 				D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */,
@@ -1909,6 +1913,16 @@
 				D9CB339726E5403D00EBDA6D /* MenuIndicatorVisibility .swift */,
 			);
 			path = "Control Attributes ";
+			sourceTree = "<group>";
+		};
+		D9CB339D26E5498900EBDA6D /* Date, Time, and Locale */ = {
+			isa = PBXGroup;
+			children = (
+				8D36D1B025096EF90074E498 /* Calendar.swift */,
+				8D0F819A250AB7AA00221DFD /* Locale.swift */,
+				8D39F44425753A82000B757F /* TimeZone.swift */,
+			);
+			path = "Date, Time, and Locale";
 			sourceTree = "<group>";
 		};
 		D9E60E0126AC63250062D3B2 /* SearchCompletion */ = {
@@ -2318,6 +2332,7 @@
 				8D1ED84224C8D002000F936D /* AccessibilityEnabled.swift in Sources */,
 				8D3A767F24A8AA1A00005971 /* SignInWithappleButtonView.swift in Sources */,
 				8D064AFD24D0A367000272FA /* LineLimit.swift in Sources */,
+				D9828EE226ECB2DE00E92D16 /* OptionalExtension.swift in Sources */,
 				D9CB338F26E53CC700EBDA6D /* ControlSizeExtension.swift in Sources */,
 				8D6C0F3024FA953000041F8C /* ToolbarItemGroupView.swift in Sources */,
 				8DE9F4F424AD1B1E0054CE64 /* IndexViewStyleModifier & PageIndexViewStyle.swift in Sources */,
@@ -2374,6 +2389,7 @@
 				8D587EAA268BA66000E069AB /* Canvas.swift in Sources */,
 				8DA7D860267149D5002E3081 /* AsyncImageView.swift in Sources */,
 				8DB0C19724B1DCD9006818B4 /* PresentationMode.swift in Sources */,
+				D913055D2705FD1D0046419B /* KeyboardTypeModifier.swift in Sources */,
 				8D0AD4F62674D2F2000655AA /* DismissEnvironment.swift in Sources */,
 				8D0AD5092675109F000655AA /* HStack.swift in Sources */,
 				8D4447592563E93B00D875E3 /* MenuStyleModifier.swift in Sources */,

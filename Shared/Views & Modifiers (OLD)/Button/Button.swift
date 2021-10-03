@@ -28,14 +28,14 @@ struct ButtonView: View {
       }
       .buttonStyle(.bordered)
       .controlSize(.small) // TODO:
-      .controlProminence(.increased) // TODO:
+//      .controlProminence(.increased) // TODO:
 
       VStack {
         Button {} label: {
           Text("Add to jar")
             .frame(maxWidth: 300)
         }
-        .controlProminence(.increased)
+//        .controlProminence(.increased)
         Button {} label: {
           Text("Add to watchlist")
             .frame(maxWidth: 300)
