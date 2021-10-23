@@ -10,6 +10,6 @@ import SwiftUI
 /// Définition de l'`EnvironmentValue` :
 ///   - var isLuminanceReduced: Bool { get set }
 ///
-/// Remarques:
+/// Remarques :
 ///   - isLuminanceReduced = true 👉 utilisateur baisse son poignet mais l'écran reste allumé
 ///   - Permet de préserver le contraste et la lisibilité tout en satisfaisant l'exigence de réduction de la luminosité

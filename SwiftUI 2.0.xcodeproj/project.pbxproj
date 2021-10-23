@@ -859,15 +859,6 @@
 			path = "Core Data Stores";
 			sourceTree = "<group>";
 		};
-		8D158BB024CC489000188F6B /* List Style */ = {
-			isa = PBXGroup;
-			children = (
-				8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */,
-				8D158BA324CC405900188F6B /* DefaultMinListRowHeight.swift */,
-			);
-			path = "List Style";
-			sourceTree = "<group>";
-		};
 		8D158BB124CC48C100188F6B /* Paragraph Styles */ = {
 			isa = PBXGroup;
 			children = (
@@ -1147,7 +1138,6 @@
 		8D68A80E24C8559B000F4DFF /* Environment Values */ = {
 			isa = PBXGroup;
 			children = (
-				8D158BB024CC489000188F6B /* List Style */,
 				8D158BB124CC48C100188F6B /* Paragraph Styles */,
 				8D97EDDB24E1D7A2009E60E6 /* Text Style */,
 				8D36D1AF25096EEB0074E498 /* Views Settings */,
@@ -1869,6 +1859,15 @@
 			path = "Keyboard Shortcuts ";
 			sourceTree = "<group>";
 		};
+		D93076DA2724C8A200E8F801 /* List Styles  */ = {
+			isa = PBXGroup;
+			children = (
+				8D4FD8FA24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift */,
+				8D158BA324CC405900188F6B /* DefaultMinListRowHeight.swift */,
+			);
+			path = "List Styles ";
+			sourceTree = "<group>";
+		};
 		D95486F426E395CF0054C8A3 /* Environment Values */ = {
 			isa = PBXGroup;
 			children = (
@@ -1881,6 +1880,7 @@
 				D9C7C4D6270A05BD0021B1C4 /* Edit Mode */,
 				D9C7C4D7270A07DF0021B1C4 /* Focus */,
 				D93076D72724C16B00E8F801 /* Keyboard Shortcuts  */,
+				D93076DA2724C8A200E8F801 /* List Styles  */,
 				D9E60E0426AC8D6A0062D3B2 /* IsSearching.swift */,
 				D9E60E0626AC8DE60062D3B2 /* DismissSearch.swift */,
 				D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */,
