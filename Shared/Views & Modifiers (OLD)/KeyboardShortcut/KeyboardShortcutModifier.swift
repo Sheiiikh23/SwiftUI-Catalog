@@ -44,7 +44,7 @@ import SwiftUI
 
 // MARK: - Utilisation : Créer des raccourcis clavier sur iPadOS / MacOS / Mac Catalyst
 
-struct KeyboardShortcut: View {
+struct KeyboardShortcutModifier: View {
 
   @State private var toggleValue = false
 
@@ -82,8 +82,8 @@ struct KeyboardShortcut: View {
   }
 }
 
-struct KeyboardShortcut_Previews: PreviewProvider {
+struct KeyboardShortcutModifier_Previews: PreviewProvider {
   static var previews: some View {
-    KeyboardShortcut()
+    KeyboardShortcutModifier()
   }
 }

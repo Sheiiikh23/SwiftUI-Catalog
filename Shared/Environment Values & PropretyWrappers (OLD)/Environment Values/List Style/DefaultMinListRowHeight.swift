@@ -37,9 +37,9 @@ struct DefaultMinListRowHeight_Previews: PreviewProvider {
     Group {
       DefaultMinListRowHeight()
       DefaultMinListRowHeight()
-        .environment(\.defaultMinListRowHeight, 150)
+        .environment(\.defaultMinListRowHeight, 80)
       DefaultMinListRowHeight()
-        .environment(\.defaultMinListRowHeight, 1)
+        .environment(\.defaultMinListRowHeight, 150)
     }
   }
 }

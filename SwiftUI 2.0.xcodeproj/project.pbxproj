@@ -282,7 +282,6 @@
 		8DE4440424CAA9380079B2B7 /* ManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4440324CAA9380079B2B7 /* ManagedObjectContext.swift */; };
 		8DE4440524CAA9380079B2B7 /* ManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4440324CAA9380079B2B7 /* ManagedObjectContext.swift */; };
 		8DE67207257674C6001C17DB /* OpenURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE67206257674C6001C17DB /* OpenURL.swift */; };
-		8DE6722A25767DDF001C17DB /* IsFocused.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6722925767DDF001C17DB /* IsFocused.swift */; };
 		8DE9F4EC24AD114E0054CE64 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4EB24AD114E0054CE64 /* MapView.swift */; };
 		8DE9F4ED24AD114E0054CE64 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4EB24AD114E0054CE64 /* MapView.swift */; };
 		8DE9F4EF24AD15F40054CE64 /* TabViewStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9F4EE24AD15F40054CE64 /* TabViewStyleModifier.swift */; };
@@ -320,6 +319,9 @@
 		D929658B26A01194003A1312 /* ListViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929658A26A01194003A1312 /* ListViewModels.swift */; };
 		D92A237626A1EC4B001C45C9 /* SybolVariantEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */; };
 		D92A237726A1EC4B001C45C9 /* SybolVariantEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */; };
+		D93076902724BAF400E8F801 /* IsFocused.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6722925767DDF001C17DB /* IsFocused.swift */; };
+		D93076912724BD1500E8F801 /* ResetFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6723925768174001C17DB /* ResetFocus.swift */; };
+		D93076D92724C19300E8F801 /* KeyboardShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93076D82724C19300E8F801 /* KeyboardShortcut.swift */; };
 		D96A9D8E2709B52B00EE33D8 /* IsLuminanceReduced.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A9D8D2709B52B00EE33D8 /* IsLuminanceReduced.swift */; };
 		D9828EE226ECB2DE00E92D16 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */; };
 		D9CB338026E4CAAF00EBDA6D /* ControlActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */; };
@@ -643,6 +645,7 @@
 		D913055C2705FD1D0046419B /* KeyboardTypeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTypeModifier.swift; sourceTree = "<group>"; };
 		D929658A26A01194003A1312 /* ListViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModels.swift; sourceTree = "<group>"; };
 		D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SybolVariantEnvironment.swift; sourceTree = "<group>"; };
+		D93076D82724C19300E8F801 /* KeyboardShortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcut.swift; sourceTree = "<group>"; };
 		D96A9D8D2709B52B00EE33D8 /* IsLuminanceReduced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsLuminanceReduced.swift; sourceTree = "<group>"; };
 		D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlActiveState.swift; sourceTree = "<group>"; };
@@ -883,6 +886,7 @@
 		8D1DD6E82675414A00EB69AC /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8D8442182677F8FE0087B889 /* Custom */,
 				8D1DD6ED2675419000EB69AC /* AlignmentExtension.swift */,
 				8D35CD9F269B21AF00EDD6FF /* CGRectExtension.swift */,
 				8D35CD9A269A405600EDD6FF /* ColorExtension.swift */,
@@ -890,13 +894,13 @@
 				8D84421F2677F9FD0087B889 /* GeometryProxyExtension.swift */,
 				8D1DD6EB2675417600EB69AC /* HorizontalAlignmentExtension.swift */,
 				8DAD45C5269A031F00518477 /* MaterialExtension.swift */,
+				D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */,
 				D9CB339126E53CF500EBDA6D /* ProminenceExtension.swift */,
 				8D8442212677FA530087B889 /* StringExtension.swift */,
 				8D1DD6E92675415A00EB69AC /* VerticalAlignmentExtension.swift */,
 				8D6875582691D30600627B5D /* VerticalEdgeExtension.swift */,
 				8D1DD6EF26762B5600EB69AC /* ViewExtension.swift */,
 				D9CB339A26E546B600EBDA6D /* VisibilityExtension.swift */,
-				D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1042,7 +1046,6 @@
 				8D0AD4FD26750FE1000655AA /* View Layout & Presentation */,
 				8D0AD4FE2675100B000655AA /* Views & Controls */,
 				8D1DD6E82675414A00EB69AC /* Extension */,
-				8D8442182677F8FE0087B889 /* Custom */,
 			);
 			path = "Views (WIP)";
 			sourceTree = "<group>";
@@ -1153,7 +1156,6 @@
 				8D39F472257574AE000B757F /* UndoManager */,
 				8D2125B225766C53001837BC /* Scene Phases */,
 				8DE67205257674AE001C17DB /* URLs & Files */,
-				8DE6720E25767DA5001C17DB /* Managing Focus */,
 				8DE6724125768694001C17DB /* Widget Attributes */,
 				8D7D067C25769A0B00323A00 /* String Representations */,
 			);
@@ -1740,15 +1742,6 @@
 			path = "URLs & Files";
 			sourceTree = "<group>";
 		};
-		8DE6720E25767DA5001C17DB /* Managing Focus */ = {
-			isa = PBXGroup;
-			children = (
-				8DE6722925767DDF001C17DB /* IsFocused.swift */,
-				8DE6723925768174001C17DB /* ResetFocus.swift */,
-			);
-			path = "Managing Focus";
-			sourceTree = "<group>";
-		};
 		8DE6724125768694001C17DB /* Widget Attributes */ = {
 			isa = PBXGroup;
 			children = (
@@ -1868,6 +1861,14 @@
 			path = "Views – ViewModels";
 			sourceTree = "<group>";
 		};
+		D93076D72724C16B00E8F801 /* Keyboard Shortcuts  */ = {
+			isa = PBXGroup;
+			children = (
+				D93076D82724C19300E8F801 /* KeyboardShortcut.swift */,
+			);
+			path = "Keyboard Shortcuts ";
+			sourceTree = "<group>";
+		};
 		D95486F426E395CF0054C8A3 /* Environment Values */ = {
 			isa = PBXGroup;
 			children = (
@@ -1878,6 +1879,8 @@
 				D9CB339D26E5498900EBDA6D /* Date, Time, and Locale */,
 				D96A9D8C2709B4CB00EE33D8 /* Display Characteristics  */,
 				D9C7C4D6270A05BD0021B1C4 /* Edit Mode */,
+				D9C7C4D7270A07DF0021B1C4 /* Focus */,
+				D93076D72724C16B00E8F801 /* Keyboard Shortcuts  */,
 				D9E60E0426AC8D6A0062D3B2 /* IsSearching.swift */,
 				D9E60E0626AC8DE60062D3B2 /* DismissSearch.swift */,
 				D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */,
@@ -1911,6 +1914,15 @@
 				8D36D1B2250971E20074E498 /* EditMode.swift */,
 			);
 			path = "Edit Mode";
+			sourceTree = "<group>";
+		};
+		D9C7C4D7270A07DF0021B1C4 /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				8DE6722925767DDF001C17DB /* IsFocused.swift */,
+				8DE6723925768174001C17DB /* ResetFocus.swift */,
+			);
+			path = Focus;
 			sourceTree = "<group>";
 		};
 		D9CB337E26E4C9EB00EBDA6D /* Control Attributes  */ = {
@@ -2187,6 +2199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93076912724BD1500E8F801 /* ResetFocus.swift in Sources */,
 				8D282E29257EEBEF00E6DEC0 /* GaugeStyleModifier.swift in Sources */,
 				8D6D3F62257EAA20001AA59E /* GaugeView.swift in Sources */,
 				8D50BD992580F7D700BAAF7B /* DefaultWheelPickerItemHeight.swift in Sources */,
@@ -2196,6 +2209,7 @@
 				8D6D3F66257EAA20001AA59E /* NotificationController.swift in Sources */,
 				8D6D3F64257EAA20001AA59E /* ExtensionDelegate.swift in Sources */,
 				8D6D3F68257EAA20001AA59E /* NotificationView.swift in Sources */,
+				D93076902724BAF400E8F801 /* IsFocused.swift in Sources */,
 				8D282E50257EF29000E6DEC0 /* ListStyleModifier.swift in Sources */,
 				8D6D3F6A257EAA20001AA59E /* ComplicationController.swift in Sources */,
 				8D96FB1B257EF6A900A805C5 /* TabViewStyleModifier.swift in Sources */,
@@ -2252,6 +2266,7 @@
 				D90639AD269F27430076AA0D /* VStackDemoViewModel.swift in Sources */,
 				8D999F7F24B08E470050BD97 /* DatePickerStyleModifier.swift in Sources */,
 				D90639B4269F3AD20076AA0D /* HeaderAndFooterPinnedView.swift in Sources */,
+				D93076D92724C19300E8F801 /* KeyboardShortcut.swift in Sources */,
 				D9CB338326E4CB7000EBDA6D /* DefaultWheelPickerItemHeight.swift in Sources */,
 				8D0AD50B2675142E000655AA /* VStack.swift in Sources */,
 				8D0AD4E52673EDCE000655AA /* TaskModifier.swift in Sources */,
@@ -2317,7 +2332,6 @@
 				8D2125B425766C87001837BC /* ScenePhase.swift in Sources */,
 				8D51323324A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */,
 				8DAED1E02694F5220044B5CD /* SymbolVariantModifier.swift in Sources */,
-				8DE6722A25767DDF001C17DB /* IsFocused.swift in Sources */,
 				8DA7D85226700107002E3081 /* SubmitLabelModifier.swift in Sources */,
 				8DA0F46324CA1C30003C751B /* LegibilityWeight.swift in Sources */,
 				D90639A4269EFB4E0076AA0D /* ScrollViewDemoViewModel.swift in Sources */,
@@ -2592,7 +2606,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI 2.0 watchOS Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = RY2PUYVX4Z;
+				DEVELOPMENT_TEAM = S7HY56XG6J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI 2.0 watchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2616,7 +2630,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI 2.0 watchOS Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = RY2PUYVX4Z;
+				DEVELOPMENT_TEAM = S7HY56XG6J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI 2.0 watchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

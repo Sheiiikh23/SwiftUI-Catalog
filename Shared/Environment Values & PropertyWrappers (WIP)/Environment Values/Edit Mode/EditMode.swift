@@ -16,7 +16,7 @@ import SwiftUI
 ///         - isEditing : Bool 👉 indique si une View est en train d'être éditée
 ///
 /// Remarques :
-///   - On utilise cette `EnvironmentValue` très souvent avec un `EditButton` dans une `.toolbar(_:)` et le modifier `disabled(_:)`
+///   - On utilise cette `EnvironmentValue` très souvent avec un `EditButton` dans une `toolbar(_:)` et le modifier `disabled(_:)`
 ///   - ⚠️ Semble ne pas fonctionner lorsque on créer une NavigationView
 
 struct EditMode: View {
