@@ -8,7 +8,7 @@
 import SwiftUI
 
 // MARK: - Création de customs RedactionsReasons
-enum RedactionReasons {
+enum RedactionReasonsCustom {
   case overlay(Color)
   case blurred(CGFloat)
 }
@@ -39,7 +39,7 @@ struct Blurred: ViewModifier {
 // MARK: - Création d'un ViewModifier qui appliquera le bon ViewModifier en fonction de la custom RedactionReasons
 struct Redactable: ViewModifier {
 
-  let reason: RedactionReasons
+  let reason: RedactionReasonsCustom
 
   @ViewBuilder
   func body(content: Content) -> some View {
@@ -56,7 +56,7 @@ struct Redactable: ViewModifier {
 
 // MARK: - Extension pour ajouter la fonction à View
 extension View {
-  func redacted(reason: RedactionReasons) -> some View {
+  func redacted(reason: RedactionReasonsCustom) -> some View {
     self
       .modifier(Redactable(reason: reason))
   }
