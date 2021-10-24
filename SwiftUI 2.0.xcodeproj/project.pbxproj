@@ -323,6 +323,8 @@
 		D93076912724BD1500E8F801 /* ResetFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6723925768174001C17DB /* ResetFocus.swift */; };
 		D93076D92724C19300E8F801 /* KeyboardShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93076D82724C19300E8F801 /* KeyboardShortcut.swift */; };
 		D93076DD2724D0DE00E8F801 /* BackgroundMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93076DC2724D0DE00E8F801 /* BackgroundMaterial.swift */; };
+		D93076E22724EA0400E8F801 /* IsPresented.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93076E12724EA0400E8F801 /* IsPresented.swift */; };
+		D93076E42724EDFC00E8F801 /* Dismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93076E32724EDFC00E8F801 /* Dismiss.swift */; };
 		D96A9D8E2709B52B00EE33D8 /* IsLuminanceReduced.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A9D8D2709B52B00EE33D8 /* IsLuminanceReduced.swift */; };
 		D9828EE226ECB2DE00E92D16 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */; };
 		D9CB338026E4CAAF00EBDA6D /* ControlActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */; };
@@ -648,6 +650,8 @@
 		D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SybolVariantEnvironment.swift; sourceTree = "<group>"; };
 		D93076D82724C19300E8F801 /* KeyboardShortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcut.swift; sourceTree = "<group>"; };
 		D93076DC2724D0DE00E8F801 /* BackgroundMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMaterial.swift; sourceTree = "<group>"; };
+		D93076E12724EA0400E8F801 /* IsPresented.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsPresented.swift; sourceTree = "<group>"; };
+		D93076E32724EDFC00E8F801 /* Dismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dismiss.swift; sourceTree = "<group>"; };
 		D96A9D8D2709B52B00EE33D8 /* IsLuminanceReduced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsLuminanceReduced.swift; sourceTree = "<group>"; };
 		D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlActiveState.swift; sourceTree = "<group>"; };
@@ -1878,6 +1882,15 @@
 			path = Materials;
 			sourceTree = "<group>";
 		};
+		D93076E02724DD6200E8F801 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				D93076E12724EA0400E8F801 /* IsPresented.swift */,
+				D93076E32724EDFC00E8F801 /* Dismiss.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		D95486F426E395CF0054C8A3 /* Environment Values */ = {
 			isa = PBXGroup;
 			children = (
@@ -1892,6 +1905,7 @@
 				D93076D72724C16B00E8F801 /* Keyboard Shortcuts  */,
 				D93076DA2724C8A200E8F801 /* List Styles  */,
 				D93076DB2724D0C600E8F801 /* Materials */,
+				D93076E02724DD6200E8F801 /* Presentation */,
 				D9E60E0426AC8D6A0062D3B2 /* IsSearching.swift */,
 				D9E60E0626AC8DE60062D3B2 /* DismissSearch.swift */,
 				D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */,
@@ -2325,6 +2339,7 @@
 				8DBCF8B6256CBB2400AA564B /* SheetModifier.swift in Sources */,
 				8DC13F4524A764D0003CDA7A /* WindowStyleModifier.swift in Sources */,
 				8DE443FE24CAA5AF0079B2B7 /* ColorSchemeContrast.swift in Sources */,
+				D93076E22724EA0400E8F801 /* IsPresented.swift in Sources */,
 				8D84421A2677F90C0087B889 /* GridItemType.swift in Sources */,
 				8D84421C2677F9360087B889 /* VerticalAlignmentCustom.swift in Sources */,
 				8D84421E2677F9570087B889 /* AlignmentCustom.swift in Sources */,
@@ -2434,6 +2449,7 @@
 				8D4860232691EAD4003E5D62 /* DynamicTypeSizeModifier.swift in Sources */,
 				8D44478625640A5D00D875E3 /* GroupBoxStyleModifier.swift in Sources */,
 				8D3A767924A89FA200005971 /* LinkView.swift in Sources */,
+				D93076E42724EDFC00E8F801 /* Dismiss.swift in Sources */,
 				8D6875592691D30600627B5D /* VerticalEdgeExtension.swift in Sources */,
 				D92A237626A1EC4B001C45C9 /* SybolVariantEnvironment.swift in Sources */,
 				8D4B2A3A24CA1EBA003E37F4 /* ColorScheme.swift in Sources */,

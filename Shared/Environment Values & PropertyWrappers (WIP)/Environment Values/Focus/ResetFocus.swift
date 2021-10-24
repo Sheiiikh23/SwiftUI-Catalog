@@ -9,9 +9,9 @@ import SwiftUI
 ///
 /// Définition de l'`EnvironmentValue` :
 ///   - var resetFocus: ResetFocusAction { get }
+///     - s'utilise via une fonction `callAsFunction(in:)`, qui peut être appelé depuis la propriété
 ///
 /// Remarques :
-///   - resetFocus s'utilise via une fonction `callAsFunction` qui peut être appellé depuis la propriété
 ///   - Doit s'utiliser dans un `@Namespace`
 ///   - S'accompage généralement des modifiers `prefersDefaultFocus(_:, in:_)` et `focusScope(_:)`
 ///   - Lien intéressant : https://swiftwithmajid.com/2020/12/02/focus-management-in-swiftui/
