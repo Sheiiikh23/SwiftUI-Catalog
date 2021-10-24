@@ -322,6 +322,7 @@
 		D93076902724BAF400E8F801 /* IsFocused.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6722925767DDF001C17DB /* IsFocused.swift */; };
 		D93076912724BD1500E8F801 /* ResetFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6723925768174001C17DB /* ResetFocus.swift */; };
 		D93076D92724C19300E8F801 /* KeyboardShortcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93076D82724C19300E8F801 /* KeyboardShortcut.swift */; };
+		D93076DD2724D0DE00E8F801 /* BackgroundMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93076DC2724D0DE00E8F801 /* BackgroundMaterial.swift */; };
 		D96A9D8E2709B52B00EE33D8 /* IsLuminanceReduced.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A9D8D2709B52B00EE33D8 /* IsLuminanceReduced.swift */; };
 		D9828EE226ECB2DE00E92D16 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */; };
 		D9CB338026E4CAAF00EBDA6D /* ControlActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */; };
@@ -646,6 +647,7 @@
 		D929658A26A01194003A1312 /* ListViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModels.swift; sourceTree = "<group>"; };
 		D92A237526A1EC4B001C45C9 /* SybolVariantEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SybolVariantEnvironment.swift; sourceTree = "<group>"; };
 		D93076D82724C19300E8F801 /* KeyboardShortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcut.swift; sourceTree = "<group>"; };
+		D93076DC2724D0DE00E8F801 /* BackgroundMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMaterial.swift; sourceTree = "<group>"; };
 		D96A9D8D2709B52B00EE33D8 /* IsLuminanceReduced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsLuminanceReduced.swift; sourceTree = "<group>"; };
 		D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlActiveState.swift; sourceTree = "<group>"; };
@@ -874,7 +876,7 @@
 			path = "Paragraph Styles";
 			sourceTree = "<group>";
 		};
-		8D1DD6E82675414A00EB69AC /* Extension */ = {
+		8D1DD6E82675414A00EB69AC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				8D8442182677F8FE0087B889 /* Custom */,
@@ -893,7 +895,7 @@
 				8D1DD6EF26762B5600EB69AC /* ViewExtension.swift */,
 				D9CB339A26E546B600EBDA6D /* VisibilityExtension.swift */,
 			);
-			path = Extension;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		8D2125B225766C53001837BC /* Scene Phases */ = {
@@ -1036,7 +1038,6 @@
 			children = (
 				8D0AD4FD26750FE1000655AA /* View Layout & Presentation */,
 				8D0AD4FE2675100B000655AA /* Views & Controls */,
-				8D1DD6E82675414A00EB69AC /* Extension */,
 			);
 			path = "Views (WIP)";
 			sourceTree = "<group>";
@@ -1663,6 +1664,7 @@
 			isa = PBXGroup;
 			children = (
 				8DDA5C1B24A31A5700BF263B /* SwiftUI_2_0App.swift */,
+				8D1DD6E82675414A00EB69AC /* Extensions */,
 				8D4860202691E9DA003E5D62 /* Views (WIP) */,
 				8D68755A2691D37300627B5D /* Preview (WIP) */,
 				8D5164E02688FEDA00D298F6 /* Views Modifiers (WIP) */,
@@ -1868,6 +1870,14 @@
 			path = "List Styles ";
 			sourceTree = "<group>";
 		};
+		D93076DB2724D0C600E8F801 /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+				D93076DC2724D0DE00E8F801 /* BackgroundMaterial.swift */,
+			);
+			path = Materials;
+			sourceTree = "<group>";
+		};
 		D95486F426E395CF0054C8A3 /* Environment Values */ = {
 			isa = PBXGroup;
 			children = (
@@ -1881,6 +1891,7 @@
 				D9C7C4D7270A07DF0021B1C4 /* Focus */,
 				D93076D72724C16B00E8F801 /* Keyboard Shortcuts  */,
 				D93076DA2724C8A200E8F801 /* List Styles  */,
+				D93076DB2724D0C600E8F801 /* Materials */,
 				D9E60E0426AC8D6A0062D3B2 /* IsSearching.swift */,
 				D9E60E0626AC8DE60062D3B2 /* DismissSearch.swift */,
 				D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */,
@@ -2346,6 +2357,7 @@
 				D90639C2269F68090076AA0D /* List.swift in Sources */,
 				8D680A0B2508230E00AFE8A7 /* TextCase.swift in Sources */,
 				8D72C99D24A5296F00C98579 /* ProgressViewStyleModifier.swift in Sources */,
+				D93076DD2724D0DE00E8F801 /* BackgroundMaterial.swift in Sources */,
 				8D33BBE624AA934B0097EC2E /* GridItem.swift in Sources */,
 				8D0AD4F42674CFF2000655AA /* WithAnimation.swift in Sources */,
 				8D7D065925768C1400323A00 /* DisplayScale.swift in Sources */,

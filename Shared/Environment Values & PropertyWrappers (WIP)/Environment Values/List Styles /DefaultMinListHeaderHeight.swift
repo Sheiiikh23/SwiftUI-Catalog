@@ -42,10 +42,6 @@ struct DefaultMinListHeaderHeight_Previews: PreviewProvider {
   static var previews: some View {
     Group {
       DefaultMinListHeaderHeight()
-        .environment(\.defaultMinListHeaderHeight, 2)
-      DefaultMinListHeaderHeight()
-        .environment(\.defaultMinListHeaderHeight, 10)
-      DefaultMinListHeaderHeight()
     }
   }
 }
