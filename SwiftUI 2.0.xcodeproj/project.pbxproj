@@ -326,6 +326,7 @@
 		D93076E42724EDFC00E8F801 /* Dismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93076E32724EDFC00E8F801 /* Dismiss.swift */; };
 		D93076E7272563D200E8F801 /* RedactionReasons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93076E6272563D200E8F801 /* RedactionReasons.swift */; };
 		D93076E92725684600E8F801 /* RedactionReasonsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93076E82725684600E8F801 /* RedactionReasonsExtension.swift */; };
+		D93076EC2725A68700E8F801 /* Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93076EB2725A68700E8F801 /* Refresh.swift */; };
 		D96A9D8E2709B52B00EE33D8 /* IsLuminanceReduced.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96A9D8D2709B52B00EE33D8 /* IsLuminanceReduced.swift */; };
 		D9828EE226ECB2DE00E92D16 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */; };
 		D9CB338026E4CAAF00EBDA6D /* ControlActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */; };
@@ -654,6 +655,7 @@
 		D93076E32724EDFC00E8F801 /* Dismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dismiss.swift; sourceTree = "<group>"; };
 		D93076E6272563D200E8F801 /* RedactionReasons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactionReasons.swift; sourceTree = "<group>"; };
 		D93076E82725684600E8F801 /* RedactionReasonsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactionReasonsExtension.swift; sourceTree = "<group>"; };
+		D93076EB2725A68700E8F801 /* Refresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refresh.swift; sourceTree = "<group>"; };
 		D96A9D8D2709B52B00EE33D8 /* IsLuminanceReduced.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsLuminanceReduced.swift; sourceTree = "<group>"; };
 		D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlActiveState.swift; sourceTree = "<group>"; };
@@ -1896,6 +1898,7 @@
 		D93076EA2725A52800E8F801 /* Refresh */ = {
 			isa = PBXGroup;
 			children = (
+				D93076EB2725A68700E8F801 /* Refresh.swift */,
 			);
 			path = Refresh;
 			sourceTree = "<group>";
@@ -2430,6 +2433,7 @@
 				8DF93E9A24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
 				D93076E7272563D200E8F801 /* RedactionReasons.swift in Sources */,
 				8DC13F3C24A76019003CDA7A /* SettingsView.swift in Sources */,
+				D93076EC2725A68700E8F801 /* Refresh.swift in Sources */,
 				8D5B5C012578FAEB00F309DE /* UnredactedModifier.swift in Sources */,
 				8DA7D88426729CB4002E3081 /* ListRowSeparatorModifier.swift in Sources */,
 				8DA7D85B26709C8C002E3081 /* SwipeActionsModifier.swift in Sources */,
