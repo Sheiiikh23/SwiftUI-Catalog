@@ -11,10 +11,6 @@ struct SwiftUI_2_0App: App {
   /// Ce wrapper se charge de créer notre AppDelegate et de gérer tout le reste
   @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
-  /// On peut également accéder à l'état de l'application grâce à ce property wrapper
-  /// On retrouve un peu le même fonctionnement que l'AppDelegate
-  @Environment(\.scenePhase) var scenePhase
-
   /// C'est ici qu'on créer et qu'on injecte les données
   /// @StateObject qui seront injectés en tant que environmentObject à la vue
   @StateObject var userViewModel = UserViewModel()
@@ -25,18 +21,6 @@ struct SwiftUI_2_0App: App {
       Refresh()
         /// Injection de dépendances dans toutes les vues :)
         .environmentObject(userViewModel)
-    }
-    .onChange(of: scenePhase) { phase in
-      switch phase {
-      case .active:
-        print("App is active on the foreground, the UI is visible")
-      case .inactive:
-        print("App is inactive on the foreground, the UI is visible")
-      case .background:
-        print("App is in background mode, the UI isn't visible")
-      @unknown default:
-        print("New state added by Apple")
-      }
     }
   }
 }
