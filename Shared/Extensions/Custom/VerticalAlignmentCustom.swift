@@ -4,14 +4,14 @@
 
 import SwiftUI
 
-enum VerticalAlignmentCustom: Identifiable, CaseIterable {
+enum VerticalAlignmentCustom: String, Identifiable, CaseIterable {
   case top
   case center
   case bottom
   case firstTextBaseline
   case lastTextBaseline
 
-  var id: UUID { return UUID() }
+  var id: String { rawValue }
 
   var description: String {
     switch self {

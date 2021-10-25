@@ -34,24 +34,24 @@ struct SymbolRenderingModeModifier: View {
   }
 }
 
-fileprivate enum Sample: String, Identifiable, CaseIterable {
-  case monochrome
-  case hierarchical
-  case multicolor
-  case palette
+private enum Sample: String, Identifiable, CaseIterable {
+  case monochromeMode
+  case hierarchicalMode
+  case multicolorMode
+  case paletteMode
   case paletteWithGradient = "palette with gradient"
 
   var id: String { rawValue }
 
   @ViewBuilder var destination: some View {
     switch self {
-    case .monochrome:
+    case .monochromeMode:
       MonochromeSymbolRenderingMode()
-    case .hierarchical:
+    case .hierarchicalMode:
       HierarchicalSymbolRenderingMode()
-    case .multicolor:
+    case .multicolorMode:
       MulticolorSymbolRenderingMode()
-    case .palette:
+    case .paletteMode:
       PaletterSymbolRenderingMode()
     case .paletteWithGradient:
       PaletteWithGradientSymbolRenderingMode()
@@ -62,7 +62,7 @@ fileprivate enum Sample: String, Identifiable, CaseIterable {
 fileprivate struct MonochromeSymbolRenderingMode: View {
 
   @State private var color: Color = .indigo
-  let sample = Sample.monochrome
+  let sample = Sample.monochromeMode
 
   var body: some View {
     NavigationLink(sample.rawValue.firstLetterCapitalized) {
@@ -83,7 +83,7 @@ fileprivate struct MonochromeSymbolRenderingMode: View {
 fileprivate struct HierarchicalSymbolRenderingMode: View {
 
   @State private var color: Color = .indigo
-  let sample = Sample.hierarchical
+  let sample = Sample.hierarchicalMode
 
   var body: some View {
     NavigationLink(sample.rawValue.firstLetterCapitalized) {
@@ -104,7 +104,7 @@ fileprivate struct HierarchicalSymbolRenderingMode: View {
 fileprivate struct MulticolorSymbolRenderingMode: View {
 
   @State private var color: Color = .indigo
-  let sample = Sample.multicolor
+  let sample = Sample.multicolorMode
 
   var body: some View {
     NavigationLink(sample.rawValue.firstLetterCapitalized) {
@@ -127,7 +127,7 @@ fileprivate struct PaletterSymbolRenderingMode: View {
   @State private var color1: Color = .indigo
   @State private var color2: Color = .red
   @State private var color3: Color = .green
-  let sample = Sample.palette
+  let sample = Sample.paletteMode
 
   var body: some View {
     NavigationLink(sample.rawValue.firstLetterCapitalized) {

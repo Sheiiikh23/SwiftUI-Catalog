@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-enum AlignmentCustom: Identifiable, CaseIterable {
+enum AlignmentCustom: String, Identifiable, CaseIterable {
   case top
   case leading
   case bottom
@@ -15,7 +15,7 @@ enum AlignmentCustom: Identifiable, CaseIterable {
   case bottomLeading
   case bottomTrailing
 
-  var id: UUID { return UUID() }
+  var id: String { rawValue }
 
   var description: String {
     switch self {

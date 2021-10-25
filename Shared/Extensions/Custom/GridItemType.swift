@@ -4,12 +4,12 @@
 
 import Foundation
 
-enum GridItemType: Identifiable, CaseIterable, Comparable {
+enum GridItemType: String, Identifiable, CaseIterable{
   case adaptive
   case fixed
   case flexible
 
-  var id: UUID { return UUID() }
+  var id: String { rawValue }
 
   var description: String {
     switch self {

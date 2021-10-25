@@ -155,7 +155,7 @@ fileprivate enum Sample: String, Identifiable, CaseIterable {
   case firstTextBaseLine = "LazyHStack with a firstTextBaseLine alignment"
   case lastTextBaseLine = "LazyHStack with a lastTextBaseLine alignment"
   
-  var id: UUID { UUID() }
+  var id: String { rawValue }
   
   @ViewBuilder var destination: some View {
     switch self {

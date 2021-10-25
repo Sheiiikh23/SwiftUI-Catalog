@@ -20,5 +20,5 @@ enum CustomAxis: String, CaseIterable, Identifiable {
     }
   }
 
-  var id: UUID { UUID() }
+  var id: String { rawValue }
 }

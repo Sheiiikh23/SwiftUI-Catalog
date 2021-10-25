@@ -82,7 +82,7 @@ fileprivate enum Sample: String, Identifiable, CaseIterable {
   case horizontal = "Horizontal ScrollView"
   case verticalHorizontal = "Vertical & Horizontal ScrollView"
   
-  var id: UUID { UUID() }
+  var id: String { rawValue }
   
   @ViewBuilder var destination: some View {
     switch self {

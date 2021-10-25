@@ -67,8 +67,9 @@ struct ListRowBackgroundModifier_Previews: PreviewProvider {
 }
 
 fileprivate enum Flavor: String, CaseIterable, Identifiable {
-  var id: String { self.rawValue }
   case vanilla
   case chocolate
   case strawberry
+
+  var id: String { rawValue }
 }

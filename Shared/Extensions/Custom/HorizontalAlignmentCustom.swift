@@ -4,12 +4,12 @@
 
 import SwiftUI
 
-enum HorizontalAlignmentCustom: Identifiable, CaseIterable {
+enum HorizontalAlignmentCustom: String, Identifiable, CaseIterable {
   case leading
   case center
   case trailing
 
-  var id: UUID { return UUID() }
+  var id: String { rawValue }
 
   var description: String {
     switch self {

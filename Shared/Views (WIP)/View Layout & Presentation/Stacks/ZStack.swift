@@ -98,7 +98,7 @@ fileprivate enum Sample: String, Identifiable, CaseIterable {
   case background = "ZStack with a background edge to edge"
   
   
-  var id: UUID { UUID() }
+  var id: String { rawValue }
   
   @ViewBuilder var destination: some View {
     switch self {

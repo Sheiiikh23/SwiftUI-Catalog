@@ -25,7 +25,7 @@ import SwiftUI
 fileprivate enum Sample: String, Identifiable, CaseIterable {
   case arbitraryContent = "List with Arbitrary Content"
   
-  var id: UUID { UUID() }
+  var id: String { rawValue }
   
   @ViewBuilder var destination: some View {
     switch self {

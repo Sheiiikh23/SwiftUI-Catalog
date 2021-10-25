@@ -39,7 +39,3 @@ struct SubmitLabelModifier_Previews: PreviewProvider {
     SubmitLabelModifier()
   }
 }
-
-extension SubmitLabel: Identifiable {
-  public var id: UUID { UUID() }
-}

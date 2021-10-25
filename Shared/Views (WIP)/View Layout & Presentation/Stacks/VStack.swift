@@ -82,7 +82,7 @@ fileprivate enum Sample: String, Identifiable, CaseIterable {
   case center = "VStack with a center alignment"
   case trailing = "VStack with a trailing alignment"
   
-  var id: UUID { UUID() }
+  var id: String { rawValue }
   
   @ViewBuilder var destination: some View {
     switch self {

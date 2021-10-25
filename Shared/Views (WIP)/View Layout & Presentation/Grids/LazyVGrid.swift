@@ -164,7 +164,7 @@ fileprivate enum Sample: String, Identifiable, CaseIterable {
   case threeFixed = "Three Fixed Columns"
   case oneFixedßAdaptiveOneFlexible = "One Fixed – ß Adaptive – One Flexible Columns"
   
-  var id: UUID { UUID() }
+  var id: String { rawValue }
   
   @ViewBuilder var destination: some View {
     switch self {
