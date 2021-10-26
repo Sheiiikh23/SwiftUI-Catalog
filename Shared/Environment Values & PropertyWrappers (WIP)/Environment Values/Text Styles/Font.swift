@@ -25,9 +25,9 @@ import SwiftUI
 ///     - system(_ style: Font.TextStyle, design: Font.Design = .default) : Font système avec le style et design donnés
 ///     - system(size: CGFloat, weight: Font.Weight = .regular, design: Font.Design = .default) : Font système avec la taille, graisse et design donnnés
 ///   - Font customs :
-///     - custom(_ name: String, fixedSize: CGFloat) (i•Pad•OS 14.0, watchOS 7.0, tvOS 14.0, macOS 11.0, Mac Catalyst 14.0) : Font custom avec le nom donné et une taile fixe qui ne scale pas en fonction du DynamicType
-///     - custom(_ name: String, size: CGFloat, relativeTo textStyle: Font.TextStyle) (i•Pad•OS 14.0, watchOS 7.0, tvOS 14.0, macOS 11.0, Mac Catalyst 14.0) : Font custom avec le nom donné, une taille donnée qui scale relativement en fonction du textStyle donné
-///     - custom(_ name: String, size: CGFloat) : Font custom avec le nom donné et une taille donné qui se scale de la même manière que la font standard body
+///     - custom(_ name: String, fixedSize: CGFloat) (i•Pad•OS 14.0, watchOS 7.0, tvOS 14.0, macOS 11.0, Mac Catalyst 14.0) : Font custom avec son nom et une taile fixe qui ne scale pas en fonction du DynamicType
+///     - custom(_ name: String, size: CGFloat, relativeTo textStyle: Font.TextStyle) (i•Pad•OS 14.0, watchOS 7.0, tvOS 14.0, macOS 11.0, Mac Catalyst 14.0) : Font custom avec son nom et une taille donnée qui scale relativement en fonction du textStyle donné
+///     - custom(_ name: String, size: CGFloat) : Font custom avec son nom et une taille donné qui scale de la même manière que la font body
 ///   - Stylisé une Font :
 ///     - bold() : Ajoute de la graisse à la font
 ///     - italic() : Ajoute de l'italic à la font
@@ -59,7 +59,7 @@ struct Font: View {
 
 struct Font_Previews: PreviewProvider {
 
-  static let fonts = SwiftUI.Font.allCases
+  static let fonts = SwiftUI.Font.standardFonts
 
   static var previews: some View {
     Group {

@@ -165,8 +165,6 @@
 		8D96FB32257EF8E400A805C5 /* NavigationTitleViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D96FB31257EF8E400A805C5 /* NavigationTitleViewBuilder.swift */; };
 		8D97EDDD24E1D7D4009E60E6 /* SizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */; };
 		8D97EDDE24E1D7D4009E60E6 /* SizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */; };
-		8D97EDE024E1DBBE009E60E6 /* TruncationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97EDDF24E1DBBE009E60E6 /* TruncationMode.swift */; };
-		8D97EDE124E1DBBE009E60E6 /* TruncationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D97EDDF24E1DBBE009E60E6 /* TruncationMode.swift */; };
 		8D999F7F24B08E470050BD97 /* DatePickerStyleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D999F7E24B08E470050BD97 /* DatePickerStyleModifier.swift */; };
 		8D999F8224B098040050BD97 /* DisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D999F8124B098040050BD97 /* DisclosureGroupView.swift */; };
 		8D999F8324B098040050BD97 /* DisclosureGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D999F8124B098040050BD97 /* DisclosureGroupView.swift */; };
@@ -326,6 +324,8 @@
 		D974A2242728B781002B6F36 /* TextAlignmentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A2232728B781002B6F36 /* TextAlignmentExtension.swift */; };
 		D974A2262728B892002B6F36 /* TextCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A2252728B892002B6F36 /* TextCase.swift */; };
 		D97ED4CA2728BB4F005B56B5 /* TextCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97ED4C92728BB4F005B56B5 /* TextCaseExtension.swift */; };
+		D97ED4CC2728BF4E005B56B5 /* TruncationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97ED4CB2728BF4E005B56B5 /* TruncationMode.swift */; };
+		D97ED4CE2728C28A005B56B5 /* TextTruncationModeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97ED4CD2728C28A005B56B5 /* TextTruncationModeExtension.swift */; };
 		D9828EE226ECB2DE00E92D16 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */; };
 		D9AFD4BF2727632800117D57 /* SubmitLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFD4BE2727632800117D57 /* SubmitLabelExtension.swift */; };
 		D9C1922627276BCE003A7DC6 /* SymbolVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1922527276BCE003A7DC6 /* SymbolVariants.swift */; };
@@ -540,7 +540,6 @@
 		8D8442212677FA530087B889 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		8D96FB31257EF8E400A805C5 /* NavigationTitleViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleViewBuilder.swift; sourceTree = "<group>"; };
 		8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCategory.swift; sourceTree = "<group>"; };
-		8D97EDDF24E1DBBE009E60E6 /* TruncationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruncationMode.swift; sourceTree = "<group>"; };
 		8D999F7E24B08E470050BD97 /* DatePickerStyleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerStyleModifier.swift; sourceTree = "<group>"; };
 		8D999F8124B098040050BD97 /* DisclosureGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroupView.swift; sourceTree = "<group>"; };
 		8D999F8724B0B0140050BD97 /* MatchedGeometryEffectModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryEffectModifier.swift; sourceTree = "<group>"; };
@@ -665,6 +664,8 @@
 		D974A2232728B781002B6F36 /* TextAlignmentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlignmentExtension.swift; sourceTree = "<group>"; };
 		D974A2252728B892002B6F36 /* TextCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCase.swift; sourceTree = "<group>"; };
 		D97ED4C92728BB4F005B56B5 /* TextCaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCaseExtension.swift; sourceTree = "<group>"; };
+		D97ED4CB2728BF4E005B56B5 /* TruncationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruncationMode.swift; sourceTree = "<group>"; };
+		D97ED4CD2728C28A005B56B5 /* TextTruncationModeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTruncationModeExtension.swift; sourceTree = "<group>"; };
 		D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		D9AFD4BE2727632800117D57 /* SubmitLabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitLabelExtension.swift; sourceTree = "<group>"; };
 		D9C1922527276BCE003A7DC6 /* SymbolVariants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolVariants.swift; sourceTree = "<group>"; };
@@ -887,7 +888,6 @@
 			isa = PBXGroup;
 			children = (
 				8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */,
-				8D97EDDF24E1DBBE009E60E6 /* TruncationMode.swift */,
 			);
 			path = "Paragraph Styles";
 			sourceTree = "<group>";
@@ -918,6 +918,7 @@
 				D974A21727289B69002B6F36 /* LayoutDirectionExtension.swift */,
 				D974A2232728B781002B6F36 /* TextAlignmentExtension.swift */,
 				D97ED4C92728BB4F005B56B5 /* TextCaseExtension.swift */,
+				D97ED4CD2728C28A005B56B5 /* TextTruncationModeExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -2031,6 +2032,7 @@
 				D974A21F2728A236002B6F36 /* MinimumScaleFactor.swift */,
 				D974A2212728B348002B6F36 /* MultilineTextAlignment.swift */,
 				D974A2252728B892002B6F36 /* TextCase.swift */,
+				D97ED4CB2728BF4E005B56B5 /* TruncationMode.swift */,
 			);
 			path = "Text Styles";
 			sourceTree = "<group>";
@@ -2320,7 +2322,6 @@
 				8D0AD4F12674CE7E000655AA /* AccentColorModifier.swift in Sources */,
 				8D442EE424A80B23009995DD /* ImageInterpolationInText.swift in Sources */,
 				8D0AD4EE2674CCF1000655AA /* AnimationModifier.swift in Sources */,
-				8D97EDE024E1DBBE009E60E6 /* TruncationMode.swift in Sources */,
 				8D999F9424B0E0C20050BD97 /* FullScreenCoverModifier.swift in Sources */,
 				D9CB339B26E546B600EBDA6D /* VisibilityExtension.swift in Sources */,
 				8DE4440124CAA7DF0079B2B7 /* ControlSize.swift in Sources */,
@@ -2486,6 +2487,7 @@
 				8DA7D86626715BF8002E3081 /* OnSubmitModifier.swift in Sources */,
 				8DF93E9A24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
 				D93076E7272563D200E8F801 /* RedactionReasons.swift in Sources */,
+				D97ED4CC2728BF4E005B56B5 /* TruncationMode.swift in Sources */,
 				8DC13F3C24A76019003CDA7A /* SettingsView.swift in Sources */,
 				D93076EC2725A68700E8F801 /* Refresh.swift in Sources */,
 				8D5B5C012578FAEB00F309DE /* UnredactedModifier.swift in Sources */,
@@ -2534,6 +2536,7 @@
 				D90639AF269F2E6B0076AA0D /* ZStackDemoViewModel.swift in Sources */,
 				8D09AB89268D03D900F94E25 /* SafeAreaInsetModifier.swift in Sources */,
 				D93076FA27260B5700E8F801 /* VerticalSizeClass.swift in Sources */,
+				D97ED4CE2728C28A005B56B5 /* TextTruncationModeExtension.swift in Sources */,
 				8D0AD4E82673F07C000655AA /* BindingCollections.swift in Sources */,
 				8D7B37D124AEFD7500F95736 /* VideoPlayerView.swift in Sources */,
 				8D5164D62687CA1400D298F6 /* LazyVGridGridItemSizeConfiguratorView.swift in Sources */,
@@ -2552,7 +2555,6 @@
 				D9CB338A26E4CE8300EBDA6D /* HeaderProminenceModifier.swift in Sources */,
 				D9CB339026E53CC700EBDA6D /* ControlSizeExtension.swift in Sources */,
 				D9CB339926E5403D00EBDA6D /* MenuIndicatorVisibility .swift in Sources */,
-				8D97EDE124E1DBBE009E60E6 /* TruncationMode.swift in Sources */,
 				8D999F9524B0E0C20050BD97 /* FullScreenCoverModifier.swift in Sources */,
 				8DE4440224CAA7DF0079B2B7 /* ControlSize.swift in Sources */,
 				D92A237726A1EC4B001C45C9 /* SybolVariantEnvironment.swift in Sources */,

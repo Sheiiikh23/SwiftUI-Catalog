@@ -5,7 +5,7 @@
 import SwiftUI
 
 /// Plateformes : i•Pad•OS 15.0, watchOS 8.0, tvOS 15.0, macOS 12.0, Mac Catalyst 15.0
-/// Description : La taille actuelle du type dynamique
+/// Description : La taille actuelle du Dynamic Type, qui indique l'échelle de scale du Content
 ///
 /// Définition de l'`EnvironmentValue` :
 /// - var dynamicTypeSize: DynamicTypeSize { get set }
@@ -24,7 +24,7 @@ import SwiftUI
 ///     - xSmall : Une taille extra petite.
 ///
 /// Remarques :
-///   - La valeur par défaut est celle choisie dans les préférences de l'utilisateur
+///   - La valeur par défaut est celle choisie dans les réglages de l'utilisateur
 ///   - Sous MacOS, cette valeur ne peut pas être modifiée par les utilisateurs
 ///   - `DynamicTypeSize` peut être comparé avec les opérateurs suivants : ..., ..<, <=, <, ==, !=, >, >=, >.. (très pratique pour adapter le layout d'une View)
 ///   - Pour en savoir plus, voici le lien de la doc : https://developer.apple.com/documentation/swiftui/dynamictypesize
@@ -47,6 +47,7 @@ struct DynamicTypeSize_Previews: PreviewProvider {
       ForEach(SwiftUI.DynamicTypeSize.allCases, id: \.description) { dynamicTypeSize in
         DynamicTypeSize()
           .environment(\.dynamicTypeSize, dynamicTypeSize)
+          .previewDisplayName(dynamicTypeSize.description.firstLetterCapitalized)
       }
     }
   }

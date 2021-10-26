@@ -9,29 +9,29 @@ extension SwiftUI.DynamicTypeSize {
   var description: String {
     switch self {
     case .xSmall:
-      return "An extra small size."
+      return "An extra small size"
     case .small:
-      return "A small size."
+      return "A small size"
     case .medium:
-      return "A medium size."
+      return "A medium size"
     case .large:
-      return "A large size."
+      return "A large size"
     case .xLarge:
-      return "An extra large size."
+      return "An extra large size"
     case .xxLarge:
-      return "An extra extra large size."
+      return "An extra extra large size"
     case .xxxLarge:
-      return "An extra extra extra large size."
+      return "An extra extra extra large size"
     case .accessibility1:
-      return "The first accessibility size."
+      return "The first accessibility size"
     case .accessibility2:
-      return "The second accessibility size."
+      return "The second accessibility size"
     case .accessibility3:
-      return "The third accessibility size."
+      return "The third accessibility size"
     case .accessibility4:
-      return "The fourth accessibility size."
+      return "The fourth accessibility size"
     case .accessibility5:
-      return "The fifth accessibility size."
+      return "The fifth accessibility size"
     @unknown default:
       fatalError("Unknown dynamic type size")
     }

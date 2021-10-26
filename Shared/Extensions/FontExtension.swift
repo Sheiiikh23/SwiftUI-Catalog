@@ -6,7 +6,7 @@ import SwiftUI
 
 extension SwiftUI.Font {
 
-  static var allCases: [Self] {
+  static var standardFonts: [Self] {
     return [.largeTitle,
             .title,
             .title2,

@@ -13,7 +13,7 @@ import SwiftUI
 ///     - true
 ///
 /// Remarque :
-///   - Pour permettre à une vue de resserer ces caractères on utilise le modifier `allowsTightening(_:)`
+///   - Pour permettre à un `Text` de resserer ces caractères on utilise le modifier `allowsTightening(_:)`
 
 struct AllowsTightening: View {
 
@@ -25,7 +25,7 @@ struct AllowsTightening: View {
       Toggle("Allow tightening ?", isOn: $isAllowingTightening)
       Text("This is a wide text element")
         .font(.body)
-        .frame(width: 200, height: 50)
+        .frame(width: 195, height: 50)
         .lineLimit(1)
     }
     .environment(\.allowsTightening, isAllowingTightening)

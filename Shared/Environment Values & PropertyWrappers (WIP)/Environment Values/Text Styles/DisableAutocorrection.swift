@@ -14,7 +14,7 @@ import SwiftUI
 ///     - false
 ///
 /// Remarque :
-///   - Pour désactiver l'auto-correction pour une vue on utilise le modifier `disableAutocorrection(_:)`
+///   - Pour désactiver ou non l'auto-correction pour une vue on utilise le modifier `disableAutocorrection(_:)`
 
 struct DisableAutocorrection: View {
 

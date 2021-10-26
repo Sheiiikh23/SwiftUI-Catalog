@@ -5,7 +5,7 @@
 import SwiftUI
 
 /// Plateformes : i•Pad•OS 13.0, watchOS 6.0, tvOS 13.0, macOS 10.15, Mac Catalyst 13.0
-/// Description : Permet de connaître le nombre maximum de ligne qu'un `Text` peut occuper dans la vue
+/// Description : Permet de connaître le nombre maximum de lignes qu'un `Text` peut occuper dans la vue
 ///
 /// Définition de l'`EnvironmentValue` :
 ///   - var lineLimit: Int? { get set }
