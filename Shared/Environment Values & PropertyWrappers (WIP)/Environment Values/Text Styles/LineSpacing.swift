@@ -13,7 +13,7 @@ import SwiftUI
 ///    - ⚠️ Obligatoirement non négative
 ///
 /// Remarque :
-///   - Pour setter la distance pour un `Text` donné, on utilise le modifier `.lineSpacing(_:)`
+///   - Pour setter la distance pour un `Text` donné, on utilise le modifier `lineSpacing(_:)`
 
 struct LineSpacing: View {
 

@@ -120,7 +120,6 @@
 		8D66EB5524DDBFE700FC4941 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66EB5424DDBFE700FC4941 /* MenuView.swift */; };
 		8D66EB5624DDBFE700FC4941 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66EB5424DDBFE700FC4941 /* MenuView.swift */; };
 		8D66EB5824DEAC0E00FC4941 /* GroupBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D66EB5724DEAC0E00FC4941 /* GroupBox.swift */; };
-		8D680A0B2508230E00AFE8A7 /* TextCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D680A0A2508230E00AFE8A7 /* TextCase.swift */; };
 		8D6875592691D30600627B5D /* VerticalEdgeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6875582691D30600627B5D /* VerticalEdgeExtension.swift */; };
 		8D68755C2691D38600627B5D /* PreviewInterfaceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D68755B2691D38600627B5D /* PreviewInterfaceOrientation.swift */; };
 		8D68A81024C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D68A80F24C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift */; };
@@ -324,7 +323,9 @@
 		D974A21E2728A052002B6F36 /* LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21D2728A052002B6F36 /* LineSpacing.swift */; };
 		D974A2202728A236002B6F36 /* MinimumScaleFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21F2728A236002B6F36 /* MinimumScaleFactor.swift */; };
 		D974A2222728B348002B6F36 /* MultilineTextAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A2212728B348002B6F36 /* MultilineTextAlignment.swift */; };
-		D974A2242728B781002B6F36 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A2232728B781002B6F36 /* SwiftUIView.swift */; };
+		D974A2242728B781002B6F36 /* TextAlignmentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A2232728B781002B6F36 /* TextAlignmentExtension.swift */; };
+		D974A2262728B892002B6F36 /* TextCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A2252728B892002B6F36 /* TextCase.swift */; };
+		D97ED4CA2728BB4F005B56B5 /* TextCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97ED4C92728BB4F005B56B5 /* TextCaseExtension.swift */; };
 		D9828EE226ECB2DE00E92D16 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */; };
 		D9AFD4BF2727632800117D57 /* SubmitLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFD4BE2727632800117D57 /* SubmitLabelExtension.swift */; };
 		D9C1922627276BCE003A7DC6 /* SymbolVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1922527276BCE003A7DC6 /* SymbolVariants.swift */; };
@@ -499,7 +500,6 @@
 		8D66EB1A24DDBA4F00FC4941 /* OutlineGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlineGroupView.swift; sourceTree = "<group>"; };
 		8D66EB5424DDBFE700FC4941 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		8D66EB5724DEAC0E00FC4941 /* GroupBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupBox.swift; sourceTree = "<group>"; };
-		8D680A0A2508230E00AFE8A7 /* TextCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCase.swift; sourceTree = "<group>"; };
 		8D6875582691D30600627B5D /* VerticalEdgeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalEdgeExtension.swift; sourceTree = "<group>"; };
 		8D68755B2691D38600627B5D /* PreviewInterfaceOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewInterfaceOrientation.swift; sourceTree = "<group>"; };
 		8D68A80F24C855E1000F4DFF /* AccessibilityDifferentiateWithoutColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityDifferentiateWithoutColor.swift; sourceTree = "<group>"; };
@@ -662,7 +662,9 @@
 		D974A21D2728A052002B6F36 /* LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineSpacing.swift; sourceTree = "<group>"; };
 		D974A21F2728A236002B6F36 /* MinimumScaleFactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumScaleFactor.swift; sourceTree = "<group>"; };
 		D974A2212728B348002B6F36 /* MultilineTextAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextAlignment.swift; sourceTree = "<group>"; };
-		D974A2232728B781002B6F36 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		D974A2232728B781002B6F36 /* TextAlignmentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlignmentExtension.swift; sourceTree = "<group>"; };
+		D974A2252728B892002B6F36 /* TextCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCase.swift; sourceTree = "<group>"; };
+		D97ED4C92728BB4F005B56B5 /* TextCaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCaseExtension.swift; sourceTree = "<group>"; };
 		D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		D9AFD4BE2727632800117D57 /* SubmitLabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitLabelExtension.swift; sourceTree = "<group>"; };
 		D9C1922527276BCE003A7DC6 /* SymbolVariants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolVariants.swift; sourceTree = "<group>"; };
@@ -914,7 +916,8 @@
 				D9D604D62728787800CFF793 /* DynamicTypeSizeExtension.swift */,
 				D974A21327289630002B6F36 /* FontExtension.swift */,
 				D974A21727289B69002B6F36 /* LayoutDirectionExtension.swift */,
-				D974A2232728B781002B6F36 /* SwiftUIView.swift */,
+				D974A2232728B781002B6F36 /* TextAlignmentExtension.swift */,
+				D97ED4C92728BB4F005B56B5 /* TextCaseExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1245,7 +1248,6 @@
 		8D97EDDB24E1D7A2009E60E6 /* Text Style */ = {
 			isa = PBXGroup;
 			children = (
-				8D680A0A2508230E00AFE8A7 /* TextCase.swift */,
 			);
 			path = "Text Style";
 			sourceTree = "<group>";
@@ -2028,6 +2030,7 @@
 				D974A21D2728A052002B6F36 /* LineSpacing.swift */,
 				D974A21F2728A236002B6F36 /* MinimumScaleFactor.swift */,
 				D974A2212728B348002B6F36 /* MultilineTextAlignment.swift */,
+				D974A2252728B892002B6F36 /* TextCase.swift */,
 			);
 			path = "Text Styles";
 			sourceTree = "<group>";
@@ -2309,6 +2312,7 @@
 				D90639AB269F1F690076AA0D /* HStackDemoViewModel.swift in Sources */,
 				8DA7D86F26727622002E3081 /* InteractiveDismissDisabledModifier.swift in Sources */,
 				D9E60E0C26AC9E160062D3B2 /* Environment Value.swift in Sources */,
+				D974A2262728B892002B6F36 /* TextCase.swift in Sources */,
 				8D1CDAD8256C54860067B8BE /* CommandGroup.swift in Sources */,
 				8D5B5BE72578EE1D00F309DE /* RedactedModifier.swift in Sources */,
 				D96A9D8E2709B52B00EE33D8 /* IsLuminanceReduced.swift in Sources */,
@@ -2434,11 +2438,10 @@
 				8D0AD50E26751A3A000655AA /* UI.swift in Sources */,
 				8DE9F4EF24AD15F40054CE64 /* TabViewStyleModifier.swift in Sources */,
 				D90639C2269F68090076AA0D /* List.swift in Sources */,
-				8D680A0B2508230E00AFE8A7 /* TextCase.swift in Sources */,
 				8D72C99D24A5296F00C98579 /* ProgressViewStyleModifier.swift in Sources */,
 				D93076DD2724D0DE00E8F801 /* BackgroundMaterial.swift in Sources */,
 				8D33BBE624AA934B0097EC2E /* GridItem.swift in Sources */,
-				D974A2242728B781002B6F36 /* SwiftUIView.swift in Sources */,
+				D974A2242728B781002B6F36 /* TextAlignmentExtension.swift in Sources */,
 				8D0AD4F42674CFF2000655AA /* WithAnimation.swift in Sources */,
 				8D7D065925768C1400323A00 /* DisplayScale.swift in Sources */,
 				8D7D066D2576926B00323A00 /* ImageScale.swift in Sources */,
@@ -2505,6 +2508,7 @@
 				D93076F82726077400E8F801 /* HorizontalSizeClass.swift in Sources */,
 				8D0AD510267524AC000655AA /* ZStack.swift in Sources */,
 				D974A2202728A236002B6F36 /* MinimumScaleFactor.swift in Sources */,
+				D97ED4CA2728BB4F005B56B5 /* TextCaseExtension.swift in Sources */,
 				8DB0C1B224B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift in Sources */,
 				8D587EAA268BA66000E069AB /* Canvas.swift in Sources */,
 				8DA7D860267149D5002E3081 /* AsyncImageView.swift in Sources */,

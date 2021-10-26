@@ -14,7 +14,7 @@ import SwiftUI
 ///   - focused(_ condition: FocusState<Bool>.Binding) -> some View
 ///   - focused<Value>(_ binding: FocusState<Value>.Binding, equals value: Value) -> some View where Value : Hashable
 ///
-/// S'utilise généralement avec une `@FocusState` var, et `.onSubmit
+/// S'utilise généralement avec une `@FocusState` var, et `onSubmit
 /// Très utile pour les TextField, SecureField, focus sur tvOS etc...
 
 // MARK: - Utilisation : Forms, focus / dismiss du keyboard, focus sur tvOS

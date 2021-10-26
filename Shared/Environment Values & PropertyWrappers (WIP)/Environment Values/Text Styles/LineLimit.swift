@@ -14,7 +14,7 @@ import SwiftUI
 ///
 /// Remarques :
 ///   - Si la valeur est nil, le `Text` utilise autant de lignes que nécessaire
-///   - Pour setter le nombre maximum de lignes d'un `Text` en particulier, on utilise le modifier `.lineLimit(_:)`
+///   - Pour setter le nombre maximum de lignes d'un `Text` en particulier, on utilise le modifier `lineLimit(_:)`
 
 struct LineLimit: View {
 

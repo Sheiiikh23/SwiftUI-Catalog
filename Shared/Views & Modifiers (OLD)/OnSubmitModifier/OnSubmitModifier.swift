@@ -10,7 +10,7 @@ import SwiftUI
 /// OnSubmit permet d'effectuer une action lorsque l'utilisateur soumet une valeur à cette View (TextField etc...)
 /// Disponible sur i•Pad•OS / watchOS / tvOS / macOS / Mac Catalyst
 ///
-/// S'utilise généralement avec une `@FocusState` var et `.focused`
+/// S'utilise généralement avec une `@FocusState` var et `focused`
 
 // MARK: - Utilisation : Permet d'effectuer une action lorsque l'état d'un @FocusState change
 

@@ -46,7 +46,7 @@ import SwiftUI
 ///   - Utilisation de `@Environment(\.isSearching)` qui permet de savoir si l'utilsateur est en train de taper dans la search bar
 ///   - Utilisation de `@Environment(\.dissmissSearch)` permet de dissmiss la recherche actuelle
 ///   - Lorsque l'utilisateur est en train de rechercher, une possibilité est de lui afficher la liste via un overlay (voir `SearchableModifierWithAutomaticPlacementAndSuggestionOverlay`)
-///   - On peut utiliser le modifier `.onSubmit(of: .search)` qui permet de trigger du code dès que l'utilsateur presse entrée ou choisit une suggestion (voir `SearchableModifierWithOnCommitModifier`)
+///   - On peut utiliser le modifier `onSubmit(of: .search)` qui permet de trigger du code dès que l'utilsateur presse entrée ou choisit une suggestion (voir `SearchableModifierWithOnCommitModifier`)
 ///   - Lorsque dans la stack de navigation la searchBar n'est pas attaché à la "ParentView" alors la searchBar est toujours visible (voir `SeachableModifierParent`)
 ///
 /// Ressource : https://swiftwithmajid.com/2021/06/23/mastering-search-in-swiftui/

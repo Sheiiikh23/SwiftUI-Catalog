@@ -16,7 +16,7 @@ import SwiftUI
 ///
 /// Remarques :
 ///   - N'a aucun effet pour les textes constitués d'une ligne (`TextField` notamment)
-///   - Pour garder de la consistence dans notre layout, on applique généralement le modifier `.multilineTextAlignment(_:)` à des `Views` containers
+///   - Pour garder de la consistence dans notre layout, on applique généralement le modifier `multilineTextAlignment(_:)` à des `Views` containers
 ///   - Pour comprendre un peu plus en détail : https://developer.apple.com/documentation/swiftui/textalignment
 
 struct MultilineTextAlignment: View {
