@@ -28,7 +28,6 @@ struct SymbolVariants: View {
   @State private var currentSymbolVariants = SwiftUI.SymbolVariants.none
 
   var body: some View {
-    let _ = Self._printChanges()
     NavigationView {
       VStack {
         Menu("Symbol Variant") {
