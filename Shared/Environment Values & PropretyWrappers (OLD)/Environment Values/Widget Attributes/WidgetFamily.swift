@@ -44,7 +44,7 @@ struct WidgetFamily: View {
       #warning("FIXME")
       Text("FIXME")
     @unknown default:
-      Text("A new widget size was added by Apple")
+      fatalError("A new widget size was added by Apple")
     }
   }
 }

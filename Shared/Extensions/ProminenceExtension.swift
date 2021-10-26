@@ -13,7 +13,7 @@ extension Prominence {
     case .increased:
       return "increased"
     @unknown default:
-      return "uknown Prominence"
+      fatalError("unknown Prominence")
     }
   }
 }

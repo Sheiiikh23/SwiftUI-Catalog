@@ -5,7 +5,7 @@
 import SwiftUI
 
 /// Plateformes : i•Pad•OS 15.0, watchOS 8.0, tvOS 15.0, macOS 12.0, Mac Catalyst 15.0
-/// Description : Permet de choisir le style d'un SF Symbol au sein d'une `Image` ou `Label
+/// Description : Le style à appliquer aux SF Symbols au sein d'une `Image` ou `Label
 ///
 /// 1 seule signature :
 ///   - func symbolVariant(_ variant: SymbolVariants) -> some View
@@ -19,7 +19,7 @@ import SwiftUI
 ///
 /// Remarques :
 ///   - Ce modifier correspond à la concaténation dans la string du SF Sybol sans ce soucier de l'ordre
-///   - Ordre commun  : .slash (ou non) puis .shape (ou non) puis .fill (ou non)
+///   - Ordre commun : .slash (ou non) puis .shape (ou non) puis .fill (ou non)
 ///   
 /// Tips :
 ///   - On peut enchainer les styles au sein d'un seul `symbolVariant(_:)` sans ce soucier d'un ordre quelconque (mais pas recommandé par les ingénieur Apple)
@@ -86,12 +86,8 @@ struct SymbolVariantModifier: View {
           Label("Trash", systemImage: "trash")
             .symbolVariant(.circle)
             .foregroundColor(.pink)
-          HStack {
-            Label("Trash", systemImage: "trash")
-              .symbolVariant(.slash.circle)
-            Label("Trash", systemImage: "trash")
-              .symbolVariant(.circle.slash)
-          }
+          Label("Trash", systemImage: "trash")
+            .symbolVariant(.slash.circle)
           .foregroundColor(.purple)
           Label("Trash", systemImage: "trash")
             .symbolVariant(.fill)

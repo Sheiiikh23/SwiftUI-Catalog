@@ -37,7 +37,7 @@ extension Color {
     case .green:
       return "green"
     default:
-      return "uknowned color"
+      fatalError("unknown color")
     }
   }
 }

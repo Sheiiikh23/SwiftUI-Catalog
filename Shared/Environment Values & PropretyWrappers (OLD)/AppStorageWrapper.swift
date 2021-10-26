@@ -75,17 +75,17 @@ struct AppStorageWrapper: View {
           .background(Color.green.opacity(0.5))
           .cornerRadius(30)
         // On aurait pu faire aussi un if let pour ne pas affiché lorsque firstName == nil
-        Text("Welcome to \(firstName ?? "Uknown") in standard UserDefault")
+        Text("Welcome to \(firstName ?? "Unknown") in standard UserDefault")
           .fontWeight(.bold)
           .multilineTextAlignment(.center)
           .foregroundColor(.red)
-        Button { firstName = "Lucas" } label: { Text("Change Uknown for Lucas") }
+        Button { firstName = "Lucas" } label: { Text("Change Unknown for Lucas") }
         // On aurait pu faire aussi un if let pour ne pas affiché lorsque lastName == nil
-        Text("Welcome to \(lastName ?? "Uknown") in instagram UserDefault")
+        Text("Welcome to \(lastName ?? "Unknown") in instagram UserDefault")
           .fontWeight(.bold)
           .multilineTextAlignment(.center)
           .foregroundColor(.red)
-        Button { lastName = "Abijmil" } label: { Text("Change Uknown for Abijmil") }
+        Button { lastName = "Abijmil" } label: { Text("Change Unknown for Abijmil") }
       }
     }
   }

@@ -35,7 +35,7 @@ struct HorizontalSizeClass: View {
         .fontWeight(.bold)
         .foregroundColor(.green)
     default:
-      Text("Uknown horizontal size class")
+      Text("Unknown horizontal size class")
         .font(.title)
         .fontWeight(.bold)
     }

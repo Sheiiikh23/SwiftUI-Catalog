@@ -27,28 +27,37 @@ import SwiftUI
 /// Remarques :
 ///   - Lorsqu'on spécifie plusieurs style le mode switch automatiquement à `palette`
 ///   - Pour modifier spécifiquement une vue on utilisera le modifier `symbolRenderingMode(_:)`, `foregroundStyle(_:_:)` et `foregroundStyle(_:_:_:)`
-///   - Pour customizer ces mode on utilisera les modifiers `foregroundStyle(_:)`
+///   - L'exemple nécessite une amélioration car pas moyen de checker quel est le symbolRenderingMode atm
 
 struct SymbolRenderingMode: View {
 
   @Environment(\.symbolRenderingMode) private var symbolRenderingMode
 
   var body: some View {
-    if symbolRenderingMode == .hierarchical {
-      Image(systemName: "exclamationmark.triangle.fill")
-        .symbolRenderingMode(.hierarchical)
-        .foregroundStyle(Color.purple)
-    } else if symbolRenderingMode == .monochrome {
-      Image(systemName: "exclamationmark.triangle.fill")
-        .symbolRenderingMode(.monochrome)
-        .foregroundStyle(Color.purple)
-    } else if symbolRenderingMode == .multicolor {
-      Image(systemName: "exclamationmark.triangle.fill")
-        .symbolRenderingMode(.multicolor)
-    } else if symbolRenderingMode == .palette {
-      Image(systemName: "exclamationmark.triangle.fill")
-        .symbolRenderingMode(.palette) // pas obligatoire
-        .foregroundStyle(Color.yellow, Color.cyan)
+    VStack(spacing: 15) {
+      VStack {
+        Text("Hierarchical")
+        Image(systemName: "exclamationmark.triangle.fill")
+          .symbolRenderingMode(symbolRenderingMode)
+          .foregroundStyle(Color.purple)
+      }
+      VStack {
+        Text("Monochrome")
+        Image(systemName: "exclamationmark.triangle.fill")
+          .symbolRenderingMode(symbolRenderingMode)
+          .foregroundStyle(Color.purple)
+      }
+      VStack {
+        Text("Multicolor")
+        Image(systemName: "exclamationmark.triangle.fill")
+          .symbolRenderingMode(symbolRenderingMode)
+      }
+      VStack {
+        Text("Palette")
+        Image(systemName: "exclamationmark.triangle.fill")
+          .symbolRenderingMode(symbolRenderingMode) // pas nécessaire car plus d'un style déclaré
+          .foregroundStyle(Color.yellow, Color.cyan)
+      }
     }
   }
 }

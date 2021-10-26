@@ -17,7 +17,7 @@ extension SwiftUI.ControlSize {
     case .large:
       return "large"
     @unknown default:
-      return "uknown ControlSize"
+      fatalError("unknown ControlSize")
     }
   }
 }
