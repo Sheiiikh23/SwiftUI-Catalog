@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		8D005E2624ADAE2200D29E53 /* LazyVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D005E2524ADAE2200D29E53 /* LazyVStack.swift */; };
 		8D005E2724ADAE2200D29E53 /* LazyVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D005E2524ADAE2200D29E53 /* LazyVStack.swift */; };
-		8D064AFD24D0A367000272FA /* LineLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D064AFC24D0A367000272FA /* LineLimit.swift */; };
-		8D064AFE24D0A367000272FA /* LineLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D064AFC24D0A367000272FA /* LineLimit.swift */; };
 		8D064B0024D0A518000272FA /* LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D064AFF24D0A518000272FA /* LineSpacing.swift */; };
 		8D064B0124D0A518000272FA /* LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D064AFF24D0A518000272FA /* LineSpacing.swift */; };
 		8D09AB86268CFFF400F94E25 /* PrivacySensitiveModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D09AB85268CFFF400F94E25 /* PrivacySensitiveModifier.swift */; };
@@ -328,6 +326,7 @@
 		D974A21427289630002B6F36 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21327289630002B6F36 /* FontExtension.swift */; };
 		D974A2162728993D002B6F36 /* LayoutDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A2152728993D002B6F36 /* LayoutDirection.swift */; };
 		D974A21827289B69002B6F36 /* LayoutDirectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21727289B69002B6F36 /* LayoutDirectionExtension.swift */; };
+		D974A21A27289D23002B6F36 /* LineLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21927289D23002B6F36 /* LineLimit.swift */; };
 		D9828EE226ECB2DE00E92D16 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */; };
 		D9AFD4BF2727632800117D57 /* SubmitLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFD4BE2727632800117D57 /* SubmitLabelExtension.swift */; };
 		D9C1922627276BCE003A7DC6 /* SymbolVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1922527276BCE003A7DC6 /* SymbolVariants.swift */; };
@@ -421,7 +420,6 @@
 
 /* Begin PBXFileReference section */
 		8D005E2524ADAE2200D29E53 /* LazyVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVStack.swift; sourceTree = "<group>"; };
-		8D064AFC24D0A367000272FA /* LineLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineLimit.swift; sourceTree = "<group>"; };
 		8D064AFF24D0A518000272FA /* LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineSpacing.swift; sourceTree = "<group>"; };
 		8D09AB85268CFFF400F94E25 /* PrivacySensitiveModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySensitiveModifier.swift; sourceTree = "<group>"; };
 		8D09AB88268D03D900F94E25 /* SafeAreaInsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaInsetModifier.swift; sourceTree = "<group>"; };
@@ -665,6 +663,7 @@
 		D974A21327289630002B6F36 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		D974A2152728993D002B6F36 /* LayoutDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDirection.swift; sourceTree = "<group>"; };
 		D974A21727289B69002B6F36 /* LayoutDirectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDirectionExtension.swift; sourceTree = "<group>"; };
+		D974A21927289D23002B6F36 /* LineLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineLimit.swift; sourceTree = "<group>"; };
 		D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		D9AFD4BE2727632800117D57 /* SubmitLabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitLabelExtension.swift; sourceTree = "<group>"; };
 		D9C1922527276BCE003A7DC6 /* SymbolVariants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolVariants.swift; sourceTree = "<group>"; };
@@ -886,7 +885,6 @@
 		8D158BB124CC48C100188F6B /* Paragraph Styles */ = {
 			isa = PBXGroup;
 			children = (
-				8D064AFC24D0A367000272FA /* LineLimit.swift */,
 				8D064AFF24D0A518000272FA /* LineSpacing.swift */,
 				8DA0464024D1921F0005159E /* MinimumScaleFactor.swift */,
 				8DB73DB424D93D3300D7D84F /* MultilineTextAlignment.swift */,
@@ -2029,6 +2027,7 @@
 				D9D604D42728768C00CFF793 /* DynamicTypeSize.swift */,
 				D9D604D827287F5B00CFF793 /* Font.swift */,
 				D974A2152728993D002B6F36 /* LayoutDirection.swift */,
+				D974A21927289D23002B6F36 /* LineLimit.swift */,
 			);
 			path = "Text Styles";
 			sourceTree = "<group>";
@@ -2414,6 +2413,7 @@
 				8DDA5C6524A3388A00BF263B /* ProgressViews.swift in Sources */,
 				D9E60E0326AC633C0062D3B2 /* SearchCompletionModifier.swift in Sources */,
 				D93076F22725B31C00E8F801 /* IsSearching.swift in Sources */,
+				D974A21A27289D23002B6F36 /* LineLimit.swift in Sources */,
 				8D36D1B125096EF90074E498 /* Calendar.swift in Sources */,
 				8D3A768D24A8CFFA00005971 /* TextCaseModifier.swift in Sources */,
 				D9C1922627276BCE003A7DC6 /* SymbolVariants.swift in Sources */,
@@ -2447,7 +2447,6 @@
 				8D5164D22687C9B400D298F6 /* LazyVGridDemoViewModel.swift in Sources */,
 				8D1ED84224C8D002000F936D /* AccessibilityEnabled.swift in Sources */,
 				8D3A767F24A8AA1A00005971 /* SignInWithappleButtonView.swift in Sources */,
-				8D064AFD24D0A367000272FA /* LineLimit.swift in Sources */,
 				D9828EE226ECB2DE00E92D16 /* OptionalExtension.swift in Sources */,
 				D9CB338F26E53CC700EBDA6D /* ControlSizeExtension.swift in Sources */,
 				8D6C0F3024FA953000041F8C /* ToolbarItemGroupView.swift in Sources */,
@@ -2604,7 +2603,6 @@
 				8D1ED84324C8D002000F936D /* AccessibilityEnabled.swift in Sources */,
 				8D0AD4EA2673F4BC000655AA /* TableAndTableColumn.swift in Sources */,
 				8D3A768024A8AA1A00005971 /* SignInWithappleButtonView.swift in Sources */,
-				8D064AFE24D0A367000272FA /* LineLimit.swift in Sources */,
 				8DE9F4F524AD1B1E0054CE64 /* IndexViewStyleModifier & PageIndexViewStyle.swift in Sources */,
 				8DC13F4024A76491003CDA7A /* DefaultAppStorageModifier.swift in Sources */,
 				8DA7D87326727B95002E3081 /* TextMarkdownView.swift in Sources */,
