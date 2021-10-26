@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		8D005E2624ADAE2200D29E53 /* LazyVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D005E2524ADAE2200D29E53 /* LazyVStack.swift */; };
 		8D005E2724ADAE2200D29E53 /* LazyVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D005E2524ADAE2200D29E53 /* LazyVStack.swift */; };
-		8D064B0024D0A518000272FA /* LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D064AFF24D0A518000272FA /* LineSpacing.swift */; };
-		8D064B0124D0A518000272FA /* LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D064AFF24D0A518000272FA /* LineSpacing.swift */; };
 		8D09AB86268CFFF400F94E25 /* PrivacySensitiveModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D09AB85268CFFF400F94E25 /* PrivacySensitiveModifier.swift */; };
 		8D09AB89268D03D900F94E25 /* SafeAreaInsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D09AB88268D03D900F94E25 /* SafeAreaInsetModifier.swift */; };
 		8D0AD4E52673EDCE000655AA /* TaskModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AD4E42673EDCE000655AA /* TaskModifier.swift */; };
@@ -327,6 +325,7 @@
 		D974A2162728993D002B6F36 /* LayoutDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A2152728993D002B6F36 /* LayoutDirection.swift */; };
 		D974A21827289B69002B6F36 /* LayoutDirectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21727289B69002B6F36 /* LayoutDirectionExtension.swift */; };
 		D974A21A27289D23002B6F36 /* LineLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21927289D23002B6F36 /* LineLimit.swift */; };
+		D974A21E2728A052002B6F36 /* LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21D2728A052002B6F36 /* LineSpacing.swift */; };
 		D9828EE226ECB2DE00E92D16 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */; };
 		D9AFD4BF2727632800117D57 /* SubmitLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFD4BE2727632800117D57 /* SubmitLabelExtension.swift */; };
 		D9C1922627276BCE003A7DC6 /* SymbolVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1922527276BCE003A7DC6 /* SymbolVariants.swift */; };
@@ -420,7 +419,6 @@
 
 /* Begin PBXFileReference section */
 		8D005E2524ADAE2200D29E53 /* LazyVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVStack.swift; sourceTree = "<group>"; };
-		8D064AFF24D0A518000272FA /* LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineSpacing.swift; sourceTree = "<group>"; };
 		8D09AB85268CFFF400F94E25 /* PrivacySensitiveModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySensitiveModifier.swift; sourceTree = "<group>"; };
 		8D09AB88268D03D900F94E25 /* SafeAreaInsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaInsetModifier.swift; sourceTree = "<group>"; };
 		8D0AD4E42673EDCE000655AA /* TaskModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModifier.swift; sourceTree = "<group>"; };
@@ -664,6 +662,7 @@
 		D974A2152728993D002B6F36 /* LayoutDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDirection.swift; sourceTree = "<group>"; };
 		D974A21727289B69002B6F36 /* LayoutDirectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDirectionExtension.swift; sourceTree = "<group>"; };
 		D974A21927289D23002B6F36 /* LineLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineLimit.swift; sourceTree = "<group>"; };
+		D974A21D2728A052002B6F36 /* LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineSpacing.swift; sourceTree = "<group>"; };
 		D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		D9AFD4BE2727632800117D57 /* SubmitLabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitLabelExtension.swift; sourceTree = "<group>"; };
 		D9C1922527276BCE003A7DC6 /* SymbolVariants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolVariants.swift; sourceTree = "<group>"; };
@@ -885,7 +884,6 @@
 		8D158BB124CC48C100188F6B /* Paragraph Styles */ = {
 			isa = PBXGroup;
 			children = (
-				8D064AFF24D0A518000272FA /* LineSpacing.swift */,
 				8DA0464024D1921F0005159E /* MinimumScaleFactor.swift */,
 				8DB73DB424D93D3300D7D84F /* MultilineTextAlignment.swift */,
 				8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */,
@@ -2028,6 +2026,7 @@
 				D9D604D827287F5B00CFF793 /* Font.swift */,
 				D974A2152728993D002B6F36 /* LayoutDirection.swift */,
 				D974A21927289D23002B6F36 /* LineLimit.swift */,
+				D974A21D2728A052002B6F36 /* LineSpacing.swift */,
 			);
 			path = "Text Styles";
 			sourceTree = "<group>";
@@ -2349,6 +2348,7 @@
 				8D5B5C1E2579093000F309DE /* CustomRedacted.swift in Sources */,
 				8D35CDA3269B441F00EDD6FF /* ScrollView.swift in Sources */,
 				D93076FD27260DBC00E8F801 /* SymbolRenderingMode.swift in Sources */,
+				D974A21E2728A052002B6F36 /* LineSpacing.swift in Sources */,
 				8D3A769324A8E38800005971 /* TextEditorView.swift in Sources */,
 				8D39F44525753A82000B757F /* TimeZone.swift in Sources */,
 				D90639AD269F27430076AA0D /* VStackDemoViewModel.swift in Sources */,
@@ -2417,7 +2417,6 @@
 				8D36D1B125096EF90074E498 /* Calendar.swift in Sources */,
 				8D3A768D24A8CFFA00005971 /* TextCaseModifier.swift in Sources */,
 				D9C1922627276BCE003A7DC6 /* SymbolVariants.swift in Sources */,
-				8D064B0024D0A518000272FA /* LineSpacing.swift in Sources */,
 				8D51323324A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */,
 				D9D604D12728706300CFF793 /* AllowsTightening.swift in Sources */,
 				8DAED1E02694F5220044B5CD /* SymbolVariantModifier.swift in Sources */,
@@ -2590,7 +2589,6 @@
 				8D3A769124A8D85700005971 /* ColoredSFSymbolsView.swift in Sources */,
 				8DDA5C6624A3388A00BF263B /* ProgressViews.swift in Sources */,
 				8D3A768E24A8CFFA00005971 /* TextCaseModifier.swift in Sources */,
-				8D064B0124D0A518000272FA /* LineSpacing.swift in Sources */,
 				8D51323424A3EE48007B13A3 /* LabelStyleModifier.swift in Sources */,
 				8DA0F46424CA1C30003C751B /* LegibilityWeight.swift in Sources */,
 				8D7B31C82562AF3D005B0D32 /* TextConcatenation.swift in Sources */,
