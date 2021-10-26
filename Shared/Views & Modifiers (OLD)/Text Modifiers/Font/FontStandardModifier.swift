@@ -26,7 +26,7 @@ import SwiftUI
 
 struct FontStandardModifier: View {
 
-  let fontStyles: [Font] = [.largeTitle, .title, .title2, .title3, .headline, .body, .callout, .subheadline, .footnote, .caption, .caption2]
+  let fontStyles: [SwiftUI.Font] = [.largeTitle, .title, .title2, .title3, .headline, .body, .callout, .subheadline, .footnote, .caption, .caption2]
 
   var body: some View {
     VStack(spacing: 50) {
