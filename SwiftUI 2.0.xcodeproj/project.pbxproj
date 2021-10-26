@@ -226,8 +226,6 @@
 		8DB0C1B024B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1AE24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift */; };
 		8DB0C1B224B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1B124B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift */; };
 		8DB0C1B324B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1B124B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift */; };
-		8DB73DB524D93D3300D7D84F /* MultilineTextAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB73DB424D93D3300D7D84F /* MultilineTextAlignment.swift */; };
-		8DB73DB624D93D3300D7D84F /* MultilineTextAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB73DB424D93D3300D7D84F /* MultilineTextAlignment.swift */; };
 		8DBCF832256CB4AB00AA564B /* ToolbarItemGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6C0F2F24FA953000041F8C /* ToolbarItemGroupView.swift */; };
 		8DBCF887256CB7CC00AA564B /* PopoverModifer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6C0F3124FA998A00041F8C /* PopoverModifer.swift */; };
 		8DBCF8B6256CBB2400AA564B /* SheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCF8B5256CBB2400AA564B /* SheetModifier.swift */; };
@@ -325,6 +323,8 @@
 		D974A21A27289D23002B6F36 /* LineLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21927289D23002B6F36 /* LineLimit.swift */; };
 		D974A21E2728A052002B6F36 /* LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21D2728A052002B6F36 /* LineSpacing.swift */; };
 		D974A2202728A236002B6F36 /* MinimumScaleFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21F2728A236002B6F36 /* MinimumScaleFactor.swift */; };
+		D974A2222728B348002B6F36 /* MultilineTextAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A2212728B348002B6F36 /* MultilineTextAlignment.swift */; };
+		D974A2242728B781002B6F36 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A2232728B781002B6F36 /* SwiftUIView.swift */; };
 		D9828EE226ECB2DE00E92D16 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */; };
 		D9AFD4BF2727632800117D57 /* SubmitLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFD4BE2727632800117D57 /* SubmitLabelExtension.swift */; };
 		D9C1922627276BCE003A7DC6 /* SymbolVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1922527276BCE003A7DC6 /* SymbolVariants.swift */; };
@@ -581,7 +581,6 @@
 		8DB0C1AB24B21F3F006818B4 /* SceneStorageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStorageWrapper.swift; sourceTree = "<group>"; };
 		8DB0C1AE24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StateObjectWrapper & ObservedObjectWrapper.swift"; sourceTree = "<group>"; };
 		8DB0C1B124B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationDelegateAdaptorWrapper.swift; sourceTree = "<group>"; };
-		8DB73DB424D93D3300D7D84F /* MultilineTextAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextAlignment.swift; sourceTree = "<group>"; };
 		8DBCF8B5256CBB2400AA564B /* SheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetModifier.swift; sourceTree = "<group>"; };
 		8DC13F3824A75C00003CDA7A /* CommandsModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandsModifier.swift; sourceTree = "<group>"; };
 		8DC13F3B24A76019003CDA7A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -662,6 +661,8 @@
 		D974A21927289D23002B6F36 /* LineLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineLimit.swift; sourceTree = "<group>"; };
 		D974A21D2728A052002B6F36 /* LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineSpacing.swift; sourceTree = "<group>"; };
 		D974A21F2728A236002B6F36 /* MinimumScaleFactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumScaleFactor.swift; sourceTree = "<group>"; };
+		D974A2212728B348002B6F36 /* MultilineTextAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextAlignment.swift; sourceTree = "<group>"; };
+		D974A2232728B781002B6F36 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		D9AFD4BE2727632800117D57 /* SubmitLabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitLabelExtension.swift; sourceTree = "<group>"; };
 		D9C1922527276BCE003A7DC6 /* SymbolVariants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolVariants.swift; sourceTree = "<group>"; };
@@ -883,7 +884,6 @@
 		8D158BB124CC48C100188F6B /* Paragraph Styles */ = {
 			isa = PBXGroup;
 			children = (
-				8DB73DB424D93D3300D7D84F /* MultilineTextAlignment.swift */,
 				8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */,
 				8D97EDDF24E1DBBE009E60E6 /* TruncationMode.swift */,
 			);
@@ -914,6 +914,7 @@
 				D9D604D62728787800CFF793 /* DynamicTypeSizeExtension.swift */,
 				D974A21327289630002B6F36 /* FontExtension.swift */,
 				D974A21727289B69002B6F36 /* LayoutDirectionExtension.swift */,
+				D974A2232728B781002B6F36 /* SwiftUIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -2026,6 +2027,7 @@
 				D974A21927289D23002B6F36 /* LineLimit.swift */,
 				D974A21D2728A052002B6F36 /* LineSpacing.swift */,
 				D974A21F2728A236002B6F36 /* MinimumScaleFactor.swift */,
+				D974A2212728B348002B6F36 /* MultilineTextAlignment.swift */,
 			);
 			path = "Text Styles";
 			sourceTree = "<group>";
@@ -2340,6 +2342,7 @@
 				8D5164DF2688F94E00D298F6 /* Group.swift in Sources */,
 				8D33BBE324AA79AC0097EC2E /* LazyVGrid.swift in Sources */,
 				8D7D06502576878A00323A00 /* WidgetFamily.swift in Sources */,
+				D974A2222728B348002B6F36 /* MultilineTextAlignment.swift in Sources */,
 				D9AFD4BF2727632800117D57 /* SubmitLabelExtension.swift in Sources */,
 				8D1DD6EC2675417600EB69AC /* HorizontalAlignmentExtension.swift in Sources */,
 				8D4D24FB24AC5C4F00982117 /* LazyHGrid.swift in Sources */,
@@ -2435,6 +2438,7 @@
 				8D72C99D24A5296F00C98579 /* ProgressViewStyleModifier.swift in Sources */,
 				D93076DD2724D0DE00E8F801 /* BackgroundMaterial.swift in Sources */,
 				8D33BBE624AA934B0097EC2E /* GridItem.swift in Sources */,
+				D974A2242728B781002B6F36 /* SwiftUIView.swift in Sources */,
 				8D0AD4F42674CFF2000655AA /* WithAnimation.swift in Sources */,
 				8D7D065925768C1400323A00 /* DisplayScale.swift in Sources */,
 				8D7D066D2576926B00323A00 /* ImageScale.swift in Sources */,
@@ -2476,7 +2480,6 @@
 				8D999F8B24B0B7B10050BD97 /* NamespaceWrapper.swift in Sources */,
 				8D442EDD24A80549009995DD /* ContainerRelativeShapeView.swift in Sources */,
 				8DE4440424CAA9380079B2B7 /* ManagedObjectContext.swift in Sources */,
-				8DB73DB524D93D3300D7D84F /* MultilineTextAlignment.swift in Sources */,
 				8DA7D86626715BF8002E3081 /* OnSubmitModifier.swift in Sources */,
 				8DF93E9A24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
 				D93076E7272563D200E8F801 /* RedactionReasons.swift in Sources */,
@@ -2611,7 +2614,6 @@
 				8D442EDE24A80549009995DD /* ContainerRelativeShapeView.swift in Sources */,
 				D9CB338726E4CE5D00EBDA6D /* ListRowInsetsModifier.swift in Sources */,
 				8DE4440524CAA9380079B2B7 /* ManagedObjectContext.swift in Sources */,
-				8DB73DB624D93D3300D7D84F /* MultilineTextAlignment.swift in Sources */,
 				8DF93E9B24A77D7400B84CD0 /* ListStyleModifier.swift in Sources */,
 				D9CB338526E4CE5D00EBDA6D /* ListRowSeparatorModifier.swift in Sources */,
 				8DC13F3D24A76019003CDA7A /* SettingsView.swift in Sources */,
