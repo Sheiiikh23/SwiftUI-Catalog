@@ -48,8 +48,12 @@ import SwiftUI
 
 
 struct Font: View {
+
+  @Environment(\.font) private var font
+
   var body: some View {
-    Text("Hello, World!")
+    Text("Font : \(font?.description.firstLetterCapitalized ?? "nil")")
+      .font(font)
   }
 }
 

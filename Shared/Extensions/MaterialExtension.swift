@@ -29,15 +29,3 @@ extension Material: Hashable {
     }
   }
 }
-
-extension Optional where Wrapped == Material {
-
-  var description: String {
-    switch self {
-    case .none:
-      return ""
-    case .some(let wrapped):
-      return wrapped.description
-    }
-  }
-}

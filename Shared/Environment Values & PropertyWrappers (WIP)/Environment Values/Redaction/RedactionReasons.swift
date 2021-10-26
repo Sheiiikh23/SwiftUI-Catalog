@@ -11,7 +11,7 @@ import SwiftUI
 ///   - var redactionReasons: RedactionReasons { get set }
 ///     - RedactionReasons :
 ///       - placeholder : les données affichées apparaissent comme des espaces génériques de placeholder
-///       - privacy : les données affichées doivent être masquée afin de protéger les informations privées de l'utilisateur (i•Pad•OS 15.0, watchOS 8.0, tvOS 15.0, macOS 12.0, Mac Catalyst 15.0)
+///       - privacy (i•Pad•OS 15.0, watchOS 8.0, tvOS 15.0, macOS 12.0, Mac Catalyst 15.0) : les données affichées doivent être masquée afin de protéger les informations privées de l'utilisateur
 ///
 /// Remarques :
 ///   - Le style `privacy` est setté lorsqu'on commence à dismiss l'app ou bien dans le multi-tâches
