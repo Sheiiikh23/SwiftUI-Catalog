@@ -178,8 +178,6 @@
 		8D999F9124B0CB4B0050BD97 /* ScrollToModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D999F9024B0CB4B0050BD97 /* ScrollToModifier.swift */; };
 		8D999F9424B0E0C20050BD97 /* FullScreenCoverModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D999F9324B0E0C20050BD97 /* FullScreenCoverModifier.swift */; };
 		8D999F9524B0E0C20050BD97 /* FullScreenCoverModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D999F9324B0E0C20050BD97 /* FullScreenCoverModifier.swift */; };
-		8DA0464124D1921F0005159E /* MinimumScaleFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA0464024D1921F0005159E /* MinimumScaleFactor.swift */; };
-		8DA0464224D1921F0005159E /* MinimumScaleFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA0464024D1921F0005159E /* MinimumScaleFactor.swift */; };
 		8DA0F45D24CA1627003C751B /* AccessibilityReduceTransparency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA0F45C24CA1627003C751B /* AccessibilityReduceTransparency.swift */; };
 		8DA0F45E24CA1627003C751B /* AccessibilityReduceTransparency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA0F45C24CA1627003C751B /* AccessibilityReduceTransparency.swift */; };
 		8DA0F46024CA1AAD003C751B /* AccessibilityShowButtonShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA0F45F24CA1AAD003C751B /* AccessibilityShowButtonShapes.swift */; };
@@ -326,6 +324,7 @@
 		D974A21827289B69002B6F36 /* LayoutDirectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21727289B69002B6F36 /* LayoutDirectionExtension.swift */; };
 		D974A21A27289D23002B6F36 /* LineLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21927289D23002B6F36 /* LineLimit.swift */; };
 		D974A21E2728A052002B6F36 /* LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21D2728A052002B6F36 /* LineSpacing.swift */; };
+		D974A2202728A236002B6F36 /* MinimumScaleFactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974A21F2728A236002B6F36 /* MinimumScaleFactor.swift */; };
 		D9828EE226ECB2DE00E92D16 /* OptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */; };
 		D9AFD4BF2727632800117D57 /* SubmitLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AFD4BE2727632800117D57 /* SubmitLabelExtension.swift */; };
 		D9C1922627276BCE003A7DC6 /* SymbolVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1922527276BCE003A7DC6 /* SymbolVariants.swift */; };
@@ -548,7 +547,6 @@
 		8D999F8A24B0B7B10050BD97 /* NamespaceWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamespaceWrapper.swift; sourceTree = "<group>"; };
 		8D999F9024B0CB4B0050BD97 /* ScrollToModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollToModifier.swift; sourceTree = "<group>"; };
 		8D999F9324B0E0C20050BD97 /* FullScreenCoverModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCoverModifier.swift; sourceTree = "<group>"; };
-		8DA0464024D1921F0005159E /* MinimumScaleFactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumScaleFactor.swift; sourceTree = "<group>"; };
 		8DA0F45C24CA1627003C751B /* AccessibilityReduceTransparency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityReduceTransparency.swift; sourceTree = "<group>"; };
 		8DA0F45F24CA1AAD003C751B /* AccessibilityShowButtonShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityShowButtonShapes.swift; sourceTree = "<group>"; };
 		8DA0F46224CA1C30003C751B /* LegibilityWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegibilityWeight.swift; sourceTree = "<group>"; };
@@ -663,6 +661,7 @@
 		D974A21727289B69002B6F36 /* LayoutDirectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutDirectionExtension.swift; sourceTree = "<group>"; };
 		D974A21927289D23002B6F36 /* LineLimit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineLimit.swift; sourceTree = "<group>"; };
 		D974A21D2728A052002B6F36 /* LineSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineSpacing.swift; sourceTree = "<group>"; };
+		D974A21F2728A236002B6F36 /* MinimumScaleFactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumScaleFactor.swift; sourceTree = "<group>"; };
 		D9828EE126ECB2DE00E92D16 /* OptionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtension.swift; sourceTree = "<group>"; };
 		D9AFD4BE2727632800117D57 /* SubmitLabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitLabelExtension.swift; sourceTree = "<group>"; };
 		D9C1922527276BCE003A7DC6 /* SymbolVariants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolVariants.swift; sourceTree = "<group>"; };
@@ -884,7 +883,6 @@
 		8D158BB124CC48C100188F6B /* Paragraph Styles */ = {
 			isa = PBXGroup;
 			children = (
-				8DA0464024D1921F0005159E /* MinimumScaleFactor.swift */,
 				8DB73DB424D93D3300D7D84F /* MultilineTextAlignment.swift */,
 				8D97EDDC24E1D7D4009E60E6 /* SizeCategory.swift */,
 				8D97EDDF24E1DBBE009E60E6 /* TruncationMode.swift */,
@@ -2027,6 +2025,7 @@
 				D974A2152728993D002B6F36 /* LayoutDirection.swift */,
 				D974A21927289D23002B6F36 /* LineLimit.swift */,
 				D974A21D2728A052002B6F36 /* LineSpacing.swift */,
+				D974A21F2728A236002B6F36 /* MinimumScaleFactor.swift */,
 			);
 			path = "Text Styles";
 			sourceTree = "<group>";
@@ -2329,7 +2328,6 @@
 				8DA7D85826700CB5002E3081 /* SearchableModifier.swift in Sources */,
 				8D7D0675257696F300323A00 /* PixelLength.swift in Sources */,
 				8D24B5CD267F839500E664C7 /* LazyHGridGridItemSizeConfiguratorView.swift in Sources */,
-				8DA0464124D1921F0005159E /* MinimumScaleFactor.swift in Sources */,
 				8D39F474257574D1000B757F /* Undomanager.swift in Sources */,
 				8D66EB5524DDBFE700FC4941 /* MenuView.swift in Sources */,
 				8D1ED84524C8D451000F936D /* AccessibilityInvertColors.swift in Sources */,
@@ -2503,6 +2501,7 @@
 				8D3E3D4E2689E7B40084F924 /* ControlGroup.swift in Sources */,
 				D93076F82726077400E8F801 /* HorizontalSizeClass.swift in Sources */,
 				8D0AD510267524AC000655AA /* ZStack.swift in Sources */,
+				D974A2202728A236002B6F36 /* MinimumScaleFactor.swift in Sources */,
 				8DB0C1B224B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift in Sources */,
 				8D587EAA268BA66000E069AB /* Canvas.swift in Sources */,
 				8DA7D860267149D5002E3081 /* AsyncImageView.swift in Sources */,
@@ -2553,7 +2552,6 @@
 				8D3A767524A89C2600005971 /* ToggleStyleModifier.swift in Sources */,
 				8D97EDDE24E1D7D4009E60E6 /* SizeCategory.swift in Sources */,
 				8DB0C1AD24B21F3F006818B4 /* SceneStorageWrapper.swift in Sources */,
-				8DA0464224D1921F0005159E /* MinimumScaleFactor.swift in Sources */,
 				8D66EB5624DDBFE700FC4941 /* MenuView.swift in Sources */,
 				8D1ED84624C8D451000F936D /* AccessibilityInvertColors.swift in Sources */,
 				8DC13F4924A764E3003CDA7A /* WindowToolbarStyleModifier.swift in Sources */,

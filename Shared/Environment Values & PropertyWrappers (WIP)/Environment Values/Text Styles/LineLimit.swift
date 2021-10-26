@@ -10,7 +10,7 @@ import SwiftUI
 /// Définition de l'`EnvironmentValue` :
 ///   - var lineLimit: Int? { get set }
 ///     - nil par défaut
-///     - si inférieur à 1, alors est setté à 1 par défaut
+///     - si inférieur à 1, alors est set à 1 par défaut
 ///
 /// Remarques :
 ///   - Si la valeur est nil, le `Text` utilise autant de lignes que nécessaire

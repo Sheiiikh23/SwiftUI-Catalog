@@ -14,7 +14,7 @@ import SwiftUI
 ///       - privacy (i•Pad•OS 15.0, watchOS 8.0, tvOS 15.0, macOS 12.0, Mac Catalyst 15.0) : les données affichées doivent être masquée afin de protéger les informations privées de l'utilisateur
 ///
 /// Remarques :
-///   - Le style `privacy` est setté lorsqu'on commence à dismiss l'app ou bien dans le multi-tâches
+///   - Le style `privacy` est set lorsqu'on commence à dismiss l'app ou bien dans le multi-tâches
 ///   - Le style `privacy` ne donne aucun style à la View hierarchy, il faut à la place display quelque chose d'autre
 ///   - Si on utilise le modifier `privacySensitive()` alors la redaction sera de type `privacy` automatiquement
 
