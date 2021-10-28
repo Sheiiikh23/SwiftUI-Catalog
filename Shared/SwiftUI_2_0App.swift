@@ -18,7 +18,7 @@ struct SwiftUI_2_0App: App {
 
   var body: some Scene {
     WindowGroup {
-      OpenURL()
+      Description()
         /// Injection de dépendances dans toutes les vues :)
         .environmentObject(userViewModel)
     }
