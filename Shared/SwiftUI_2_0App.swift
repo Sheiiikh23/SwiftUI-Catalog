@@ -18,7 +18,7 @@ struct SwiftUI_2_0App: App {
 
   var body: some Scene {
     WindowGroup {
-      LineSpacing()
+      OpenURL()
         /// Injection de dépendances dans toutes les vues :)
         .environmentObject(userViewModel)
     }
