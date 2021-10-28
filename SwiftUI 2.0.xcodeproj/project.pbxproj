@@ -151,7 +151,6 @@
 		8D7B37CF24AEFC8B00F95736 /* PinnedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B37CD24AEFC8B00F95736 /* PinnedViews.swift */; };
 		8D7B37D124AEFD7500F95736 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B37D024AEFD7500F95736 /* VideoPlayerView.swift */; };
 		8D7B37D224AEFD7500F95736 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B37D024AEFD7500F95736 /* VideoPlayerView.swift */; };
-		8D7D06502576878A00323A00 /* WidgetFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D064F2576878A00323A00 /* WidgetFamily.swift */; };
 		8D7D065925768C1400323A00 /* DisplayScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D065825768C1400323A00 /* DisplayScale.swift */; };
 		8D7D066D2576926B00323A00 /* ImageScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D066C2576926A00323A00 /* ImageScale.swift */; };
 		8D7D0675257696F300323A00 /* PixelLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D0674257696F300323A00 /* PixelLength.swift */; };
@@ -330,6 +329,7 @@
 		D9C1922627276BCE003A7DC6 /* SymbolVariants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1922527276BCE003A7DC6 /* SymbolVariants.swift */; };
 		D9C1922827277886003A7DC6 /* SymbolVariantsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1922727277886003A7DC6 /* SymbolVariantsExtension.swift */; };
 		D9C91DB2272A716A00F5F992 /* OpenURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C91DB1272A716A00F5F992 /* OpenURL.swift */; };
+		D9C91DB5272A758B00F5F992 /* WidgetFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C91DB4272A758B00F5F992 /* WidgetFamily.swift */; };
 		D9CB338026E4CAAF00EBDA6D /* ControlActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */; };
 		D9CB338126E4CAAF00EBDA6D /* ControlActiveState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */; };
 		D9CB338326E4CB7000EBDA6D /* DefaultWheelPickerItemHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CB338226E4CB7000EBDA6D /* DefaultWheelPickerItemHeight.swift */; };
@@ -528,7 +528,6 @@
 		8D7B37CA24AEFB8F00F95736 /* LazyHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHStack.swift; sourceTree = "<group>"; };
 		8D7B37CD24AEFC8B00F95736 /* PinnedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedViews.swift; sourceTree = "<group>"; };
 		8D7B37D024AEFD7500F95736 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
-		8D7D064F2576878A00323A00 /* WidgetFamily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetFamily.swift; sourceTree = "<group>"; };
 		8D7D065825768C1400323A00 /* DisplayScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayScale.swift; sourceTree = "<group>"; };
 		8D7D066C2576926A00323A00 /* ImageScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScale.swift; sourceTree = "<group>"; };
 		8D7D0674257696F300323A00 /* PixelLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelLength.swift; sourceTree = "<group>"; };
@@ -670,6 +669,7 @@
 		D9C1922527276BCE003A7DC6 /* SymbolVariants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolVariants.swift; sourceTree = "<group>"; };
 		D9C1922727277886003A7DC6 /* SymbolVariantsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolVariantsExtension.swift; sourceTree = "<group>"; };
 		D9C91DB1272A716A00F5F992 /* OpenURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenURL.swift; sourceTree = "<group>"; };
+		D9C91DB4272A758B00F5F992 /* WidgetFamily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetFamily.swift; sourceTree = "<group>"; };
 		D9CB337F26E4CAAF00EBDA6D /* ControlActiveState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlActiveState.swift; sourceTree = "<group>"; };
 		D9CB338226E4CB7000EBDA6D /* DefaultWheelPickerItemHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWheelPickerItemHeight.swift; sourceTree = "<group>"; };
 		D9CB338826E4CE8300EBDA6D /* HeaderProminenceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProminenceModifier.swift; sourceTree = "<group>"; };
@@ -1142,7 +1142,6 @@
 				8D158BB124CC48C100188F6B /* Paragraph Styles */,
 				8D36D1AF25096EEB0074E498 /* Views Settings */,
 				8D39F472257574AE000B757F /* UndoManager */,
-				8DE6724125768694001C17DB /* Widget Attributes */,
 				8D7D067C25769A0B00323A00 /* String Representations */,
 			);
 			path = "Environment Values";
@@ -1711,14 +1710,6 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
-		8DE6724125768694001C17DB /* Widget Attributes */ = {
-			isa = PBXGroup;
-			children = (
-				8D7D064F2576878A00323A00 /* WidgetFamily.swift */,
-			);
-			path = "Widget Attributes";
-			sourceTree = "<group>";
-		};
 		8DEBD12E24A3E643004AAE41 /* Views & Modifiers (OLD) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1939,6 +1930,8 @@
 				D9D604CF27286F4C00CFF793 /* Text Styles */,
 				D9E120C42729CE7C000F425F /* Undo */,
 				D9E120C52729CE89000F425F /* URLs */,
+				D9C91DB3272A757100F5F992 /* Widget Attributes  */,
+				D9C91DB6272A77CB00F5F992 /* Getting a String Representation  */,
 				D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */,
 			);
 			path = "Environment Values";
@@ -1979,6 +1972,21 @@
 				8DE6723925768174001C17DB /* ResetFocus.swift */,
 			);
 			path = Focus;
+			sourceTree = "<group>";
+		};
+		D9C91DB3272A757100F5F992 /* Widget Attributes  */ = {
+			isa = PBXGroup;
+			children = (
+				D9C91DB4272A758B00F5F992 /* WidgetFamily.swift */,
+			);
+			path = "Widget Attributes ";
+			sourceTree = "<group>";
+		};
+		D9C91DB6272A77CB00F5F992 /* Getting a String Representation  */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Getting a String Representation ";
 			sourceTree = "<group>";
 		};
 		D9CB337E26E4C9EB00EBDA6D /* Control Attributes */ = {
@@ -2346,7 +2354,6 @@
 				8D5164D42687C9EF00D298F6 /* LazyGridCell.swift in Sources */,
 				8D5164DF2688F94E00D298F6 /* Group.swift in Sources */,
 				8D33BBE324AA79AC0097EC2E /* LazyVGrid.swift in Sources */,
-				8D7D06502576878A00323A00 /* WidgetFamily.swift in Sources */,
 				D974A2222728B348002B6F36 /* MultilineTextAlignment.swift in Sources */,
 				D9AFD4BF2727632800117D57 /* SubmitLabelExtension.swift in Sources */,
 				8D1DD6EC2675417600EB69AC /* HorizontalAlignmentExtension.swift in Sources */,
@@ -2443,6 +2450,7 @@
 				8D33BBE624AA934B0097EC2E /* GridItem.swift in Sources */,
 				D974A2242728B781002B6F36 /* TextAlignmentExtension.swift in Sources */,
 				8D0AD4F42674CFF2000655AA /* WithAnimation.swift in Sources */,
+				D9C91DB5272A758B00F5F992 /* WidgetFamily.swift in Sources */,
 				8D7D065925768C1400323A00 /* DisplayScale.swift in Sources */,
 				8D7D066D2576926B00323A00 /* ImageScale.swift in Sources */,
 				8D66EB1B24DDBA4F00FC4941 /* OutlineGroupView.swift in Sources */,
