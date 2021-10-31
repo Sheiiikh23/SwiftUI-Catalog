@@ -29,6 +29,7 @@ import SwiftUI
 ///   - `DynamicTypeSize` peut être comparé avec les opérateurs suivants : ..., ..<, <=, <, ==, !=, >, >=, >.. (très pratique pour adapter le layout d'une View)
 ///   - Pour en savoir plus, voici le lien de la doc : https://developer.apple.com/documentation/swiftui/dynamictypesize
 ///   - Pour appliquer une font particulière à un texte on utilise le modifier `font(_:)`
+///   - Utilisation de `sizeCategory` si target inférieur à i•Pad•OS 15.0 / watchOS 8.0 / tvOS 15.0 / macOS 12.0 / Mac Catalyst 15.0
 ///
 /// Dans le simulateur : Environment Overrides –> Text ––> Choisir la taille souhaitée
 

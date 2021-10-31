@@ -4,18 +4,18 @@
 
 import SwiftUI
 
-/// Plateformes : i•Pad•OS 15.0, watchOS 8.0, tvOS 15.0, macOS 12.0, Mac Catalyst 15.0
-/// Description : Dismiss la présentation actuelle (pushed ou présenté)
+/// Plateformes : i•Pad•OS 13.0, watchOS 6.0, tvOS 13.0, macOS 10.15, Mac Catalyst 13.0
+/// Description : Un binding avec le mode de présentation actuelle de la vue
+/// Deprecated : i•Pad•OS 15.0, watchOS 8.0, tvOS 15.0, macOS 12.0, Mac Catalyst 15.0  👉 utilisation de `dismiss` & `isPresented`
 ///
 /// Définition de l'`EnvironmentValue` :
-///   - var dismiss: DismissAction { get }
-///     - s'utilise via une fonction `callAsFunction()`, qui peut être appelé depuis la propriété
+///   - var presentationMode: Binding<PresentationMode> { get }
+///     - s'utilise via la wrappedValue où on peut appeller la fonction dismiss
 ///
-/// Remarques :
+/// Remarque :
 ///   - Peut être appellé depuis une `sheet`, une `fullScreenCover` ou bien un écran dans une navigation stack
-///   - Utilisation de `presentationMode` si target inférieur à i•Pad•OS 15.0 / watchOS 8.0 / tvOS 15.0 / macOS 12.0 / Mac Catalyst 15.0
 
-struct Dismiss: View {
+struct PresentationMode: View {
 
   @State private var showSheet = false
   @State private var showFullScreenCover = false
@@ -35,13 +35,13 @@ struct Dismiss: View {
 
 fileprivate struct SheetContent: View {
 
-  @Environment(\.dismiss) private var dismiss
+  @Environment(\.presentationMode) private var presentationMode
   @State private var showAnotherSheet = false
 
   var body: some View {
     VStack(spacing: 15) {
       Button { showAnotherSheet.toggle() } label: { Text("Show another sheet") }
-      Button { dismiss() } label: { Text("Dismiss the sheet") }
+      Button { presentationMode.wrappedValue.dismiss() } label: { Text("Dismiss the sheet") }
     }
     .sheet(isPresented: $showAnotherSheet) { SheetContent() }
   }
@@ -49,13 +49,13 @@ fileprivate struct SheetContent: View {
 
 fileprivate struct FullScreenCoverContent: View {
 
-  @Environment(\.dismiss) private var dismiss
+  @Environment(\.presentationMode) private var presentationMode
   @State private var showAnotherFullScreenContent = false
 
   var body: some View {
     VStack(spacing: 15) {
       Button { showAnotherFullScreenContent.toggle() } label: { Text("Show another full screen cover") }
-      Button { dismiss() } label: { Text("Dismiss the full screen cover") }
+      Button { presentationMode.wrappedValue.dismiss() } label: { Text("Dismiss the full screen cover") }
     }
     .fullScreenCover(isPresented: $showAnotherFullScreenContent) { FullScreenCoverContent() }
   }
@@ -63,19 +63,18 @@ fileprivate struct FullScreenCoverContent: View {
 
 fileprivate struct PushedViewContent: View {
 
-  @Environment(\.dismiss) private var dismiss
+  @Environment(\.presentationMode) private var presentationMode
 
   var body: some View {
     VStack(spacing: 15) {
       NavigationLink("Show another pushed view") { PushedViewContent() }
-      Button { dismiss() } label: { Text("Pop to the previous screen") }
+      Button { presentationMode.wrappedValue.dismiss() } label: { Text("Pop to the previous screen") }
     }
   }
 }
 
-
-struct Dismiss_Previews: PreviewProvider {
+struct PresentationMode_Previews: PreviewProvider {
   static var previews: some View {
-    Dismiss()
+    PresentationMode()
   }
 }
