@@ -1869,6 +1869,7 @@
 		D95486F426E395CF0054C8A3 /* Environment Values */ = {
 			isa = PBXGroup;
 			children = (
+				D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */,
 				D9EE93CE26E36A7F006D2578 /* Accessibility */,
 				D95486F526E398760054C8A3 /* Color Schemes */,
 				D9CB337E26E4C9EB00EBDA6D /* Control Attributes */,
@@ -1893,7 +1894,6 @@
 				D9C91DB3272A757100F5F992 /* Widget Attributes */,
 				D9C91DB6272A77CB00F5F992 /* Getting a String Representation */,
 				D91CE6B4272EA44E00AAD29E /* Deprecated Environment Values */,
-				D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */,
 			);
 			path = "Environment Values";
 			sourceTree = "<group>";
