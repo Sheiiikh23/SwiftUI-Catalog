@@ -13,6 +13,8 @@ import SwiftUI
 /// Paramètre :
 ///   - @ViewBuilder content () -> Content ––> un ensemble de `View` (maximum 10 subviews)
 
+/// https://swiftwithmajid.com/2021/10/21/mastering-controlgroup-in-swiftui/
+
 struct ControlGroupSample: View {
 
   var body: some View {

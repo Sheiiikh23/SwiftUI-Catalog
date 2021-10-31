@@ -356,6 +356,7 @@
 		D9E60E0026AC44A20062D3B2 /* IsLuminanceReducedEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E60DFF26AC44A20062D3B2 /* IsLuminanceReducedEnvironment.swift */; };
 		D9E60E0326AC633C0062D3B2 /* SearchCompletionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E60E0226AC633C0062D3B2 /* SearchCompletionModifier.swift */; };
 		D9E60E0C26AC9E160062D3B2 /* Environment Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */; };
+		D9FBF714272EC10800718F42 /* BlendModeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FBF713272EC10800718F42 /* BlendModeModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -683,6 +684,7 @@
 		D9E60DFF26AC44A20062D3B2 /* IsLuminanceReducedEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsLuminanceReducedEnvironment.swift; sourceTree = "<group>"; };
 		D9E60E0226AC633C0062D3B2 /* SearchCompletionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCompletionModifier.swift; sourceTree = "<group>"; };
 		D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment Value.swift"; sourceTree = "<group>"; };
+		D9FBF713272EC10800718F42 /* BlendModeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendModeModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1599,11 +1601,12 @@
 			isa = PBXGroup;
 			children = (
 				8DDA5C1B24A31A5700BF263B /* SwiftUI_2_0App.swift */,
+				D95486F426E395CF0054C8A3 /* Environment Values (DONE) */,
+				D9E60E0A26AC9DD80062D3B2 /* PropertyWrappers (WIP) */,
 				8D1DD6E82675414A00EB69AC /* Extensions */,
 				8D4860202691E9DA003E5D62 /* Views (WIP) */,
-				8D68755A2691D37300627B5D /* Preview (WIP) */,
 				8D5164E02688FEDA00D298F6 /* Views Modifiers (WIP) */,
-				D9E60E0A26AC9DD80062D3B2 /* Environment Values & PropertyWrappers (WIP) */,
+				8D68755A2691D37300627B5D /* Preview (WIP) */,
 				8D442EE224A809B4009995DD /* PropretyWrappers (OLD) */,
 				8DEBD12E24A3E643004AAE41 /* Views & Modifiers (OLD) */,
 				8DB0C1A224B219E0006818B4 /* README.md */,
@@ -1730,6 +1733,7 @@
 				8DBCF831256CB4A200AA564B /* Toolbar */,
 				8DBCF843256CB55A00AA564B /* WindowStyle, WindowToolbarStyle */,
 				D913055C2705FD1D0046419B /* KeyboardTypeModifier.swift */,
+				D9FBF713272EC10800718F42 /* BlendModeModifier.swift */,
 			);
 			path = "Views & Modifiers (OLD)";
 			sourceTree = "<group>";
@@ -1866,7 +1870,7 @@
 			path = "Symbol Styles";
 			sourceTree = "<group>";
 		};
-		D95486F426E395CF0054C8A3 /* Environment Values */ = {
+		D95486F426E395CF0054C8A3 /* Environment Values (DONE) */ = {
 			isa = PBXGroup;
 			children = (
 				D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */,
@@ -1895,7 +1899,7 @@
 				D9C91DB6272A77CB00F5F992 /* Getting a String Representation */,
 				D91CE6B4272EA44E00AAD29E /* Deprecated Environment Values */,
 			);
-			path = "Environment Values";
+			path = "Environment Values (DONE)";
 			sourceTree = "<group>";
 		};
 		D95486F526E398760054C8A3 /* Color Schemes */ = {
@@ -2016,12 +2020,11 @@
 			path = SearchCompletion;
 			sourceTree = "<group>";
 		};
-		D9E60E0A26AC9DD80062D3B2 /* Environment Values & PropertyWrappers (WIP) */ = {
+		D9E60E0A26AC9DD80062D3B2 /* PropertyWrappers (WIP) */ = {
 			isa = PBXGroup;
 			children = (
-				D95486F426E395CF0054C8A3 /* Environment Values */,
 			);
-			path = "Environment Values & PropertyWrappers (WIP)";
+			path = "PropertyWrappers (WIP)";
 			sourceTree = "<group>";
 		};
 		D9EE93CE26E36A7F006D2578 /* Accessibility */ = {
@@ -2306,6 +2309,7 @@
 				8DA7D85826700CB5002E3081 /* SearchableModifier.swift in Sources */,
 				8D7D0675257696F300323A00 /* PixelLength.swift in Sources */,
 				D91CE6BA272EAAEF00AAD29E /* ContentSizeCategoryExtension.swift in Sources */,
+				D9FBF714272EC10800718F42 /* BlendModeModifier.swift in Sources */,
 				8D24B5CD267F839500E664C7 /* LazyHGridGridItemSizeConfiguratorView.swift in Sources */,
 				8D66EB5524DDBFE700FC4941 /* MenuView.swift in Sources */,
 				8D1ED84524C8D451000F936D /* AccessibilityInvertColors.swift in Sources */,

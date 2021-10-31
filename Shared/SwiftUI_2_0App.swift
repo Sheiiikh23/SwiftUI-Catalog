@@ -33,6 +33,4 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
     print("Hello from App Delegate")
     return true
   }
-
-
 }
