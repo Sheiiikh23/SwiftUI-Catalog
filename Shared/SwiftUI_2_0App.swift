@@ -18,7 +18,7 @@ struct SwiftUI_2_0App: App {
 
   var body: some Scene {
     WindowGroup {
-      SizeCategory()
+      UndoManagerr()
         /// Injection de dépendances dans toutes les vues :)
         .environmentObject(userViewModel)
     }
@@ -33,4 +33,6 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
     print("Hello from App Delegate")
     return true
   }
+
+
 }

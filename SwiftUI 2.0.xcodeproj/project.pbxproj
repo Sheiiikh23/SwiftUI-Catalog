@@ -290,6 +290,7 @@
 		D91CE6B6272EA51900AAD29E /* PresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91CE6B5272EA51900AAD29E /* PresentationMode.swift */; };
 		D91CE6B8272EA83200AAD29E /* SizeCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91CE6B7272EA83200AAD29E /* SizeCategory.swift */; };
 		D91CE6BA272EAAEF00AAD29E /* ContentSizeCategoryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91CE6B9272EAAEF00AAD29E /* ContentSizeCategoryExtension.swift */; };
+		D91CE6BC272EB16F00AAD29E /* UndoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91CE6BB272EB16F00AAD29E /* UndoManager.swift */; };
 		D929658B26A01194003A1312 /* ListViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929658A26A01194003A1312 /* ListViewModels.swift */; };
 		D93076902724BAF400E8F801 /* IsFocused.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6722925767DDF001C17DB /* IsFocused.swift */; };
 		D93076912724BD1500E8F801 /* ResetFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE6723925768174001C17DB /* ResetFocus.swift */; };
@@ -630,6 +631,7 @@
 		D91CE6B5272EA51900AAD29E /* PresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationMode.swift; sourceTree = "<group>"; };
 		D91CE6B7272EA83200AAD29E /* SizeCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCategory.swift; sourceTree = "<group>"; };
 		D91CE6B9272EAAEF00AAD29E /* ContentSizeCategoryExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSizeCategoryExtension.swift; sourceTree = "<group>"; };
+		D91CE6BB272EB16F00AAD29E /* UndoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoManager.swift; sourceTree = "<group>"; };
 		D929658A26A01194003A1312 /* ListViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModels.swift; sourceTree = "<group>"; };
 		D93076D82724C19300E8F801 /* KeyboardShortcut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcut.swift; sourceTree = "<group>"; };
 		D93076DC2724D0DE00E8F801 /* BackgroundMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMaterial.swift; sourceTree = "<group>"; };
@@ -1993,6 +1995,7 @@
 		D9E120C42729CE7C000F425F /* Undo */ = {
 			isa = PBXGroup;
 			children = (
+				D91CE6BB272EB16F00AAD29E /* UndoManager.swift */,
 			);
 			path = Undo;
 			sourceTree = "<group>";
@@ -2426,6 +2429,7 @@
 				8D6C0F3024FA953000041F8C /* ToolbarItemGroupView.swift in Sources */,
 				8DE9F4F424AD1B1E0054CE64 /* IndexViewStyleModifier & PageIndexViewStyle.swift in Sources */,
 				D90639B2269F3A400076AA0D /* LazyHStackDemoViewModel.swift in Sources */,
+				D91CE6BC272EB16F00AAD29E /* UndoManager.swift in Sources */,
 				8D999F9124B0CB4B0050BD97 /* ScrollToModifier.swift in Sources */,
 				8DA7D88126729AA3002E3081 /* ForegroundStyleModifier.swift in Sources */,
 				D90639A8269EFB8F0076AA0D /* HorizontalScrollViewDemo.swift in Sources */,
