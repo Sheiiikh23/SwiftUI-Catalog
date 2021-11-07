@@ -1923,6 +1923,30 @@
 			path = "Display Characteristics";
 			sourceTree = "<group>";
 		};
+		D97FA5612737F42800FAC9B7 /* Environment Data */ = {
+			isa = PBXGroup;
+			children = (
+				D93F3053273762F600DAFD15 /* @Environment.swift */,
+			);
+			path = "Environment Data";
+			sourceTree = "<group>";
+		};
+		D97FA5622737F43900FAC9B7 /* App State */ = {
+			isa = PBXGroup;
+			children = (
+				D9FCF32727374E5E0047A732 /* @AppStorage.swift */,
+			);
+			path = "App State";
+			sourceTree = "<group>";
+		};
+		D97FA5632737F57600FAC9B7 /* UIKit Hosting */ = {
+			isa = PBXGroup;
+			children = (
+				D93F305127375BDC00DAFD15 /* @UIApplicationDelegateAdaptor.swift */,
+			);
+			path = "UIKit Hosting";
+			sourceTree = "<group>";
+		};
 		D9C7C4D6270A05BD0021B1C4 /* Edit Mode */ = {
 			isa = PBXGroup;
 			children = (
@@ -2024,9 +2048,9 @@
 		D9E60E0A26AC9DD80062D3B2 /* PropertyWrappers (WIP) */ = {
 			isa = PBXGroup;
 			children = (
-				D9FCF32727374E5E0047A732 /* @AppStorage.swift */,
-				D93F305127375BDC00DAFD15 /* @UIApplicationDelegateAdaptor.swift */,
-				D93F3053273762F600DAFD15 /* @Environment.swift */,
+				D97FA5632737F57600FAC9B7 /* UIKit Hosting */,
+				D97FA5622737F43900FAC9B7 /* App State */,
+				D97FA5612737F42800FAC9B7 /* Environment Data */,
 			);
 			path = "PropertyWrappers (WIP)";
 			sourceTree = "<group>";
