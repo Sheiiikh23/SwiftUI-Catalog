@@ -14,7 +14,7 @@ Pas besoin de spécifier le type car il est automatiquement inférencé.
 SwiftUI définit et met à jour automatiquement de nombreuses valeurs d'environnement comme pixelLength, scenePhase... en fonction du périphérique, de l'état du système ou des paramètres propres à l'utilisateur.
 Pour d'autre valeurs, SwiftUI fournit une valeur par défaut raisonnable.
 
-Pour les EnvironmentValues qui peuvent être set, on peut modifier leur valeur grâce au modifier : `environment(_:, _:)`
+Pour les EnvironmentValues qui peuvent être set, on peut modifier leur valeur grâce au modifier : `environment(_:_:)`
 Lorsqu'une valeur est modifié, toutes les vues et sous-vues sont modifiées, provoquant un recompute de leur body
 SwiftUI met à disposition des modifiers dédiés pour certaines valeurs comme `lineLimit(_:)`
 */

@@ -13,7 +13,7 @@ import SwiftUI
 ///
 /// Remarques :
 ///   - Doit s'utiliser dans un `@Namespace`
-///   - S'accompage généralement des modifiers `prefersDefaultFocus(_:, in:_)` et `focusScope(_:)`
+///   - S'accompage généralement des modifiers `prefersDefaultFocus(_:in:_)` et `focusScope(_:)`
 ///   - Lien intéressant : https://swiftwithmajid.com/2020/12/02/focus-management-in-swiftui/
 
 struct ResetFocus: View {

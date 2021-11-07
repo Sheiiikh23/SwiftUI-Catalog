@@ -16,7 +16,7 @@ import SwiftUI
 ///
 /// Remarques :
 ///   - Très utilisé dans les `ButtonStyle`
-///   - S'accompagne des modifiers `keyboardShortcut(_:, modifiers: :)` & `keyboardShortcut(_:)`
+///   - S'accompagne des modifiers `keyboardShortcut(_:modifiers: :)` & `keyboardShortcut(_:)`
 
 struct KeyboardShortcut: View {
   var body: some View {

@@ -9,7 +9,7 @@ import SwiftUI
 ///
 /// Définition de l'`EnvironmentValue` :
 ///   - var openURL: OpenURLAction { get set }
-///     - s'utilisie via les fonctions `func callAsFunction(_:)` et `callAsFunction(_:, completion:)`, qui peuvent être appellé deuis la propriété
+///     - s'utilisie via les fonctions `func callAsFunction(_:)` et `callAsFunction(_:completion:)`, qui peuvent être appellé deuis la propriété
 ///
 /// Remarque :
 ///   - Utilise le navigateur par défaut de l'utilisateur en fonction de ses préférences (safari, chrome...)

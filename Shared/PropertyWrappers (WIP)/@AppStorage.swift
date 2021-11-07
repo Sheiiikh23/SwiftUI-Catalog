@@ -79,6 +79,10 @@ struct AppStorageWrapper: View {
       nickname = nicknameString
       userNickname = userNicknameString
     }
+    .onAppear {
+      nicknameString = nickname ?? ""
+      userNicknameString = userNickname ?? ""
+    }
   }
 }
 
@@ -154,6 +158,10 @@ struct AppStorageWrapperCustom: View {
     .onSubmit {
       nickname = nicknameString
       userNickname = userNicknameString
+    }
+    .onAppear {
+      nicknameString = nickname ?? ""
+      userNicknameString = userNickname ?? ""
     }
   }
 }
