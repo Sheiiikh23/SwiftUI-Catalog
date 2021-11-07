@@ -208,8 +208,6 @@
 		8DB0C1A424B219E0006818B4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8DB0C1A224B219E0006818B4 /* README.md */; };
 		8DB0C1A624B21AD9006818B4 /* DisableAutocorrectionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1A524B21AD9006818B4 /* DisableAutocorrectionModifier.swift */; };
 		8DB0C1A724B21AD9006818B4 /* DisableAutocorrectionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1A524B21AD9006818B4 /* DisableAutocorrectionModifier.swift */; };
-		8DB0C1A924B21B01006818B4 /* AppStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1A824B21B01006818B4 /* AppStorageWrapper.swift */; };
-		8DB0C1AA24B21B01006818B4 /* AppStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1A824B21B01006818B4 /* AppStorageWrapper.swift */; };
 		8DB0C1AC24B21F3F006818B4 /* SceneStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1AB24B21F3F006818B4 /* SceneStorageWrapper.swift */; };
 		8DB0C1AD24B21F3F006818B4 /* SceneStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1AB24B21F3F006818B4 /* SceneStorageWrapper.swift */; };
 		8DB0C1AF24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0C1AE24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift */; };
@@ -357,6 +355,7 @@
 		D9E60E0326AC633C0062D3B2 /* SearchCompletionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E60E0226AC633C0062D3B2 /* SearchCompletionModifier.swift */; };
 		D9E60E0C26AC9E160062D3B2 /* Environment Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */; };
 		D9FBF714272EC10800718F42 /* BlendModeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FBF713272EC10800718F42 /* BlendModeModifier.swift */; };
+		D9FCF32827374E5E0047A732 /* AppStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FCF32727374E5E0047A732 /* AppStorageWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -568,7 +567,6 @@
 		8DB0C19C24B21127006818B4 /* AppStoreOverlayModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreOverlayModifier.swift; sourceTree = "<group>"; };
 		8DB0C1A224B219E0006818B4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8DB0C1A524B21AD9006818B4 /* DisableAutocorrectionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableAutocorrectionModifier.swift; sourceTree = "<group>"; };
-		8DB0C1A824B21B01006818B4 /* AppStorageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageWrapper.swift; sourceTree = "<group>"; };
 		8DB0C1AB24B21F3F006818B4 /* SceneStorageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStorageWrapper.swift; sourceTree = "<group>"; };
 		8DB0C1AE24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StateObjectWrapper & ObservedObjectWrapper.swift"; sourceTree = "<group>"; };
 		8DB0C1B124B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationDelegateAdaptorWrapper.swift; sourceTree = "<group>"; };
@@ -685,6 +683,7 @@
 		D9E60E0226AC633C0062D3B2 /* SearchCompletionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCompletionModifier.swift; sourceTree = "<group>"; };
 		D9E60E0B26AC9E160062D3B2 /* Environment Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Environment Value.swift"; sourceTree = "<group>"; };
 		D9FBF713272EC10800718F42 /* BlendModeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendModeModifier.swift; sourceTree = "<group>"; };
+		D9FCF32727374E5E0047A732 /* AppStorageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -977,7 +976,6 @@
 		8D442EE224A809B4009995DD /* PropretyWrappers (OLD) */ = {
 			isa = PBXGroup;
 			children = (
-				8DB0C1A824B21B01006818B4 /* AppStorageWrapper.swift */,
 				8DA7D86726715CEF002E3081 /* FocusStateWrapper.swift */,
 				8D442EE624A80B2C009995DD /* ScaledMetricWrapper.swift */,
 				8DB0C1AE24B23107006818B4 /* StateObjectWrapper & ObservedObjectWrapper.swift */,
@@ -2023,6 +2021,7 @@
 		D9E60E0A26AC9DD80062D3B2 /* PropertyWrappers (WIP) */ = {
 			isa = PBXGroup;
 			children = (
+				D9FCF32727374E5E0047A732 /* AppStorageWrapper.swift */,
 			);
 			path = "PropertyWrappers (WIP)";
 			sourceTree = "<group>";
@@ -2436,6 +2435,7 @@
 				D91CE6BC272EB16F00AAD29E /* UndoManager.swift in Sources */,
 				8D999F9124B0CB4B0050BD97 /* ScrollToModifier.swift in Sources */,
 				8DA7D88126729AA3002E3081 /* ForegroundStyleModifier.swift in Sources */,
+				D9FCF32827374E5E0047A732 /* AppStorageWrapper.swift in Sources */,
 				D90639A8269EFB8F0076AA0D /* HorizontalScrollViewDemo.swift in Sources */,
 				8D6C0F3424FA99F000041F8C /* PickerStyleModifier.swift in Sources */,
 				D9CB338026E4CAAF00EBDA6D /* ControlActiveState.swift in Sources */,
@@ -2475,7 +2475,6 @@
 				8D09AB86268CFFF400F94E25 /* PrivacySensitiveModifier.swift in Sources */,
 				8DE9F4FA24AD1E6A0054CE64 /* ColorPickerView.swift in Sources */,
 				8D4FD8FB24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift in Sources */,
-				8DB0C1A924B21B01006818B4 /* AppStorageWrapper.swift in Sources */,
 				8DFBFECA268BB6C900BAEE00 /* SFSymbol.swift in Sources */,
 				8DA7D85D26714528002E3081 /* MaterialEffectView.swift in Sources */,
 				8DA7D86B267163CD002E3081 /* BadgeModifier.swift in Sources */,
@@ -2602,7 +2601,6 @@
 				D9CB339326E53CF500EBDA6D /* ProminenceExtension.swift in Sources */,
 				8DB0C1A724B21AD9006818B4 /* DisableAutocorrectionModifier.swift in Sources */,
 				8D4FD8FC24CAFA2E00D8B753 /* DefaultMinListHeaderHeight.swift in Sources */,
-				8DB0C1AA24B21B01006818B4 /* AppStorageWrapper.swift in Sources */,
 				8DE9F4F824AD1BB60054CE64 /* SpriteKitView.swift in Sources */,
 				8DB0C1B324B235F8006818B4 /* UIApplicationDelegateAdaptorWrapper.swift in Sources */,
 				8D3A767A24A89FA200005971 /* LinkView.swift in Sources */,
