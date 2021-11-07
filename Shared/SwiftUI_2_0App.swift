@@ -14,7 +14,7 @@ struct SwiftUI_2_0App: App {
 
   var body: some Scene {
     WindowGroup {
-      AppStorageWrapper()
+      EnvironmentWrapper()
         /// Injection de dépendances dans toutes les vues :)
         .environmentObject(userViewModel)
     }

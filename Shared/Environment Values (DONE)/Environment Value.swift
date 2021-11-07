@@ -47,3 +47,12 @@ extension EnvironmentValues {
     }
   }
 }
+
+struct HapticFeedbackView: View {
+
+  @Environment(\.hapticFeedback) private var hapticFeedback
+
+  var body: some View {
+    Button("Haptic feedback medium") { hapticFeedback.impact(strength: .medium) }
+  }
+}

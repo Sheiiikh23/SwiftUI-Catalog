@@ -7,7 +7,11 @@ import SwiftUI
 /// Plateformes : i•Pad•OS 14.0, tvOS 14.0, Mac Catalyst 14.0
 /// Description : Property wrapper utilisé dans la struct conforme à `App` pour finir un AppDelegate de UIKit
 ///
-/// Déclaration de la variable : @UIApplicationDelegateAdaptor(MyAppDelegate.self) var appDelegate
+/// 1 init pour `UIApplicationDelegateAdaptor` :
+///   - init(_ delegateType: DelegateType.Type = DelegateType.self)
+///
+/// Paramètre :
+///   - delegateType: DelegateType.Type ––> le type de UIApplicationDelegate à utiliser
 ///
 /// Remarques :
 ///   - La class doit hériter de `NSObject` et `UIApplicationDelegate`
